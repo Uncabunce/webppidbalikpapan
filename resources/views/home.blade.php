@@ -377,4 +377,18 @@
 </div>
 </div>
 </footer>
-</body></html>
+<script>
+    function updateClock() {
+        const clockDisplay = document.getElementById('clock-display');
+        if (clockDisplay) {
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            clockDisplay.textContent = `${hours}:${minutes}:${seconds}`;
+        }
+    }
+    // Initialize and start interval
+    updateClock();
+    setInterval(updateClock, 1000);
+</script></body></html>
