@@ -7,7 +7,6 @@
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600;700;800;900&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
       tailwind.config = {
         darkMode: "class",
@@ -99,8 +98,8 @@
 <nav class="fixed top-0 w-full z-50 bg-[#1f1f2e]/85 backdrop-blur-md shadow-[0_20px_40px_rgba(26,26,41,0.06)] tonal-shift-no-lines">
 <div class="flex items-center justify-between px-12 py-4 max-w-[1440px] mx-auto">
 <div class="text-2xl font-black text-white tracking-tighter">
-                PPID Balikpapan
-            </div>
+            PPID Balikpapan
+        </div>
 <div class="hidden md:flex items-center gap-8">
 <a class="font-['Public_Sans'] font-bold tracking-tight text-[#feb246] border-b-2 border-[#feb246] pb-1" href="#">Beranda</a>
 <a class="font-['Public_Sans'] font-bold tracking-tight text-white/90 hover:text-[#feb246] transition-colors" href="#">Profil</a>
@@ -109,9 +108,9 @@
 <a class="font-['Public_Sans'] font-bold tracking-tight text-white/90 hover:text-[#feb246] transition-colors" href="#">Regulasi</a>
 <a class="font-['Public_Sans'] font-bold tracking-tight text-white/90 hover:text-[#feb246] transition-colors" href="#">Kontak</a>
 </div>
-<div class="flex items-center gap-4">
+<div class="flex items-center gap-6">
 <button class="material-symbols-outlined text-white p-2 hover:bg-white/10 rounded-full transition-all">search</button>
-<button class="bg-[#feb246] text-[#6f4600] px-6 py-2 rounded-lg font-bold hover:scale-95 active:duration-100 transition-all">Masuk</button>
+<div class="text-[#feb246] font-mono text-xl font-bold tracking-wider min-w-[100px] text-right" id="clock-display">00:00:00</div>
 </div>
 </div>
 </nav>
@@ -126,18 +125,18 @@
 <div class="max-w-3xl">
 <span class="inline-block bg-secondary-container text-on-secondary-container px-4 py-1 rounded-full text-xs font-bold tracking-widest uppercase mb-6">Portal Resmi</span>
 <h1 class="text-white text-6xl md:text-8xl font-black leading-[0.9] tracking-tighter mb-8">
-                        Keterbukaan <br/><span class="text-secondary-container">Informasi</span> Publik.
-                    </h1>
+                    Keterbukaan <br/><span class="text-secondary-container">Informasi</span> Publik.
+                </h1>
 <p class="text-white/70 text-xl font-body max-w-xl mb-10 leading-relaxed">
-                        Mewujudkan tata kelola pemerintahan Kota Balikpapan yang transparan, akuntabel, dan partisipatif melalui penyediaan informasi yang mudah diakses.
-                    </p>
+                    Mewujudkan tata kelola pemerintahan Kota Balikpapan yang transparan, akuntabel, dan partisipatif melalui penyediaan informasi yang mudah diakses.
+                </p>
 <div class="flex gap-4">
 <button class="bg-secondary-container text-on-secondary-container px-8 py-4 rounded-lg font-bold flex items-center gap-2 hover:translate-y-[-2px] transition-transform shadow-xl">
-                            Ajukan Informasi <span class="material-symbols-outlined">arrow_forward</span>
+                        Ajukan Informasi <span class="material-symbols-outlined">arrow_forward</span>
 </button>
 <button class="border border-white/20 text-white px-8 py-4 rounded-lg font-bold backdrop-blur-sm hover:bg-white/10 transition-all">
-                            Lihat Regulasi
-                        </button>
+                        Lihat Regulasi
+                    </button>
 </div>
 </div>
 </div>
@@ -333,8 +332,8 @@
 <div class="md:col-span-2">
 <div class="text-xl font-bold text-white mb-6">PPID Balikpapan</div>
 <p class="text-gray-400 font-['Inter'] text-sm leading-relaxed max-w-md mb-8">
-                    Pejabat Pengelola Informasi dan Dokumentasi (PPID) Pemerintah Kota Balikpapan bertanggung jawab untuk penyimpanan, pendokumentasian, penyediaan, dan/atau pelayanan informasi di lingkungan Pemerintah Kota.
-                </p>
+                Pejabat Pengelola Informasi dan Dokumentasi (PPID) Pemerintah Kota Balikpapan bertanggung jawab untuk penyimpanan, pendokumentasian, penyediaan, dan/atau pelayanan informasi di lingkungan Pemerintah Kota.
+            </p>
 <div class="flex gap-4">
 <a class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-white hover:bg-secondary-container hover:text-on-secondary-container transition-all" href="#">
 <span class="material-symbols-outlined">public</span>
@@ -359,17 +358,17 @@
 <div>
 <h4 class="text-white font-bold mb-6">Kontak Kami</h4>
 <address class="not-italic text-gray-400 text-sm leading-loose">
-                    Jl. Jenderal Sudirman No.1, <br/>
-                    Kota Balikpapan, Kalimantan Timur <br/>
-                    Telepon: (0542) 421420 <br/>
-                    Email: ppid@balikpapan.go.id
-                </address>
+                Jl. Jenderal Sudirman No.1, <br/>
+                Kota Balikpapan, Kalimantan Timur <br/>
+                Telepon: (0542) 421420 <br/>
+                Email: ppid@balikpapan.go.id
+            </address>
 </div>
 </div>
 <div class="flex flex-col md:flex-row justify-between items-center px-12 py-8 w-full border-t border-white/5">
 <p class="text-gray-400 font-['Inter'] text-sm leading-relaxed">
-                © 2024 Pejabat Pengelola Informasi dan Dokumentasi Kota Balikpapan. Transparansi untuk Negeri.
-            </p>
+            © 2024 Pejabat Pengelola Informasi dan Dokumentasi Kota Balikpapan. Transparansi untuk Negeri.
+        </p>
 <div class="flex gap-6 mt-4 md:mt-0">
 <a class="text-[#feb246] underline text-sm" href="#">Beranda</a>
 <a class="text-gray-400 hover:text-white text-sm" href="#">Profil</a>
@@ -391,4 +390,5 @@
     // Initialize and start interval
     updateClock();
     setInterval(updateClock, 1000);
-</script></body></html>
+</script>
+</body></html>
