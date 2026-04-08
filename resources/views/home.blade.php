@@ -139,6 +139,7 @@
             scrollbar-width: none;
         }
     </style>
+<link rel="icon" type="image/png" href="{{ asset('Kota Balikpapan.png') }}">
 </head>
 <body class="bg-surface text-on-surface">
 <header class="w-full shadow-md bg-white">
