@@ -4,7 +4,46 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>PPID Kota Balikpapan - Layanan Informasi Publik</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries">function updateClock() {
+        const now = new Date();
+        
+        const days = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
+        const months = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+        
+        const dayName = days[now.getDay()];
+        const day = now.getDate();
+        const monthName = months[now.getMonth()];
+        const year = now.getFullYear();
+        
+        const hours = String(now.getHours()).padStart(2, '0');
+        const minutes = String(now.getMinutes()).padStart(2, '0');
+        const seconds = String(now.getSeconds()).padStart(2, '0');
+        
+        // Detect Timezone
+        const offset = -now.getTimezoneOffset() / 60;
+        let tz = '';
+        if (offset === 7) tz = 'WIB';
+        else if (offset === 8) tz = 'WITA';
+        else if (offset === 9) tz = 'WIT';
+        else {
+            tz = now.toLocaleTimeString('en-us',{timeZoneName:'short'}).split(' ')[2];
+        }
+
+        const dateString = `${dayName}, ${day} ${monthName} ${year}`;
+        const timeString = `${hours}:${minutes}:${seconds} ${tz}`;
+        
+        const desktopDate = document.getElementById('desktop-date');
+        const desktopTime = document.getElementById('desktop-time');
+        const mobileDate = document.getElementById('mobile-date');
+        const mobileTime = document.getElementById('mobile-time');
+        
+        if (desktopDate) desktopDate.textContent = dateString;
+        if (desktopTime) desktopTime.textContent = timeString;
+        if (mobileDate) mobileDate.textContent = dateString;
+        if (mobileTime) mobileTime.textContent = timeString;
+    }
+    setInterval(updateClock, 1000);
+    updateClock();</script>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
@@ -100,7 +139,6 @@
             scrollbar-width: none;
         }
     </style>
-<link rel="icon" type="image/png" href="{{ asset('Kota Balikpapan.png') }}">
 </head>
 <body class="bg-surface text-on-surface">
 <header class="w-full shadow-md bg-white">
@@ -111,9 +149,12 @@
 <div class="flex items-center justify-between w-full md:w-auto">
 <img alt="Logo PPID Balikpapan" class="h-8 md:h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0uhJR2DwTfoWDQYEGNjQilFqt1DuyVgkxzNXBFBlDO9llMjC2PlYNVnB2s4BJl2_y2hVAjNsaMjjnKZhnpo5O_eCzVnmkRnVGvHc-SrcsfsNDgBJZfttDuDAKCCXSGXqi-p-tDTyrovusFt9cdgLaUWUb1slW_gFJDgX6Ik4s6Wo3TX0x2FqPCnG-9KDpbxZieFR_E4IIVIUwRuG9Owqy9eY2kD4nsk9ILADGwzcKsmNuIoCC8Wp4zXS8wZtSNk9k0tW49zvPmrHog"/>
 <!-- Mobile clock shown on right in mobile layout -->
-<div class="md:hidden font-headline font-bold text-xs text-primary/80 bg-white/50 px-2 py-1 rounded-full border border-white/20 shadow-sm" id="mobile-clock">
-                    00:00:00
-                </div>
+<div class="md:hidden font-headline font-bold text-xs text-primary/80 bg-white/50 px-2 py-1 rounded-full border border-white/20 shadow-sm min-w-fit px-3" id="mobile-clock">
+<div class="flex flex-col items-center">
+<span class="text-[8px] leading-none opacity-70" id="mobile-date">00:00:00</span>
+<span class="text-[10px] leading-tight" id="mobile-time">00:00:00</span>
+</div>
+</div>
 </div>
 <!-- Center: Search Bar -->
 <div class="w-full max-w-md">
@@ -124,9 +165,12 @@
 </div>
 <!-- Right: Clock (Hidden on mobile as it's moved to logo row) -->
 <div class="hidden md:flex items-center">
-<div class="font-headline font-bold text-sm text-primary/80 bg-white/50 px-3 py-1 rounded-full border border-white/20 shadow-sm" id="real-time-clock">
-                    00:00:00
-                </div>
+<div class="font-headline font-bold text-sm text-primary/80 bg-white/50 px-3 py-1 rounded-full border border-white/20 shadow-sm min-w-fit px-4" id="real-time-clock">
+<div class="flex flex-col items-center">
+<span class="text-[10px] leading-none opacity-70" id="desktop-date">00:00:00</span>
+<span class="text-sm leading-tight" id="desktop-time">00:00:00</span>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -426,21 +470,44 @@
         </p>
 </div>
 </footer>
-<script>
-    function updateClock() {
+<script>function updateClock() {
         const now = new Date();
+        
+        const days = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
+        const months = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+        
+        const dayName = days[now.getDay()];
+        const day = now.getDate();
+        const monthName = months[now.getMonth()];
+        const year = now.getFullYear();
+        
         const hours = String(now.getHours()).padStart(2, '0');
         const minutes = String(now.getMinutes()).padStart(2, '0');
         const seconds = String(now.getSeconds()).padStart(2, '0');
-        const timeString = `${hours}:${minutes}:${seconds}`;
         
-        const desktopClock = document.getElementById('real-time-clock');
-        const mobileClock = document.getElementById('mobile-clock');
+        // Detect Timezone
+        const offset = -now.getTimezoneOffset() / 60;
+        let tz = '';
+        if (offset === 7) tz = 'WIB';
+        else if (offset === 8) tz = 'WITA';
+        else if (offset === 9) tz = 'WIT';
+        else {
+            tz = now.toLocaleTimeString('en-us',{timeZoneName:'short'}).split(' ')[2];
+        }
+
+        const dateString = `${dayName}, ${day} ${monthName} ${year}`;
+        const timeString = `${hours}:${minutes}:${seconds} ${tz}`;
         
-        if (desktopClock) desktopClock.textContent = timeString;
-        if (mobileClock) mobileClock.textContent = timeString;
+        const desktopDate = document.getElementById('desktop-date');
+        const desktopTime = document.getElementById('desktop-time');
+        const mobileDate = document.getElementById('mobile-date');
+        const mobileTime = document.getElementById('mobile-time');
+        
+        if (desktopDate) desktopDate.textContent = dateString;
+        if (desktopTime) desktopTime.textContent = timeString;
+        if (mobileDate) mobileDate.textContent = dateString;
+        if (mobileTime) mobileTime.textContent = timeString;
     }
     setInterval(updateClock, 1000);
-    updateClock();
-</script>
+    updateClock();</script>
 </body></html>
