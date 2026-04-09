@@ -118,9 +118,9 @@
             font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24
         }
         html, body {
-            height: auto;
-            overflow-y: auto;
             font-family: "Inter", sans-serif;
+            margin: 0;
+            padding: 0;
         }
         h1, h2, h3, .font-headline {
             font-family: "Manrope", sans-serif
@@ -143,50 +143,49 @@
 </head>
 <body class="bg-surface text-on-surface">
 <header class="w-full shadow-md bg-white">
-<!-- Top Navbar (Batik Motif) -->
-<div class="batik-bg border-b border-slate-200">
-<div class="max-w-7xl mx-auto px-4 md:px-6 py-3 flex flex-col md:flex-row items-center justify-between gap-4 md:gap-0">
-<!-- Left: Logo -->
-<div class="flex items-center justify-between w-full md:w-auto">
-<img alt="Logo PPID Balikpapan" class="h-8 md:h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0uhJR2DwTfoWDQYEGNjQilFqt1DuyVgkxzNXBFBlDO9llMjC2PlYNVnB2s4BJl2_y2hVAjNsaMjjnKZhnpo5O_eCzVnmkRnVGvHc-SrcsfsNDgBJZfttDuDAKCCXSGXqi-p-tDTyrovusFt9cdgLaUWUb1slW_gFJDgX6Ik4s6Wo3TX0x2FqPCnG-9KDpbxZieFR_E4IIVIUwRuG9Owqy9eY2kD4nsk9ILADGwzcKsmNuIoCC8Wp4zXS8wZtSNk9k0tW49zvPmrHog"/>
-<!-- Mobile clock shown on right in mobile layout -->
-<div class="md:hidden font-headline font-bold text-xs text-primary/80 bg-white/50 px-2 py-1 rounded-full border border-white/20 shadow-sm min-w-fit px-3" id="mobile-clock">
-<div class="flex flex-col items-center">
-<span class="text-[8px] leading-none opacity-70" id="mobile-date">00:00:00</span>
-<span class="text-[10px] leading-tight" id="mobile-time">00:00:00</span>
-</div>
-</div>
-</div>
-<!-- Center: Search Bar -->
-<div class="w-full max-w-md">
-<div class="relative flex items-center">
-<input class="w-full bg-white/90 border border-slate-300 rounded-full px-4 py-1.5 pr-10 text-xs focus:ring-2 focus:ring-primary focus:border-transparent shadow-inner" placeholder="Cari informasi..." type="text"/>
-<span class="material-symbols-outlined absolute right-3 text-slate-400 text-lg" data-icon="search">search</span>
-</div>
-</div>
-<!-- Right: Clock (Hidden on mobile as it's moved to logo row) -->
-<div class="hidden md:flex items-center">
-<div class="font-headline font-bold text-sm text-primary/80 bg-white/50 px-3 py-1 rounded-full border border-white/20 shadow-sm min-w-fit px-4" id="real-time-clock">
-<div class="flex flex-col items-center">
-<span class="text-[10px] leading-none opacity-70" id="desktop-date">00:00:00</span>
-<span class="text-sm leading-tight" id="desktop-time">00:00:00</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- Bottom Navbar (Black) -->
-<nav class="bg-slate-950 text-white overflow-x-auto no-scrollbar">
-<div class="max-w-7xl mx-auto px-4 md:px-6 flex">
-<div class="flex flex-nowrap md:gap-0">
-<a class="whitespace-nowrap px-4 md:px-6 py-3 font-headline font-bold text-sm tracking-wide text-secondary-container border-b-2 border-secondary-container bg-white/5" href="#">Beranda</a>
-<a class="whitespace-nowrap px-4 md:px-6 py-3 font-headline font-bold text-sm tracking-wide text-slate-300 hover:text-white hover:bg-white/10 transition-all" href="#">Profil</a>
-<a class="whitespace-nowrap px-4 md:px-6 py-3 font-headline font-bold text-sm tracking-wide text-slate-300 hover:text-white hover:bg-white/10 transition-all" href="#">Layanan Informasi</a>
-<a class="whitespace-nowrap px-4 md:px-6 py-3 font-headline font-bold text-sm tracking-wide text-slate-300 hover:text-white hover:bg-white/10 transition-all" href="#">Statistik Pelayanan</a>
-<a class="whitespace-nowrap px-4 md:px-6 py-3 font-headline font-bold text-sm tracking-wide text-slate-300 hover:text-white hover:bg-white/10 transition-all" href="#">Kontak</a>
-</div>
-</div>
-</nav>
+    <div class="batik-bg border-b border-slate-200 sticky top-0 z-[100] shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 py-3 flex flex-col md:flex-row items-center justify-between gap-4 md:gap-0">
+            <div class="flex items-center justify-between w-full md:w-auto">
+                <img alt="Logo PPID Balikpapan" class="h-8 md:h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0uhJR2DwTfoWDQYEGNjQilFqt1DuyVgkxzNXBFBlDO9llMjC2PlYNVnB2s4BJl2_y2hVAjNsaMjjnKZhnpo5O_eCzVnmkRnVGvHc-SrcsfsNDgBJZfttDuDAKCCXSGXqi-p-tDTyrovusFt9cdgLaUWUb1slW_gFJDgX6Ik4s6Wo3TX0x2FqPCnG-9KDpbxZieFR_E4IIVIUwRuG9Owqy9eY2kD4nsk9ILADGwzcKsmNuIoCC8Wp4zXS8wZtSNk9k0tW49zvPmrHog"/>
+                <div class="md:hidden font-headline font-bold text-xs text-primary/80 bg-white/50 px-3 py-1 rounded-full border border-white/20 shadow-sm" id="mobile-clock">
+                    <div class="flex flex-col items-center">
+                        <span class="text-[8px] leading-none opacity-70" id="mobile-date"></span>
+                        <span class="text-[10px] leading-tight" id="mobile-time"></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="w-full max-w-md">
+                <div class="relative flex items-center">
+                    <input class="w-full bg-white/90 border border-slate-300 rounded-full px-4 py-1.5 pr-10 text-xs focus:ring-2 focus:ring-primary focus:border-transparent shadow-inner" placeholder="Cari informasi..." type="text"/>
+                    <span class="material-symbols-outlined absolute right-3 text-slate-400 text-lg">search</span>
+                </div>
+            </div>
+            
+            <div class="hidden md:flex items-center">
+                <div class="font-headline font-bold text-sm text-primary/80 bg-white/50 px-4 py-1 rounded-full border border-white/20 shadow-sm" id="real-time-clock">
+                    <div class="flex flex-col items-center">
+                        <span class="text-[10px] leading-none opacity-70" id="desktop-date"></span>
+                        <span class="text-sm leading-tight" id="desktop-time"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="bg-slate-950 text-white overflow-x-auto no-scrollbar">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 flex">
+            <div class="flex flex-nowrap">
+                <a class="whitespace-nowrap px-4 md:px-6 py-3 font-headline font-bold text-sm tracking-wide text-secondary-container border-b-2 border-secondary-container bg-white/5" href="#">Beranda</a>
+                <a class="whitespace-nowrap px-4 md:px-6 py-3 font-headline font-bold text-sm tracking-wide text-slate-300 hover:text-white hover:bg-white/10 transition-all" href="#">Profil</a>
+                <a class="whitespace-nowrap px-4 md:px-6 py-3 font-headline font-bold text-sm tracking-wide text-slate-300 hover:text-white hover:bg-white/10 transition-all" href="#">Layanan Informasi</a>
+                <a class="whitespace-nowrap px-4 md:px-6 py-3 font-headline font-bold text-sm tracking-wide text-slate-300 hover:text-white hover:bg-white/10 transition-all" href="#">Statistik Publik</a>
+                <a class="whitespace-nowrap px-4 md:px-6 py-3 font-headline font-bold text-sm tracking-wide text-slate-300 hover:text-white hover:bg-white/10 transition-all" href="#">Data Statistik</a>
+                <a class="whitespace-nowrap px-4 md:px-6 py-3 font-headline font-bold text-sm tracking-wide text-slate-300 hover:text-white hover:bg-white/10 transition-all" href="#">PPID Pelaksana</a>
+                <a class="whitespace-nowrap px-4 md:px-6 py-3 font-headline font-bold text-sm tracking-wide text-slate-300 hover:text-white hover:bg-white/10 transition-all" href="#">Kontak Kami</a>
+            </div>
+        </div>
+    </nav>
 </header>
 <main>
 <!-- Hero Section -->
