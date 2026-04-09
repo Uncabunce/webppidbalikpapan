@@ -181,8 +181,8 @@
 <div class="flex flex-nowrap md:gap-0">
 <a class="whitespace-nowrap px-4 md:px-6 py-3 font-headline font-bold text-sm tracking-wide text-secondary-container border-b-2 border-secondary-container bg-white/5" href="#">Beranda</a>
 <a class="whitespace-nowrap px-4 md:px-6 py-3 font-headline font-bold text-sm tracking-wide text-slate-300 hover:text-white hover:bg-white/10 transition-all" href="#">Profil</a>
-<a class="whitespace-nowrap px-4 md:px-6 py-3 font-headline font-bold text-sm tracking-wide text-slate-300 hover:text-white hover:bg-white/10 transition-all" href="#">Informasi</a>
-<a class="whitespace-nowrap px-4 md:px-6 py-3 font-headline font-bold text-sm tracking-wide text-slate-300 hover:text-white hover:bg-white/10 transition-all" href="#">Layanan</a>
+<a class="whitespace-nowrap px-4 md:px-6 py-3 font-headline font-bold text-sm tracking-wide text-slate-300 hover:text-white hover:bg-white/10 transition-all" href="#">Layanan Informasi</a>
+<a class="whitespace-nowrap px-4 md:px-6 py-3 font-headline font-bold text-sm tracking-wide text-slate-300 hover:text-white hover:bg-white/10 transition-all" href="#">Statistik Pelayanan</a>
 <a class="whitespace-nowrap px-4 md:px-6 py-3 font-headline font-bold text-sm tracking-wide text-slate-300 hover:text-white hover:bg-white/10 transition-all" href="#">Kontak</a>
 </div>
 </div>
