@@ -311,28 +311,7 @@
 </aside>
 </div>
 </section>
-<!-- Stats Section -->
-<section class="py-16 md:py-20 bg-primary overflow-hidden relative">
-<div class="max-w-7xl mx-auto px-4 md:px-6 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 relative z-10">
-<div class="text-center">
-<p class="text-3xl md:text-5xl font-extrabold text-secondary-container mb-2">1,240+</p>
-<p class="text-white font-medium uppercase tracking-widest text-[10px] md:text-sm opacity-80">Permohonan Masuk</p>
-</div>
-<div class="text-center">
-<p class="text-3xl md:text-5xl font-extrabold text-secondary-container mb-2">98.5%</p>
-<p class="text-white font-medium uppercase tracking-widest text-[10px] md:text-sm opacity-80">Selesai Diproses</p>
-</div>
-<div class="text-center">
-<p class="text-3xl md:text-5xl font-extrabold text-secondary-container mb-2">15</p>
-<p class="text-white font-medium uppercase tracking-widest text-[10px] md:text-sm opacity-80">Hari Rata-rata</p>
-</div>
-<div class="text-center">
-<p class="text-3xl md:text-5xl font-extrabold text-secondary-container mb-2">100%</p>
-<p class="text-white font-medium uppercase tracking-widest text-[10px] md:text-sm opacity-80">Keberatan Ditangani</p>
-</div>
-</div>
-<div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white/5 to-transparent"></div>
-</section>
+
 </main>
 <!-- Footer -->
 <footer class="bg-slate-50 dark:bg-slate-900 w-full pt-16 md:pt-20 pb-8 border-t border-slate-200 dark:border-slate-800">
