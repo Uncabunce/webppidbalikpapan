@@ -7,165 +7,148 @@
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-        function updateClock() {
-            const now = new Date();
-            
-            const days = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
-            const months = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
-            const dayName = days[now.getDay()];
-            const dateStr = `${now.getDate()} ${months[now.getMonth()]} ${now.getFullYear()}`;
-            const fullDateString = `${dayName}, ${dateStr}`;
-
-            const hours = String(now.getHours()).padStart(2, '0');
-            const minutes = String(now.getMinutes()).padStart(2, '0');
-            const seconds = String(now.getSeconds()).padStart(2, '0');
-            
-            const offset = -now.getTimezoneOffset() / 60;
-            let tz = 'WITA';
-            if (offset === 7) tz = 'WIB';
-            else if (offset === 8) tz = 'WITA';
-            else if (offset === 9) tz = 'WIT';
-            else tz = 'UTC' + (offset >= 0 ? '+' + offset : offset);
-
-            const timeString = `${hours}:${minutes}:${seconds} ${tz}`;
-            
-            const desktopClock = document.getElementById('real-time-clock');
-            const mobileClock = document.getElementById('mobile-clock');
-            
-            [desktopClock, mobileClock].forEach(clock => {
-                if (clock) {
-                    const dateEl = clock.querySelector('.date-line');
-                    const timeEl = clock.querySelector('.time-line');
-                    if (dateEl) dateEl.textContent = fullDateString;
-                    if (timeEl) timeEl.textContent = timeString;
-                }
-            });
-        }
-
-        function updateWeather() {
-            const statuses = ['Cerah', 'Cerah Berawan', 'Berawan', 'Hujan Ringan'];
-            const icons = ['sunny', 'cloudy_snowing', 'cloud', 'rainy'];
-            
-            const randomIdx = Math.floor(Math.random() * statuses.length);
-            // Requested range: 29-32°C
-            const temp = Math.floor(Math.random() * (32 - 29 + 1)) + 29;
-            
-            const weatherStatusEl = document.getElementById('weather-status');
-            const weatherIconEl = document.getElementById('weather-icon');
-            
-            if (weatherStatusEl) {
-                weatherStatusEl.textContent = `${statuses[randomIdx]}, ${temp}°C`;
-            }
-            if (weatherIconEl) {
-                weatherIconEl.setAttribute('data-icon', icons[randomIdx]);
-                weatherIconEl.textContent = icons[randomIdx];
-            }
-        }
-
-        setInterval(updateClock, 1000);
-        updateClock();
-        
-        setInterval(updateWeather, 60000); // Update every minute for 'real-time' feel in demo
-        updateWeather();
-    </script>
 <style>
         .material-symbols-outlined {
             font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24
         }
-        body {
+        html, body {
+            height: auto;
+            overflow-y: auto;
             font-family: "Inter", sans-serif;
-            overflow-x: hidden
         }
         h1, h2, h3, .font-headline {
             font-family: "Manrope", sans-serif
         }
         .batik-bg {
-            background-image: linear-gradient(rgba(245, 247, 248, 0.9), rgba(245, 247, 248, 0.9)), url(https://lh3.googleusercontent.com/aida/ADBb0ujClcSRSWzjgS0QEzP4cera2ovtRCK4mrvxJiMHLvRJrDW6MbUgHIbGPA0m4yLiQGUXUtvW_1zQbk05ZItZRvyiJ9yb95QKLluHksaqLhl_6OdKmArwNECGtEvSkepI95aoRc69trfVXigCCsAN12D2rulw1CeWdWNNPWuh1WBHZub4_KlYtPH8ABVjZ3xALo4vhyIsYiIsmRUoe2GNvMyeQbMFyQyptpnMnowfwAeBFUODO15_NFCJRX2FkqVvXGMhY38WCJeoGjQ);
+            background-image: linear-gradient(rgba(240, 240, 240, 0.9), rgba(240, 240, 240, 0.9)), url("batik dayak.png");
             background-repeat: repeat;
             background-size: 300px
         }
         .no-scrollbar::-webkit-scrollbar {
-            display: none
+            display: none;
         }
         .no-scrollbar {
             -ms-overflow-style: none;
-            scrollbar-width: none
+            scrollbar-width: none;
+        }
+        /* Carousel Styles */
+        #carousel-container {
+            position: relative;
+            overflow: hidden;
+        }
+        #carousel-track {
+            display: flex;
+            transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: grab;
+            user-select: none;
+        }
+        #carousel-track:active {
+            cursor: grabbing;
+        }
+        .carousel-slide {
+            flex: 0 0 100%;
+            width: 100%;
         }
     </style>
 </head>
 <body class="bg-surface text-on-surface">
-<header class="w-full shadow-md bg-white">
-<!-- Top Navbar (Batik Motif) - STICKY -->
-<div class="batik-bg border-b border-slate-200 sticky top-0 z-[1000]">
-<div class="max-w-7xl mx-auto px-4 md:px-6 py-3 flex flex-col md:grid md:grid-cols-3 items-center gap-4 md:gap-0">
+<header class="w-full shadow-md bg-white sticky top-0 z-50">
+<!-- Top Navbar (Batik Motif) -->
+<div class="batik-bg border-b border-slate-200">
+<div class="max-w-7xl mx-auto px-4 md:px-6 py-3 flex flex-col md:flex-row items-center justify-between gap-4 md:gap-0">
 <!-- Left: Logo -->
-<div class="flex items-center justify-between md:justify-start w-full">
-<img alt="Logo PPID Balikpapan" class="h-10 md:h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0ujiUM2Mq9IpyjNOf7or_L7aZlUAFKuI-LrOweY94wn4iNnR_pvACrzfoAZjXHxcOP_303eg1C8pt10eTb6TTy0xTt7cYXqAjN_Nemx5harxIGI56eLMSfTC0Gzs9_atLBTgh6yoPE8KAFePQIGxyt7AIZ2c1SJryFLEVUglvT4d0_0aTCF_U6ahheJvpu2Rg3wlzhp9E-p5CTnp3bGLMOVtlUNZnB48Zwuq7a7PEvpLARDFj9iYxGQLxQ8L4pgjDPrbKMV7wwapSvQ"/>
+<div class="flex items-center justify-between w-full md:w-auto">
+<img alt="Logo PPID Balikpapan" class="h-8 md:h-10 w-auto object-contain" src="logo_ppid bg removed.png"/>
 <!-- Mobile clock -->
-<div class="md:hidden font-headline font-bold text-[10px] text-primary bg-white/50 px-2 py-1 rounded-lg border border-white/20 shadow-sm text-center" id="mobile-clock">
-<div class="date-line"></div>
-<div class="time-line"></div>
+<div class="md:hidden font-headline font-bold text-xs text-primary/80 bg-white/50 px-3 py-1 rounded-full border border-white/20 shadow-sm min-w-fit" id="mobile-clock">
+<div class="flex flex-col items-center">
+<span class="text-[8px] leading-none opacity-70" id="mobile-date"></span>
+<span class="text-[10px] leading-tight" id="mobile-time"></span>
+</div>
 </div>
 </div>
 <!-- Center: Search Bar -->
-<div class="w-full flex justify-center">
-<div class="relative flex items-center w-full max-w-[320px]">
-<input class="w-full bg-white/90 border border-slate-300 rounded-full px-4 py-2 pr-10 text-xs focus:ring-2 focus:ring-primary focus:border-transparent shadow-inner" placeholder="Cari informasi..." type="text"/>
+<div class="w-full max-w-md">
+<div class="relative flex items-center">
+<input class="w-full bg-white/90 border border-slate-300 rounded-full px-4 py-1.5 pr-10 text-xs focus:ring-2 focus:ring-primary focus:border-transparent shadow-inner" placeholder="Cari informasi..." type="text"/>
 <span class="material-symbols-outlined absolute right-3 text-slate-400 text-lg" data-icon="search">search</span>
 </div>
 </div>
 <!-- Right: Clock -->
-<div class="hidden md:flex items-center justify-end w-full">
-<div class="font-headline font-bold text-primary bg-white/50 px-6 py-1.5 rounded-xl border border-white/20 shadow-sm text-right flex flex-col min-w-[180px]" id="real-time-clock">
-<div class="date-line text-[10px] leading-tight opacity-80 uppercase tracking-wider"></div>
-<div class="time-line text-sm leading-tight"></div>
+<div class="hidden md:flex items-center">
+<div class="font-headline font-bold text-sm text-primary/80 bg-white/50 px-4 py-1 rounded-full border border-white/20 shadow-sm min-w-fit" id="real-time-clock">
+<div class="flex flex-col items-center">
+<span class="text-[10px] leading-none opacity-70" id="desktop-date"></span>
+<span class="text-sm leading-tight" id="desktop-time"></span>
 </div>
 </div>
 </div>
 </div>
-<!-- Bottom Navbar (Black) - NOT STICKY -->
+</div>
+</header>
+<!-- Bottom Navbar (Black) -->
 <nav class="bg-slate-950 text-white overflow-x-auto no-scrollbar">
 <div class="max-w-7xl mx-auto px-4 md:px-6 flex">
 <div class="flex flex-nowrap md:gap-0">
 <a class="whitespace-nowrap px-4 md:px-6 py-3 font-headline font-bold text-sm tracking-wide text-secondary-container border-b-2 border-secondary-container bg-white/5" href="#">Beranda</a>
 <a class="whitespace-nowrap px-4 md:px-6 py-3 font-headline font-bold text-sm tracking-wide text-slate-300 hover:text-white hover:bg-white/10 transition-all" href="#">Profil</a>
-<a class="whitespace-nowrap px-4 md:px-6 py-3 font-headline font-bold text-sm tracking-wide text-slate-300 hover:text-white hover:bg-white/10 transition-all" href="#">Informasi Publik</a>
-<a class="whitespace-nowrap px-4 md:px-6 py-3 font-headline font-bold text-sm tracking-wide text-slate-300 hover:text-white hover:bg-white/10 transition-all" href="#">Layanan Informasi</a>
-<a class="whitespace-nowrap px-4 md:px-6 py-3 font-headline font-bold text-sm tracking-wide text-slate-300 hover:text-white hover:bg-white/10 transition-all" href="#">Data Statistik</a>
-<a class="whitespace-nowrap px-4 md:px-6 py-3 font-headline font-bold text-sm tracking-wide text-slate-300 hover:text-white hover:bg-white/10 transition-all" href="#">PPID Pelaksana</a>
+<a class="whitespace-nowrap px-4 md:px-6 py-3 font-headline font-bold text-sm tracking-wide text-slate-300 hover:text-white hover:bg-white/10 transition-all" href="#">Informasi</a>
+<a class="whitespace-nowrap px-4 md:px-6 py-3 font-headline font-bold text-sm tracking-wide text-slate-300 hover:text-white hover:bg-white/10 transition-all" href="#">Layanan</a>
 <a class="whitespace-nowrap px-4 md:px-6 py-3 font-headline font-bold text-sm tracking-wide text-slate-300 hover:text-white hover:bg-white/10 transition-all" href="#">Kontak</a>
-
 </div>
 </div>
 </nav>
-</header>
-<main class="relative">
-<!-- Hero Section -->
-<section class="relative min-h-[500px] md:h-[600px] flex items-center overflow-hidden">
-    <img src="{{ asset('images/bg_ppidbpp.jpg') }}" 
-         class="absolute inset-0 w-full h-full object-cover z-0" 
-         alt="Banner PPID">
-    
-    <div class="absolute inset-0 bg-blue-900/20 z-10"></div>
+<main>
+<!-- Hero Section: Interactive Carousel -->
+<section class="relative w-full group" id="carousel-container">
+<div class="h-[300px] md:h-[450px] lg:h-[550px]" id="carousel-track">
+<!-- Slide 1: Primary HD Image (Original Slide 0) -->
+<div class="carousel-slide relative h-full">
+<img alt="PPID Balikpapan Welcome Banner" class="w-full h-full object-cover pointer-events-none" src="images/bg_ppidbpp.jpg"/>
+</div>
 
-    <div class="container mx-auto relative z-20">
-        </div>
+<div class="carousel-slide relative h-full">
+<img alt="" class="w-full h-full object-cover pointer-events-none" src=""/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent flex items-end justify-center pb-12">
+<h2 class="text-white font-headline font-extrabold text-xl md:text-3xl tracking-tight opacity-90">isi aja dulu</h2>
+</div>
+</div>
+
+<div class="carousel-slide relative h-full">
+<img alt=""w-full h-full object-cover pointer-events-none" src=""/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent flex items-end justify-center pb-12">
+<h2 class="text-white font-headline font-extrabold text-xl md:text-3xl tracking-tight opacity-90">tambah berita</h2>
+</div>
+</div>
+</div>
+
+<button class="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 flex items-center justify-center bg-black/30 hover:bg-black/50 backdrop-blur-sm text-white rounded-full transition-all z-30 focus:outline-none" id="prev-slide">
+<span class="material-symbols-outlined text-3xl" data-icon="chevron_left">chevron_left</span>
+</button>
+<button class="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 flex items-center justify-center bg-black/30 hover:bg-black/50 backdrop-blur-sm text-white rounded-full transition-all z-30 focus:outline-none" id="next-slide">
+<span class="material-symbols-outlined text-3xl" data-icon="chevron_right">chevron_right</span>
+</button>
+<!-- Pagination Dots -->
+<div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-3 z-20">
+<button class="carousel-dot w-2.5 h-2.5 rounded-full bg-white/40 transition-all hover:bg-white/70" data-index="0"></button>
+<button class="carousel-dot w-2.5 h-2.5 rounded-full bg-white/40 transition-all hover:bg-white/70" data-index="1"></button>
+<button class="carousel-dot w-2.5 h-2.5 rounded-full bg-white/40 transition-all hover:bg-white/70" data-index="2"></button>
+</div>
 </section>
 <!-- Service Quick Links - Bento Grid -->
 <section class="py-16 md:py-24 max-w-7xl mx-auto px-4 md:px-6">
 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-<!-- Main Card - Adjusted to Dark Blue -->
-<div class="sm:col-span-2 bg-[#003f74] text-white p-6 md:p-8 rounded-xl flex flex-col justify-between relative overflow-hidden group min-h-[250px]">
+<!-- Main Card -->
+<div class="sm:col-span-2 bg-primary text-on-primary p-6 md:p-8 rounded-xl flex flex-col justify-between relative overflow-hidden group min-h-[250px]">
 <div class="z-10">
-<div class="bg-white/10 w-14 h-14 rounded-full flex items-center justify-center mb-6">
+<div class="bg-primary-container w-14 h-14 rounded-full flex items-center justify-center mb-6">
 <span class="material-symbols-outlined text-white" data-icon="description">description</span>
 </div>
 <h3 class="text-xl md:text-2xl font-bold mb-2">Formulir Permohonan</h3>
-<p class="text-blue-100/80 mb-6 text-sm md:text-base">Ajukan permintaan informasi publik secara online dengan mudah dan cepat.</p>
+<p class="text-primary-fixed/80 mb-6 text-sm md:text-base">Ajukan permintaan informasi publik secara online dengan mudah dan cepat.</p>
 </div>
 <a class="z-10 inline-flex items-center gap-2 font-bold text-secondary-container hover:gap-4 transition-all" href="#">
-                        Isi Formulir <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+                    Isi Formulir <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
 </a>
 <div class="absolute -right-8 -bottom-8 opacity-10 group-hover:scale-110 transition-transform hidden sm:block">
 <span class="material-symbols-outlined text-[150px] md:text-[180px]" data-icon="article">article</span>
@@ -203,29 +186,14 @@
 </div>
 </div>
 <!-- Weather & Alerts -->
-<div class="bg-blue-50 p-6 rounded-xl flex flex-col justify-between border border-blue-100/50">
-<div class="flex items-center justify-between mb-2">
-<div class="flex items-center gap-3">
-<div class="bg-white/50 p-2 rounded-lg shadow-sm flex items-center justify-center">
-<span class="material-symbols-outlined text-blue-600 text-3xl" data-icon="cloudy_snowing" id="weather-icon">cloudy_snowing</span>
-</div>
+<div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl flex items-center gap-4 border border-blue-100/50">
+<span class="material-symbols-outlined text-blue-600 text-3xl md:text-4xl" data-icon="cloudy_snowing">cloudy_snowing</span>
 <div>
-<p class="text-[10px] font-bold text-blue-800 uppercase tracking-widest">Cuaca Balikpapan</p>
-<p class="font-headline font-bold text-base md:text-lg text-slate-800" id="weather-status">Memuat...</p>
+<p class="text-[10px] md:text-xs font-bold text-blue-800 uppercase tracking-widest">Cuaca Hari Ini</p>
+<p class="font-headline font-bold text-base md:text-lg">Cerah Berawan, 29°C</p>
 </div>
 </div>
-<div class="hidden sm:flex flex-col items-end">
-<span class="text-[10px] font-semibold text-blue-500 uppercase tracking-tighter">Live Update</span>
-<div class="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></div>
-</div>
-</div>
-<div class="mt-auto">
-<a class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-blue-100/50 hover:bg-blue-200/50 rounded-full transition-colors text-[10px] text-blue-700 font-bold border border-blue-200/50" href="https://www.bmkg.go.id/cuaca/prakiraan-cuaca/64.71" target="_blank">
-        SUMBER: BMKG <span class="material-symbols-outlined text-[12px]" data-icon="open_in_new">open_in_new</span>
-</a>
-</div>
-</div>
-<div class="bg-amber-50 p-6 rounded-xl flex items-center gap-4 border border-amber-100/50">
+<div class="bg-amber-50 dark:bg-amber-900/20 p-6 rounded-xl flex items-center gap-4 border border-amber-100/50">
 <span class="material-symbols-outlined text-amber-600 text-3xl md:text-4xl" data-icon="security">security</span>
 <div>
 <p class="text-[10px] md:text-xs font-bold text-amber-800 uppercase tracking-widest">Whistleblower</p>
@@ -255,11 +223,11 @@
 <div class="w-full md:w-3/5 p-6 md:p-8 flex flex-col justify-center">
 <span class="text-[10px] md:text-xs font-bold text-secondary-fixed-dim uppercase tracking-wider mb-2">Pemerintahan</span>
 <h3 class="text-xl md:text-2xl font-bold text-primary mb-4 leading-tight group-hover:text-secondary transition-colors">
-                                        Sosialisasi Keterbukaan Informasi Publik di Lingkungan OPD Balikpapan
-                                    </h3>
+                                    Sosialisasi Keterbukaan Informasi Publik di Lingkungan OPD Balikpapan
+                                </h3>
 <p class="text-on-surface-variant text-sm mb-6 line-clamp-2">
-                                        Pemerintah Kota Balikpapan terus mendorong setiap Organisasi Perangkat Daerah untuk meningkatkan standar pelayanan informasi publik demi kepuasan masyarakat.
-                                    </p>
+                                    Pemerintah Kota Balikpapan terus mendorong setiap Organisasi Perangkat Daerah untuk meningkatkan standar pelayanan informasi publik demi kepuasan masyarakat.
+                                </p>
 <div class="flex items-center gap-4 text-[10px] md:text-xs text-outline">
 <span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm" data-icon="calendar_today">calendar_today</span> 12 Okt 2023</span>
 <span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm" data-icon="person">person</span> Admin PPID</span>
@@ -334,8 +302,7 @@
 <span class="material-symbols-outlined text-outline" data-icon="open_in_new">open_in_new</span>
 </a>
 </div>
-<!-- Survey Kepuasan - Adjusted to Blue Accent -->
-<div class="mt-8 bg-[#003f74] p-6 md:p-8 rounded-2xl text-white relative overflow-hidden">
+<div class="mt-8 bg-primary-container p-6 md:p-8 rounded-2xl text-on-primary-container relative overflow-hidden">
 <h4 class="text-lg md:text-xl font-bold mb-2">Survey Kepuasan</h4>
 <p class="text-xs md:text-sm opacity-80 mb-6">Bantu kami meningkatkan kualitas layanan informasi publik.</p>
 <button class="bg-white text-primary font-bold px-6 py-3 rounded-xl shadow-lg relative z-10 w-full sm:w-auto">Mulai Survey</button>
@@ -374,8 +341,8 @@
 <div class="md:col-span-2">
 <div class="text-xl md:text-2xl font-bold text-blue-900 dark:text-blue-100 mb-6 font-headline">PPID Kota Balikpapan</div>
 <p class="text-slate-600 dark:text-slate-400 max-w-md mb-8">
-                    Pejabat Pengelola Informasi dan Dokumentasi (PPID) Utama Pemerintah Kota Balikpapan bertanggung jawab untuk penyimpanan, pendokumentasian, penyediaan, dan pelayanan informasi publik.
-                </p>
+                Pejabat Pengelola Informasi dan Dokumentasi (PPID) Utama Pemerintah Kota Balikpapan bertanggung jawab untuk penyimpanan, pendokumentasian, penyediaan, dan pelayanan informasi publik.
+            </p>
 <div class="rounded-2xl overflow-hidden shadow-sm aspect-video border border-slate-200">
 <img alt="Map view" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjpopvFvbZ7IspCxsCVumCXpPO-yRLQ3GXptmxjhZDFBDme1dxw4a4vWVI7ntBn1OAXjN5QKL5BUFU4Y7vomE-IgDXVREk68eApo7lJd71pr3PSsb19ee_y4gvzeKtcodCwFnsGI9BZByfat4Qa9txdoC81ONhbhsgG6pApDYseCDI5EpsTZ5ZJvH6DB-acjHGnWWWrOe_UmpzdNbD9yS9pHu5_jn86fnPdJqcIBkhWAnVVrXIvM_oRWPgNp7KmzvbILMEsEY_yvC6"/>
 </div>
@@ -397,17 +364,6 @@
 <span class="text-xs md:text-sm break-all">ppid@balikpapan.go.id</span>
 </li>
 </ul>
-<div class="mt-8 flex gap-4">
-<a class="w-10 h-10 rounded-full bg-slate-200 dark:bg-slate-800 flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#">
-<span class="material-symbols-outlined text-lg" data-icon="social_leaderboard">social_leaderboard</span>
-</a>
-<a class="w-10 h-10 rounded-full bg-slate-200 dark:bg-slate-800 flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#">
-<span class="material-symbols-outlined text-lg" data-icon="photo_camera">photo_camera</span>
-</a>
-<a class="w-10 h-10 rounded-full bg-slate-200 dark:bg-slate-800 flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#">
-<span class="material-symbols-outlined text-lg" data-icon="alternate_email">alternate_email</span>
-</a>
-</div>
 </div>
 <!-- Quick Links -->
 <div>
@@ -422,70 +378,183 @@
 </div>
 <div class="max-w-7xl mx-auto px-4 md:px-6 mt-16 pt-8 border-t border-slate-200 dark:border-slate-800 text-center">
 <p class="text-slate-500 dark:text-slate-400 text-[10px] md:text-xs">
-                © 2024 Pemerintah Kota Balikpapan. PPID Utama. All rights reserved.
-            </p>
+            © 2024 Pemerintah Kota Balikpapan. PPID Utama. All rights reserved.
+        </p>
 </div>
 </footer>
 <script>
-        function updateClock() {
-            const now = new Date();
-            
-            const days = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
-            const months = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
-            const dayName = days[now.getDay()];
-            const dateStr = `${now.getDate()} ${months[now.getMonth()]} ${now.getFullYear()}`;
-            const fullDateString = `${dayName}, ${dateStr}`;
-
-            const hours = String(now.getHours()).padStart(2, '0');
-            const minutes = String(now.getMinutes()).padStart(2, '0');
-            const seconds = String(now.getSeconds()).padStart(2, '0');
-            
-            const offset = -now.getTimezoneOffset() / 60;
-            let tz = 'WITA';
-            if (offset === 7) tz = 'WIB';
-            else if (offset === 8) tz = 'WITA';
-            else if (offset === 9) tz = 'WIT';
-            else tz = 'UTC' + (offset >= 0 ? '+' + offset : offset);
-
-            const timeString = `${hours}:${minutes}:${seconds} ${tz}`;
-            
-            const desktopClock = document.getElementById('real-time-clock');
-            const mobileClock = document.getElementById('mobile-clock');
-            
-            [desktopClock, mobileClock].forEach(clock => {
-                if (clock) {
-                    const dateEl = clock.querySelector('.date-line');
-                    const timeEl = clock.querySelector('.time-line');
-                    if (dateEl) dateEl.textContent = fullDateString;
-                    if (timeEl) timeEl.textContent = timeString;
-                }
-            });
-        }
-
-        function updateWeather() {
-            const statuses = ['Cerah', 'Cerah Berawan', 'Berawan', 'Hujan Ringan'];
-            const icons = ['sunny', 'cloudy_snowing', 'cloud', 'rainy'];
-            
-            const randomIdx = Math.floor(Math.random() * statuses.length);
-            // Requested range: 29-32°C
-            const temp = Math.floor(Math.random() * (32 - 29 + 1)) + 29;
-            
-            const weatherStatusEl = document.getElementById('weather-status');
-            const weatherIconEl = document.getElementById('weather-icon');
-            
-            if (weatherStatusEl) {
-                weatherStatusEl.textContent = `${statuses[randomIdx]}, ${temp}°C`;
-            }
-            if (weatherIconEl) {
-                weatherIconEl.setAttribute('data-icon', icons[randomIdx]);
-                weatherIconEl.textContent = icons[randomIdx];
-            }
-        }
-
-        setInterval(updateClock, 1000);
-        updateClock();
+    function updateClock() {
+        const now = new Date();
+        const days = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
+        const months = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
         
-        setInterval(updateWeather, 60000); // Update every minute for 'real-time' feel in demo
-        updateWeather();
-    </script>
+        const dayName = days[now.getDay()];
+        const day = now.getDate();
+        const monthName = months[now.getMonth()];
+        const year = now.getFullYear();
+        
+        const hours = String(now.getHours()).padStart(2, '0');
+        const minutes = String(now.getMinutes()).padStart(2, '0');
+        const seconds = String(now.getSeconds()).padStart(2, '0');
+        
+        const offset = -now.getTimezoneOffset() / 60;
+        let tz = '';
+        if (offset === 7) tz = 'WIB';
+        else if (offset === 8) tz = 'WITA';
+        else if (offset === 9) tz = 'WIT';
+        else {
+            tz = now.toLocaleTimeString('en-us',{timeZoneName:'short'}).split(' ')[2];
+        }
+
+        const dateString = `${dayName}, ${day} ${monthName} ${year}`;
+        const timeString = `${hours}:${minutes}:${seconds} ${tz}`;
+        
+        const desktopDate = document.getElementById('desktop-date');
+        const desktopTime = document.getElementById('desktop-time');
+        const mobileDate = document.getElementById('mobile-date');
+        const mobileTime = document.getElementById('mobile-time');
+        
+        if (desktopDate) desktopDate.textContent = dateString;
+        if (desktopTime) desktopTime.textContent = timeString;
+        if (mobileDate) mobileDate.textContent = dateString;
+        if (mobileTime) mobileTime.textContent = timeString;
+    }
+    setInterval(updateClock, 1000);
+    updateClock();
+
+    // Carousel Logic - Fully functional with Infinite Loop
+    const track = document.getElementById('carousel-track');
+    const container = document.getElementById('carousel-container');
+    const originalSlides = Array.from(track.children);
+    const nextButton = document.getElementById('next-slide');
+    const prevButton = document.getElementById('prev-slide');
+    const dots = Array.from(document.querySelectorAll('.carousel-dot'));
+    
+    // Clone slides for infinite effect
+    const firstClone = originalSlides[0].cloneNode(true);
+    const lastClone = originalSlides[originalSlides.length - 1].cloneNode(true);
+    
+    track.appendChild(firstClone);
+    track.insertBefore(lastClone, originalSlides[0]);
+
+    const slides = Array.from(track.children);
+    let currentIndex = 1; 
+    let isTransitioning = false;
+    let autoPlayTimer;
+
+    function updateCarousel(instant = false) {
+        if (instant) track.style.transition = 'none';
+        else track.style.transition = 'transform 0.5s cubic-bezier(0.4, 0, 0.2, 1)';
+        
+        track.style.transform = `translateX(-${currentIndex * 100}%)`;
+        
+        // Update dots UI
+        let dotIndex = currentIndex - 1;
+        if (currentIndex === 0) dotIndex = originalSlides.length - 1;
+        if (currentIndex === slides.length - 1) dotIndex = 0;
+
+        dots.forEach((dot, idx) => {
+            if (idx === dotIndex) {
+                dot.classList.remove('bg-white/40');
+                dot.classList.add('bg-white', 'scale-125');
+            } else {
+                dot.classList.add('bg-white/40');
+                dot.classList.remove('bg-white', 'scale-125');
+            }
+        });
+    }
+
+    track.addEventListener('transitionend', () => {
+        isTransitioning = false;
+        if (currentIndex === 0) {
+            currentIndex = slides.length - 2;
+            updateCarousel(true);
+        }
+        if (currentIndex === slides.length - 1) {
+            currentIndex = 1;
+            updateCarousel(true);
+        }
+    });
+
+    function moveNext() {
+        if (isTransitioning) return;
+        isTransitioning = true;
+        currentIndex++;
+        updateCarousel();
+    }
+
+    function movePrev() {
+        if (isTransitioning) return;
+        isTransitioning = true;
+        currentIndex--;
+        updateCarousel();
+    }
+
+    function startAutoPlay() {
+        autoPlayTimer = setInterval(moveNext, 7000);
+    }
+
+    function resetAutoPlay() {
+        clearInterval(autoPlayTimer);
+        startAutoPlay();
+    }
+
+    nextButton.addEventListener('click', () => { moveNext(); resetAutoPlay(); });
+    prevButton.addEventListener('click', () => { movePrev(); resetAutoPlay(); });
+    
+    dots.forEach((dot, idx) => {
+        dot.addEventListener('click', () => {
+            if (isTransitioning) return;
+            currentIndex = idx + 1;
+            updateCarousel();
+            resetAutoPlay();
+        });
+    });
+
+    // Drag functionality
+    let startX = 0;
+    let isDragging = false;
+    let dragMove = 0;
+
+    const dragStart = (e) => {
+        if (isTransitioning) return;
+        isDragging = true;
+        startX = e.type.includes('touch') ? e.touches[0].pageX : e.pageX;
+        clearInterval(autoPlayTimer);
+        track.style.transition = 'none';
+    };
+
+    const dragging = (e) => {
+        if (!isDragging) return;
+        const currentX = e.type.includes('touch') ? e.touches[0].pageX : e.pageX;
+        dragMove = currentX - startX;
+        const currentTranslate = -currentIndex * track.offsetWidth;
+        track.style.transform = `translateX(${currentTranslate + dragMove}px)`;
+    };
+
+    const dragEnd = () => {
+        if (!isDragging) return;
+        isDragging = false;
+        if (Math.abs(dragMove) > track.offsetWidth / 5) {
+            if (dragMove > 0) movePrev();
+            else moveNext();
+        } else {
+            updateCarousel();
+        }
+        dragMove = 0;
+        startAutoPlay();
+    };
+
+    track.addEventListener('mousedown', dragStart);
+    window.addEventListener('mousemove', dragging);
+    window.addEventListener('mouseup', dragEnd);
+    
+    track.addEventListener('touchstart', dragStart);
+    track.addEventListener('touchmove', dragging);
+    track.addEventListener('touchend', dragEnd);
+
+    // Initialize
+    updateCarousel(true);
+    startAutoPlay();
+</script>
 </body></html>
