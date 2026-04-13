@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Berita Balikpapan - PPID Balikpapan</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "background": "#f8f9fa",
+                        "outline": "#727782",
+                        "on-error-container": "#93000a",
+                        "surface-container-low": "#f3f4f5",
+                        "on-secondary": "#ffffff",
+                        "outline-variant": "#c2c6d2",
+                        "on-primary": "#ffffff",
+                        "inverse-on-surface": "#f0f1f2",
+                        "on-secondary-fixed-variant": "#5b4300",
+                        "on-secondary-container": "#6c5000",
+                        "on-primary-container": "#aaccff",
+                        "surface-dim": "#d9dadb",
+                        "on-surface": "#191c1d",
+                        "on-primary-fixed": "#001c39",
+                        "secondary-fixed": "#ffdf9e",
+                        "on-background": "#191c1d",
+                        "tertiary-container": "#005e67",
+                        "surface-container": "#edeeef",
+                        "on-secondary-fixed": "#261a00",
+                        "primary-container": "#00569c",
+                        "error-container": "#ffdad6",
+                        "surface": "#f8f9fa",
+                        "inverse-surface": "#2e3132",
+                        "secondary-container": "#fdc003",
+                        "on-surface-variant": "#424751",
+                        "surface-bright": "#f8f9fa",
+                        "on-tertiary-fixed": "#001f23",
+                        "secondary-fixed-dim": "#fabd00",
+                        "inverse-primary": "#a4c9ff",
+                        "on-tertiary-container": "#78d8e5",
+                        "on-tertiary": "#ffffff",
+                        "primary-fixed": "#d4e3ff",
+                        "error": "#ba1a1a",
+                        "primary": "#003f74",
+                        "on-primary-fixed-variant": "#004883",
+                        "surface-container-high": "#e7e8e9",
+                        "tertiary": "#00454c",
+                        "surface-container-highest": "#e1e3e4",
+                        "secondary": "#785900",
+                        "tertiary-fixed-dim": "#75d5e2",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-variant": "#e1e3e4",
+                        "on-error": "#ffffff",
+                        "tertiary-fixed": "#92f1fe",
+                        "surface-tint": "#1860a6",
+                        "primary-fixed-dim": "#a4c9ff",
+                        "on-tertiary-fixed-variant": "#004f56"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>.batik-pattern {
+    background-image: url();
+    background-size: 400px;
+    background-repeat: repeat
+    }
+.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24
+    }</style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- Header Section -->
+<header class="sticky top-0 z-50">
+<!-- Top NavBar: Batik Pattern + Search + Clock -->
+<div class="batik-pattern w-full py-2 bg-surface border-b border-outline-variant/20 relative">
+<div class="absolute inset-0 bg-surface/90 backdrop-blur-sm"></div>
+<div class="max-w-7xl mx-auto px-6 flex justify-between items-center relative z-10">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 bg-primary flex items-center justify-center rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-white text-2xl">account_balance</span>
+</div>
+<span class="font-headline font-extrabold text-primary text-xl tracking-tight">PPID Balikpapan</span>
+</div>
+<div class="hidden md:flex flex-1 max-w-md mx-8">
+<div class="relative w-full">
+<input class="w-full pl-10 pr-4 py-2 bg-surface-container-lowest border-none rounded-full shadow-sm focus:ring-2 focus:ring-primary text-sm" placeholder="Cari informasi di sini..." type="text"/>
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline">search</span>
+</div>
+</div>
+<div class="flex items-center gap-4 text-primary font-bold text-xs uppercase tracking-wider">
+<div class="flex flex-col items-end">
+<span id="day-date">Selasa, 14 Mei 2024</span>
+<span class="text-secondary" id="time">09:45:22 WITA</span>
+</div>
+<span class="material-symbols-outlined text-primary">language</span>
+</div>
+</div>
+</div>
+<!-- Bottom NavBar: Dark Navigation -->
+<nav class="bg-primary text-white shadow-lg">
+<div class="max-w-7xl mx-auto px-6">
+<ul class="flex items-center gap-8 py-4 font-headline text-sm font-semibold tracking-wide">
+<li><a class="hover:text-secondary-container transition-colors" href="http://ppidbalikpapan.test/">Beranda</a></li>
+<li><a class="hover:text-secondary-container transition-colors" href="#">Profil</a></li>
+<li><a class="hover:text-secondary-container transition-colors" href="#">Informasi Publik</a></li>
+<li><a class="hover:text-secondary-container transition-colors" href="#">Layanan Informasi</a></li>
+<li class="border-b-2 border-secondary-container pb-1"><a class="text-secondary-container" href="#">Berita</a></li>
+<li><a class="hover:text-secondary-container transition-colors" href="#">Kontak</a></li>
+</ul>
+</div>
+</nav>
+</header>
+<main>
+<!-- Title Section -->
+<section class="relative py-20 bg-surface-container overflow-hidden">
+<div class="absolute top-0 right-0 w-1/3 h-full opacity-5 pointer-events-none batik-pattern"></div>
+<div class="max-w-7xl mx-auto px-6 relative z-10">
+<nav class="flex mb-4 text-xs font-medium text-outline uppercase tracking-widest gap-2">
+<a href="#">Beranda</a>
+<span>/</span>
+<span class="text-primary">Berita</span>
+</nav>
+<h1 class="text-5xl md:text-6xl font-headline font-extrabold text-primary leading-tight">
+                    Berita <span class="text-secondary">Balikpapan</span>
+</h1>
+<p class="mt-6 text-lg text-on-surface-variant max-w-2xl leading-relaxed">
+                    Akses informasi terkini mengenai kebijakan, layanan publik, dan perkembangan terbaru Kota Balikpapan secara transparan dan akuntabel.
+                </p>
+</div>
+</section>
+<!-- Search & Filter Section -->
+<section class="sticky top-[120px] z-40 bg-white/80 backdrop-blur-md border-y border-outline-variant/10">
+<div class="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex flex-wrap items-center gap-2">
+<button class="px-5 py-2.5 rounded-full bg-primary text-on-primary text-sm font-semibold">Semua</button>
+<button class="px-5 py-2.5 rounded-full bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-colors text-sm font-semibold">Pemerintahan</button>
+<button class="px-5 py-2.5 rounded-full bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-colors text-sm font-semibold">Layanan</button>
+<button class="px-5 py-2.5 rounded-full bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-colors text-sm font-semibold">Ekonomi</button>
+<button class="px-5 py-2.5 rounded-full bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-colors text-sm font-semibold">Kesehatan</button>
+</div>
+<div class="relative w-full md:w-80">
+<input class="w-full pl-4 pr-12 py-3 bg-surface-container-low border-none rounded-xl focus:ring-2 focus:ring-primary text-sm" placeholder="Cari berita..." type="text"/>
+<button class="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-sm">search</span>
+</button>
+</div>
+</div>
+</section>
+<!-- News Grid -->
+<section class="py-12 max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- News Card 1 -->
+<article class="group bg-surface-container-lowest rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 flex flex-col">
+<div class="relative overflow-hidden aspect-video">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="professional photography of Balikpapan city hall building in bright daylight with lush tropical greenery in the foreground" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-BD42T210TfyMbzPMBSbq_Ie7Kz8U7x6-kUP8022Ak769GCNLLCateYD2Etpmw3wdOpg61o1WMgn5bwgxMIJ2SCpuuIpm6k6v-JAf8mKUmcShAPkehEH6ZH8Aq4jXin6RCzYpI2vXvZsqe8yYmLuHs-xKr8H47ognTsCJE91kk1IQkPQXX5Zo2yb26CDCxMDgsxquvT4yYDRFJBblbBcUrv7y4nRWPcaMXsK8ZGCD1k8BtzQpZf-XvyABm7iXZAUCfvcaeA114vsD"/>
+<div class="absolute top-4 left-4">
+<span class="px-3 py-1 bg-secondary text-white text-[10px] font-bold uppercase tracking-widest rounded-full">Pemerintahan</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<time class="text-xs font-semibold text-outline mb-3 uppercase tracking-tighter">14 MEI 2024</time>
+<h3 class="text-xl font-headline font-bold text-on-surface leading-snug group-hover:text-primary transition-colors mb-3">
+                            Pemerintah Kota Balikpapan Raih Penghargaan Transparansi Publik 2024
+                        </h3>
+<p class="text-on-surface-variant text-sm line-clamp-3 mb-6">
+                            Kota Balikpapan kembali menorehkan prestasi gemilang dengan meraih kategori predikat informatif dalam pemeringkatan transparansi layanan informasi publik nasional.
+                        </p>
+<div class="mt-auto flex items-center justify-between">
+<a class="text-primary font-bold text-sm flex items-center gap-2 group/btn" href="#">
+                                Selengkapnya
+                                <span class="material-symbols-outlined text-sm group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<!-- News Card 2 -->
+<article class="group bg-surface-container-lowest rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 flex flex-col">
+<div class="relative overflow-hidden aspect-video">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="clean modern medical clinic interior with medical staff assisting a citizen, soft natural lighting through large windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCON1MnTytj9ujS8_J-v81rXKNMRNuqd78bSqIPlrG4c97t1eXZm-hLSn4UijawKvKCO62xXBDCKMs9yUGdaFfTrdfAX8LCPk120gMmcCs9d7Zpy_sseEdvASl9YC2vxKTziTINUVKgTA3YvFSGhdeVjIbcCqbKMDt479oKhxqzXI7WHddbe0wRVv-1Oe-2PmFMpqEEMSVPYhGOifupt-UBvwnhp2TY6e_64z0_JqKhzlRCm9jKwN_8xpvfmmbNj4fOCPYpnuxrvqiq"/>
+<div class="absolute top-4 left-4">
+<span class="px-3 py-1 bg-tertiary text-white text-[10px] font-bold uppercase tracking-widest rounded-full">Layanan</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<time class="text-xs font-semibold text-outline mb-3 uppercase tracking-tighter">12 MEI 2024</time>
+<h3 class="text-xl font-headline font-bold text-on-surface leading-snug group-hover:text-primary transition-colors mb-3">
+                            Digitalisasi Puskesmas: Pendaftaran Online Kini Tersedia di Seluruh Kecamatan
+                        </h3>
+<p class="text-on-surface-variant text-sm line-clamp-3 mb-6">
+                            Meningkatkan aksesibilitas kesehatan, Dinas Kesehatan Kota Balikpapan resmi meluncurkan modul pendaftaran pasien online untuk meminimalisir antrean fisik.
+                        </p>
+<div class="mt-auto flex items-center justify-between">
+<a class="text-primary font-bold text-sm flex items-center gap-2 group/btn" href="#">
+                                Selengkapnya
+                                <span class="material-symbols-outlined text-sm group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<!-- News Card 3 -->
+<article class="group bg-surface-container-lowest rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 flex flex-col">
+<div class="relative overflow-hidden aspect-video">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="vibrant traditional market in Balikpapan with fresh colorful produce and friendly local vendors in morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUble0jS2EKmg7CMXdxK6REg9Zc-24sz9RVQrK3M79QDxmZz2NJrd5T2IaFtZ98YSKrUBAHlsRcKVQtMw3G3dxD4RQiSnGpsjFAEAyqnJr9Yy7-_bvrZdvAe-y-_h_myyLpAeCPG4hBNvwKbUnj0YDGWShQwsqlsXkm-j0oklqol8ChMJjNzlNcmBlJHNExUQnoidzCE084Y30ukVMG8Tam7H3FP6v7cO4WJh6BzCuMiPUKVNZLanm_DvpUpg2cO_1e9ls4qT4I_aW"/>
+<div class="absolute top-4 left-4">
+<span class="px-3 py-1 bg-primary-container text-on-primary-container text-[10px] font-bold uppercase tracking-widest rounded-full">Ekonomi</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<time class="text-xs font-semibold text-outline mb-3 uppercase tracking-tighter">10 MEI 2024</time>
+<h3 class="text-xl font-headline font-bold text-on-surface leading-snug group-hover:text-primary transition-colors mb-3">
+                            Penguatan UMKM Lokal Menuju Balikpapan sebagai Gerbang Ibu Kota Negara
+                        </h3>
+<p class="text-on-surface-variant text-sm line-clamp-3 mb-6">
+                            Diskusi panel lintas sektoral membahas strategi penguatan ekonomi kerakyatan bagi pelaku usaha kecil menengah di tengah perkembangan IKN.
+                        </p>
+<div class="mt-auto flex items-center justify-between">
+<a class="text-primary font-bold text-sm flex items-center gap-2 group/btn" href="#">
+                                Selengkapnya
+                                <span class="material-symbols-outlined text-sm group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<!-- News Card 4 -->
+<article class="group bg-surface-container-lowest rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 flex flex-col">
+<div class="relative overflow-hidden aspect-video">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="modern urban park in Balikpapan with sleek walkways, flowering trees, and sustainable design elements at dusk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLFMCuPjFiWoSPcefr2k0C90CInnKiNplmJkprc2s4u_jcWVjf98m-d6y4scUWeNDjT5HtI2pPanXnfy7tDT8FHtJb_MC-6oVhbfNBgbQ-tG96u1FdgRSJhWBoAZXtviKLqzhoiB90XKm5qdBoC9-_3-JXV6D-GXpRwoPSNWE6gUl1EEwyVKH-qD54XWhUtyJyfDbkpJyWrrVNENNa2yiRpxV3NJb_BB6yqgcaepAFtgkslcwtSReLOvJlPlIw8UOJycfDbIX70Pv3"/>
+<div class="absolute top-4 left-4">
+<span class="px-3 py-1 bg-secondary text-white text-[10px] font-bold uppercase tracking-widest rounded-full">Pemerintahan</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<time class="text-xs font-semibold text-outline mb-3 uppercase tracking-tighter">08 MEI 2024</time>
+<h3 class="text-xl font-headline font-bold text-on-surface leading-snug group-hover:text-primary transition-colors mb-3">
+                            Revitalisasi Ruang Terbuka Hijau di Kawasan Sudirman Capai 90 Persen
+                        </h3>
+<p class="text-on-surface-variant text-sm line-clamp-3 mb-6">
+                            Proyek perbaikan trotoar dan penambahan taman kota di pusat Balikpapan hampir selesai, menjanjikan kenyamanan lebih bagi pejalan kaki.
+                        </p>
+<div class="mt-auto flex items-center justify-between">
+<a class="text-primary font-bold text-sm flex items-center gap-2 group/btn" href="#">
+                                Selengkapnya
+                                <span class="material-symbols-outlined text-sm group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<!-- News Card 5 -->
+<article class="group bg-surface-container-lowest rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 flex flex-col">
+<div class="relative overflow-hidden aspect-video">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="group of students using high-tech laboratory equipment in a modern school setting, bright and inspiring atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5UCaWY4xAq0ecXUR_NNnK5pVbKJ8DB5hoBlCyRxGaiF94o1OQdiFvX5PaSeF5mEmTYwc_dqDHVECM0Z-1sdKHDFBrQBIE996172ZppIBRlTpToFxU7UAPBcTBBpwbQ_hiE55lQhpMO6Jv9SFUgNJYkcJID40ToJGlHxVAvFhIeKj9n63SzbHfd3G5RKV2aqi6501uthjs6UlJuODokdWGO29kXsMvh50ueqdAu7ni10C7chrvQ8NmnAwA3h1XD1nnlu4t56HLojyi"/>
+<div class="absolute top-4 left-4">
+<span class="px-3 py-1 bg-tertiary text-white text-[10px] font-bold uppercase tracking-widest rounded-full">Pendidikan</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<time class="text-xs font-semibold text-outline mb-3 uppercase tracking-tighter">05 MEI 2024</time>
+<h3 class="text-xl font-headline font-bold text-on-surface leading-snug group-hover:text-primary transition-colors mb-3">
+                            Beasiswa Prestasi Balikpapan 2024 Resmi Dibuka, Simak Persyaratannya
+                        </h3>
+<p class="text-on-surface-variant text-sm line-clamp-3 mb-6">
+                            Dinas Pendidikan mengumumkan pembukaan pendaftaran beasiswa bagi mahasiswa asal Balikpapan yang berprestasi di tingkat nasional dan internasional.
+                        </p>
+<div class="mt-auto flex items-center justify-between">
+<a class="text-primary font-bold text-sm flex items-center gap-2 group/btn" href="#">
+                                Selengkapnya
+                                <span class="material-symbols-outlined text-sm group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<!-- News Card 6 -->
+<article class="group bg-surface-container-lowest rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 flex flex-col">
+<div class="relative overflow-hidden aspect-video">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="smart city command center with glowing screens displaying data visualizations and city monitoring feeds" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4ZjUvliKY0ZCuorwN-5toGXZ_QABJtnYZ2F5wFUDm9QIT2Gja9XLlxjkxP0X8rP1jaKp0tKPQeujsEI1KPSEnHe0y3CvmA02b_egw-AJrCuT5lE0p12J7XfhDYhwRygdscFlhBe7DX43xGrTFHHO4sPdzFb47UZuxbxfs4W_k3qQIutXANviY5X89m_pURTtmkJW_F-vJX27BRbDqbjHfUDkZ_FKiil3PDS143F-y-VBqi_qLBR1PFMAtALPD_sRF-n0_m1Q5aTME"/>
+<div class="absolute top-4 left-4">
+<span class="px-3 py-1 bg-primary text-white text-[10px] font-bold uppercase tracking-widest rounded-full">Smart City</span>
+</div>
+</div>
+<div class="p-6 flex flex-col flex-grow">
+<time class="text-xs font-semibold text-outline mb-3 uppercase tracking-tighter">01 MEI 2024</time>
+<h3 class="text-xl font-headline font-bold text-on-surface leading-snug group-hover:text-primary transition-colors mb-3">
+                            Optimalisasi CCTV Kota untuk Pemantauan Arus Lalu Lintas Real-Time
+                        </h3>
+<p class="text-on-surface-variant text-sm line-clamp-3 mb-6">
+                            Dinas Perhubungan meningkatkan kapasitas server pemantauan untuk integrasi data lalu lintas yang lebih akurat melalui platform Balikpapan Single Window.
+                        </p>
+<div class="mt-auto flex items-center justify-between">
+<a class="text-primary font-bold text-sm flex items-center gap-2 group/btn" href="#">
+                                Selengkapnya
+                                <span class="material-symbols-outlined text-sm group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+</div>
+<!-- Pagination -->
+<div class="mt-20 flex justify-center items-center gap-2">
+<button class="w-10 h-10 flex items-center justify-center rounded-lg bg-surface-container text-outline hover:bg-primary hover:text-white transition-colors">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-lg bg-primary text-white font-bold">1</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-bold">2</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-bold">3</button>
+<span class="px-2 text-outline">...</span>
+<button class="w-10 h-10 flex items-center justify-center rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-bold">12</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-lg bg-surface-container text-outline hover:bg-primary hover:text-white transition-colors">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</section>
+</main>
+<!-- Footer Section -->
+<footer class="bg-slate-50 border-t border-slate-200 pt-16 pb-8">
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
+<!-- Brand Column -->
+<div class="col-span-1 md:col-span-1">
+<div class="flex items-center gap-3 mb-6">
+<div class="w-8 h-8 bg-primary rounded flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-lg">account_balance</span>
+</div>
+<span class="text-lg font-bold text-blue-900 tracking-tight">PPID Balikpapan</span>
+</div>
+<p class="text-sm text-slate-500 leading-relaxed">
+                    Pusat Layanan Informasi dan Dokumentasi Pemerintah Kota Balikpapan. Transparansi untuk pelayanan publik yang lebih baik.
+                </p>
+<div class="flex gap-4 mt-8">
+<a class="w-8 h-8 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 hover:bg-primary hover:text-white transition-all" href="#"><span class="material-symbols-outlined text-sm">public</span></a>
+<a class="w-8 h-8 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 hover:bg-primary hover:text-white transition-all" href="#"><span class="material-symbols-outlined text-sm">mail</span></a>
+<a class="w-8 h-8 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 hover:bg-primary hover:text-white transition-all" href="#"><span class="material-symbols-outlined text-sm">call</span></a>
+</div>
+</div>
+<!-- Links Column 1 -->
+<div>
+<h4 class="font-headline font-bold text-blue-900 mb-6 uppercase tracking-widest text-xs">Layanan Populer</h4>
+<ul class="space-y-4">
+<li><a class="text-sm text-slate-500 hover:text-blue-700 hover:underline transition-all" href="#">Permohonan Informasi</a></li>
+<li><a class="text-sm text-slate-500 hover:text-blue-700 hover:underline transition-all" href="#">Pengajuan Keberatan</a></li>
+<li><a class="text-sm text-slate-500 hover:text-blue-700 hover:underline transition-all" href="#">Whistleblower System</a></li>
+<li><a class="text-sm text-slate-500 hover:text-blue-700 hover:underline transition-all" href="#">Lapor!</a></li>
+</ul>
+</div>
+<!-- Links Column 2 -->
+<div>
+<h4 class="font-headline font-bold text-blue-900 mb-6 uppercase tracking-widest text-xs">Akses Data</h4>
+<ul class="space-y-4">
+<li><a class="text-sm text-slate-500 hover:text-blue-700 hover:underline transition-all" href="#">Data Terbuka</a></li>
+<li><a class="text-sm text-slate-500 hover:text-blue-700 hover:underline transition-all" href="#">Daftar Informasi Publik</a></li>
+<li><a class="text-sm text-slate-500 hover:text-blue-700 hover:underline transition-all" href="#">Peta Situs</a></li>
+<li><a class="text-sm text-slate-500 hover:text-blue-700 hover:underline transition-all" href="#">Kebijakan Privasi</a></li>
+</ul>
+</div>
+<!-- Contact Column -->
+<div>
+<h4 class="font-headline font-bold text-blue-900 mb-6 uppercase tracking-widest text-xs">Kontak Kami</h4>
+<div class="space-y-4">
+<div class="flex gap-3">
+<span class="material-symbols-outlined text-primary text-sm">location_on</span>
+<p class="text-sm text-slate-500 leading-relaxed">
+                            Jl. Jenderal Sudirman No.1, Balikpapan Kota, Kota Balikpapan, Kalimantan Timur 76113
+                        </p>
+</div>
+<div class="flex gap-3">
+<span class="material-symbols-outlined text-primary text-sm">mail</span>
+<p class="text-sm text-slate-500">ppid@balikpapan.go.id</p>
+</div>
+<div class="flex gap-3">
+<span class="material-symbols-outlined text-primary text-sm">call</span>
+<p class="text-sm text-slate-500">(0542) 880000</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Footer -->
+<div class="max-w-7xl mx-auto px-6 mt-16 pt-8 border-t border-slate-200">
+<div class="flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-xs text-slate-400 font-medium tracking-tight">
+                    © 2024 Pemerintah Kota Balikpapan. PPID Utama.
+                </p>
+<div class="flex items-center gap-4">
+</div>
+</div>
+</div>
+</footer>
+<!-- FAB for Info Request -->
+<button class="fixed bottom-8 right-8 w-14 h-14 bg-secondary-container text-on-secondary-container rounded-full shadow-2xl flex items-center justify-center group hover:scale-110 transition-all z-50">
+<span class="material-symbols-outlined text-2xl group-hover:rotate-12 transition-transform" data-weight="fill">add_comment</span>
+<div class="absolute right-full mr-4 bg-white px-4 py-2 rounded-xl shadow-xl border border-outline-variant/10 whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
+<p class="text-sm font-bold text-primary">Butuh Informasi?</p>
+</div>
+</button>
+</body></html>
