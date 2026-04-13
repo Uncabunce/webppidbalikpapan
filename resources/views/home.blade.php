@@ -3,10 +3,77 @@
 <html lang="id"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>PPID Kota Balikpapan - Layanan Informasi Publik</title>
+<title>PPID Kota Balikpapan</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary": "#785900",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-fixed": "#001f23",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "on-surface": "#191c1d",
+                        "surface": "#f8f9fa",
+                        "surface-container-highest": "#e1e3e4",
+                        "secondary-fixed-dim": "#fabd00",
+                        "error-container": "#ffdad6",
+                        "outline-variant": "#c2c6d2",
+                        "surface-variant": "#e1e3e4",
+                        "secondary-container": "#fdc003",
+                        "primary-fixed-dim": "#a4c9ff",
+                        "on-primary-fixed-variant": "#004883",
+                        "on-primary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed": "#92f1fe",
+                        "primary": "#003f74",
+                        "surface-container": "#edeeef",
+                        "background": "#f8f9fa",
+                        "on-background": "#191c1d",
+                        "on-secondary-fixed-variant": "#5b4300",
+                        "tertiary-container": "#005e67",
+                        "on-error": "#ffffff",
+                        "surface-tint": "#1860a6",
+                        "outline": "#727782",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed": "#d4e3ff",
+                        "on-primary-fixed": "#001c39",
+                        "surface-bright": "#f8f9fa",
+                        "tertiary-fixed-dim": "#75d5e2",
+                        "inverse-on-surface": "#f0f1f2",
+                        "on-secondary-container": "#6c5000",
+                        "on-primary-container": "#aaccff",
+                        "surface-container-low": "#f3f4f5",
+                        "inverse-surface": "#2e3132",
+                        "on-tertiary-container": "#78d8e5",
+                        "secondary-fixed": "#ffdf9e",
+                        "primary-container": "#00569c",
+                        "surface-container-high": "#e7e8e9",
+                        "surface-dim": "#d9dadb",
+                        "inverse-primary": "#a4c9ff",
+                        "on-tertiary-fixed-variant": "#004f56",
+                        "tertiary": "#00454c"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
 <style>
         .material-symbols-outlined {
             font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24
@@ -92,8 +159,11 @@
 <div class="flex flex-nowrap md:gap-0">
 <a class="whitespace-nowrap px-4 md:px-6 py-3 font-headline font-bold text-sm tracking-wide text-secondary-container border-b-2 border-secondary-container bg-white/5" href="#">Beranda</a>
 <a class="whitespace-nowrap px-4 md:px-6 py-3 font-headline font-bold text-sm tracking-wide text-slate-300 hover:text-white hover:bg-white/10 transition-all" href="#">Profil</a>
-<a class="whitespace-nowrap px-4 md:px-6 py-3 font-headline font-bold text-sm tracking-wide text-slate-300 hover:text-white hover:bg-white/10 transition-all" href="#">Informasi</a>
-<a class="whitespace-nowrap px-4 md:px-6 py-3 font-headline font-bold text-sm tracking-wide text-slate-300 hover:text-white hover:bg-white/10 transition-all" href="#">Layanan</a>
+<a class="whitespace-nowrap px-4 md:px-6 py-3 font-headline font-bold text-sm tracking-wide text-slate-300 hover:text-white hover:bg-white/10 transition-all" href="#">Informasi Publik</a>
+<a class="whitespace-nowrap px-4 md:px-6 py-3 font-headline font-bold text-sm tracking-wide text-slate-300 hover:text-white hover:bg-white/10 transition-all" href="#">Layanan Informasi</a>
+<a class="whitespace-nowrap px-4 md:px-6 py-3 font-headline font-bold text-sm tracking-wide text-slate-300 hover:text-white hover:bg-white/10 transition-all" href="#">Data Statistik</a>
+<a class="whitespace-nowrap px-4 md:px-6 py-3 font-headline font-bold text-sm tracking-wide text-slate-300 hover:text-white hover:bg-white/10 transition-all" href="#">PPID Pelaksana</a>
+<a class="whitespace-nowrap px-4 md:px-6 py-3 font-headline font-bold text-sm tracking-wide text-slate-300 hover:text-white hover:bg-white/10 transition-all" href="#">Berita</a>
 <a class="whitespace-nowrap px-4 md:px-6 py-3 font-headline font-bold text-sm tracking-wide text-slate-300 hover:text-white hover:bg-white/10 transition-all" href="#">Kontak</a>
 </div>
 </div>
@@ -128,7 +198,7 @@
 <button class="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 flex items-center justify-center bg-black/30 hover:bg-black/50 backdrop-blur-sm text-white rounded-full transition-all z-30 focus:outline-none" id="next-slide">
 <span class="material-symbols-outlined text-3xl" data-icon="chevron_right">chevron_right</span>
 </button>
-<!-- Pagination Dots -->
+
 <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-3 z-20">
 <button class="carousel-dot w-2.5 h-2.5 rounded-full bg-white/40 transition-all hover:bg-white/70" data-index="0"></button>
 <button class="carousel-dot w-2.5 h-2.5 rounded-full bg-white/40 transition-all hover:bg-white/70" data-index="1"></button>
