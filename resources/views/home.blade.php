@@ -4,7 +4,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>PPID Kota Balikpapan</title>
-<link rel="icon" type="png" href="{{ asset('kota balikpapan.png') }}">
+<link rel="icon" type="png" href="{{ asset('images/kota balikpapan.png') }}">
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
@@ -160,11 +160,15 @@
 <div class="flex flex-nowrap md:gap-0">
 <a class="whitespace-nowrap px-4 md:px-6 py-3 font-headline font-bold text-sm tracking-wide text-secondary-container border-b-2 border-secondary-container bg-white/5" href="#">Beranda</a>
 <a class="whitespace-nowrap px-4 md:px-6 py-3 font-headline font-bold text-sm tracking-wide text-slate-300 hover:text-white hover:bg-white/10 transition-all" href="#">Profil</a>
-<a class="whitespace-nowrap px-4 md:px-6 py-3 font-headline font-bold text-sm tracking-wide text-slate-300 hover:text-white hover:bg-white/10 transition-all" href="#">Informasi Publik</a>
-<a class="whitespace-nowrap px-4 md:px-6 py-3 font-headline font-bold text-sm tracking-wide text-slate-300 hover:text-white hover:bg-white/10 transition-all" href="#">Layanan Informasi</a>
+<a class="whitespace-nowrap px-4 md:px-5 py-4 font-headline font-bold text-[11px] md:text-xs tracking-wider text-slate-300 hover:text-white hover:bg-white/10 transition-all uppercase flex items-center gap-1 border-b-2 border-red-600 bg-white/5" href="#">
+                Informasi Publik <span class="material-symbols-outlined text-xs" data-icon="keyboard_arrow_down">keyboard_arrow_down</span>
+<a class="whitespace-nowrap px-4 md:px-5 py-4 font-headline font-bold text-[11px] md:text-xs tracking-wider text-slate-300 hover:text-white hover:bg-white/10 transition-all uppercase flex items-center gap-1" href="#">
+                Layanan Informasi <span class="material-symbols-outlined text-xs" data-icon="keyboard_arrow_down">keyboard_arrow_down</span>
+</a><a class="whitespace-nowrap px-4 md:px-6 py-3 font-headline font-bold text-sm tracking-wide text-slate-300 hover:text-white hover:bg-white/10 transition-all" href="http://ppidbalikpapan.test/news">Berita</a>
+<a class="whitespace-nowrap px-4 md:px-5 py-4 font-headline font-bold text-[11px] md:text-xs tracking-wider text-slate-300 hover:text-white hover:bg-white/10 transition-all uppercase flex items-center gap-1" href="#">
+                PPID Pelaksana <span class="material-symbols-outlined text-xs" data-icon="keyboard_arrow_down">keyboard_arrow_down</span>
+</a>
 <a class="whitespace-nowrap px-4 md:px-6 py-3 font-headline font-bold text-sm tracking-wide text-slate-300 hover:text-white hover:bg-white/10 transition-all" href="#">Data Statistik</a>
-<a class="whitespace-nowrap px-4 md:px-6 py-3 font-headline font-bold text-sm tracking-wide text-slate-300 hover:text-white hover:bg-white/10 transition-all" href="#">PPID Pelaksana</a>
-<a class="whitespace-nowrap px-4 md:px-6 py-3 font-headline font-bold text-sm tracking-wide text-slate-300 hover:text-white hover:bg-white/10 transition-all" href="http://ppidbalikpapan.test/news">Berita</a>
 <a class="whitespace-nowrap px-4 md:px-6 py-3 font-headline font-bold text-sm tracking-wide text-slate-300 hover:text-white hover:bg-white/10 transition-all" href="#">Kontak</a>
 </div>
 </div>
@@ -257,18 +261,27 @@
 </div>
 </div>
 <!-- Weather & Alerts -->
-<div class="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl flex items-center gap-4 border border-blue-100/50">
+<div class="sm:col-span-2 bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl flex items-center justify-between border border-blue-100/50">
+<div class="flex items-center gap-4">
 <span class="material-symbols-outlined text-blue-600 text-3xl md:text-4xl" data-icon="cloudy_snowing">cloudy_snowing</span>
 <div>
+<div class="flex items-center gap-2 mb-1">
 <p class="text-[10px] md:text-xs font-bold text-blue-800 uppercase tracking-widest">Cuaca Hari Ini</p>
-<p class="font-headline font-bold text-base md:text-lg">Cerah Berawan, 29°C</p>
+<span class="px-1.5 py-0.5 bg-blue-600 text-white text-[8px] font-bold rounded flex items-center gap-1">
+<span class="relative flex h-1.5 w-1.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+<span class="relative inline-flex rounded-full h-1.5 w-1.5 bg-white"></span>
+</span>
+                    LIVE UPDATE
+                </span>
+</div>
+<p class="font-headline font-bold text-base md:text-xl text-blue-900 dark:text-blue-100">Cerah Berawan, 29°C</p>
+<p class="text-[10px] text-blue-600/70 mt-1 font-medium italic">Sumber: BMKG (Prakiraan Balikpapan)</p>
 </div>
 </div>
-<div class="bg-amber-50 dark:bg-amber-900/20 p-6 rounded-xl flex items-center gap-4 border border-amber-100/50">
-<span class="material-symbols-outlined text-amber-600 text-3xl md:text-4xl" data-icon="security">security</span>
-<div>
-<p class="text-[10px] md:text-xs font-bold text-amber-800 uppercase tracking-widest">Whistleblower</p>
-<p class="font-headline font-bold text-base md:text-lg">Sistem Pelaporan</p>
+<div class="hidden sm:block text-right">
+<p class="text-[10px] text-blue-800/60 uppercase font-bold">Kelembapan</p>
+<p class="font-bold text-blue-900 dark:text-blue-100">75%</p>
 </div>
 </div>
 </div>
@@ -393,9 +406,7 @@
 <p class="text-slate-600 dark:text-slate-400 max-w-md mb-8">
                 Pejabat Pengelola Informasi dan Dokumentasi (PPID) Utama Pemerintah Kota Balikpapan bertanggung jawab untuk penyimpanan, pendokumentasian, penyediaan, dan pelayanan informasi publik.
             </p>
-<div class="rounded-2xl overflow-hidden shadow-sm aspect-video border border-slate-200">
-<img alt="Map view" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjpopvFvbZ7IspCxsCVumCXpPO-yRLQ3GXptmxjhZDFBDme1dxw4a4vWVI7ntBn1OAXjN5QKL5BUFU4Y7vomE-IgDXVREk68eApo7lJd71pr3PSsb19ee_y4gvzeKtcodCwFnsGI9BZByfat4Qa9txdoC81ONhbhsgG6pApDYseCDI5EpsTZ5ZJvH6DB-acjHGnWWWrOe_UmpzdNbD9yS9pHu5_jn86fnPdJqcIBkhWAnVVrXIvM_oRWPgNp7KmzvbILMEsEY_yvC6"/>
-</div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63821.253001534766!2d116.75573272167965!3d-1.2764074999999773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df1473bb9404897%3A0x94d96108f98b652c!2sBalikpapan%20Mayor&#39;s%20Office!5e0!3m2!1sen!2ssg!4v1776063788871!5m2!1sen!2ssg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
 <!-- Contacts -->
 <div>

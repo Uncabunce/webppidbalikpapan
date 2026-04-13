@@ -127,9 +127,9 @@
 <li><a class="hover:text-secondary-container transition-colors" href="#">Profil</a></li>
 <li><a class="hover:text-secondary-container transition-colors" href="#">Informasi Publik</a></li>
 <li><a class="hover:text-secondary-container transition-colors" href="#">Layanan Informasi</a></li>
-<li><a class="hover:text-secondary-container transition-colors" href="#">Data Statistik</a></li>
-<li><a class="hover:text-secondary-container transition-colors" href="#">PPID Pelaksana</a></li>
 <li><a class="hover:text-secondary-container transition-colors" href="http://ppidbalikpapan.test/news">Berita</a></li>
+<li><a class="hover:text-secondary-container transition-colors" href="#">Data Statistik</a></li>
+<li><a class="hover:text-secondary-container transition-colors" href="">PPID Pelaksana</a></li>
 <li><a class="hover:text-secondary-container transition-colors" href="#">Kontak</a></li>
 <li class="relative">
 </ul>
