@@ -4,6 +4,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Berita Balikpapan - PPID Balikpapan</title>
+<link rel="icon" type="png" href="{{ asset('kota balikpapan.png') }}">
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
@@ -77,8 +78,13 @@
         }
     </script>
 <style>
+        .batik-pattern-original {
+            background-image: url("batik dayak.png");
+            background-size: 400px;
+            background-repeat: repeat
+        }
         .dayak-batik-pattern {
-            background-image: linear-gradient(rgba(248, 249, 250, 0.92), rgba(248, 249, 250, 0.92)), url("batik dayak.png");
+            background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url(https://lh3.googleusercontent.com/aida/ADBb0uhe3l5rxwm22DyqrF4a1yHNdNG07V_UZ8CuugcQvhVw8KbO2UrL62U0EC7GMfX5TjLPbNLVAw-2Uqa59j88FrEnoc27H8cQw-fYFbnxMAyG6PTs1b71iiuuxJwXMq4mn_z0n5e40Och1D8W9b9RQBQYDz5xw7pX01o0ll-92Eenr7zhu8t_mZ6pRJ3RwJPX-Wf0lUdgzEH2ZCvTLAKawZDD9guXzJE8nkdUJwtg_wFLp2qUfSxvzPwGXFV81lgjLhUSJWh8lHF5acw);
             background-size: 300px;
             background-repeat: repeat
         }
@@ -89,39 +95,43 @@
 </head>
 <body class="bg-background text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
 <!-- Header Section -->
-<header class="sticky top-0 z-50">
+<header class="top-0">
 <!-- Top NavBar: Dayak Batik Pattern + Search + Clock -->
-<div class="dayak-batik-pattern w-full py-3 border-b border-slate-200">
-<div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
-<div class="flex items-center gap-3">
-<img alt="Logo PPID Balikpapan" class="h-10 w-auto object-contain" src="logo_ppid bg removed.png"/>
+<div class="dayak-batik-pattern sticky top-0 z-50 w-full py-2 border-b border-slate-200 shadow-sm">
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-3 items-center">
+<!-- Left: Logo -->
+<div class="flex justify-start">
+<img alt="Logo PPID Balikpapan" class="h-9 w-auto object-contain" src="logo_ppid bg removed.png"/>
 </div>
-<!-- Search Bar Centered -->
-<div class="hidden md:flex flex-1 max-w-md mx-8">
-<div class="relative w-full">
-<input class="w-full pl-4 pr-10 py-1.5 bg-white/90 border border-slate-300 rounded-full shadow-inner focus:ring-2 focus:ring-primary text-xs" placeholder="Cari informasi..." type="text"/>
+<!-- Center: Search Bar -->
+<div class="flex justify-center">
+<div class="relative w-full max-w-[320px]">
+<input class="w-full pl-4 pr-10 py-1.5 bg-white/80 border border-slate-300 rounded-full shadow-inner focus:ring-2 focus:ring-primary text-xs backdrop-blur-sm" placeholder="Cari informasi..." type="text"/>
 <span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 text-lg">search</span>
 </div>
 </div>
-<!-- Right: Clock styled like Screen 55 -->
-<div class="flex items-center">
-<div class="font-headline font-bold text-primary bg-white/50 px-4 py-1 rounded-full border border-white/20 shadow-sm min-w-fit flex flex-col items-center" id="real-time-clock">
-<span class="text-[10px] leading-none opacity-70 uppercase" id="day-date">Selasa, 14 Mei 2024</span>
-<span class="text-sm leading-tight" id="time">09:45:22 WITA</span>
+<!-- Right: Clock -->
+<div class="flex justify-end">
+<div class="font-headline font-bold text-primary bg-white/60 px-4 py-1 rounded-lg border border-white/40 shadow-sm min-w-fit flex flex-col items-end" id="real-time-clock">
+<span class="text-[9px] leading-none opacity-80 uppercase tracking-tighter" id="day-date">Selasa, 14 Mei 2024</span>
+<span class="text-xs leading-tight" id="time">09:45:22 WITA</span>
 </div>
 </div>
 </div>
 </div>
-<!-- Bottom NavBar: Pure Black Navigation with top border -->
-<nav class="bg-black text-white shadow-lg border-t border-white/10">
+<!-- Bottom NavBar: Pure Black Navigation -->
+<nav class="bg-black text-white shadow-lg">
 <div class="max-w-7xl mx-auto px-6">
-<ul class="flex items-center gap-8 py-4 font-headline text-sm font-semibold tracking-wide">
+<ul class="flex items-center gap-10 font-headline text-sm font-semibold tracking-wide py-3">
 <li><a class="hover:text-secondary-container transition-colors" href="http://ppidbalikpapan.test/">Beranda</a></li>
 <li><a class="hover:text-secondary-container transition-colors" href="#">Profil</a></li>
 <li><a class="hover:text-secondary-container transition-colors" href="#">Informasi Publik</a></li>
 <li><a class="hover:text-secondary-container transition-colors" href="#">Layanan Informasi</a></li>
-<li class="border-b-2 border-secondary-container pb-1"><a class="text-secondary-container" href="#">Berita</a></li>
+<li><a class="hover:text-secondary-container transition-colors" href="#">Data Statistik</a></li>
+<li><a class="hover:text-secondary-container transition-colors" href="#">PPID Pelaksana</a></li>
+<li><a class="hover:text-secondary-container transition-colors" href="http://ppidbalikpapan.test/news">Berita</a></li>
 <li><a class="hover:text-secondary-container transition-colors" href="#">Kontak</a></li>
+<li class="relative">
 </ul>
 </div>
 </nav>
@@ -129,7 +139,6 @@
 <main>
 <!-- Title Section: Pure White Background -->
 <section class="relative py-20 bg-white overflow-hidden border-b border-outline-variant/10">
-<div class="absolute top-0 right-0 w-1/3 h-full opacity-5 pointer-events-none batik-pattern-original"></div>
 <div class="max-w-7xl mx-auto px-6 relative z-10">
 <nav class="flex mb-4 text-xs font-medium text-outline uppercase tracking-widest gap-2">
 <a href="#">Beranda</a>
@@ -145,7 +154,7 @@
 </div>
 </section>
 <!-- Search & Filter Section -->
-<section class="sticky top-[125px] z-40 bg-white/80 backdrop-blur-md border-y border-outline-variant/10">
+<section class="sticky top-[58px] z-40 bg-white/80 backdrop-blur-md border-y border-outline-variant/10">
 <div class="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center gap-6">
 <div class="flex flex-wrap items-center gap-2">
 <button class="px-5 py-2.5 rounded-full bg-primary text-on-primary text-sm font-semibold">Semua</button>
@@ -435,8 +444,10 @@
             const dateString = `${dayName}, ${day} ${monthName} ${year}`;
             const timeString = `${hours}:${minutes}:${seconds} ${tz}`;
             
-            document.getElementById('day-date').textContent = dateString;
-            document.getElementById('time').textContent = timeString;
+            const dateEl = document.getElementById('day-date');
+            const timeEl = document.getElementById('time');
+            if (dateEl) dateEl.textContent = dateString;
+            if (timeEl) timeEl.textContent = timeString;
         }
         
         setInterval(updateClock, 1000);
