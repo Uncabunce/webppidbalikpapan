@@ -157,11 +157,6 @@
 <section class="sticky top-[58px] z-40 bg-white/80 backdrop-blur-md border-y border-outline-variant/10">
 <div class="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center gap-6">
 <div class="flex flex-wrap items-center gap-2">
-<button class="px-5 py-2.5 rounded-full bg-primary text-on-primary text-sm font-semibold">Semua</button>
-<button class="px-5 py-2.5 rounded-full bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-colors text-sm font-semibold">Pemerintahan</button>
-<button class="px-5 py-2.5 rounded-full bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-colors text-sm font-semibold">Layanan</button>
-<button class="px-5 py-2.5 rounded-full bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-colors text-sm font-semibold">Ekonomi</button>
-<button class="px-5 py-2.5 rounded-full bg-surface-container text-on-surface-variant hover:bg-surface-container-high transition-colors text-sm font-semibold">Kesehatan</button>
 </div>
 <div class="relative w-full md:w-80">
 <input class="w-full pl-4 pr-12 py-3 bg-surface-container-low border-none rounded-xl focus:ring-2 focus:ring-primary text-sm" placeholder="Cari berita..." type="text"/>
@@ -177,18 +172,18 @@
 <!-- News Card 1 -->
 <article class="group bg-surface-container-lowest rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 flex flex-col">
 <div class="relative overflow-hidden aspect-video">
-<img alt="Gedung Balai Kota Balikpapan" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-BD42T210TfyMbzPMBSbq_Ie7Kz8U7x6-kUP8022Ak769GCNLLCateYD2Etpmw3wdOpg61o1WMgn5bwgxMIJ2SCpuuIpm6k6v-JAf8mKUmcShAPkehEH6ZH8Aq4jXin6RCzYpI2vXvZsqe8yYmLuHs-xKr8H47ognTsCJE91kk1IQkPQXX5Zo2yb26CDCxMDgsxquvT4yYDRFJBblbBcUrv7y4nRWPcaMXsK8ZGCD1k8BtzQpZf-XvyABm7iXZAUCfvcaeA114vsD"/>
+<img alt="Gedung Balai Kota Balikpapan" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="images/1.jpg"/>
 <div class="absolute top-4 left-4">
 <span class="px-3 py-1 bg-secondary text-white text-[10px] font-bold uppercase tracking-widest rounded-full">Pemerintahan</span>
 </div>
 </div>
 <div class="p-6 flex flex-col flex-grow">
-<time class="text-xs font-semibold text-outline mb-3 uppercase tracking-tighter">14 MEI 2024</time>
+<time class="text-xs font-semibold text-outline mb-3 uppercase tracking-tighter">07 APRIL 2026</time>
 <h3 class="text-xl font-headline font-bold text-on-surface leading-snug group-hover:text-primary transition-colors mb-3">
-                            Pemerintah Kota Balikpapan Raih Penghargaan Transparansi Publik 2024
+                            Pemerintah Kota Balikpapan Raih Penghargaan Transparansi Publik 2024Wakil Wali Kota Paparkan LKPj 2025, Dorong Percepatan Program dan Minimalkan SILPA
                         </h3>
 <p class="text-on-surface-variant text-sm line-clamp-3 mb-6">
-                            Kota Balikpapan kembali menorehkan prestasi gemilang dengan meraih kategori predikat informatif dalam pemeringkatan transparansi layanan informasi publik nasional.
+                            BALIKPAPAN — Wakil Wali Kota Bagus Susetyo menyampaikan Laporan Keterangan Pertanggungjawaban (LKPj) Wali Kota Balikpapan Tahun Anggaran 2025 dalam Rapat Paripurna ke-2 Masa Sidang II Tahun Sidang 2025/2026 di Ballroom Hotel Gran Senyiur, pada Senin (6/4/2026).
                         </p>
 <div class="mt-auto flex items-center justify-between">
 <a class="text-primary font-bold text-sm flex items-center gap-2 group/btn" href="#">
