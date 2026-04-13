@@ -7,7 +7,6 @@
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
@@ -77,48 +76,47 @@
             },
         }
     </script>
-<style>.batik-pattern {
-    background-image: url();
-    background-size: 400px;
-    background-repeat: repeat
-    }
-.material-symbols-outlined {
-    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24
-    }</style>
+<style>
+        .dayak-batik-pattern {
+            background-image: linear-gradient(rgba(248, 249, 250, 0.92), rgba(248, 249, 250, 0.92)), url("batik dayak.png");
+            background-size: 300px;
+            background-repeat: repeat
+        }
+        .material-symbols-outlined {
+            font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24
+        }
+    </style>
 </head>
 <body class="bg-background text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
 <!-- Header Section -->
 <header class="sticky top-0 z-50">
-<!-- Top NavBar: Batik Pattern + Search + Clock -->
-<div class="batik-pattern w-full py-2 bg-surface border-b border-outline-variant/20 relative">
-<div class="absolute inset-0 bg-surface/90 backdrop-blur-sm"></div>
-<div class="max-w-7xl mx-auto px-6 flex justify-between items-center relative z-10">
+<!-- Top NavBar: Dayak Batik Pattern + Search + Clock -->
+<div class="dayak-batik-pattern w-full py-3 border-b border-slate-200">
+<div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
 <div class="flex items-center gap-3">
-<div class="w-10 h-10 bg-primary flex items-center justify-center rounded-lg shadow-sm">
-<span class="material-symbols-outlined text-white text-2xl">account_balance</span>
+<img alt="Logo PPID Balikpapan" class="h-10 w-auto object-contain" src="kota balikpapan.png"/>
 </div>
-<span class="font-headline font-extrabold text-primary text-xl tracking-tight">PPID Balikpapan</span>
-</div>
+<!-- Search Bar Centered -->
 <div class="hidden md:flex flex-1 max-w-md mx-8">
 <div class="relative w-full">
-<input class="w-full pl-10 pr-4 py-2 bg-surface-container-lowest border-none rounded-full shadow-sm focus:ring-2 focus:ring-primary text-sm" placeholder="Cari informasi di sini..." type="text"/>
-<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline">search</span>
+<input class="w-full pl-4 pr-10 py-1.5 bg-white/90 border border-slate-300 rounded-full shadow-inner focus:ring-2 focus:ring-primary text-xs" placeholder="Cari informasi..." type="text"/>
+<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 text-lg">search</span>
 </div>
 </div>
-<div class="flex items-center gap-4 text-primary font-bold text-xs uppercase tracking-wider">
-<div class="flex flex-col items-end">
-<span id="day-date">Selasa, 14 Mei 2024</span>
-<span class="text-secondary" id="time">09:45:22 WITA</span>
-</div>
-<span class="material-symbols-outlined text-primary">language</span>
-</div>
+<!-- Right: Clock styled like Screen 55 -->
+<div class="flex items-center">
+<div class="font-headline font-bold text-primary bg-white/50 px-4 py-1 rounded-full border border-white/20 shadow-sm min-w-fit flex flex-col items-center" id="real-time-clock">
+<span class="text-[10px] leading-none opacity-70 uppercase" id="day-date">Selasa, 14 Mei 2024</span>
+<span class="text-sm leading-tight" id="time">09:45:22 WITA</span>
 </div>
 </div>
-<!-- Bottom NavBar: Dark Navigation -->
-<nav class="bg-primary text-white shadow-lg">
+</div>
+</div>
+<!-- Bottom NavBar: Pure Black Navigation with top border -->
+<nav class="bg-black text-white shadow-lg border-t border-white/10">
 <div class="max-w-7xl mx-auto px-6">
 <ul class="flex items-center gap-8 py-4 font-headline text-sm font-semibold tracking-wide">
-<li><a class="hover:text-secondary-container transition-colors" href="http://ppidbalikpapan.test/">Beranda</a></li>
+<li><a class="hover:text-secondary-container transition-colors" href="#">Beranda</a></li>
 <li><a class="hover:text-secondary-container transition-colors" href="#">Profil</a></li>
 <li><a class="hover:text-secondary-container transition-colors" href="#">Informasi Publik</a></li>
 <li><a class="hover:text-secondary-container transition-colors" href="#">Layanan Informasi</a></li>
@@ -129,9 +127,9 @@
 </nav>
 </header>
 <main>
-<!-- Title Section -->
-<section class="relative py-20 bg-surface-container overflow-hidden">
-<div class="absolute top-0 right-0 w-1/3 h-full opacity-5 pointer-events-none batik-pattern"></div>
+<!-- Title Section: Pure White Background -->
+<section class="relative py-20 bg-white overflow-hidden border-b border-outline-variant/10">
+<div class="absolute top-0 right-0 w-1/3 h-full opacity-5 pointer-events-none batik-pattern-original"></div>
 <div class="max-w-7xl mx-auto px-6 relative z-10">
 <nav class="flex mb-4 text-xs font-medium text-outline uppercase tracking-widest gap-2">
 <a href="#">Beranda</a>
@@ -147,7 +145,7 @@
 </div>
 </section>
 <!-- Search & Filter Section -->
-<section class="sticky top-[120px] z-40 bg-white/80 backdrop-blur-md border-y border-outline-variant/10">
+<section class="sticky top-[125px] z-40 bg-white/80 backdrop-blur-md border-y border-outline-variant/10">
 <div class="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center gap-6">
 <div class="flex flex-wrap items-center gap-2">
 <button class="px-5 py-2.5 rounded-full bg-primary text-on-primary text-sm font-semibold">Semua</button>
@@ -170,7 +168,7 @@
 <!-- News Card 1 -->
 <article class="group bg-surface-container-lowest rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 flex flex-col">
 <div class="relative overflow-hidden aspect-video">
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="professional photography of Balikpapan city hall building in bright daylight with lush tropical greenery in the foreground" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-BD42T210TfyMbzPMBSbq_Ie7Kz8U7x6-kUP8022Ak769GCNLLCateYD2Etpmw3wdOpg61o1WMgn5bwgxMIJ2SCpuuIpm6k6v-JAf8mKUmcShAPkehEH6ZH8Aq4jXin6RCzYpI2vXvZsqe8yYmLuHs-xKr8H47ognTsCJE91kk1IQkPQXX5Zo2yb26CDCxMDgsxquvT4yYDRFJBblbBcUrv7y4nRWPcaMXsK8ZGCD1k8BtzQpZf-XvyABm7iXZAUCfvcaeA114vsD"/>
+<img alt="Gedung Balai Kota Balikpapan" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-BD42T210TfyMbzPMBSbq_Ie7Kz8U7x6-kUP8022Ak769GCNLLCateYD2Etpmw3wdOpg61o1WMgn5bwgxMIJ2SCpuuIpm6k6v-JAf8mKUmcShAPkehEH6ZH8Aq4jXin6RCzYpI2vXvZsqe8yYmLuHs-xKr8H47ognTsCJE91kk1IQkPQXX5Zo2yb26CDCxMDgsxquvT4yYDRFJBblbBcUrv7y4nRWPcaMXsK8ZGCD1k8BtzQpZf-XvyABm7iXZAUCfvcaeA114vsD"/>
 <div class="absolute top-4 left-4">
 <span class="px-3 py-1 bg-secondary text-white text-[10px] font-bold uppercase tracking-widest rounded-full">Pemerintahan</span>
 </div>
@@ -194,7 +192,7 @@
 <!-- News Card 2 -->
 <article class="group bg-surface-container-lowest rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 flex flex-col">
 <div class="relative overflow-hidden aspect-video">
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="clean modern medical clinic interior with medical staff assisting a citizen, soft natural lighting through large windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCON1MnTytj9ujS8_J-v81rXKNMRNuqd78bSqIPlrG4c97t1eXZm-hLSn4UijawKvKCO62xXBDCKMs9yUGdaFfTrdfAX8LCPk120gMmcCs9d7Zpy_sseEdvASl9YC2vxKTziTINUVKgTA3YvFSGhdeVjIbcCqbKMDt479oKhxqzXI7WHddbe0wRVv-1Oe-2PmFMpqEEMSVPYhGOifupt-UBvwnhp2TY6e_64z0_JqKhzlRCm9jKwN_8xpvfmmbNj4fOCPYpnuxrvqiq"/>
+<img alt="Interior puskesmas modern" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCON1MnTytj9ujS8_J-v81rXKNMRNuqd78bSqIPlrG4c97t1eXZm-hLSn4UijawKvKCO62xXBDCKMs9yUGdaFfTrdfAX8LCPk120gMmcCs9d7Zpy_sseEdvASl9YC2vxKTziTINUVKgTA3YvFSGhdeVjIbcCqbKMDt479oKhxqzXI7WHddbe0wRVv-1Oe-2PmFMpqEEMSVPYhGOifupt-UBvwnhp2TY6e_64z0_JqKhzlRCm9jKwN_8xpvfmmbNj4fOCPYpnuxrvqiq"/>
 <div class="absolute top-4 left-4">
 <span class="px-3 py-1 bg-tertiary text-white text-[10px] font-bold uppercase tracking-widest rounded-full">Layanan</span>
 </div>
@@ -218,7 +216,7 @@
 <!-- News Card 3 -->
 <article class="group bg-surface-container-lowest rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 flex flex-col">
 <div class="relative overflow-hidden aspect-video">
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="vibrant traditional market in Balikpapan with fresh colorful produce and friendly local vendors in morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUble0jS2EKmg7CMXdxK6REg9Zc-24sz9RVQrK3M79QDxmZz2NJrd5T2IaFtZ98YSKrUBAHlsRcKVQtMw3G3dxD4RQiSnGpsjFAEAyqnJr9Yy7-_bvrZdvAe-y-_h_myyLpAeCPG4hBNvwKbUnj0YDGWShQwsqlsXkm-j0oklqol8ChMJjNzlNcmBlJHNExUQnoidzCE084Y30ukVMG8Tam7H3FP6v7cO4WJh6BzCuMiPUKVNZLanm_DvpUpg2cO_1e9ls4qT4I_aW"/>
+<img alt="Pasar tradisional Balikpapan" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUble0jS2EKmg7CMXdxK6REg9Zc-24sz9RVQrK3M79QDxmZz2NJrd5T2IaFtZ98YSKrUBAHlsRcKVQtMw3G3dxD4RQiSnGpsjFAEAyqnJr9Yy7-_bvrZdvAe-y-_h_myyLpAeCPG4hBNvwKbUnj0YDGWShQwsqlsXkm-j0oklqol8ChMJjNzlNcmBlJHNExUQnoidzCE084Y30ukVMG8Tam7H3FP6v7cO4WJh6BzCuMiPUKVNZLanm_DvpUpg2cO_1e9ls4qT4I_aW"/>
 <div class="absolute top-4 left-4">
 <span class="px-3 py-1 bg-primary-container text-on-primary-container text-[10px] font-bold uppercase tracking-widest rounded-full">Ekonomi</span>
 </div>
@@ -242,7 +240,7 @@
 <!-- News Card 4 -->
 <article class="group bg-surface-container-lowest rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 flex flex-col">
 <div class="relative overflow-hidden aspect-video">
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="modern urban park in Balikpapan with sleek walkways, flowering trees, and sustainable design elements at dusk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLFMCuPjFiWoSPcefr2k0C90CInnKiNplmJkprc2s4u_jcWVjf98m-d6y4scUWeNDjT5HtI2pPanXnfy7tDT8FHtJb_MC-6oVhbfNBgbQ-tG96u1FdgRSJhWBoAZXtviKLqzhoiB90XKm5qdBoC9-_3-JXV6D-GXpRwoPSNWE6gUl1EEwyVKH-qD54XWhUtyJyfDbkpJyWrrVNENNa2yiRpxV3NJb_BB6yqgcaepAFtgkslcwtSReLOvJlPlIw8UOJycfDbIX70Pv3"/>
+<img alt="Taman kota Balikpapan" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLFMCuPjFiWoSPcefr2k0C90CInnKiNplmJkprc2s4u_jcWVjf98m-d6y4scUWeNDjT5HtI2pPanXnfy7tDT8FHtJb_MC-6oVhbfNBgbQ-tG96u1FdgRSJhWBoAZXtviKLqzhoiB90XKm5qdBoC9-_3-JXV6D-GXpRwoPSNWE6gUl1EEwyVKH-qD54XWhUtyJyfDbkpJyWrrVNENNa2yiRpxV3NJb_BB6yqgcaepAFtgkslcwtSReLOvJlPlIw8UOJycfDbIX70Pv3"/>
 <div class="absolute top-4 left-4">
 <span class="px-3 py-1 bg-secondary text-white text-[10px] font-bold uppercase tracking-widest rounded-full">Pemerintahan</span>
 </div>
@@ -266,7 +264,7 @@
 <!-- News Card 5 -->
 <article class="group bg-surface-container-lowest rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 flex flex-col">
 <div class="relative overflow-hidden aspect-video">
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="group of students using high-tech laboratory equipment in a modern school setting, bright and inspiring atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5UCaWY4xAq0ecXUR_NNnK5pVbKJ8DB5hoBlCyRxGaiF94o1OQdiFvX5PaSeF5mEmTYwc_dqDHVECM0Z-1sdKHDFBrQBIE996172ZppIBRlTpToFxU7UAPBcTBBpwbQ_hiE55lQhpMO6Jv9SFUgNJYkcJID40ToJGlHxVAvFhIeKj9n63SzbHfd3G5RKV2aqi6501uthjs6UlJuODokdWGO29kXsMvh50ueqdAu7ni10C7chrvQ8NmnAwA3h1XD1nnlu4t56HLojyi"/>
+<img alt="Laboratorium sekolah modern" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5UCaWY4xAq0ecXUR_NNnK5pVbKJ8DB5hoBlCyRxGaiF94o1OQdiFvX5PaSeF5mEmTYwc_dqDHVECM0Z-1sdKHDFBrQBIE996172ZppIBRlTpToFxU7UAPBcTBBpwbQ_hiE55lQhpMO6Jv9SFUgNJYkcJID40ToJGlHxVAvFhIeKj9n63SzbHfd3G5RKV2aqi6501uthjs6UlJuODokdWGO29kXsMvh50ueqdAu7ni10C7chrvQ8NmnAwA3h1XD1nnlu4t56HLojyi"/>
 <div class="absolute top-4 left-4">
 <span class="px-3 py-1 bg-tertiary text-white text-[10px] font-bold uppercase tracking-widest rounded-full">Pendidikan</span>
 </div>
@@ -290,7 +288,7 @@
 <!-- News Card 6 -->
 <article class="group bg-surface-container-lowest rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 flex flex-col">
 <div class="relative overflow-hidden aspect-video">
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="smart city command center with glowing screens displaying data visualizations and city monitoring feeds" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4ZjUvliKY0ZCuorwN-5toGXZ_QABJtnYZ2F5wFUDm9QIT2Gja9XLlxjkxP0X8rP1jaKp0tKPQeujsEI1KPSEnHe0y3CvmA02b_egw-AJrCuT5lE0p12J7XfhDYhwRygdscFlhBe7DX43xGrTFHHO4sPdzFb47UZuxbxfs4W_k3qQIutXANviY5X89m_pURTtmkJW_F-vJX27BRbDqbjHfUDkZ_FKiil3PDS143F-y-VBqi_qLBR1PFMAtALPD_sRF-n0_m1Q5aTME"/>
+<img alt="Smart city command center" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4ZjUvliKY0ZCuorwN-5toGXZ_QABJtnYZ2F5wFUDm9QIT2Gja9XLlxjkxP0X8rP1jaKp0tKPQeujsEI1KPSEnHe0y3CvmA02b_egw-AJrCuT5lE0p12J7XfhDYhwRygdscFlhBe7DX43xGrTFHHO4sPdzFb47UZuxbxfs4W_k3qQIutXANviY5X89m_pURTtmkJW_F-vJX27BRbDqbjHfUDkZ_FKiil3PDS143F-y-VBqi_qLBR1PFMAtALPD_sRF-n0_m1Q5aTME"/>
 <div class="absolute top-4 left-4">
 <span class="px-3 py-1 bg-primary text-white text-[10px] font-bold uppercase tracking-widest rounded-full">Smart City</span>
 </div>
@@ -396,6 +394,9 @@
                     © 2024 Pemerintah Kota Balikpapan. PPID Utama.
                 </p>
 <div class="flex items-center gap-4">
+<img alt="Lambang Kota Balikpapan" class="h-8 opacity-60" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYNC85yA4qM3QjmbdM6ln3X-g1kWDG3dv5N108uSYT8ezY5o3njZ-Spl9UpluYQqKPpRKWWVO1gEXWdTg5P0v449JAptnp6cKJ9WjNRIhwPkfNf3bi-xrrf7ASarpJYdI3U47JOEuRclnUE3KRXlqwdRMB0wGz21o68d1pyFaECdACNbyIoAdqfYqWDgUVMNUjr3mrgDhhHW6QVOxymeCZ2VjAoZpxaEgVdlLRzEB3aAOqFqGpVLv7KnNKPnaNhNKIr6AhYNl025y5"/>
+<div class="h-4 w-px bg-slate-300"></div>
+<p class="text-[10px] text-slate-400 uppercase font-bold tracking-widest">Digital Service Excellence</p>
 </div>
 </div>
 </div>
@@ -407,4 +408,38 @@
 <p class="text-sm font-bold text-primary">Butuh Informasi?</p>
 </div>
 </button>
+<script>
+        function updateClock() {
+            const now = new Date();
+            const days = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
+            const months = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+            
+            const dayName = days[now.getDay()];
+            const day = String(now.getDate());
+            const monthName = months[now.getMonth()];
+            const year = now.getFullYear();
+            
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            
+            const offset = -now.getTimezoneOffset() / 60;
+            let tz = '';
+            if (offset === 7) tz = 'WIB';
+            else if (offset === 8) tz = 'WITA';
+            else if (offset === 9) tz = 'WIT';
+            else {
+                tz = now.toLocaleTimeString('en-us',{timeZoneName:'short'}).split(' ')[2] || 'WITA';
+            }
+
+            const dateString = `${dayName}, ${day} ${monthName} ${year}`;
+            const timeString = `${hours}:${minutes}:${seconds} ${tz}`;
+            
+            document.getElementById('day-date').textContent = dateString;
+            document.getElementById('time').textContent = timeString;
+        }
+        
+        setInterval(updateClock, 1000);
+        updateClock();
+    </script>
 </body></html>
