@@ -179,16 +179,16 @@
 </div>
 
 <div class="carousel-slide relative h-full">
-<img alt="" class="w-full h-full object-cover pointer-events-none" src=""/>
+<img alt="" class="w-full h-full object-cover pointer-events-none" src="images/1.jpg"/>
 <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent flex items-end justify-center pb-12">
-<h2 class="text-white font-headline font-extrabold text-xl md:text-3xl tracking-tight opacity-90">isi aja dulu</h2>
+<h2 class="text-white font-headline font-extrabold text-xl md:text-3xl tracking-tight opacity-90">Wakil Wali Kota Paparkan LKPj 2025, Dorong Percepatan Program dan Minimalkan SILPA</h2>
 </div>
 </div>
 
 <div class="carousel-slide relative h-full">
-<img alt=""w-full h-full object-cover pointer-events-none" src=""/>
+<img alt="" class="w-full h-full object-cover pointer-events-none" src="images/4.jpg"/>
 <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent flex items-end justify-center pb-12">
-<h2 class="text-white font-headline font-extrabold text-xl md:text-3xl tracking-tight opacity-90">tambah berita</h2>
+<h2 class="text-white font-headline font-extrabold text-xl md:text-3xl tracking-tight opacity-90">Wali Kota Balikpapan Hadiri Rakortas Percepatan Proyek PSEL Nasional sebagai Solusi Penanganan Sampah</h2>
 </div>
 </div>
 </div>
