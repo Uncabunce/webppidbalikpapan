@@ -94,7 +94,7 @@
 <div class="dayak-batik-pattern w-full py-3 border-b border-slate-200">
 <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
 <div class="flex items-center gap-3">
-<img alt="Logo PPID Balikpapan" class="h-10 w-auto object-contain" src="kota balikpapan.png"/>
+<img alt="Logo PPID Balikpapan" class="h-10 w-auto object-contain" src="logo_ppid bg removed.png"/>
 </div>
 <!-- Search Bar Centered -->
 <div class="hidden md:flex flex-1 max-w-md mx-8">
@@ -116,7 +116,7 @@
 <nav class="bg-black text-white shadow-lg border-t border-white/10">
 <div class="max-w-7xl mx-auto px-6">
 <ul class="flex items-center gap-8 py-4 font-headline text-sm font-semibold tracking-wide">
-<li><a class="hover:text-secondary-container transition-colors" href="#">Beranda</a></li>
+<li><a class="hover:text-secondary-container transition-colors" href="http://ppidbalikpapan.test/">Beranda</a></li>
 <li><a class="hover:text-secondary-container transition-colors" href="#">Profil</a></li>
 <li><a class="hover:text-secondary-container transition-colors" href="#">Informasi Publik</a></li>
 <li><a class="hover:text-secondary-container transition-colors" href="#">Layanan Informasi</a></li>
