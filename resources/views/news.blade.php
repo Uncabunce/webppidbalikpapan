@@ -154,7 +154,7 @@
 </div>
 </section>
 <!-- Search & Filter Section -->
-<section class="sticky top-[58px] z-40 bg-white/80 backdrop-blur-md border-y border-outline-variant/10">
+<section class="top-[58px] z-40 bg-white/80 backdrop-blur-md border-y border-outline-variant/10">
 <div class="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center gap-6">
 <div class="flex flex-wrap items-center gap-2">
 </div>
