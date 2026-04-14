@@ -84,8 +84,7 @@
             background-repeat: repeat
         }
         .dayak-batik-pattern {
-            background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url(https://lh3.googleusercontent.com/aida/ADBb0uhe3l5rxwm22DyqrF4a1yHNdNG07V_UZ8CuugcQvhVw8KbO2UrL62U0EC7GMfX5TjLPbNLVAw-2Uqa59j88FrEnoc27H8cQw-fYFbnxMAyG6PTs1b71iiuuxJwXMq4mn_z0n5e40Och1D8W9b9RQBQYDz5xw7pX01o0ll-92Eenr7zhu8t_mZ6pRJ3RwJPX-Wf0lUdgzEH2ZCvTLAKawZDD9guXzJE8nkdUJwtg_wFLp2qUfSxvzPwGXFV81lgjLhUSJWh8lHF5acw);
-            background-size: 300px;
+            background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url("batik dayak.png");
             background-repeat: repeat
         }
         .material-symbols-outlined {
