@@ -122,11 +122,12 @@
 <body class="bg-surface text-on-surface">
 <header class="w-full shadow-md bg-white sticky top-0 z-50">
 <!-- Top Navbar (Batik Motif) -->
-<div class="batik-bg border-b border-slate-200">
+<div class="batik-bg border-b border-slate-500">
 <div class="max-w-7xl mx-auto px-4 md:px-6 py-3 flex flex-col md:flex-row items-center justify-between gap-4 md:gap-0">
 <!-- Left: Logo -->
-<div class="flex items-center justify-between w-full md:w-auto">
-<img alt="Logo PPID Balikpapan" class="h-8 md:h-10 w-auto object-contain" src="logo_ppid bg removed.png"/>
+<div class="flex items-center justify-between w-full md:w-auto">  
+    <a href="http://ppidbalikpapan.test/" class="h-8 md:h-10 w-auto object-contain">
+     <img src="{{ asset('logo_ppid bg removed.png') }}" alt="logo" class="h-full w-auto"></a>
 <!-- Mobile clock -->
 <div class="md:hidden font-headline font-bold text-xs text-primary/80 bg-white/50 px-3 py-1 rounded-full border border-white/20 shadow-sm min-w-fit" id="mobile-clock">
 <div class="flex flex-col items-center">

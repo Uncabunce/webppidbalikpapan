@@ -100,8 +100,9 @@
 <div class="dayak-batik-pattern sticky top-0 z-50 w-full py-2 border-b border-slate-200 shadow-sm">
 <div class="max-w-7xl mx-auto px-6 grid grid-cols-3 items-center">
 <!-- Left: Logo -->
-<div class="flex justify-start">
-<img alt="Logo PPID Balikpapan" class="h-9 w-auto object-contain" src="logo_ppid bg removed.png"/>
+<div class="flex items-center justify-between w-full md:w-auto">  
+    <a href="http://ppidbalikpapan.test/" class="h-8 md:h-10 w-auto object-contain">
+     <img src="{{ asset('logo_ppid bg removed.png') }}" alt="logo" class="h-full w-auto"></a>
 </div>
 <!-- Center: Search Bar -->
 <div class="flex justify-center">
@@ -335,79 +336,50 @@
 </div>
 </section>
 </main>
-<!-- Footer Section -->
-<footer class="bg-slate-50 border-t border-slate-200 pt-16 pb-8">
-<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
-<!-- Brand Column -->
-<div class="col-span-1 md:col-span-1">
-<div class="flex items-center gap-3 mb-6">
-<div class="w-8 h-8 bg-primary rounded flex items-center justify-center">
-<span class="material-symbols-outlined text-white text-lg">account_balance</span>
+<!-- Footer -->
+<footer class="bg-slate-50 dark:bg-slate-900 w-full pt-16 md:pt-20 pb-8 border-t border-slate-200 dark:border-slate-800">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto px-4 md:px-6 font-['Inter'] text-sm leading-relaxed">
+<!-- Brand & Map -->
+<div class="md:col-span-2">
+<div class="text-xl md:text-2xl font-bold text-blue-900 dark:text-blue-100 mb-6 font-headline">PPID Kota Balikpapan</div>
+<p class="text-slate-600 dark:text-slate-400 max-w-md mb-8">
+                Pejabat Pengelola Informasi dan Dokumentasi (PPID) Utama Pemerintah Kota Balikpapan bertanggung jawab untuk penyimpanan, pendokumentasian, penyediaan, dan pelayanan informasi publik.
+            </p>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63821.253001534766!2d116.75573272167965!3d-1.2764074999999773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df1473bb9404897%3A0x94d96108f98b652c!2sBalikpapan%20Mayor&#39;s%20Office!5e0!3m2!1sen!2ssg!4v1776063788871!5m2!1sen!2ssg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
-<span class="text-lg font-bold text-blue-900 tracking-tight">PPID Balikpapan</span>
-</div>
-<p class="text-sm text-slate-500 leading-relaxed">
-                    Pusat Layanan Informasi dan Dokumentasi Pemerintah Kota Balikpapan. Transparansi untuk pelayanan publik yang lebih baik.
-                </p>
-<div class="flex gap-4 mt-8">
-<a class="w-8 h-8 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 hover:bg-primary hover:text-white transition-all" href="#"><span class="material-symbols-outlined text-sm">public</span></a>
-<a class="w-8 h-8 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 hover:bg-primary hover:text-white transition-all" href="#"><span class="material-symbols-outlined text-sm">mail</span></a>
-<a class="w-8 h-8 rounded-full bg-slate-200 flex items-center justify-center text-slate-600 hover:bg-primary hover:text-white transition-all" href="#"><span class="material-symbols-outlined text-sm">call</span></a>
-</div>
-</div>
-<!-- Links Column 1 -->
+<!-- Contacts -->
 <div>
-<h4 class="font-headline font-bold text-blue-900 mb-6 uppercase tracking-widest text-xs">Layanan Populer</h4>
-<ul class="space-y-4">
-<li><a class="text-sm text-slate-500 hover:text-blue-700 hover:underline transition-all" href="#">Permohonan Informasi</a></li>
-<li><a class="text-sm text-slate-500 hover:text-blue-700 hover:underline transition-all" href="#">Pengajuan Keberatan</a></li>
-<li><a class="text-sm text-slate-500 hover:text-blue-700 hover:underline transition-all" href="#">Whistleblower System</a></li>
-<li><a class="text-sm text-slate-500 hover:text-blue-700 hover:underline transition-all" href="#">Lapor!</a></li>
+<h4 class="font-headline font-bold text-blue-900 dark:text-blue-100 text-lg mb-6">Kontak Kami</h4>
+<ul class="space-y-4 text-slate-500 dark:text-slate-400">
+<li class="flex gap-3">
+<span class="material-symbols-outlined text-secondary shrink-0" data-icon="location_on">location_on</span>
+<span class="text-xs md:text-sm">Jl. Jenderal Sudirman No.1, Klandasan Ulu, Balikpapan Kota, Kota Balikpapan, Kalimantan Timur 76112</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary shrink-0" data-icon="call">call</span>
+<span class="text-xs md:text-sm">(0542) 421420</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary shrink-0" data-icon="mail">mail</span>
+<span class="text-xs md:text-sm break-all">ppid@balikpapan.go.id</span>
+</li>
 </ul>
 </div>
-<!-- Links Column 2 -->
+<!-- Quick Links -->
 <div>
-<h4 class="font-headline font-bold text-blue-900 mb-6 uppercase tracking-widest text-xs">Akses Data</h4>
-<ul class="space-y-4">
-<li><a class="text-sm text-slate-500 hover:text-blue-700 hover:underline transition-all" href="#">Data Terbuka</a></li>
-<li><a class="text-sm text-slate-500 hover:text-blue-700 hover:underline transition-all" href="#">Daftar Informasi Publik</a></li>
-<li><a class="text-sm text-slate-500 hover:text-blue-700 hover:underline transition-all" href="#">Peta Situs</a></li>
-<li><a class="text-sm text-slate-500 hover:text-blue-700 hover:underline transition-all" href="#">Kebijakan Privasi</a></li>
+<h4 class="font-headline font-bold text-blue-900 dark:text-blue-100 text-lg mb-6">Peta Situs</h4>
+<ul class="space-y-3">
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline-offset-4 hover:underline ease-in-out duration-200 text-xs md:text-sm" href="#">Whistleblower System</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline-offset-4 hover:underline ease-in-out duration-200 text-xs md:text-sm" href="#">Lapor!</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline-offset-4 hover:underline ease-in-out duration-200 text-xs md:text-sm" href="#">Data Terbuka</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline-offset-4 hover:underline ease-in-out duration-200 text-xs md:text-sm text-amber-600 dark:text-amber-400 font-semibold" href="#">Kebijakan Privasi</a></li>
 </ul>
 </div>
-<!-- Contact Column -->
-<div>
-<h4 class="font-headline font-bold text-blue-900 mb-6 uppercase tracking-widest text-xs">Kontak Kami</h4>
-<div class="space-y-4">
-<div class="flex gap-3">
-<span class="material-symbols-outlined text-primary text-sm">location_on</span>
-<p class="text-sm text-slate-500 leading-relaxed">
-                            Jl. Jenderal Sudirman No.1, Balikpapan Kota, Kota Balikpapan, Kalimantan Timur 76113
-                        </p>
 </div>
-<div class="flex gap-3">
-<span class="material-symbols-outlined text-primary text-sm">mail</span>
-<p class="text-sm text-slate-500">ppid@balikpapan.go.id</p>
-</div>
-<div class="flex gap-3">
-<span class="material-symbols-outlined text-primary text-sm">call</span>
-<p class="text-sm text-slate-500">(0542) 880000</p>
-</div>
-</div>
-</div>
-</div>
-<!-- Bottom Footer -->
-<div class="max-w-7xl mx-auto px-6 mt-16 pt-8 border-t border-slate-200">
-<div class="flex flex-col md:flex-row justify-between items-center gap-4">
-<p class="text-xs text-slate-400 font-medium tracking-tight">
-                    © 2024 Pemerintah Kota Balikpapan. PPID Utama.
-                </p>
-<div class="flex items-center gap-4">
-<img alt="Lambang Kota Balikpapan" class="h-8 opacity-60" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYNC85yA4qM3QjmbdM6ln3X-g1kWDG3dv5N108uSYT8ezY5o3njZ-Spl9UpluYQqKPpRKWWVO1gEXWdTg5P0v449JAptnp6cKJ9WjNRIhwPkfNf3bi-xrrf7ASarpJYdI3U47JOEuRclnUE3KRXlqwdRMB0wGz21o68d1pyFaECdACNbyIoAdqfYqWDgUVMNUjr3mrgDhhHW6QVOxymeCZ2VjAoZpxaEgVdlLRzEB3aAOqFqGpVLv7KnNKPnaNhNKIr6AhYNl025y5"/>
-<div class="h-4 w-px bg-slate-300"></div>
-<p class="text-[10px] text-slate-400 uppercase font-bold tracking-widest">Digital Service Excellence</p>
-</div>
-</div>
+<div class="max-w-7xl mx-auto px-4 md:px-6 mt-16 pt-8 border-t border-slate-200 dark:border-slate-800 text-center">
+<p class="text-slate-500 dark:text-slate-400 text-[10px] md:text-xs">
+            © 2024 Pemerintah Kota Balikpapan. PPID Utama. All rights reserved.
+        </p>
 </div>
 </footer>
 <!-- FAB for Info Request -->
