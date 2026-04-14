@@ -155,24 +155,22 @@
 </div>
 </header>
 <!-- Bottom Navbar (Black) -->
-<nav class="bg-slate-950 text-white overflow-x-auto no-scrollbar">
-<div class="max-w-7xl mx-auto px-4 md:px-6 flex">
-<div class="flex flex-nowrap md:gap-0">
-<a class="whitespace-nowrap px-4 md:px-6 py-3 font-headline font-bold text-sm tracking-wide text-secondary-container border-b-2 border-secondary-container bg-white/5" href="#">Beranda</a>
-<a class="whitespace-nowrap px-4 md:px-6 py-3 font-headline font-bold text-sm tracking-wide text-slate-300 hover:text-white hover:bg-white/10 transition-all" href="#">Profil</a>
-<a class="whitespace-nowrap px-4 md:px-5 py-4 font-headline font-bold text-[11px] md:text-xs tracking-wider text-slate-300 hover:text-white hover:bg-white/10 transition-all uppercase flex items-center gap-1 border-b-2 border-red-600 bg-white/5" href="#">
-                Informasi Publik <span class="material-symbols-outlined text-xs" data-icon="keyboard_arrow_down">keyboard_arrow_down</span>
-<a class="whitespace-nowrap px-4 md:px-5 py-4 font-headline font-bold text-[11px] md:text-xs tracking-wider text-slate-300 hover:text-white hover:bg-white/10 transition-all uppercase flex items-center gap-1" href="#">
-                Layanan Informasi <span class="material-symbols-outlined text-xs" data-icon="keyboard_arrow_down">keyboard_arrow_down</span>
-</a><a class="whitespace-nowrap px-4 md:px-6 py-3 font-headline font-bold text-sm tracking-wide text-slate-300 hover:text-white hover:bg-white/10 transition-all" href="http://ppidbalikpapan.test/news">Berita</a>
-<a class="whitespace-nowrap px-4 md:px-5 py-4 font-headline font-bold text-[11px] md:text-xs tracking-wider text-slate-300 hover:text-white hover:bg-white/10 transition-all uppercase flex items-center gap-1" href="#">
-                PPID Pelaksana <span class="material-symbols-outlined text-xs" data-icon="keyboard_arrow_down">keyboard_arrow_down</span>
-</a>
-<a class="whitespace-nowrap px-4 md:px-6 py-3 font-headline font-bold text-sm tracking-wide text-slate-300 hover:text-white hover:bg-white/10 transition-all" href="#">Data Statistik</a>
-<a class="whitespace-nowrap px-4 md:px-6 py-3 font-headline font-bold text-sm tracking-wide text-slate-300 hover:text-white hover:bg-white/10 transition-all" href="#">Kontak</a>
-</div>
+<nav class="bg-black text-white shadow-lg">
+<div class="max-w-7xl mx-auto px-6">
+<ul class="flex items-center gap-10 font-headline text-sm font-semibold tracking-wide py-3">
+<li><a class="hover:text-secondary-container transition-colors" href="http://ppidbalikpapan.test/">Beranda</a></li>
+<li><a class="hover:text-secondary-container transition-colors" href="#">Profil</a></li>
+<li><a class="hover:text-secondary-container transition-colors" href="#">Informasi Publik</a></li>
+<li><a class="hover:text-secondary-container transition-colors" href="#">Layanan Informasi</a></li>
+<li><a class="hover:text-secondary-container transition-colors" href="http://ppidbalikpapan.test/news">Berita</a></li>
+<li><a class="hover:text-secondary-container transition-colors" href="#">Data Statistik</a></li>
+<li><a class="hover:text-secondary-container transition-colors" href="">PPID Pelaksana</a></li>
+<li><a class="hover:text-secondary-container transition-colors" href="#">Kontak</a></li>
+<li class="relative">
+</ul>
 </div>
 </nav>
+</header>
 <main>
 <!-- Hero Section: Interactive Carousel -->
 <section class="relative w-full group" id="carousel-container">

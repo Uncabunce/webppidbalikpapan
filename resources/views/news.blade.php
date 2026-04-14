@@ -4,7 +4,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Berita Balikpapan - PPID Balikpapan</title>
-<link rel="icon" type="png" href="{{ asset('kota balikpapan.png') }}">
+<link rel="icon" type="png" href="{{ asset('images/kota balikpapan.png') }}">
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
@@ -137,8 +137,13 @@
 </nav>
 </header>
 <main>
-<!-- Title Section: Pure White Background -->
-<section class="relative py-20 bg-white overflow-hidden border-b border-outline-variant/10">
+<!-- Title Section: Background Image with Fade -->
+<section class="relative py-28 overflow-hidden border-b border-outline-variant/10">
+<!-- Background Layer -->
+<div class="absolute inset-0 z-0">
+<img alt="" class="w-full h-full object-cover opacity-70" src="sinarmasbpp.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-b from-transparent via-white/80 to-white"></div>
+</div>
 <div class="max-w-7xl mx-auto px-6 relative z-10">
 <nav class="flex mb-4 text-xs font-medium text-outline uppercase tracking-widest gap-2">
 <a href="#">Beranda</a>
