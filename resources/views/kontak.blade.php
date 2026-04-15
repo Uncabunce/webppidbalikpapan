@@ -281,7 +281,7 @@
 <section class="relative py-28 overflow-hidden border-b border-outline-variant/10">
 <!-- Background Layer -->
 <div class="absolute inset-0 z-0">
-<img alt="" class="w-full h-full object-cover opacity-70" src="sinarmasbpp.jpg"/>
+<img alt="" class="w-full h-full object-cover opacity-70" src="bppbrmn.png"/>
 <div class="absolute inset-0 bg-gradient-to-b from-transparent via-white/80 to-white"></div>
 </div>
 <div class="max-w-7xl mx-auto px-6 relative z-10">
