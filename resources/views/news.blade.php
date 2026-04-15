@@ -146,7 +146,7 @@
 </div>
 <div class="max-w-7xl mx-auto px-6 relative z-10">
 <nav class="flex mb-4 text-xs font-medium text-outline uppercase tracking-widest gap-2">
-<a href="#">Beranda</a>
+<a href="http://ppidbalikpapan.test">Beranda</a>
 <span>/</span>
 <span class="text-primary">Berita</span>
 </nav>

@@ -233,7 +233,7 @@
 <h3 class="text-xl md:text-2xl font-bold mb-2">Formulir Permohonan</h3>
 <p class="text-primary-fixed/80 mb-6 text-sm md:text-base">Ajukan permintaan informasi publik secara online dengan mudah dan cepat.</p>
 </div>
-<a class="z-10 inline-flex items-center gap-2 font-bold text-secondary-container hover:gap-4 transition-all" href="#">
+<a class="z-10 inline-flex items-center gap-2 font-bold text-secondary-container hover:gap-4 transition-all" href="http://ppidbalikpapan.test/formulir">
                     Isi Formulir <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
 </a>
 <div class="absolute -right-8 -bottom-8 opacity-10 group-hover:scale-110 transition-transform hidden sm:block">
@@ -307,7 +307,7 @@
 <h2 class="text-2xl md:text-3xl font-extrabold text-primary mb-2">Berita Kota</h2>
 <p class="text-on-surface-variant text-sm md:text-base">Update terkini informasi publik Balikpapan</p>
 </div>
-<a class="text-primary font-bold hover:underline" href="#">Lihat Semua</a>
+<a class="text-primary font-bold hover:underline" href="http://ppidbalikpapan.test/news">Lihat Semua</a>
 </div>
 <div class="grid grid-cols-1 gap-8">
 <article class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm group">
