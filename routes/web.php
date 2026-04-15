@@ -11,4 +11,9 @@ Route::get('/news', function () {
 Route::get('/formulir', function () {
     return view('formulir');
 });
-
+Route::get('/keberatan', function () {
+    return view('keberatan');
+});
+Route::get('/kontak', function () {
+    return view('kontak');
+});

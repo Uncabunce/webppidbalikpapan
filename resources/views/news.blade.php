@@ -3,7 +3,7 @@
 <html lang="id"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Berita Balikpapan - PPID Balikpapan</title>
+<title>PPID Kota Balikpapan</title>
 <link rel="icon" type="png" href="{{ asset('images/kota balikpapan.png') }}">
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
@@ -14,53 +14,51 @@
             theme: {
                 extend: {
                     "colors": {
-                        "background": "#f8f9fa",
-                        "outline": "#727782",
+                        "secondary": "#785900",
                         "on-error-container": "#93000a",
-                        "surface-container-low": "#f3f4f5",
+                        "on-tertiary-fixed": "#001f23",
                         "on-secondary": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "on-surface": "#191c1d",
+                        "surface": "#f8f9fa",
+                        "surface-container-highest": "#e1e3e4",
+                        "secondary-fixed-dim": "#fabd00",
+                        "error-container": "#ffdad6",
                         "outline-variant": "#c2c6d2",
+                        "surface-variant": "#e1e3e4",
+                        "secondary-container": "#fdc003",
+                        "primary-fixed-dim": "#a4c9ff",
+                        "on-primary-fixed-variant": "#004883",
                         "on-primary": "#ffffff",
-                        "inverse-on-surface": "#f0f1f2",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed": "#92f1fe",
+                        "primary": "#003f74",
+                        "surface-container": "#edeeef",
+                        "background": "#f8f9fa",
+                        "on-background": "#191c1d",
                         "on-secondary-fixed-variant": "#5b4300",
+                        "tertiary-container": "#005e67",
+                        "on-error": "#ffffff",
+                        "surface-tint": "#1860a6",
+                        "outline": "#727782",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed": "#d4e3ff",
+                        "on-primary-fixed": "#001c39",
+                        "surface-bright": "#f8f9fa",
+                        "tertiary-fixed-dim": "#75d5e2",
+                        "inverse-on-surface": "#f0f1f2",
                         "on-secondary-container": "#6c5000",
                         "on-primary-container": "#aaccff",
-                        "surface-dim": "#d9dadb",
-                        "on-surface": "#191c1d",
-                        "on-primary-fixed": "#001c39",
-                        "secondary-fixed": "#ffdf9e",
-                        "on-background": "#191c1d",
-                        "tertiary-container": "#005e67",
-                        "surface-container": "#edeeef",
-                        "on-secondary-fixed": "#261a00",
-                        "primary-container": "#00569c",
-                        "error-container": "#ffdad6",
-                        "surface": "#f8f9fa",
+                        "surface-container-low": "#f3f4f5",
                         "inverse-surface": "#2e3132",
-                        "secondary-container": "#fdc003",
-                        "on-surface-variant": "#424751",
-                        "surface-bright": "#f8f9fa",
-                        "on-tertiary-fixed": "#001f23",
-                        "secondary-fixed-dim": "#fabd00",
-                        "inverse-primary": "#a4c9ff",
                         "on-tertiary-container": "#78d8e5",
-                        "on-tertiary": "#ffffff",
-                        "primary-fixed": "#d4e3ff",
-                        "error": "#ba1a1a",
-                        "primary": "#003f74",
-                        "on-primary-fixed-variant": "#004883",
+                        "secondary-fixed": "#ffdf9e",
+                        "primary-container": "#00569c",
                         "surface-container-high": "#e7e8e9",
-                        "tertiary": "#00454c",
-                        "surface-container-highest": "#e1e3e4",
-                        "secondary": "#785900",
-                        "tertiary-fixed-dim": "#75d5e2",
-                        "surface-container-lowest": "#ffffff",
-                        "surface-variant": "#e1e3e4",
-                        "on-error": "#ffffff",
-                        "tertiary-fixed": "#92f1fe",
-                        "surface-tint": "#1860a6",
-                        "primary-fixed-dim": "#a4c9ff",
-                        "on-tertiary-fixed-variant": "#004f56"
+                        "surface-dim": "#d9dadb",
+                        "inverse-primary": "#a4c9ff",
+                        "on-tertiary-fixed-variant": "#004f56",
+                        "tertiary": "#00454c"
                     },
                     "borderRadius": {
                         "DEFAULT": "0.125rem",
@@ -78,61 +76,204 @@
         }
     </script>
 <style>
-        .batik-pattern-original {
-            background-image: url("batik dayak.png");
-            background-size: 400px;
-            background-repeat: repeat
-        }
-        .dayak-batik-pattern {
-            background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url("batik dayak.png");
-            background-repeat: repeat
-        }
         .material-symbols-outlined {
             font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24
         }
+        html, body {
+            height: auto;
+            overflow-y: auto;
+            font-family: "Inter", sans-serif;
+        }
+        h1, h2, h3, .font-headline {
+            font-family: "Manrope", sans-serif
+        }
+        .batik-bg {
+            background-image: linear-gradient(rgba(240, 240, 240, 0.9), rgba(240, 240, 240, 0.9)), url("batik dayak.png");
+            background-repeat: repeat;
+            background-size: 300px
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        /* Carousel Styles */
+        #carousel-container {
+            position: relative;
+            overflow: hidden;
+        }
+        #carousel-track {
+            display: flex;
+            transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: grab;
+            user-select: none;
+        }
+        #carousel-track:active {
+            cursor: grabbing;
+        }
+        .carousel-slide {
+            flex: 0 0 100%;
+            width: 100%;
+        }
+                /* Dropdown Styles */
+        .nav-item {
+            position: relative;
+        }
+        .nav-hover-line::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #fdc003;
+            transition: width 0.3s ease
+        }
+        .nav-hover-line:hover::after {
+            width: 100%
+        }
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: 100;
+        }
+        .group:hover .dropdown-menu {
+            display: block;
+            animation: dropdown-slide 0.2s ease-out forwards;
+        }
+        .nav-dropdown {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #0f172a; /* Slate 900 for matching black navbar depth */
+            min-width: 200px;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 100;
+            border-top: 2px solid #fdc003;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+        }
+        .nav-item:hover .nav-dropdown {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        .nav-item:hover > a {
+            border-bottom: 4px solid #fdc003;
+            color: white;
+        }
+        .dropdown-link {
+            display: block;
+            padding: 12px 20px;
+            font-size: 11px;
+            font-weight: 700;
+            color: #cbd5e1;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            transition: all 0.2s;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+        .dropdown-link:last-child {
+            border-bottom: none;
+        }
+        .dropdown-link:hover {
+            background-color: rgba(255,255,255,0.05);
+            color: #fdc003;
+            padding-left: 24px;
+        }
     </style>
 </head>
-<body class="bg-background text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
-<!-- Header Section -->
-<header class="top-0">
-<!-- Top NavBar: Dayak Batik Pattern + Search + Clock -->
-<div class="dayak-batik-pattern sticky top-0 z-50 w-full py-2 border-b border-slate-200 shadow-sm">
-<div class="max-w-7xl mx-auto px-6 grid grid-cols-3 items-center">
+<body class="bg-surface text-on-surface">
+<header class="w-full shadow-md bg-white sticky top-0 z-50">
+<!-- Top Navbar (Batik Motif) -->
+<div class="batik-bg border-b border-slate-500">
+<div class="max-w-7xl mx-auto px-4 md:px-6 py-3 flex flex-col md:flex-row items-center justify-between gap-4 md:gap-0">
 <!-- Left: Logo -->
 <div class="flex items-center justify-between w-full md:w-auto">  
     <a href="http://ppidbalikpapan.test/" class="h-8 md:h-10 w-auto object-contain">
      <img src="{{ asset('logo_ppid bg removed.png') }}" alt="logo" class="h-full w-auto"></a>
+<!-- Mobile clock -->
+<div class="md:hidden font-headline font-bold text-xs text-primary/80 bg-white/50 px-3 py-1 rounded-full border border-white/20 shadow-sm min-w-fit" id="mobile-clock">
+<div class="flex flex-col items-center">
+<span class="text-[8px] leading-none opacity-70" id="mobile-date"></span>
+<span class="text-[10px] leading-tight" id="mobile-time"></span>
+</div>
+</div>
 </div>
 <!-- Center: Search Bar -->
-<div class="flex justify-center">
-<div class="relative w-full max-w-[320px]">
-<input class="w-full pl-4 pr-10 py-1.5 bg-white/80 border border-slate-300 rounded-full shadow-inner focus:ring-2 focus:ring-primary text-xs backdrop-blur-sm" placeholder="Cari informasi..." type="text"/>
-<span class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 text-lg">search</span>
+<div class="w-full max-w-md">
+<div class="relative flex items-center">
+<input class="w-full bg-white/90 border border-slate-300 rounded-full px-4 py-1.5 pr-10 text-xs focus:ring-2 focus:ring-primary focus:border-transparent shadow-inner" placeholder="Cari informasi..." type="text"/>
+<span class="material-symbols-outlined absolute right-3 text-slate-400 text-lg" data-icon="search">search</span>
 </div>
 </div>
 <!-- Right: Clock -->
-<div class="flex justify-end">
-<div class="font-headline font-bold text-primary bg-white/60 px-4 py-1 rounded-lg border border-white/40 shadow-sm min-w-fit flex flex-col items-end" id="real-time-clock">
-<span class="text-[9px] leading-none opacity-80 uppercase tracking-tighter" id="day-date">Selasa, 14 Mei 2024</span>
-<span class="text-xs leading-tight" id="time">09:45:22 WITA</span>
+<div class="hidden md:flex items-center">
+<div class="font-headline font-bold text-sm text-primary/80 bg-white/50 px-4 py-1 rounded-full border border-white/20 shadow-sm min-w-fit" id="real-time-clock">
+<div class="flex flex-col items-center">
+<span class="text-[10px] leading-none opacity-70" id="desktop-date"></span>
+<span class="text-sm leading-tight" id="desktop-time"></span>
 </div>
 </div>
 </div>
 </div>
-<!-- Bottom NavBar: Pure Black Navigation -->
-<nav class="bg-black text-white shadow-lg">
-<div class="max-w-7xl mx-auto px-6">
-<ul class="flex items-center gap-10 font-headline text-sm font-semibold tracking-wide py-3">
-<li><a class="hover:text-secondary-container transition-colors" href="http://ppidbalikpapan.test/">Beranda</a></li>
-<li><a class="hover:text-secondary-container transition-colors" href="#">Profil</a></li>
-<li><a class="hover:text-secondary-container transition-colors" href="#">Informasi Publik</a></li>
-<li><a class="hover:text-secondary-container transition-colors" href="#">Layanan Informasi</a></li>
-<li><a class="hover:text-secondary-container transition-colors" href="http://ppidbalikpapan.test/news">Berita</a></li>
-<li><a class="hover:text-secondary-container transition-colors" href="#">Data Statistik</a></li>
-<li><a class="hover:text-secondary-container transition-colors" href="">PPID Pelaksana</a></li>
-<li><a class="hover:text-secondary-container transition-colors" href="#">Kontak</a></li>
-<li class="relative">
-</ul>
+</div>
+</header>
+<!-- Bottom Navbar (Static with Content Flow) -->
+<nav class="bg-slate-950 text-white w-full h-11 overflow-x-visible">
+<div class="max-w-7xl mx-auto flex h-full items-center justify-center space-x-1 px-4 whitespace-nowrap">
+<a class="nav-hover-line relative px-3 py-3 text-xs font-bold font-headline transition-all text-secondary-container" href="http://ppidbalikpapan.test">Beranda</a>
+<div class="group relative h-full flex items-center">
+<button class="nav-hover-line relative px-3 py-3 text-xs font-bold font-headline flex items-center gap-0.5">
+                    Profil <span class="material-symbols-outlined text-[10px] group-hover:rotate-180 transition-transform">expand_more</span>
+</button>
+<div class="dropdown-menu bg-slate-900 min-w-[200px] shadow-xl py-2 rounded-b-lg overflow-hidden border border-white/10 font-headline">
+<a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="#">Visi &amp; Misi</a>
+<a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="#">Struktur Organisasi</a>
+<a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="#">Tugas &amp; Fungsi</a>
+</div>
+</div>
+<div class="group relative h-full flex items-center">
+<button class="nav-hover-line relative px-3 py-3 text-xs font-bold font-headline flex items-center gap-0.5">
+                    Informasi Publik <span class="material-symbols-outlined text-[10px] group-hover:rotate-180 transition-transform">expand_more</span>
+</button>
+<div class="dropdown-menu bg-slate-900 min-w-[200px] shadow-xl py-2 rounded-b-lg overflow-hidden border border-white/10 font-headline">
+<a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="#">Informasi Berkala</a>
+<a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="#">Informasi Serta Merta</a>
+<a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="#">Informasi Setiap Saat</a>
+<a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="#">Daftar Informasi Publik</a>
+</div>
+</div>
+<div class="group relative h-full flex items-center">
+<button class="nav-hover-line relative px-3 py-3 text-xs font-bold font-headline flex items-center gap-0.5">
+                    Layanan Informasi <span class="material-symbols-outlined text-[10px] group-hover:rotate-180 transition-transform">expand_more</span>
+</button>
+<div class="dropdown-menu bg-slate-900 min-w-[200px] shadow-xl py-2 rounded-b-lg overflow-hidden border border-white/10 font-headline">
+<a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="#">Prosedur Permohonan</a>
+<a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="#">Prosedur Keberatan</a>
+<a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="#">SOP Layanan PPID</a>
+<a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="#">Biaya Layanan</a>
+</div>
+</div>
+<a class="nav-hover-line relative px-3 py-3 text-xs font-bold font-headline" href="http://ppidbalikpapan.test/news">Berita
+</a>
+<a class="nav-hover-line relative px-3 py-3 text-xs font-bold font-headline" href="#">Data Statistik</a>
+<div class="group relative h-full flex items-center">
+<button class="nav-hover-line relative px-3 py-3 text-xs font-bold font-headline flex items-center gap-0.5">
+                    PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:rotate-180 transition-transform">expand_more</span>
+</button>
+<div class="dropdown-menu bg-slate-900 min-w-[200px] shadow-xl py-2 rounded-b-lg overflow-hidden border border-white/10 font-headline">
+<a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="#">Daftar PPID Pelaksana</a>
+<a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="#">Kinerja PPID</a>
+</div>
+</div>
+<a class="nav-hover-line relative px-3 py-3 text-xs font-bold font-headline" href="http://ppidbalikpapan.test/kontak">Kontak</a>
 </div>
 </nav>
 </header>
@@ -389,39 +530,44 @@
 </div>
 </button>
 <script>
-        function updateClock() {
-            const now = new Date();
-            const days = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
-            const months = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
-            
-            const dayName = days[now.getDay()];
-            const day = String(now.getDate());
-            const monthName = months[now.getMonth()];
-            const year = now.getFullYear();
-            
-            const hours = String(now.getHours()).padStart(2, '0');
-            const minutes = String(now.getMinutes()).padStart(2, '0');
-            const seconds = String(now.getSeconds()).padStart(2, '0');
-            
-            const offset = -now.getTimezoneOffset() / 60;
-            let tz = '';
-            if (offset === 7) tz = 'WIB';
-            else if (offset === 8) tz = 'WITA';
-            else if (offset === 9) tz = 'WIT';
-            else {
-                tz = now.toLocaleTimeString('en-us',{timeZoneName:'short'}).split(' ')[2] || 'WITA';
-            }
-
-            const dateString = `${dayName}, ${day} ${monthName} ${year}`;
-            const timeString = `${hours}:${minutes}:${seconds} ${tz}`;
-            
-            const dateEl = document.getElementById('day-date');
-            const timeEl = document.getElementById('time');
-            if (dateEl) dateEl.textContent = dateString;
-            if (timeEl) timeEl.textContent = timeString;
-        }
+    function updateClock() {
+        const now = new Date();
+        const days = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
+        const months = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
         
-        setInterval(updateClock, 1000);
-        updateClock();
+        const dayName = days[now.getDay()];
+        const day = now.getDate();
+        const monthName = months[now.getMonth()];
+        const year = now.getFullYear();
+        
+        const hours = String(now.getHours()).padStart(2, '0');
+        const minutes = String(now.getMinutes()).padStart(2, '0');
+        const seconds = String(now.getSeconds()).padStart(2, '0');
+        
+        const offset = -now.getTimezoneOffset() / 60;
+        let tz = '';
+        if (offset === 7) tz = 'WIB';
+        else if (offset === 8) tz = 'WITA';
+        else if (offset === 9) tz = 'WIT';
+        else {
+            tz = now.toLocaleTimeString('en-us',{timeZoneName:'short'}).split(' ')[2];
+        }
+
+        const dateString = `${dayName}, ${day} ${monthName} ${year}`;
+        const timeString = `${hours}:${minutes}:${seconds} ${tz}`;
+        
+        const desktopDate = document.getElementById('desktop-date');
+        const desktopTime = document.getElementById('desktop-time');
+        const mobileDate = document.getElementById('mobile-date');
+        const mobileTime = document.getElementById('mobile-time');
+        
+        if (desktopDate) desktopDate.textContent = dateString;
+        if (desktopTime) desktopTime.textContent = timeString;
+        if (mobileDate) mobileDate.textContent = dateString;
+        if (mobileTime) mobileTime.textContent = timeString;
+    }
+    setInterval(updateClock, 1000);
+    updateClock();
+
     </script>
 </body></html>

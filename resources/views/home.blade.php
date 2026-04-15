@@ -117,6 +117,76 @@
             flex: 0 0 100%;
             width: 100%;
         }
+                /* Dropdown Styles */
+        .nav-item {
+            position: relative;
+        }
+        .nav-hover-line::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #fdc003;
+            transition: width 0.3s ease
+        }
+        .nav-hover-line:hover::after {
+            width: 100%
+        }
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: 100;
+        }
+        .group:hover .dropdown-menu {
+            display: block;
+            animation: dropdown-slide 0.2s ease-out forwards;
+        }
+        .nav-dropdown {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #0f172a; /* Slate 900 for matching black navbar depth */
+            min-width: 200px;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 100;
+            border-top: 2px solid #fdc003;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+        }
+        .nav-item:hover .nav-dropdown {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        .nav-item:hover > a {
+            border-bottom: 4px solid #fdc003;
+            color: white;
+        }
+        .dropdown-link {
+            display: block;
+            padding: 12px 20px;
+            font-size: 11px;
+            font-weight: 700;
+            color: #cbd5e1;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            transition: all 0.2s;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+        .dropdown-link:last-child {
+            border-bottom: none;
+        }
+        .dropdown-link:hover {
+            background-color: rgba(255,255,255,0.05);
+            color: #fdc003;
+            padding-left: 24px;
+        }
     </style>
 </head>
 <body class="bg-surface text-on-surface">
@@ -155,20 +225,55 @@
 </div>
 </div>
 </header>
-<!-- Bottom Navbar (Black) -->
-<nav class="bg-black text-white shadow-lg">
-<div class="max-w-7xl mx-auto px-6">
-<ul class="flex items-center gap-10 font-headline text-sm font-semibold tracking-wide py-3">
-<li><a class="hover:text-secondary-container transition-colors" href="http://ppidbalikpapan.test/">Beranda</a></li>
-<li><a class="hover:text-secondary-container transition-colors" href="#">Profil</a></li>
-<li><a class="hover:text-secondary-container transition-colors" href="#">Informasi Publik</a></li>
-<li><a class="hover:text-secondary-container transition-colors" href="#">Layanan Informasi</a></li>
-<li><a class="hover:text-secondary-container transition-colors" href="http://ppidbalikpapan.test/news">Berita</a></li>
-<li><a class="hover:text-secondary-container transition-colors" href="#">Data Statistik</a></li>
-<li><a class="hover:text-secondary-container transition-colors" href="">PPID Pelaksana</a></li>
-<li><a class="hover:text-secondary-container transition-colors" href="#kontak">Kontak</a></li>
-<li class="relative">
-</ul>
+<!-- Bottom Navbar (Static with Content Flow) -->
+<nav class="bg-slate-950 text-white w-full h-11 overflow-x-visible">
+<div class="max-w-7xl mx-auto flex h-full items-center justify-center space-x-1 px-4 whitespace-nowrap">
+<a class="nav-hover-line relative px-3 py-3 text-xs font-bold font-headline transition-all text-secondary-container" href="http://ppidbalikpapan.test">Beranda</a>
+<div class="group relative h-full flex items-center">
+<button class="nav-hover-line relative px-3 py-3 text-xs font-bold font-headline flex items-center gap-0.5">
+                    Profil <span class="material-symbols-outlined text-[10px] group-hover:rotate-180 transition-transform">expand_more</span>
+</button>
+<div class="dropdown-menu bg-slate-900 min-w-[200px] shadow-xl py-2 rounded-b-lg overflow-hidden border border-white/10 font-headline">
+<a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="#">Visi &amp; Misi</a>
+<a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="#">Struktur Organisasi</a>
+<a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="#">Tugas &amp; Fungsi</a>
+</div>
+</div>
+<div class="group relative h-full flex items-center">
+<button class="nav-hover-line relative px-3 py-3 text-xs font-bold font-headline flex items-center gap-0.5">
+                    Informasi Publik <span class="material-symbols-outlined text-[10px] group-hover:rotate-180 transition-transform">expand_more</span>
+</button>
+<div class="dropdown-menu bg-slate-900 min-w-[200px] shadow-xl py-2 rounded-b-lg overflow-hidden border border-white/10 font-headline">
+<a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="#">Informasi Berkala</a>
+<a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="#">Informasi Serta Merta</a>
+<a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="#">Informasi Setiap Saat</a>
+<a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="#">Daftar Informasi Publik</a>
+</div>
+</div>
+<div class="group relative h-full flex items-center">
+<button class="nav-hover-line relative px-3 py-3 text-xs font-bold font-headline flex items-center gap-0.5">
+                    Layanan Informasi <span class="material-symbols-outlined text-[10px] group-hover:rotate-180 transition-transform">expand_more</span>
+</button>
+<div class="dropdown-menu bg-slate-900 min-w-[200px] shadow-xl py-2 rounded-b-lg overflow-hidden border border-white/10 font-headline">
+<a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="#">Prosedur Permohonan</a>
+<a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="#">Prosedur Keberatan</a>
+<a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="#">SOP Layanan PPID</a>
+<a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="#">Biaya Layanan</a>
+</div>
+</div>
+<a class="nav-hover-line relative px-3 py-3 text-xs font-bold font-headline" href="http://ppidbalikpapan.test/news">Berita
+</a>
+<a class="nav-hover-line relative px-3 py-3 text-xs font-bold font-headline" href="#">Data Statistik</a>
+<div class="group relative h-full flex items-center">
+<button class="nav-hover-line relative px-3 py-3 text-xs font-bold font-headline flex items-center gap-0.5">
+                    PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:rotate-180 transition-transform">expand_more</span>
+</button>
+<div class="dropdown-menu bg-slate-900 min-w-[200px] shadow-xl py-2 rounded-b-lg overflow-hidden border border-white/10 font-headline">
+<a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="#">Daftar PPID Pelaksana</a>
+<a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="#">Kinerja PPID</a>
+</div>
+</div>
+<a class="nav-hover-line relative px-3 py-3 text-xs font-bold font-headline" href="http://ppidbalikpapan.test/kontak">Kontak</a>
 </div>
 </nav>
 </header>
@@ -247,7 +352,7 @@
 </div>
 <h3 class="text-lg md:text-xl font-bold mb-2">Pengajuan Keberatan</h3>
 <p class="text-on-surface-variant text-sm mb-4">Prosedur keberatan atas layanan informasi publik.</p>
-<a class="text-primary font-bold text-sm flex items-center gap-1" href="#">Prosedur <span class="material-symbols-outlined text-sm" data-icon="chevron_right">chevron_right</span></a>
+<a class="text-primary font-bold text-sm flex items-center gap-1" href="http://ppidbalikpapan.test/keberatan">Isi Pengajuan <span class="material-symbols-outlined text-sm" data-icon="chevron_right">chevron_right</span></a>
 </div>
 <div class="bg-surface-container-lowest p-6 md:p-8 rounded-xl shadow-sm border border-outline-variant/15 hover:shadow-md transition-all">
 <div class="bg-tertiary-container/10 text-tertiary-container w-12 h-12 rounded-full flex items-center justify-center mb-6">

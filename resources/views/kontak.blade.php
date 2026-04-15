@@ -99,6 +99,24 @@
             -ms-overflow-style: none;
             scrollbar-width: none;
         }
+        /* Carousel Styles */
+        #carousel-container {
+            position: relative;
+            overflow: hidden;
+        }
+        #carousel-track {
+            display: flex;
+            transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: grab;
+            user-select: none;
+        }
+        #carousel-track:active {
+            cursor: grabbing;
+        }
+        .carousel-slide {
+            flex: 0 0 100%;
+            width: 100%;
+        }
                 /* Dropdown Styles */
         .nav-item {
             position: relative;
@@ -169,22 +187,6 @@
             color: #fdc003;
             padding-left: 24px;
         }
-                .form-card { transition: transform 0.3s ease, box-shadow 0.3s ease }
-        .form-card:hover { transform: translatey(-4px) }
-    
-        .dropdown-content { 
-            display: none; 
-            opacity: 0;
-            transform: translateY(-10px) scaleY(0.95);
-            transform-origin: top; 
-            transition: opacity 0.2s ease-out, transform 0.2s ease-out;
-        }
-        .dropdown-content.show { 
-            display: block; 
-            opacity: 1;
-            transform: translateY(0) scaleY(1);
-        }
-        .rotate-180 { transform: rotate(180deg); }
     </style>
 </head>
 <body class="bg-surface text-on-surface">
@@ -275,199 +277,212 @@
 </div>
 </nav>
 </header>
-<main class="pt-28 pb-20 min-h-screen">
-<div class="max-w-4xl mx-auto px-6">
-<div class="mb-12">
-<div class="inline-block px-4 py-1.5 bg-secondary-container text-on-secondary-container rounded-full text-xs font-bold tracking-widest uppercase mb-4">Layanan Publik</div>
-<h1 class="text-4xl md:text-5xl font-extrabold text-primary tracking-tight leading-tight mb-4">Permohonan Informasi Publik</h1>
-<p class="text-lg text-on-surface-variant max-w-2xl leading-relaxed">Sampaikan permohonan informasi Anda melalui formulir resmi PPID Kota Balikpapan sesuai dengan UU No. 14 Tahun 2008.</p>
+<main>
+<section class="relative py-28 overflow-hidden border-b border-outline-variant/10">
+<!-- Background Layer -->
+<div class="absolute inset-0 z-0">
+<img alt="" class="w-full h-full object-cover opacity-70" src="sinarmasbpp.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-b from-transparent via-white/80 to-white"></div>
 </div>
-<form class="space-y-8">
-<!-- Section 1: DATA PEMOHON INFORMASI -->
-<section class="form-card bg-surface-container-lowest p-8 rounded-xl shadow-[0_32px_32px_-4px_rgba(25,28,29,0.06)]">
-<div class="flex items-center gap-3 mb-8">
-<div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-on-primary font-bold">I</div>
-<h2 class="text-xl font-bold text-primary uppercase">Data Pemohon Informasi</h2>
+<div class="max-w-7xl mx-auto px-6 relative z-10">
+<nav class="flex mb-4 text-xs font-medium text-outline uppercase tracking-widest gap-2">
+<a href="http://ppidbalikpapan.test">Beranda</a>
+<span>/</span>
+<span class="text-primary">Kontak</span>
+</nav>
+<h1 class="text-5xl md:text-6xl font-headline font-extrabold text-primary leading-tight">
+                    Kontak <span class="text-secondary">Kami</span>
+</h1>
+<p class="mt-6 text-lg text-on-surface-variant max-w-2xl leading-relaxed">
+                    Akses informasi terkini mengenai kebijakan, layanan publik, dan perkembangan terbaru Kota Balikpapan secara transparan dan akuntabel.
+                </p>
 </div>
-<div class="space-y-6">
-<div class="grid grid-cols-1 md:grid-cols-3 items-center gap-4">
-<label class="text-sm font-bold text-primary">Jenis Pemohon</label>
-<div class="md:col-span-2">
-<div class="relative w-full group">
-<button class="w-full flex justify-between items-center bg-surface-container-high border-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary text-left" onclick="this.nextElementSibling.classList.toggle('show'); this.querySelector('.arrow').classList.toggle('rotate-180')" type="button">
-<span class="selected-text">-- pilih --</span>
-<span class="material-symbols-outlined arrow transition-transform">expand_more</span>
+</section>
+<!-- Main Content -->
+<section class="max-w-screen-2xl mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+<!-- Left Column: Map & Form -->
+<div class="lg:col-span-7 space-y-8">
+<!-- Interactive Map Shell -->
+<div class="rounded-xl overflow-hidden shadow-lg bg-surface-container-low p-1 group">
+<div class="aspect-video w-full rounded-lg overflow-hidden bg-surface-container-highest relative">
+<!-- Image representing the map -->
+<img alt="Map location Balikpapan City Hall" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="Aerial view of Balikpapan city streets and office buildings used as a representative map background" data-location="Balikpapan City Hall" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCk2Z6FyHpbyVKTop-G_0lWilz8PmKSj04hWXIMTNnftENYS0fTn6N6-dx7ZGc_4w-G0J9ZgBw1y76dXcud5zWELIxx3KKq-F9iM8OZyxYsthqfKSVx84hO4eGD35-GU5v0KRY3PXZ-RTVjY9jQ3w38HiCi3ldpJzeFXfZa9S72Cu5yK3Z5xBhSVWgaEShTSadRfNhMJt0K-G3AJoixURyMj4e3Qw9nz6N5qgoUXT7IADHSy1LzkYK-TJElerc7Y-7YMhRBbuDA9I6c"/>
+<div class="absolute inset-0 bg-primary/20 backdrop-blur-[2px] flex items-center justify-center">
+<div class="bg-white p-4 rounded-xl shadow-2xl flex flex-col items-center">
+<div class="w-12 h-12 bg-error rounded-full flex items-center justify-center mb-2 animate-bounce">
+<span class="material-symbols-outlined text-white">location_on</span>
+</div>
+<span class="text-primary font-bold text-sm">Kantor Walikota Balikpapan</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Contact Form -->
+<div class="bg-surface-container-low rounded-xl p-8 md:p-10 shadow-sm">
+<div class="mb-8 flex items-center gap-4">
+<div class="w-1.5 h-10 bg-secondary-container rounded-full"></div>
+<h2 class="text-2xl font-headline font-bold text-primary">Kirim Pesan</h2>
+</div>
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-xs font-label font-bold text-outline-variant uppercase tracking-wider">Nama Lengkap</label>
+<input class="w-full bg-surface-container-lowest border-none rounded-xl p-4 text-sm focus:ring-2 focus:ring-primary/10 transition-all placeholder:text-outline/40" placeholder="Masukkan nama Anda" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-label font-bold text-outline-variant uppercase tracking-wider">Alamat Email</label>
+<input class="w-full bg-surface-container-lowest border-none rounded-xl p-4 text-sm focus:ring-2 focus:ring-primary/10 transition-all placeholder:text-outline/40" placeholder="example@email.com" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-label font-bold text-outline-variant uppercase tracking-wider">Nomor Telepon</label>
+<input class="w-full bg-surface-container-lowest border-none rounded-xl p-4 text-sm focus:ring-2 focus:ring-primary/10 transition-all placeholder:text-outline/40" placeholder="+62 812..." type="tel"/>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-label font-bold text-outline-variant uppercase tracking-wider">Pesan Anda</label>
+<textarea class="w-full bg-surface-container-lowest border-none rounded-xl p-4 text-sm focus:ring-2 focus:ring-primary/10 transition-all placeholder:text-outline/40 resize-none" placeholder="Tuliskan pertanyaan atau aspirasi Anda di sini..." rows="5"></textarea>
+</div>
+<button class="w-full md:w-auto px-10 py-4 bg-error text-white font-headline font-extrabold rounded-xl shadow-lg shadow-error/20 hover:scale-[1.02] active:scale-95 transition-all duration-300 flex items-center justify-center gap-3" type="submit">
+<span>KIRIM PESAN</span>
+<span class="material-symbols-outlined text-xl">send</span>
 </button>
-<div class="dropdown-content absolute left-0 right-0 top-full mt-1 bg-white border border-outline-variant rounded-lg shadow-xl z-10 overflow-hidden">
-<div class="px-4 py-3 hover:bg-primary hover:text-white cursor-pointer transition-colors" onclick="let container=this.closest('.relative'); container.querySelector('.selected-text').innerText=this.innerText; container.querySelector('.dropdown-content').classList.remove('show'); container.querySelector('.arrow').classList.remove('rotate-180')">-- pilih --</div>
-<div class="px-4 py-3 hover:bg-primary hover:text-white cursor-pointer transition-colors" onclick="let container=this.closest('.relative'); container.querySelector('.selected-text').innerText=this.innerText; container.querySelector('.dropdown-content').classList.remove('show'); container.querySelector('.arrow').classList.remove('rotate-180')">Perorangan</div>
-<div class="px-4 py-3 hover:bg-primary hover:text-white cursor-pointer transition-colors" onclick="let container=this.closest('.relative'); container.querySelector('.selected-text').innerText=this.innerText; container.querySelector('.dropdown-content').classList.remove('show'); container.querySelector('.arrow').classList.remove('rotate-180')">Kelompok Orang</div>
-<div class="px-4 py-3 hover:bg-primary hover:text-white cursor-pointer transition-colors" onclick="let container=this.closest('.relative'); container.querySelector('.selected-text').innerText=this.innerText; container.querySelector('.dropdown-content').classList.remove('show'); container.querySelector('.arrow').classList.remove('rotate-180')">Badan Hukum</div>
-</div>
-</div>
-</div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 items-center gap-4">
-<label class="text-sm font-bold text-primary">Jenis Identitas</label>
-<div class="md:col-span-2">
-<div class="relative w-full group">
-<button class="w-full flex justify-between items-center bg-surface-container-high border-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary text-left" onclick="this.nextElementSibling.classList.toggle('show'); this.querySelector('.arrow').classList.toggle('rotate-180')" type="button">
-<span class="selected-text">-- pilih --</span>
-<span class="material-symbols-outlined arrow transition-transform">expand_more</span>
-</button>
-<div class="dropdown-content absolute left-0 right-0 top-full mt-1 bg-white border border-outline-variant rounded-lg shadow-xl z-10 overflow-hidden">
-<div class="px-4 py-3 hover:bg-primary hover:text-white cursor-pointer transition-colors" onclick="let container=this.closest('.relative'); container.querySelector('.selected-text').innerText=this.innerText; container.querySelector('.dropdown-content').classList.remove('show'); container.querySelector('.arrow').classList.remove('rotate-180')">-- pilih --</div>
-<div class="px-4 py-3 hover:bg-primary hover:text-white cursor-pointer transition-colors" onclick="let container=this.closest('.relative'); container.querySelector('.selected-text').innerText=this.innerText; container.querySelector('.dropdown-content').classList.remove('show'); container.querySelector('.arrow').classList.remove('rotate-180')">KTP</div>
-<div class="px-4 py-3 hover:bg-primary hover:text-white cursor-pointer transition-colors" onclick="let container=this.closest('.relative'); container.querySelector('.selected-text').innerText=this.innerText; container.querySelector('.dropdown-content').classList.remove('show'); container.querySelector('.arrow').classList.remove('rotate-180')">Anggaran Dasar yang disahkan oleh Pejabat</div>
-<div class="px-4 py-3 hover:bg-primary hover:text-white cursor-pointer transition-colors" onclick="let container=this.closest('.relative'); container.querySelector('.selected-text').innerText=this.innerText; container.querySelector('.dropdown-content').classList.remove('show'); container.querySelector('.arrow').classList.remove('rotate-180')">Surat Kuasa</div>
-</div>
-</div>
-</div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 items-center gap-4">
-<label class="text-sm font-bold text-primary">No. Identitas</label>
-<div class="md:col-span-2">
-<input class="w-full bg-surface-container-high border-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary" type="text"/>
-</div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 items-center gap-4">
-<label class="text-sm font-bold text-primary">Nama Lengkap</label>
-<div class="md:col-span-2">
-<input class="w-full bg-surface-container-high border-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary" type="text"/>
-</div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 items-start gap-4">
-<label class="text-sm font-bold text-primary mt-3">Alamat</label>
-<div class="md:col-span-2">
-<textarea class="w-full bg-surface-container-high border-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary" rows="3"></textarea>
-</div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 items-start gap-4">
-<label class="text-sm font-bold text-primary mt-3">Email</label>
-<div class="md:col-span-2">
-<input class="w-full bg-surface-container-high border-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary mb-1" type="email"/>
-<p class="text-xs text-on-surface-variant font-medium italic">* email harus aktif</p>
-</div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 items-center gap-4">
-<label class="text-sm font-bold text-primary">No. Telp</label>
-<div class="md:col-span-2">
-<input class="w-full bg-surface-container-high border-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary" type="tel"/>
-</div>
-</div>
-</div>
-</section>
-<!-- Section 2: INFORMASI YANG DIBUTUHKAN -->
-<section class="form-card bg-surface-container-lowest p-8 rounded-xl shadow-[0_32px_32px_-4px_rgba(25,28,29,0.06)]">
-<div class="flex items-center gap-3 mb-8">
-<div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-on-primary font-bold">II</div>
-<h2 class="text-xl font-bold text-primary uppercase">Informasi Yang Dibutuhkan</h2>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 items-start gap-4">
-<label class="text-sm font-bold text-primary mt-3">Informasi Yang Dibutuhkan</label>
-<div class="md:col-span-2">
-<textarea class="w-full bg-surface-container-high border-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary" placeholder="Jelaskan secara spesifik informasi yang Anda minta..." rows="8"></textarea>
-</div>
-</div>
-</section>
-<!-- Section 3: Identity Document Upload -->
-<section class="form-card bg-surface-container-lowest p-8 rounded-xl shadow-[0_32px_32px_-4px_rgba(25,28,29,0.06)]">
-<div class="flex items-center gap-3 mb-8">
-<div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-on-primary font-bold">III</div>
-<h2 class="text-xl font-bold text-primary uppercase">Unggah Identitas</h2>
-</div>
-<div class="flex flex-col md:flex-row items-center gap-8">
-<div class="w-full md:w-1/2 border-2 border-dashed border-outline-variant rounded-xl p-8 text-center bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer group">
-<span class="material-symbols-outlined text-4xl text-outline group-hover:scale-110 transition-transform mb-2">cloud_upload</span>
-<p class="text-sm font-bold text-primary mb-1">Unggah KTP / Passport / Akta</p>
-<p class="text-xs text-on-surface-variant">Format: JPG, PNG, PDF (Maks. 2MB)</p>
-<input class="hidden" type="file"/>
-</div>
-<div class="w-full md:w-1/2">
-<div class="bg-primary-fixed p-4 rounded-xl">
-<p class="text-sm font-medium text-on-primary-fixed-variant leading-relaxed">
-<span class="material-symbols-outlined align-middle mr-1 text-base">info</span>
-                                    Pastikan dokumen terlihat jelas dan masih berlaku. Data Anda dilindungi sesuai Kebijakan Privasi PPID Balikpapan.
-                                </p>
-</div>
-</div>
-</div>
-</section>
-<!-- Section 4: Fulfillment Method -->
-<section class="form-card bg-surface-container-lowest p-8 rounded-xl shadow-[0_32px_32px_-4px_rgba(25,28,29,0.06)]">
-<div class="flex items-center gap-3 mb-8">
-<div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-on-primary font-bold">IV</div>
-<h2 class="text-xl font-bold text-primary uppercase">Metode Perolehan &amp; Penyampaian</h2>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-<div>
-<label class="block text-xs font-bold text-primary uppercase tracking-wider mb-4">Cara Memperoleh Informasi</label>
-<div class="space-y-3">
-<label class="flex items-center gap-3 p-3 bg-surface-container-low rounded-lg cursor-pointer">
-<input class="text-primary focus:ring-primary" name="obtaining" type="radio"/>
-<span class="text-sm font-medium">Melihat / Membaca / Mendengarkan</span>
-</label>
-<label class="flex items-center gap-3 p-3 bg-surface-container-low rounded-lg cursor-pointer">
-<input class="text-primary focus:ring-primary" name="obtaining" type="radio"/>
-<span class="text-sm font-medium">Mendapatkan Salinan (Softcopy/Hardcopy)</span>
-</label>
-</div>
-</div>
-<div>
-<label class="block text-xs font-bold text-primary uppercase tracking-wider mb-4">Cara Menyampaikan Informasi</label>
-<div class="space-y-3">
-<label class="flex items-center gap-3 p-3 bg-surface-container-low rounded-lg cursor-pointer">
-<input class="text-primary focus:ring-primary" name="delivery" type="radio"/>
-<span class="text-sm font-medium">Mengambil Langsung</span>
-</label>
-<label class="flex items-center gap-3 p-3 bg-surface-container-low rounded-lg cursor-pointer">
-<input class="text-primary focus:ring-primary" name="delivery" type="radio"/>
-<span class="text-sm font-medium">Email / WhatsApp</span>
-</label>
-<label class="flex items-center gap-3 p-3 bg-surface-container-low rounded-lg cursor-pointer">
-<input class="text-primary focus:ring-primary" name="delivery" type="radio"/>
-<span class="text-sm font-medium">Kurir / Pos</span>
-</label>
-</div>
-</div>
-</div>
-</section>
-<!-- Submit Button Area -->
-<div class="flex flex-col md:flex-row items-center justify-between gap-6 p-8 bg-surface-container rounded-xl">
-<div class="flex items-center gap-3">
-<input class="w-5 h-5 rounded border-outline text-primary focus:ring-primary" type="checkbox"/>
-<p class="text-sm text-on-surface-variant font-medium">Saya menyatakan data yang diisi adalah benar dan valid.</p>
-</div>
-<button class="w-full md:w-auto px-12 py-4 bg-primary text-on-primary rounded-xl font-extrabold text-lg shadow-lg hover:shadow-xl hover:translate-y-[-2px] transition-all flex items-center justify-center gap-3" type="submit">
-                        Kirim Permohonan
-                        <span class="material-symbols-outlined">send</span>
-</button>
-</div>
 </form>
 </div>
+</div>
+<!-- Right Column: Info -->
+<div class="lg:col-span-5 space-y-8">
+<!-- Main Office Info -->
+<div class="bg-primary text-white rounded-xl p-8 md:p-10 shadow-2xl relative overflow-hidden">
+<div class="absolute -right-10 -bottom-10 opacity-5 rotate-12">
+<span class="material-symbols-outlined text-[200px]" data-weight="fill">location_city</span>
+</div>
+<div class="relative z-10">
+<h2 class="text-2xl font-headline font-extrabold mb-8 border-b border-white/10 pb-4">Pemerintah Kota Balikpapan</h2>
+<div class="space-y-6">
+<div class="flex gap-4">
+<div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary-container">pin_drop</span>
+</div>
+<div>
+<p class="text-[10px] text-white/50 uppercase font-bold tracking-widest mb-1">Alamat Kantor</p>
+<p class="text-sm font-medium leading-relaxed">Jl. Jenderal Sudirman No.1, Kel. Klandasan Ulu, Kec. Balikpapan Kota, Kota Balikpapan, Kalimantan Timur 76112</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary-container">call</span>
+</div>
+<div>
+<p class="text-[10px] text-white/50 uppercase font-bold tracking-widest mb-1">Telepon / Fax</p>
+<p class="text-lg font-bold">(0542) 421420 / 421071</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary-container">mail</span>
+</div>
+<div>
+<p class="text-[10px] text-white/50 uppercase font-bold tracking-widest mb-1">Email Resmi</p>
+<p class="text-sm font-medium">ppid@balikpapan.go.id</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Service Hours -->
+<div class="bg-surface-container-low rounded-xl p-8 shadow-sm">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary">schedule</span>
+<h3 class="text-lg font-headline font-bold text-primary">Jam Layanan Informasi</h3>
+</div>
+<div class="space-y-4">
+<div class="flex justify-between items-center p-4 bg-surface-container-lowest rounded-lg">
+<span class="font-bold text-on-surface text-sm">Senin - Kamis</span>
+<span class="text-primary font-headline font-bold">08.00 - 15.30 WITA</span>
+</div>
+<div class="flex justify-between items-center p-4 bg-surface-container-lowest rounded-lg">
+<span class="font-bold text-on-surface text-sm">Jumat</span>
+<span class="text-primary font-headline font-bold">08.00 - 11.30 WITA</span>
+</div>
+<div class="flex justify-between items-center p-4 bg-error-container/30 border border-error/5 rounded-lg">
+<span class="font-bold text-error text-sm">Sabtu - Minggu</span>
+<span class="px-3 py-1 bg-error text-white text-[10px] font-extrabold rounded-full">LIBUR</span>
+</div>
+</div>
+</div>
+<!-- Social Connect -->
+<div class="bg-secondary-container rounded-xl p-8 flex flex-col items-center text-center">
+<h3 class="font-headline font-extrabold text-on-secondary-container mb-6">Media Sosial Kami</h3>
+<div class="flex gap-4">
+<a class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-primary shadow-sm hover:translate-y-[-4px] transition-all duration-300" href="#">
+<span class="material-symbols-outlined" data-weight="fill">social_leaderboard</span>
+</a>
+<a class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-primary shadow-sm hover:translate-y-[-4px] transition-all duration-300" href="#">
+<span class="material-symbols-outlined" data-weight="fill">camera</span>
+</a>
+<a class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-primary shadow-sm hover:translate-y-[-4px] transition-all duration-300" href="#">
+<span class="material-symbols-outlined" data-weight="fill">alternate_email</span>
+</a>
+</div>
+<p class="mt-6 text-on-secondary-container/70 text-xs font-medium">Ikuti kami untuk informasi terbaru seputar Balikpapan.</p>
+</div>
+</div>
+</div>
+</section>
 </main>
-<footer class="bg-slate-900 text-slate-300">
-<div class="flex flex-col md:flex-row justify-between items-center px-12 py-10 w-full">
-<div class="flex flex-col items-center md:items-start mb-8 md:mb-0">
-<div class="text-lg font-bold text-white mb-2">Pemerintah Kota Balikpapan</div>
-<div class="text-sm leading-relaxed text-slate-400">© 2024 Pemerintah Kota Balikpapan. Hak Cipta Dilindungi Undang-Undang.</div>
+<!-- Footer -->
+<footer class="bg-slate-950 text-white w-full">
+<div class="max-w-screen-2xl mx-auto px-8 py-16">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+<div class="md:col-span-1">
+<div class="flex items-center gap-3 mb-6">
+<div class="w-10 h-10 bg-white rounded-lg p-2">
+<img alt="Logo" class="w-full h-full object-contain" data-alt="Small emblem of Balikpapan city on a white square background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdHltMLAWHF-RDzr_iXQnP_w-qT1bwS7RXkVy7Yoy99vUQu73-I5xG6Hi5tW55RDIpfIqev4checRLrvGc-xcHL7gxxR4mraS5uxCo4sNXXjNredQ0CWrkYUTIgnKzwWGBGr5NRs-Z-LO40-hqct3u0bDbqK0opj4DmEm_t_Ae4blphfP9i5GBLaXr5Ac2BsKF39OdFL03wJu65Q92YiU1mZh3OzfLbGsJMnxseJTxApGrBTf428_Pxxo4lYexhITporDmTZO7Cli6"/>
 </div>
-<div class="flex gap-8 flex-wrap justify-center">
-<a class="text-slate-400 hover:text-[#fdc003] transition-colors text-sm font-medium" href="#">Kontak Kami</a>
-<a class="text-slate-400 hover:text-[#fdc003] transition-colors text-sm font-medium" href="#">Peta Situs</a>
-<a class="text-slate-400 hover:text-[#fdc003] transition-colors text-sm font-medium" href="#">Kebijakan Privasi</a>
-<a class="text-slate-400 hover:text-[#fdc003] transition-colors text-sm font-medium" href="#">Aksesibilitas</a>
+<span class="text-xl font-headline font-extrabold">PPID</span>
 </div>
-<div class="mt-8 md:mt-0 flex gap-4">
-<div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-secondary transition-all cursor-pointer">
-<span class="material-symbols-outlined text-white text-xl">share</span>
+<p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Layanan Pejabat Pengelola Informasi dan Dokumentasi Pemerintah Kota Balikpapan untuk transparansi dan keterbukaan publik.
+                    </p>
 </div>
-<div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-secondary transition-all cursor-pointer">
-<span class="material-symbols-outlined text-white text-xl">location_on</span>
+<div>
+<h4 class="font-headline font-bold text-amber-500 mb-6 uppercase text-xs tracking-widest">Informasi</h4>
+<ul class="space-y-3 text-sm text-slate-400">
+<li><a class="hover:text-white transition-colors" href="#">Profil PPID</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Tugas &amp; Fungsi</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Struktur Organisasi</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Dasar Hukum</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline font-bold text-amber-500 mb-6 uppercase text-xs tracking-widest">Layanan</h4>
+<ul class="space-y-3 text-sm text-slate-400">
+<li><a class="hover:text-white transition-colors" href="#">Permohonan Informasi</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Keberatan Informasi</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Penyelesaian Sengketa</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Standar Layanan</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline font-bold text-amber-500 mb-6 uppercase text-xs tracking-widest">Bantuan</h4>
+<ul class="space-y-3 text-sm text-slate-400">
+<li><a class="hover:text-white transition-colors" href="#">Kebijakan Privasi</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Peta Situs</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Kontak Kami</a></li>
+<li><a class="hover:text-white transition-colors" href="#">FAQ</a></li>
+</ul>
+</div>
+</div>
+<div class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-slate-500 text-xs">© 2024 Pemerintah Kota Balikpapan. PPID Layanan Informasi Publik.</p>
+<div class="flex gap-6 text-[10px] uppercase font-bold tracking-widest text-slate-500">
+<a class="hover:text-amber-500" href="#">Diskominfo</a>
+<a class="hover:text-amber-500" href="#">Portal Berita</a>
+<a class="hover:text-amber-500" href="#">E-Government</a>
 </div>
 </div>
 </div>
-<div class="h-2 w-full bg-[#fdc003]"></div>
 </footer>
 <script>
     function updateClock() {
@@ -508,5 +523,5 @@
     }
     setInterval(updateClock, 1000);
     updateClock();
-</script>
+</script>   
 </body></html>
