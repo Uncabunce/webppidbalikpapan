@@ -412,7 +412,7 @@
 <span class="w-2 h-8 bg-secondary-container rounded-full"></span>
                             Berita Kota
                         </h2>
-<a class="text-primary font-bold text-sm hover:underline flex items-center gap-1" href="#">
+<a class="text-primary font-bold text-sm hover:underline flex items-center gap-2" href="http://ppidbalikpapan.test/news">
                             Lihat Semua <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
 </a>
 </div>

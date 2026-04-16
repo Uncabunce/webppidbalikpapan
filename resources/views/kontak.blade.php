@@ -263,7 +263,7 @@
 </div>
 <a class="nav-hover-line relative px-3 py-3 text-xs font-bold font-headline" href="http://ppidbalikpapan.test/news">Berita
 </a>
-<a class="nav-hover-line relative px-3 py-3 text-xs font-bold font-headline" href="#">Data Statistik</a>
+<a class="nav-hover-line relative px-3 py-3 text-xs font-bold font-headline" href="http://ppidbalikpapan.test/stats">Data Statistik</a>
 <div class="group relative h-full flex items-center">
 <button class="nav-hover-line relative px-3 py-3 text-xs font-bold font-headline flex items-center gap-0.5">
                     PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:rotate-180 transition-transform">expand_more</span>
@@ -294,8 +294,7 @@
                     Kontak <span class="text-secondary">Kami</span>
 </h1>
 <p class="mt-6 text-lg text-on-surface-variant max-w-2xl leading-relaxed">
-                    Akses informasi terkini mengenai kebijakan, layanan publik, dan perkembangan terbaru Kota Balikpapan secara transparan dan akuntabel.
-                </p>
+                    Punya Pertanyaan Berkaitan penyelenggaraan Pemerintah atau ingin tahu lokasi Pemerintah? Tim kami siap membantu memberikan informasi yang Anda butuhkan.                </p>
 </div>
 </section>
 <!-- Main Content -->
@@ -307,9 +306,10 @@
 <div class="rounded-xl overflow-hidden shadow-lg bg-surface-container-low p-1 group">
 <div class="aspect-video w-full rounded-lg overflow-hidden bg-surface-container-highest relative">
 <!-- Image representing the map -->
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63821.253001534766!2d116.75573272167965!3d-1.2764074999999773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df1473bb9404897%3A0x94d96108f98b652c!2sBalikpapan%20Mayor&#39;s%20Office!5e0!3m2!1sen!2ssg!4v1776063788871!5m2!1sen!2ssg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-<div class="absolute inset-0 flex items-center justify-center">
-</div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63821.253001534766!2d116.75573272167965!3d-1.2764074999999773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df1473bb9404897%3A0x94d96108f98b652c!2sBalikpapan%20Mayor&#39;s%20Office!5e0!3m2!1sen!2ssg!4v1776063788871!5m2!1sen!2ssg" class="w-full h-full border-0" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade""></iframe>
 </div>
 </div>
 <!-- Contact Form -->
