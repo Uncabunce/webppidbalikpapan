@@ -307,14 +307,8 @@
 <div class="rounded-xl overflow-hidden shadow-lg bg-surface-container-low p-1 group">
 <div class="aspect-video w-full rounded-lg overflow-hidden bg-surface-container-highest relative">
 <!-- Image representing the map -->
-<img alt="Map location Balikpapan City Hall" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="Aerial view of Balikpapan city streets and office buildings used as a representative map background" data-location="Balikpapan City Hall" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCk2Z6FyHpbyVKTop-G_0lWilz8PmKSj04hWXIMTNnftENYS0fTn6N6-dx7ZGc_4w-G0J9ZgBw1y76dXcud5zWELIxx3KKq-F9iM8OZyxYsthqfKSVx84hO4eGD35-GU5v0KRY3PXZ-RTVjY9jQ3w38HiCi3ldpJzeFXfZa9S72Cu5yK3Z5xBhSVWgaEShTSadRfNhMJt0K-G3AJoixURyMj4e3Qw9nz6N5qgoUXT7IADHSy1LzkYK-TJElerc7Y-7YMhRBbuDA9I6c"/>
-<div class="absolute inset-0 bg-primary/20 backdrop-blur-[2px] flex items-center justify-center">
-<div class="bg-white p-4 rounded-xl shadow-2xl flex flex-col items-center">
-<div class="w-12 h-12 bg-error rounded-full flex items-center justify-center mb-2 animate-bounce">
-<span class="material-symbols-outlined text-white">location_on</span>
-</div>
-<span class="text-primary font-bold text-sm">Kantor Walikota Balikpapan</span>
-</div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63821.253001534766!2d116.75573272167965!3d-1.2764074999999773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df1473bb9404897%3A0x94d96108f98b652c!2sBalikpapan%20Mayor&#39;s%20Office!5e0!3m2!1sen!2ssg!4v1776063788871!5m2!1sen!2ssg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<div class="absolute inset-0 flex items-center justify-center">
 </div>
 </div>
 </div>
@@ -384,7 +378,7 @@
 </div>
 <div>
 <p class="text-[10px] text-white/50 uppercase font-bold tracking-widest mb-1">Email Resmi</p>
-<p class="text-sm font-medium">ppid@balikpapan.go.id</p>
+<p class="text-sm font-medium">adminkota@balikpapan.go.id</p>
 </div>
 </div>
 </div>
