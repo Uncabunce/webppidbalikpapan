@@ -263,7 +263,7 @@
 </div>
 <a class="nav-hover-line relative px-3 py-3 text-xs font-bold font-headline" href="http://ppidbalikpapan.test/news">Berita
 </a>
-<a class="nav-hover-line relative px-3 py-3 text-xs font-bold font-headline" href="#">Data Statistik</a>
+<a class="nav-hover-line relative px-3 py-3 text-xs font-bold font-headline" href="http://ppidbalikpapan.test/stats">Data Statistik</a>
 <div class="group relative h-full flex items-center">
 <button class="nav-hover-line relative px-3 py-3 text-xs font-bold font-headline flex items-center gap-0.5">
                     PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:rotate-180 transition-transform">expand_more</span>
@@ -491,70 +491,54 @@
 </div>
 <!-- Sidebar (Right) -->
 <div class="lg:col-span-4 space-y-8">
-<!-- Statistik Card -->
+<!-- Statistik Kunjungan (Requested from IMAGE_32) -->
 <div class="bg-surface-container-low p-6 rounded-2xl border border-slate-100 shadow-sm">
-<div class="flex items-center gap-2 mb-6 text-primary">
-<span class="material-symbols-outlined" data-icon="monitoring">monitoring</span>
-<h3 class="font-extrabold text-lg">Statistik Layanan 2024</h3>
+<div class="flex items-center justify-center gap-3 mb-6">
+<div class="h-[1px] bg-slate-200 flex-1"></div>
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-xl" data-icon="query_stats">query_stats</span>
+<h3 class="font-extrabold text-base uppercase tracking-wider font-headline">STATISTIK KUNJUNGAN</h3>
 </div>
-<div class="space-y-6">
-<div>
-<div class="flex justify-between text-xs font-bold mb-2">
-<span class="text-slate-600">Total Permohonan</span>
-<span class="text-primary">1,240 / 1,500</span>
+<div class="h-[1px] bg-slate-200 flex-1"></div>
 </div>
-<div class="w-full bg-slate-200 h-2 rounded-full overflow-hidden">
-<div class="bg-primary h-full" style="width: 82%"></div>
+<div class="grid grid-cols-2 gap-3 mb-4">
+<!-- Page Views -->
+<div class="bg-slate-50 p-4 rounded-xl border border-slate-100 text-center">
+<div class="flex items-center justify-center gap-1.5 text-slate-400 mb-1">
+<span class="material-symbols-outlined text-sm" data-icon="visibility">visibility</span>
+<span class="text-[10px] font-bold uppercase tracking-tight">Page Views</span>
 </div>
+<p class="text-2xl font-extrabold text-slate-900 leading-none">50</p>
 </div>
-<div>
-<div class="flex justify-between text-xs font-bold mb-2">
-<span class="text-slate-600">Selesai Diproses</span>
-<span class="text-primary">98.5%</span>
+<!-- Visitors -->
+<div class="bg-slate-50 p-4 rounded-xl border border-slate-100 text-center">
+<div class="flex items-center justify-center gap-1.5 text-slate-400 mb-1">
+<span class="material-symbols-outlined text-sm" data-icon="person">person</span>
+<span class="text-[10px] font-bold uppercase tracking-tight">Visitors</span>
 </div>
-<div class="w-full bg-slate-200 h-2 rounded-full overflow-hidden">
-<div class="bg-emerald-500 h-full" style="width: 98.5%"></div>
+<p class="text-2xl font-extrabold text-slate-900 leading-none">19</p>
 </div>
+<!-- Sessions -->
+<div class="bg-slate-50 p-4 rounded-xl border border-slate-100 text-center">
+<div class="flex items-center justify-center gap-1.5 text-slate-400 mb-1">
+<span class="material-symbols-outlined text-sm" data-icon="input">input</span>
+<span class="text-[10px] font-bold uppercase tracking-tight">Sessions</span>
 </div>
-<div>
-<div class="flex justify-between text-xs font-bold mb-2">
-<span class="text-slate-600">Rata-rata Waktu</span>
-<span class="text-primary">15 Hari</span>
+<p class="text-2xl font-extrabold text-slate-900 leading-none">19</p>
 </div>
-<div class="w-full bg-slate-200 h-2 rounded-full overflow-hidden">
-<div class="bg-amber-500 h-full" style="width: 75%"></div>
+<!-- Bounce Rate -->
+<div class="bg-slate-50 p-4 rounded-xl border border-slate-100 text-center">
+<div class="flex items-center justify-center gap-1.5 text-slate-400 mb-1">
+<span class="material-symbols-outlined text-sm" data-icon="trending_down">trending_down</span>
+<span class="text-[10px] font-bold uppercase tracking-tight">Bounce Rate</span>
 </div>
-</div>
-</div>
-<button class="w-full mt-8 py-3 bg-white border border-slate-200 text-slate-700 font-bold rounded-xl hover:bg-slate-50 transition-colors text-sm">
-                            Detail Statistik Pelayanan
-                        </button>
-</div>
-<!-- Weather Widget -->
-<div class="bg-gradient-to-br from-blue-500 to-blue-700 p-6 rounded-2xl text-white shadow-lg relative overflow-hidden">
-<div class="relative z-10">
-<div class="flex items-center justify-between mb-4">
-<div>
-<h4 class="font-bold text-sm opacity-90">Balikpapan, Indonesia</h4>
-<p class="text-xs opacity-70 date-line">Minggu, 18 Mei 2024</p>
-</div>
-<span class="material-symbols-outlined text-4xl" data-icon="cloudy_snowing">cloudy_snowing</span>
-</div>
-<div class="flex items-end gap-2 mb-6">
-<span class="text-5xl font-extrabold leading-none">29°C</span>
-<span class="text-lg font-bold opacity-90 pb-1">Cerah Berawan</span>
-</div>
-<div class="grid grid-cols-2 gap-4 border-t border-white/20 pt-4">
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-sm opacity-80" data-icon="humidity_low">humidity_low</span>
-<span class="text-xs">Kelembaban: 72%</span>
-</div>
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-sm opacity-80" data-icon="air">air</span>
-<span class="text-xs">Angin: 12 km/h</span>
+<p class="text-2xl font-extrabold text-slate-900 leading-none">0.6%</p>
 </div>
 </div>
-<p class="text-[9px] mt-6 opacity-50 uppercase tracking-widest text-right italic">Sumber: BMKG Indonesia</p>
+<div class="bg-slate-50 p-3 rounded-xl border border-slate-100 flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-slate-400 text-sm" data-icon="timer">timer</span>
+<span class="text-[10px] text-slate-500 font-medium">Avg. Session Duration:</span>
+<span class="text-sm font-extrabold text-slate-900">01m 57s</span>
 </div>
 <!-- Background decoration -->
 <div class="absolute -right-4 -bottom-4 opacity-10">

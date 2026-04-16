@@ -17,3 +17,6 @@ Route::get('/keberatan', function () {
 Route::get('/kontak', function () {
     return view('kontak');
 });
+Route::get('/stats', function () {
+    return view('stats');
+});
