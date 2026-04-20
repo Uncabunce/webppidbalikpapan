@@ -82,12 +82,7 @@
         html, body {
             height: auto;
             font-family: "Inter", sans-serif;
-            scrollbar-width: none;
-            -ms-overflow-style: none;
-        }
-        html::-webkit-scrollbar,
-        body::-webkit-scrollbar {
-            display: none;
+            overflow-x: hidden;
         }
         h1, h2, h3, .font-headline {
             font-family: "Manrope", sans-serif
@@ -108,19 +103,24 @@
         #carousel-container {
             position: relative;
             overflow: hidden;
+            width: 100%;
+            max-width: 100vw;
         }
         #carousel-track {
             display: flex;
             transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
             cursor: grab;
             user-select: none;
+            width: 100%;
         }
         #carousel-track:active {
             cursor: grabbing;
         }
         .carousel-slide {
-            flex: 0 0 100%;
-            width: 100%;
+            flex: 0 0 100vw;
+            width: 100vw;
+            max-width: 100vw;
+            overflow: hidden;
         }
         /* Dropdown Styles */
         .nav-hover-line::after {
@@ -138,9 +138,7 @@
         }
         .dropdown-menu {
             display: none;
-            position: absolute;
-            top: 44px;
-            left: 0;
+            position: fixed;
             z-index: 99999;
             min-width: 180px;
             background-color: #0f172a;
@@ -156,10 +154,29 @@
             from { opacity: 0; transform: translateY(-4px); }
             to   { opacity: 1; transform: translateY(0); }
         }
+        /* Navbar: hidden on mobile, visible on desktop */
+        #desktop-nav {
+            display: none;
+            height: 0;
+        }
+        @media (min-width: 768px) {
+            #desktop-nav {
+                display: block;
+                height: 44px;
+            }
+        }
+        /* Hard clamp - prevent ANY element from exceeding viewport width */
+        * {
+            max-width: 100%;
+            box-sizing: border-box;
+        }
+        img, video, iframe {
+            max-width: 100%;
+        }
     </style>
 </head>
 <body class="bg-surface text-on-surface">
-<header class="w-full shadow-md bg-white sticky top-0 z-50 overflow-visible">
+<header class="w-full shadow-md bg-white sticky top-0 z-50" style="overflow-x:clip;">
 <!-- Top Navbar (Batik Motif) -->
 <div class="batik-bg border-b border-slate-500">
 <div class="max-w-7xl mx-auto px-4 md:px-6 py-3 flex flex-col md:flex-row items-center justify-between gap-4 md:gap-0">
@@ -201,8 +218,8 @@
 </div>
 </div>
 <!-- Bottom Navbar -->
-<nav id="desktop-nav" class="bg-slate-950 text-white w-full relative" style="overflow:visible; height:44px;">
-<div class="max-w-7xl mx-auto flex h-full items-center justify-start md:justify-center space-x-1 px-2 md:px-4 whitespace-nowrap">
+<nav id="desktop-nav" class="bg-slate-950 text-white w-full relative" style="overflow:clip; height:44px;">
+<div class="max-w-7xl mx-auto flex h-full items-center justify-start md:justify-center space-x-1 px-2 md:px-4 whitespace-nowrap" style="overflow:clip;">
 <a class="nav-hover-line relative px-3 py-3 text-xs font-bold font-headline transition-all text-secondary-container" href="http://ppidbalikpapan.test">Beranda</a>
 <div class="group relative h-full flex items-center">
 <button class="nav-hover-line relative px-3 py-3 text-xs font-bold font-headline flex items-center gap-0.5">
@@ -323,7 +340,7 @@
 </header>
 <main>
 <!-- Hero Section: Interactive Carousel -->
-<section class="relative w-full group" id="carousel-container">
+<section class="relative group" id="carousel-container" style="width:100vw; max-width:100%; overflow:hidden; left:0;">
 <div class="h-[300px] md:h-[450px] lg:h-[550px]" id="carousel-track">
 <!-- Slide 1: Primary HD Image (Original Slide 0) -->
 <div class="carousel-slide relative h-full">
@@ -950,6 +967,19 @@
                 m.classList.remove('open');
             });
         }
+    });
+</script>
+<script>
+    // Auto-detect and report overflowing elements
+    window.addEventListener('load', function() {
+        var docW = document.documentElement.offsetWidth;
+        document.querySelectorAll('*').forEach(function(el) {
+            if (el.offsetWidth > docW) {
+                el.style.maxWidth = '100%';
+                el.style.overflowX = 'hidden';
+                console.warn('Overflow fixed on:', el.tagName, el.className, 'width:', el.offsetWidth);
+            }
+        });
     });
 </script>
 </body>
