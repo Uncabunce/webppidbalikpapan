@@ -79,13 +79,11 @@
         .material-symbols-outlined {
             font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24
         }
-        html {
+        html, body {
             height: auto;
             font-family: "Inter", sans-serif;
-        }
-        body {
-            font-family: "Inter", sans-serif;
             overflow-x: hidden;
+            max-width: 100vw;
         }
         h1, h2, h3, .font-headline {
             font-family: "Manrope", sans-serif
@@ -106,19 +104,24 @@
         #carousel-container {
             position: relative;
             overflow: hidden;
+            width: 100%;
+            max-width: 100vw;
         }
         #carousel-track {
             display: flex;
             transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
             cursor: grab;
             user-select: none;
+            width: 100%;
         }
         #carousel-track:active {
             cursor: grabbing;
         }
         .carousel-slide {
-            flex: 0 0 100%;
-            width: 100%;
+            flex: 0 0 100vw;
+            width: 100vw;
+            max-width: 100vw;
+            overflow: hidden;
         }
         /* Dropdown Styles */
         .nav-hover-line::after {
@@ -134,10 +137,10 @@
         .nav-hover-line:hover::after {
             width: 100%;
         }
-        .dropdown-menu {
+                .dropdown-menu {
             display: none;
             position: absolute;
-            top: 44px;
+            top: 100%;
             left: 0;
             z-index: 99999;
             min-width: 180px;
@@ -146,27 +149,34 @@
             box-shadow: 0 10px 20px rgba(0,0,0,0.5);
             border-radius: 0 0 8px 8px;
         }
+        .group:hover > .dropdown-menu,
         .dropdown-menu.open {
-            display: block;
-            animation: dropdownFade 0.18s ease-out forwards;
+            display: block !important;
         }
-        @keyframes dropdownFade {
-            from { opacity: 0; transform: translateY(-4px); }
             to   { opacity: 1; transform: translateY(0); }
         }
         /* Navbar: hidden on mobile, visible on desktop */
         #desktop-nav {
-            display: none;
+            display: none !important;
+            height: 0 !important;
+            overflow: hidden !important;
         }
         @media (min-width: 768px) {
             #desktop-nav {
-                display: block;
+                display: block !important;
+                height: 44px !important;
+                overflow: visible !important;
             }
+        }
+        /* Prevent overflow without breaking sticky */
+        img, video, iframe {
+            max-width: 100%;
         }
     </style>
 </head>
 <body class="bg-surface text-on-surface">
-<header class="w-full shadow-md bg-white sticky top-0 z-50 overflow-visible">
+
+<header class="w-full shadow-md bg-white sticky top-0 z-50" style="overflow:visible;">
 <!-- Top Navbar (Batik Motif) -->
 <div class="batik-bg border-b border-slate-500">
 <div class="max-w-7xl mx-auto px-4 md:px-6 py-3 flex flex-col md:flex-row items-center justify-between gap-4 md:gap-0">
@@ -208,9 +218,9 @@
 </div>
 </div>
 <!-- Bottom Navbar -->
-<nav id="desktop-nav" class="bg-slate-950 text-white w-full relative" style="overflow:visible; height:44px;">
+<nav id="desktop-nav" class="bg-slate-950 text-white w-full relative" style="overflow:visible; position:relative; z-index:9999;">
 <div class="max-w-7xl mx-auto flex h-full items-center justify-start md:justify-center space-x-1 px-2 md:px-4 whitespace-nowrap">
-<a class="nav-hover-line relative px-3 py-3 text-xs font-bold font-headline transition-all text-secondary-container" href="http://ppidbalikpapan.test">Beranda</a>
+<a class="nav-hover-line relative px-3 py-3 text-xs font-bold font-headline transition-all text-white" href="http://ppidbalikpapan.test">Beranda</a>
 <div class="group relative h-full flex items-center">
 <button class="nav-hover-line relative px-3 py-3 text-xs font-bold font-headline flex items-center gap-0.5">
                     Profil <span class="material-symbols-outlined text-[10px] group-hover:rotate-180 transition-transform">expand_more</span>
@@ -258,9 +268,23 @@
 <a class="nav-hover-line relative px-3 py-3 text-xs font-bold font-headline" href="http://ppidbalikpapan.test/kontak">Kontak</a>
 </div>
 </nav>
-
+<script>
+(function(){
+    var n=document.getElementById('desktop-nav');
+    if(!n)return;
+    function applyNav(){
+        if(window.innerWidth<768){
+            n.style.cssText='display:none!important;height:0!important;overflow:hidden!important;';
+        }else{
+            n.style.cssText='display:block!important;height:44px!important;overflow:visible!important;position:relative;z-index:9999;';
+        }
+    }
+    applyNav();
+    window.addEventListener('resize', applyNav);
+})();
+</script>
 <!-- Mobile Fullscreen Menu Overlay -->
-<div id="mobile-menu" class="hidden fixed inset-0 z-[300] bg-slate-950 flex-col md:hidden overflow-y-auto">
+<div id="mobile-menu" class="hidden fixed inset-0 bg-slate-950 flex-col overflow-y-auto" style="z-index:99999; top:0; left:0; right:0; bottom:0;">
 <div class="flex items-center justify-between px-5 py-4 border-b border-white/10">
 <span class="text-white font-headline font-bold text-base">Menu</span>
 <button id="close-mobile-menu" class="text-white p-1" aria-label="Tutup menu">
@@ -598,83 +622,69 @@
     updateClock();
 
     </script>
-    <script>
-    // Mobile Menu Toggle
-    document.getElementById('open-mobile-menu').addEventListener('click', function() {
-        var menu = document.getElementById('mobile-menu');
-        menu.classList.remove('hidden');
-        menu.classList.add('flex');
+    
+
+
+
+
+
+<script>
+    // Hide/show desktop nav based on screen width
+    function hideShowNav() {
+        var n = document.getElementById('desktop-nav');
+        if (!n) return;
+        if (window.innerWidth < 768) {
+            n.style.cssText = 'display:none!important;height:0!important;overflow:hidden!important;';
+        } else {
+            n.style.cssText = 'display:block!important;height:44px!important;overflow:visible!important;position:relative;z-index:9999;';
+        }
+    }
+    hideShowNav();
+    window.addEventListener('resize', hideShowNav);
+
+    // Active nav highlight
+    (function() {
+        var full = window.location.href.split('?')[0].replace(/\/$/, '');
+        document.querySelectorAll('#desktop-nav a[href]').forEach(function(link) {
+            var href = link.getAttribute('href').replace(/\/$/, '');
+            if (full === href) {
+                link.style.color = '#fdc003';
+                link.style.borderBottom = '3px solid #fdc003';
+            }
+        });
+    })();
+
+    // Mobile menu toggle
+    var openBtn = document.getElementById('open-mobile-menu');
+    var closeBtn = document.getElementById('close-mobile-menu');
+    var mobileMenu = document.getElementById('mobile-menu');
+    if (openBtn) openBtn.addEventListener('click', function() {
+        mobileMenu.classList.remove('hidden');
+        mobileMenu.classList.add('flex');
         document.body.style.overflow = 'hidden';
     });
-    document.getElementById('close-mobile-menu').addEventListener('click', function() {
-        var menu = document.getElementById('mobile-menu');
-        menu.classList.add('hidden');
-        menu.classList.remove('flex');
+    if (closeBtn) closeBtn.addEventListener('click', function() {
+        mobileMenu.classList.add('hidden');
+        mobileMenu.classList.remove('flex');
         document.body.style.overflow = '';
     });
 
-    // Mobile Accordion Toggle
+    // Mobile accordion
     function toggleMobileAccordion(id) {
         var el = document.getElementById(id);
         var icon = document.getElementById('icon-' + id);
         var isHidden = el.classList.contains('hidden');
-        // Close all
         ['acc-profil','acc-infopub','acc-layanan','acc-ppid'].forEach(function(acc) {
-            document.getElementById(acc).classList.add('hidden');
-            document.getElementById(acc).classList.remove('flex');
+            var a = document.getElementById(acc);
+            if (a) { a.classList.add('hidden'); a.classList.remove('flex'); }
             var ic = document.getElementById('icon-' + acc);
             if (ic) ic.style.transform = '';
         });
-        // Open clicked if it was closed
         if (isHidden) {
             el.classList.remove('hidden');
             el.classList.add('flex');
             if (icon) icon.style.transform = 'rotate(180deg)';
         }
     }
-</script>
-<script>
-    // Desktop dropdown via JS (more reliable than CSS hover)
-    document.querySelectorAll('#desktop-nav .group').forEach(function(group) {
-        var menu = group.querySelector('.dropdown-menu');
-        if (!menu) return;
-        var timer;
-        group.addEventListener('mouseenter', function() {
-            clearTimeout(timer);
-            // close all others
-            document.querySelectorAll('#desktop-nav .dropdown-menu.open').forEach(function(m) {
-                if (m !== menu) m.classList.remove('open');
-            });
-            menu.classList.add('open');
-        });
-        group.addEventListener('mouseleave', function() {
-            timer = setTimeout(function() { menu.classList.remove('open'); }, 80);
-        });
-        menu.addEventListener('mouseenter', function() { clearTimeout(timer); });
-        menu.addEventListener('mouseleave', function() {
-            timer = setTimeout(function() { menu.classList.remove('open'); }, 80);
-        });
-    });
-    // Close dropdown when clicking outside
-    document.addEventListener('click', function(e) {
-        if (!e.target.closest('#desktop-nav')) {
-            document.querySelectorAll('#desktop-nav .dropdown-menu.open').forEach(function(m) {
-                m.classList.remove('open');
-            });
-        }
-    });
-</script>
-<script>
-    // Auto-detect and report overflowing elements
-    window.addEventListener('load', function() {
-        var docW = document.documentElement.offsetWidth;
-        document.querySelectorAll('*').forEach(function(el) {
-            if (el.offsetWidth > docW) {
-                el.style.maxWidth = '100%';
-                el.style.overflowX = 'hidden';
-                console.warn('Overflow fixed on:', el.tagName, el.className, 'width:', el.offsetWidth);
-            }
-        });
-    });
 </script>
 </body></html>

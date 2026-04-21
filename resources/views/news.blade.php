@@ -79,13 +79,11 @@
         .material-symbols-outlined {
             font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24
         }
-        html {
+        html, body {
             height: auto;
             font-family: "Inter", sans-serif;
-        }
-        body {
-            font-family: "Inter", sans-serif;
             overflow-x: hidden;
+            max-width: 100vw;
         }
         h1, h2, h3, .font-headline {
             font-family: "Manrope", sans-serif
@@ -106,19 +104,24 @@
         #carousel-container {
             position: relative;
             overflow: hidden;
+            width: 100%;
+            max-width: 100vw;
         }
         #carousel-track {
             display: flex;
             transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
             cursor: grab;
             user-select: none;
+            width: 100%;
         }
         #carousel-track:active {
             cursor: grabbing;
         }
         .carousel-slide {
-            flex: 0 0 100%;
-            width: 100%;
+            flex: 0 0 100vw;
+            width: 100vw;
+            max-width: 100vw;
+            overflow: hidden;
         }
         /* Dropdown Styles */
         .nav-hover-line::after {
@@ -134,10 +137,10 @@
         .nav-hover-line:hover::after {
             width: 100%;
         }
-        .dropdown-menu {
+                .dropdown-menu {
             display: none;
             position: absolute;
-            top: 44px;
+            top: 100%;
             left: 0;
             z-index: 99999;
             min-width: 180px;
@@ -146,27 +149,34 @@
             box-shadow: 0 10px 20px rgba(0,0,0,0.5);
             border-radius: 0 0 8px 8px;
         }
+        .group:hover > .dropdown-menu,
         .dropdown-menu.open {
-            display: block;
-            animation: dropdownFade 0.18s ease-out forwards;
+            display: block !important;
         }
-        @keyframes dropdownFade {
-            from { opacity: 0; transform: translateY(-4px); }
             to   { opacity: 1; transform: translateY(0); }
         }
         /* Navbar: hidden on mobile, visible on desktop */
         #desktop-nav {
-            display: none;
+            display: none !important;
+            height: 0 !important;
+            overflow: hidden !important;
         }
         @media (min-width: 768px) {
             #desktop-nav {
-                display: block;
+                display: block !important;
+                height: 44px !important;
+                overflow: visible !important;
             }
+        }
+        /* Prevent overflow without breaking sticky */
+        img, video, iframe {
+            max-width: 100%;
         }
     </style>
 </head>
 <body class="bg-surface text-on-surface">
-<header class="w-full shadow-md bg-white sticky top-0 z-50 overflow-visible">
+
+<header class="w-full shadow-md bg-white sticky top-0 z-50" style="overflow:visible;">
 <!-- Top Navbar (Batik Motif) -->
 <div class="batik-bg border-b border-slate-500">
 <div class="max-w-7xl mx-auto px-4 md:px-6 py-3 flex flex-col md:flex-row items-center justify-between gap-4 md:gap-0">
@@ -208,9 +218,9 @@
 </div>
 </div>
 <!-- Bottom Navbar -->
-<nav id="desktop-nav" class="bg-slate-950 text-white w-full relative" style="overflow:visible; height:44px;">
+<nav id="desktop-nav" class="bg-slate-950 text-white w-full relative" style="overflow:visible; position:relative; z-index:9999;">
 <div class="max-w-7xl mx-auto flex h-full items-center justify-start md:justify-center space-x-1 px-2 md:px-4 whitespace-nowrap">
-<a class="nav-hover-line relative px-3 py-3 text-xs font-bold font-headline transition-all text-secondary-container" href="http://ppidbalikpapan.test">Beranda</a>
+<a class="nav-hover-line relative px-3 py-3 text-xs font-bold font-headline transition-all text-white" href="http://ppidbalikpapan.test">Beranda</a>
 <div class="group relative h-full flex items-center">
 <button class="nav-hover-line relative px-3 py-3 text-xs font-bold font-headline flex items-center gap-0.5">
                     Profil <span class="material-symbols-outlined text-[10px] group-hover:rotate-180 transition-transform">expand_more</span>
@@ -258,9 +268,23 @@
 <a class="nav-hover-line relative px-3 py-3 text-xs font-bold font-headline" href="http://ppidbalikpapan.test/kontak">Kontak</a>
 </div>
 </nav>
-
+<script>
+(function(){
+    var n=document.getElementById('desktop-nav');
+    if(!n)return;
+    function applyNav(){
+        if(window.innerWidth<768){
+            n.style.cssText='display:none!important;height:0!important;overflow:hidden!important;';
+        }else{
+            n.style.cssText='display:block!important;height:44px!important;overflow:visible!important;position:relative;z-index:9999;';
+        }
+    }
+    applyNav();
+    window.addEventListener('resize', applyNav);
+})();
+</script>
 <!-- Mobile Fullscreen Menu Overlay -->
-<div id="mobile-menu" class="hidden fixed inset-0 z-[300] bg-slate-950 flex-col md:hidden overflow-y-auto">
+<div id="mobile-menu" class="hidden fixed inset-0 bg-slate-950 flex-col overflow-y-auto" style="z-index:99999; top:0; left:0; right:0; bottom:0;">
 <div class="flex items-center justify-between px-5 py-4 border-b border-white/10">
 <span class="text-white font-headline font-bold text-base">Menu</span>
 <button id="close-mobile-menu" class="text-white p-1" aria-label="Tutup menu">
@@ -536,7 +560,7 @@
 <p class="text-slate-600 dark:text-slate-400 max-w-md mb-8">
                 Pejabat Pengelola Informasi dan Dokumentasi (PPID) Utama Pemerintah Kota Balikpapan bertanggung jawab untuk penyimpanan, pendokumentasian, penyediaan, dan pelayanan informasi publik.
             </p>
-<div class="w-full rounded-xl overflow-hidden shadow-md" style="aspect-ratio:16/9;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63821.253001534766!2d116.75573272167965!3d-1.2764074999999773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df1473bb9404897%3A0x94d96108f98b652c!2sBalikpapan%20Mayor&#39;s%20Office!5e0!3m2!1sen!2ssg!4v1776063788871!5m2!1sen!2ssg" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63821.253001534766!2d116.75573272167965!3d-1.2764074999999773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df1473bb9404897%3A0x94d96108f98b652c!2sBalikpapan%20Mayor&#39;s%20Office!5e0!3m2!1sen!2ssg!4v1776063788871!5m2!1sen!2ssg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
 <!-- Contacts -->
 <div>
@@ -573,6 +597,13 @@
         </p>
 </div>
 </footer>
+<!-- FAB for Info Request -->
+<button class="fixed bottom-8 right-8 w-14 h-14 bg-secondary-container text-on-secondary-container rounded-full shadow-2xl flex items-center justify-center group hover:scale-110 transition-all z-50">
+<span class="material-symbols-outlined text-2xl group-hover:rotate-12 transition-transform" data-weight="fill">add_comment</span>
+<div class="absolute right-full mr-4 bg-white px-4 py-2 rounded-xl shadow-xl border border-outline-variant/10 whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
+<p class="text-sm font-bold text-primary">Butuh Informasi?</p>
+</div>
+</button>
 <script>
     function updateClock() {
         const now = new Date();
@@ -613,249 +644,6 @@
     setInterval(updateClock, 1000);
     updateClock();
 
-    // Carousel Logic - Fully functional with Infinite Loop
-    const track = document.getElementById('carousel-track');
-    const container = document.getElementById('carousel-container');
-    const originalSlides = Array.from(track.children);
-    const nextButton = document.getElementById('next-slide');
-    const prevButton = document.getElementById('prev-slide');
-    const dots = Array.from(document.querySelectorAll('.carousel-dot'));
-    
-    // Clone slides for infinite effect
-    const firstClone = originalSlides[0].cloneNode(true);
-    const lastClone = originalSlides[originalSlides.length - 1].cloneNode(true);
-    
-    track.appendChild(firstClone);
-    track.insertBefore(lastClone, originalSlides[0]);
+    </script>
 
-    const slides = Array.from(track.children);
-    let currentIndex = 1; 
-    let isTransitioning = false;
-    let autoPlayTimer;
-
-    function updateCarousel(instant = false) {
-        if (instant) track.style.transition = 'none';
-        else track.style.transition = 'transform 0.5s cubic-bezier(0.4, 0, 0.2, 1)';
-        
-        track.style.transform = `translateX(-${currentIndex * 100}%)`;
-        
-        // Update dots UI
-        let dotIndex = currentIndex - 1;
-        if (currentIndex === 0) dotIndex = originalSlides.length - 1;
-        if (currentIndex === slides.length - 1) dotIndex = 0;
-
-        dots.forEach((dot, idx) => {
-            if (idx === dotIndex) {
-                dot.classList.remove('bg-white/40');
-                dot.classList.add('bg-white', 'scale-125');
-            } else {
-                dot.classList.add('bg-white/40');
-                dot.classList.remove('bg-white', 'scale-125');
-            }
-        });
-    }
-
-    track.addEventListener('transitionend', () => {
-        isTransitioning = false;
-        if (currentIndex === 0) {
-            currentIndex = slides.length - 2;
-            updateCarousel(true);
-        }
-        if (currentIndex === slides.length - 1) {
-            currentIndex = 1;
-            updateCarousel(true);
-        }
-    });
-
-    function moveNext() {
-        if (isTransitioning) return;
-        isTransitioning = true;
-        currentIndex++;
-        updateCarousel();
-    }
-
-    function movePrev() {
-        if (isTransitioning) return;
-        isTransitioning = true;
-        currentIndex--;
-        updateCarousel();
-    }
-
-    function startAutoPlay() {
-        autoPlayTimer = setInterval(moveNext, 7000);
-    }
-
-    function resetAutoPlay() {
-        clearInterval(autoPlayTimer);
-        startAutoPlay();
-    }
-
-    nextButton.addEventListener('click', () => { moveNext(); resetAutoPlay(); });
-    prevButton.addEventListener('click', () => { movePrev(); resetAutoPlay(); });
-    
-    dots.forEach((dot, idx) => {
-        dot.addEventListener('click', () => {
-            if (isTransitioning) return;
-            currentIndex = idx + 1;
-            updateCarousel();
-            resetAutoPlay();
-        });
-    });
-
-    // Drag functionality
-    let startX = 0;
-    let isDragging = false;
-    let dragMove = 0;
-
-    const dragStart = (e) => {
-        if (isTransitioning) return;
-        isDragging = true;
-        startX = e.type.includes('touch') ? e.touches[0].pageX : e.pageX;
-        clearInterval(autoPlayTimer);
-        track.style.transition = 'none';
-    };
-
-    const dragging = (e) => {
-        if (!isDragging) return;
-        const currentX = e.type.includes('touch') ? e.touches[0].pageX : e.pageX;
-        dragMove = currentX - startX;
-        const currentTranslate = -currentIndex * track.offsetWidth;
-        track.style.transform = `translateX(${currentTranslate + dragMove}px)`;
-    };
-
-    const dragEnd = () => {
-        if (!isDragging) return;
-        isDragging = false;
-        if (Math.abs(dragMove) > track.offsetWidth / 5) {
-            if (dragMove > 0) movePrev();
-            else moveNext();
-        } else {
-            updateCarousel();
-        }
-        dragMove = 0;
-        startAutoPlay();
-    };
-
-    track.addEventListener('mousedown', dragStart);
-    window.addEventListener('mousemove', dragging);
-    window.addEventListener('mouseup', dragEnd);
-    
-    track.addEventListener('touchstart', dragStart);
-    track.addEventListener('touchmove', dragging);
-    track.addEventListener('touchend', dragEnd);
-
-    // Initialize
-    updateCarousel(true);
-    startAutoPlay();
-</script>
-<script>
-    function updateWeather() {
-        // Simulated dynamic data for Balikpapan
-        const conditions = [
-            { text: 'Cerah Berawan', icon: 'partly_cloudy_day' },
-            { text: 'Berawan', icon: 'cloud' },
-            { text: 'Hujan Ringan', icon: 'rainy' },
-            { text: 'Cerah', icon: 'sunny' },
-            { text: 'Hujan Petir', icon: 'thunderstorm' }
-        ];
-        
-        // Create variations based on current minutes to simulate real-time changes
-        const now = new Date();
-        const minutes = now.getMinutes();
-        const seed = minutes % conditions.length;
-        
-        // Base temperature for Balikpapan is around 26-32
-        const baseTemp = 26;
-        const tempVar = Math.floor(Math.random() * 7);
-        const currentTemp = baseTemp + tempVar;
-        
-        // Humidity usually high in Balikpapan
-        const baseHumidity = 70;
-        const humidityVar = Math.floor(Math.random() * 20);
-        const currentHumidity = baseHumidity + humidityVar;
-
-        const data = conditions[seed];
-
-        const descEl = document.getElementById('weather-desc');
-        const humidityEl = document.getElementById('weather-humidity');
-        const iconEl = document.getElementById('weather-icon');
-
-        if (descEl) descEl.textContent = `${data.text}, ${currentTemp}°C`;
-        if (humidityEl) humidityEl.textContent = `${currentHumidity}%`;
-        if (iconEl) iconEl.textContent = data.icon;
-        
-        console.log('Weather Updated:', data.text, currentTemp + '°C');
-    }
-
-    // Initial update and refresh every 60 seconds for 'truly dynamic' feel
-    updateWeather();
-    setInterval(updateWeather, 60000);
-</script>
-<script>
-    // Mobile Menu Toggle
-    document.getElementById('open-mobile-menu').addEventListener('click', function() {
-        var menu = document.getElementById('mobile-menu');
-        menu.classList.remove('hidden');
-        menu.classList.add('flex');
-        document.body.style.overflow = 'hidden';
-    });
-    document.getElementById('close-mobile-menu').addEventListener('click', function() {
-        var menu = document.getElementById('mobile-menu');
-        menu.classList.add('hidden');
-        menu.classList.remove('flex');
-        document.body.style.overflow = '';
-    });
-
-    // Mobile Accordion Toggle
-    function toggleMobileAccordion(id) {
-        var el = document.getElementById(id);
-        var icon = document.getElementById('icon-' + id);
-        var isHidden = el.classList.contains('hidden');
-        // Close all
-        ['acc-profil','acc-infopub','acc-layanan','acc-ppid'].forEach(function(acc) {
-            document.getElementById(acc).classList.add('hidden');
-            document.getElementById(acc).classList.remove('flex');
-            var ic = document.getElementById('icon-' + acc);
-            if (ic) ic.style.transform = '';
-        });
-        // Open clicked if it was closed
-        if (isHidden) {
-            el.classList.remove('hidden');
-            el.classList.add('flex');
-            if (icon) icon.style.transform = 'rotate(180deg)';
-        }
-    }
-</script>
-<script>
-    // Desktop dropdown via JS (more reliable than CSS hover)
-    document.querySelectorAll('#desktop-nav .group').forEach(function(group) {
-        var menu = group.querySelector('.dropdown-menu');
-        if (!menu) return;
-        var timer;
-        group.addEventListener('mouseenter', function() {
-            clearTimeout(timer);
-            // close all others
-            document.querySelectorAll('#desktop-nav .dropdown-menu.open').forEach(function(m) {
-                if (m !== menu) m.classList.remove('open');
-            });
-            menu.classList.add('open');
-        });
-        group.addEventListener('mouseleave', function() {
-            timer = setTimeout(function() { menu.classList.remove('open'); }, 80);
-        });
-        menu.addEventListener('mouseenter', function() { clearTimeout(timer); });
-        menu.addEventListener('mouseleave', function() {
-            timer = setTimeout(function() { menu.classList.remove('open'); }, 80);
-        });
-    });
-    // Close dropdown when clicking outside
-    document.addEventListener('click', function(e) {
-        if (!e.target.closest('#desktop-nav')) {
-            document.querySelectorAll('#desktop-nav .dropdown-menu.open').forEach(function(m) {
-                m.classList.remove('open');
-            });
-        }
-    });
-</script>
-</body>
-</html>
+</body></html>

@@ -81,8 +81,9 @@
         }
         html, body {
             height: auto;
-            overflow-y: auto;
             font-family: "Inter", sans-serif;
+            overflow-x: hidden;
+            max-width: 100vw;
         }
         h1, h2, h3, .font-headline {
             font-family: "Manrope", sans-serif
@@ -103,24 +104,26 @@
         #carousel-container {
             position: relative;
             overflow: hidden;
+            width: 100%;
+            max-width: 100vw;
         }
         #carousel-track {
             display: flex;
             transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
             cursor: grab;
             user-select: none;
+            width: 100%;
         }
         #carousel-track:active {
             cursor: grabbing;
         }
         .carousel-slide {
-            flex: 0 0 100%;
-            width: 100%;
+            flex: 0 0 100vw;
+            width: 100vw;
+            max-width: 100vw;
+            overflow: hidden;
         }
-                /* Dropdown Styles */
-        .nav-item {
-            position: relative;
-        }
+        /* Dropdown Styles */
         .nav-hover-line::after {
             content: "";
             position: absolute;
@@ -129,68 +132,51 @@
             width: 0;
             height: 2px;
             background-color: #fdc003;
-            transition: width 0.3s ease
+            transition: width 0.3s ease;
         }
         .nav-hover-line:hover::after {
-            width: 100%
+            width: 100%;
         }
-        .dropdown-menu {
+                .dropdown-menu {
             display: none;
             position: absolute;
             top: 100%;
             left: 0;
-            z-index: 100;
-        }
-        .group:hover .dropdown-menu {
-            display: block;
-            animation: dropdown-slide 0.2s ease-out forwards;
-        }
-        .nav-dropdown {
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background-color: #0f172a; /* Slate 900 for matching black navbar depth */
-            min-width: 200px;
-            opacity: 0;
-            visibility: hidden;
-            transform: translateY(10px);
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            z-index: 100;
+            z-index: 99999;
+            min-width: 180px;
+            background-color: #0f172a;
             border-top: 2px solid #fdc003;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+            border-radius: 0 0 8px 8px;
         }
-        .nav-item:hover .nav-dropdown {
-            opacity: 1;
-            visibility: visible;
-            transform: translateY(0);
+        .group:hover > .dropdown-menu,
+        .dropdown-menu.open {
+            display: block !important;
         }
-        .nav-item:hover > a {
-            border-bottom: 4px solid #fdc003;
-            color: white;
+            to   { opacity: 1; transform: translateY(0); }
         }
-        .dropdown-link {
-            display: block;
-            padding: 12px 20px;
-            font-size: 11px;
-            font-weight: 700;
-            color: #cbd5e1;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            transition: all 0.2s;
-            border-bottom: 1px solid rgba(255,255,255,0.05);
+        /* Navbar: hidden on mobile, visible on desktop */
+        #desktop-nav {
+            display: none !important;
+            height: 0 !important;
+            overflow: hidden !important;
         }
-        .dropdown-link:last-child {
-            border-bottom: none;
+        @media (min-width: 768px) {
+            #desktop-nav {
+                display: block !important;
+                height: 44px !important;
+                overflow: visible !important;
+            }
         }
-        .dropdown-link:hover {
-            background-color: rgba(255,255,255,0.05);
-            color: #fdc003;
-            padding-left: 24px;
+        /* Prevent overflow without breaking sticky */
+        img, video, iframe {
+            max-width: 100%;
         }
     </style>
 </head>
 <body class="bg-surface text-on-surface">
-<header class="w-full shadow-md bg-white sticky top-0 z-50">
+
+<header class="w-full shadow-md bg-white sticky top-0 z-50" style="overflow:visible;">
 <!-- Top Navbar (Batik Motif) -->
 <div class="batik-bg border-b border-slate-500">
 <div class="max-w-7xl mx-auto px-4 md:px-6 py-3 flex flex-col md:flex-row items-center justify-between gap-4 md:gap-0">
@@ -198,13 +184,20 @@
 <div class="flex items-center justify-between w-full md:w-auto">  
     <a href="http://ppidbalikpapan.test/" class="h-8 md:h-10 w-auto object-contain">
      <img src="{{ asset('logo_ppid bg removed.png') }}" alt="logo" class="h-full w-auto"></a>
+<!-- Mobile right side: clock + hamburger -->
+<div class="flex items-center gap-2 md:hidden">
 <!-- Mobile clock -->
-<div class="md:hidden font-headline font-bold text-xs text-primary/80 bg-white/50 px-3 py-1 rounded-full border border-white/20 shadow-sm min-w-fit" id="mobile-clock">
+<div class="font-headline font-bold text-xs text-primary/80 bg-white/50 px-3 py-1 rounded-full border border-white/20 shadow-sm min-w-fit" id="mobile-clock">
 <div class="flex flex-col items-center">
 <span class="text-[8px] leading-none opacity-70" id="mobile-date"></span>
 <span class="text-[10px] leading-tight" id="mobile-time"></span>
 </div>
 </div>
+<!-- Hamburger button -->
+<button id="open-mobile-menu" class="text-primary p-1" aria-label="Buka menu">
+<span class="material-symbols-outlined text-2xl">menu</span>
+</button>
+</div><!-- end mobile right side -->
 </div>
 <!-- Center: Search Bar -->
 <div class="w-full max-w-md">
@@ -224,16 +217,15 @@
 </div>
 </div>
 </div>
-</header>
-<!-- Bottom Navbar (Static with Content Flow) -->
-<nav class="bg-slate-950 text-white w-full h-11 overflow-x-visible">
-<div class="max-w-7xl mx-auto flex h-full items-center justify-center space-x-1 px-4 whitespace-nowrap">
-<a class="nav-hover-line relative px-3 py-3 text-xs font-bold font-headline transition-all text-secondary-container" href="http://ppidbalikpapan.test">Beranda</a>
+<!-- Bottom Navbar -->
+<nav id="desktop-nav" class="bg-slate-950 text-white w-full relative" style="overflow:visible; position:relative; z-index:9999;">
+<div class="max-w-7xl mx-auto flex h-full items-center justify-start md:justify-center space-x-1 px-2 md:px-4 whitespace-nowrap">
+<a class="nav-hover-line relative px-3 py-3 text-xs font-bold font-headline transition-all text-white" href="http://ppidbalikpapan.test">Beranda</a>
 <div class="group relative h-full flex items-center">
 <button class="nav-hover-line relative px-3 py-3 text-xs font-bold font-headline flex items-center gap-0.5">
                     Profil <span class="material-symbols-outlined text-[10px] group-hover:rotate-180 transition-transform">expand_more</span>
 </button>
-<div class="dropdown-menu bg-slate-900 min-w-[200px] shadow-xl py-2 rounded-b-lg overflow-hidden border border-white/10 font-headline">
+<div class="dropdown-menu bg-slate-900 min-w-[200px] shadow-xl py-2 rounded-b-lg border border-white/10 font-headline">
 <a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="#">Visi &amp; Misi</a>
 <a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="#">Struktur Organisasi</a>
 <a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="#">Tugas &amp; Fungsi</a>
@@ -243,7 +235,7 @@
 <button class="nav-hover-line relative px-3 py-3 text-xs font-bold font-headline flex items-center gap-0.5">
                     Informasi Publik <span class="material-symbols-outlined text-[10px] group-hover:rotate-180 transition-transform">expand_more</span>
 </button>
-<div class="dropdown-menu bg-slate-900 min-w-[200px] shadow-xl py-2 rounded-b-lg overflow-hidden border border-white/10 font-headline">
+<div class="dropdown-menu bg-slate-900 min-w-[150px] shadow-xl py-2 rounded-b-lg border border-white/10 font-headline">
 <a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="#">Informasi Berkala</a>
 <a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="#">Informasi Serta Merta</a>
 <a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="#">Informasi Setiap Saat</a>
@@ -254,7 +246,7 @@
 <button class="nav-hover-line relative px-3 py-3 text-xs font-bold font-headline flex items-center gap-0.5">
                     Layanan Informasi <span class="material-symbols-outlined text-[10px] group-hover:rotate-180 transition-transform">expand_more</span>
 </button>
-<div class="dropdown-menu bg-slate-900 min-w-[200px] shadow-xl py-2 rounded-b-lg overflow-hidden border border-white/10 font-headline">
+<div class="dropdown-menu bg-slate-900 min-w-[150px] shadow-xl py-2 rounded-b-lg border border-white/10 font-headline">
 <a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="#">Prosedur Permohonan</a>
 <a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="#">Prosedur Keberatan</a>
 <a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="#">SOP Layanan PPID</a>
@@ -268,14 +260,97 @@
 <button class="nav-hover-line relative px-3 py-3 text-xs font-bold font-headline flex items-center gap-0.5">
                     PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:rotate-180 transition-transform">expand_more</span>
 </button>
-<div class="dropdown-menu bg-slate-900 min-w-[200px] shadow-xl py-2 rounded-b-lg overflow-hidden border border-white/10 font-headline">
-<a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="#">Daftar PPID Pelaksana</a>
-<a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="#">Kinerja PPID</a>
+<div class="dropdown-menu bg-slate-900 min-w-[125px] shadow-xl py-2 rounded-b-lg border border-white/10 font-headline">
+<a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="#">Badan</a>
+<a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="#">Dinas</a>
 </div>
 </div>
 <a class="nav-hover-line relative px-3 py-3 text-xs font-bold font-headline" href="http://ppidbalikpapan.test/kontak">Kontak</a>
 </div>
 </nav>
+<script>
+(function(){
+    var n=document.getElementById('desktop-nav');
+    if(!n)return;
+    function applyNav(){
+        if(window.innerWidth<768){
+            n.style.cssText='display:none!important;height:0!important;overflow:hidden!important;';
+        }else{
+            n.style.cssText='display:block!important;height:44px!important;overflow:visible!important;position:relative;z-index:9999;';
+        }
+    }
+    applyNav();
+    window.addEventListener('resize', applyNav);
+})();
+</script>
+<!-- Mobile Fullscreen Menu Overlay -->
+<div id="mobile-menu" class="hidden fixed inset-0 bg-slate-950 flex-col overflow-y-auto" style="z-index:99999; top:0; left:0; right:0; bottom:0;">
+<div class="flex items-center justify-between px-5 py-4 border-b border-white/10">
+<span class="text-white font-headline font-bold text-base">Menu</span>
+<button id="close-mobile-menu" class="text-white p-1" aria-label="Tutup menu">
+<span class="material-symbols-outlined text-2xl">close</span>
+</button>
+</div>
+<nav class="flex flex-col px-4 py-4 font-headline text-white">
+<a href="http://ppidbalikpapan.test" class="flex items-center gap-3 px-3 py-3.5 border-b border-white/10 text-secondary-container font-bold text-sm">
+<span class="material-symbols-outlined text-base">home</span> Beranda
+</a>
+<div class="border-b border-white/10">
+<button onclick="toggleMobileAccordion('acc-profil')" class="w-full flex items-center justify-between px-3 py-3.5 text-sm font-bold text-white">
+<span class="flex items-center gap-3"><span class="material-symbols-outlined text-base">badge</span> Profil</span>
+<span class="material-symbols-outlined text-base transition-transform duration-300" id="icon-acc-profil">expand_more</span>
+</button>
+<div id="acc-profil" class="hidden flex-col bg-white/5 rounded-lg mx-2 mb-2 overflow-hidden">
+<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Visi &amp; Misi</a>
+<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Struktur Organisasi</a>
+<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container">Tugas &amp; Fungsi</a>
+</div>
+</div>
+<div class="border-b border-white/10">
+<button onclick="toggleMobileAccordion('acc-infopub')" class="w-full flex items-center justify-between px-3 py-3.5 text-sm font-bold text-white">
+<span class="flex items-center gap-3"><span class="material-symbols-outlined text-base">folder_open</span> Informasi Publik</span>
+<span class="material-symbols-outlined text-base transition-transform duration-300" id="icon-acc-infopub">expand_more</span>
+</button>
+<div id="acc-infopub" class="hidden flex-col bg-white/5 rounded-lg mx-2 mb-2 overflow-hidden">
+<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Informasi Berkala</a>
+<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Informasi Serta Merta</a>
+<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Informasi Setiap Saat</a>
+<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container">Daftar Informasi Publik</a>
+</div>
+</div>
+<div class="border-b border-white/10">
+<button onclick="toggleMobileAccordion('acc-layanan')" class="w-full flex items-center justify-between px-3 py-3.5 text-sm font-bold text-white">
+<span class="flex items-center gap-3"><span class="material-symbols-outlined text-base">support_agent</span> Layanan Informasi</span>
+<span class="material-symbols-outlined text-base transition-transform duration-300" id="icon-acc-layanan">expand_more</span>
+</button>
+<div id="acc-layanan" class="hidden flex-col bg-white/5 rounded-lg mx-2 mb-2 overflow-hidden">
+<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Prosedur Permohonan</a>
+<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Prosedur Keberatan</a>
+<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">SOP Layanan PPID</a>
+<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container">Biaya Layanan</a>
+</div>
+</div>
+<a href="http://ppidbalikpapan.test/news" class="flex items-center gap-3 px-3 py-3.5 border-b border-white/10 text-sm font-bold">
+<span class="material-symbols-outlined text-base">newspaper</span> Berita
+</a>
+<a href="http://ppidbalikpapan.test/stats" class="flex items-center gap-3 px-3 py-3.5 border-b border-white/10 text-sm font-bold">
+<span class="material-symbols-outlined text-base">bar_chart</span> Data Statistik
+</a>
+<div class="border-b border-white/10">
+<button onclick="toggleMobileAccordion('acc-ppid')" class="w-full flex items-center justify-between px-3 py-3.5 text-sm font-bold text-white">
+<span class="flex items-center gap-3"><span class="material-symbols-outlined text-base">account_balance</span> PPID Pelaksana</span>
+<span class="material-symbols-outlined text-base transition-transform duration-300" id="icon-acc-ppid">expand_more</span>
+</button>
+<div id="acc-ppid" class="hidden flex-col bg-white/5 rounded-lg mx-2 mb-2 overflow-hidden">
+<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Badan</a>
+<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container">Dinas</a>
+</div>
+</div>
+<a href="http://ppidbalikpapan.test/kontak" class="flex items-center gap-3 px-3 py-3.5 text-sm font-bold">
+<span class="material-symbols-outlined text-base">call</span> Kontak
+</a>
+</nav>
+</div>
 </header>
 <main>
 <section class="relative py-28 overflow-hidden border-b border-outline-variant/10">
@@ -517,5 +592,69 @@
     }
     setInterval(updateClock, 1000);
     updateClock();
-</script>   
+</script>  
+
+ 
+
+
+
+<script>
+    // Hide/show desktop nav based on screen width
+    function hideShowNav() {
+        var n = document.getElementById('desktop-nav');
+        if (!n) return;
+        if (window.innerWidth < 768) {
+            n.style.cssText = 'display:none!important;height:0!important;overflow:hidden!important;';
+        } else {
+            n.style.cssText = 'display:block!important;height:44px!important;overflow:visible!important;position:relative;z-index:9999;';
+        }
+    }
+    hideShowNav();
+    window.addEventListener('resize', hideShowNav);
+
+    // Active nav highlight
+    (function() {
+        var full = window.location.href.split('?')[0].replace(/\/$/, '');
+        document.querySelectorAll('#desktop-nav a[href]').forEach(function(link) {
+            var href = link.getAttribute('href').replace(/\/$/, '');
+            if (full === href) {
+                link.style.color = '#fdc003';
+                link.style.borderBottom = '3px solid #fdc003';
+            }
+        });
+    })();
+
+    // Mobile menu toggle
+    var openBtn = document.getElementById('open-mobile-menu');
+    var closeBtn = document.getElementById('close-mobile-menu');
+    var mobileMenu = document.getElementById('mobile-menu');
+    if (openBtn) openBtn.addEventListener('click', function() {
+        mobileMenu.classList.remove('hidden');
+        mobileMenu.classList.add('flex');
+        document.body.style.overflow = 'hidden';
+    });
+    if (closeBtn) closeBtn.addEventListener('click', function() {
+        mobileMenu.classList.add('hidden');
+        mobileMenu.classList.remove('flex');
+        document.body.style.overflow = '';
+    });
+
+    // Mobile accordion
+    function toggleMobileAccordion(id) {
+        var el = document.getElementById(id);
+        var icon = document.getElementById('icon-' + id);
+        var isHidden = el.classList.contains('hidden');
+        ['acc-profil','acc-infopub','acc-layanan','acc-ppid'].forEach(function(acc) {
+            var a = document.getElementById(acc);
+            if (a) { a.classList.add('hidden'); a.classList.remove('flex'); }
+            var ic = document.getElementById('icon-' + acc);
+            if (ic) ic.style.transform = '';
+        });
+        if (isHidden) {
+            el.classList.remove('hidden');
+            el.classList.add('flex');
+            if (icon) icon.style.transform = 'rotate(180deg)';
+        }
+    }
+</script>
 </body></html>

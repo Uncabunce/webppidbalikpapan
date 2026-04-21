@@ -1,5 +1,5 @@
 <?php
-
+use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -20,3 +20,4 @@ Route::get('/kontak', function () {
 Route::get('/stats', function () {
     return view('stats');
 });
+
