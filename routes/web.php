@@ -20,4 +20,11 @@ Route::get('/kontak', function () {
 Route::get('/stats', function () {
     return view('stats');
 });
+Route::get('/insidenews', function () {
+    return view('insidenews');
+});
+Route::get('/newnews', function () {
+    return view('newnews');
+});
+
 

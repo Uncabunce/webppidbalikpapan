@@ -101,18 +101,12 @@
             scrollbar-width: none;
         }
         /* Carousel Styles */
-#carousel-container {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-}
-/* ... */
-.carousel-slide {
-    flex: 0 0 100%;
-    min-width: 100%;
-    width: 100%;
-    overflow: hidden;
-}
+        #carousel-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            max-width: 100vw;
+        }
         #carousel-track {
             display: flex;
             transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
@@ -123,16 +117,10 @@
         #carousel-track:active {
             cursor: grabbing;
         }
-        #carousel-container {
-            position: relative;
-            overflow: hidden;
-            width: 100%;
-        }
-/* ... */
         .carousel-slide {
-            flex: 0 0 100%;
-            min-width: 100%;
-            width: 100%;
+            flex: 0 0 100vw;
+            width: 100vw;
+            max-width: 100vw;
             overflow: hidden;
         }
         /* Dropdown Styles */
@@ -523,7 +511,7 @@
 <p class="text-slate-500 text-sm md:text-base line-clamp-2 md:line-clamp-3 mb-4">
                                     Pemerintah Kota Balikpapan terus mendorong setiap Organisasi Perangkat Daerah untuk meningkatkan standar pelayanan informasi publik demi kepuasan masyarakat melalui transparansi digital.
                                 </p>
-<a class="text-primary font-bold text-sm flex items-center gap-2 group-hover:gap-3 transition-all" href="http://ppidbalikpapan.test/insidenews">
+<a class="text-primary font-bold text-sm flex items-center gap-2 group-hover:gap-3 transition-all" href="#">
                                     Baca Selengkapnya <span class="material-symbols-outlined text-sm" data-icon="east">east</span>
 </a>
 </div>
