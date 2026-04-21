@@ -5,9 +5,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home');
 });
-Route::get('/news', function () {
-    return view('news');
-});
 Route::get('/formulir', function () {
     return view('formulir');
 });
@@ -23,8 +20,14 @@ Route::get('/stats', function () {
 Route::get('/insidenews', function () {
     return view('insidenews');
 });
-Route::get('/newnews', function () {
-    return view('newnews');
+Route::get('/news', function () {
+    return view('news');
 });
 
+Route::get('/news/{page}', function ($page) {
+    return view('news', ['page' => $page]);
+})->where('page', '[0-9]+');
 
+Route::get('/news/newnews', function () {
+    return view('newnews');
+});

@@ -389,9 +389,9 @@
 </section>
 <!-- News Grid -->
 <section class="py-12 max-w-7xl mx-auto px-6">
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="news-grid">
 <!-- News Card 1 -->
-<article class="group bg-surface-container-lowest rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 flex flex-col">
+<article class="news-card group bg-surface-container-lowest rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 flex flex-col" data-page="1">
 <div class="relative overflow-hidden aspect-video">
 <img alt="Gedung Balai Kota Balikpapan" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="images/1.jpg"/>
 <div class="absolute top-4 left-4">
@@ -407,7 +407,7 @@
                             BALIKPAPAN — Wakil Wali Kota Bagus Susetyo menyampaikan Laporan Keterangan Pertanggungjawaban (LKPj) Wali Kota Balikpapan Tahun Anggaran 2025 dalam Rapat Paripurna ke-2 Masa Sidang II Tahun Sidang 2025/2026 di Ballroom Hotel Gran Senyiur, pada Senin (6/4/2026).
                         </p>
 <div class="mt-auto flex items-center justify-between">
-<a class="text-primary font-bold text-sm flex items-center gap-2 group/btn" href="http://ppidbalikpapan.test/news/newnews">
+<a class="text-primary font-bold text-sm flex items-center gap-2 group/btn" href="http://ppidbalikpapan.test/insidenews">
                                 Selengkapnya
                                 <span class="material-symbols-outlined text-sm group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
 </a>
@@ -415,7 +415,7 @@
 </div>
 </article>
 <!-- News Card 2 -->
-<article class="group bg-surface-container-lowest rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 flex flex-col">
+<article class="news-card group bg-surface-container-lowest rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 flex flex-col" data-page="1">
 <div class="relative overflow-hidden aspect-video">
 <img alt="Interior puskesmas modern" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCON1MnTytj9ujS8_J-v81rXKNMRNuqd78bSqIPlrG4c97t1eXZm-hLSn4UijawKvKCO62xXBDCKMs9yUGdaFfTrdfAX8LCPk120gMmcCs9d7Zpy_sseEdvASl9YC2vxKTziTINUVKgTA3YvFSGhdeVjIbcCqbKMDt479oKhxqzXI7WHddbe0wRVv-1Oe-2PmFMpqEEMSVPYhGOifupt-UBvwnhp2TY6e_64z0_JqKhzlRCm9jKwN_8xpvfmmbNj4fOCPYpnuxrvqiq"/>
 <div class="absolute top-4 left-4">
@@ -439,7 +439,7 @@
 </div>
 </article>
 <!-- News Card 3 -->
-<article class="group bg-surface-container-lowest rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 flex flex-col">
+<article class="news-card group bg-surface-container-lowest rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 flex flex-col" data-page="1">
 <div class="relative overflow-hidden aspect-video">
 <img alt="Pasar tradisional Balikpapan" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUble0jS2EKmg7CMXdxK6REg9Zc-24sz9RVQrK3M79QDxmZz2NJrd5T2IaFtZ98YSKrUBAHlsRcKVQtMw3G3dxD4RQiSnGpsjFAEAyqnJr9Yy7-_bvrZdvAe-y-_h_myyLpAeCPG4hBNvwKbUnj0YDGWShQwsqlsXkm-j0oklqol8ChMJjNzlNcmBlJHNExUQnoidzCE084Y30ukVMG8Tam7H3FP6v7cO4WJh6BzCuMiPUKVNZLanm_DvpUpg2cO_1e9ls4qT4I_aW"/>
 <div class="absolute top-4 left-4">
@@ -463,7 +463,7 @@
 </div>
 </article>
 <!-- News Card 4 -->
-<article class="group bg-surface-container-lowest rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 flex flex-col">
+<article class="news-card group bg-surface-container-lowest rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 flex flex-col" data-page="1">
 <div class="relative overflow-hidden aspect-video">
 <img alt="Taman kota Balikpapan" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLFMCuPjFiWoSPcefr2k0C90CInnKiNplmJkprc2s4u_jcWVjf98m-d6y4scUWeNDjT5HtI2pPanXnfy7tDT8FHtJb_MC-6oVhbfNBgbQ-tG96u1FdgRSJhWBoAZXtviKLqzhoiB90XKm5qdBoC9-_3-JXV6D-GXpRwoPSNWE6gUl1EEwyVKH-qD54XWhUtyJyfDbkpJyWrrVNENNa2yiRpxV3NJb_BB6yqgcaepAFtgkslcwtSReLOvJlPlIw8UOJycfDbIX70Pv3"/>
 <div class="absolute top-4 left-4">
@@ -487,7 +487,7 @@
 </div>
 </article>
 <!-- News Card 5 -->
-<article class="group bg-surface-container-lowest rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 flex flex-col">
+<article class="news-card group bg-surface-container-lowest rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 flex flex-col" data-page="1">
 <div class="relative overflow-hidden aspect-video">
 <img alt="Laboratorium sekolah modern" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5UCaWY4xAq0ecXUR_NNnK5pVbKJ8DB5hoBlCyRxGaiF94o1OQdiFvX5PaSeF5mEmTYwc_dqDHVECM0Z-1sdKHDFBrQBIE996172ZppIBRlTpToFxU7UAPBcTBBpwbQ_hiE55lQhpMO6Jv9SFUgNJYkcJID40ToJGlHxVAvFhIeKj9n63SzbHfd3G5RKV2aqi6501uthjs6UlJuODokdWGO29kXsMvh50ueqdAu7ni10C7chrvQ8NmnAwA3h1XD1nnlu4t56HLojyi"/>
 <div class="absolute top-4 left-4">
@@ -511,7 +511,7 @@
 </div>
 </article>
 <!-- News Card 6 -->
-<article class="group bg-surface-container-lowest rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 flex flex-col">
+<article class="news-card group bg-surface-container-lowest rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 flex flex-col" data-page="1">
 <div class="relative overflow-hidden aspect-video">
 <img alt="Smart city command center" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4ZjUvliKY0ZCuorwN-5toGXZ_QABJtnYZ2F5wFUDm9QIT2Gja9XLlxjkxP0X8rP1jaKp0tKPQeujsEI1KPSEnHe0y3CvmA02b_egw-AJrCuT5lE0p12J7XfhDYhwRygdscFlhBe7DX43xGrTFHHO4sPdzFb47UZuxbxfs4W_k3qQIutXANviY5X89m_pURTtmkJW_F-vJX27BRbDqbjHfUDkZ_FKiil3PDS143F-y-VBqi_qLBR1PFMAtALPD_sRF-n0_m1Q5aTME"/>
 <div class="absolute top-4 left-4">
@@ -536,18 +536,7 @@
 </article>
 </div>
 <!-- Pagination -->
-<div class="mt-20 flex justify-center items-center gap-2">
-<button class="w-10 h-10 flex items-center justify-center rounded-lg bg-surface-container text-outline hover:bg-primary hover:text-white transition-colors">
-<span class="material-symbols-outlined">chevron_left</span>
-</button>
-<button class="w-10 h-10 flex items-center justify-center rounded-lg bg-primary text-white font-bold">1</button>
-<button class="w-10 h-10 flex items-center justify-center rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-bold">2</button>
-<button class="w-10 h-10 flex items-center justify-center rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-bold">3</button>
-<span class="px-2 text-outline">...</span>
-<button class="w-10 h-10 flex items-center justify-center rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-bold">12</button>
-<button class="w-10 h-10 flex items-center justify-center rounded-lg bg-surface-container text-outline hover:bg-primary hover:text-white transition-colors">
-<span class="material-symbols-outlined">chevron_right</span>
-</button>
+<div class="mt-20 flex justify-center items-center gap-2" id="pagination-container">
 </div>
 </section>
 </main>
@@ -646,4 +635,105 @@
 
     </script>
 
+<script>
+// =====================
+// NEWS PAGINATION SYSTEM
+// =====================
+var allNewsData = [
+    // Page 1 cards - use existing DOM cards
+    {page:1, useDOM: true},
+    // Pages 2-12 - generated data
+];
+
+// All news items data (72 total = 12 pages x 6)
+var newsItems = [
+    {cat:'Pemerintahan', catColor:'bg-secondary', date:'07 APRIL 2026', img:'images/1.jpg', title:'Pemerintah Kota Balikpapan Raih Penghargaan Transparansi Publik 2024', desc:'BALIKPAPAN — Wakil Wali Kota Bagus Susetyo menyampaikan Laporan Keterangan Pertanggungjawaban (LKPj) Wali Kota Balikpapan Tahun Anggaran 2025 dalam Rapat Paripurna ke-2.', href:'http://ppidbalikpapan.test/insidenews'},
+    {cat:'Layanan', catColor:'bg-tertiary-container', date:'12 MEI 2024', img:'https://lh3.googleusercontent.com/aida-public/AB6AXuCON1MnTytj9ujS8_J-v81rXKNMRNuqd78bSqIPlrG4c97t1eXZm-hLSn4UijawKvKCO62xXBDCKMs9yUGdaFfTrdfAX8LCPk120gMmcCs9d7Zpy_sseEdvASl9YC2vxKTziTINUVKgTA3YvFSGhdeVjIbcCqbKMDt479oKhxqzXI7WHddbe0wRVv-1Oe-2PmFMpqEEMSVPYhGOifupt-UBvwnhp2TY6e_64z0_JqKhzlRCm9jKwN_8xpvfmmbNj4fOCPYpnuxrvqiq', title:'Digitalisasi Puskesmas: Pendaftaran Online Kini Tersedia di Seluruh Kecamatan', desc:'Dinas Pendidikan mengumumkan pembukaan pendaftaran beasiswa bagi mahasiswa asal Balikpapan yang berprestasi di tingkat nasional dan internasional.', href:'http://ppidbalikpapan.test/insidenews'},
+    {cat:'Ekonomi', catColor:'bg-primary', date:'10 MEI 2024', img:'https://lh3.googleusercontent.com/aida-public/AB6AXuD4ZjUvliKY0ZCuorwN-5toGXZ_QABJtnYZ2F5wFUDm9QIT2Gja9XLlxjkxP0X8rP1jaKp0tKPQeujsEI1KPSEnHe0y3CvmA02b_egw-AJrCuT5lE0p12J7XfhDYhwRygdscFlhBe7DX43xGrTFHHO4sPdzFb47UZuxbxfs4W_k3qQIutXANviY5X89m_pURTtmkJW_F-vJX27BRbDqbjHfUDkZ_FKiil3PDS143F-y-VBqi_qLBR1PFMAtALPD_sRF-n0_m1Q5aTME', title:'Penguatan UMKM Lokal Menuju Balikpapan sebagai Gerbang Ibu Kota Negara', desc:'Diskusi panel lintas sektoral membahas strategi penguatan ekonomi kerakyatan bagi pelaku usaha kecil menengah di tengah perkembangan IKN.', href:'http://ppidbalikpapan.test/insidenews'},
+    {cat:'Infrastruktur', catColor:'bg-primary-container', date:'08 MEI 2024', img:'https://lh3.googleusercontent.com/aida-public/AB6AXuA0e-dZU4LdNm4R6_nJqnA8sU9HxhB8IERpfQILakKkJhYA3SFdUb-0KpVCzNOETa_IUQ9y3iB6n1LW0Vs0XcJFrOIiSWblS2j3YSU5_bOSW-P4gPEVS-4ZW9mKkCIXXMrncZjNI2Hx9JjHvgTlR7dLz8DiyI5kFY0RFqUGiHHovlkxCQlbL0JDJL97cBPkq1Vot_VCmf5YaJ41u3r5bZ7WTEuvKFlTRnmn-UH0HiP-dADgBrPJQbzORFEJB7D7K3rjGMFjG-O8', title:'Revitalisasi Kawasan Sudirman Capai 90 Persen, Target Selesai Akhir Tahun', desc:'Proyek perbaikan trotoar dan penambahan taman kota di pusat Balikpapan hampir selesai, menjanjikan kenyamanan lebih bagi pejalan kaki.', href:'http://ppidbalikpapan.test/insidenews'},
+    {cat:'Pendidikan', catColor:'bg-secondary', date:'05 MEI 2024', img:'https://lh3.googleusercontent.com/aida-public/AB6AXuCt5KKGLhQ00fD-Han0ulVCVw5BjCWo3cE_YzkIO_N8_PBRJPVzLpI5_-P8SNbTspokfEJeCCATptyRK0kB3iBf9cVP284wk85TElszSTww7uh3LgbaTryLordHu_D0dGbOIDdfGo0GNIDKtbw06iLEo8hPc0ilPwBgcVsB5D3pwUK_zJ18gqNgOjHMcrRjnwvIN0mV7b7TS7PEiWu8CgtnFHhrak6dWFv_FAqllCHqYhzaBRZ4_KRYM3HhRr-bnZj04a8t5Lr3h9Ww', title:'Beasiswa Prestasi Balikpapan 2024 Resmi Dibuka, Simak Persyaratannya', desc:'Dinas Pendidikan mengumumkan pembukaan pendaftaran beasiswa bagi mahasiswa asal Balikpapan yang berprestasi di tingkat nasional dan internasional.', href:'http://ppidbalikpapan.test/insidenews'},
+    {cat:'Smart City', catColor:'bg-primary', date:'01 MEI 2024', img:'https://lh3.googleusercontent.com/aida-public/AB6AXuD4ZjUvliKY0ZCuorwN-5toGXZ_QABJtnYZ2F5wFUDm9QIT2Gja9XLlxjkxP0X8rP1jaKp0tKPQeujsEI1KPSEnHe0y3CvmA02b_egw-AJrCuT5lE0p12J7XfhDYhwRygdscFlhBe7DX43xGrTFHHO4sPdzFb47UZuxbxfs4W_k3qQIutXANviY5X89m_pURTtmkJW_F-vJX27BRbDqbjHfUDkZ_FKiil3PDS143F-y-VBqi_qLBR1PFMAtALPD_sRF-n0_m1Q5aTME', title:'Optimalisasi CCTV Kota untuk Pemantauan Arus Lalu Lintas Real-Time', desc:'Dinas Perhubungan meningkatkan kapasitas server pemantauan untuk integrasi data lalu lintas yang lebih akurat melalui platform Balikpapan Single Window.', href:'http://ppidbalikpapan.test/insidenews'},
+    // Duplicate with slight variation for pages 2-12
+    {cat:'Pemerintahan', catColor:'bg-secondary', date:'15 APRIL 2026', img:'images/4.jpg', title:'Rapat Koordinasi PPID Se-Kalimantan Timur Digelar di Balikpapan', desc:'Pertemuan rutin PPID seluruh kabupaten/kota di Kaltim membahas standar pelayanan informasi publik yang lebih baik dan transparan.', href:'http://ppidbalikpapan.test/insidenews'},
+    {cat:'Layanan', catColor:'bg-tertiary-container', date:'14 APRIL 2026', img:'https://lh3.googleusercontent.com/aida-public/AB6AXuCON1MnTytj9ujS8_J-v81rXKNMRNuqd78bSqIPlrG4c97t1eXZm-hLSn4UijawKvKCO62xXBDCKMs9yUGdaFfTrdfAX8LCPk120gMmcCs9d7Zpy_sseEdvASl9YC2vxKTziTINUVKgTA3YvFSGhdeVjIbcCqbKMDt479oKhxqzXI7WHddbe0wRVv-1Oe-2PmFMpqEEMSVPYhGOifupt-UBvwnhp2TY6e_64z0_JqKhzlRCm9jKwN_8xpvfmmbNj4fOCPYpnuxrvqiq', title:'Peluncuran Aplikasi PPID Mobile untuk Kemudahan Akses Informasi', desc:'Pemkot Balikpapan meluncurkan aplikasi mobile PPID yang memudahkan masyarakat mengakses informasi publik kapan saja dan di mana saja.', href:'http://ppidbalikpapan.test/insidenews'},
+    {cat:'Ekonomi', catColor:'bg-primary', date:'13 APRIL 2026', img:'https://lh3.googleusercontent.com/aida-public/AB6AXuD4ZjUvliKY0ZCuorwN-5toGXZ_QABJtnYZ2F5wFUDm9QIT2Gja9XLlxjkxP0X8rP1jaKp0tKPQeujsEI1KPSEnHe0y3CvmA02b_egw-AJrCuT5lE0p12J7XfhDYhwRygdscFlhBe7DX43xGrTFHHO4sPdzFb47UZuxbxfs4W_k3qQIutXANviY5X89m_pURTtmkJW_F-vJX27BRdqbjHfUDkZ_FKiil3PDS143F-y-VBqi_qLBR1PFMAtALPD_sRF-n0_m1Q5aTME', title:'Festival UMKM Balikpapan 2026 Hadirkan 500 Pelaku Usaha Lokal', desc:'Event tahunan yang menampilkan produk-produk unggulan UMKM Balikpapan berhasil menarik ribuan pengunjung dari berbagai daerah.', href:'http://ppidbalikpapan.test/insidenews'},
+    {cat:'Infrastruktur', catColor:'bg-primary-container', date:'12 APRIL 2026', img:'https://lh3.googleusercontent.com/aida-public/AB6AXuA0e-dZU4LdNm4R6_nJqnA8sU9HxhB8IERpfQILakKkJhYA3SFdUb-0KpVCzNOETa_IUQ9y3iB6n1LW0Vs0XcJFrOIiSWblS2j3YSU5_bOSW-P4gPEVS-4ZW9mKkCIXXMrncZjNI2Hx9JjHvgTlR7dLz8DiyI5kFY0RFqUGiHHovlkxCQlbL0JDJL97cBPkq1Vot_VCmf5YaJ41u3r5bZ7WTEuvKFlTRnmn-UH0HiP-dADgBrPJQbzORFEJB7D7K3rjGMFjG-O8', title:'Pembangunan Jalan Lingkar Selatan Balikpapan Dimulai Tahun Ini', desc:'Proyek infrastruktur senilai ratusan miliar rupiah ini diharapkan dapat mengurangi kemacetan di jalur utama kota Balikpapan.', href:'http://ppidbalikpapan.test/insidenews'},
+    {cat:'Kesehatan', catColor:'bg-secondary', date:'11 APRIL 2026', img:'https://lh3.googleusercontent.com/aida-public/AB6AXuCON1MnTytj9ujS8_J-v81rXKNMRNuqd78bSqIPlrG4c97t1eXZm-hLSn4UijawKvKCO62xXBDCKMs9yUGdaFfTrdfAX8LCPk120gMmcCs9d7Zpy_sseEdvASl9YC2vxKTziTINUVKgTA3YvFSGhdeVjIbcCqbKMDt479oKhxqzXI7WHddbe0wRVv-1Oe-2PmFMpqEEMSVPYhGOifupt-UBvwnhp2TY6e_64z0_JqKhzlRCm9jKwN_8xpvfmmbNj4fOCPYpnuxrvqiq', title:'Program Vaksinasi Gratis untuk Lansia Dimulai di 10 Puskesmas', desc:'Dinas Kesehatan Balikpapan menggulirkan program vaksinasi gratis bagi warga lanjut usia sebagai bagian dari program kesehatan masyarakat 2026.', href:'http://ppidbalikpapan.test/insidenews'},
+    {cat:'Lingkungan', catColor:'bg-tertiary-container', date:'10 APRIL 2026', img:'https://lh3.googleusercontent.com/aida-public/AB6AXuCt5KKGLhQ00fD-Han0ulVCVw5BjCWo3cE_YzkIO_N8_PBRJPVzLpI5_-P8SNbTspokfEJeCCATptyRK0kB3iBf9cVP284wk85TElszSTww7uh3LgbaTryLordHu_D0dGbOIDdfGo0GNIDKtbw06iLEo8hPc0ilPwBgcVsB5D3pwUK_zJ18gqNgOjHMcrRjnwvIN0mV7b7TS7PEiWu8CgtnFHhrak6dWFv_FAqllCHqYhzaBRZ4_KRYM3HhRr-bnZj04a8t5Lr3h9Ww', title:'Balikpapan Raih Penghargaan Kota Hijau Nasional 2026', desc:'Program penghijauan kota dan pengelolaan sampah yang baik membuat Balikpapan kembali meraih penghargaan bergengsi di tingkat nasional.', href:'http://ppidbalikpapan.test/insidenews'},
+];
+
+// Fill remaining pages with repeated data
+while(newsItems.length < 72) {
+    var idx = newsItems.length % 12;
+    var item = Object.assign({}, newsItems[idx]);
+    newsItems.push(item);
+}
+
+var ITEMS_PER_PAGE = 6;
+var TOTAL_PAGES = 12;
+var currentPage = 1;
+
+function renderCards(page) {
+    var grid = document.getElementById('news-grid');
+    var start = (page - 1) * ITEMS_PER_PAGE;
+    var items = newsItems.slice(start, start + ITEMS_PER_PAGE);
+    
+    grid.innerHTML = items.map(function(item) {
+        return '<article class="group bg-surface-container-lowest rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 flex flex-col">' +
+            '<div class="relative overflow-hidden aspect-video">' +
+            '<img alt="' + item.cat + '" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="' + item.img + '"/>' +
+            '<div class="absolute top-4 left-4"><span class="px-3 py-1 ' + item.catColor + ' text-white text-[10px] font-bold uppercase tracking-widest rounded-full">' + item.cat + '</span></div>' +
+            '</div>' +
+            '<div class="p-6 flex flex-col flex-grow">' +
+            '<time class="text-xs font-semibold text-outline mb-3 uppercase tracking-tighter">' + item.date + '</time>' +
+            '<h3 class="text-xl font-headline font-bold text-on-surface leading-snug group-hover:text-primary transition-colors mb-3">' + item.title + '</h3>' +
+            '<p class="text-on-surface-variant text-sm line-clamp-3 mb-6">' + item.desc + '</p>' +
+            '<div class="mt-auto flex items-center justify-between">' +
+            '<a class="text-primary font-bold text-sm flex items-center gap-2 group/btn" href="' + item.href + '">' +
+            'Selengkapnya <span class="material-symbols-outlined text-sm group-hover/btn:translate-x-1 transition-transform">arrow_forward</span></a>' +
+            '</div></div></article>';
+    }).join('');
+}
+
+function renderPagination(page) {
+    var container = document.getElementById('pagination-container');
+    var btnBase = 'w-10 h-10 flex items-center justify-center rounded-lg font-bold transition-colors cursor-pointer ';
+    var btnActive = btnBase + 'bg-primary text-white';
+    var btnNormal = btnBase + 'bg-surface-container text-on-surface hover:bg-surface-container-high';
+    var btnNav = btnBase + 'bg-surface-container text-outline hover:bg-primary hover:text-white';
+
+    var html = '<button class="' + btnNav + '" onclick="goPage(' + (page-1) + ')"><span class="material-symbols-outlined">chevron_left</span></button>';
+    
+    // Show pages: 1, ..., prev, current, next, ..., 12
+    var pages = [];
+    pages.push(1);
+    if(page > 3) pages.push('...');
+    for(var i = Math.max(2, page-1); i <= Math.min(TOTAL_PAGES-1, page+1); i++) pages.push(i);
+    if(page < TOTAL_PAGES - 2) pages.push('...');
+    if(TOTAL_PAGES > 1) pages.push(TOTAL_PAGES);
+
+    pages.forEach(function(p) {
+        if(p === '...') {
+            html += '<span class="px-2 text-outline">...</span>';
+        } else {
+            html += '<button class="' + (p === page ? btnActive : btnNormal) + '" onclick="goPage(' + p + ')">' + p + '</button>';
+        }
+    });
+
+    html += '<button class="' + btnNav + '" onclick="goPage(' + (page+1) + ')"><span class="material-symbols-outlined">chevron_right</span></button>';
+    container.innerHTML = html;
+}
+
+function goPage(page) {
+    if(page < 1 || page > TOTAL_PAGES) return;
+    currentPage = page;
+    renderCards(page);
+    renderPagination(page);
+    window.scrollTo({top: document.getElementById('news-grid').offsetTop - 100, behavior: 'smooth'});
+}
+
+// Init
+renderCards(1);
+renderPagination(1);
+</script>
 </body></html>
