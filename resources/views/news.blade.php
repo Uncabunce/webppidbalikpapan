@@ -101,12 +101,18 @@
             scrollbar-width: none;
         }
         /* Carousel Styles */
-        #carousel-container {
-            position: relative;
-            overflow: hidden;
-            width: 100%;
-            max-width: 100vw;
-        }
+#carousel-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+/* ... */
+.carousel-slide {
+    flex: 0 0 100%;
+    min-width: 100%;
+    width: 100%;
+    overflow: hidden;
+}
         #carousel-track {
             display: flex;
             transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
@@ -117,10 +123,16 @@
         #carousel-track:active {
             cursor: grabbing;
         }
+        #carousel-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+        }
+/* ... */
         .carousel-slide {
-            flex: 0 0 100vw;
-            width: 100vw;
-            max-width: 100vw;
+            flex: 0 0 100%;
+            min-width: 100%;
+            width: 100%;
             overflow: hidden;
         }
         /* Dropdown Styles */
@@ -253,7 +265,7 @@
 <a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="#">Biaya Layanan</a>
 </div>
 </div>
-<a class="nav-hover-line relative px-3 py-3 text-xs font-bold font-headline" href="http://ppidbalikpapan.test/news">Berita
+<a class="nav-hover-line relative px-3 py-3 text-xs font-bold font-headline" href="http://ppidbalikpapan.test/news" style="color: #fdc003; border-bottom: 3px solid #fdc003;">Berita
 </a>
 <a class="nav-hover-line relative px-3 py-3 text-xs font-bold font-headline" href="http://ppidbalikpapan.test/stats">Data Statistik</a>
 <div class="group relative h-full flex items-center">

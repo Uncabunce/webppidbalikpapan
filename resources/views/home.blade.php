@@ -403,7 +403,7 @@
 </section>
 <!-- Centered Section Title with Dividers -->
 <div class="w-full border-t border-slate-200">
-<div class="max-w-7xl mx-auto px-4 md:px-6 flex flex-col items-center pt-8 pb-6"><span class="material-symbols-outlined text-amber-400 text-4xl opacity-80 mb-2" data-icon="hub">hub</span>
+<div class="max-w-7xl mx-auto px-4 md:px-6 flex flex-col items-center pt-4 pb-3"><span class="material-symbols-outlined text-amber-400 text-4xl opacity-80 mb-2" data-icon="hub">hub</span>
 <h2 class="text-3xl md:text-4xl font-headline font-extrabold text-primary text-center">Layanan PPID</h2>
 <div class="flex flex-col items-center gap-1.5 mt-2">
 <div class="w-24 h-1.5 bg-amber-400 rounded-full"></div>
@@ -413,7 +413,7 @@
 <div class="border-b border-slate-200"></div>
 </div>
 <!-- Service Quick Links - Bento Grid -->
-<section class="py-16 md:py-24 max-w-7xl mx-auto px-4 md:px-6">
+<section class="py-6 md:py-10 max-w-7xl mx-auto px-4 md:px-6">
 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
 
 <!-- Main Card -->
@@ -639,6 +639,130 @@
 <button class="bg-secondary-container text-on-secondary-container font-bold px-6 py-3 rounded-xl shadow-lg relative z-10 w-full hover:brightness-110 transition-all">Mulai Survey</button>
 <span class="material-symbols-outlined absolute -right-4 -bottom-4 text-7xl opacity-5" data-icon="sentiment_very_satisfied">sentiment_very_satisfied</span>
 </div>
+
+<!-- Link Tautan -->
+<div class="bg-surface-container-low p-6 rounded-2xl border border-slate-100 shadow-sm">
+<div class="flex items-center justify-center gap-3 mb-5">
+<div class="h-[1px] bg-slate-200 flex-1"></div>
+<div class="flex items-center gap-2 text-primary">
+<span class="material-symbols-outlined text-xl" data-icon="link">link</span>
+<h3 class="font-extrabold text-base uppercase tracking-wider font-headline">LINK TAUTAN</h3>
+</div>
+<div class="h-[1px] bg-slate-200 flex-1"></div>
+</div>
+<div class="flex flex-col gap-3">
+
+<!-- Tombol 1: LAPOR! -->
+<a href="https://www.lapor.go.id/" target="_blank" rel="noopener noreferrer"
+   class="w-full h-16 flex items-center justify-between px-4 rounded-xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 group"
+   style="background: linear-gradient(135deg, #ffffff 25%, #ec5353 75%);">
+  <div class="flex items-center gap-3">
+    <div class="w-9 h-9 rounded-lg overflow-hidden flex items-center justify-center bg-white border border-slate-100 shrink-0">
+      <img src="{{ asset('images/lapor.png') }}" alt="LAPOR!"
+           class="w-full h-full object-contain"
+           onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=\'text-red-600 font-extrabold text-xs\'>L!</span>';">
+    </div>
+    <div>
+      <div class="text-slate-800 font-extrabold text-sm leading-tight tracking-wide">LAPOR!</div>
+      <div class="text-slate-800 text-[10px] leading-none">Pengaduan Pelayanan Publik</div>
+    </div>
+  </div>
+  <span class="material-symbols-outlined text-slate-300 text-base group-hover:translate-x-0.5 group-hover:text-slate-500 transition-all">chevron_right</span>
+</a>
+
+<!-- Tombol 2: sirup -->
+<a href="https://sirup.lkpp.go.id/sirup/loginctr/index" target="_blank" rel="noopener noreferrer"
+   class="w-full h-16 flex items-center justify-between px-4 rounded-xl overflow-hidden shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 group"
+   style="background: linear-gradient(135deg, #ffffff 25%, #ec5353 75%);">
+  <div class="flex items-center gap-3">
+    <div class="w-9 h-9 bg-white/20 rounded-lg flex items-center justify-center shrink-0">
+        <img src="{{ asset('images/siRUP.png') }}" alt="BKPSDM"
+             class="w-full h-full object-contain"
+             onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=\'material-symbols-outlined text-white text-lg\'>manage_accounts</span>';">
+    </div>
+    <div>
+      <div class="text-slate-800 font-extrabold text-sm leading-tight tracking-wide">siRUP</div>
+      <div class="text-slate-800 text-[10px] leading-none">Pengadaan Barang dan Jasa</div>
+    </div>
+  </div>
+  <span class="material-symbols-outlined text-white/60 text-base group-hover:translate-x-0.5 transition-transform">chevron_right</span>
+</a>
+
+<!-- Tombol 3: INAPROC -->
+<a href="https://katalog.inaproc.id/" target="_blank" rel="noopener noreferrer"
+   class="w-full h-16 flex items-center justify-between px-4 rounded-xl overflow-hidden shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 group"
+   style="background: linear-gradient(135deg, #ffffff 25%, #ec5353 75%);">
+  <div class="flex items-center gap-3">
+    <div class="w-9 h-9 bg-white/20 rounded-lg flex items-center justify-center shrink-0">
+        <img src="{{ asset('images/inaproc.png') }}" alt="BKPSDM"
+             class="w-full h-full object-contain"
+             onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=\'material-symbols-outlined text-white text-lg\'>manage_accounts</span>';">
+    </div>
+    <div>
+      <div class="text-slate-800 font-extrabold text-sm leading-tight tracking-wide">INAPROC</div>
+      <div class="text-slate-800 text-[10px] leading-none">Katalog Elektronik</div>
+    </div>
+  </div>
+  <span class="material-symbols-outlined text-white/60 text-base group-hover:translate-x-0.5 transition-transform">chevron_right</span>
+</a>
+
+<!-- Tombol 4: LPSE -->
+<a href="https://lpsebalikpapan.com/" target="_blank" rel="noopener noreferrer"
+   class="w-full h-16 flex items-center justify-between px-4 rounded-xl overflow-hidden shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 group"
+   style="background: linear-gradient(135deg, #ffffff 25%, #014cf9 75%);">
+  <div class="flex items-center gap-3">
+    <div class="w-9 h-9 bg-white/20 rounded-lg flex items-center justify-center shrink-0">
+        <img src="{{ asset('images/LPSE.png') }}" alt="BKPSDM"
+             class="w-full h-full object-contain"
+             onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=\'material-symbols-outlined text-white text-lg\'>manage_accounts</span>';">
+    </div>
+    <div>
+      <div class="text-slate-800 font-extrabold text-sm leading-tight tracking-wide">LPSE</div>
+      <div class="text-slate-800 font-extrabold text-[10px] leading-none">Katalog Elektronik</div>
+    </div>
+  </div>
+  <span class="material-symbols-outlined text-white/60 text-base group-hover:translate-x-0.5 transition-transform">chevron_right</span>
+</a>
+
+<!-- Tombol 4: SPMB -->
+<a href="https://balikpapan.spmb.id/" target="_blank" rel="noopener noreferrer"
+   class="w-full h-16 flex items-center justify-between px-4 rounded-xl overflow-hidden shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 group"
+   style="background: linear-gradient(135deg, #ffffff 25%, #2563eb 75%);">
+  <div class="flex items-center gap-3">
+    <div class="w-9 h-9 bg-white/20 rounded-lg flex items-center justify-center shrink-0">
+        <img src="{{ asset('images/spmb.png') }}" alt="BKPSDM"
+             class="w-full h-full object-contain"
+             onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=\'material-symbols-outlined text-white text-lg\'>manage_accounts</span>';">
+    </div>
+    <div>
+      <div class="text-slate-800 font-extrabold text-sm leading-tight tracking-wide">SPMB</div>
+      <div class="text-slate-800 text-[10px] leading-none">Layanan Pendaftaran Siswa Baru</div>
+    </div>
+  </div>
+  <span class="material-symbols-outlined text-white/60 text-base group-hover:translate-x-0.5 transition-transform">chevron_right</span>
+</a>
+
+<!-- Tombol 6: Open Data Balikpapan -->
+<a href="http://bkpsdm.balikpapan.go.id/" target="_blank" rel="noopener noreferrer"
+   class="w-full h-16 flex items-center justify-between px-4 rounded-xl overflow-hidden shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 group"
+   style="background: linear-gradient(135deg, #2f8dff 25%, #2563eb 75%);">
+  <div class="flex items-center gap-3">
+    <div class="w-9 h-9 bg-white/20 rounded-lg flex items-center justify-center shrink-0">
+        <img src="{{ asset('images/bkpsdm.png') }}" alt="BKPSDM"
+             class="w-full h-full object-contain"
+             onerror="this.style.display='none'; this.parentElement.innerHTML='<span class=\'material-symbols-outlined text-white text-lg\'>manage_accounts</span>';">
+    </div>
+    <div>
+      <div class="text-slate-800 font-extrabold text-sm leading-tight tracking-wide">BKPSDM</div>
+      <div class="text-slate-800 text-[10px] leading-none">Layanan Pendaftaran Siswa Baru</div>
+    </div>
+  </div>
+  <span class="material-symbols-outlined text-white/60 text-base group-hover:translate-x-0.5 transition-transform">chevron_right</span>
+</a>
+
+</div>
+</div>
+
 </div>
 </div>
 </section>
