@@ -273,8 +273,8 @@
                     PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:rotate-180 transition-transform">expand_more</span>
 </button>
 <div class="dropdown-menu bg-slate-900 min-w-[125px] shadow-xl py-2 rounded-b-lg border border-white/10 font-headline">
-<a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="#">Badan</a>
-<a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="#">Dinas</a>
+<a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="https://data.balikpapan.go.id/organization">Badan</a>
+<a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="https://data.balikpapan.go.id/organization">Dinas</a>
 </div>
 </div>
 <a class="nav-hover-line relative px-3 py-3 text-xs font-bold font-headline" href="http://ppidbalikpapan.test/kontak">Kontak</a>
@@ -742,7 +742,7 @@
   <span class="material-symbols-outlined text-white/60 text-base group-hover:translate-x-0.5 transition-transform">chevron_right</span>
 </a>
 
-<!-- Tombol 6: Open Data Balikpapan -->
+<!-- Tombol 6: BKPSDM -->
 <a href="http://bkpsdm.balikpapan.go.id/" target="_blank" rel="noopener noreferrer"
    class="w-full h-16 flex items-center justify-between px-4 rounded-xl overflow-hidden shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 group"
    style="background: linear-gradient(135deg, #2f8dff 25%, #2563eb 75%);">
