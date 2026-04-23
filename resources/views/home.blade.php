@@ -257,10 +257,54 @@
 <button class="nav-hover-line relative px-3 py-3 text-xs font-bold font-headline flex items-center gap-0.5">
                     Profil <span class="material-symbols-outlined text-[10px] group-hover:rotate-180 transition-transform">expand_more</span>
 </button>
-<div class="dropdown-menu bg-slate-900 min-w-[200px] shadow-xl py-2 rounded-b-lg border border-white/10 font-headline">
-<a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="#">Visi &amp; Misi</a>
-<a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="#">Struktur Organisasi</a>
-<a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="#">Tugas &amp; Fungsi</a>
+<div class="mega-menu" id="mega-infopub">
+<div class="px-6 py-5 grid grid-cols-3 gap-6">
+<!-- Kolom 1: Informasi Berkala -->
+<div>
+<h3 class="text-[10px] font-extrabold text-primary uppercase tracking-widest mb-3 pb-1.5 border-b-2 border-secondary-container">Pemerintah Kota Balikpapan</h3>
+<ul class="space-y-2">
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Ruang Lingkup</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Laporan Keuangan</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Rencana Kerja Anggaran (RKA)</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Dokumen Pelaksanaan Anggaran (DPA)</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Informasi Raskin</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Penerimaan CPNS</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Produk Hukum dan Kebijakan</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Laporan Realisasi Pendapatan dan Belanja Daerah</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Rekapitulasi Realisasi Anggaran Belanja Daerah</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Rancangan Perda</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Informasi Belanja Hibah</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Anggaran dan Realisasi Belanja Perjalanan Dinas</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Anggaran Pendapatan dan Belanja Daerah (APBD)</a></li>
+</ul>
+</div>
+<!-- Kolom 2: Informasi Setiap Saat -->
+<div>
+<h3 class="text-[10px] font-extrabold text-primary uppercase tracking-widest mb-3 pb-1.5 border-b-2 border-secondary-container">PPID Kota Balikpapan</h3>
+<ul class="space-y-2">
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Daftar Informasi Publik</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Peraturan & Kebijakan (JDIH)</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Perjanjian Kerjasama</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Daftar Informasi Publik (DIP)</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Pedoman pengelolaan organisasi, administrasi, kepegawaian, dan keuangan</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Statistik Daerah</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Infografis</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">RENSTRA</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">RENJA</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">RPJP dan RPJMD</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Dokumen RTRW</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Rekap Naskah Akademik dan Kajian Akademik</a></li>
+</ul>
+</div>
+<!-- Kolom 3: Informasi Lain -->
+<div>
+<h3 class="text-[10px] font-extrabold text-primary uppercase tracking-widest mb-3 pb-1.5 border-b-2 border-secondary-container">Pejabat Badan Publik</h3>
+<ul class="space-y-2">
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Informasi Serta Merta</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Informasi Dikecualikan</a></li>
+</ul>
+</div>
+</div>
 </div>
 </div>
 <div class="group relative h-full flex items-center">
