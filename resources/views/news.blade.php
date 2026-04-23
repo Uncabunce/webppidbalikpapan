@@ -184,6 +184,26 @@
         img, video, iframe {
             max-width: 100%;
         }
+        /* Mega Menu */
+        .mega-menu {
+            display: none;
+            position: fixed;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 860px;
+            max-width: 95vw;
+            z-index: 99999;
+            background: #fff;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+            border-top: 3px solid #fdc003;
+            border-radius: 0 0 12px 12px;
+            max-height: 55vh;
+            overflow-y: auto;
+        }
+        .group:hover > .mega-menu,
+        .mega-menu.open {
+            display: block !important;
+        }
     </style>
 </head>
 <body class="bg-surface text-on-surface">
@@ -247,11 +267,54 @@
 <button class="nav-hover-line relative px-3 py-3 text-xs font-bold font-headline flex items-center gap-0.5">
                     Informasi Publik <span class="material-symbols-outlined text-[10px] group-hover:rotate-180 transition-transform">expand_more</span>
 </button>
-<div class="dropdown-menu bg-slate-900 min-w-[150px] shadow-xl py-2 rounded-b-lg border border-white/10 font-headline">
-<a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="#">Informasi Berkala</a>
-<a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="#">Informasi Serta Merta</a>
-<a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="#">Informasi Setiap Saat</a>
-<a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="#">Daftar Informasi Publik</a>
+<div class="mega-menu" id="mega-infopub">
+<div class="px-6 py-5 grid grid-cols-3 gap-6">
+<!-- Kolom 1: Informasi Berkala -->
+<div>
+<h3 class="text-[10px] font-extrabold text-primary uppercase tracking-widest mb-3 pb-1.5 border-b-2 border-secondary-container">Informasi Berkala</h3>
+<ul class="space-y-2">
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Laporan Kinerja (LAKIP)</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Laporan Keuangan</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Rencana Kerja Anggaran (RKA)</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Dokumen Pelaksanaan Anggaran (DPA)</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Informasi Raskin</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Penerimaan CPNS</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Produk Hukum dan Kebijakan</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Laporan Realisasi Pendapatan dan Belanja Daerah</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Rekapitulasi Realisasi Anggaran Belanja Daerah</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Rancangan Perda</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Informasi Belanja Hibah</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Anggaran dan Realisasi Belanja Perjalanan Dinas</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Anggaran Pendapatan dan Belanja Daerah (APBD)</a></li>
+</ul>
+</div>
+<!-- Kolom 2: Informasi Setiap Saat -->
+<div>
+<h3 class="text-[10px] font-extrabold text-primary uppercase tracking-widest mb-3 pb-1.5 border-b-2 border-secondary-container">Informasi Setiap Saat</h3>
+<ul class="space-y-2">
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Daftar Informasi Publik</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Peraturan & Kebijakan (JDIH)</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Perjanjian Kerjasama</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Daftar Informasi Publik (DIP)</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Pedoman pengelolaan organisasi, administrasi, kepegawaian, dan keuangan</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Statistik Daerah</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Infografis</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">RENSTRA</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">RENJA</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">RPJP dan RPJMD</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Dokumen RTRW</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Rekap Naskah Akademik dan Kajian Akademik</a></li>
+</ul>
+</div>
+<!-- Kolom 3: Informasi Lain -->
+<div>
+<h3 class="text-[10px] font-extrabold text-primary uppercase tracking-widest mb-3 pb-1.5 border-b-2 border-secondary-container">Informasi Lain</h3>
+<ul class="space-y-2">
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Informasi Serta Merta</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Informasi Dikecualikan</a></li>
+</ul>
+</div>
+</div>
 </div>
 </div>
 <div class="group relative h-full flex items-center">
@@ -265,7 +328,7 @@
 <a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="#">Biaya Layanan</a>
 </div>
 </div>
-<a class="nav-hover-line relative px-3 py-3 text-xs font-bold font-headline" href="http://ppidbalikpapan.test/news" style="color: #fdc003; border-bottom: 3px solid #fdc003;">Berita
+<a class="nav-hover-line relative px-3 py-3 text-xs font-bold font-headline" href="http://ppidbalikpapan.test/news">Berita
 </a>
 <a class="nav-hover-line relative px-3 py-3 text-xs font-bold font-headline" href="http://ppidbalikpapan.test/stats">Data Statistik</a>
 <div class="group relative h-full flex items-center">
@@ -273,8 +336,8 @@
                     PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:rotate-180 transition-transform">expand_more</span>
 </button>
 <div class="dropdown-menu bg-slate-900 min-w-[125px] shadow-xl py-2 rounded-b-lg border border-white/10 font-headline">
-<a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="#">Badan</a>
-<a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="#">Dinas</a>
+<a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="https://data.balikpapan.go.id/organization">Badan</a>
+<a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="https://data.balikpapan.go.id/organization">Dinas</a>
 </div>
 </div>
 <a class="nav-hover-line relative px-3 py-3 text-xs font-bold font-headline" href="http://ppidbalikpapan.test/kontak">Kontak</a>
@@ -324,10 +387,23 @@
 <span class="material-symbols-outlined text-base transition-transform duration-300" id="icon-acc-infopub">expand_more</span>
 </button>
 <div id="acc-infopub" class="hidden flex-col bg-white/5 rounded-lg mx-2 mb-2 overflow-hidden">
-<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Informasi Berkala</a>
-<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Informasi Serta Merta</a>
-<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Informasi Setiap Saat</a>
-<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container">Daftar Informasi Publik</a>
+<p class="px-5 py-2 text-[10px] font-extrabold text-secondary-container uppercase tracking-widest">Informasi Berkala</p>
+<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Laporan Kinerja (LAKIP)</a>
+<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Laporan Keuangan</a>
+<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Rencana Kerja Anggaran (RKA)</a>
+<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Dokumen Pelaksanaan Anggaran (DPA)</a>
+<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Penerimaan CPNS</a>
+<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Produk Hukum dan Kebijakan</a>
+<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">APBD</a>
+<p class="px-5 py-2 text-[10px] font-extrabold text-secondary-container uppercase tracking-widest border-t border-white/10">Informasi Setiap Saat</p>
+<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Daftar Informasi Publik</a>
+<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Peraturan & Kebijakan (JDIH)</a>
+<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Statistik Daerah</a>
+<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">RENSTRA / RENJA</a>
+<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">RPJP dan RPJMD</a>
+<p class="px-5 py-2 text-[10px] font-extrabold text-secondary-container uppercase tracking-widest border-t border-white/10">Informasi Lain</p>
+<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Informasi Serta Merta</a>
+<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container">Informasi Dikecualikan</a>
 </div>
 </div>
 <div class="border-b border-white/10">
@@ -748,4 +824,82 @@ function goPage(page) {
 renderCards(1);
 renderPagination(1);
 </script>
-</body></html>
+<script>
+    // Hide/show desktop nav based on screen width
+    function hideShowNav() {
+        var n = document.getElementById('desktop-nav');
+        if (!n) return;
+        if (window.innerWidth < 768) {
+            n.style.cssText = 'display:none!important;height:0!important;overflow:hidden!important;';
+        } else {
+            n.style.cssText = 'display:block!important;height:44px!important;overflow:visible!important;position:relative;z-index:9999;';
+        }
+    }
+    hideShowNav();
+    window.addEventListener('resize', hideShowNav);
+
+    // Active nav highlight
+    (function() {
+        var full = window.location.href.split('?')[0].replace(/\/$/, '');
+        document.querySelectorAll('#desktop-nav a[href]').forEach(function(link) {
+            var href = link.getAttribute('href').replace(/\/$/, '');
+            if (full === href) {
+                link.style.color = '#fdc003';
+                link.style.borderBottom = '3px solid #fdc003';
+            }
+        });
+    })();
+
+    // Mobile menu toggle
+    var openBtn = document.getElementById('open-mobile-menu');
+    var closeBtn = document.getElementById('close-mobile-menu');
+    var mobileMenu = document.getElementById('mobile-menu');
+    if (openBtn) openBtn.addEventListener('click', function() {
+        mobileMenu.classList.remove('hidden');
+        mobileMenu.classList.add('flex');
+        document.body.style.overflow = 'hidden';
+    });
+    if (closeBtn) closeBtn.addEventListener('click', function() {
+        mobileMenu.classList.add('hidden');
+        mobileMenu.classList.remove('flex');
+        document.body.style.overflow = '';
+    });
+
+    // Mobile accordion
+    function toggleMobileAccordion(id) {
+        var el = document.getElementById(id);
+        var icon = document.getElementById('icon-' + id);
+        var isHidden = el.classList.contains('hidden');
+        ['acc-profil','acc-infopub','acc-layanan','acc-ppid'].forEach(function(acc) {
+            var a = document.getElementById(acc);
+            if (a) { a.classList.add('hidden'); a.classList.remove('flex'); }
+            var ic = document.getElementById('icon-' + acc);
+            if (ic) ic.style.transform = '';
+        });
+        if (isHidden) {
+            el.classList.remove('hidden');
+            el.classList.add('flex');
+            if (icon) icon.style.transform = 'rotate(180deg)';
+        }
+    }
+</script>
+<script>
+// Position mega menu below nav bar
+document.addEventListener('DOMContentLoaded', function() {
+    var megaMenu = document.getElementById('mega-infopub');
+    var nav = document.getElementById('desktop-nav');
+    if (megaMenu && nav) {
+        var rect = nav.getBoundingClientRect();
+        megaMenu.style.top = (rect.bottom) + 'px';
+    }
+    window.addEventListener('scroll', function() {
+        var nav = document.getElementById('desktop-nav');
+        if (megaMenu && nav) {
+            var rect = nav.getBoundingClientRect();
+            megaMenu.style.top = (rect.bottom) + 'px';
+        }
+    });
+});
+</script>
+</body>
+</html> 
