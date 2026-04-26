@@ -193,14 +193,13 @@
             width: 860px;
             max-width: 95vw;
             z-index: 99999;
-            background: #fff;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+            background: #ffffff;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.18);
             border-top: 3px solid #fdc003;
             border-radius: 0 0 12px 12px;
             max-height: 55vh;
             overflow-y: auto;
         }
-        .group:hover > .mega-menu,
         .mega-menu.open {
             display: block !important;
         }
@@ -251,119 +250,26 @@
 </div>
 <!-- Bottom Navbar -->
 <nav id="desktop-nav" class="bg-slate-950 text-white w-full relative" style="overflow:visible; position:relative; z-index:9999;">
-<div class="max-w-7xl mx-auto flex h-full items-center justify-start md:justify-center space-x-1 px-2 md:px-4 whitespace-nowrap">
+<div class="max-w-7xl mx-auto flex h-full items-center justify-center space-x-1 px-2 md:px-4 whitespace-nowrap">
 <a class="nav-hover-line relative px-3 py-3 text-xs font-bold font-headline transition-all text-white" href="http://ppidbalikpapan.test">Beranda</a>
 <div class="group relative h-full flex items-center">
 <button class="nav-hover-line relative px-3 py-3 text-xs font-bold font-headline flex items-center gap-0.5">
-                    Profil <span class="material-symbols-outlined text-[10px] group-hover:rotate-180 transition-transform">expand_more</span>
+Profil <span class="material-symbols-outlined text-[10px] group-hover:rotate-180 transition-transform">expand_more</span>
 </button>
-<div class="mega-menu" id="mega-infopub">
-<div class="px-6 py-5 grid grid-cols-3 gap-6">
-<!-- Kolom 1: Informasi Berkala -->
-<div>
-<h3 class="text-[10px] font-extrabold text-primary uppercase tracking-widest mb-3 pb-1.5 border-b-2 border-secondary-container">Pemerintah Kota Balikpapan</h3>
-<ul class="space-y-2">
-<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Ruang Lingkup</a></li>
-<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Laporan Keuangan</a></li>
-<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Rencana Kerja Anggaran (RKA)</a></li>
-<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Dokumen Pelaksanaan Anggaran (DPA)</a></li>
-<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Informasi Raskin</a></li>
-<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Penerimaan CPNS</a></li>
-<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Produk Hukum dan Kebijakan</a></li>
-<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Laporan Realisasi Pendapatan dan Belanja Daerah</a></li>
-<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Rekapitulasi Realisasi Anggaran Belanja Daerah</a></li>
-<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Rancangan Perda</a></li>
-<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Informasi Belanja Hibah</a></li>
-<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Anggaran dan Realisasi Belanja Perjalanan Dinas</a></li>
-<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Anggaran Pendapatan dan Belanja Daerah (APBD)</a></li>
-</ul>
-</div>
-<!-- Kolom 2: Informasi Setiap Saat -->
-<div>
-<h3 class="text-[10px] font-extrabold text-primary uppercase tracking-widest mb-3 pb-1.5 border-b-2 border-secondary-container">PPID Kota Balikpapan</h3>
-<ul class="space-y-2">
-<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Daftar Informasi Publik</a></li>
-<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Peraturan & Kebijakan (JDIH)</a></li>
-<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Perjanjian Kerjasama</a></li>
-<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Daftar Informasi Publik (DIP)</a></li>
-<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Pedoman pengelolaan organisasi, administrasi, kepegawaian, dan keuangan</a></li>
-<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Statistik Daerah</a></li>
-<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Infografis</a></li>
-<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">RENSTRA</a></li>
-<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">RENJA</a></li>
-<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">RPJP dan RPJMD</a></li>
-<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Dokumen RTRW</a></li>
-<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Rekap Naskah Akademik dan Kajian Akademik</a></li>
-</ul>
-</div>
-<!-- Kolom 3: Informasi Lain -->
-<div>
-<h3 class="text-[10px] font-extrabold text-primary uppercase tracking-widest mb-3 pb-1.5 border-b-2 border-secondary-container">Pejabat Badan Publik</h3>
-<ul class="space-y-2">
-<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Informasi Serta Merta</a></li>
-<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Informasi Dikecualikan</a></li>
-</ul>
+<div class="dropdown-menu bg-slate-900 min-w-[200px] shadow-xl py-2 rounded-b-lg border border-white/10 font-headline">
+<a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="#">Visi &amp; Misi</a>
+<a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="#">Struktur Organisasi</a>
+<a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="#">Tugas &amp; Fungsi</a>
 </div>
 </div>
-</div>
+<div class="relative h-full flex items-center" id="infopub-trigger">
+<button class="nav-hover-line relative px-3 py-3 text-xs font-bold font-headline flex items-center gap-0.5">
+Informasi Publik <span class="material-symbols-outlined text-[10px] transition-transform" id="infopub-arrow">expand_more</span>
+</button>
 </div>
 <div class="group relative h-full flex items-center">
 <button class="nav-hover-line relative px-3 py-3 text-xs font-bold font-headline flex items-center gap-0.5">
-                    Informasi Publik <span class="material-symbols-outlined text-[10px] group-hover:rotate-180 transition-transform">expand_more</span>
-</button>
-<div class="mega-menu" id="mega-infopub">
-<div class="px-6 py-5 grid grid-cols-3 gap-6">
-<!-- Kolom 1: Informasi Berkala -->
-<div>
-<h3 class="text-[10px] font-extrabold text-primary uppercase tracking-widest mb-3 pb-1.5 border-b-2 border-secondary-container">Informasi Berkala</h3>
-<ul class="space-y-2">
-<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Laporan Kinerja (LAKIP)</a></li>
-<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Laporan Keuangan</a></li>
-<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Rencana Kerja Anggaran (RKA)</a></li>
-<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Dokumen Pelaksanaan Anggaran (DPA)</a></li>
-<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Informasi Raskin</a></li>
-<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Penerimaan CPNS</a></li>
-<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Produk Hukum dan Kebijakan</a></li>
-<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Laporan Realisasi Pendapatan dan Belanja Daerah</a></li>
-<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Rekapitulasi Realisasi Anggaran Belanja Daerah</a></li>
-<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Rancangan Perda</a></li>
-<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Informasi Belanja Hibah</a></li>
-<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Anggaran dan Realisasi Belanja Perjalanan Dinas</a></li>
-<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Anggaran Pendapatan dan Belanja Daerah (APBD)</a></li>
-</ul>
-</div>
-<!-- Kolom 2: Informasi Setiap Saat -->
-<div>
-<h3 class="text-[10px] font-extrabold text-primary uppercase tracking-widest mb-3 pb-1.5 border-b-2 border-secondary-container">Informasi Setiap Saat</h3>
-<ul class="space-y-2">
-<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Daftar Informasi Publik</a></li>
-<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Peraturan & Kebijakan (JDIH)</a></li>
-<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Perjanjian Kerjasama</a></li>
-<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Daftar Informasi Publik (DIP)</a></li>
-<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Pedoman pengelolaan organisasi, administrasi, kepegawaian, dan keuangan</a></li>
-<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Statistik Daerah</a></li>
-<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Infografis</a></li>
-<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">RENSTRA</a></li>
-<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">RENJA</a></li>
-<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">RPJP dan RPJMD</a></li>
-<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Dokumen RTRW</a></li>
-<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Rekap Naskah Akademik dan Kajian Akademik</a></li>
-</ul>
-</div>
-<!-- Kolom 3: Informasi Lain -->
-<div>
-<h3 class="text-[10px] font-extrabold text-primary uppercase tracking-widest mb-3 pb-1.5 border-b-2 border-secondary-container">Informasi Lain</h3>
-<ul class="space-y-2">
-<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Informasi Serta Merta</a></li>
-<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary hover:font-medium transition-colors block py-0.5 leading-snug">Informasi Dikecualikan</a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div class="group relative h-full flex items-center">
-<button class="nav-hover-line relative px-3 py-3 text-xs font-bold font-headline flex items-center gap-0.5">
-                    Layanan Informasi <span class="material-symbols-outlined text-[10px] group-hover:rotate-180 transition-transform">expand_more</span>
+Layanan Informasi <span class="material-symbols-outlined text-[10px] group-hover:rotate-180 transition-transform">expand_more</span>
 </button>
 <div class="dropdown-menu bg-slate-900 min-w-[150px] shadow-xl py-2 rounded-b-lg border border-white/10 font-headline">
 <a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="#">Prosedur Permohonan</a>
@@ -372,19 +278,65 @@
 <a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="#">Biaya Layanan</a>
 </div>
 </div>
-<a class="nav-hover-line relative px-3 py-3 text-xs font-bold font-headline" href="http://ppidbalikpapan.test/news">Berita
-</a>
+<a class="nav-hover-line relative px-3 py-3 text-xs font-bold font-headline" href="http://ppidbalikpapan.test/news">Berita</a>
 <a class="nav-hover-line relative px-3 py-3 text-xs font-bold font-headline" href="http://ppidbalikpapan.test/stats">Data Statistik</a>
 <div class="group relative h-full flex items-center">
 <button class="nav-hover-line relative px-3 py-3 text-xs font-bold font-headline flex items-center gap-0.5">
-                    PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:rotate-180 transition-transform">expand_more</span>
+PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:rotate-180 transition-transform">expand_more</span>
 </button>
 <div class="dropdown-menu bg-slate-900 min-w-[125px] shadow-xl py-2 rounded-b-lg border border-white/10 font-headline">
-<a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="https://data.balikpapan.go.id/organization">Badan</a>
-<a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="https://data.balikpapan.go.id/organization">Dinas</a>
+<a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="#">Badan</a>
+<a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="#">Dinas</a>
 </div>
 </div>
 <a class="nav-hover-line relative px-3 py-3 text-xs font-bold font-headline" href="http://ppidbalikpapan.test/kontak">Kontak</a>
+</div>
+<!-- Mega Menu Informasi Publik (outside flex) -->
+<div id="mega-infopub" style="display:none;position:fixed;left:50%;transform:translateX(-50%);width:860px;max-width:95vw;z-index:99999;background:#ffffff;box-shadow:0 8px 32px rgba(0,0,0,0.18);border-top:3px solid #fdc003;border-radius:0 0 12px 12px;max-height:55vh;overflow-y:auto;">
+<div class="px-6 py-5 grid grid-cols-3 gap-6">
+<div>
+<h3 class="text-[10px] font-extrabold text-primary uppercase tracking-widest mb-3 pb-1.5 border-b-2 border-secondary-container">Informasi Berkala</h3>
+<ul class="space-y-1">
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Laporan Kinerja (LAKIP)</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Laporan Keuangan</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Rencana Kerja Anggaran (RKA)</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Dokumen Pelaksanaan Anggaran (DPA)</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Informasi Raskin</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Penerimaan CPNS</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Produk Hukum dan Kebijakan</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Laporan Realisasi Pendapatan dan Belanja Daerah</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Rekapitulasi Realisasi Anggaran Belanja Daerah</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Rancangan Perda</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Informasi Belanja Hibah</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Anggaran dan Realisasi Belanja Perjalanan Dinas</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">APBD</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-[10px] font-extrabold text-primary uppercase tracking-widest mb-3 pb-1.5 border-b-2 border-secondary-container">Informasi Setiap Saat</h3>
+<ul class="space-y-1">
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Daftar Informasi Publik</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Peraturan &amp; Kebijakan (JDIH)</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Perjanjian Kerjasama</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Daftar Informasi Publik (DIP)</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Pedoman pengelolaan organisasi</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Statistik Daerah</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Infografis</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">RENSTRA</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">RENJA</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">RPJP dan RPJMD</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Dokumen RTRW</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Rekap Naskah Akademik</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-[10px] font-extrabold text-primary uppercase tracking-widest mb-3 pb-1.5 border-b-2 border-secondary-container">Informasi Lain</h3>
+<ul class="space-y-1">
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Informasi Serta Merta</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Informasi Dikecualikan</a></li>
+</ul>
+</div>
+</div>
 </div>
 </nav>
 <script>
@@ -1238,22 +1190,58 @@
     }
 </script>
 <script>
-// Position mega menu below nav bar
-document.addEventListener('DOMContentLoaded', function() {
+// Position mega menu right below nav bar
+function positionMegaMenu() {
     var megaMenu = document.getElementById('mega-infopub');
-    var nav = document.getElementById('desktop-nav');
-    if (megaMenu && nav) {
-        var rect = nav.getBoundingClientRect();
-        megaMenu.style.top = (rect.bottom) + 'px';
+    var header = document.querySelector('header');
+    if (megaMenu && header) {
+        var rect = header.getBoundingClientRect();
+        megaMenu.style.top = Math.max(0, rect.bottom) + 'px';
     }
-    window.addEventListener('scroll', function() {
-        var nav = document.getElementById('desktop-nav');
-        if (megaMenu && nav) {
-            var rect = nav.getBoundingClientRect();
-            megaMenu.style.top = (rect.bottom) + 'px';
+}
+document.addEventListener('DOMContentLoaded', positionMegaMenu);
+window.addEventListener('scroll', positionMegaMenu);
+window.addEventListener('resize', positionMegaMenu);
+positionMegaMenu();
+</script>
+<script>
+(function() {
+    var trigger = document.getElementById('infopub-trigger');
+    var menu = document.getElementById('mega-infopub');
+    var arrow = document.getElementById('infopub-arrow');
+    if (!trigger || !menu) return;
+
+    function showMenu() {
+        positionMegaMenu();
+        menu.style.display = 'block';
+        if (arrow) arrow.style.transform = 'rotate(180deg)';
+    }
+    function hideMenu() {
+        menu.style.display = 'none';
+        if (arrow) arrow.style.transform = '';
+    }
+
+    var timer;
+    trigger.addEventListener('mouseenter', function() {
+        clearTimeout(timer);
+        showMenu();
+    });
+    trigger.addEventListener('mouseleave', function() {
+        timer = setTimeout(hideMenu, 100);
+    });
+    menu.addEventListener('mouseenter', function() {
+        clearTimeout(timer);
+    });
+    menu.addEventListener('mouseleave', function() {
+        timer = setTimeout(hideMenu, 100);
+    });
+
+    document.addEventListener('click', function(e) {
+        if (!trigger.contains(e.target) && !menu.contains(e.target)) {
+            hideMenu();
         }
     });
-});
+})();
 </script>
 </body>
-</html> 
+</html>
