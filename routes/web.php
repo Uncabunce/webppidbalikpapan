@@ -5,8 +5,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home');
 });
-Route::get('/formulir', function () {
-    return view('formulir');
+Route::get('/whistleblower', function () {
+    return view('whistleblower');
+});
+Route::get('/permohonan', function () {
+    return view('permohonan');
 });
 Route::get('/keberatan', function () {
     return view('keberatan');
