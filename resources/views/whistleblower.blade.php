@@ -6,5 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-<img src="{{ asset('images/nikahimiayam(tes whistleblower).png') }}" alt="Bayingomong"></body>
+
+</body>
 </html>
