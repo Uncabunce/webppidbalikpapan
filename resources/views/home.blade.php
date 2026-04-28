@@ -82,8 +82,8 @@
         html, body {
             height: auto;
             font-family: "Inter", sans-serif;
-            overflow-x: hidden;
-            max-width: 100vw;
+            overflow-x: clip;
+            max-width: 100%;
         }
         h1, h2, h3, .font-headline {
             font-family: "Manrope", sans-serif
@@ -272,7 +272,7 @@ Layanan Informasi <span class="material-symbols-outlined text-[10px] transition-
 <div class="group relative h-full flex items-center">
 <button class="nav-hover-line relative px-3 py-3 text-xs font-bold font-headline flex items-center gap-0.5">
 PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:rotate-180 transition-transform">expand_more</span>
-</button>                       
+</button>
 <div class="dropdown-menu bg-slate-900 min-w-[125px] shadow-xl py-2 rounded-b-lg border border-white/10 font-headline">
 <a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="https://data.balikpapan.go.id/organization">Badan</a>
 <a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="https://data.balikpapan.go.id/organization">Dinas</a>
@@ -372,7 +372,7 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 <li><a href="#" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Laporan Akses Informasi Publik</a></li>
 <li><a href="#" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Produk Hukum</a></li>
 <li><a href="#" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Ketenagakerjaan</a></li>
-<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Prosedur Peringatan Dini dan Prosedur Evakuasi Keadaan Darurat di Setiap Kantor Badan Publik</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Prosedur Peringatan Dini dann Prosedur Evakuasi Keadaan Darurat di Setiap Kantor Badan Publik</a></li>
 <li><a href="#" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Realisasi Kegiatan dan Kinerja Pemkot Balikpapan Tahun 2022</a></li>
 <li><a href="#" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Realisasi Kegiatan dan Kinerja Pemkot Balikpapan Tahun 2023</a></li>
 <li><a href="#" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Program dan Kegiatan Tahun 2023</a></li>
@@ -429,6 +429,21 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
     window.addEventListener('resize', applyNav);
 })();
 </script>
+<script>
+(function(){
+    var n=document.getElementById('desktop-nav');
+    if(!n)return;
+    function applyNav(){
+        if(window.innerWidth<768){
+            n.style.cssText='display:none!important;height:0!important;overflow:hidden!important;';
+        }else{
+            n.style.cssText='display:block!important;height:44px!important;overflow:visible!important;position:relative;z-index:9999;';
+        }
+    }
+    applyNav();
+    window.addEventListener('resize',applyNav);
+})();
+</script>
 <!-- Mobile Fullscreen Menu Overlay -->
 <div id="mobile-menu" class="hidden fixed inset-0 bg-slate-950 flex-col overflow-y-auto" style="z-index:99999; top:0; left:0; right:0; bottom:0;">
 <div class="flex items-center justify-between px-5 py-4 border-b border-white/10">
@@ -447,35 +462,34 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 <span class="material-symbols-outlined text-base transition-transform duration-300" id="icon-acc-profil">expand_more</span>
 </button>
 <div id="acc-profil" class="hidden flex-col bg-white/5 rounded-lg mx-2 mb-2 overflow-hidden">
-    <p class="px-5 py-2 text-[10px] font-extrabold text-secondary-container uppercase tracking-widest">Profil Pemkot Balikpapan</p>
-<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Informasi Tentang Kedudukan atau Domisili</a>
-<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Visi &amp; Misi</a>
-<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Struktur Organisasi</a>
-<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Tugas &amp; Laporan Harta Kekayaan Pejabat Negara</a>
-<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Rekapitulasi Penyampaian LHKPN Pemkot Balikpapan</a>
+<p class="px-5 py-2 text-[10px] font-extrabold text-secondary-container uppercase tracking-widest">Profil Pemkot Balikpapan</p>
+<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Informasi Tentang Kedudukan atau Domisili</a>
+<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Visi &amp; Misi</a>
+<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Struktur Organisasi</a>
+<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Tugas &amp; Laporan Harta Kekayaan Pejabat Negara</a>
+<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Rekapitulasi Penyampaian LHKPN Pemkot Balikpapan</a>
 <p class="px-5 py-2 text-[10px] font-extrabold text-secondary-container uppercase tracking-widest border-t border-white/10">Profil PPID Kota Balikpapan</p>
-<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Profil Singkat</a>
-<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Struktur PPID</a>
-<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Tugas &amp; Wewenang</a>
-<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Maklumat Layanan</a>
-<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Media Layanan</a>
-<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Waktu Pelayanan</a>
-<a href ="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Biaya</a>
-<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Motto</a>
-<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Visi &amp; Misi</a>
-<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container">PPID Pelaksana</a>
-<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container">Regulasi Dasar Hukum PPID</a>
+<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Profil Singkat</a>
+<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Struktur PPID</a>
+<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Tugas &amp; Wewenang</a>
+<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Maklumat Layanan</a>
+<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Media Layanan</a>
+<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Waktu Pelayanan</a>
+<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Biaya</a>
+<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Visi &amp; Misi PPID</a>
+<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">PPID Pelaksana</a>
+<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Regulasi Dasar Hukum PPID</a>
 <p class="px-5 py-2 text-[10px] font-extrabold text-secondary-container uppercase tracking-widest border-t border-white/10">Pejabat Badan Publik</p>
-<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Profil Wali Kota dan Wakil Wali Kota</a>
-<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Profil Kepala Perangkat Daerah</a>
-<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Profil Sekretaris Daerah</a>
-<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Profil Asisten Administrasi Umum</a>
-<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Profil Asisten Tata Pemerintahan</a>
-<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Profil Asisten Perekonomian Pembangunan dan Kesejahteraan Rakyat</a>
-<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Profil Staf Ahli</a>
-<a href="#" class="block    px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Profil Kepala Badan</a>
-<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container">Profil Kepala Dinas</a>
-<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container">Profil Camat</a>
+<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Profil Wali Kota dan Wakil Wali Kota</a>
+<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Profil Kepala Perangkat Daerah</a>
+<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Profil Sekretaris Daerah</a>
+<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Profil Asisten Administrasi Umum</a>
+<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Profil Asisten Tata Pemerintahan</a>
+<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Profil Asisten Perekonomian Pembangunan dan Kesejahteraan Rakyat</a>
+<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Profil Staf Ahli</a>
+<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Profil Kepala Badan</a>
+<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Profil Kepala Dinas</a>
+<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container">Profil Camat</a>
 </div>
 </div>
 <div class="border-b border-white/10">
@@ -491,34 +505,27 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 <a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Laporan Akses Informasi Publik</a>
 <a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Produk Hukum</a>
 <a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Ketenagakerjaan</a>
-<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Prosedur Peringatan Dini dan Prosedur Evakuasi Keadaan Darurat di Setiap Kantor Badan Publik</a>
+<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Prosedur Peringatan Dini dan Evakuasi Keadaan Darurat</a>
 <a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Realisasi Kegiatan dan Kinerja Pemkot Balikpapan Tahun 2022</a>
 <a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Realisasi Kegiatan dan Kinerja Pemkot Balikpapan Tahun 2023</a>
 <a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Program dan Kegiatan Tahun 2023</a>
-<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">SK KLASIFIKASI DIKECUALIKAN</a>
-<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">SK MAKLUMAT PELAYANAN DISKOMINFO</a>
-<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">SK PENETAPAN DAFTAR INFORMASI PUBLIK PEMKOT BALIKPAPAN</a>
-<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">SK PENETAPAN STRATEGI DAN METODE PEMBINAAN, PENGAWASAN, EVALUASI DAN MONITORING</a>
+<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">SK Klasifikasi Dikecualikan</a>
+<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">SK Maklumat Pelayanan Diskominfo</a>
 <p class="px-5 py-2 text-[10px] font-extrabold text-secondary-container uppercase tracking-widest border-t border-white/10">Informasi Setiap Saat</p>
 <a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Statistik Daerah</a>
 <a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Daftar Informasi Publik</a>
-<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Informasi Tentang Organisasi, aAdministrasi Kepegawaian dan Keuangan</a>
-<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Informasi Publik</a>
+<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Informasi Tentang Organisasi, Administrasi Kepegawaian dan Keuangan</a>
 <a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Perjanjian Kerja Sama</a>
 <a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Perizinan</a>
 <a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Aset Daerah</a>
 <a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Rencana Strategis</a>
 <a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Rencana Kerja Badan Publik</a>
-<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Jumlah, Jenis dan Gambaran Pelanggaran yang Dilaporkan Oleh Masyarakat Serta Laporan Penindakannya</a>
-<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Jumlah, Jenis dan Gambaran Umum Pelanggaran yang Ditemukan Dalam Pengawasan Internal Serta Laporan Penindakannya</a>
-<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Hasil Penelitian yang Dilakukan BAPPEDA</a>
-<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container">Informasi Publik Lain yang Telah Dinyatakan Terbuka Bagi Masyarakat Berdasarkan Mekanisme Keberatan</a>
 <p class="px-5 py-2 text-[10px] font-extrabold text-secondary-container uppercase tracking-widest border-t border-white/10">Informasi Serta Merta</p>
-<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5"> Informasi Tentang PDAM</a>
+<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Informasi Tentang PDAM</a>
 <a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Informasi Tentang Siap Siaga Bencana</a>
 <a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Informasi Tentang Penutupan Jalan</a>
 <a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">4 Upaya Mitigasi</a>
-<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Prosedur Evakuasi Darurat Bencana</a>
+<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container">Prosedur Evakuasi Darurat Bencana</a>
 </div>
 </div>
 <div class="border-b border-white/10">
@@ -528,26 +535,26 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 </button>
 <div id="acc-layanan" class="hidden flex-col bg-white/5 rounded-lg mx-2 mb-2 overflow-hidden">
 <p class="px-5 py-2 text-[10px] font-extrabold text-secondary-container uppercase tracking-widest">SOP PPID</p>
-<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Tata cara Permohonan Informasi</a>
-<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Tata Cara Pengajuan Keberatan</a>
-<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Tata Cara Penyelesaian Sengketa Informasi</a>
-<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Standar Pelayanan Informasi</a>
-<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">SOP Uji Konsekuensi Penetaoan Informasi Dikecualikan</a>
-<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">SOP Pelayanan Permohonan Informasi Publik di PPID</a>
-<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">SOP Pemenuhan, Pemutakhiran Daftar Informasi Publik </a>
-<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">SOP Pemantauan dan Evaluasi Pelayanan Informasi Publik</a>
-<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">SOP Pengembangan Infrastuktur</a>
-<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">SOP Pendokumentasian Informasi Publik</a>
-<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">SOP Pengolahan Data Statistik Sektoral</a>
-<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">SOP Pengumpulan Data Statistik Sektoral</a>
-<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Maklumat Pelayanan Informasi Publik Pemkot Balikpapan </a>
-<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">SK PENGELOLA PPID</a>
+<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Tata Cara Permohonan Informasi</a>
+<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Tata Cara Pengajuan Keberatan</a>
+<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Tata Cara Penyelesaian Sengketa Informasi</a>
+<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Standar Pelayanan Informasi</a>
+<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">SOP Uji Konsekuensi Penetapan Informasi Dikecualikan</a>
+<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">SOP Pelayanan Permohonan Informasi Publik di PPID</a>
+<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">SOP Pemenuhan, Pemutakhiran Daftar Informasi Publik</a>
+<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">SOP Pemantauan dan Evaluasi Pelayanan Informasi Publik</a>
+<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">SOP Pengembangan Infrastruktur</a>
+<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">SOP Pendokumentasian Informasi Publik</a>
+<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">SOP Pengolahan Data Statistik Sektoral</a>
+<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">SOP Pengumpulan Data Statistik Sektoral</a>
+<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Maklumat Pelayanan Informasi Publik Pemkot Balikpapan</a>
+<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">SK Pengelola PPID</a>
 <p class="px-5 py-2 text-[10px] font-extrabold text-secondary-container uppercase tracking-widest border-t border-white/10">Layanan Online</p>
-<a href="https://www.lapor.go.id/" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">LAPOR!</a>
-<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Formulir Permintaan Informasi Online</a>
-<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Formulir Keberatan</a>
-<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Tata Cara Pengaduan Masyarakat</a>
-<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container">Kanal Pengaduan</a>
+<a href="https://www.lapor.go.id/" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">LAPOR!</a>
+<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Formulir Permintaan Informasi Online</a>
+<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Formulir Keberatan</a>
+<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Tata Cara Pengaduan Masyarakat</a>
+<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container">Kanal Pengaduan</a>
 </div>
 </div>
 <a href="http://ppidbalikpapan.test/news" class="flex items-center gap-3 px-3 py-3.5 border-b border-white/10 text-sm font-bold">
@@ -574,7 +581,7 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 </header>
 <main>
 <!-- Hero Section: Interactive Carousel -->
-<section class="relative group" id="carousel-container" style="width:100vw; max-width:100%; overflow:hidden; left:0;">
+<section class="relative group" id="carousel-container" style="width:100%; overflow:hidden;">
 <div class="h-[300px] md:h-[450px] lg:h-[550px]" id="carousel-track">
 <!-- Slide 1: Primary HD Image (Original Slide 0) -->
 <div class="carousel-slide relative h-full">
@@ -1008,44 +1015,117 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 </div>
 </div>
 </section>
-<!-- Stats Section -->
-<section class="py-16 md:py-20 bg-primary overflow-hidden relative">
-<div class="max-w-7xl mx-auto px-4 md:px-6 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 relative z-10">
-<div class="text-center">
-<p class="text-3xl md:text-5xl font-extrabold text-secondary-container mb-2">1,240+</p>
-<p class="text-white font-medium uppercase tracking-widest text-[10px] md:text-sm opacity-80">Permohonan Masuk</p>
-</div>
-<div class="text-center">
-<p class="text-3xl md:text-5xl font-extrabold text-secondary-container mb-2">98.5%</p>
-<p class="text-white font-medium uppercase tracking-widest text-[10px] md:text-sm opacity-80">Selesai Diproses</p>
-</div>
-<div class="text-center">
-<p class="text-3xl md:text-5xl font-extrabold text-secondary-container mb-2">15</p>
-<p class="text-white font-medium uppercase tracking-widest text-[10px] md:text-sm opacity-80">Hari Rata-rata</p>
-</div>
-<div class="text-center">
-<p class="text-3xl md:text-5xl font-extrabold text-secondary-container mb-2">100%</p>
-<p class="text-white font-medium uppercase tracking-widest text-[10px] md:text-sm opacity-80">Keberatan Ditangani</p>
-</div>
-</div>
-<div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white/5 to-transparent"></div>
+<section class="py-20 bg-surface-container-lowest">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-4">
+            <div>
+                <h2 class="text-3xl font-bold text-on-surface flex items-center gap-3">
+                    <span class="material-symbols-outlined text-primary text-4xl">play_circle</span>
+                    Video Terkini
+                </h2>
+                <p class="text-on-surface-variant mt-2 text-lg">Dokumentasi video kegiatan PPID Kota Balikpapan</p>
+            </div>
+            <a href="#" class="inline-flex items-center gap-2 text-primary font-semibold hover:text-secondary transition-colors group">
+                Lihat Semua Video
+                <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+            </a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="group cursor-pointer">
+                <div class="relative rounded-2xl overflow-hidden aspect-video mb-4 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=800" alt="Video 1" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black/30 flex items-center justify-center transition-colors group-hover:bg-black/20">
+                        <span class="material-symbols-outlined text-white text-7xl drop-shadow-lg opacity-90 group-hover:opacity-100 group-hover:scale-110 transition-all">play_circle</span>
+                    </div>
+                </div>
+                <h3 class="text-xl font-bold text-on-surface mb-2 group-hover:text-primary transition-colors line-clamp-2">Peluncuran Balikpapan Single Window oleh Wali Kota</h3>
+                <p class="text-on-surface-variant text-sm flex items-center gap-2">
+                    <span class="material-symbols-outlined text-[16px]">calendar_today</span> 12 April 2026
+                </p>
+            </div>
+
+            <div class="group cursor-pointer">
+                <div class="relative rounded-2xl overflow-hidden aspect-video mb-4 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1540317580384-e5d43616b9aa?auto=format&fit=crop&q=80&w=800" alt="Video 2" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black/30 flex items-center justify-center transition-colors group-hover:bg-black/20">
+                        <span class="material-symbols-outlined text-white text-7xl drop-shadow-lg opacity-90 group-hover:opacity-100 group-hover:scale-110 transition-all">play_circle</span>
+                    </div>
+                </div>
+                <h3 class="text-xl font-bold text-on-surface mb-2 group-hover:text-primary transition-colors line-clamp-2">Sosialisasi Keterbukaan Informasi Publik 2026</h3>
+                <p class="text-on-surface-variant text-sm flex items-center gap-2">
+                    <span class="material-symbols-outlined text-[16px]">calendar_today</span> 10 April 2026
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-20 bg-surface">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-4">
+            <div>
+                <h2 class="text-3xl font-bold text-on-surface flex items-center gap-3">
+                    <span class="material-symbols-outlined text-primary text-4xl">photo_camera</span>
+                    Galeri Foto
+                </h2>
+                <p class="text-on-surface-variant mt-2 text-lg">Potret kegiatan dan layanan PPID Kota Balikpapan</p>
+            </div>
+            <a href="#" class="inline-flex items-center gap-2 text-primary font-semibold hover:text-secondary transition-colors group">
+                Lihat Semua Foto
+                <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+            </a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="group cursor-pointer">
+                <div class="rounded-2xl overflow-hidden aspect-[4/3] mb-4 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&q=80&w=600" alt="Foto 1" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                </div>
+                <h3 class="text-lg font-bold text-on-surface leading-snug group-hover:text-primary transition-colors line-clamp-2">Kunjungan Kerja Kemenkominfo ke Balikpapan</h3>
+                <p class="text-on-surface-variant text-sm mt-2 flex items-center gap-2">
+                    <span class="material-symbols-outlined text-[16px]">calendar_today</span> 08 April 2026
+                </p>
+            </div>
+
+            <div class="group cursor-pointer">
+                <div class="rounded-2xl overflow-hidden aspect-[4/3] mb-4 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1577415124269-3187212001e9?auto=format&fit=crop&q=80&w=600" alt="Foto 2" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                </div>
+                <h3 class="text-lg font-bold text-on-surface leading-snug group-hover:text-primary transition-colors line-clamp-2">Rapat Koordinasi Pengelola Informasi Daerah</h3>
+                <p class="text-on-surface-variant text-sm mt-2 flex items-center gap-2">
+                    <span class="material-symbols-outlined text-[16px]">calendar_today</span> 05 April 2026
+                </p>
+            </div>
+
+            <div class="group cursor-pointer">
+                <div class="rounded-2xl overflow-hidden aspect-[4/3] mb-4 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=600" alt="Foto 3" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                </div>
+                <h3 class="text-lg font-bold text-on-surface leading-snug group-hover:text-primary transition-colors line-clamp-2">Penyerahan Penghargaan Keterbukaan Informasi</h3>
+                <p class="text-on-surface-variant text-sm mt-2 flex items-center gap-2">
+                    <span class="material-symbols-outlined text-[16px]">calendar_today</span> 01 April 2026
+                </p>
+            </div>
+        </div>
+    </div>
 </section>
 </main>
 <!-- Footer -->
-<footer id="kontak" class="bg-slate-50 dark:bg-slate-900 w-full pt-16 md:pt-20 pb-8 border-t border-slate-200 dark:border-slate-800">
+<footer id="kontak" class="bg-slate-800 dark:bg-slate-900 w-full pt-16 md:pt-20 pb-8 border-t border-slate-400 dark:border-slate-800">
 <div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto px-4 md:px-6 font-['Inter'] text-sm leading-relaxed">
 <!-- Brand & Map -->
 <div class="md:col-span-2">
-<div class="text-xl md:text-2xl font-bold text-blue-900 dark:text-blue-100 mb-6 font-headline">PPID Kota Balikpapan</div>
-<p class="text-slate-600 dark:text-slate-400 max-w-md mb-8">
+<div class="text-xl md:text-2xl font-bold text-yellow-600 dark:text-yellow-600 mb-6 font-headline">PPID Kota Balikpapan</div>
+<p class="text-slate-400 dark:text-slate-400 max-w-md mb-8">
                 Pejabat Pengelola Informasi dan Dokumentasi (PPID) Utama Pemerintah Kota Balikpapan bertanggung jawab untuk penyimpanan, pendokumentasian, penyediaan, dan pelayanan informasi publik.
             </p>
 <div class="w-full rounded-xl overflow-hidden shadow-md" style="aspect-ratio:16/9;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63821.253001534766!2d116.75573272167965!3d-1.2764074999999773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df1473bb9404897%3A0x94d96108f98b652c!2sBalikpapan%20Mayor&#39;s%20Office!5e0!3m2!1sen!2ssg!4v1776063788871!5m2!1sen!2ssg" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
 </div>
 <!-- Contacts -->
 <div>
-<h4 class="font-headline font-bold text-blue-900 dark:text-blue-100 text-lg mb-6">Kontak Kami</h4>
-<ul class="space-y-4 text-slate-500 dark:text-slate-400">
+<h4 class="font-headline font-bold text-yellow-600 dark:text-yellow-600 text-lg mb-6">Kontak Kami</h4>
+<ul class="space-y-4 text-slate-400 dark:text-slate-400">
 <li class="flex gap-3">
 <span class="material-symbols-outlined text-secondary shrink-0" data-icon="location_on">location_on</span>
 <span class="text-xs md:text-sm">Jl. Jenderal Sudirman No.1, Klandasan Ulu, Balikpapan Kota, Kota Balikpapan, Kalimantan Timur 76112</span>
@@ -1062,17 +1142,17 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 </div>
 <!-- Quick Links -->
 <div>
-<h4 class="font-headline font-bold text-blue-900 dark:text-blue-100 text-lg mb-6">Peta Situs</h4>
+<h4 class="font-headline font-bold text-yellow-600 dark:text-yellow-600 text-lg mb-6">Peta Situs</h4>
 <ul class="space-y-3">
-<li><a class="text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline-offset-4 hover:underline ease-in-out duration-200 text-xs md:text-sm" href="#">Whistleblower System</a></li>
-<li><a class="text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline-offset-4 hover:underline ease-in-out duration-200 text-xs md:text-sm" href="#">Lapor!</a></li>
-<li><a class="text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline-offset-4 hover:underline ease-in-out duration-200 text-xs md:text-sm" href="#">Data Terbuka</a></li>
-<li><a class="text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline-offset-4 hover:underline ease-in-out duration-200 text-xs md:text-sm text-amber-600 dark:text-amber-400 font-semibold" href="#">Kebijakan Privasi</a></li>
+<li><a class="text-slate-400 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline-offset-4 hover:underline ease-in-out duration-200 text-xs md:text-sm" href="#">Whistleblower System</a></li>
+<li><a class="text-slate-400 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline-offset-4 hover:underline ease-in-out duration-200 text-xs md:text-sm" href="#">Lapor!</a></li>
+<li><a class="text-slate-400 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline-offset-4 hover:underline ease-in-out duration-200 text-xs md:text-sm" href="#">Data Terbuka</a></li>
+<li><a class="text-slate-400 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline-offset-4 hover:underline ease-in-out duration-200 text-xs md:text-sm text-amber-600 dark:text-amber-400 font-semibold" href="#">Kebijakan Privasi</a></li>
 </ul>
 </div>
 </div>
-<div class="max-w-7xl mx-auto px-4 md:px-6 mt-16 pt-8 border-t border-slate-200 dark:border-slate-800 text-center">
-<p class="text-slate-500 dark:text-slate-400 text-[10px] md:text-xs">
+<div class="max-w-7xl mx-auto px-4 md:px-6 mt-16 pt-8 border-t border-slate-400 dark:border-slate-800 text-center">
+<p class="text-slate-400 dark:text-slate-400 text-[10px] md:text-xs">
             © 2024 Pemerintah Kota Balikpapan. PPID Utama. All rights reserved.
         </p>
 </div>
@@ -1116,95 +1196,90 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
     }
     setInterval(updateClock, 1000);
     updateClock();
-
+</script>
+<script>
     // Carousel Logic - Fully functional with Infinite Loop
     const track = document.getElementById('carousel-track');
     const container = document.getElementById('carousel-container');
     const originalSlides = Array.from(track.children);
     const dots = Array.from(document.querySelectorAll('.carousel-dot'));
-    
-    // Clone slides for infinite effect
+
     const firstClone = originalSlides[0].cloneNode(true);
     const lastClone = originalSlides[originalSlides.length - 1].cloneNode(true);
-    
     track.appendChild(firstClone);
     track.insertBefore(lastClone, originalSlides[0]);
 
     const slides = Array.from(track.children);
-    let currentIndex = 1; 
+    let currentIndex = 1;
     let isTransitioning = false;
     let autoPlayTimer;
-
-    function getSlideWidth() {
-        return container.offsetWidth;
-    }
+    let slideWidth = 0;
 
     function setSlideWidths() {
-        const w = getSlideWidth();
-        slides.forEach(slide => {
-            slide.style.minWidth = w + 'px';
-            slide.style.width = w + 'px';
+        slideWidth = container.getBoundingClientRect().width;
+        slides.forEach(function(s) {
+            s.style.width = slideWidth + 'px';
+            s.style.minWidth = slideWidth + 'px';
+            s.style.flex = '0 0 ' + slideWidth + 'px';
         });
+        track.style.width = (slideWidth * slides.length) + 'px';
+        updateCarousel(true);
     }
 
-    function updateCarousel(instant = false) {
-        if (instant) track.style.transition = 'none';
-        else track.style.transition = 'transform 0.5s cubic-bezier(0.4, 0, 0.2, 1)';
-        
-        const w = getSlideWidth();
-        track.style.transform = `translateX(-${currentIndex * w}px)`;
-        
-        // Update dots UI
-        let dotIndex = currentIndex - 1;
+    function updateCarousel(instant) {
+        track.style.transition = instant ? 'none' : 'transform 0.5s cubic-bezier(0.4,0,0.2,1)';
+        track.style.transform = 'translateX(-' + (currentIndex * slideWidth) + 'px)';
+        var dotIndex = currentIndex - 1;
         if (currentIndex === 0) dotIndex = originalSlides.length - 1;
         if (currentIndex === slides.length - 1) dotIndex = 0;
-
-        dots.forEach((dot, idx) => {
-            if (idx === dotIndex) {
-                dot.classList.remove('bg-white/40');
-                dot.classList.add('bg-white', 'scale-125');
-            } else {
-                dot.classList.add('bg-white/40');
-                dot.classList.remove('bg-white', 'scale-125');
-            }
+        dots.forEach(function(dot, idx) {
+            dot.classList.toggle('bg-white', idx === dotIndex);
+            dot.classList.toggle('scale-125', idx === dotIndex);
+            dot.classList.toggle('bg-white/40', idx !== dotIndex);
         });
     }
 
-    track.addEventListener('transitionend', () => {
+    track.addEventListener('transitionend', function() {
         isTransitioning = false;
-        if (currentIndex === 0) {
-            currentIndex = slides.length - 2;
-            updateCarousel(true);
-        }
-        if (currentIndex === slides.length - 1) {
-            currentIndex = 1;
-            updateCarousel(true);
-        }
+        if (currentIndex === 0) { currentIndex = slides.length - 2; updateCarousel(true); }
+        if (currentIndex === slides.length - 1) { currentIndex = 1; updateCarousel(true); }
     });
 
-    function moveNext() {
-        if (isTransitioning) return;
-        isTransitioning = true;
-        currentIndex++;
-        updateCarousel();
+    function moveNext() { if (isTransitioning) return; isTransitioning = true; currentIndex++; updateCarousel(); }
+    function movePrev() { if (isTransitioning) return; isTransitioning = true; currentIndex--; updateCarousel(); }
+    function startAutoPlay() { autoPlayTimer = setInterval(moveNext, 7000); }
+    function resetAutoPlay() { clearInterval(autoPlayTimer); startAutoPlay(); }
+
+    let startX = 0, isDragging = false;
+    const dragStart = function(e) { startX = e.type === 'touchstart' ? e.touches[0].clientX : e.clientX; isDragging = true; };
+    const dragging = function(e) {
+        if (!isDragging) return;
+        var x = e.type === 'touchmove' ? e.touches[0].clientX : e.clientX;
+        track.style.transition = 'none';
+        track.style.transform = 'translateX(-' + (currentIndex * slideWidth - (x - startX)) + 'px)';
+    };
+    const dragEnd = function(e) {
+        if (!isDragging) return;
+        isDragging = false;
+        var x = e.type === 'touchend' ? e.changedTouches[0].clientX : e.clientX;
+        if (Math.abs(x - startX) > 50) { if (x > startX) movePrev(); else moveNext(); }
+        else updateCarousel(false);
+        resetAutoPlay();
+    };
+    track.addEventListener('mousedown', dragStart);
+    window.addEventListener('mousemove', dragging);
+    window.addEventListener('mouseup', dragEnd);
+    track.addEventListener('touchstart', dragStart, {passive:true});
+    track.addEventListener('touchmove', dragging, {passive:true});
+    track.addEventListener('touchend', dragEnd);
+
+    window.addEventListener('resize', setSlideWidths);
+    setSlideWidths();
+    startAutoPlay();
     }
 
-    function movePrev() {
-        if (isTransitioning) return;
-        isTransitioning = true;
-        currentIndex--;
-        updateCarousel();
-    }
-
-    function startAutoPlay() {
-        autoPlayTimer = setInterval(moveNext, 7000);
-    }
-
-    function resetAutoPlay() {
-        clearInterval(autoPlayTimer);
-        startAutoPlay();
-    }
-
+    nextButton.addEventListener('click', () => { moveNext(); resetAutoPlay(); });
+    prevButton.addEventListener('click', () => { movePrev(); resetAutoPlay(); });
     
     dots.forEach((dot, idx) => {
         dot.addEventListener('click', () => {
@@ -1232,14 +1307,14 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
         if (!isDragging) return;
         const currentX = e.type.includes('touch') ? e.touches[0].pageX : e.pageX;
         dragMove = currentX - startX;
-        const currentTranslate = -currentIndex * container.offsetWidth;
+        const currentTranslate = -currentIndex * track.offsetWidth;
         track.style.transform = `translateX(${currentTranslate + dragMove}px)`;
     };
 
     const dragEnd = () => {
         if (!isDragging) return;
         isDragging = false;
-        if (Math.abs(dragMove) > container.offsetWidth / 5) {
+        if (Math.abs(dragMove) > track.offsetWidth / 5) {
             if (dragMove > 0) movePrev();
             else moveNext();
         } else {
@@ -1258,14 +1333,8 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
     track.addEventListener('touchend', dragEnd);
 
     // Initialize
-    setSlideWidths();
     updateCarousel(true);
     startAutoPlay();
-
-    window.addEventListener('resize', () => {
-        setSlideWidths();
-        updateCarousel(true);
-    });
 </script>
 <script>
     function updateWeather() {
