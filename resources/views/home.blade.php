@@ -739,8 +739,8 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 </section>
 
 <!-- News & Links Section (Updated UI) -->
-<section class="bg-white py-16 md:py-24 border-t border-slate-100">
-<div class="max-w-7xl mx-auto px-4 md:px-6 grid grid-cols-1 lg:grid-cols-12 gap-12">
+<section class="bg-white py-0 md:py-24 border-t border-slate-100">
+<div class="max-w-7xl mx-auto px-6 md:px-6 grid grid-cols-1 lg:grid-cols-12 gap-12">
 <!-- News Section (Left/Center) -->
 <div class="lg:col-span-8">
 <div class="flex justify-between items-center mb-10 border-b border-slate-100 pb-4">
@@ -863,7 +863,7 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 <p class="text-2xl font-extrabold text-slate-900 leading-none">19</p>
 </div>
 <!-- Bounce Rate -->
-<div class="bg-slate-50 p-4 rounded-xl border border-slate-100 text-center">
+<div class="bg-slate-50 p-4 rounded-xl py-4 border border-slate-100 text-center">
 <div class="flex items-center justify-center gap-1.5 text-slate-400 mb-1">
 <span class="material-symbols-outlined text-sm" data-icon="trending_down">trending_down</span>
 <span class="text-[10px] font-bold uppercase tracking-tight">Bounce Rate</span>
@@ -1015,7 +1015,7 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 </div>
 </div>
 </section>
-<section class="py-20 bg-surface-container-lowest">
+<section class="py-12 bg-surface-container-low">
     <div class="max-w-7xl mx-auto px-4">
         <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-4">
             <div>
