@@ -34,3 +34,9 @@ Route::get('/news/{page}', function ($page) {
 Route::get('/news/newnews', function () {
     return view('newnews');
 });
+Route::get('/foto', function () {
+    return view('foto');
+});
+Route::get('/video', function () {
+    return view('video');
+});
