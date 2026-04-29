@@ -372,7 +372,7 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 <li><a href="#" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Laporan Akses Informasi Publik</a></li>
 <li><a href="#" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Produk Hukum</a></li>
 <li><a href="#" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Ketenagakerjaan</a></li>
-<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Prosedur Peringatan Dini dann Prosedur Evakuasi Keadaan Darurat di Setiap Kantor Badan Publik</a></li>
+<li><a href="#" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Prosedur Peringatan Dini da               n Prosedur Evakuasi Keadaan Darurat di Setiap Kantor Badan Publik</a></li>
 <li><a href="#" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Realisasi Kegiatan dan Kinerja Pemkot Balikpapan Tahun 2022</a></li>
 <li><a href="#" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Realisasi Kegiatan dan Kinerja Pemkot Balikpapan Tahun 2023</a></li>
 <li><a href="#" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Program dan Kegiatan Tahun 2023</a></li>
@@ -554,7 +554,6 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 <a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Formulir Permintaan Informasi Online</a>
 <a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Formulir Keberatan</a>
 <a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Tata Cara Pengaduan Masyarakat</a>
-<a href="#" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container">Kanal Pengaduan</a>
 </div>
 </div>
 <a href="http://ppidbalikpapan.test/news" class="flex items-center gap-3 px-3 py-3.5 border-b border-white/10 text-sm font-bold">
@@ -1015,7 +1014,6 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 </div>
 </div>
 </section>
-<!-- Stats Section -->
 <section class="py-20 bg-surface-container-lowest">
     <div class="max-w-7xl mx-auto px-4">
         <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-4">
@@ -1113,20 +1111,20 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 </section>
 </main>
 <!-- Footer -->
-<footer id="kontak" class="bg-slate-50 dark:bg-slate-900 w-full pt-16 md:pt-20 pb-8 border-t border-slate-200 dark:border-slate-800">
+<footer id="kontak" class="bg-slate-800 dark:bg-slate-600 w-full pt-16 md:pt-20 pb-8 border-t border-slate-600 dark:border-slate-800">
 <div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto px-4 md:px-6 font-['Inter'] text-sm leading-relaxed">
 <!-- Brand & Map -->
 <div class="md:col-span-2">
-<div class="text-xl md:text-2xl font-bold text-blue-900 dark:text-blue-100 mb-6 font-headline">PPID Kota Balikpapan</div>
-<p class="text-slate-600 dark:text-slate-400 max-w-md mb-8">
+<div class="text-xl md:text-2xl font-bold text-yellow-600 dark:text-blue-100 mb-6 font-headline">PPID Kota Balikpapan</div>
+<p class="text-slate-400 dark:text-slate-400 max-w-md mb-8">
                 Pejabat Pengelola Informasi dan Dokumentasi (PPID) Utama Pemerintah Kota Balikpapan bertanggung jawab untuk penyimpanan, pendokumentasian, penyediaan, dan pelayanan informasi publik.
             </p>
 <div class="w-full rounded-xl overflow-hidden shadow-md" style="aspect-ratio:16/9;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63821.253001534766!2d116.75573272167965!3d-1.2764074999999773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df1473bb9404897%3A0x94d96108f98b652c!2sBalikpapan%20Mayor&#39;s%20Office!5e0!3m2!1sen!2ssg!4v1776063788871!5m2!1sen!2ssg" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
 </div>
 <!-- Contacts -->
 <div>
-<h4 class="font-headline font-bold text-blue-900 dark:text-blue-100 text-lg mb-6">Kontak Kami</h4>
-<ul class="space-y-4 text-slate-500 dark:text-slate-400">
+<h4 class="font-headline font-bold text-yellow-600 dark:text-blue-100 text-lg mb-7">Kontak Kami</h4>
+<ul class="space-y-4 text-slate-400 dark:text-slate-400">
 <li class="flex gap-3">
 <span class="material-symbols-outlined text-secondary shrink-0" data-icon="location_on">location_on</span>
 <span class="text-xs md:text-sm">Jl. Jenderal Sudirman No.1, Klandasan Ulu, Balikpapan Kota, Kota Balikpapan, Kalimantan Timur 76112</span>
@@ -1143,17 +1141,17 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 </div>
 <!-- Quick Links -->
 <div>
-<h4 class="font-headline font-bold text-blue-900 dark:text-blue-100 text-lg mb-6">Peta Situs</h4>
+<h4 class="font-headline font-bold text-yellow-600 dark:text-blue-100 text-lg mb-6">Peta Situs</h4>
 <ul class="space-y-3">
-<li><a class="text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline-offset-4 hover:underline ease-in-out duration-200 text-xs md:text-sm" href="#">Whistleblower System</a></li>
-<li><a class="text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline-offset-4 hover:underline ease-in-out duration-200 text-xs md:text-sm" href="#">Lapor!</a></li>
-<li><a class="text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline-offset-4 hover:underline ease-in-out duration-200 text-xs md:text-sm" href="#">Data Terbuka</a></li>
-<li><a class="text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline-offset-4 hover:underline ease-in-out duration-200 text-xs md:text-sm text-amber-600 dark:text-amber-400 font-semibold" href="#">Kebijakan Privasi</a></li>
+<li><a class="text-slate-400 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline-offset-4 hover:underline ease-in-out duration-200 text-xs md:text-sm" href="#">Whistleblower System</a></li>
+<li><a class="text-slate-400 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline-offset-4 hover:underline ease-in-out duration-200 text-xs md:text-sm" href="#">Lapor!</a></li>
+<li><a class="text-slate-400 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline-offset-4 hover:underline ease-in-out duration-200 text-xs md:text-sm" href="#">Data Terbuka</a></li>
+<li><a class="text-slate-400 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline-offset-4 hover:underline ease-in-out duration-200 text-xs md:text-sm font-semibold" href="#">Kebijakan Privasi</a></li>
 </ul>
 </div>
 </div>
-<div class="max-w-7xl mx-auto px-4 md:px-6 mt-16 pt-8 border-t border-slate-200 dark:border-slate-800 text-center">
-<p class="text-slate-500 dark:text-slate-400 text-[10px] md:text-xs">
+<div class="max-w-7xl mx-auto px-4 md:px-6 mt-16 pt-8 border-t border-slate-600 dark:border-slate-800 text-center">
+<p class="text-slate-400 dark:text-slate-400 text-[10px] md:text-xs">
             © 2024 Pemerintah Kota Balikpapan. PPID Utama. All rights reserved.
         </p>
 </div>
@@ -1276,65 +1274,6 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 
     window.addEventListener('resize', setSlideWidths);
     setSlideWidths();
-    startAutoPlay();
-    }
-
-    nextButton.addEventListener('click', () => { moveNext(); resetAutoPlay(); });
-    prevButton.addEventListener('click', () => { movePrev(); resetAutoPlay(); });
-    
-    dots.forEach((dot, idx) => {
-        dot.addEventListener('click', () => {
-            if (isTransitioning) return;
-            currentIndex = idx + 1;
-            updateCarousel();
-            resetAutoPlay();
-        });
-    });
-
-    // Drag functionality
-    let startX = 0;
-    let isDragging = false;
-    let dragMove = 0;
-
-    const dragStart = (e) => {
-        if (isTransitioning) return;
-        isDragging = true;
-        startX = e.type.includes('touch') ? e.touches[0].pageX : e.pageX;
-        clearInterval(autoPlayTimer);
-        track.style.transition = 'none';
-    };
-
-    const dragging = (e) => {
-        if (!isDragging) return;
-        const currentX = e.type.includes('touch') ? e.touches[0].pageX : e.pageX;
-        dragMove = currentX - startX;
-        const currentTranslate = -currentIndex * track.offsetWidth;
-        track.style.transform = `translateX(${currentTranslate + dragMove}px)`;
-    };
-
-    const dragEnd = () => {
-        if (!isDragging) return;
-        isDragging = false;
-        if (Math.abs(dragMove) > track.offsetWidth / 5) {
-            if (dragMove > 0) movePrev();
-            else moveNext();
-        } else {
-            updateCarousel();
-        }
-        dragMove = 0;
-        startAutoPlay();
-    };
-
-    track.addEventListener('mousedown', dragStart);
-    window.addEventListener('mousemove', dragging);
-    window.addEventListener('mouseup', dragEnd);
-    
-    track.addEventListener('touchstart', dragStart);
-    track.addEventListener('touchmove', dragging);
-    track.addEventListener('touchend', dragEnd);
-
-    // Initialize
-    updateCarousel(true);
     startAutoPlay();
 </script>
 <script>
