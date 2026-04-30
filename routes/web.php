@@ -31,6 +31,10 @@ Route::get('/news/{page}', function ($page) {
     return view('news', ['page' => $page]);
 })->where('page', '[0-9]+');
 
+Route::get('/foto/{page}', function ($page) {
+    return view('foto', ['page' => $page]);
+})->where('page', '[0-9]+');
+
 Route::get('/news/newnews', function () {
     return view('newnews');
 });

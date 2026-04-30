@@ -576,13 +576,107 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 </nav>
 </div>
 </header>
-<main class="bg-surface min-h-screen">
-    <!-- Konten halaman di sini -->
-    <div class="max-w-7xl mx-auto px-4 md:px-6 py-12">
-        <p class="text-on-surface-variant text-center">Konten halaman</p>
-    </div>
+<main class="w-full">
+<!-- Hero Header Section -->
+<section class="relative py-24 px-6 md:px-12 bg-surface-container overflow-hidden">
+<div class="absolute inset-0 z-0 opacity-20">
+<img class="w-full h-full object-cover grayscale" data-alt="A cinematic, wide-angle aerial view of Balikpapan's skyline during the golden hour. The image features a blend of modern coastal architecture and lush tropical greenery, captured with a soft-focus editorial style. The lighting is warm and diffused, creating a serene and professional backdrop for a civic information portal." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDINt1sE7nOSze71iepnOTYxKBEXE24aMTPBRWBlHl1Qqojzy2J5mizp5Js8BbFz2v3PuiLhT6qdycXvMy3uoHg_K2FpzCXhdkNTvf2JA0C2Xj-iaL0aHICso58PlU5g9n3_1fJGoUFvKJnceU2PVq5coQoERcGkE1jcWesABhbofuLPPBnCdMSd-ApgpBzUWy-AyKd6VInkIPbcLG57i5t6U2oIrHm2Hw5LCMy34M5kABr4bCmH9Tuv6sxbVR6jmV05KOOlHsiVMop"/>
+</div>
+<div class="absolute inset-0 z-0 bg-gradient-to-b from-surface-container/10 via-surface-container/60 to-surface-container"></div>
+<div class="relative z-10 max-w-4xl mx-auto text-center">
+<span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold uppercase tracking-widest mb-6">Arsip Visual Resmi</span>
+<h1 class="text-4xl md:text-6xl font-display font-extrabold text-primary mb-6 tracking-tighter">Dokumentasi Kegiatan Publik</h1>
+<p class="text-lg md:text-xl text-on-surface-variant max-w-2xl mx-auto leading-relaxed font-light">
+                    Mewujudkan transparansi melalui representasi visual yang jujur dan informatif mengenai setiap langkah pembangunan di Kota Balikpapan.
+                </p>
+</div>
+</section>
+<!-- Main Gallery Grid -->
+<section class="px-6 md:px-12 py-16 max-w-[1920px] mx-auto">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+<!-- Gallery Item 1 -->
+<div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+<div class="relative aspect-[4/3] overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A vibrant documentary photograph of a formal government ceremony in an elegant hall. Dignitaries are engaged in a symbolic tree-planting initiative. The lighting is bright and professional, highlighting the rich navy and gold colors of the Balikpapan identity. The mood is optimistic and celebratory of civic progress." src="https://lh3.googleusercontent.com/aida-public/AB6AXuADkgNEXmquS1JPe7cvZYmNijI-s7jnoWcfKWEljVMyBw3upr8_-VuTp28N16J6MuW_WqRoLdh7NHWzl9JvyQvKRaqvdBHaHpKpjIIvk_mAHcgGxzqW_EXxEjfgb50CQUDRG3q7OTPM4s-yyR6RJsDAptB0YiCUbswXBdaeT3aHsAempbXcZmzZksJdor61DTk79L4-L3D8ZDXmctxIUng9s-DCyjk0BCWH6kiLtGy3kBfYPC2LF7jKJVTiVwFJZ35dL4KOSd_EvxSL"/>
+</div>
+<div class="p-4">
+<h3 class="text-sm font-headline font-semibold text-primary truncate">Seremoni Penanaman Pohon</h3>
+</div></div>
+<!-- Gallery Item 2 -->
+<div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+<div class="relative aspect-[4/3] overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A clean, modern construction site featuring new public infrastructure in Balikpapan. Blue-sky background with professional lighting, showing engineers reviewing plans. The aesthetic is high-end industrial, focusing on precision and civic advancement, using a cool blue and crisp white color palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRM0csixHZFqOlpPyy36rv-iaIPICkIbwPMwx0_PxsPmbgIzSgJnuhgoQBob9HVqn5RZrH-ZeLOt2DTiB_LFGO8J5QVewihvXXR3PxYw_P51c8dMjxlOAUbYnDItqN1LKZWR5OmijGBg33ilFNc2qT94vK5mIKO01neRpryC6axhXNCjPKI0L_mvYMUwcvoy6Jkq04bAxbSHRaUYDVq-IStT15j0ywd5Onsgm_wYdc8F2UUwkKKi3OayWxpUPttels6w2ic8Rl9y7k"/>
+</div>
+<div class="p-4">
+<h3 class="text-sm font-headline font-semibold text-primary truncate">Pembangunan Infrastruktur Kota</h3>
+</div></div>
+<!-- Gallery Item 3 -->
+<div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+<div class="relative aspect-[4/3] overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A diverse group of citizens participating in a town hall meeting in Balikpapan. The lighting is soft and inclusive, capturing engaged faces in a modern community center. The atmosphere is democratic and transparent, reflecting the 'Civic Curator' theme with a focus on human interaction and local governance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAupAB0Xdw4QEmW7JUvBG2J3xri3oVQaT5W7ZX_fNUL_-1ady97EIRPo0id-QSNd67NK5_ZuZq2cI81RP3acB7rEPn408mbTXcoHojyIjjJLwWP5gqzZ4tMFSICpMbcrMnXBGIJqQtbic_c-C2TbDueUsBSeZiwNwC80KZqYJaoG6v0yLS4Gv63QEKSki3xovJ7m5h_9eztdkAuys-9QWtB6FnIsfiPuRjsJdQoz4LzPzWtMpFiNaJzYCsfnkacjlljhzMqwLUHU9wc"/>
+</div>
+<div class="p-4">
+<h3 class="text-sm font-headline font-semibold text-primary truncate">Rapat Koordinasi Masyarakat</h3>
+</div></div>
+<!-- Gallery Item 4 -->
+<div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+<div class="relative aspect-[4/3] overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A professional workspace setting showing civil servants in Balikpapan working with digital data and maps. The lighting is high-key and modern, emphasizing technology and transparency in governance. The composition is clean and editorial, using a palette of white, light grey, and primary navy blue." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVav6iD9gLnX3lJiMa17jdVzAeTJpCcc_8-NImFT6ocPAhcNy-2D2Wv-bP9IN-QLaxSeeMnheMp_BHBgbzE0G-m5XRx4PFqvt6pbkquXDyVYdtF9f3VJ2clVExQLcEY7yIYpbWqgPfQUrjpIycX1vvYPOM4Q1DAlNXYgSmZiJlaq3-WhJfmTCPKVl9kFiPYjR71uDD_lqNJfURFoyHxfXByP2_9xvK_Lq5UGvMoqIwT3floIGIyIFl9xE1qy63keAroH9QM20UOIgV"/>
+</div>
+<div class="p-4">
+<h3 class="text-sm font-headline font-semibold text-primary truncate">Digitalisasi Data Publik</h3>
+</div></div>
+<!-- Gallery Item 5 -->
+<div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+<div class="relative aspect-[4/3] overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Stunning aerial view of a local festival in Balikpapan, showing traditional dancers in vibrant costumes. The photo captures the rich cultural energy of the region with professional grade sharpness and vivid colors. The aesthetic is documentary yet cinematic, celebrating local heritage in a modern digital gallery." src="https://lh3.googleusercontent.com/aida-public/AB6AXuATQHIsZsvzk_5O2RSMIypHZg8gmvye8w9zu0m4iF4lNcMPLKRckLlpVP3-MaVQBRlKQMamiLFPZau7p8vReZZJZzt3W4RHgQV7y3WseWnZg6oiR23pxzn8XxiNIi5rhO_0iTvrYi1P6IlPyeNmsWSE_MiTyAOIlUFs5HLa_DLUSISSLb63TJl8ZNSzzvQK5zUMGwseaR4Xo30ufB216z3Yfdvd1-M3I2sDniiD62vpXabnuB4PI9UwnnxczamGmBAqS2t9IqWx3y28"/>
+</div>
+<div class="p-4">
+<h3 class="text-sm font-headline font-semibold text-primary truncate">Festival Budaya Balikpapan</h3>
+</div></div>
+<!-- Gallery Item 6 -->
+<div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+<div class="relative aspect-[4/3] overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A clean, professional boardroom meeting in Balikpapan's city hall. Corporate-style interior with modern glass furniture and soft overhead lighting. Officials are discussing city development plans. The visual style is crisp and high-end, using a primary color palette of navy blue and warm yellow accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHUk7xiV4HBgbd28hOdlDH3SEANHQ249uYgTsWEM7Gx8_Lv0SciTOk8jurrOybjx7g_LT0ruOn6FeGjex0DfBZhInUCEKbU5POOGEX-njRbn88HioCiAii7LKs2gWZ6zuorMPesCcc9iHwyQUfb-DqcaRRyep50mYwp7LS47yat3r4n7PoN5W6cUZpQPzhPNkaV8BjYX1xuyKBOQWqxjPHUV4e6eLrq5DYM7-dgC3JeH9U92WF3cVxY1lH5v-n42y-ujis6GWNmGF6"/>
+</div>
+<div class="p-4">
+<h3 class="text-sm font-headline font-semibold text-primary truncate">Pertemuan Balai Kota</h3>
+</div></div>
+<!-- Gallery Item 7 -->
+<div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+<div class="relative aspect-[4/3] overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A bright classroom scene in Balikpapan where students are using new educational tablets provided by the city government. Warm, natural lighting flows through windows, creating a hopeful and human-centric atmosphere. The focus is on the smiling face of a child, representing the success of civic education initiatives." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3Sec71uGg9EbsVgNNu5W7IkrorI_jCqV3yLAixotFxV1H0fTtHG6Am2juxpQ9n364Lq1iPTkgahYrZ7zVdgyqNLV4Qw8p0lZWHnnAyuPhJrt3N7oRopr_jPMbibimTEiqjAJnLXsWKDCvM_xZMNRNnhG4YFXXwUy_5uHYq2Nwuo1vlTmEKbTSuDFjrRhPWrDO9WeF67wYEY8DO9ImGUx89RKOqqvITssNsy_ajNGnGvbESCa0Jk1k1uW3fNuR9z6F-dWMeJpw16Os"/>
+</div>
+<div class="p-4">
+<h3 class="text-sm font-headline font-semibold text-primary truncate">Inovasi Pendidikan Digital</h3>
+</div></div>
+<!-- Gallery Item 8 -->
+<div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+<div class="relative aspect-[4/3] overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A modern medical facility in Balikpapan showing healthcare professionals in action. The interior is pristine and high-tech, with soft blue lighting accents that evoke cleanliness and trust. The shot is captured with a high-end editorial feel, focusing on the quality of public healthcare services." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMw7EGbkNnmscJp4KSTro50OZ8ZQvKVEjbFJpC3M56Weknhw-VRErWG5xhtf0g2ikV9bsYuH7BfUmg7i-pMnTrLErZaWJfVyuOmBQv3PyGfXlI1oD5fzEp_8owotddnHOdZimpdSclVmYrRINHWEKoaXsksC7Uf8fzf9T4DIrxYNn0c0gsoL-Q3lgFXhDttiMc9iWXQkJu9z7BygSj8sVRHL3f1h5JRONdLzKnxM_CnFKzr7WvMs-N4xNLNJNqERvPxa5nulf4ADJu"/>
+</div>
+<div class="p-4">
+<h3 class="text-sm font-headline font-semibold text-primary truncate">Layanan Kesehatan Modern</h3>
+</div></div>
+</div>
+<!-- Pagination -->
+<div class="mt-16 flex justify-center items-center gap-4">
+<button class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center text-on-surface-variant hover:bg-primary hover:text-white hover:border-primary transition-all">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<div class="flex items-center gap-2">
+<button class="w-12 h-12 rounded-full bg-primary text-white font-bold">1</button>
+<button class="w-12 h-12 rounded-full hover:bg-surface-container-high transition-colors text-on-surface font-semibold">2</button>
+<button class="w-12 h-12 rounded-full hover:bg-surface-container-high transition-colors text-on-surface font-semibold">3</button>
+<span class="px-2">...</span>
+<button class="w-12 h-12 rounded-full hover:bg-surface-container-high transition-colors text-on-surface font-semibold">12</button>
+</div>
+<button class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center text-on-surface-variant hover:bg-primary hover:text-white hover:border-primary transition-all">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</section>
 </main>
-
 <script>
 (function(){
     var n=document.getElementById('desktop-nav');
