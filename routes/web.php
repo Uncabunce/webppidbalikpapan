@@ -86,7 +86,189 @@ Route::get('/informasi/SK_maklumat', function () {
 Route::get('/informasi/SK_pengawasan', function () {
     return view('mega menu.Informasi Berkala.skpengawasan'); 
 });
-//profil
+
+
+//informasi serta merta
+Route::get('/informasi/4upayamitigasi', function () {
+    return view('mega menu.Informasi Serta Merta.4upayamitigasi');
+});
+Route::get('/informasi/infopenutupanjalan', function () {
+    return view('mega menu.Informasi Serta Merta.infopenutupanjalan');
+});
+Route::get('/informasi/informasipdam', function () {
+    return view('mega menu.Informasi Serta Merta.informasipdam');
+});
+Route::get('/informasi/infosiapsiaga', function () {
+    return view('mega menu.Informasi Serta Merta.infosiapsiaga');
+});
+Route::get('/informasi/prosedurevakuasi', function () {
+    return view('mega menu.Informasi Serta Merta.prosedurevakuasi');
+});
+
+//informasi setiap saat
+Route::get('/informasi/asetdaerah', function () {
+    return view('mega menu.Informasi Setiap Saat.asetdaerah');
+});
+Route::get('/informasi/daftarinformasi', function () {
+    return view('mega menu.Informasi Setiap Saat.daftarinformasi');
+});
+Route::get('/informasi/hasilpenelitian', function () {
+    return view('mega menu.Informasi Setiap Saat.hasilpenelitian');
+});
+Route::get('/informasi/infomekanismekeberatan', function () {
+    return view('mega menu.Informasi Setiap Saat.infomekanismekeberatan');
+});
+Route::get('/informasi/infopublik', function () {
+    return view('mega menu.Informasi Setiap Saat.infopublik');
+});
+Route::get('/informasi/informasiorganisasi', function () {
+    return view('mega menu.Informasi Setiap Saat.informasiorganisasi');
+});
+Route::get('/informasi/jumlahdilaporkan', function () {
+    return view('mega menu.Informasi Setiap Saat.jumlahdilaporkan');
+});
+Route::get('/informasi/jumlahditemukan', function () {
+    return view('mega menu.Informasi Setiap Saat.jumlahditemukan');
+});
+Route::get('/informasi/perizinan', function () {
+    return view('mega menu.Informasi Setiap Saat.perizinan');
+});
+Route::get('/informasi/perjanjiankerjasama', function () {
+    return view('mega menu.Informasi Setiap Saat.perjanjiankerjasama');
+});
+Route::get('/informasi/rencanakerja', function () {
+    return view('mega menu.Informasi Setiap Saat.rencanakerja');
+});
+Route::get('/informasi/rencanastrategis', function () {
+    return view('mega menu.Informasi Setiap Saat.rencanastrategis');
+});
+Route::get('/informasi/statistikdaerah', function () {
+    return view('mega menu.Informasi Setiap Saat.statistikdaerah');
+});
+//profil pemkot
+Route::get('/profil/visimisi', function () {
+    return view('mega menu.profil pemkot.visimisi');
+});
+Route::get('/profil/informasidomisili', function () {
+    return view('mega menu.profil pemkot.informasidomisili');
+});
+Route::get('/profil/LHKPN', function () {
+    return view('mega menu.profil pemkot.LHKPN');
+});
+Route::get('/profil/organisasi', function () {
+    return view('mega menu.profil pemkot.organisasi');
+});
+Route::get('/profil/rekapLHKPN', function () {
+    return view('mega menu.profil pemkot.rekapLHKPN');
+});
+
+//profil ppid
+Route::get('/profil/struktur', function () {
+    return view('mega menu.profil ppid.struktur');
+});
+Route::get('/profil/tugas', function () {
+    return view('mega menu.profil ppid.tugas');
+});
+Route::get('/profil/profil', function () {
+    return view('mega menu.profil ppid.profil');
+});
 Route::get('/profil/visimisi', function () {
     return view('mega menu.profil ppid.visimisi');
+});
+Route::get('/profil/waktu', function () {
+    return view('mega menu.profil ppid.waktu');
+});
+Route::get('/profil/regulasi', function () {
+    return view('mega menu.profil ppid.regulasi');
+});
+Route::get('/profil/maklumat', function () {
+    return view('mega menu.profil ppid.maklumat');
+});
+Route::get('/profil/pelaksana', function () {
+    return view('mega menu.profil ppid.pelaksana');
+});
+Route::get('/profil/media', function () {
+    return view('mega menu.profil ppid.media');
+});
+Route::get('/profil/motto', function () {
+    return view('mega menu.profil ppid.motto');
+});
+Route::get('/profil/biaya', function () {
+    return view('mega menu.profil ppid.biaya');
+});
+
+//pejabat badan publik
+Route::get('/pejabat/camat', function () {
+    return view('mega menu.pejabat badan publik.camat');
+});
+Route::get('/pejabat/sekda', function () {
+    return view('mega menu.pejabat badan publik.sekda');
+});
+Route::get('/pejabat/walwakot', function () {
+    return view('mega menu.pejabat badan publik.walwakot');
+});
+Route::get('/pejabat/stafahli', function () {
+    return view('mega menu.pejabat badan publik.stafahli');
+});
+Route::get('/pejabat/kepaladinas', function () {
+    return view('mega menu.pejabat badan publik.kepaladinas');
+});
+Route::get('/pejabat/kepalaperangkat', function () {
+    return view('mega menu.pejabat badan publik.kepalaperangkat');
+});
+Route::get('/pejabat/asistentata', function () {
+    return view('mega menu.pejabat badan publik.asistentata');
+});
+Route::get('/pejabat/asistenperekonomian', function () {
+    return view('mega menu.pejabat badan publik.asistenperekonomian');
+});
+Route::get('/pejabat/asistenadmin', function () {
+    return view('mega menu.pejabat badan publik.asistenadmin');
+});
+
+//SOP PPID
+Route::get('/sop/carapengajuankeberatan', function () {
+    return view('mega menu.sop ppid.carapengajuankeberatan');
+});
+Route::get('/sop/carapenyelesaiansengketa', function () {
+    return view('mega menu.sop ppid.carapenyelesaiansengketa');
+});
+Route::get('/sop/carapermohonaninfo', function () {
+    return view('mega menu.sop ppid.carapermohonaninfo');
+});
+Route::get('/sop/maklumatpelayanan', function () {
+    return view('mega menu.sop ppid.maklumatpelayanan');
+});
+Route::get('/sop/SKpengelolaPPID', function () {
+    return view('mega menu.sop ppid.SKpengelolaPPID');
+});
+Route::get('/sop/SOPpelayanan', function () {
+    return view('mega menu.sop ppid.SOPpelayanan');
+});
+Route::get('/sop/SOPpemantauan', function () {
+    return view('mega menu.sop ppid.SOPpemantauan');
+});
+Route::get('/sop/SOPpemutakhiran', function () {
+    return view('mega menu.sop ppid.SOPpemutakhiran');
+});
+Route::get('/sop/SOPpendokumentasian', function () {
+    return view('mega menu.sop ppid.SOPpendokumentasian');
+});
+Route::get('/sop/SOPpengembangan', function () {
+    return view('mega menu.sop ppid.SOPpengembangan');
+});
+Route::get('/sop/SOPpengolahandata', function () {
+    return view('mega menu.sop ppid.SOPpengolahandata');
+});
+Route::get('/sop/SOPpengumpulan', function () {
+    return view('mega menu.sop ppid.SOPpengumpulan');
+});
+Route::get('/sop/SOPuji', function () {
+    return view('mega menu.sop ppid.SOPuji');
+});
+Route::get('/sop/standarpelayanan', function () {
+    return view('mega menu.sop ppid.standarpelayanan');
+});
+Route::get('/sop/tatacarapengaduan', function () {
+    return view('mega menu.sop ppid.tatacarapengaduan');
 });
