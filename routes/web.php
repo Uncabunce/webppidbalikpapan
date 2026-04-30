@@ -86,6 +86,9 @@ Route::get('/informasi/SK_maklumat', function () {
 Route::get('/informasi/SK_pengawasan', function () {
     return view('mega menu.Informasi Berkala.skpengawasan'); 
 });
+Route::get('/informasi/prosedurperingatandini', function () {
+    return view('mega menu.Informasi Berkala.prosedurperingatandini'); 
+});
 
 
 //informasi serta merta
