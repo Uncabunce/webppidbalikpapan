@@ -273,9 +273,9 @@ Layanan Informasi <span class="material-symbols-outlined text-[10px] transition-
 <button class="nav-hover-line relative px-3 py-3 text-xs font-bold font-headline flex items-center gap-0.5">
 PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:rotate-180 transition-transform">expand_more</span>
 </button>
-<div class="dropdown-menu bg-slate-900 min-w-[125px] shadow-xl py-2 rounded-b-lg border border-white/10 font-headline">
-<a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="https://data.balikpapan.go.id/organization">Badan</a>
-<a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="https://data.balikpapan.go.id/organization">Dinas</a>
+<div class="dropdown-menu bg-slate-100 min-w-[125px] shadow-xl py-2 rounded-b-lg border border-white/10 font-headline">
+<a class="block px-4 py-2 hover:bg-slate-200 text-[11px] text-slate-600 transition-colors" href="https://data.balikpapan.go.id/organization">Badan</a>
+<a class="block px-4 py-2 hover:bg-slate-200 text-[11px] text-slate-600 transition-colors" href="https://data.balikpapan.go.id/organization">Dinas</a>
 </div>
 </div>
 <a class="nav-hover-line relative px-3 py-3 text-xs font-bold font-headline" href="http://ppidbalikpapan.test/kontak">Kontak</a>
@@ -695,7 +695,7 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 </div>
 </div>
 <!-- Whistleblower + Kontak Row (inside grid) -->
-<div class="sm:col-span-2 rounded-xl overflow-hidden shadow-sm flex flex-col sm:flex-row border border-outline-variant/15">
+<div class="sm:col-span-2 rounded-xl overflow-hidden py-4 shadow-sm flex flex-col sm:flex-row border border-outline-variant/15">
 <!-- Kontak PPID -->
 <div class="bg-primary p-6 md:p-8 flex flex-col justify-between relative overflow-hidden flex-1">
 <div class="absolute -right-6 -bottom-6 opacity-10">
@@ -713,7 +713,7 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 </div>
 </div>
 <!-- Whistleblower -->
-<div class="bg-surface-container-lowest p-6 md:p-8 flex items-center justify-between relative overflow-hidden flex-1 border-t sm:border-t-0 sm:border-l border-outline-variant/20">
+<div class="bg-surface-container-lowest py-4 p-6 md:p-8 flex items-center justify-between relative overflow-hidden flex-1 border-t sm:border-t-0 sm:border-l border-outline-variant/20">
 <div class="absolute -right-4 -bottom-4 opacity-5">
 <span class="material-symbols-outlined text-[140px] text-primary">campaign</span>
 </div>
@@ -736,7 +736,7 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 </section>
 
 <!-- News & Links Section (Updated UI) -->
-<section class="bg-white py-16 md:py-24 border-t border-slate-100">
+<section class="bg-white py-16 md:py-10 border-t border-slate-100">
 <div class="max-w-7xl mx-auto px-4 md:px-6 grid grid-cols-1 lg:grid-cols-12 gap-12">
 <!-- News Section (Left/Center) -->
 <div class="lg:col-span-8">
@@ -971,7 +971,7 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 </a>
 
 <!-- Tombol 5: SPMB -->
-<a href="https://balikpapan.spmb.id/" target="_blank" rel="noopener noreferrer"
+<a href="https://balikpapan.demo.spmb.id/" target="_blank" rel="noopener noreferrer"
    class="w-full h-16 flex items-center justify-between px-4 rounded-xl overflow-hidden shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 group"
    style="background: linear-gradient(135deg, #ffffff 25%, #2563eb 75%);">
   <div class="flex items-center gap-3">
@@ -1012,7 +1012,7 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 </div>
 </div>
 </section>
-<section class="py-20 bg-surface-container-lowest">
+<section class="py-4 bg-surface-container-lowest">
     <div class="max-w-7xl mx-auto px-4">
         <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-4">
             <div>
@@ -1077,9 +1077,9 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div class="group cursor-pointer">
                 <div class="rounded-2xl overflow-hidden aspect-[4/3] mb-4 shadow-sm">
-                    <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&q=80&w=600" alt="Foto 1" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    <img src="testG1.jpg" alt="Foto 1" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
                 </div>
-                <h3 class="text-lg font-bold text-on-surface leading-snug group-hover:text-primary transition-colors line-clamp-2">Kunjungan Kerja Kemenkominfo ke Balikpapan</h3>
+                <h3 class="text-lg font-bold text-on-surface leading-snug group-hover:text-primary transition-colors line-clamp-2">tes</h3>
                 <p class="text-on-surface-variant text-sm mt-2 flex items-center gap-2">
                     <span class="material-symbols-outlined text-[16px]">calendar_today</span> 08 April 2026
                 </p>
@@ -1087,9 +1087,9 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 
             <div class="group cursor-pointer">
                 <div class="rounded-2xl overflow-hidden aspect-[4/3] mb-4 shadow-sm">
-                    <img src="https://images.unsplash.com/photo-1577415124269-3187212001e9?auto=format&fit=crop&q=80&w=600" alt="Foto 2" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    <img src="" alt="Foto 2" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
                 </div>
-                <h3 class="text-lg font-bold text-on-surface leading-snug group-hover:text-primary transition-colors line-clamp-2">Rapat Koordinasi Pengelola Informasi Daerah</h3>
+                <h3 class="text-lg font-bold text-on-surface leading-snug group-hover:text-primary transition-colors line-clamp-2">tes</h3>
                 <p class="text-on-surface-variant text-sm mt-2 flex items-center gap-2">
                     <span class="material-symbols-outlined text-[16px]">calendar_today</span> 05 April 2026
                 </p>
@@ -1097,9 +1097,9 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 
             <div class="group cursor-pointer">
                 <div class="rounded-2xl overflow-hidden aspect-[4/3] mb-4 shadow-sm">
-                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=600" alt="Foto 3" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    <img src="" alt="Foto 3" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
                 </div>
-                <h3 class="text-lg font-bold text-on-surface leading-snug group-hover:text-primary transition-colors line-clamp-2">Penyerahan Penghargaan Keterbukaan Informasi</h3>
+                <h3 class="text-lg font-bold text-on-surface leading-snug group-hover:text-primary transition-colors line-clamp-2">tes</h3>
                 <p class="text-on-surface-variant text-sm mt-2 flex items-center gap-2">
                     <span class="material-symbols-outlined text-[16px]">calendar_today</span> 01 April 2026
                 </p>
@@ -1141,7 +1141,7 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 <div>
 <h4 class="font-headline font-bold text-yellow-600 dark:text-blue-100 text-lg mb-6">Peta Situs</h4>
 <ul class="space-y-3">
-<li><a class="text-slate-400 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline-offset-4 hover:underline ease-in-out duration-200 text-xs md:text-sm" href="#">Whistleblower System</a></li>
+<li><a class="text-slate-400 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline-offset-4 hover:underline ease-in-out duration-200 text-xs md:text-sm" href="whistleblower.blade.php">Whistleblower System</a></li>
 <li><a class="text-slate-400 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline-offset-4 hover:underline ease-in-out duration-200 text-xs md:text-sm" href="#">Lapor!</a></li>
 <li><a class="text-slate-400 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline-offset-4 hover:underline ease-in-out duration-200 text-xs md:text-sm" href="#">Data Terbuka</a></li>
 <li><a class="text-slate-400 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline-offset-4 hover:underline ease-in-out duration-200 text-xs md:text-sm font-semibold" href="#">Kebijakan Privasi</a></li>

@@ -565,9 +565,9 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 <span class="flex items-center gap-3"><span class="material-symbols-outlined text-base">account_balance</span> PPID Pelaksana</span>
 <span class="material-symbols-outlined text-base transition-transform duration-300" id="icon-acc-ppid">expand_more</span>
 </button>
-<div id="acc-ppid" class="hidden flex-col bg-white/5 rounded-lg mx-2 mb-2 overflow-hidden">
-<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Badan</a>
-<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container">Dinas</a>
+<div class="dropdown-menu bg-slate-100 min-w-[125px] shadow-xl py-2 rounded-b-lg border border-white/10 font-headline">
+<a class="block px-4 py-2 hover:bg-slate-200 text-[11px] text-slate-600 transition-colors" href="https://data.balikpapan.go.id/organization">Badan</a>
+<a class="block px-4 py-2 hover:bg-slate-200 text-[11px] text-slate-600 transition-colors" href="https://data.balikpapan.go.id/organization">Dinas</a>
 </div>
 </div>
 <a href="http://ppidbalikpapan.test/kontak" class="flex items-center gap-3 px-3 py-3.5 text-sm font-bold">
@@ -576,107 +576,169 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 </nav>
 </div>
 </header>
-<main class="w-full">
-<!-- Hero Header Section -->
-<section class="relative py-24 px-6 md:px-12 bg-surface-container overflow-hidden">
-<div class="absolute inset-0 z-0 opacity-20">
-<img class="w-full h-full object-cover grayscale" data-alt="A cinematic, wide-angle aerial view of Balikpapan's skyline during the golden hour. The image features a blend of modern coastal architecture and lush tropical greenery, captured with a soft-focus editorial style. The lighting is warm and diffused, creating a serene and professional backdrop for a civic information portal." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDINt1sE7nOSze71iepnOTYxKBEXE24aMTPBRWBlHl1Qqojzy2J5mizp5Js8BbFz2v3PuiLhT6qdycXvMy3uoHg_K2FpzCXhdkNTvf2JA0C2Xj-iaL0aHICso58PlU5g9n3_1fJGoUFvKJnceU2PVq5coQoERcGkE1jcWesABhbofuLPPBnCdMSd-ApgpBzUWy-AyKd6VInkIPbcLG57i5t6U2oIrHm2Hw5LCMy34M5kABr4bCmH9Tuv6sxbVR6jmV05KOOlHsiVMop"/>
+<!-- Pastikan kode ini berada di dalam tag <main> atau section layout kamu -->
+<main class="w-full bg-surface-container-lowest pb-8">
+    <!-- Title Section: Background Image with Fade -->
+<section class="relative py-28 overflow-hidden border-b border-outline-variant/10">
+<!-- Background Layer -->
+<div class="absolute inset-0 z-0">
+<img alt="" class="w-full h-full object-cover opacity-70" src="sinarmasbpp.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-b from-transparent via-white/80 to-white"></div>
 </div>
-<div class="absolute inset-0 z-0 bg-gradient-to-b from-surface-container/10 via-surface-container/60 to-surface-container"></div>
-<div class="relative z-10 max-w-4xl mx-auto text-center">
-<span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold uppercase tracking-widest mb-6">Arsip Visual Resmi</span>
-<h1 class="text-4xl md:text-6xl font-display font-extrabold text-primary mb-6 tracking-tighter">Dokumentasi Kegiatan Publik</h1>
-<p class="text-lg md:text-xl text-on-surface-variant max-w-2xl mx-auto leading-relaxed font-light">
-                    Mewujudkan transparansi melalui representasi visual yang jujur dan informatif mengenai setiap langkah pembangunan di Kota Balikpapan.
+<div class="max-w-7xl mx-auto px-6 relative z-10">
+<nav class="flex mb-4 text-xs font-medium text-outline uppercase tracking-widest gap-2">
+<a href="http://ppidbalikpapan.test">Beranda</a>
+<span>/</span>
+<span class="text-primary">Galeri</span>
+</nav>
+<h1 class="text-5xl md:text-6xl font-headline font-extrabold text-primary leading-tight">
+                    Dokumentasi <span class="text-secondary">Kegiatan</span>
+</h1>
+<p class="mt-6 text-lg text-on-surface-variant max-w-2xl leading-relaxed">
+                    Kumpulan Dokumentasi kegiatan PPID Kota Balikpapan yang dapat diakses oleh masyarakat umum.
                 </p>
 </div>
 </section>
-<!-- Main Gallery Grid -->
-<section class="px-6 md:px-12 py-16 max-w-[1920px] mx-auto">
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-<!-- Gallery Item 1 -->
-<div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
-<div class="relative aspect-[4/3] overflow-hidden">
-<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A vibrant documentary photograph of a formal government ceremony in an elegant hall. Dignitaries are engaged in a symbolic tree-planting initiative. The lighting is bright and professional, highlighting the rich navy and gold colors of the Balikpapan identity. The mood is optimistic and celebratory of civic progress." src="https://lh3.googleusercontent.com/aida-public/AB6AXuADkgNEXmquS1JPe7cvZYmNijI-s7jnoWcfKWEljVMyBw3upr8_-VuTp28N16J6MuW_WqRoLdh7NHWzl9JvyQvKRaqvdBHaHpKpjIIvk_mAHcgGxzqW_EXxEjfgb50CQUDRG3q7OTPM4s-yyR6RJsDAptB0YiCUbswXBdaeT3aHsAempbXcZmzZksJdor61DTk79L4-L3D8ZDXmctxIUng9s-DCyjk0BCWH6kiLtGy3kBfYPC2LF7jKJVTiVwFJZ35dL4KOSd_EvxSL"/>
-</div>
-<div class="p-4">
-<h3 class="text-sm font-headline font-semibold text-primary truncate">Seremoni Penanaman Pohon</h3>
-</div></div>
-<!-- Gallery Item 2 -->
-<div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
-<div class="relative aspect-[4/3] overflow-hidden">
-<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A clean, modern construction site featuring new public infrastructure in Balikpapan. Blue-sky background with professional lighting, showing engineers reviewing plans. The aesthetic is high-end industrial, focusing on precision and civic advancement, using a cool blue and crisp white color palette." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRM0csixHZFqOlpPyy36rv-iaIPICkIbwPMwx0_PxsPmbgIzSgJnuhgoQBob9HVqn5RZrH-ZeLOt2DTiB_LFGO8J5QVewihvXXR3PxYw_P51c8dMjxlOAUbYnDItqN1LKZWR5OmijGBg33ilFNc2qT94vK5mIKO01neRpryC6axhXNCjPKI0L_mvYMUwcvoy6Jkq04bAxbSHRaUYDVq-IStT15j0ywd5Onsgm_wYdc8F2UUwkKKi3OayWxpUPttels6w2ic8Rl9y7k"/>
-</div>
-<div class="p-4">
-<h3 class="text-sm font-headline font-semibold text-primary truncate">Pembangunan Infrastruktur Kota</h3>
-</div></div>
-<!-- Gallery Item 3 -->
-<div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
-<div class="relative aspect-[4/3] overflow-hidden">
-<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A diverse group of citizens participating in a town hall meeting in Balikpapan. The lighting is soft and inclusive, capturing engaged faces in a modern community center. The atmosphere is democratic and transparent, reflecting the 'Civic Curator' theme with a focus on human interaction and local governance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAupAB0Xdw4QEmW7JUvBG2J3xri3oVQaT5W7ZX_fNUL_-1ady97EIRPo0id-QSNd67NK5_ZuZq2cI81RP3acB7rEPn408mbTXcoHojyIjjJLwWP5gqzZ4tMFSICpMbcrMnXBGIJqQtbic_c-C2TbDueUsBSeZiwNwC80KZqYJaoG6v0yLS4Gv63QEKSki3xovJ7m5h_9eztdkAuys-9QWtB6FnIsfiPuRjsJdQoz4LzPzWtMpFiNaJzYCsfnkacjlljhzMqwLUHU9wc"/>
-</div>
-<div class="p-4">
-<h3 class="text-sm font-headline font-semibold text-primary truncate">Rapat Koordinasi Masyarakat</h3>
-</div></div>
-<!-- Gallery Item 4 -->
-<div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
-<div class="relative aspect-[4/3] overflow-hidden">
-<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A professional workspace setting showing civil servants in Balikpapan working with digital data and maps. The lighting is high-key and modern, emphasizing technology and transparency in governance. The composition is clean and editorial, using a palette of white, light grey, and primary navy blue." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVav6iD9gLnX3lJiMa17jdVzAeTJpCcc_8-NImFT6ocPAhcNy-2D2Wv-bP9IN-QLaxSeeMnheMp_BHBgbzE0G-m5XRx4PFqvt6pbkquXDyVYdtF9f3VJ2clVExQLcEY7yIYpbWqgPfQUrjpIycX1vvYPOM4Q1DAlNXYgSmZiJlaq3-WhJfmTCPKVl9kFiPYjR71uDD_lqNJfURFoyHxfXByP2_9xvK_Lq5UGvMoqIwT3floIGIyIFl9xE1qy63keAroH9QM20UOIgV"/>
-</div>
-<div class="p-4">
-<h3 class="text-sm font-headline font-semibold text-primary truncate">Digitalisasi Data Publik</h3>
-</div></div>
-<!-- Gallery Item 5 -->
-<div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
-<div class="relative aspect-[4/3] overflow-hidden">
-<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Stunning aerial view of a local festival in Balikpapan, showing traditional dancers in vibrant costumes. The photo captures the rich cultural energy of the region with professional grade sharpness and vivid colors. The aesthetic is documentary yet cinematic, celebrating local heritage in a modern digital gallery." src="https://lh3.googleusercontent.com/aida-public/AB6AXuATQHIsZsvzk_5O2RSMIypHZg8gmvye8w9zu0m4iF4lNcMPLKRckLlpVP3-MaVQBRlKQMamiLFPZau7p8vReZZJZzt3W4RHgQV7y3WseWnZg6oiR23pxzn8XxiNIi5rhO_0iTvrYi1P6IlPyeNmsWSE_MiTyAOIlUFs5HLa_DLUSISSLb63TJl8ZNSzzvQK5zUMGwseaR4Xo30ufB216z3Yfdvd1-M3I2sDniiD62vpXabnuB4PI9UwnnxczamGmBAqS2t9IqWx3y28"/>
-</div>
-<div class="p-4">
-<h3 class="text-sm font-headline font-semibold text-primary truncate">Festival Budaya Balikpapan</h3>
-</div></div>
-<!-- Gallery Item 6 -->
-<div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
-<div class="relative aspect-[4/3] overflow-hidden">
-<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A clean, professional boardroom meeting in Balikpapan's city hall. Corporate-style interior with modern glass furniture and soft overhead lighting. Officials are discussing city development plans. The visual style is crisp and high-end, using a primary color palette of navy blue and warm yellow accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHUk7xiV4HBgbd28hOdlDH3SEANHQ249uYgTsWEM7Gx8_Lv0SciTOk8jurrOybjx7g_LT0ruOn6FeGjex0DfBZhInUCEKbU5POOGEX-njRbn88HioCiAii7LKs2gWZ6zuorMPesCcc9iHwyQUfb-DqcaRRyep50mYwp7LS47yat3r4n7PoN5W6cUZpQPzhPNkaV8BjYX1xuyKBOQWqxjPHUV4e6eLrq5DYM7-dgC3JeH9U92WF3cVxY1lH5v-n42y-ujis6GWNmGF6"/>
-</div>
-<div class="p-4">
-<h3 class="text-sm font-headline font-semibold text-primary truncate">Pertemuan Balai Kota</h3>
-</div></div>
-<!-- Gallery Item 7 -->
-<div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
-<div class="relative aspect-[4/3] overflow-hidden">
-<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A bright classroom scene in Balikpapan where students are using new educational tablets provided by the city government. Warm, natural lighting flows through windows, creating a hopeful and human-centric atmosphere. The focus is on the smiling face of a child, representing the success of civic education initiatives." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3Sec71uGg9EbsVgNNu5W7IkrorI_jCqV3yLAixotFxV1H0fTtHG6Am2juxpQ9n364Lq1iPTkgahYrZ7zVdgyqNLV4Qw8p0lZWHnnAyuPhJrt3N7oRopr_jPMbibimTEiqjAJnLXsWKDCvM_xZMNRNnhG4YFXXwUy_5uHYq2Nwuo1vlTmEKbTSuDFjrRhPWrDO9WeF67wYEY8DO9ImGUx89RKOqqvITssNsy_ajNGnGvbESCa0Jk1k1uW3fNuR9z6F-dWMeJpw16Os"/>
-</div>
-<div class="p-4">
-<h3 class="text-sm font-headline font-semibold text-primary truncate">Inovasi Pendidikan Digital</h3>
-</div></div>
-<!-- Gallery Item 8 -->
-<div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
-<div class="relative aspect-[4/3] overflow-hidden">
-<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A modern medical facility in Balikpapan showing healthcare professionals in action. The interior is pristine and high-tech, with soft blue lighting accents that evoke cleanliness and trust. The shot is captured with a high-end editorial feel, focusing on the quality of public healthcare services." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMw7EGbkNnmscJp4KSTro50OZ8ZQvKVEjbFJpC3M56Weknhw-VRErWG5xhtf0g2ikV9bsYuH7BfUmg7i-pMnTrLErZaWJfVyuOmBQv3PyGfXlI1oD5fzEp_8owotddnHOdZimpdSclVmYrRINHWEKoaXsksC7Uf8fzf9T4DIrxYNn0c0gsoL-Q3lgFXhDttiMc9iWXQkJu9z7BygSj8sVRHL3f1h5JRONdLzKnxM_CnFKzr7WvMs-N4xNLNJNqERvPxa5nulf4ADJu"/>
-</div>
-<div class="p-4">
-<h3 class="text-sm font-headline font-semibold text-primary truncate">Layanan Kesehatan Modern</h3>
-</div></div>
-</div>
-<!-- Pagination -->
-<div class="mt-16 flex justify-center items-center gap-4">
-<button class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center text-on-surface-variant hover:bg-primary hover:text-white hover:border-primary transition-all">
-<span class="material-symbols-outlined">chevron_left</span>
-</button>
-<div class="flex items-center gap-2">
-<button class="w-12 h-12 rounded-full bg-primary text-white font-bold">1</button>
-<button class="w-12 h-12 rounded-full hover:bg-surface-container-high transition-colors text-on-surface font-semibold">2</button>
-<button class="w-12 h-12 rounded-full hover:bg-surface-container-high transition-colors text-on-surface font-semibold">3</button>
-<span class="px-2">...</span>
-<button class="w-12 h-12 rounded-full hover:bg-surface-container-high transition-colors text-on-surface font-semibold">12</button>
-</div>
-<button class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center text-on-surface-variant hover:bg-primary hover:text-white hover:border-primary transition-all">
-<span class="material-symbols-outlined">chevron_right</span>
-</button>
-</div>
-</section>
+    <div class="max-w-7xl mx-auto px-4 md:px-6 flex flex-col md:flex-row gap-8">
+        
+        <!-- Sidebar Filter (Gaya Jakarta Pusat) -->
+        <aside class="w-full md:w-1/4 flex-shrink-0">
+            <div class="bg-white border border-outline-variant/50 rounded-lg p-5 shadow-sm sticky top-32">
+                <h3 class="font-headline font-bold text-lg text-primary mb-5 border-b border-outline-variant/30 pb-2">Filter</h3>
+                
+                <!-- Dropdown Kategori -->
+                <div class="mb-4">
+                    <label class="block text-sm font-semibold text-on-surface mb-2 font-headline">Kategori</label>
+                    <select class="w-full border border-outline-variant/50 rounded text-sm text-on-surface focus:ring-primary focus:border-primary p-2.5 bg-surface-bright outline-none">
+                        <option>Berita Foto</option>
+                        <option>Kegiatan Wali Kota</option>
+                        <option>Infrastruktur</option>
+                    </select>
+                </div>
+                
+                <!-- Input Tanggal -->
+                <div class="mb-6">
+                    <label class="block text-sm font-semibold text-on-surface mb-2 font-headline">Tanggal Berita</label>
+                    <input type="date" class="w-full border border-outline-variant/50 rounded text-sm text-on-surface focus:ring-primary focus:border-primary p-2.5 bg-surface-bright outline-none">
+                </div>
+                
+                <!-- Tombol Reset -->
+                <button class="w-full bg-surface-container hover:bg-surface-container-high text-on-surface font-semibold py-2.5 rounded transition-colors text-sm border border-outline-variant/30">
+                    Reset
+                </button>
+            </div>
+        </aside>
+
+        <!-- Main Content Grid & Pagination -->
+        <section class="w-full md:w-3/4">
+            
+            <!-- Grid Foto/Berita (Gaya Samarinda dipadukan dengan card Jakarta Pusat) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Looping Item Card -->
+                @for ($i = 0; $i < 9; $i++)
+                <div class="group bg-white rounded-lg shadow-sm border border-outline-variant/30 overflow-hidden hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+                    <div class="relative aspect-[4/3] overflow-hidden bg-slate-200">
+                        <!-- Gambar -->
+                        <img src="https://via.placeholder.com/600x400" alt="Thumbnail" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        
+                        <!-- Badge Jumlah Foto (Mengikuti gaya Samarinda) -->
+                        <div class="absolute top-3 right-3 bg-black/60 backdrop-blur-sm text-white text-[11px] px-2 py-1 rounded flex items-center gap-1">
+                            <span class="material-symbols-outlined text-[14px]">photo_library</span> 15
+                        </div>
+                    </div>
+                    
+                    <div class="p-4">
+                        <!-- Tanggal (Warna Kuning seperti layout Jakpus) -->
+                        <p class="text-secondary-container font-bold text-[11px] mb-1.5 uppercase tracking-wide">Rabu, 22 April 2026</p>
+                        <!-- Judul -->
+                        <h4 class="font-headline font-bold text-sm text-primary leading-snug line-clamp-3">
+                            Pemkot Balikpapan Sosialisasikan Pembatasan Pembuangan Sampah ke TPST di Kecamatan Balikpapan Kota
+                        </h4>
+                    </div>
+                </div>
+                @endfor
+                
+            </div>
+
+            <!-- Pagination Blok Kotak (Gaya Samarinda) -->
+            <div class="mt-12 flex justify-center items-center gap-2">
+                <!-- Tombol Prev -->
+                <a href="#" class="w-10 h-10 flex items-center justify-center bg-surface-bright border border-outline-variant/50 rounded text-on-surface hover:bg-surface-container transition-colors">
+                    <span class="material-symbols-outlined text-sm">arrow_back</span>
+                </a>
+                
+                <!-- Halaman Aktif (Warna Merah Khas Samarinda) -->
+                <a href="#" class="w-10 h-10 flex items-center justify-center bg-[#f44336] text-white font-bold rounded shadow-sm">
+                    1
+                </a>
+                
+                <!-- Halaman Tidak Aktif -->
+                <a href="#" class="w-10 h-10 flex items-center justify-center bg-white border border-outline-variant/50 rounded text-on-surface hover:bg-surface-container-low transition-colors font-semibold">
+                    2
+                </a>
+                <a href="#" class="w-10 h-10 flex items-center justify-center bg-white border border-outline-variant/50 rounded text-on-surface hover:bg-surface-container-low transition-colors font-semibold">
+                    3
+                </a>
+                <a href="#" class="w-10 h-10 flex items-center justify-center bg-white border border-outline-variant/50 rounded text-on-surface hover:bg-surface-container-low transition-colors font-semibold">
+                    4
+                </a>
+                
+                <!-- Tombol Next -->
+                <a href="#" class="w-10 h-10 flex items-center justify-center bg-surface-bright border border-outline-variant/50 rounded text-on-surface hover:bg-surface-container transition-colors">
+                    <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                </a>
+            </div>
+            
+        </section>
+
+    </div>
 </main>
+<footer id="kontak" class="bg-slate-800 dark:bg-slate-600 w-full pt-16 md:pt-20 pb-8 border-t border-slate-600 dark:border-slate-800">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto px-4 md:px-6 font-['Inter'] text-sm leading-relaxed">
+<!-- Brand & Map -->
+<div class="md:col-span-2">
+<div class="text-xl md:text-2xl font-bold text-yellow-600 dark:text-blue-100 mb-6 font-headline">PPID Kota Balikpapan</div>
+<p class="text-slate-400 dark:text-slate-400 max-w-md mb-8">
+                Pejabat Pengelola Informasi dan Dokumentasi (PPID) Utama Pemerintah Kota Balikpapan bertanggung jawab untuk penyimpanan, pendokumentasian, penyediaan, dan pelayanan informasi publik.
+            </p>
+<div class="w-full rounded-xl overflow-hidden shadow-md" style="aspect-ratio:16/9;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63821.253001534766!2d116.75573272167965!3d-1.2764074999999773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df1473bb9404897%3A0x94d96108f98b652c!2sBalikpapan%20Mayor&#39;s%20Office!5e0!3m2!1sen!2ssg!4v1776063788871!5m2!1sen!2ssg" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+</div>
+<!-- Contacts -->
+<div>
+<h4 class="font-headline font-bold text-yellow-600 dark:text-blue-100 text-lg mb-7">Kontak Kami</h4>
+<ul class="space-y-4 text-slate-400 dark:text-slate-400">
+<li class="flex gap-3">
+<span class="material-symbols-outlined text-secondary shrink-0" data-icon="location_on">location_on</span>
+<span class="text-xs md:text-sm">Jl. Jenderal Sudirman No.1, Klandasan Ulu, Balikpapan Kota, Kota Balikpapan, Kalimantan Timur 76112</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary shrink-0" data-icon="call">call</span>
+<span class="text-xs md:text-sm">(0542) 421420</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary shrink-0" data-icon="mail">mail</span>
+<span class="text-xs md:text-sm break-all">ppid@balikpapan.go.id</span>
+</li>
+</ul>
+</div>
+<!-- Quick Links -->
+<div>
+<h4 class="font-headline font-bold text-yellow-600 dark:text-blue-100 text-lg mb-6">Peta Situs</h4>
+<ul class="space-y-3">
+<li><a class="text-slate-400 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline-offset-4 hover:underline ease-in-out duration-200 text-xs md:text-sm" href="#">Whistleblower System</a></li>
+<li><a class="text-slate-400 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline-offset-4 hover:underline ease-in-out duration-200 text-xs md:text-sm" href="#">Lapor!</a></li>
+<li><a class="text-slate-400 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline-offset-4 hover:underline ease-in-out duration-200 text-xs md:text-sm" href="#">Data Terbuka</a></li>
+<li><a class="text-slate-400 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline-offset-4 hover:underline ease-in-out duration-200 text-xs md:text-sm font-semibold" href="#">Kebijakan Privasi</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-4 md:px-6 mt-16 pt-8 border-t border-slate-600 dark:border-slate-800 text-center">
+<p class="text-slate-400 dark:text-slate-400 text-[10px] md:text-xs">
+            © 2024 Pemerintah Kota Balikpapan. PPID Utama. All rights reserved.
+        </p>
+</div>
+</footer>
 <script>
 (function(){
     var n=document.getElementById('desktop-nav');
@@ -940,5 +1002,104 @@ document.addEventListener('DOMContentLoaded', positionMegaMenu);
 window.addEventListener('scroll', positionMegaMenu);
 window.addEventListener('resize', positionMegaMenu);
 positionMegaMenu();
+</script>
+<script>
+// foto 
+var allfotoData = [
+    // Page 1 cards - use existing DOM cards
+    {page:1, useDOM: true},
+    // Pages 2-12 - generated data
+];
+
+// All news items data (72 total = 12 pages x 6)
+var fotoItems = [
+    {cat:'Pemerintahan', catColor:'bg-secondary', date:'07 APRIL 2026', img:'images/1.jpg', title:'Pemerintah Kota Balikpapan Raih Penghargaan Transparansi Publik 2024', desc:'BALIKPAPAN — Wakil Wali Kota Bagus Susetyo menyampaikan Laporan Keterangan Pertanggungjawaban (LKPj) Wali Kota Balikpapan Tahun Anggaran 2025 dalam Rapat Paripurna ke-2.', href:'http://ppidbalikpapan.test/foto'},
+    {cat:'Layanan', catColor:'bg-tertiary-container', date:'12 MEI 2024', img:'https://lh3.googleusercontent.com/aida-public/AB6AXuCON1MnTytj9ujS8_J-v81rXKNMRNuqd78bSqIPlrG4c97t1eXZm-hLSn4UijawKvKCO62xXBDCKMs9yUGdaFfTrdfAX8LCPk120gMmcCs9d7Zpy_sseEdvASl9YC2vxKTziTINUVKgTA3YvFSGhdeVjIbcCqbKMDt479oKhxqzXI7WHddbe0wRVv-1Oe-2PmFMpqEEMSVPYhGOifupt-UBvwnhp2TY6e_64z0_JqKhzlRCm9jKwN_8xpvfmmbNj4fOCPYpnuxrvqiq', title:'Digitalisasi Puskesmas: Pendaftaran Online Kini Tersedia di Seluruh Kecamatan', desc:'Dinas Pendidikan mengumumkan pembukaan pendaftaran beasiswa bagi mahasiswa asal Balikpapan yang berprestasi di tingkat nasional dan internasional.', href:'http://ppidbalikpapan.test/foto'},
+    {cat:'Ekonomi', catColor:'bg-primary', date:'10 MEI 2024', img:'https://lh3.googleusercontent.com/aida-public/AB6AXuD4ZjUvliKY0ZCuorwN-5toGXZ_QABJtnYZ2F5wFUDm9QIT2Gja9XLlxjkxP0X8rP1jaKp0tKPQeujsEI1KPSEnHe0y3CvmA02b_egw-AJrCuT5lE0p12J7XfhDYhwRygdscFlhBe7DX43xGrTFHHO4sPdzFb47UZuxbxfs4W_k3qQIutXANviY5X89m_pURTtmkJW_F-vJX27BRbDqbjHfUDkZ_FKiil3PDS143F-y-VBqi_qLBR1PFMAtALPD_sRF-n0_m1Q5aTME', title:'Penguatan UMKM Lokal Menuju Balikpapan sebagai Gerbang Ibu Kota Negara', desc:'Diskusi panel lintas sektoral membahas strategi penguatan ekonomi kerakyatan bagi pelaku usaha kecil menengah di tengah perkembangan IKN.', href:'http://ppidbalikpapan.test/foto'},
+    {cat:'Infrastruktur', catColor:'bg-primary-container', date:'08 MEI 2024', img:'https://lh3.googleusercontent.com/aida-public/AB6AXuA0e-dZU4LdNm4R6_nJqnA8sU9HxhB8IERpfQILakKkJhYA3SFdUb-0KpVCzNOETa_IUQ9y3iB6n1LW0Vs0XcJFrOIiSWblS2j3YSU5_bOSW-P4gPEVS-4ZW9mKkCIXXMrncZjNI2Hx9JjHvgTlR7dLz8DiyI5kFY0RFqUGiHHovlkxCQlbL0JDJL97cBPkq1Vot_VCmf5YaJ41u3r5bZ7WTEuvKFlTRnmn-UH0HiP-dADgBrPJQbzORFEJB7D7K3rjGMFjG-O8', title:'Revitalisasi Kawasan Sudirman Capai 90 Persen, Target Selesai Akhir Tahun', desc:'Proyek perbaikan trotoar dan penambahan taman kota di pusat Balikpapan hampir selesai, menjanjikan kenyamanan lebih bagi pejalan kaki.', href:'http://ppidbalikpapan.test/foto'},
+    {cat:'Pendidikan', catColor:'bg-secondary', date:'05 MEI 2024', img:'https://lh3.googleusercontent.com/aida-public/AB6AXuCt5KKGLhQ00fD-Han0ulVCVw5BjCWo3cE_YzkIO_N8_PBRJPVzLpI5_-P8SNbTspokfEJeCCATptyRK0kB3iBf9cVP284wk85TElszSTww7uh3LgbaTryLordHu_D0dGbOIDdfGo0GNIDKtbw06iLEo8hPc0ilPwBgcVsB5D3pwUK_zJ18gqNgOjHMcrRjnwvIN0mV7b7TS7PEiWu8CgtnFHhrak6dWFv_FAqllCHqYhzaBRZ4_KRYM3HhRr-bnZj04a8t5Lr3h9Ww', title:'Beasiswa Prestasi Balikpapan 2024 Resmi Dibuka, Simak Persyaratannya', desc:'Dinas Pendidikan mengumumkan pembukaan pendaftaran beasiswa bagi mahasiswa asal Balikpapan yang berprestasi di tingkat nasional dan internasional.', href:'http://ppidbalikpapan.test/foto'},
+    {cat:'Smart City', catColor:'bg-primary', date:'01 MEI 2024', img:'https://lh3.googleusercontent.com/aida-public/AB6AXuD4ZjUvliKY0ZCuorwN-5toGXZ_QABJtnYZ2F5wFUDm9QIT2Gja9XLlxjkxP0X8rP1jaKp0tKPQeujsEI1KPSEnHe0y3CvmA02b_egw-AJrCuT5lE0p12J7XfhDYhwRygdscFlhBe7DX43xGrTFHHO4sPdzFb47UZuxbxfs4W_k3qQIutXANviY5X89m_pURTtmkJW_F-vJX27BRbDqbjHfUDkZ_FKiil3PDS143F-y-VBqi_qLBR1PFMAtALPD_sRF-n0_m1Q5aTME', title:'Optimalisasi CCTV Kota untuk Pemantauan Arus Lalu Lintas Real-Time', desc:'Dinas Perhubungan meningkatkan kapasitas server pemantauan untuk integrasi data lalu lintas yang lebih akurat melalui platform Balikpapan Single Window.', href:'http://ppidbalikpapan.test/foto'},
+    // Duplicate with slight variation for pages 2-12
+    {cat:'Pemerintahan', catColor:'bg-secondary', date:'15 APRIL 2026', img:'images/4.jpg', title:'Rapat Koordinasi PPID Se-Kalimantan Timur Digelar di Balikpapan', desc:'Pertemuan rutin PPID seluruh kabupaten/kota di Kaltim membahas standar pelayanan informasi publik yang lebih baik dan transparan.', href:'http://ppidbalikpapan.test/foto'},
+    {cat:'Layanan', catColor:'bg-tertiary-container', date:'14 APRIL 2026', img:'https://lh3.googleusercontent.com/aida-public/AB6AXuCON1MnTytj9ujS8_J-v81rXKNMRNuqd78bSqIPlrG4c97t1eXZm-hLSn4UijawKvKCO62xXBDCKMs9yUGdaFfTrdfAX8LCPk120gMmcCs9d7Zpy_sseEdvASl9YC2vxKTziTINUVKgTA3YvFSGhdeVjIbcCqbKMDt479oKhxqzXI7WHddbe0wRVv-1Oe-2PmFMpqEEMSVPYhGOifupt-UBvwnhp2TY6e_64z0_JqKhzlRCm9jKwN_8xpvfmmbNj4fOCPYpnuxrvqiq', title:'Peluncuran Aplikasi PPID Mobile untuk Kemudahan Akses Informasi', desc:'Pemkot Balikpapan meluncurkan aplikasi mobile PPID yang memudahkan masyarakat mengakses informasi publik kapan saja dan di mana saja.', href:'http://ppidbalikpapan.test/foto'},
+    {cat:'Ekonomi', catColor:'bg-primary', date:'13 APRIL 2026', img:'https://lh3.googleusercontent.com/aida-public/AB6AXuD4ZjUvliKY0ZCuorwN-5toGXZ_QABJtnYZ2F5wFUDm9QIT2Gja9XLlxjkxP0X8rP1jaKp0tKPQeujsEI1KPSEnHe0y3CvmA02b_egw-AJrCuT5lE0p12J7XfhDYhwRygdscFlhBe7DX43xGrTFHHO4sPdzFb47UZuxbxfs4W_k3qQIutXANviY5X89m_pURTtmkJW_F-vJX27BbDqbjHfUDkZ_FKiil3PDS143F-y-VBqi_qLBR1PFMAtALPD_sRF-n0_m1Q5aTME', title:'Festival UMKM Balikpapan 2026 Hadirkan 500 Pelaku Usaha Lokal', desc:'Event tahunan yang menampilkan produk-produk unggulan UMKM Balikpapan berhasil menarik ribuan pengunjung dari berbagai daerah.', href:'http://ppidbalikpapan.test/foto'},
+    {cat:'Infrastruktur', catColor:'bg-primary-container', date:'12 APRIL 2026', img:'https://lh3.googleusercontent.com/aida-public/AB6AXuA0e-dZU4LdNm4R6_nJqnA8sU9HxhB8IERpfQILakKkJhYA3SFdUb-0KpVCzNOETa_IUQ9y3iB6n1LW0Vs0XcJFrOIiSWblS2j3YSU5_bOSW-P4gPEVS-4ZW9mKkCIXXMrncZjNI2Hx9JjHvgTlR7dLz8DiyI5kFY0RFqUGiHHovlkxCQlbL0JDJL97cBPkq1Vot_VCmf5YaJ41u3r5bZ7WTEuvKFlTRnmn-UH0HiP-dADgBrPJQbzORFEJB7D7K3rjGMFjG-O8', title:'Pembangunan Jalan Lingkar Selatan Balikpapan Dimulai Tahun Ini', desc:'Proyek infrastruktur senilai ratusan miliar rupiah ini diharapkan dapat mengurangi kemacetan di jalur utama kota Balikpapan.', href:'http://ppidbalikpapan.test/foto'},
+    {cat:'Kesehatan', catColor:'bg-secondary', date:'11 APRIL 2026', img:'https://lh3.googleusercontent.com/aida-public/AB6AXuCON1MnTytj9ujS8_J-v81rXKNMRNuqd78bSqIPlrG4c97t1eXZm-hLSn4UijawKvKCO62xXBDCKMs9yUGdaFfTrdfAX8LCPk120gMmcCs9d7Zpy_sseEdvASl9YC2vxKTziTINUVKgTA3YvFSGhdeVjIbcCqbKMDt479oKhxqzXI7WHddbe0wRVv-1Oe-2PmFMpqEEMSVPYhGOifupt-UBvwnhp2TY6e_64z0_JqKhzlRCm9jKwN_8xpvfmmbNj4fOCPYpnuxrvqiq', title:'Program Vaksinasi Gratis untuk Lansia Dimulai di 10 Puskesmas', desc:'Dinas Kesehatan Balikpapan menggulirkan program vaksinasi gratis bagi warga lanjut usia sebagai bagian dari program kesehatan masyarakat 2026.', href:'http://ppidbalikpapan.test/foto'},
+    {cat:'Lingkungan', catColor:'bg-tertiary-container', date:'10 APRIL 2026', img:'https://lh3.googleusercontent.com/aida-public/AB6AXuCt5KKGLhQ00fD-Han0ulVCVw5BjCWo3cE_YzkIO_N8_PBRJPVzLpI5_-P8SNbTspokfEJeCCATptyRK0kB3iBf9cVP284wk85TElszSTww7uh3LgbaTryLordHu_D0dGbOIDdfGo0GNIDKtbw06iLEo8hPc0ilPwBgcVsB5D3pwUK_zJ18gqNgOjHMcrRjnwvIN0mV7b7TS7PEiWu8CgtnFHhrak6dWFv_FAqllCHqYhzaBRZ4_KRYM3HhRr-bnZj04a8t5Lr3h9Ww', title:'Balikpapan Raih Penghargaan Kota Hijau Nasional 2026', desc:'Program penghijauan kota dan pengelolaan sampah yang baik membuat Balikpapan kembali meraih penghargaan bergengsi di tingkat nasional.', href:'http://ppidbalikpapan.test/foto'},
+];
+
+// Fill remaining pages with repeated data
+while(fotoItems.length < 72) {
+    var idx = fotoItems.length % 12;
+    var item = Object.assign({}, fotoItems[idx]);
+    fotoItems.push(item);
+}
+
+var ITEMS_PER_PAGE = 6;
+var TOTAL_PAGES = 12;
+var currentPage = 1;
+
+function renderCards(page) {
+    var grid = document.getElementById('news-grid');
+    var start = (page - 1) * ITEMS_PER_PAGE;
+    var items = fotoItems.slice(start, start + ITEMS_PER_PAGE);
+    
+    grid.innerHTML = items.map(function(item) {
+        return '<article class="group bg-surface-container-lowest rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 flex flex-col">' +
+            '<div class="relative overflow-hidden aspect-video">' +
+            '<img alt="' + item.cat + '" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="' + item.img + '"/>' +
+            '<div class="absolute top-4 left-4"><span class="px-3 py-1 ' + item.catColor + ' text-white text-[10px] font-bold uppercase tracking-widest rounded-full">' + item.cat + '</span></div>' +
+            '</div>' +
+            '<div class="p-6 flex flex-col flex-grow">' +
+            '<time class="text-xs font-semibold text-outline mb-3 uppercase tracking-tighter">' + item.date + '</time>' +
+            '<h3 class="text-xl font-headline font-bold text-on-surface leading-snug group-hover:text-primary transition-colors mb-3">' + item.title + '</h3>' +
+            '<p class="text-on-surface-variant text-sm line-clamp-3 mb-6">' + item.desc + '</p>' +
+            '<div class="mt-auto flex items-center justify-between">' +
+            '<a class="text-primary font-bold text-sm flex items-center gap-2 group/btn" href="' + item.href + '">' +
+            'Selengkapnya <span class="material-symbols-outlined text-sm group-hover/btn:translate-x-1 transition-transform">arrow_forward</span></a>' +
+            '</div></div></article>';
+    }).join('');
+}
+
+function renderPagination(page) {
+    var container = document.getElementById('pagination-container');
+    var btnBase = 'w-10 h-10 flex items-center justify-center rounded-lg font-bold transition-colors cursor-pointer ';
+    var btnActive = btnBase + 'bg-primary text-white';
+    var btnNormal = btnBase + 'bg-surface-container text-on-surface hover:bg-surface-container-high';
+    var btnNav = btnBase + 'bg-surface-container text-outline hover:bg-primary hover:text-white';
+
+    var html = '<button class="' + btnNav + '" onclick="goPage(' + (page-1) + ')"><span class="material-symbols-outlined">chevron_left</span></button>';
+    
+    // Show pages: 1, ..., prev, current, next, ..., 12
+    var pages = [];
+    pages.push(1);
+    if(page > 3) pages.push('...');
+    for(var i = Math.max(2, page-1); i <= Math.min(TOTAL_PAGES-1, page+1); i++) pages.push(i);
+    if(page < TOTAL_PAGES - 2) pages.push('...');
+    if(TOTAL_PAGES > 1) pages.push(TOTAL_PAGES);
+
+    pages.forEach(function(p) {
+        if(p === '...') {
+            html += '<span class="px-2 text-outline">...</span>';
+        } else {
+            html += '<button class="' + (p === page ? btnActive : btnNormal) + '" onclick="goPage(' + p + ')">' + p + '</button>';
+        }
+    });
+
+    html += '<button class="' + btnNav + '" onclick="goPage(' + (page+1) + ')"><span class="material-symbols-outlined">chevron_right</span></button>';
+    container.innerHTML = html;
+}
+
+function goPage(page) {
+    if(page < 1 || page > TOTAL_PAGES) return;
+    currentPage = page;
+    renderCards(page);
+    renderPagination(page);
+    window.scrollTo({top: document.getElementById('foto-grid').offsetTop - 100, behavior: 'smooth'});
+}
+
+// Init
+renderCards(1);
+renderPagination(1);
 </script>
 </body></html>
