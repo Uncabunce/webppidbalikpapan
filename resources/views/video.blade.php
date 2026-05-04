@@ -576,12 +576,101 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 </nav>
 </div>
 </header>
-<main class="bg-surface min-h-screen">
-    <!-- Konten halaman di sini -->
-    <div class="max-w-7xl mx-auto px-4 md:px-6 py-12">
-        <p class="text-on-surface-variant text-center">Konten halaman</p>
+<main class="w-full bg-surface-container-lowest pb-8">
+    <!-- Title Section: Background Image with Fade -->
+<section class="relative py-28 overflow-hidden border-b border-outline-variant/10">
+<!-- Background Layer -->
+<div class="absolute inset-0 z-0">
+<img alt="" class="w-full h-full object-cover opacity-70" src="sinarmasbpp.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-b from-transparent via-white/80 to-white"></div>
+</div>
+<div class="max-w-7xl mx-auto px-6 relative z-10">
+<nav class="flex mb-4 text-xs font-medium text-outline uppercase tracking-widest gap-2">
+<a href="http://ppidbalikpapan.test">Beranda</a>
+<span>/</span>
+<span class="text-primary">Galeri</span>
+</nav>
+<h1 class="text-5xl md:text-6xl font-headline font-extrabold text-primary leading-tight">
+                    Dokumentasi <span class="text-secondary">Kegiatan</span>
+</h1>
+<p class="mt-6 text-lg text-on-surface-variant max-w-2xl leading-relaxed">
+                    Kumpulan Dokumentasi kegiatan PPID Kota Balikpapan yang dapat diakses oleh masyarakat umum.
+                </p>
+</div>
+</section>
+    <div class="max-w-7xl mx-auto px-4 md:px-6 flex flex-col md:flex-row gap-8">
+        
+        <!-- Sidebar Filter (Gaya Jakarta Pusat) -->
+        <aside class="w-full md:w-1/4 flex-shrink-0">
+            <div class="bg-white border border-outline-variant/50 rounded-lg p-5 shadow-sm sticky top-32">
+                <h3 class="font-headline font-bold text-lg text-primary mb-5 border-b border-outline-variant/30 pb-2">Filter</h3>
+                
+                <!-- Dropdown Kategori -->
+                <div class="mb-4">
+                    <label class="block text-sm font-semibold text-on-surface mb-2 font-headline">Kategori</label>
+                    <select class="w-full border border-outline-variant/50 rounded text-sm text-on-surface focus:ring-primary focus:border-primary p-2.5 bg-surface-bright outline-none">
+                        <option>Berita Video</option>
+                        <option>Kegiatan Wali Kota</option>
+                        <option>Infrastruktur</option>
+                    </select>
+                </div>
+                
+                <!-- Input Tanggal -->
+                <div class="mb-6">
+                    <label class="block text-sm font-semibold text-on-surface mb-2 font-headline">Tanggal Berita</label>
+                    <input type="date" class="w-full border border-outline-variant/50 rounded text-sm text-on-surface focus:ring-primary focus:border-primary p-2.5 bg-surface-bright outline-none">
+                </div>
+                
+                <!-- Tombol Reset -->
+                <button class="w-full bg-surface-container hover:bg-surface-container-high text-on-surface font-semibold py-2.5 rounded transition-colors text-sm border border-outline-variant/30">
+                    Reset
+                </button>
+            </div>
+        </aside>
+
+        <!-- Main Content Grid & Pagination -->
+        <section class="w-full md:w-3/4">
+<!-- Card Item (Contoh Video Balikpapan) -->
+<div class="bg-white rounded-lg overflow-hidden shadow-md group border border-slate-100">
+    <!-- Thumbnail Video -->
+    <div class="relative aspect-video bg-slate-200 overflow-hidden">
+        <!-- Mengambil thumbnail otomatis dari YouTube -->
+        <img src="https://img.youtube.com/vi/VEZ1vXcvXNI/mqdefault.jpg" 
+             alt="Balikpapan Kota Kreatif" 
+             class="w-full h-full object-cover">
+        
+        <!-- Tombol Play -->
+<a href="https://www.youtube.com/watch?v=VEZ1vXcvXNI" target="_blank" 
+   class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/40 transition-all">
+    <div class="w-14 transition-transform group-hover:scale-110">
+        <!-- SVG Logo YouTube (Icon Play Merah Putih) -->
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814Z" fill="#FF0000"/>
+            <path d="m9.545 15.568 6.273-3.568-6.273-3.568v7.136Z" fill="#fff"/>
+        </svg>
     </div>
+</a>
+
+        <!-- Durasi Video (Optional) -->
+        <div class="absolute bottom-2 right-2 bg-black/70 text-white text-[10px] px-1.5 py-0.5 rounded">
+            02:12
+        </div>
+    </div>
+
+    <!-- Info Bawah -->
+    <div class="p-4">
+        <p class="text-blue-600 text-[10px] font-bold uppercase mb-1">07 Januari 2026</p>
+        <h3 class="text-sm font-bold text-slate-800 line-clamp-2 hover:text-blue-700">
+            BALIKPAPAN KOTA KREATIF DAN INNOVATIF
+        </h3>
+        <p class="text-xs text-slate-500 mt-2">Pemerintah Kota Balikpapan</p>
+    </div>
+</div> 
+</section>
 </main>
+
+    </div>
+</div>
 
 <script>
 (function(){

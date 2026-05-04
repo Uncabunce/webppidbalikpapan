@@ -1011,6 +1011,8 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 
 </div>
 </div>
+
+<!-- galeri video -->
 </section>
 <section class="py-4 bg-surface-container-lowest">
     <div class="max-w-7xl mx-auto px-4">
@@ -1058,6 +1060,7 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
     </div>
 </section>
 
+<!-- galeri foto -->
 <section class="py-20 bg-surface">
     <div class="max-w-7xl mx-auto px-4">
         <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-4">
@@ -1087,7 +1090,7 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 
             <div class="group cursor-pointer">
                 <div class="rounded-2xl overflow-hidden aspect-[4/3] mb-4 shadow-sm">
-                    <img src="" alt="Foto 2" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    <img src="testG2.jpg" alt="Foto 2" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
                 </div>
                 <h3 class="text-lg font-bold text-on-surface leading-snug group-hover:text-primary transition-colors line-clamp-2">tes</h3>
                 <p class="text-on-surface-variant text-sm mt-2 flex items-center gap-2">
@@ -1097,7 +1100,7 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 
             <div class="group cursor-pointer">
                 <div class="rounded-2xl overflow-hidden aspect-[4/3] mb-4 shadow-sm">
-                    <img src="" alt="Foto 3" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    <img src="testG3.jpg" alt="Foto 3" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
                 </div>
                 <h3 class="text-lg font-bold text-on-surface leading-snug group-hover:text-primary transition-colors line-clamp-2">tes</h3>
                 <p class="text-on-surface-variant text-sm mt-2 flex items-center gap-2">

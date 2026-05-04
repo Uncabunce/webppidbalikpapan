@@ -576,96 +576,13 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 </nav>
 </div>
 </header>
-<main class="pt-14 pb-10 min-h-screen">
-<div class="max-w-4xl mx-auto px-6">
-<div class="mb-12">
-<div class="inline-block px-4 py-1.5 bg-secondary-container text-on-secondary-container rounded-full text-xs font-bold tracking-widest uppercase mb-4">Layanan Publik</div>
-<h1 class="text-4xl md:text-5xl font-extrabold text-primary tracking-tight leading-tight mb-4">Formulir Keberatan</h1>
-<p class="text-lg text-on-surface-variant max-w-2xl leading-relaxed pb-4">Pernyataan Keberatan atas informasi pelayanan publik.</p>
-<form class="space-y-8">
-<!-- Section 1: DATA PEMOHON INFORMASI -->
-<section class="form-card bg-surface-container-lowest p-8 rounded-xl shadow-[0_32px_32px_-4px_rgba(25,28,29,0.06)]">
-<div class="flex items-center gap-3 mb-8">
-<div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-on-primary font-bold">I</div>
-<h2 class="text-xl font-bold text-primary uppercase">Informasi Pengajuan Keberatan</h2>
-</div>
-<div class="space-y-6">
-<div class="grid grid-cols-1 md:grid-cols-3 items-center gap-10">
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 items-center gap-10">
-<label class="text-sm font-bold text-primary">No. Permohonan Permintaan</label>
-<div class="md:col-span-2">
-<input class="w-full bg-surface-container-high border-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary" type="text"/>
-</div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 items-center gap-10">
-<label class="text-sm font-bold text-primary">Tujuan Penggunaan Informasi</label>
-<div class="md:col-span-2">
-<input class="w-full bg-surface-container-high border-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary" type="text"/>
-</div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 items-start gap-10">
-<label class="text-sm font-bold text-primary mt-3">Nama Lengkap</label>
-<div class="md:col-span-2">
-<input class="w-full bg-surface-container-high border-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary" type="text"/>
-</div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 items-start gap-10">
-<label class="text-sm font-bold text-primary mt-3">Alamat</label>
-<div class="md:col-span-2">
-<input class="w-full bg-surface-container-high border-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary" type="text"/>
-</div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 items-start gap-10">
-<label class="text-sm font-bold text-primary mt-3">Email</label>
-<div class="md:col-span-2">
-<input class="w-full bg-surface-container-high border-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary" type="email"/>
-<p class="text-xs text-on-surface-variant font-medium italic">* email harus aktif</p>
-</div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 items-start gap-10">
-<label class="text-sm font-bold text-primary mt-3">no. Telp</label>
-<div class="md:col-span-2">
-<input class="w-full bg-surface-container-high border-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary" type="tel"/>
-</div>
-</div>
-</section>
-<!-- Section 2: INFORMASI YANG DIBUTUHKAN -->
-<section class="form-card bg-surface-container-lowest p-8 rounded-xl shadow-[0_32px_32px_-4px_rgba(25,28,29,0.06)]">
-<div class="flex items-center gap-3 mb-8">
-<div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-on-primary font-bold">II</div>
-<h2 class="text-xl font-bold text-primary uppercase">Alasan Pengajuan Keberatan</h2>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 items-start gap-10">
-<label class="text-sm font-bold text-primary mt-3">Informasi Yang Dibutuhkan</label>
-<div class="md:col-span-2">
-    <div class="relative w-full group">
-                                <button class="w-full flex justify-between items-center bg-surface-container-high border-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary text-left text-sm" onclick="this.nextElementSibling.classList.toggle('show'); this.querySelector('.arrow').classList.toggle('rotate-180')" type="button">
-                                    <span class="selected-text">-- pilih --</span>
-                                    <span class="material-symbols-outlined arrow transition-transform">expand_more</span>
-                                </button>
-                                <div class="dropdown-content absolute left-0 right-0 top-full mt-1 bg-white border border-outline-variant rounded-lg shadow-xl z-10 overflow-hidden hidden [&.show]:block">
-                                    <div class="px-4 py-3 text-sm hover:bg-primary hover:text-white cursor-pointer transition-colors" onclick="let container=this.closest('.relative'); container.querySelector('.selected-text').innerText=this.innerText; container.querySelector('.dropdown-content').classList.remove('show'); container.querySelector('.arrow').classList.remove('rotate-180')">-- pilih --</div>
-                                    <div class="px-4 py-3 text-sm hover:bg-primary hover:text-white cursor-pointer transition-colors" onclick="let container=this.closest('.relative'); container.querySelector('.selected-text').innerText=this.innerText; container.querySelector('.dropdown-content').classList.remove('show'); container.querySelector('.arrow').classList.remove('rotate-180')">Permohonan Informasi Ditolak</div>
-                                    <div class="px-4 py-3 text-sm hover:bg-primary hover:text-white cursor-pointer transition-colors" onclick="let container=this.closest('.relative'); container.querySelector('.selected-text').innerText=this.innerText; container.querySelector('.dropdown-content').classList.remove('show'); container.querySelector('.arrow').classList.remove('rotate-180')">Informasi Berkala Tidak Disediakan</div>
-                                    <div class="px-4 py-3 text-sm hover:bg-primary hover:text-white cursor-pointer transition-colors" onclick="let container=this.closest('.relative'); container.querySelector('.selected-text').innerText=this.innerText; container.querySelector('.dropdown-content').classList.remove('show'); container.querySelector('.arrow').classList.remove('rotate-180')">Permintaan Informasi Tidak Ditanggapi</div>
-                                    <div class="px-4 py-3 text-sm hover:bg-primary hover:text-white cursor-pointer transition-colors" onclick="let container=this.closest('.relative'); container.querySelector('.selected-text').innerText=this.innerText; container.querySelector('.dropdown-content').classList.remove('show'); container.querySelector('.arrow').classList.remove('rotate-180')">Permintaan Informasi Ditanggapi Tidak Sebagaimana yang Diminta</div>
-                                    <div class="px-4 py-3 text-sm hover:bg-primary hover:text-white cursor-pointer transition-colors" onclick="let container=this.closest('.relative'); container.querySelector('.selected-text').innerText=this.innerText; container.querySelector('.dropdown-content').classList.remove('show'); container.querySelector('.arrow').classList.remove('rotate-180')">Permintaan Informasi Tidak Dipenuhi</div>
-                                    <div class="px-4 py-3 text-sm hover:bg-primary hover:text-white cursor-pointer transition-colors" onclick="let container=this.closest('.relative'); container.querySelector('.selected-text').innerText=this.innerText; container.querySelector('.dropdown-content').classList.remove('show'); container.querySelector('.arrow').classList.remove('rotate-180')">Biaya yang Digunakan Tidak Wajar</div>
-                                    <div class="px-4 py-3 text-sm hover:bg-primary hover:text-white cursor-pointer transition-colors" onclick="let container=this.closest('.relative'); container.querySelector('.selected-text').innerText=this.innerText; container.querySelector('.dropdown-content').classList.remove('show'); container.querySelector('.arrow').classList.remove('rotate-180')">Informasi yang Disampaikan Melebihi Batas Waktu yang Ditentukan</div>
-                                </div>
-                            </div>
-</div>
-</div>
-</section>
-
-<button class="mt-8 w-full md:w-auto px-12 py-4 space-y-8 bg-primary text-on-primary rounded-xl font-extrabold text-lg shadow-lg hover:shadow-xl hover:translate-y-[-2px] transition-all flex items-center justify-center gap-3" type="submit">
-                        Kirim Permohonan
-                        <span class="material-symbols-outlined">send</span>
-</button>
-</div>
-</form>
-</div>
+<main class="bg-surface min-h-screen">
+    <!-- ================================ -->
+    <!-- KONTEN HALAMAN DI SINI          -->
+    <!-- ================================ -->
+    <div class="max-w-7xl mx-auto px-4 md:px-6 py-10">
+        <p class="text-on-surface-variant text-center text-sm">Konten halaman</p>
+    </div>
 </main>
 <footer id="kontak" class="bg-slate-800 dark:bg-slate-600 w-full pt-16 md:pt-20 pb-8 border-t border-slate-600 dark:border-slate-800">
 <div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto px-4 md:px-6 font-['Inter'] text-sm leading-relaxed">
@@ -713,6 +630,38 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 </div>
 </footer>
 <script>
+(function(){
+    var n=document.getElementById('desktop-nav');
+    if(!n)return;
+    function applyNav(){
+        if(window.innerWidth<768){
+            n.style.cssText='display:none!important;height:0!important;overflow:hidden!important;';
+        }else{
+            n.style.cssText='display:block!important;height:44px!important;overflow:visible!important;position:relative;z-index:9999;';
+        }
+    }
+    applyNav();
+    window.addEventListener('resize', applyNav);
+})();
+</script>
+
+<script>
+(function(){
+    var n=document.getElementById('desktop-nav');
+    if(!n)return;
+    function applyNav(){
+        if(window.innerWidth<768){
+            n.style.cssText='display:none!important;height:0!important;overflow:hidden!important;';
+        }else{
+            n.style.cssText='display:block!important;height:44px!important;overflow:visible!important;position:relative;z-index:9999;';
+        }
+    }
+    applyNav();
+    window.addEventListener('resize',applyNav);
+})();
+</script>
+
+<script>
     function updateClock() {
         const now = new Date();
         const days = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
@@ -752,6 +701,7 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
     setInterval(updateClock, 1000);
     updateClock();
 </script>
+
 <script>
     // Hide/show desktop nav based on screen width
     function hideShowNav() {
@@ -896,4 +846,6 @@ positionMegaMenu();
     });
 })();
 </script>
-</body></html>
+
+</body>
+</html>
