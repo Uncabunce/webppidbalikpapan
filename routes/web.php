@@ -1,6 +1,10 @@
 <?php
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Admin\AdminAuthController;
+use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\NewsController;
+use App\Http\Controllers\NewsPublicController; 
 
 Route::get('/', function () {
     return view('home');
@@ -30,6 +34,8 @@ Route::get('/news', function () {
 Route::get('/news/{page}', function ($page) {
     return view('news', ['page' => $page]);
 })->where('page', '[0-9]+');
+
+Route::get('/news/{slug}', [NewsPublicController::class, 'show'])->name('news.show');
 
 Route::get('/foto/{page}', function ($page) {
     return view('foto', ['page' => $page]);
@@ -278,4 +284,21 @@ Route::get('/sop/standarpelayanan', function () {
 });
 Route::get('/sop/tatacarapengaduan', function () {
     return view('mega menu.sop ppid.tatacarapengaduan');
+});
+
+Route::prefix('admin')->name('admin.')->group(function () {
+
+    // Login
+    Route::middleware('admin.guest')->group(function () {
+        Route::get('/login', [AdminAuthController::class, 'showLogin'])->name('login');
+        Route::post('/login', [AdminAuthController::class, 'login'])->name('login.post');
+    });
+
+    // Protected
+    Route::middleware('admin.auth')->group(function () {
+        Route::post('/logout', [AdminAuthController::class, 'logout'])->name('logout');
+        Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
+        Route::resource('news', NewsController::class);
+    });
+
 });
