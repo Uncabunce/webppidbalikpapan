@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use App\Models\Admin;
 
 class AdminAuthController extends Controller
 {
@@ -21,10 +22,17 @@ class AdminAuthController extends Controller
             'password' => ['required', 'string'],
         ]);
 
-        if (Auth::guard('admin')->attempt($credentials, $request->boolean('remember'))) {
+        if (Auth::guard('admin')->attempt($credentials)) {
             $request->session()->regenerate();
-            return redirect()->route('admin.dashboard')
-                ->with('success', 'Selamat datang, ' . Auth::guard('admin')->user()->username . '!');
+            return redirect()->route('admin.dashboard');
+        }
+
+        $userExists = Admin::where('username', '=', $request->username, 'and')->first();
+
+        if (!$userExists) {
+            dd('Username tidak ditemukan di database PostgreSQL!');
+        } else {
+            dd('Username ADA, tapi Password salah atau belum di-hash!');
         }
 
         return back()

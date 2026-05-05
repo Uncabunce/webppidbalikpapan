@@ -10,8 +10,8 @@ class AdminSeeder extends Seeder
     public function run(): void
     {
         Admin::updateOrCreate(
-            ['username' => 'admin'],
-            ['password' => Hash::make('ppid2024!')]
+            ['username' => 'postgres'],
+            ['password' => Hash::make('Asu_k4yan9@$')]
         );
     }
 }
