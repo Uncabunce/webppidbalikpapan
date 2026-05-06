@@ -581,7 +581,8 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
     <!-- KONTEN HALAMAN DI SINI          -->
     <!-- ================================ -->
     <div class="max-w-7xl mx-auto px-4 md:px-6 py-10">
-        <p class="text-on-surface-variant text-center text-sm">Konten halaman</p>
+        <h3 class="text-on-surface-variant text-center text-sm">Struktur Organisasi</h3>
+        <img src="/struktur_organisasi.png" alt="struktur organisasi" class="mx-auto">
     </div>
 </main>
 

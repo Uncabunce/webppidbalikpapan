@@ -32,4 +32,6 @@ class NewsPublicController extends Controller
 
         return view('news.show', compact('news', 'related'));
     }
+    
 }
+

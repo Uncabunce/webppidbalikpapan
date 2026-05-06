@@ -581,10 +581,102 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
     <!-- KONTEN HALAMAN DI SINI          -->
     <!-- ================================ -->
     <div class="max-w-7xl mx-auto px-4 md:px-6 py-10">
-        <p class="text-on-surface-variant text-center text-sm">Konten halaman</p>
+        <!-- Section: Lokasi Balai Kota -->
+<div class="max-w-7xl mx-auto px-4 md:px-6 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+        
+        <!-- Left Side: Address Description -->
+        <div class="space-y-4">
+            <h2 class="text-2xl font-black text-primary uppercase tracking-tight">Kantor Wali Kota Balikpapan</h2>
+            <div class="w-20 h-1.5 bg-[#fdc003] rounded-full"></div>
+            
+            <div class="space-y-4 mt-6">
+                <div class="flex items-start space-x-3">
+                    <svg class="w-6 h-6 text-primary mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    <p class="text-slate-600 leading-relaxed">
+                        <span class="font-bold block text-slate-800">Alamat:</span>
+                        Jl. Jenderal Sudirman No.1, Klandasan Ulu, Kec. Balikpapan Kota, Kota Balikpapan, Kalimantan Timur 76112
+                    </p>
+                </div>
+
+                <div class="flex items-start space-x-3">
+                    <svg class="w-6 h-6 text-primary mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <p class="text-slate-600 leading-relaxed">
+                        <span class="font-bold block text-slate-800">Jam Operasional:</span>
+                        Senin - Kamis: 08.00 - 16.00 WITA<br>
+                        Jumat: 08.00 - 11.30 WITA
+                    </p>
+                </div>
+            </div>
+
+            <div class="pt-4">
+                <a href="https://maps.app.goo.gl/f3Wnts4GzBkovxJT8" target="_blank" class="inline-flex items-center px-5 py-2.5 bg-primary text-white font-bold text-sm rounded-lg hover:bg-opacity-90 transition-all">
+                    Buka di Google Maps
+                </a>
+            </div>
+        </div>
+
+        <!-- Right Side: Google Maps Embed -->
+        <div class="w-full h-[350px] rounded-xl overflow-hidden shadow-inner border border-slate-200">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63821.253001534766!2d116.75573272167965!3d-1.2764074999999773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df1473bb9404897%3A0x94d96108f98b652c!2sBalikpapan%20Mayor&#39;s%20Office!5e0!3m2!1sen!2ssg!4v1776063788871!5m2!1sen!2ssg" 
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+</div>
     </div>
 </main>
-
+<footer id="kontak" class="bg-slate-800 dark:bg-slate-600 w-full pt-16 md:pt-20 pb-8 border-t border-slate-600 dark:border-slate-800">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto px-4 md:px-6 font-['Inter'] text-sm leading-relaxed">
+<!-- Brand & Map -->
+<div class="md:col-span-2">
+<div class="text-xl md:text-2xl font-bold text-yellow-600 dark:text-blue-100 mb-6 font-headline">PPID Kota Balikpapan</div>
+<p class="text-slate-400 dark:text-slate-400 max-w-md mb-8">
+                Pejabat Pengelola Informasi dan Dokumentasi (PPID) Utama Pemerintah Kota Balikpapan bertanggung jawab untuk penyimpanan, pendokumentasian, penyediaan, dan pelayanan informasi publik.
+            </p>
+<div class="w-full rounded-xl overflow-hidden shadow-md" style="aspect-ratio:16/9;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63821.253001534766!2d116.75573272167965!3d-1.2764074999999773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df1473bb9404897%3A0x94d96108f98b652c!2sBalikpapan%20Mayor&#39;s%20Office!5e0!3m2!1sen!2ssg!4v1776063788871!5m2!1sen!2ssg" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+</div>
+<!-- Contacts -->
+<div>
+<h4 class="font-headline font-bold text-yellow-600 dark:text-blue-100 text-lg mb-7">Kontak Kami</h4>
+<ul class="space-y-4 text-slate-400 dark:text-slate-400">
+<li class="flex gap-3">
+<span class="material-symbols-outlined text-secondary shrink-0" data-icon="location_on">location_on</span>
+<span class="text-xs md:text-sm">Jl. Jenderal Sudirman No.1, Klandasan Ulu, Balikpapan Kota, Kota Balikpapan, Kalimantan Timur 76112</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary shrink-0" data-icon="call">call</span>
+<span class="text-xs md:text-sm">(0542) 421420</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary shrink-0" data-icon="mail">mail</span>
+<span class="text-xs md:text-sm break-all">ppid@balikpapan.go.id</span>
+</li>
+</ul>
+</div>
+<!-- Quick Links -->
+<div>
+<h4 class="font-headline font-bold text-yellow-600 dark:text-blue-100 text-lg mb-6">Peta Situs</h4>
+<ul class="space-y-3">
+<li><a class="text-slate-400 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline-offset-4 hover:underline ease-in-out duration-200 text-xs md:text-sm" href="whistleblower.blade.php">Whistleblower System</a></li>
+<li><a class="text-slate-400 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline-offset-4 hover:underline ease-in-out duration-200 text-xs md:text-sm" href="#">Lapor!</a></li>
+<li><a class="text-slate-400 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline-offset-4 hover:underline ease-in-out duration-200 text-xs md:text-sm" href="#">Data Terbuka</a></li>
+<li><a class="text-slate-400 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline-offset-4 hover:underline ease-in-out duration-200 text-xs md:text-sm font-semibold" href="#">Kebijakan Privasi</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-4 md:px-6 mt-16 pt-8 border-t border-slate-600 dark:border-slate-800 text-center">
+<p class="text-slate-400 dark:text-slate-400 text-[10px] md:text-xs">
+    © {{ date('Y') }} Pemerintah Kota Balikpapan. PPID Utama. All rights reserved.
+</p>
+</div>
+</footer>
 <script>
 (function(){
     var n=document.getElementById('desktop-nav');

@@ -12,12 +12,37 @@
 <aside class="w-64 h-screen bg-white shadow fixed">
   <div class="p-4 text-xl font-bold border-b">PPID Admin</div>
   <ul class="p-4 space-y-2">
-    <li><a href="#" class="block p-2 rounded hover:bg-gray-100">Dashboard</a></li>
+    <li><a href="{{ route('admin.dashboard') }}" class="block p-2 rounded hover:bg-gray-100">Dashboard</a></li>
     <li><a href="#" class="block p-2 rounded hover:bg-gray-100">Permohonan</a></li>
     <li><a href="#" class="block p-2 rounded hover:bg-gray-100">Dokumen</a></li>
-    <li><a href="#" class="block p-2 rounded hover:bg-gray-100">User</a></li>
+
+    <!-- Berita dengan Submenu -->
+    <li>
+      <button onclick="toggleBerita()" class="w-full text-left p-2 rounded hover:bg-gray-100 flex justify-between items-center">
+        <span>Berita</span>
+        <span id="berita-arrow" class="text-xs text-gray-400">▼</span>
+      </button>
+      <ul id="berita-submenu" class="hidden ml-3 mt-1 space-y-1 border-l-2 border-blue-100 pl-2">
+        <li>
+          <a href="{{ route('admin.news.create') }}" class="block p-2 rounded hover:bg-blue-50 text-blue-600 text-sm">
+            + Tambah Berita
+          </a>
+        </li>
+        <li>
+          <a href="{{ route('admin.news.index') }}" class="block p-2 rounded hover:bg-blue-50 text-blue-600 text-sm">
+            ✏ Edit Berita
+          </a>
+        </li>
+      </ul>
+    </li>
+
     <li><a href="#" class="block p-2 rounded hover:bg-gray-100">Laporan</a></li>
+    <li><a href="#" class="block p-2 rounded hover:bg-gray-100">Pengaturan</a></li>
   </ul>
+  <form action="{{ route('admin.logout') }}" method="POST" class="px-4 mt-2">
+    @csrf
+    <button type="submit" class="w-full bg-blue-600 text-white px-8 py-2 rounded hover:bg-blue-700">Logout</button>
+  </form>
 </aside>
 
 <!-- Main Content -->
@@ -26,7 +51,6 @@
   <!-- Header -->
   <div class="flex justify-between items-center mb-6">
     <h1 class="text-2xl font-semibold">Dashboard</h1>
-    <button class="bg-blue-600 text-white px-4 py-2 rounded">Logout</button>
   </div>
 
   <!-- Cards -->
@@ -74,5 +98,25 @@
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+<script>
+function toggleBerita() {
+    var menu = document.getElementById('berita-submenu');
+    var arrow = document.getElementById('berita-arrow');
+    if (menu.classList.contains('hidden')) {
+        menu.classList.remove('hidden');
+        arrow.textContent = '▲';
+    } else {
+        menu.classList.add('hidden');
+        arrow.textContent = '▼';
+    }
+}
+
+// Auto buka submenu kalau sedang di halaman news
+var path = window.location.pathname;
+if (path.includes('/admin/news')) {
+    document.getElementById('berita-submenu').classList.remove('hidden');
+    document.getElementById('berita-arrow').textContent = '▲';
+}
+</script>
 </body>
 </html>

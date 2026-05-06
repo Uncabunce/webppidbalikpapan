@@ -611,38 +611,6 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
     referrerpolicy="no-referrer-when-downgrade""></iframe>
 </div>
 </div>
-<!-- Contact Form -->
-<div class="bg-surface-container-low rounded-xl p-8 md:p-10 shadow-sm">
-<div class="mb-8 flex items-center gap-4">
-<div class="w-1.5 h-10 bg-secondary-container rounded-full"></div>
-<h2 class="text-2xl font-headline font-bold text-primary">Kirim Pesan</h2>
-</div>
-<form class="space-y-6">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-<div class="space-y-2">
-<label class="text-xs font-label font-bold text-outline-variant uppercase tracking-wider">Nama Lengkap</label>
-<input class="w-full bg-surface-container-lowest border-none rounded-xl p-4 text-sm focus:ring-2 focus:ring-primary/10 transition-all placeholder:text-outline/40" placeholder="Masukkan nama Anda" type="text"/>
-</div>
-<div class="space-y-2">
-<label class="text-xs font-label font-bold text-outline-variant uppercase tracking-wider">Alamat Email</label>
-<input class="w-full bg-surface-container-lowest border-none rounded-xl p-4 text-sm focus:ring-2 focus:ring-primary/10 transition-all placeholder:text-outline/40" placeholder="example@email.com" type="email"/>
-</div>
-</div>
-<div class="space-y-2">
-<label class="text-xs font-label font-bold text-outline-variant uppercase tracking-wider">Nomor Telepon</label>
-<input class="w-full bg-surface-container-lowest border-none rounded-xl p-4 text-sm focus:ring-2 focus:ring-primary/10 transition-all placeholder:text-outline/40" placeholder="+62 812..." type="tel"/>
-</div>
-<div class="space-y-2">
-<label class="text-xs font-label font-bold text-outline-variant uppercase tracking-wider">Pesan Anda</label>
-<textarea class="w-full bg-surface-container-lowest border-none rounded-xl p-4 text-sm focus:ring-2 focus:ring-primary/10 transition-all placeholder:text-outline/40 resize-none" placeholder="Tuliskan pertanyaan atau aspirasi Anda di sini..." rows="5"></textarea>
-</div>
-<button class="w-full md:w-auto px-10 py-4 bg-error text-white font-headline font-extrabold rounded-xl shadow-lg shadow-error/20 hover:scale-[1.02] active:scale-95 transition-all duration-300 flex items-center justify-center gap-3" type="submit">
-<span>KIRIM PESAN</span>
-<span class="material-symbols-outlined text-xl">send</span>
-</button>
-</form>
-</div>
-</div>
 <!-- Right Column: Info -->
 <div class="lg:col-span-5 space-y-8">
 <!-- Main Office Info -->
@@ -726,55 +694,9 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 </main>
 <!-- Footer -->
 <footer class="bg-slate-950 text-white w-full">
-<div class="max-w-screen-2xl mx-auto px-8 py-16">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
-<div class="md:col-span-1">
-<div class="flex items-center gap-3 mb-6">
-<div class="w-10 h-10 bg-white rounded-lg p-2">
-<img alt="Logo" class="w-full h-full object-contain" data-alt="Small emblem of Balikpapan city on a white square background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdHltMLAWHF-RDzr_iXQnP_w-qT1bwS7RXkVy7Yoy99vUQu73-I5xG6Hi5tW55RDIpfIqev4checRLrvGc-xcHL7gxxR4mraS5uxCo4sNXXjNredQ0CWrkYUTIgnKzwWGBGr5NRs-Z-LO40-hqct3u0bDbqK0opj4DmEm_t_Ae4blphfP9i5GBLaXr5Ac2BsKF39OdFL03wJu65Q92YiU1mZh3OzfLbGsJMnxseJTxApGrBTf428_Pxxo4lYexhITporDmTZO7Cli6"/>
-</div>
-<span class="text-xl font-headline font-extrabold">PPID</span>
-</div>
-<p class="text-slate-400 text-sm leading-relaxed mb-6">
-                        Layanan Pejabat Pengelola Informasi dan Dokumentasi Pemerintah Kota Balikpapan untuk transparansi dan keterbukaan publik.
-                    </p>
-</div>
-<div>
-<h4 class="font-headline font-bold text-amber-500 mb-6 uppercase text-xs tracking-widest">Informasi</h4>
-<ul class="space-y-3 text-sm text-slate-400">
-<li><a class="hover:text-white transition-colors" href="#">Profil PPID</a></li>
-<li><a class="hover:text-white transition-colors" href="#">Tugas &amp; Fungsi</a></li>
-<li><a class="hover:text-white transition-colors" href="#">Struktur Organisasi</a></li>
-<li><a class="hover:text-white transition-colors" href="#">Dasar Hukum</a></li>
-</ul>
-</div>
-<div>
-<h4 class="font-headline font-bold text-amber-500 mb-6 uppercase text-xs tracking-widest">Layanan</h4>
-<ul class="space-y-3 text-sm text-slate-400">
-<li><a class="hover:text-white transition-colors" href="#">Permohonan Informasi</a></li>
-<li><a class="hover:text-white transition-colors" href="#">Keberatan Informasi</a></li>
-<li><a class="hover:text-white transition-colors" href="#">Penyelesaian Sengketa</a></li>
-<li><a class="hover:text-white transition-colors" href="#">Standar Layanan</a></li>
-</ul>
-</div>
-<div>
-<h4 class="font-headline font-bold text-amber-500 mb-6 uppercase text-xs tracking-widest">Bantuan</h4>
-<ul class="space-y-3 text-sm text-slate-400">
-<li><a class="hover:text-white transition-colors" href="#">Kebijakan Privasi</a></li>
-<li><a class="hover:text-white transition-colors" href="#">Peta Situs</a></li>
-<li><a class="hover:text-white transition-colors" href="#">Kontak Kami</a></li>
-<li><a class="hover:text-white transition-colors" href="#">FAQ</a></li>
-</ul>
-</div>
-</div>
 <div class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
-<p class="text-slate-500 text-xs">© 2024 Pemerintah Kota Balikpapan. PPID Layanan Informasi Publik.</p>
-<div class="flex gap-6 text-[10px] uppercase font-bold tracking-widest text-slate-500">
-<a class="hover:text-amber-500" href="#">Diskominfo</a>
-<a class="hover:text-amber-500" href="#">Portal Berita</a>
-<a class="hover:text-amber-500" href="#">E-Government</a>
-</div>
-</div>
+<p class="text-slate-500 text-xs text-center">© 2024 Pemerintah Kota Balikpapan. PPID Layanan Informasi Publik.</p>
+
 </div>
 </footer>
 <script>

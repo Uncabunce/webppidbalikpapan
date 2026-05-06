@@ -89,7 +89,7 @@
             font-family: "Manrope", sans-serif
         }
         .batik-bg {
-            background-image: linear-gradient(rgba(240, 240, 240, 0.9), rgba(240, 240, 240, 0.9)), url("batik dayak.png");
+            background-image: linear-gradient(rgba(240, 240, 240, 0.9), rgba(240, 240, 240, 0.9)), url("/batik%20dayak.png");
             background-repeat: repeat;
             background-size: 300px
         }
@@ -273,9 +273,9 @@ Layanan Informasi <span class="material-symbols-outlined text-[10px] transition-
 <button class="nav-hover-line relative px-3 py-3 text-xs font-bold font-headline flex items-center gap-0.5">
 PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:rotate-180 transition-transform">expand_more</span>
 </button>
-<div class="dropdown-menu bg-slate-900 min-w-[125px] shadow-xl py-2 rounded-b-lg border border-white/10 font-headline">
-<a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="https://data.balikpapan.go.id/organization">Badan</a>
-<a class="block px-4 py-2 hover:bg-slate-800 text-[11px] transition-colors" href="https://data.balikpapan.go.id/organization">Dinas</a>
+<div class="dropdown-menu bg-slate-100 min-w-[125px] shadow-xl py-2 rounded-b-lg border border-white/10 font-headline">
+<a class="block px-4 py-2 hover:bg-slate-200 text-[11px] text-slate-600 transition-colors" href="https://data.balikpapan.go.id/organization">Badan</a>
+<a class="block px-4 py-2 hover:bg-slate-200 text-[11px] text-slate-600 transition-colors" href="https://data.balikpapan.go.id/organization">Dinas</a>
 </div>
 </div>
 <a class="nav-hover-line relative px-3 py-3 text-xs font-bold font-headline" href="http://ppidbalikpapan.test/kontak">Kontak</a>
@@ -326,37 +326,62 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 </div>
 </div>
 <!-- Mega Menu Layanan Informasi -->
-<div id="mega-layanan" style="display:none;position:fixed;left:50%;transform:translateX(-50%);width:550px;max-width:95vw;z-index:99999;background:#ffffff;box-shadow:0 8px 32px rgba(0,0,0,0.18);border-top:3px solid #fdc003;border-radius:0 0 12px 12px;max-height:40vh;overflow-y:auto;">
-<div class="px-6 py-5 grid grid-cols-3 gap-6">
-<div>
-<h3 class="text-[10px] font-extrabold text-primary uppercase tracking-widest mb-3 pb-1.5 border-b-2 border-secondary-container">SOP PPID</h3>
-<ul class="space-y-1">
-<li><a href="/sop/carapermohonaninfo" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Tata Cara Permohonan Informasi</a></li>
-<li><a href="/sop/carapengajuankeberatan" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Tata Cara Pengajuan Keberatan</a></li>
-<li><a href="/sop/carapenyelesaiansengketa" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Tata Cara Penyelesaian Sengketa Informasi</a></li>
-<li><a href="/sop/standarpelayanan" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Standar Pelayanan Informasi</a></li>
-<li><a href="/sop/SOPuji" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">SOP Uji Konsekuensi Penetaoan Informasi Dikecualikan</a></li>
-<li><a href="/sop/SOPpelayanan" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">SOP Pelayanan Permohonan Informasi Publik di PPID</a></li>
-<li><a href="/sop/SOPpemutakhiran" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">SOP Pemenuhan, Pemutakhiran Daftar Informasi Publik </a></li>
-<li><a href="/sop/SOPpemantauan" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">SOP Pemantauan dan Evaluasi Pelayanan Informasi Publik</a></li>
-<li><a href="/sop/SOPpengembangan" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">SOP Pengembangan Infrastuktur</a></li>
-<li><a href="/sop/SOPpendokumentasian" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">SOP Pendokumentasian Informasi Publik</a></li>
-<li><a href="/sop/SOPpengolahandata" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">SOP Pengolahan Data Statistik Sektoral</a></li>
-<li><a href="/sop/SOPpengumpulan" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">SOP Pengumpulan Data Statistik Sektoral</a></li>
-<li><a href="/sop/maklumatpelayanan" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Maklumat Pelayanan Informasi Publik Pemkot Balikpapan </a></li>
-<li><a href="/sop/SKpengelolaPPID" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">SK PENGELOLA PPID</a></li>
-</ul>
-</div>
-<div>
-<h3 class="text-[10px] font-extrabold text-primary uppercase tracking-widest mb-3 pb-1.5 border-b-2 border-secondary-container">Layanan Online</h3>
-<ul class="space-y-1">
-<li><a href="https://www.lapor.go.id/" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">LAPOR!</a></li>
-<li><a href="/permohonan" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Formulir Permintaan Informasi Online</a></li>
-<li><a href="/keberatan" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Formulir Keberatan</a></li>
-<li><a href="/sop/tatacarapengaduan" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Tata Cara Pengaduan Masyarakat</a></li>
-</ul>
-</div>
-</div>
+<div id="mega-layanan" 
+     style="display:none; 
+            position:fixed; 
+            top: 80px; 
+            left:50%; 
+            transform:translateX(-50%); 
+            width: 600px; /* Locked width to prevent that 'empty' look */
+            max-width:95vw; 
+            z-index:99999; 
+            background:#ffffff; 
+            box-shadow:0 8px 32px rgba(0,0,0,0.18); 
+            border-top:3px solid #fdc003; 
+            border-radius:0 0-12px 12px; 
+            max-height:60vh; 
+            overflow-y:auto;">
+            
+    <!-- Main Flex/Grid Wrapper to ensure content is balanced -->
+    <div class="px-8 py-6 grid grid-cols-3 gap-8">
+        
+        <!-- Left Column: SOP (Takes up 2/3 of space to look full) -->
+        <div class="col-span-2">
+            <h3 class="text-[10px] font-extrabold text-primary uppercase tracking-widest mb-3 pb-1.5 border-b-2 border-secondary-container">
+                SOP PPID
+            </h3>
+            <ul class="space-y-1">
+                <li><a href="/sop/carapermohonaninfo" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Tata Cara Permohonan Informasi</a></li>
+                <li><a href="/sop/carapengajuankeberatan" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Tata Cara Pengajuan Keberatan</a></li>
+                <li><a href="/sop/carapenyelesaiansengketa" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Tata Cara Penyelesaian Sengketa Informasi</a></li>
+                <li><a href="/sop/standarpelayanan" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Standar Pelayanan Informasi</a></li>
+                <li><a href="/sop/SOPuji" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">SOP Uji Konsekuensi Penetaoan Informasi</a></li>
+                <li><a href="/sop/SOPpelayanan" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">SOP Pelayanan Permohonan Informasi</a></li>
+                <li><a href="/sop/SOPpemutakhiran" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">SOP Pemutakhiran Daftar Informasi</a></li>
+                <li><a href="/sop/SOPpemantauan" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">SOP Pemantauan dan Evaluasi Pelayanan</a></li>
+                <li><a href="/sop/SOPpengembangan" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">SOP Pengembangan Infrastuktur</a></li>
+                <li><a href="/sop/SOPpendokumentasian" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">SOP Pendokumentasian Informasi</a></li>
+                <li><a href="/sop/SOPpengolahandata" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">SOP Pengolahan Data Statistik</a></li>
+                <li><a href="/sop/SOPpengumpulan" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">SOP Pengumpulan Data Statistik</a></li>
+                <li><a href="/sop/maklumatpelayanan" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Maklumat Pelayanan Informasi Publik</a></li>
+                <li><a href="/sop/SKpengelolaPPID" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">SK PENGELOLA PPID</a></li>
+            </ul>
+        </div>
+
+        <!-- Right Column: Layanan Online -->
+        <div class="col-span-1">
+            <h3 class="text-[10px] font-extrabold text-primary uppercase tracking-widest mb-3 pb-1.5 border-b-2 border-secondary-container">
+                Layanan Online
+            </h3>
+            <ul class="space-y-2">
+                <li><a href="https://www.lapor.go.id/" class="text-[11px] font-bold text-red-600 hover:text-primary block py-0.5 leading-snug">LAPOR!</a></li>
+                <li><a href="/permohonan" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Formulir Permintaan Online</a></li>
+                <li><a href="/keberatan" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Formulir Keberatan</a></li>
+                <li><a href="/sop/tatacarapengaduan" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Tata Cara Pengaduan</a></li>
+            </ul>
+        </div>
+
+    </div>
 </div>
 <!-- Mega Menu Informasi Publik (outside flex) -->
 <div id="mega-infopub" style="display:none;position:fixed;left:50%;transform:translateX(-50%);width:860px;max-width:95vw;z-index:99999;background:#ffffff;box-shadow:0 8px 32px rgba(0,0,0,0.18);border-top:3px solid #fdc003;border-radius:0 0 12px 12px;max-height:55vh;overflow-y:auto;">
@@ -581,41 +606,9 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
     <!-- KONTEN HALAMAN DI SINI          -->
     <!-- ================================ -->
     <div class="max-w-7xl mx-auto px-4 md:px-6 py-10">
-        <p class="text-on-surface-variant text-center text-sm">Konten halaman</p>
+        <p class="text-on-surface-variant text-center text-sm">Konten femboy</p>
     </div>
 </main>
-
-<script>
-(function(){
-    var n=document.getElementById('desktop-nav');
-    if(!n)return;
-    function applyNav(){
-        if(window.innerWidth<768){
-            n.style.cssText='display:none!important;height:0!important;overflow:hidden!important;';
-        }else{
-            n.style.cssText='display:block!important;height:44px!important;overflow:visible!important;position:relative;z-index:9999;';
-        }
-    }
-    applyNav();
-    window.addEventListener('resize', applyNav);
-})();
-</script>
-
-<script>
-(function(){
-    var n=document.getElementById('desktop-nav');
-    if(!n)return;
-    function applyNav(){
-        if(window.innerWidth<768){
-            n.style.cssText='display:none!important;height:0!important;overflow:hidden!important;';
-        }else{
-            n.style.cssText='display:block!important;height:44px!important;overflow:visible!important;position:relative;z-index:9999;';
-        }
-    }
-    applyNav();
-    window.addEventListener('resize',applyNav);
-})();
-</script>
 
 <script>
     function updateClock() {
@@ -657,6 +650,133 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
     setInterval(updateClock, 1000);
     updateClock();
 </script>
+<script>
+    // Carousel Logic - Fully functional with Infinite Loop
+    const track = document.getElementById('carousel-track');
+    const container = document.getElementById('carousel-container');
+    const originalSlides = Array.from(track.children);
+    const dots = Array.from(document.querySelectorAll('.carousel-dot'));
+
+    const firstClone = originalSlides[0].cloneNode(true);
+    const lastClone = originalSlides[originalSlides.length - 1].cloneNode(true);
+    track.appendChild(firstClone);
+    track.insertBefore(lastClone, originalSlides[0]);
+
+    const slides = Array.from(track.children);
+    let currentIndex = 1;
+    let isTransitioning = false;
+    let autoPlayTimer;
+    let slideWidth = 0;
+
+    function setSlideWidths() {
+        slideWidth = container.getBoundingClientRect().width;
+        slides.forEach(function(s) {
+            s.style.width = slideWidth + 'px';
+            s.style.minWidth = slideWidth + 'px';
+            s.style.flex = '0 0 ' + slideWidth + 'px';
+        });
+        track.style.width = (slideWidth * slides.length) + 'px';
+        updateCarousel(true);
+    }
+
+    function updateCarousel(instant) {
+        track.style.transition = instant ? 'none' : 'transform 0.5s cubic-bezier(0.4,0,0.2,1)';
+        track.style.transform = 'translateX(-' + (currentIndex * slideWidth) + 'px)';
+        var dotIndex = currentIndex - 1;
+        if (currentIndex === 0) dotIndex = originalSlides.length - 1;
+        if (currentIndex === slides.length - 1) dotIndex = 0;
+        dots.forEach(function(dot, idx) {
+            dot.classList.toggle('bg-white', idx === dotIndex);
+            dot.classList.toggle('scale-125', idx === dotIndex);
+            dot.classList.toggle('bg-white/40', idx !== dotIndex);
+        });
+    }
+
+    track.addEventListener('transitionend', function() {
+        isTransitioning = false;
+        if (currentIndex === 0) { currentIndex = slides.length - 2; updateCarousel(true); }
+        if (currentIndex === slides.length - 1) { currentIndex = 1; updateCarousel(true); }
+    });
+
+    function moveNext() { if (isTransitioning) return; isTransitioning = true; currentIndex++; updateCarousel(); }
+    function movePrev() { if (isTransitioning) return; isTransitioning = true; currentIndex--; updateCarousel(); }
+    function startAutoPlay() { autoPlayTimer = setInterval(moveNext, 7000); }
+    function resetAutoPlay() { clearInterval(autoPlayTimer); startAutoPlay(); }
+
+    let startX = 0, isDragging = false;
+    const dragStart = function(e) { startX = e.type === 'touchstart' ? e.touches[0].clientX : e.clientX; isDragging = true; };
+    const dragging = function(e) {
+        if (!isDragging) return;
+        var x = e.type === 'touchmove' ? e.touches[0].clientX : e.clientX;
+        track.style.transition = 'none';
+        track.style.transform = 'translateX(-' + (currentIndex * slideWidth - (x - startX)) + 'px)';
+    };
+    const dragEnd = function(e) {
+        if (!isDragging) return;
+        isDragging = false;
+        var x = e.type === 'touchend' ? e.changedTouches[0].clientX : e.clientX;
+        if (Math.abs(x - startX) > 50) { if (x > startX) movePrev(); else moveNext(); }
+        else updateCarousel(false);
+        resetAutoPlay();
+    };
+    track.addEventListener('mousedown', dragStart);
+    window.addEventListener('mousemove', dragging);
+    window.addEventListener('mouseup', dragEnd);
+    track.addEventListener('touchstart', dragStart, {passive:true});
+    track.addEventListener('touchmove', dragging, {passive:true});
+    track.addEventListener('touchend', dragEnd);
+
+    window.addEventListener('resize', setSlideWidths);
+    setSlideWidths();
+    startAutoPlay();
+</script>
+<script>
+    function updateWeather() {
+        // Simulated dynamic data for Balikpapan
+        const conditions = [
+            { text: 'Cerah Berawan', icon: 'partly_cloudy_day' },
+            { text: 'Berawan', icon: 'cloud' },
+            { text: 'Hujan Ringan', icon: 'rainy' },
+            { text: 'Cerah', icon: 'sunny' },
+            { text: 'Hujan Petir', icon: 'thunderstorm' }
+        ];
+        
+        // Create variations based on current minutes to simulate real-time changes
+        const now = new Date();
+        const minutes = now.getMinutes();
+        const seed = minutes % conditions.length;
+        
+        // Base temperature for Balikpapan is around 26-32
+        const baseTemp = 26;
+        const tempVar = Math.floor(Math.random() * 7);
+        const currentTemp = baseTemp + tempVar;
+        
+        // Humidity usually high in Balikpapan
+        const baseHumidity = 70;
+        const humidityVar = Math.floor(Math.random() * 20);
+        const currentHumidity = baseHumidity + humidityVar;
+
+        const data = conditions[seed];
+
+        const descEl = document.getElementById('weather-desc');
+        const humidityEl = document.getElementById('weather-humidity');
+        const iconEl = document.getElementById('weather-icon');
+
+        if (descEl) descEl.textContent = `${data.text}, ${currentTemp}°C`;
+        if (humidityEl) humidityEl.textContent = `${currentHumidity}%`;
+        if (iconEl) iconEl.textContent = data.icon;
+        
+        console.log('Weather Updated:', data.text, currentTemp + '°C');
+    }
+
+    // Initial update and refresh every 60 seconds for 'truly dynamic' feel
+    updateWeather();
+    setInterval(updateWeather, 60000);
+</script>
+
+
+
+
 
 <script>
     // Hide/show desktop nav based on screen width
@@ -717,7 +837,6 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
         }
     }
 </script>
-
 <script>
 // Position mega menu right below nav bar
 function positionMegaMenu() {
@@ -733,7 +852,6 @@ window.addEventListener('scroll', positionMegaMenu);
 window.addEventListener('resize', positionMegaMenu);
 positionMegaMenu();
 </script>
-
 <script>
 (function() {
     var megas = [

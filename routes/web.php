@@ -1,6 +1,7 @@
 <?php
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Admin\AdminAuthController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\NewsController;
@@ -302,3 +303,5 @@ Route::prefix('admin')->name('admin.')->group(function () {
     });
 
 });
+
+Route::get('/berita/{slug}', [App\Http\Controllers\NewsPublicController::class, 'show'])->name('news.show');

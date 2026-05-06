@@ -93,13 +93,6 @@
     backdrop-filter: blur(24px);
     -webkit-backdrop-filter: blur(24px)
     }
-.batik-overlay {
-    background-image: url(https://lh3.googleusercontent.com/aida/ADBb0ui0fitW3uPheAyL7ophTJPotk2PpuLsaKku4axJQhprngmDGxYBnAytxHd32n61_6Ouv3vGbjiXzWnL6mCYMlgeTQaGYzZ6kG2B5sFC4vM71sVR6dK7AaMFgV09SbwFGn7XLb7xA-zIlq0WykqcndXbJAUJfaWlhenY_StCSOlANzTnVHijm2CaAgcFUC3hny-r8cgVFyRQQttfdemGVKfJDeqB9ZMYdBF43In5M47KQX77EaIoTM6lawvB79m_-XdkwxOFYml1-Mc);
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 0.04;
-    pointer-events: none
-    }
 .ambient-shadow {
     box-shadow: 0 32px 32px -4px rgba(25, 28, 29, 0.06)
     }</style>
@@ -116,7 +109,7 @@
 <!-- Logo Section -->
 <div class="mb-10 flex flex-col items-center text-center">
 <div class="w-24 h-24 mb-6 relative">
-<img alt="Balikpapan City Crest" class="w-full h-full object-contain" data-alt="The official crest of Balikpapan City, meticulously rendered with high-fidelity details showing historical symbols and regional emblems. The logo is displayed prominently on a clean, bright background, symbolizing institutional authority and heritage. The lighting is even and professional, maintaining a high-end corporate aesthetic consistent with government branding." src="https://lh3.googleusercontent.com/aida/ADBb0ujHGozykR3A8auOikoFJhKvjolu0x81dNKaDy_e2nQ06BBuY8OsrER3cNebGxTswiU3zKYZ4jzolkpN9Ewrs9dLLogjRYFC5rwosKU3m0OGL7kHetvOiGiMk_BIsINik4-EydoP_3q5jpkT46OsXjRnH5zHJ7G7US291Q4hfGGnU50EVVnd7PKMaKWSyS1mSVsRmE5I-Q2UGD_rBIfEaXFqRb6ljLOQZbLrfVYpMfDySYg9m225zd3rQJthMjbkORx36P1sxn7WbOg"/>
+<img  src="/images/Kota Balikpapan.png" alt="Balikpapan City Crest" class="w-full h-full object-contain"/>
 </div>
 <h1 class="font-display font-extrabold text-2xl md:text-3xl tracking-tight text-primary">
           Login Admin
