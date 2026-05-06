@@ -160,7 +160,7 @@ Route::get('/informasi/statistikdaerah', function () {
     return view('mega menu.Informasi Setiap Saat.statistikdaerah');
 });
 //profil pemkot
-Route::get('/profil/visimisi', function () {
+Route::get('/profilpemkot/visimisi', function () {
     return view('mega menu.profil pemkot.visimisi');
 });
 Route::get('/profil/informasidomisili', function () {
