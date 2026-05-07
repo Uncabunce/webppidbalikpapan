@@ -287,7 +287,7 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 <h3 class="text-[10px] font-extrabold text-primary uppercase tracking-widest mb-3 pb-1.5 border-b-2 border-secondary-container">Profil Pemkot Balikpapan</h3>
 <ul class="space-y-1">
 <li><a href="/profil/informasidomisili" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">    Informasi Tentang Kedudukan atau Domisili</a></li>
-<li><a href="/profilpemkot/visimisi" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Visi &amp; Misi</a></li>
+<li><a href="/profil pemkot/visimisi" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Visi &amp; Misi</a></li>
 <li><a href="/profil/organisasi" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Struktur Organisasi</a></li>
 <li><a href="/profil/LHKPN" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Tugas &amp; Laporan Harta Kekayaan Pejabat Negara</a></li>
 <li><a href="/profil/rekapLHKPN" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Rekapitulasi Penyampaian LHKPN Pemkot Balikpapan</a></li>
@@ -304,7 +304,7 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 <li><a href="/profil/waktu" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Waktu Pelayanan</a></li>
 <li><a href="/profil/biaya" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Biaya</a></li>
 <li><a href="/profil/motto" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Motto</a></li>
-<li><a href="/profil/visimisi" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Visi &amp; Misi</a></li>
+<li><a href="/profil pemkot/visimisi" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Visi &amp; Misi</a></li>
 <li><a href="/profil/pelaksana" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">PPID Pelaksana</a></li>
 <li><a href="/profil/regulasi" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Regulasi Dasar Hukum PPID</a></li>
 </ul>
@@ -312,7 +312,7 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 <div>
 <h3 class="text-[10px] font-extrabold text-primary uppercase tracking-widest mb-3 pb-1.5 border-b-2 border-secondary-container">Pejabat Badan Publik</h3>
 <ul class="space-y-1">
-<li><a href="/pejabat/walwakot" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Profil Wali Kota dan Wakil Wali Kota</a></li>
+<li><a href="https://web.balikpapan.go.id/detail/read/61" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Profil Wali Kota dan Wakil Wali Kota</a></li>
 <li><a href="/pejabat/kepalaperangkat" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Profil Kepala Perangkat Daerah</a></li>
 <li><a href="/pejabat/sekda" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Profil Sekretaris Daerah</a></li>
 <li><a href="/pejabat/asistenadmin" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Profil Asisten Administrasi Umum</a></li>
@@ -355,7 +355,7 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
                 <li><a href="/sop/carapengajuankeberatan" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Tata Cara Pengajuan Keberatan</a></li>
                 <li><a href="/sop/carapenyelesaiansengketa" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Tata Cara Penyelesaian Sengketa Informasi</a></li>
                 <li><a href="/sop/standarpelayanan" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Standar Pelayanan Informasi</a></li>
-                <li><a href="/sop/SOPuji" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">SOP Uji Konsekuensi Penetaoan Informasi</a></li>
+                <li><a href="/sop/SOPuji" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">SOP Uji Konsekuensi Penetapan Informasi</a></li>
                 <li><a href="/sop/SOPpelayanan" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">SOP Pelayanan Permohonan Informasi</a></li>
                 <li><a href="/sop/SOPpemutakhiran" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">SOP Pemutakhiran Daftar Informasi</a></li>
                 <li><a href="/sop/SOPpemantauan" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">SOP Pemantauan dan Evaluasi Pelayanan</a></li>
@@ -486,10 +486,10 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 </button>
 <div id="acc-profil" class="hidden flex-col bg-white/5 rounded-lg mx-2 mb-2 overflow-hidden">
 <p class="px-5 py-2 text-[10px] font-extrabold text-secondary-container uppercase tracking-widest">Profil Pemkot Balikpapan</p>
-<a href="/profil/profil" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Informasi Tentang Kedudukan atau Domisili</a>
-<a href="/profil/visimisi" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Visi &amp; Misi</a>
-<a href="/profil/struktur" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Struktur Organisasi</a>
-<a href="/profil/tugas" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Tugas &amp; Laporan Harta Kekayaan Pejabat Negara</a>
+<a href="/profil/informasidomisili" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Informasi Tentang Kedudukan atau Domisili</a>
+<a href="/profil pemkot/visimisi" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Visi &amp; Misi</a>
+<a href="/profil/organisasi" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Struktur Organisasi</a>
+<a href="/profil/LHKPN" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Tugas &amp; Laporan Harta Kekayaan Pejabat Negara</a>
 <a href="/profil/rekapLHKPN" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Rekapitulasi Penyampaian LHKPN Pemkot Balikpapan</a>
 <p class="px-5 py-2 text-[10px] font-extrabold text-secondary-container uppercase tracking-widest border-t border-white/10">Profil PPID Kota Balikpapan</p>
 <a href="/profil/profil" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Profil Singkat</a>
@@ -499,11 +499,11 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 <a href="/profil/media" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Media Layanan</a>
 <a href="/profil/waktu" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Waktu Pelayanan</a>
 <a href="/profil/biaya" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Biaya</a>
-<a href="/profil/visimisi" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Visi &amp; Misi PPID</a>
+<a href="/profil pemkot/visimisi" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Visi &amp; Misi PPID</a>
 <a href="/profil/pelaksana" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">PPID Pelaksana</a>
 <a href="/profil/regulasi" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Regulasi Dasar Hukum PPID</a>
 <p class="px-5 py-2 text-[10px] font-extrabold text-secondary-container uppercase tracking-widest border-t border-white/10">Pejabat Badan Publik</p>
-<a href="/pejabat/walwakot" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Profil Wali Kota dan Wakil Wali Kota</a>
+<a href="https://web.balikpapan.go.id/detail/read/61" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Profil Wali Kota dan Wakil Wali Kota</a>
 <a href="/pejabat/kepalaperangkat" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Profil Kepala Perangkat Daerah</a>
 <a href="/pejabat/sekda" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Profil Sekretaris Daerah</a>
 <a href="/pejabat/asistenadmin" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Profil Asisten Administrasi Umum</a>
@@ -605,10 +605,8 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 </nav>
 </div>
 </header>
-<main class="w-full bg-surface-container-lowest pb-8">
-    <!-- Title Section: Background Image with Fade -->
+<main class="w-full bg-surface-container-lowest pb-12">
 <section class="relative py-28 overflow-hidden border-b border-outline-variant/10">
-<!-- Background Layer -->
 <div class="absolute inset-0 z-0">
 <img alt="" class="w-full h-full object-cover opacity-70" src="sinarmasbpp.jpg"/>
 <div class="absolute inset-0 bg-gradient-to-b from-transparent via-white/80 to-white"></div>
@@ -620,86 +618,183 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 <span class="text-primary">Galeri</span>
 </nav>
 <h1 class="text-5xl md:text-6xl font-headline font-extrabold text-primary leading-tight">
-                    Dokumentasi <span class="text-secondary">Kegiatan</span>
+    Dokumentasi <span class="text-secondary">Video</span>
 </h1>
 <p class="mt-6 text-lg text-on-surface-variant max-w-2xl leading-relaxed">
-                    Kumpulan Dokumentasi kegiatan PPID Kota Balikpapan yang dapat diakses oleh masyarakat umum.
-                </p>
+    Kumpulan Dokumentasi kegiatan PPID Kota Balikpapan yang dapat diakses oleh masyarakat umum.
+</p>
 </div>
 </section>
-    <div class="max-w-7xl mx-auto px-4 md:px-6 flex flex-col md:flex-row gap-8">
-        
-        <!-- Sidebar Filter (Gaya Jakarta Pusat) -->
-        <aside class="w-full md:w-1/4 flex-shrink-0">
-            <div class="bg-white border border-outline-variant/50 rounded-lg p-5 shadow-sm sticky top-32">
-                <h3 class="font-headline font-bold text-lg text-primary mb-5 border-b border-outline-variant/30 pb-2">Filter</h3>
-                
-                <!-- Dropdown Kategori -->
-                <div class="mb-4">
-                    <label class="block text-sm font-semibold text-on-surface mb-2 font-headline">Kategori</label>
-                    <select class="w-full border border-outline-variant/50 rounded text-sm text-on-surface focus:ring-primary focus:border-primary p-2.5 bg-surface-bright outline-none">
-                        <option>Berita Video</option>
-                        <option>Kegiatan Wali Kota</option>
-                        <option>Infrastruktur</option>
-                    </select>
-                </div>
-                
-                <!-- Input Tanggal -->
-                <div class="mb-6">
-                    <label class="block text-sm font-semibold text-on-surface mb-2 font-headline">Tanggal Berita</label>
-                    <input type="date" class="w-full border border-outline-variant/50 rounded text-sm text-on-surface focus:ring-primary focus:border-primary p-2.5 bg-surface-bright outline-none">
-                </div>
-                
-                <!-- Tombol Reset -->
-                <button class="w-full bg-surface-container hover:bg-surface-container-high text-on-surface font-semibold py-2.5 rounded transition-colors text-sm border border-outline-variant/30">
-                    Reset
-                </button>
-            </div>
-        </aside>
 
-        <!-- Main Content Grid & Pagination -->
-        <section class="w-full md:w-3/4">
-<!-- Card Item (Contoh Video Balikpapan) -->
-<div class="bg-white rounded-lg overflow-hidden shadow-md group border border-slate-100">
-    <!-- Thumbnail Video -->
-    <div class="relative aspect-video bg-slate-200 overflow-hidden">
-        <!-- Mengambil thumbnail otomatis dari YouTube -->
-        <img src="https://img.youtube.com/vi/VEZ1vXcvXNI/mqdefault.jpg" 
-             alt="Balikpapan Kota Kreatif" 
-             class="w-full h-full object-cover">
-        
-        <!-- Tombol Play -->
-<a href="https://www.youtube.com/watch?v=VEZ1vXcvXNI" target="_blank" 
-   class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/40 transition-all">
-    <div class="w-14 transition-transform group-hover:scale-110">
-        <!-- SVG Logo YouTube (Icon Play Merah Putih) -->
-        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814Z" fill="#FF0000"/>
-            <path d="m9.545 15.568 6.273-3.568-6.273-3.568v7.136Z" fill="#fff"/>
-        </svg>
-    </div>
-</a>
+<!-- Grid + Pagination -->
+<div class="max-w-7xl mx-auto px-6 py-8">
+    <div id="video-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+    <div id="pagination-wrap" class="mt-10 flex flex-col items-center gap-3"></div>
+</div>
 
-        <!-- Durasi Video (Optional) -->
-        <div class="absolute bottom-2 right-2 bg-black/70 text-white text-[10px] px-1.5 py-0.5 rounded">
-            02:12
-        </div>
-    </div>
-
-    <!-- Info Bawah -->
-    <div class="p-4">
-        <p class="text-blue-600 text-[10px] font-bold uppercase mb-1">07 Januari 2026</p>
-        <h3 class="text-sm font-bold text-slate-800 line-clamp-2 hover:text-blue-700">
-            BALIKPAPAN KOTA KREATIF DAN INNOVATIF
-        </h3>
-        <p class="text-xs text-slate-500 mt-2">Pemerintah Kota Balikpapan</p>
-    </div>
-</div> 
-</section>
 </main>
 
+<footer id="kontak" class="bg-slate-800 w-full pt-16 md:pt-20 pb-8 border-t border-slate-600">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto px-4 md:px-6 font-['Inter'] text-sm leading-relaxed">
+        <!-- Brand & Map -->
+        <div class="md:col-span-2">
+            <div class="text-xl md:text-2xl font-bold text-yellow-600 mb-6 font-headline">PPID Kota Balikpapan</div>
+            <p class="text-slate-400 max-w-md mb-8">
+                Pejabat Pengelola Informasi dan Dokumentasi (PPID) Utama Pemerintah Kota Balikpapan bertanggung jawab untuk penyimpanan, pendokumentasian, penyediaan, dan pelayanan informasi publik.
+            </p>
+            <div class="w-full rounded-xl overflow-hidden shadow-md" style="aspect-ratio:16/9;">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63821.253001534766!2d116.75573272167965!3d-1.2764074999999773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df1473bb9404897%3A0x94d96108f98b652c!2sBalikpapan%20Mayor&#39;s%20Office!5e0!3m2!1sen!2ssg!4v1776063788871!5m2!1sen!2ssg" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <!-- Kontak -->
+        <div>
+            <h4 class="font-headline font-bold text-yellow-600 text-lg mb-7">Kontak Kami</h4>
+            <ul class="space-y-4 text-slate-400">
+                <li class="flex gap-3"><span class="material-symbols-outlined text-secondary shrink-0">location_on</span><span class="text-xs md:text-sm">Jl. Jenderal Sudirman No.1, Klandasan Ulu, Balikpapan Kota, Kalimantan Timur 76112</span></li>
+                <li class="flex items-center gap-3"><span class="material-symbols-outlined text-secondary shrink-0">call</span><span class="text-xs md:text-sm">(0542) 421420</span></li>
+                <li class="flex items-center gap-3"><span class="material-symbols-outlined text-secondary shrink-0">mail</span><span class="text-xs md:text-sm break-all">ppid@balikpapan.go.id</span></li>
+            </ul>
+        </div>
+        <!-- Peta Situs -->
+        <div>
+            <h4 class="font-headline font-bold text-yellow-600 text-lg mb-6">Peta Situs</h4>
+            <ul class="space-y-3">
+                <li><a class="text-slate-400 hover:text-blue-300 underline-offset-4 hover:underline ease-in-out duration-200 text-xs md:text-sm" href="#">Whistleblower System</a></li>
+                <li><a class="text-slate-400 hover:text-blue-300 underline-offset-4 hover:underline ease-in-out duration-200 text-xs md:text-sm" href="#">Lapor!</a></li>
+                <li><a class="text-slate-400 hover:text-blue-300 underline-offset-4 hover:underline ease-in-out duration-200 text-xs md:text-sm" href="#">Data Terbuka</a></li>
+                <li><a class="text-slate-400 hover:text-blue-300 underline-offset-4 hover:underline ease-in-out duration-200 text-xs md:text-sm font-semibold" href="#">Kebijakan Privasi</a></li>
+            </ul>
+        </div>
     </div>
-</div>
+    <div class="max-w-7xl mx-auto px-4 md:px-6 mt-16 pt-8 border-t border-slate-600 text-center">
+        <p class="text-slate-400 text-[10px] md:text-xs">
+            &copy; {{ date('Y') }} Pemerintah Kota Balikpapan. PPID Utama. All rights reserved.
+        </p>
+    </div>
+</footer>
+
+
+<script>
+const VIDEOS = [
+    { id: 'VEZ1vXcvXNI', slug: 'balikpapan-kota-kreatif-dan-inovatif', judul: 'Balikpapan Kota Kreatif dan Inovatif', penulis: 'HMP', waktu: '1 tahun yang lalu', durasi: '02:12' },
+    { id: 'VEZ1vXcvXNI', slug: 'pelayanan-informasi-publik-ramah-disabilitas-2024', judul: 'Pelayanan Informasi Publik di Kota Balikpapan yang Ramah Disabilitas (2024)', penulis: 'HMP', waktu: '1 tahun yang lalu', durasi: '05:44' },
+    { id: 'VEZ1vXcvXNI', slug: 'visitasi-monev-kepatuhan-badan-publik-kip-2023', judul: 'Visitasi Monev Kepatuhan Badan Publik KIP Tahun 2023', penulis: 'HMP', waktu: '2 tahun yang lalu', durasi: '03:20' },
+    { id: 'VEZ1vXcvXNI', slug: 'pelayanan-informasi-publik-ramah-disabilitas', judul: 'Pelayanan Informasi Publik Ramah Disabilitas', penulis: 'HMP', waktu: '3 tahun yang lalu', durasi: '04:15' },
+    { id: 'VEZ1vXcvXNI', slug: 'peringatan-ulang-tahun-ke-77-republik-indonesia', judul: 'Peringatan Ulang Tahun ke-77 Republik Indonesia', penulis: 'HMP', waktu: '2 tahun yang lalu', durasi: '06:30' },
+    { id: 'VEZ1vXcvXNI', slug: 'tata-cara-permohonan-informasi-publik-online', judul: 'Tata Cara Permohonan Informasi Publik secara Online', penulis: 'HMP', waktu: '3 tahun yang lalu', durasi: '02:55' },
+    { id: 'VEZ1vXcvXNI', slug: 'sosialisasi-keterbukaan-informasi-publik-2023', judul: 'Sosialisasi Keterbukaan Informasi Publik 2023', penulis: 'HMP', waktu: '2 tahun yang lalu', durasi: '07:10' },
+    { id: 'VEZ1vXcvXNI', slug: 'rapat-koordinasi-ppid-se-kalimantan-timur', judul: 'Rapat Koordinasi PPID se-Kalimantan Timur', penulis: 'HMP', waktu: '1 tahun yang lalu', durasi: '03:45' },
+    { id: 'VEZ1vXcvXNI', slug: 'pelayanan-informasi-publik-ramah-bagi-difabel', judul: 'PELAYANAN INFORMASI PUBLIK RAMAH BAGI DIFABEL', penulis: 'HMP', waktu: '3 tahun yang lalu', durasi: '05:00' },
+    { id: 'VEZ1vXcvXNI', slug: 'hari-jadi-kota-balikpapan-ke-126', judul: 'Hari Jadi Kota Balikpapan ke-126', penulis: 'HMP', waktu: '1 tahun yang lalu', durasi: '04:22' },
+    { id: 'VEZ1vXcvXNI', slug: 'penghargaan-kip-2024-kota-balikpapan', judul: 'Penghargaan KIP 2024 Kota Balikpapan', penulis: 'HMP', waktu: '1 tahun yang lalu', durasi: '03:10' },
+    { id: 'VEZ1vXcvXNI', slug: 'bimtek-ppid-balikpapan-2023', judul: 'Bimtek PPID Balikpapan 2023', penulis: 'HMP', waktu: '2 tahun yang lalu', durasi: '08:05' },
+    { id: 'VEZ1vXcvXNI', slug: 'layanan-aduan-masyarakat-online', judul: 'Layanan Aduan Masyarakat Online', penulis: 'HMP', waktu: '2 tahun yang lalu', durasi: '02:40' },
+    { id: 'VEZ1vXcvXNI', slug: 'workshop-keterbukaan-informasi-2022', judul: 'Workshop Keterbukaan Informasi 2022', penulis: 'HMP', waktu: '3 tahun yang lalu', durasi: '05:55' },
+    { id: 'VEZ1vXcvXNI', slug: 'peluncuran-portal-ppid-balikpapan', judul: 'Peluncuran Portal PPID Balikpapan', penulis: 'HMP', waktu: '3 tahun yang lalu', durasi: '03:30' },
+];
+
+const PER_PAGE = 6;
+let currentPage = 1;
+
+function cardHTML(v) {
+    return `
+    <div class="bg-white rounded-lg overflow-hidden shadow-sm group border border-slate-100 hover:shadow-md transition-shadow">
+        <div class="relative bg-slate-900 overflow-hidden" style="aspect-ratio:16/9">
+            <img src="https://img.youtube.com/vi/${v.id}/mqdefault.jpg"
+                 alt="${v.judul}"
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+            <a href="https://www.youtube.com/watch?v=${v.id}" target="_blank"
+               class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/40 transition-all">
+                <div class="w-12 transition-transform group-hover:scale-110">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="12" fill="rgba(0,0,0,0.55)"/>
+                        <path d="M10 8.5l6 3.5-6 3.5V8.5Z" fill="#fff"/>
+                    </svg>
+                </div>
+            </a>
+            <div class="absolute bottom-2 right-2 bg-black/75 text-white font-bold px-1.5 py-0.5 rounded" style="font-size:10px">${v.durasi}</div>
+        </div>
+        <div class="p-3">
+            <h3 class="text-sm font-bold leading-snug" style="display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden">
+                <a href="/video/halamanV" class="text-slate-800 hover:text-primary transition-colors cursor-pointer">${v.judul}</a>
+            </h3>
+            <div class="flex items-center gap-3 mt-2 text-slate-400" style="font-size:11px">
+                <span class="flex items-center gap-1">
+                    <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path d="M10 10a4 4 0 100-8 4 4 0 000 8zm-7 8a7 7 0 0114 0H3z"/></svg>
+                    ${v.penulis}
+                </span>
+                <span class="flex items-center gap-1">
+                    <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/></svg>
+                    ${v.waktu}
+                </span>
+            </div>
+        </div>
+    </div>`;
+}
+
+function btnClass(active) {
+    return active
+        ? 'px-3.5 py-1.5 rounded text-sm font-bold text-white cursor-default'
+        : 'px-3.5 py-1.5 rounded text-sm text-slate-600 hover:bg-slate-100 transition-colors cursor-pointer';
+}
+function arrowClass(disabled) {
+    return disabled
+        ? 'px-3 py-2 rounded text-slate-300 text-sm cursor-not-allowed select-none'
+        : 'px-3 py-2 rounded text-slate-500 hover:bg-slate-100 text-sm transition-colors cursor-pointer';
+}
+
+function render(page) {
+    currentPage = page;
+    const total = VIDEOS.length;
+    const lastPage = Math.ceil(total / PER_PAGE);
+    const start = (page - 1) * PER_PAGE;
+    const slice = VIDEOS.slice(start, start + PER_PAGE);
+
+    // Grid
+    document.getElementById('video-grid').innerHTML = slice.map(cardHTML).join('');
+
+    // Pagination
+    const wrap = document.getElementById('pagination-wrap');
+    let btns = '';
+
+    // Prev arrow
+    if (page === 1) {
+        btns += `<span class="${arrowClass(true)}"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg></span>`;
+    } else {
+        btns += `<span class="${arrowClass(false)}" onclick="render(${page-1})"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg></span>`;
+    }
+
+    // Page numbers
+    for (let p = 1; p <= lastPage; p++) {
+        if (p === page) {
+            btns += `<span class="${btnClass(true)}" style="background:#003f74">${p}</span>`;
+        } else if (p === 1 || p === lastPage || Math.abs(p - page) <= 2) {
+            btns += `<span class="${btnClass(false)}" onclick="render(${p})">${p}</span>`;
+        } else if (Math.abs(p - page) === 3) {
+            btns += `<span class="px-2 text-slate-400 text-sm">...</span>`;
+        }
+    }
+
+    // Next arrow
+    if (page === lastPage) {
+        btns += `<span class="${arrowClass(true)}"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></span>`;
+    } else {
+        btns += `<span class="${arrowClass(false)}" onclick="render(${page+1})"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></span>`;
+    }
+
+    const from = start + 1;
+    const to = Math.min(start + PER_PAGE, total);
+
+    wrap.innerHTML = `
+        <div class="flex items-center gap-1">${btns}</div>
+        <p class="text-xs text-slate-400">Menampilkan ${from}–${to} dari ${total} video</p>
+    `;
+
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+document.addEventListener('DOMContentLoaded', () => render(1));
+</script>
 
 <script>
 (function(){

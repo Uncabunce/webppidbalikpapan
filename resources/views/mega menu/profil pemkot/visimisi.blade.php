@@ -287,7 +287,7 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 <h3 class="text-[10px] font-extrabold text-primary uppercase tracking-widest mb-3 pb-1.5 border-b-2 border-secondary-container">Profil Pemkot Balikpapan</h3>
 <ul class="space-y-1">
 <li><a href="/profil/informasidomisili" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">    Informasi Tentang Kedudukan atau Domisili</a></li>
-<li><a href="/profilpemkot/visimisi" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Visi &amp; Misi</a></li>
+<li><a href="/profil pemkot/visimisi" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Visi &amp; Misi</a></li>
 <li><a href="/profil/organisasi" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Struktur Organisasi</a></li>
 <li><a href="/profil/LHKPN" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Tugas &amp; Laporan Harta Kekayaan Pejabat Negara</a></li>
 <li><a href="/profil/rekapLHKPN" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Rekapitulasi Penyampaian LHKPN Pemkot Balikpapan</a></li>
@@ -304,7 +304,7 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 <li><a href="/profil/waktu" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Waktu Pelayanan</a></li>
 <li><a href="/profil/biaya" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Biaya</a></li>
 <li><a href="/profil/motto" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Motto</a></li>
-<li><a href="/profil/visimisi" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Visi &amp; Misi</a></li>
+<li><a href="/profil pemkot/visimisi" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Visi &amp; Misi</a></li>
 <li><a href="/profil/pelaksana" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">PPID Pelaksana</a></li>
 <li><a href="/profil/regulasi" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Regulasi Dasar Hukum PPID</a></li>
 </ul>
@@ -312,7 +312,7 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 <div>
 <h3 class="text-[10px] font-extrabold text-primary uppercase tracking-widest mb-3 pb-1.5 border-b-2 border-secondary-container">Pejabat Badan Publik</h3>
 <ul class="space-y-1">
-<li><a href="/pejabat/walwakot" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Profil Wali Kota dan Wakil Wali Kota</a></li>
+<li><a href="https://web.balikpapan.go.id/detail/read/61" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Profil Wali Kota dan Wakil Wali Kota</a></li>
 <li><a href="/pejabat/kepalaperangkat" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Profil Kepala Perangkat Daerah</a></li>
 <li><a href="/pejabat/sekda" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Profil Sekretaris Daerah</a></li>
 <li><a href="/pejabat/asistenadmin" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Profil Asisten Administrasi Umum</a></li>
@@ -355,7 +355,7 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
                 <li><a href="/sop/carapengajuankeberatan" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Tata Cara Pengajuan Keberatan</a></li>
                 <li><a href="/sop/carapenyelesaiansengketa" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Tata Cara Penyelesaian Sengketa Informasi</a></li>
                 <li><a href="/sop/standarpelayanan" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Standar Pelayanan Informasi</a></li>
-                <li><a href="/sop/SOPuji" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">SOP Uji Konsekuensi Penetaoan Informasi</a></li>
+                <li><a href="/sop/SOPuji" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">SOP Uji Konsekuensi Penetapan Informasi</a></li>
                 <li><a href="/sop/SOPpelayanan" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">SOP Pelayanan Permohonan Informasi</a></li>
                 <li><a href="/sop/SOPpemutakhiran" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">SOP Pemutakhiran Daftar Informasi</a></li>
                 <li><a href="/sop/SOPpemantauan" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">SOP Pemantauan dan Evaluasi Pelayanan</a></li>
@@ -486,10 +486,10 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 </button>
 <div id="acc-profil" class="hidden flex-col bg-white/5 rounded-lg mx-2 mb-2 overflow-hidden">
 <p class="px-5 py-2 text-[10px] font-extrabold text-secondary-container uppercase tracking-widest">Profil Pemkot Balikpapan</p>
-<a href="/profil/profil" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Informasi Tentang Kedudukan atau Domisili</a>
-<a href="/profil/visimisi" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Visi &amp; Misi</a>
-<a href="/profil/struktur" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Struktur Organisasi</a>
-<a href="/profil/tugas" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Tugas &amp; Laporan Harta Kekayaan Pejabat Negara</a>
+<a href="/profil/informasidomisili" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Informasi Tentang Kedudukan atau Domisili</a>
+<a href="/profil pemkot/visimisi" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Visi &amp; Misi</a>
+<a href="/profil/organisasi" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Struktur Organisasi</a>
+<a href="/profil/LHKPN" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Tugas &amp; Laporan Harta Kekayaan Pejabat Negara</a>
 <a href="/profil/rekapLHKPN" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Rekapitulasi Penyampaian LHKPN Pemkot Balikpapan</a>
 <p class="px-5 py-2 text-[10px] font-extrabold text-secondary-container uppercase tracking-widest border-t border-white/10">Profil PPID Kota Balikpapan</p>
 <a href="/profil/profil" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Profil Singkat</a>
@@ -499,11 +499,11 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 <a href="/profil/media" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Media Layanan</a>
 <a href="/profil/waktu" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Waktu Pelayanan</a>
 <a href="/profil/biaya" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Biaya</a>
-<a href="/profil/visimisi" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Visi &amp; Misi PPID</a>
+<a href="/profil pemkot/visimisi" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Visi &amp; Misi PPID</a>
 <a href="/profil/pelaksana" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">PPID Pelaksana</a>
 <a href="/profil/regulasi" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Regulasi Dasar Hukum PPID</a>
 <p class="px-5 py-2 text-[10px] font-extrabold text-secondary-container uppercase tracking-widest border-t border-white/10">Pejabat Badan Publik</p>
-<a href="/pejabat/walwakot" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Profil Wali Kota dan Wakil Wali Kota</a>
+<a href="https://web.balikpapan.go.id/detail/read/61" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Profil Wali Kota dan Wakil Wali Kota</a>
 <a href="/pejabat/kepalaperangkat" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Profil Kepala Perangkat Daerah</a>
 <a href="/pejabat/sekda" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Profil Sekretaris Daerah</a>
 <a href="/pejabat/asistenadmin" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Profil Asisten Administrasi Umum</a>
@@ -633,7 +633,66 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
     <div class="max-w-5xl mx-auto px-4 md:px-6 py-16 space-y-12">
 
         <!-- Visi -->
-        
+                <div class="text-center">
+            <span class="inline-block bg-primary text-white text-xs font-extrabold font-headline uppercase tracking-[0.3em] px-6 py-2 rounded-full mb-6">Visi</span>
+            <div class="bg-white rounded-2xl shadow-sm border border-outline-variant/30 px-8 py-10 max-w-3xl mx-auto">
+                <p class="text-on-surface font-headline font-bold text-lg md:text-xl leading-relaxed">
+                    Terwujudnya keterbukaan informasi publik di Pemerintah Kota Balikpapan dan memberikan pelayanan informasi yang transparan dan akuntabel untuk memenuhi hak pemohon informasi sesuai dengan ketentuan peraturan perundang-undangan
+                </p>
+            </div>
+        </div>
+ 
+        <!-- Misi -->
+        <div>
+            <div class="text-center mb-10">
+                <span class="inline-block bg-primary text-white text-xs font-extrabold font-headline uppercase tracking-[0.3em] px-6 py-2 rounded-full">Misi</span>
+            </div>
+            <div class="space-y-5">
+ 
+                <!-- Misi 01 -->
+                <div class="flex items-center gap-6 bg-white rounded-2xl shadow-sm border border-outline-variant/30 p-6 group hover:shadow-md transition-shadow">
+                    <div class="shrink-0 w-16 h-16 bg-primary rounded-2xl flex items-center justify-center shadow-md">
+                        <span class="text-white font-headline font-extrabold text-2xl">01</span>
+                    </div>
+                    <p class="font-headline font-bold text-on-surface text-base md:text-lg leading-snug">
+                        Menyediakan informasi publik yang akurat dan dapat dipertanggungjawabkan
+                    </p>
+                </div>
+ 
+                <!-- Misi 02 -->
+                <div class="flex items-center gap-6 bg-white rounded-2xl shadow-sm border border-outline-variant/30 p-6 group hover:shadow-md transition-shadow">
+                    <div class="shrink-0 w-16 h-16 bg-primary rounded-2xl flex items-center justify-center shadow-md">
+                        <span class="text-white font-headline font-extrabold text-2xl">02</span>
+                    </div>
+                    <p class="font-headline font-bold text-on-surface text-base md:text-lg leading-snug">
+                        Memberikan layanan informasi publik yang cepat, tepat waktu, dan sederhana
+                    </p>
+                </div>
+ 
+                <!-- Misi 03 -->
+                <div class="flex items-center gap-6 bg-white rounded-2xl shadow-sm border border-outline-variant/30 p-6 group hover:shadow-md transition-shadow">
+                    <div class="shrink-0 w-16 h-16 bg-primary rounded-2xl flex items-center justify-center shadow-md">
+                        <span class="text-white font-headline font-extrabold text-2xl">03</span>
+                    </div>
+                    <p class="font-headline font-bold text-on-surface text-base md:text-lg leading-snug">
+                        Memastikan pengelolaan layanan informasi publik didukung oleh Sumber Daya Manusia yang profesional dan berintegritas
+                    </p>
+                </div>
+ 
+                <!-- Misi 04 -->
+                <div class="flex items-center gap-6 bg-white rounded-2xl shadow-sm border border-outline-variant/30 p-6 group hover:shadow-md transition-shadow">
+                    <div class="shrink-0 w-16 h-16 bg-primary rounded-2xl flex items-center justify-center shadow-md">
+                        <span class="text-white font-headline font-extrabold text-2xl">04</span>
+                    </div>
+                    <p class="font-headline font-bold text-on-surface text-base md:text-lg leading-snug">
+                        Memanfaatkan teknologi informasi dan komunikasi yang mutakhir untuk mendukung pengelolaan Keterbukaan informasi publik
+                    </p>
+                </div>
+ 
+            </div>
+        </div>
+
+
 </main>
 <footer id="kontak" class="bg-slate-800 dark:bg-slate-600 w-full pt-16 md:pt-20 pb-8 border-t border-slate-600 dark:border-slate-800">
 <div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto px-4 md:px-6 font-['Inter'] text-sm leading-relaxed">

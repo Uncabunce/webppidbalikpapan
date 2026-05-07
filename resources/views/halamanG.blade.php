@@ -287,7 +287,7 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 <h3 class="text-[10px] font-extrabold text-primary uppercase tracking-widest mb-3 pb-1.5 border-b-2 border-secondary-container">Profil Pemkot Balikpapan</h3>
 <ul class="space-y-1">
 <li><a href="/profil/informasidomisili" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">    Informasi Tentang Kedudukan atau Domisili</a></li>
-<li><a href="/profilpemkot/visimisi" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Visi &amp; Misi</a></li>
+<li><a href="/profil pemkot/visimisi" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Visi &amp; Misi</a></li>
 <li><a href="/profil/organisasi" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Struktur Organisasi</a></li>
 <li><a href="/profil/LHKPN" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Tugas &amp; Laporan Harta Kekayaan Pejabat Negara</a></li>
 <li><a href="/profil/rekapLHKPN" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Rekapitulasi Penyampaian LHKPN Pemkot Balikpapan</a></li>
@@ -304,7 +304,7 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 <li><a href="/profil/waktu" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Waktu Pelayanan</a></li>
 <li><a href="/profil/biaya" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Biaya</a></li>
 <li><a href="/profil/motto" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Motto</a></li>
-<li><a href="/profil/visimisi" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Visi &amp; Misi</a></li>
+<li><a href="/profil pemkot/visimisi" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Visi &amp; Misi</a></li>
 <li><a href="/profil/pelaksana" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">PPID Pelaksana</a></li>
 <li><a href="/profil/regulasi" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Regulasi Dasar Hukum PPID</a></li>
 </ul>
@@ -312,7 +312,7 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 <div>
 <h3 class="text-[10px] font-extrabold text-primary uppercase tracking-widest mb-3 pb-1.5 border-b-2 border-secondary-container">Pejabat Badan Publik</h3>
 <ul class="space-y-1">
-<li><a href="/pejabat/walwakot" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Profil Wali Kota dan Wakil Wali Kota</a></li>
+<li><a href="https://web.balikpapan.go.id/detail/read/61" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Profil Wali Kota dan Wakil Wali Kota</a></li>
 <li><a href="/pejabat/kepalaperangkat" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Profil Kepala Perangkat Daerah</a></li>
 <li><a href="/pejabat/sekda" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Profil Sekretaris Daerah</a></li>
 <li><a href="/pejabat/asistenadmin" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Profil Asisten Administrasi Umum</a></li>
@@ -355,7 +355,7 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
                 <li><a href="/sop/carapengajuankeberatan" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Tata Cara Pengajuan Keberatan</a></li>
                 <li><a href="/sop/carapenyelesaiansengketa" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Tata Cara Penyelesaian Sengketa Informasi</a></li>
                 <li><a href="/sop/standarpelayanan" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Standar Pelayanan Informasi</a></li>
-                <li><a href="/sop/SOPuji" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">SOP Uji Konsekuensi Penetaoan Informasi</a></li>
+                <li><a href="/sop/SOPuji" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">SOP Uji Konsekuensi Penetapan Informasi</a></li>
                 <li><a href="/sop/SOPpelayanan" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">SOP Pelayanan Permohonan Informasi</a></li>
                 <li><a href="/sop/SOPpemutakhiran" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">SOP Pemutakhiran Daftar Informasi</a></li>
                 <li><a href="/sop/SOPpemantauan" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">SOP Pemantauan dan Evaluasi Pelayanan</a></li>
@@ -486,10 +486,10 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 </button>
 <div id="acc-profil" class="hidden flex-col bg-white/5 rounded-lg mx-2 mb-2 overflow-hidden">
 <p class="px-5 py-2 text-[10px] font-extrabold text-secondary-container uppercase tracking-widest">Profil Pemkot Balikpapan</p>
-<a href="/profil/profil" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Informasi Tentang Kedudukan atau Domisili</a>
-<a href="/profil/visimisi" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Visi &amp; Misi</a>
-<a href="/profil/struktur" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Struktur Organisasi</a>
-<a href="/profil/tugas" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Tugas &amp; Laporan Harta Kekayaan Pejabat Negara</a>
+<a href="/profil/informasidomisili" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Informasi Tentang Kedudukan atau Domisili</a>
+<a href="/profil pemkot/visimisi" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Visi &amp; Misi</a>
+<a href="/profil/organisasi" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Struktur Organisasi</a>
+<a href="/profil/LHKPN" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Tugas &amp; Laporan Harta Kekayaan Pejabat Negara</a>
 <a href="/profil/rekapLHKPN" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Rekapitulasi Penyampaian LHKPN Pemkot Balikpapan</a>
 <p class="px-5 py-2 text-[10px] font-extrabold text-secondary-container uppercase tracking-widest border-t border-white/10">Profil PPID Kota Balikpapan</p>
 <a href="/profil/profil" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Profil Singkat</a>
@@ -499,11 +499,11 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 <a href="/profil/media" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Media Layanan</a>
 <a href="/profil/waktu" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Waktu Pelayanan</a>
 <a href="/profil/biaya" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Biaya</a>
-<a href="/profil/visimisi" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Visi &amp; Misi PPID</a>
+<a href="/profil pemkot/visimisi" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Visi &amp; Misi PPID</a>
 <a href="/profil/pelaksana" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">PPID Pelaksana</a>
 <a href="/profil/regulasi" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Regulasi Dasar Hukum PPID</a>
 <p class="px-5 py-2 text-[10px] font-extrabold text-secondary-container uppercase tracking-widest border-t border-white/10">Pejabat Badan Publik</p>
-<a href="/pejabat/walwakot" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Profil Wali Kota dan Wakil Wali Kota</a>
+<a href="https://web.balikpapan.go.id/detail/read/61" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Profil Wali Kota dan Wakil Wali Kota</a>
 <a href="/pejabat/kepalaperangkat" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Profil Kepala Perangkat Daerah</a>
 <a href="/pejabat/sekda" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Profil Sekretaris Daerah</a>
 <a href="/pejabat/asistenadmin" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Profil Asisten Administrasi Umum</a>
@@ -605,14 +605,298 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 </nav>
 </div>
 </header>
-<main class="bg-surface min-h-screen">
-    <!-- ================================ -->
-    <!-- KONTEN HALAMAN DI SINI          -->
-    <!-- ================================ -->
-    <div class="max-w-7xl mx-auto px-4 md:px-6 py-10">
-        <p class="text-on-surface-variant text-center text-sm">Konten halaman</p>
+<main class="w-full bg-gray-100 pb-16 pt-6">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    {{-- Breadcrumb --}}
+    <nav class="text-xs text-slate-500 mb-4 font-inter flex items-center gap-1">
+      <a href="http://ppidbalikpapan.test" class="hover:text-primary">Beranda</a>
+      <span class="material-symbols-outlined text-[12px]">chevron_right</span>
+      <a href="http://ppidbalikpapan.test/foto" class="hover:text-primary">Foto</a>
+      <span class="material-symbols-outlined text-[12px]">chevron_right</span>
+      <span class="text-slate-700 font-semibold">Detail Galeri Foto</span>
+    </nav>
+
+    <div class="flex flex-col lg:flex-row gap-6">
+
+      {{-- Konten Utama (Kiri) --}}
+      <div class="flex-1 min-w-0">
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+
+          {{-- Foto Utama --}}
+          <div class="w-full bg-gray-200 relative cursor-zoom-in" id="main-photo-wrap" onclick="openLightbox(currentMainIndex)">
+            <img id="main-photo"
+                 src="https://picsum.photos/seed/foto1/800/500"
+                 alt="Foto utama"
+                 class="w-full object-cover"
+                 style="max-height:420px; object-fit:cover;">
+            {{-- Label caption overlay --}}
+            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent px-4 py-3">
+              <p id="main-caption" class="text-white text-xs font-semibold leading-snug">
+                Ketua TP PKK Jakpus Terima Kunjungan Studi Tiru TP PKK Kabupaten Badung
+              </p>
+            </div>
+            <div class="absolute top-3 right-3 bg-black/50 rounded-full px-2 py-1 text-white text-[10px] flex items-center gap-1">
+              <span class="material-symbols-outlined text-[13px]">zoom_in</span> Klik untuk perbesar
+            </div>
+          </div>
+
+          <div class="p-5 border-b border-gray-100">
+            {{-- Kategori & Tanggal --}}
+            <div class="flex items-center gap-2 mb-3">
+              <span class="inline-block bg-primary text-white text-[10px] font-bold px-2.5 py-0.5 rounded uppercase tracking-widest">PPID</span>
+              <span class="text-xs text-slate-400">7 Mei 2026</span>
+            </div>
+
+            {{-- Judul --}}
+            <h1 class="text-xl sm:text-2xl font-extrabold text-on-surface font-headline leading-tight mb-3">
+              Ketua TP PKK Jakpus Terima Kunjungan Studi Tiru TP PKK Kabupaten Badung
+            </h1>
+
+            {{-- Views + Share --}}
+            <div class="flex items-center justify-between flex-wrap gap-3">
+              <div class="flex items-center gap-1 text-slate-400 text-sm">
+                <span class="material-symbols-outlined text-base">visibility</span>
+                <span>8 views</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="text-xs text-slate-400 mr-1">Share On:</span>
+                <a href="#" class="inline-flex items-center gap-1.5 bg-[#1877f2] hover:opacity-90 text-white text-xs font-semibold px-3 py-1.5 rounded transition">
+                  <svg class="w-3.5 h-3.5 fill-white" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                  Facebook
+                </a>
+                <a href="#" class="inline-flex items-center gap-1.5 bg-black hover:opacity-90 text-white text-xs font-semibold px-3 py-1.5 rounded transition">
+                  <svg class="w-3.5 h-3.5 fill-white" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                  X (Twitter)
+                </a>
+                <a href="#" class="inline-flex items-center gap-1.5 bg-[#25d366] hover:opacity-90 text-white text-xs font-semibold px-3 py-1.5 rounded transition">
+                  <svg class="w-3.5 h-3.5 fill-white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.135.562 4.14 1.542 5.876L0 24l6.313-1.508A11.954 11.954 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.89 0-3.665-.5-5.2-1.375l-.374-.222-3.746.895.928-3.638-.243-.385A9.965 9.965 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+                  WhatsApp
+                </a>
+                <button onclick="navigator.clipboard.writeText(window.location.href)" class="inline-flex items-center gap-1.5 bg-slate-600 hover:opacity-90 text-white text-xs font-semibold px-3 py-1.5 rounded transition">
+                  <span class="material-symbols-outlined text-[13px]">content_copy</span>
+                  Copy Link
+                </button>
+              </div>
+            </div>
+          </div>
+
+          {{-- Deskripsi --}}
+          <div class="px-5 pt-4 pb-2">
+            <p class="text-sm text-slate-600 leading-relaxed font-inter">
+              Ketua Tim Penggerak Pemberdayaan Kesejahteraan Keluarga (TP PKK) Kota Administrasi 
+              Jakarta Pusat, Woro Henny Arini bersama Camat Gambir Muhammad Iqbal menerima 
+              Kunjungan Studi Tiru dari TP PKK Kabupaten Badung, Bali, di Ruang Publik Terpadu 
+              Ramah Anak (RPTRA) Karang, Kelurahan Gambir, Kecamatan Gambir, Rabu (6/5).
+            </p>
+            <p class="text-xs text-slate-400 mt-4 pb-4 border-b border-gray-100">
+              Reporter: E Maulana Yusuf &amp; Editor: Andreeas Permatayu
+            </p>
+          </div>
+
+          {{-- Grid Galeri Thumbnail --}}
+          <div class="px-5 pb-5">
+            <div id="gallery-grid" class="grid grid-cols-3 gap-2 mt-3">
+              {{-- Thumbnail diisi oleh JS --}}
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      {{-- Sidebar (Kanan) --}}
+      <aside class="w-full lg:w-72 shrink-0 space-y-5">
+
+        {{-- Berita Terkait --}}
+        <div class="bg-white rounded-lg shadow-sm p-4">
+          <h3 class="font-headline font-bold text-base text-on-surface mb-4 pb-2 border-b-2 border-secondary-container inline-block">
+            Berita Terkait
+          </h3>
+          <div class="space-y-4">
+
+            <a href="#" class="flex gap-3 group hover:bg-gray-50 p-2 rounded-lg transition">
+              <div class="w-20 h-14 shrink-0 rounded overflow-hidden bg-gray-200">
+                <img src="https://picsum.photos/seed/r1/160/112" class="w-full h-full object-cover group-hover:opacity-80 transition" alt="">
+              </div>
+              <div class="flex-1 min-w-0">
+                <p class="text-xs font-semibold text-on-surface font-headline leading-tight line-clamp-3 group-hover:text-primary transition">Pemkot Jakpus Kolaborasi HIPMI Dorong Peningkatan Skala UMKM Menuju Kota Global</p>
+                <span class="text-[10px] text-slate-400 mt-1 block">Kamis, 7 Mei 2026</span>
+              </div>
+            </a>
+
+            <a href="#" class="flex gap-3 group hover:bg-gray-50 p-2 rounded-lg transition">
+              <div class="w-20 h-14 shrink-0 rounded overflow-hidden bg-gray-200">
+                <img src="https://picsum.photos/seed/r2/160/112" class="w-full h-full object-cover group-hover:opacity-80 transition" alt="">
+              </div>
+              <div class="flex-1 min-w-0">
+                <p class="text-xs font-semibold text-on-surface font-headline leading-tight line-clamp-3 group-hover:text-primary transition">Ketua TP PKK Jakpus Terima Kunjungan Studi Tiru TP PKK Kabupaten Badung</p>
+                <span class="text-[10px] text-slate-400 mt-1 block">Rabu, 6 Mei 2026</span>
+              </div>
+            </a>
+
+            <a href="#" class="flex gap-3 group hover:bg-gray-50 p-2 rounded-lg transition">
+              <div class="w-20 h-14 shrink-0 rounded overflow-hidden bg-gray-200">
+                <img src="https://picsum.photos/seed/r3/160/112" class="w-full h-full object-cover group-hover:opacity-80 transition" alt="">
+              </div>
+              <div class="flex-1 min-w-0">
+                <p class="text-xs font-semibold text-on-surface font-headline leading-tight line-clamp-3 group-hover:text-primary transition">Ketua TP PKK Jakpus Terima Kunjungan Studi Tiru TP PKK Kabupaten Badung</p>
+                <span class="text-[10px] text-slate-400 mt-1 block">Rabu, 6 Mei 2026</span>
+              </div>
+            </a>
+
+          </div>
+        </div>
+
+        {{-- Tags --}}
+        <div class="bg-white rounded-lg shadow-sm p-4">
+          <h4 class="text-xs font-extrabold text-slate-500 uppercase tracking-widest mb-3">Tags</h4>
+          <div class="flex flex-wrap gap-2">
+            <a href="#" class="bg-gray-100 hover:bg-primary hover:text-white text-slate-600 text-xs font-semibold px-3 py-1 rounded-full transition">#TP PKK</a>
+            <a href="#" class="bg-gray-100 hover:bg-primary hover:text-white text-slate-600 text-xs font-semibold px-3 py-1 rounded-full transition">#Kabupaten Badung</a>
+            <a href="#" class="bg-gray-100 hover:bg-primary hover:text-white text-slate-600 text-xs font-semibold px-3 py-1 rounded-full transition">#Studi Tiru</a>
+          </div>
+        </div>
+
+      </aside>
     </div>
+
+    {{-- Berita Terbaru --}}
+    <div class="mt-6 bg-white rounded-lg shadow-sm p-5">
+      <h3 class="font-headline font-bold text-lg text-on-surface mb-1">Berita Terbaru</h3>
+      <div class="h-1 w-16 bg-secondary-container rounded mb-5"></div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+
+        <a href="#" class="group block">
+          <div class="rounded-lg overflow-hidden bg-gray-100 mb-3" style="aspect-ratio:16/9;">
+            <img src="https://picsum.photos/seed/n1/400/225" class="w-full h-full object-cover group-hover:opacity-80 transition" alt="">
+          </div>
+          <span class="inline-block bg-blue-600 text-white text-[9px] font-bold px-2 py-0.5 rounded uppercase mb-1">PEMERINTAHAN</span>
+          <h4 class="text-sm font-bold text-on-surface font-headline leading-tight group-hover:text-primary transition line-clamp-2">Pemkot Jakpus Kolaborasi HIPMI Dorong Peningkatan Skala UMKM Menuju Kota Global</h4>
+          <p class="text-xs text-slate-400 mt-1">Kamis, 7 Mei 2026</p>
+          <p class="text-xs text-slate-500 mt-1 leading-relaxed line-clamp-3">Pemerintah Kota Administrasi Jakarta Pusat berkolaborasi dengan Badan Pengurus Cabang (BPC) Himpunan Pengusaha Muda Indonesia (HIPMI) dalam rangka mendorong pertumbuhan UMKM.</p>
+        </a>
+
+        <a href="#" class="group block">
+          <div class="rounded-lg overflow-hidden bg-gray-100 mb-3" style="aspect-ratio:16/9;">
+            <img src="https://picsum.photos/seed/n2/400/225" class="w-full h-full object-cover group-hover:opacity-80 transition" alt="">
+          </div>
+          <span class="inline-block bg-blue-600 text-white text-[9px] font-bold px-2 py-0.5 rounded uppercase mb-1">PEMERINTAHAN</span>
+          <h4 class="text-sm font-bold text-on-surface font-headline leading-tight group-hover:text-primary transition line-clamp-2">Ketua TP PKK Jakpus Terima Kunjungan Studi Tiru TP PKK Kabupaten Badung</h4>
+          <p class="text-xs text-slate-400 mt-1">Rabu, 6 Mei 2026</p>
+          <p class="text-xs text-slate-500 mt-1 leading-relaxed line-clamp-3">Ketua Tim Penggerak Pemberdayaan Kesejahteraan Keluarga (TP PKK) kota administrasi Jakarta Pusat menerima kunjungan studi tiru dari TP PKK Kabupaten Badung, Bali.</p>
+        </a>
+
+        <a href="#" class="group block">
+          <div class="rounded-lg overflow-hidden bg-gray-100 mb-3" style="aspect-ratio:16/9;">
+            <img src="https://picsum.photos/seed/n3/400/225" class="w-full h-full object-cover group-hover:opacity-80 transition" alt="">
+          </div>
+          <span class="inline-block bg-blue-600 text-white text-[9px] font-bold px-2 py-0.5 rounded uppercase mb-1">PEMERINTAHAN</span>
+          <h4 class="text-sm font-bold text-on-surface font-headline leading-tight group-hover:text-primary transition line-clamp-2">Ketua TP PKK Jakpus Terima Kunjungan Studi Tiru TP PKK Kabupaten Badung</h4>
+          <p class="text-xs text-slate-400 mt-1">Rabu, 6 Mei 2026</p>
+          <p class="text-xs text-slate-500 mt-1 leading-relaxed line-clamp-3">Ketua TP PKK bersama para pengurus menerima rombongan studi tiru dari Kabupaten Badung dalam rangka pertukaran program kerja keluarga.</p>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
 </main>
+
+{{-- LIGHTBOX OVERLAY --}}
+<div id="lightbox" class="fixed inset-0 bg-black/90 z-[999999] hidden items-center justify-center" style="display:none;">
+  <button onclick="closeLightbox()" class="absolute top-4 right-4 text-white bg-black/50 rounded-full p-2 hover:bg-white/20 transition z-10">
+    <span class="material-symbols-outlined text-2xl">close</span>
+  </button>
+  <button onclick="prevPhoto()" class="absolute left-4 top-1/2 -translate-y-1/2 text-white bg-black/50 rounded-full p-2 hover:bg-white/20 transition z-10">
+    <span class="material-symbols-outlined text-2xl">chevron_left</span>
+  </button>
+  <button onclick="nextPhoto()" class="absolute right-4 top-1/2 -translate-y-1/2 text-white bg-black/50 rounded-full p-2 hover:bg-white/20 transition z-10">
+    <span class="material-symbols-outlined text-2xl">chevron_right</span>
+  </button>
+  <div class="flex flex-col items-center max-w-4xl w-full px-16">
+    <img id="lightbox-img" src="" alt="" class="max-h-[80vh] max-w-full rounded-lg shadow-2xl object-contain">
+    <p id="lightbox-caption" class="text-white text-sm mt-3 text-center opacity-80"></p>
+    <p id="lightbox-counter" class="text-white/50 text-xs mt-1"></p>
+  </div>
+</div>
+
+<script>
+// Data foto galeri
+var photos = [
+  { src: 'https://picsum.photos/seed/foto1/800/500', thumb: 'https://picsum.photos/seed/foto1/300/200', caption: 'Suasana kegiatan Studi Tiru TP PKK Kabupaten Badung (1)' },
+  { src: 'https://picsum.photos/seed/foto2/800/500', thumb: 'https://picsum.photos/seed/foto2/300/200', caption: 'Suasana kegiatan Studi Tiru TP PKK Kabupaten Badung (2)' },
+  { src: 'https://picsum.photos/seed/foto3/800/500', thumb: 'https://picsum.photos/seed/foto3/300/200', caption: 'Suasana kegiatan Studi Tiru TP PKK Kabupaten Badung (3)' },
+  { src: 'https://picsum.photos/seed/foto4/800/500', thumb: 'https://picsum.photos/seed/foto4/300/200', caption: 'Suasana kegiatan Studi Tiru TP PKK Kabupaten Badung (4)' },
+  { src: 'https://picsum.photos/seed/foto5/800/500', thumb: 'https://picsum.photos/seed/foto5/300/200', caption: 'Suasana kegiatan Studi Tiru TP PKK Kabupaten Badung (5)' },
+  { src: 'https://picsum.photos/seed/foto6/800/500', thumb: 'https://picsum.photos/seed/foto6/300/200', caption: 'Suasana kegiatan Studi Tiru TP PKK Kabupaten Badung (6)' },
+];
+
+var currentMainIndex = 0;
+var lightboxIndex = 0;
+
+// Bangun grid thumbnail
+function buildGallery() {
+  var grid = document.getElementById('gallery-grid');
+  grid.innerHTML = '';
+  photos.forEach(function(p, i) {
+    var div = document.createElement('div');
+    div.className = 'relative rounded overflow-hidden cursor-pointer group';
+    div.style.aspectRatio = '4/3';
+    div.innerHTML = '<img src="' + p.thumb + '" alt="" class="w-full h-full object-cover group-hover:opacity-80 transition">' +
+      '<div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition bg-black/30">' +
+      '<span class="material-symbols-outlined text-white text-2xl">zoom_in</span></div>';
+    div.addEventListener('click', function() {
+      // Ganti foto utama
+      currentMainIndex = i;
+      document.getElementById('main-photo').src = p.src;
+      document.getElementById('main-caption').textContent = p.caption;
+      // Highlight thumbnail aktif
+      document.querySelectorAll('#gallery-grid > div').forEach(function(el, idx) {
+        el.style.outline = idx === i ? '3px solid #003f74' : '';
+      });
+    });
+    grid.appendChild(div);
+  });
+  // Highlight pertama
+  grid.children[0].style.outline = '3px solid #003f74';
+}
+
+// Lightbox
+function openLightbox(idx) {
+  lightboxIndex = idx;
+  var lb = document.getElementById('lightbox');
+  lb.style.display = 'flex';
+  updateLightbox();
+  document.addEventListener('keydown', lightboxKey);
+}
+
+function closeLightbox() {
+  document.getElementById('lightbox').style.display = 'none';
+  document.removeEventListener('keydown', lightboxKey);
+}
+
+function updateLightbox() {
+  var p = photos[lightboxIndex];
+  document.getElementById('lightbox-img').src = p.src;
+  document.getElementById('lightbox-caption').textContent = p.caption;
+  document.getElementById('lightbox-counter').textContent = (lightboxIndex + 1) + ' / ' + photos.length;
+}
+
+function nextPhoto() { lightboxIndex = (lightboxIndex + 1) % photos.length; updateLightbox(); }
+function prevPhoto() { lightboxIndex = (lightboxIndex - 1 + photos.length) % photos.length; updateLightbox(); }
+function lightboxKey(e) {
+  if (e.key === 'ArrowRight') nextPhoto();
+  if (e.key === 'ArrowLeft') prevPhoto();
+  if (e.key === 'Escape') closeLightbox();
+}
+
+// Klik luar lightbox = tutup
+document.getElementById('lightbox').addEventListener('click', function(e) {
+  if (e.target === this) closeLightbox();
+});
+
+buildGallery();
+</script>
 <footer id="kontak" class="bg-slate-800 dark:bg-slate-600 w-full pt-16 md:pt-20 pb-8 border-t border-slate-600 dark:border-slate-800">
 <div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto px-4 md:px-6 font-['Inter'] text-sm leading-relaxed">
 <!-- Brand & Map -->

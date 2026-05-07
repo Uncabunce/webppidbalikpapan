@@ -42,14 +42,24 @@ Route::get('/foto/{page}', function ($page) {
     return view('foto', ['page' => $page]);
 })->where('page', '[0-9]+');
 
+Route::get('/video/{page}', function ($page) {
+    return view('video', ['page' => $page]);
+})->where('page', '[0-9]+');
+
 Route::get('/news/newnews', function () {
     return view('newnews');
 });
 Route::get('/foto', function () {
     return view('foto');
 });
+Route::get('/foto/halamanG', function () {
+    return view('halamanG');
+});
 Route::get('/video', function () {
     return view('video');
+});
+Route::get('/video/halamanV', function () {
+    return view('halamanV');
 });
 // Informasi Berkala
 Route::get('/informasi/laporaninfo', function () {
@@ -160,7 +170,7 @@ Route::get('/informasi/statistikdaerah', function () {
     return view('mega menu.Informasi Setiap Saat.statistikdaerah');
 });
 //profil pemkot
-Route::get('/profilpemkot/visimisi', function () {
+Route::get('/profil pemkot/visimisi', function () {
     return view('mega menu.profil pemkot.visimisi');
 });
 Route::get('/profil/informasidomisili', function () {
@@ -178,37 +188,34 @@ Route::get('/profil/rekapLHKPN', function () {
 
 //profil ppid
 Route::get('/profil/struktur', function () {
-    return view('mega menu.profil ppid.struktur');
+    return view('mega menu.profil-ppid.struktur');
 });
 Route::get('/profil/tugas', function () {
-    return view('mega menu.profil ppid.tugas');
+    return view('mega menu.profil-ppid.tugas');
 });
 Route::get('/profil/profil', function () {
-    return view('mega menu.profil ppid.profil');
-});
-Route::get('/profil/visimisi', function () {
-    return view('mega menu.profil ppid.visimisi');
+    return view('mega menu.profil-ppid.profil');
 });
 Route::get('/profil/waktu', function () {
-    return view('mega menu.profil ppid.waktu');
+    return view('mega menu.profil-ppid.waktu');
 });
 Route::get('/profil/regulasi', function () {
-    return view('mega menu.profil ppid.regulasi');
+    return view('mega menu.profil-ppid.regulasi');
 });
 Route::get('/profil/maklumat', function () {
-    return view('mega menu.profil ppid.maklumat');
+    return view('mega menu.profil-ppid.maklumat');
 });
 Route::get('/profil/pelaksana', function () {
-    return view('mega menu.profil ppid.pelaksana');
+    return view('mega menu.profil-ppid.pelaksana');
 });
 Route::get('/profil/media', function () {
-    return view('mega menu.profil ppid.media');
+    return view('mega menu.profil-ppid.media');
 });
 Route::get('/profil/motto', function () {
-    return view('mega menu.profil ppid.motto');
+    return view('mega menu.profil-ppid.motto');
 });
 Route::get('/profil/biaya', function () {
-    return view('mega menu.profil ppid.biaya');
+    return view('mega menu.profil-ppid.biaya');
 });
 
 //pejabat badan publik
@@ -218,7 +225,7 @@ Route::get('/pejabat/camat', function () {
 Route::get('/pejabat/sekda', function () {
     return view('mega menu.pejabat badan publik.sekda');
 });
-Route::get('/pejabat/walwakot', function () {
+Route::get('https://web.balikpapan.go.id/detail/read/61', function () {
     return view('mega menu.pejabat badan publik.walwakot');
 });
 Route::get('/pejabat/stafahli', function () {

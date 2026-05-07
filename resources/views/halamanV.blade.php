@@ -89,7 +89,7 @@
             font-family: "Manrope", sans-serif
         }
         .batik-bg {
-            background-image: linear-gradient(rgba(240, 240, 240, 0.9), rgba(240, 240, 240, 0.9)), url("/batik%20dayak.png");
+            background-image: linear-gradient(rgba(240, 240, 240, 0.9), rgba(240, 240, 240, 0.9)), url("batik dayak.png");
             background-repeat: repeat;
             background-size: 300px
         }
@@ -214,7 +214,7 @@
 <!-- Left: Logo -->
 <div class="flex items-center justify-between w-full md:w-auto">  
     <a href="http://ppidbalikpapan.test/" class="h-8 md:h-10 w-auto object-contain">
-     <img src="/logo_ppid%20bg%20removed.png" alt="logo" class="h-full w-auto"></a>
+     <img src="{{ asset('logo_ppid bg removed.png') }}" alt="logo" class="h-full w-auto"></a>
 <!-- Mobile right side: clock + hamburger -->
 <div class="flex items-center gap-2 md:hidden">
 <!-- Mobile clock -->
@@ -605,87 +605,311 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 </nav>
 </div>
 </header>
-<main class="bg-surface min-h-screen">
-    <!-- Hero Banner -->
-    <section class="relative py-20 overflow-hidden border-b border-outline-variant/10">
-    <div class="absolute inset-0 z-0">
-        <div class="absolute inset-0 bg-gradient-to-br from-primary via-primary-container to-primary opacity-95"></div>
-        <div class="absolute inset-0" style="background-image:url('/batik%20dayak.png');background-repeat:repeat;background-size:300px;opacity:0.05;"></div>
-    </div>
-    <div class="max-w-4xl mx-auto px-6 relative z-10 text-center">
-        <nav class="flex justify-center mb-4 text-xs font-medium text-white/60 uppercase tracking-widest gap-2">
-            <a href="/" class="hover:text-white transition-colors">Beranda</a>
-            <span>/</span>
-            <span>Profil</span>
-            <span>/</span>
-            <span class="text-white">Struktur Organisasi</span>
-        </nav>
-        <h1 class="text-4xl md:text-5xl font-headline font-extrabold text-white leading-tight mb-4">
-            Struktur Organisasi
-        </h1>
-        <p class="text-white/70 text-lg max-w-2xl mx-auto">
-            Pemerintah Kota Balikpapan
-        </p>
-    </div>
-</section>
+<main class="w-full bg-gray-100 pb-16 pt-6">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
-<div class="max-w-7xl mx-auto px-4 md:px-6 py-10 flex justify-center">
-    <img 
-        src="/struktur_organisasi.png" 
-        alt="Struktur Organisasi Pemkot Balikpapan" 
-        class="w-full max-w-5xl h-auto object-contain"
-    >
-</div>
+    {{-- Breadcrumb --}}
+    <nav class="text-xs text-slate-500 mb-4 font-inter flex items-center gap-1">
+      <a href="http://ppidbalikpapan.test" class="hover:text-primary">Beranda</a>
+      <span class="material-symbols-outlined text-[12px]">chevron_right</span>
+      <a href="http://ppidbalikpapan.test/video" class="hover:text-primary">Video</a>
+      <span class="material-symbols-outlined text-[12px]">chevron_right</span>
+      <span class="text-slate-700 font-semibold">Detail Video</span>
+    </nav>
 
-<div class="max-w-7xl mx-auto px-4 md:px-6 py-10">
+    <div class="flex flex-col lg:flex-row gap-6">
+
+      {{-- Konten Utama (Kiri) --}}
+      <div class="flex-1 min-w-0">
+        <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+
+          {{-- Video Embed --}}
+          <div class="w-full bg-black" style="aspect-ratio:16/9;">
+            <iframe
+              id="main-video-frame"
+              class="w-full h-full"
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              title="Video PPID"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+          <div class="p-5 border-b border-gray-100">
+            {{-- Kategori & Tanggal --}}
+            <div class="flex items-center gap-2 mb-3">
+              <span id="video-category" class="inline-block bg-primary text-white text-[10px] font-bold px-2.5 py-0.5 rounded uppercase tracking-widest">PPID</span>
+              <span id="video-date" class="text-xs text-slate-400">7 Mei 2026</span>
+            </div>
+
+            {{-- Judul --}}
+            <h1 id="video-title" class="text-xl sm:text-2xl font-extrabold text-on-surface font-headline leading-tight mb-3">
+              BLUD JSC Sosialisasikan Fitur Aplikasi JAKI Bagi TP PKK Kelurahan Paseban
+            </h1>
+
+            {{-- Views + Share --}}
+            <div class="flex items-center justify-between flex-wrap gap-3">
+              <div class="flex items-center gap-1 text-slate-400 text-sm">
+                <span class="material-symbols-outlined text-base">visibility</span>
+                <span id="video-views">192 views</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="text-xs text-slate-400 mr-1">Share On:</span>
+                <a href="#" class="inline-flex items-center gap-1.5 bg-[#1877f2] hover:opacity-90 text-white text-xs font-semibold px-3 py-1.5 rounded transition">
+                  <svg class="w-3.5 h-3.5 fill-white" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                  Facebook
+                </a>
+                <a href="#" class="inline-flex items-center gap-1.5 bg-black hover:opacity-90 text-white text-xs font-semibold px-3 py-1.5 rounded transition">
+                  <svg class="w-3.5 h-3.5 fill-white" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                  X (Twitter)
+                </a>
+                <a href="#" class="inline-flex items-center gap-1.5 bg-[#25d366] hover:opacity-90 text-white text-xs font-semibold px-3 py-1.5 rounded transition">
+                  <svg class="w-3.5 h-3.5 fill-white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.135.562 4.14 1.542 5.876L0 24l6.313-1.508A11.954 11.954 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.89 0-3.665-.5-5.2-1.375l-.374-.222-3.746.895.928-3.638-.243-.385A9.965 9.965 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+                  WhatsApp
+                </a>
+                <button onclick="navigator.clipboard.writeText(window.location.href)" class="inline-flex items-center gap-1.5 bg-slate-600 hover:opacity-90 text-white text-xs font-semibold px-3 py-1.5 rounded transition">
+                  <span class="material-symbols-outlined text-[13px]">content_copy</span>
+                  Copy Link
+                </button>
+              </div>
+            </div>
+          </div>
+
+          {{-- Deskripsi --}}
+          <div class="p-5">
+            <p id="video-description" class="text-sm text-slate-600 leading-relaxed font-inter">
+              Badan Layanan Umum Daerah (BLUD) Jakarta Smart City (JSC) mensosialisasikan pengenalan 
+              aplikasi Jakarta Kini (JAKI) dalam kegiatan Pertemuan Rutin (Pertin) Tim Penggerak 
+              Pemberdayaan dan Kesejahteraan Keluarga (TP-PKK) Kelurahan Paseban.
+            </p>
+            <p id="video-reporter" class="text-xs text-slate-400 mt-4 pt-4 border-t border-gray-100">
+              Reporter: Rio Cornelianto &amp; Editor: Randy Vhadra
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      {{-- Sidebar Berita Terkait (Kanan) --}}
+      <aside class="w-full lg:w-72 shrink-0">
+        <div class="bg-white rounded-lg shadow-sm p-4">
+          <h3 class="font-headline font-bold text-base text-on-surface mb-4 pb-2 border-b-2 border-secondary-container inline-block">
+            Berita Terkait
+          </h3>
+
+          <div id="related-videos" class="space-y-4">
+            {{-- Item 1 --}}
+            <div class="related-item flex gap-3 cursor-pointer hover:bg-gray-50 p-2 rounded-lg transition group" 
+                 data-url="https://www.youtube.com/embed/VIDEO_ID_1"
+                 data-title="Kesbangpol Jakpus Gelar Peningkatan Pemahaman Sistem Deteksi Dini"
+                 data-desc="Kesbangpol Kota Administrasi Jakarta Pusat menggelar peningkatan pemahaman sistem deteksi dini di wilayah Jakarta Pusat."
+                 data-date="Rabu, 6 Mei 2026"
+                 data-views="87 views">
+              <div class="w-24 h-16 shrink-0 rounded overflow-hidden bg-gray-200 relative">
+                <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg" class="w-full h-full object-cover group-hover:opacity-80 transition" alt="">
+                <div class="absolute inset-0 flex items-center justify-center">
+                  <div class="bg-black/50 rounded-full w-6 h-6 flex items-center justify-center">
+                    <span class="material-symbols-outlined text-white text-[14px]">play_arrow</span>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-1 min-w-0">
+                <p class="text-xs font-semibold text-on-surface font-headline leading-tight line-clamp-3 group-hover:text-primary transition">Kesbangpol Jakpus Gelar Peningkatan Pemahaman Sistem Deteksi Dini</p>
+                <span class="text-[10px] text-slate-400 mt-1 block">Rabu, 6 Mei 2026</span>
+              </div>
+            </div>
+
+            {{-- Item 2 --}}
+            <div class="related-item flex gap-3 cursor-pointer hover:bg-gray-50 p-2 rounded-lg transition group"
+                 data-url="https://www.youtube.com/embed/VIDEO_ID_2"
+                 data-title="Wali Kota Dampingi Gubernur Jakarta Bersama Dua Kantor Kelurahan Di Wilayah Jakpus"
+                 data-desc="Wali Kota Jakarta Pusat mendampingi Gubernur mengunjungi dua kantor kelurahan di wilayah Jakarta Pusat dalam rangka peninjauan pelayanan publik."
+                 data-date="Rabu, 6 Mei 2026"
+                 data-views="143 views">
+              <div class="w-24 h-16 shrink-0 rounded overflow-hidden bg-gray-200 relative">
+                <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg" class="w-full h-full object-cover group-hover:opacity-80 transition" alt="">
+                <div class="absolute inset-0 flex items-center justify-center">
+                  <div class="bg-black/50 rounded-full w-6 h-6 flex items-center justify-center">
+                    <span class="material-symbols-outlined text-white text-[14px]">play_arrow</span>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-1 min-w-0">
+                <p class="text-xs font-semibold text-on-surface font-headline leading-tight line-clamp-3 group-hover:text-primary transition">Wali Kota Dampingi Gubernur Jakarta Bersama Dua Kantor Kelurahan Di Wilayah Jakpus</p>
+                <span class="text-[10px] text-slate-400 mt-1 block">Rabu, 6 Mei 2026</span>
+              </div>
+            </div>
+
+            {{-- Item 3 --}}
+            <div class="related-item flex gap-3 cursor-pointer hover:bg-gray-50 p-2 rounded-lg transition group"
+                 data-url="https://www.youtube.com/embed/VIDEO_ID_3"
+                 data-title="Wali Kota Dampingi Menhab Jepang Kunjungi Museum Perumusan Naskah Proklamasi"
+                 data-desc="Wali Kota Jakarta Pusat mendampingi Menteri Perumahan Jepang mengunjungi Museum Perumusan Naskah Proklamasi dalam rangka kunjungan diplomatik."
+                 data-date="Rabu, 6 Mei 2026"
+                 data-views="209 views">
+              <div class="w-24 h-16 shrink-0 rounded overflow-hidden bg-gray-200 relative">
+                <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg" class="w-full h-full object-cover group-hover:opacity-80 transition" alt="">
+                <div class="absolute inset-0 flex items-center justify-center">
+                  <div class="bg-black/50 rounded-full w-6 h-6 flex items-center justify-center">
+                    <span class="material-symbols-outlined text-white text-[14px]">play_arrow</span>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-1 min-w-0">
+                <p class="text-xs font-semibold text-on-surface font-headline leading-tight line-clamp-3 group-hover:text-primary transition">Wali Kota Dampingi Menhab Jepang Kunjungi Museum Perumusan Naskah Proklamasi</p>
+                <span class="text-[10px] text-slate-400 mt-1 block">Rabu, 6 Mei 2026</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </aside>
+
     </div>
 
+    {{-- Tags --}}
+    <div class="mt-6 bg-white rounded-lg shadow-sm p-5">
+      <h4 class="text-xs font-extrabold text-slate-500 uppercase tracking-widest mb-3">Tags</h4>
+      <div id="video-tags" class="flex flex-wrap gap-2">
+        <a href="#" class="bg-gray-100 hover:bg-primary hover:text-white text-slate-600 text-xs font-semibold px-3 py-1 rounded-full transition">#BLUD JSC</a>
+        <a href="#" class="bg-gray-100 hover:bg-primary hover:text-white text-slate-600 text-xs font-semibold px-3 py-1 rounded-full transition">#Sosialisasi Fitur Aplikasi JAKI</a>
+        <a href="#" class="bg-gray-100 hover:bg-primary hover:text-white text-slate-600 text-xs font-semibold px-3 py-1 rounded-full transition">#JAKI TP PKK</a>
+        <a href="#" class="bg-gray-100 hover:bg-primary hover:text-white text-slate-600 text-xs font-semibold px-3 py-1 rounded-full transition">#Kelurahan Paseban</a>
+      </div>
+    </div>
+
+    {{-- Berita Terbaru --}}
+    <div class="mt-6 bg-white rounded-lg shadow-sm p-5">
+      <h3 class="font-headline font-bold text-lg text-on-surface mb-1">Berita Terbaru</h3>
+      <div class="h-1 w-16 bg-secondary-container rounded mb-5"></div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+
+        {{-- Card 1 --}}
+        <a href="#" class="group block">
+          <div class="rounded-lg overflow-hidden bg-gray-100 mb-3 relative" style="aspect-ratio:16/9;">
+            <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg" 
+                 class="w-full h-full object-cover group-hover:opacity-80 transition" alt="">
+            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+              <div class="bg-black/60 rounded-full w-12 h-12 flex items-center justify-center">
+                <span class="material-symbols-outlined text-white text-2xl">play_arrow</span>
+              </div>
+            </div>
+          </div>
+          <span class="inline-block bg-blue-600 text-white text-[9px] font-bold px-2 py-0.5 rounded uppercase mb-1">PEMERINTAHAN</span>
+          <h4 class="text-sm font-bold text-on-surface font-headline leading-tight group-hover:text-primary transition line-clamp-2">Penataan Kawasan Jalan Kartini XIII Dalam Dipercantik</h4>
+          <p class="text-xs text-slate-400 mt-1">Kamis, 30 April 2026</p>
+          <p class="text-xs text-slate-500 mt-1 leading-relaxed line-clamp-3">Guna membuat lingkungan yang indah, nyaman, dan sejuk, Kelurahan Kartini melakukan penataan kawasan serta penanaman ikan sapu-sapu.</p>
+        </a>
+
+        {{-- Card 2 --}}
+        <a href="#" class="group block">
+          <div class="rounded-lg overflow-hidden bg-gray-100 mb-3 relative" style="aspect-ratio:16/9;">
+            <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg" 
+                 class="w-full h-full object-cover group-hover:opacity-80 transition" alt="">
+            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+              <div class="bg-black/60 rounded-full w-12 h-12 flex items-center justify-center">
+                <span class="material-symbols-outlined text-white text-2xl">play_arrow</span>
+              </div>
+            </div>
+          </div>
+          <span class="inline-block bg-blue-600 text-white text-[9px] font-bold px-2 py-0.5 rounded uppercase mb-1">PEMERINTAHAN</span>
+          <h4 class="text-sm font-bold text-on-surface font-headline leading-tight group-hover:text-primary transition line-clamp-2">Petugas Gabungan Gelar Kerja Bakti Tangkap Ikan Sapu-Sapu Di Depan Kali Mal Plaza Indonesia</h4>
+          <p class="text-xs text-slate-400 mt-1">Kamis, 1 Mei 2026</p>
+          <p class="text-xs text-slate-500 mt-1 leading-relaxed line-clamp-3">Pemerintah Kota Administrasi Jakarta Pusat berkolaborasi dengan Dinas Ketahanan Pangan, Kelautan, dan Pertanian menggelar kerja bakti penangkapan ikan sapu-sapu di depan Kali Cideng.</p>
+        </a>
+
+        {{-- Card 3 --}}
+        <a href="#" class="group block">
+          <div class="rounded-lg overflow-hidden bg-gray-100 mb-3 relative" style="aspect-ratio:16/9;">
+            <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg" 
+                 class="w-full h-full object-cover group-hover:opacity-80 transition" alt="">
+            <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+              <div class="bg-black/60 rounded-full w-12 h-12 flex items-center justify-center">
+                <span class="material-symbols-outlined text-white text-2xl">play_arrow</span>
+              </div>
+            </div>
+          </div>
+          <span class="inline-block bg-blue-600 text-white text-[9px] font-bold px-2 py-0.5 rounded uppercase mb-1">PEMERINTAHAN</span>
+          <h4 class="text-sm font-bold text-on-surface font-headline leading-tight group-hover:text-primary transition line-clamp-2">Kelurahan Bungur Adakan Kegiatan Bina Keluarga Remaja</h4>
+          <p class="text-xs text-slate-400 mt-1">Jumat, 2 Mei 2026</p>
+          <p class="text-xs text-slate-500 mt-1 leading-relaxed line-clamp-3">Kelurahan Bungur, Kecamatan Senen mengadakan kegiatan Bina Keluarga Remaja untuk meningkatkan kualitas remaja di lingkungan setempat.</p>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
 </main>
-<footer id="kontak" class="bg-slate-800 dark:bg-slate-600 w-full pt-16 md:pt-20 pb-8 border-t border-slate-600 dark:border-slate-800">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto px-4 md:px-6 font-['Inter'] text-sm leading-relaxed">
-<!-- Brand & Map -->
-<div class="md:col-span-2">
-<div class="text-xl md:text-2xl font-bold text-yellow-600 dark:text-blue-100 mb-6 font-headline">PPID Kota Balikpapan</div>
-<p class="text-slate-400 dark:text-slate-400 max-w-md mb-8">
+
+<script>
+// Klik berita terkait -> ganti video utama + update info
+document.querySelectorAll('.related-item').forEach(function(item) {
+    item.addEventListener('click', function() {
+        var url = this.dataset.url;
+        var title = this.dataset.title;
+        var desc = this.dataset.desc;
+        var date = this.dataset.date;
+        var views = this.dataset.views;
+
+        if (url) document.getElementById('main-video-frame').src = url;
+        if (title) document.getElementById('video-title').textContent = title;
+        if (desc) document.getElementById('video-description').textContent = desc;
+        if (date) document.getElementById('video-date').textContent = date;
+        if (views) document.getElementById('video-views').textContent = views;
+
+        // Scroll ke atas video
+        document.getElementById('main-video-frame').closest('div').scrollIntoView({ behavior: 'smooth' });
+
+        // Highlight item terpilih
+        document.querySelectorAll('.related-item').forEach(function(el) { el.classList.remove('bg-blue-50'); });
+        this.classList.add('bg-blue-50');
+    });
+});
+</script>
+<footer id="kontak" class="bg-slate-800 w-full pt-16 md:pt-20 pb-8 border-t border-slate-600">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto px-4 md:px-6 font-['Inter'] text-sm leading-relaxed">
+        <!-- Brand & Map -->
+        <div class="md:col-span-2">
+            <div class="text-xl md:text-2xl font-bold text-yellow-600 mb-6 font-headline">PPID Kota Balikpapan</div>
+            <p class="text-slate-400 max-w-md mb-8">
                 Pejabat Pengelola Informasi dan Dokumentasi (PPID) Utama Pemerintah Kota Balikpapan bertanggung jawab untuk penyimpanan, pendokumentasian, penyediaan, dan pelayanan informasi publik.
             </p>
-<div class="w-full rounded-xl overflow-hidden shadow-md" style="aspect-ratio:16/9;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63821.253001534766!2d116.75573272167965!3d-1.2764074999999773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df1473bb9404897%3A0x94d96108f98b652c!2sBalikpapan%20Mayor&#39;s%20Office!5e0!3m2!1sen!2ssg!4v1776063788871!5m2!1sen!2ssg" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-</div>
-<!-- Contacts -->
-<div>
-<h4 class="font-headline font-bold text-yellow-600 dark:text-blue-100 text-lg mb-7">Kontak Kami</h4>
-<ul class="space-y-4 text-slate-400 dark:text-slate-400">
-<li class="flex gap-3">
-<span class="material-symbols-outlined text-secondary shrink-0" data-icon="location_on">location_on</span>
-<span class="text-xs md:text-sm">Jl. Jenderal Sudirman No.1, Klandasan Ulu, Balikpapan Kota, Kota Balikpapan, Kalimantan Timur 76112</span>
-</li>
-<li class="flex items-center gap-3">
-<span class="material-symbols-outlined text-secondary shrink-0" data-icon="call">call</span>
-<span class="text-xs md:text-sm">(0542) 421420</span>
-</li>
-<li class="flex items-center gap-3">
-<span class="material-symbols-outlined text-secondary shrink-0" data-icon="mail">mail</span>
-<span class="text-xs md:text-sm break-all">ppid@balikpapan.go.id</span>
-</li>
-</ul>
-</div>
-<!-- Quick Links -->
-<div>
-<h4 class="font-headline font-bold text-yellow-600 dark:text-blue-100 text-lg mb-6">Peta Situs</h4>
-<ul class="space-y-3">
-<li><a class="text-slate-400 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline-offset-4 hover:underline ease-in-out duration-200 text-xs md:text-sm" href="whistleblower.blade.php">Whistleblower System</a></li>
-<li><a class="text-slate-400 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline-offset-4 hover:underline ease-in-out duration-200 text-xs md:text-sm" href="#">Lapor!</a></li>
-<li><a class="text-slate-400 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline-offset-4 hover:underline ease-in-out duration-200 text-xs md:text-sm" href="#">Data Terbuka</a></li>
-<li><a class="text-slate-400 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 underline-offset-4 hover:underline ease-in-out duration-200 text-xs md:text-sm font-semibold" href="#">Kebijakan Privasi</a></li>
-</ul>
-</div>
-</div>
-<div class="max-w-7xl mx-auto px-4 md:px-6 mt-16 pt-8 border-t border-slate-600 dark:border-slate-800 text-center">
-<p class="text-slate-400 dark:text-slate-400 text-[10px] md:text-xs">
-    © {{ date('Y') }} Pemerintah Kota Balikpapan. PPID Utama. All rights reserved.
-</p>
-</div>
+            <div class="w-full rounded-xl overflow-hidden shadow-md" style="aspect-ratio:16/9;">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63821.253001534766!2d116.75573272167965!3d-1.2764074999999773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df1473bb9404897%3A0x94d96108f98b652c!2sBalikpapan%20Mayor&#39;s%20Office!5e0!3m2!1sen!2ssg!4v1776063788871!5m2!1sen!2ssg" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <!-- Kontak -->
+        <div>
+            <h4 class="font-headline font-bold text-yellow-600 text-lg mb-7">Kontak Kami</h4>
+            <ul class="space-y-4 text-slate-400">
+                <li class="flex gap-3"><span class="material-symbols-outlined text-secondary shrink-0">location_on</span><span class="text-xs md:text-sm">Jl. Jenderal Sudirman No.1, Klandasan Ulu, Balikpapan Kota, Kalimantan Timur 76112</span></li>
+                <li class="flex items-center gap-3"><span class="material-symbols-outlined text-secondary shrink-0">call</span><span class="text-xs md:text-sm">(0542) 421420</span></li>
+                <li class="flex items-center gap-3"><span class="material-symbols-outlined text-secondary shrink-0">mail</span><span class="text-xs md:text-sm break-all">ppid@balikpapan.go.id</span></li>
+            </ul>
+        </div>
+        <!-- Peta Situs -->
+        <div>
+            <h4 class="font-headline font-bold text-yellow-600 text-lg mb-6">Peta Situs</h4>
+            <ul class="space-y-3">
+                <li><a class="text-slate-400 hover:text-blue-300 underline-offset-4 hover:underline ease-in-out duration-200 text-xs md:text-sm" href="#">Whistleblower System</a></li>
+                <li><a class="text-slate-400 hover:text-blue-300 underline-offset-4 hover:underline ease-in-out duration-200 text-xs md:text-sm" href="#">Lapor!</a></li>
+                <li><a class="text-slate-400 hover:text-blue-300 underline-offset-4 hover:underline ease-in-out duration-200 text-xs md:text-sm" href="#">Data Terbuka</a></li>
+                <li><a class="text-slate-400 hover:text-blue-300 underline-offset-4 hover:underline ease-in-out duration-200 text-xs md:text-sm font-semibold" href="#">Kebijakan Privasi</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 md:px-6 mt-16 pt-8 border-t border-slate-600 text-center">
+        <p class="text-slate-400 text-[10px] md:text-xs">
+            &copy; {{ date('Y') }} Pemerintah Kota Balikpapan. PPID Utama. All rights reserved.
+        </p>
+    </div>
 </footer>
+
+
+
+
 <script>
 (function(){
     var n=document.getElementById('desktop-nav');
@@ -701,23 +925,6 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
     window.addEventListener('resize', applyNav);
 })();
 </script>
-
-<script>
-(function(){
-    var n=document.getElementById('desktop-nav');
-    if(!n)return;
-    function applyNav(){
-        if(window.innerWidth<768){
-            n.style.cssText='display:none!important;height:0!important;overflow:hidden!important;';
-        }else{
-            n.style.cssText='display:block!important;height:44px!important;overflow:visible!important;position:relative;z-index:9999;';
-        }
-    }
-    applyNav();
-    window.addEventListener('resize',applyNav);
-})();
-</script>
-
 <script>
     function updateClock() {
         const now = new Date();
@@ -757,8 +964,142 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
     }
     setInterval(updateClock, 1000);
     updateClock();
-</script>
 
+    // Carousel Logic - Fully functional with Infinite Loop
+    const track = document.getElementById('carousel-track');
+    const container = document.getElementById('carousel-container');
+    const originalSlides = Array.from(track.children);
+    const nextButton = document.getElementById('next-slide');
+    const prevButton = document.getElementById('prev-slide');
+    const dots = Array.from(document.querySelectorAll('.carousel-dot'));
+    
+    // Clone slides for infinite effect
+    const firstClone = originalSlides[0].cloneNode(true);
+    const lastClone = originalSlides[originalSlides.length - 1].cloneNode(true);
+    
+    track.appendChild(firstClone);
+    track.insertBefore(lastClone, originalSlides[0]);
+
+    const slides = Array.from(track.children);
+    let currentIndex = 1; 
+    let isTransitioning = false;
+    let autoPlayTimer;
+
+    function updateCarousel(instant = false) {
+        if (instant) track.style.transition = 'none';
+        else track.style.transition = 'transform 0.5s cubic-bezier(0.4, 0, 0.2, 1)';
+        
+        track.style.transform = `translateX(-${currentIndex * 100}%)`;
+        
+        // Update dots UI
+        let dotIndex = currentIndex - 1;
+        if (currentIndex === 0) dotIndex = originalSlides.length - 1;
+        if (currentIndex === slides.length - 1) dotIndex = 0;
+
+        dots.forEach((dot, idx) => {
+            if (idx === dotIndex) {
+                dot.classList.remove('bg-white/40');
+                dot.classList.add('bg-white', 'scale-125');
+            } else {
+                dot.classList.add('bg-white/40');
+                dot.classList.remove('bg-white', 'scale-125');
+            }
+        });
+    }
+
+    track.addEventListener('transitionend', () => {
+        isTransitioning = false;
+        if (currentIndex === 0) {
+            currentIndex = slides.length - 2;
+            updateCarousel(true);
+        }
+        if (currentIndex === slides.length - 1) {
+            currentIndex = 1;
+            updateCarousel(true);
+        }
+    });
+
+    function moveNext() {
+        if (isTransitioning) return;
+        isTransitioning = true;
+        currentIndex++;
+        updateCarousel();
+    }
+
+    function movePrev() {
+        if (isTransitioning) return;
+        isTransitioning = true;
+        currentIndex--;
+        updateCarousel();
+    }
+
+    function startAutoPlay() {
+        autoPlayTimer = setInterval(moveNext, 7000);
+    }
+
+    function resetAutoPlay() {
+        clearInterval(autoPlayTimer);
+        startAutoPlay();
+    }
+
+    nextButton.addEventListener('click', () => { moveNext(); resetAutoPlay(); });
+    prevButton.addEventListener('click', () => { movePrev(); resetAutoPlay(); });
+    
+    dots.forEach((dot, idx) => {
+        dot.addEventListener('click', () => {
+            if (isTransitioning) return;
+            currentIndex = idx + 1;
+            updateCarousel();
+            resetAutoPlay();
+        });
+    });
+
+    // Drag functionality
+    let startX = 0;
+    let isDragging = false;
+    let dragMove = 0;
+
+    const dragStart = (e) => {
+        if (isTransitioning) return;
+        isDragging = true;
+        startX = e.type.includes('touch') ? e.touches[0].pageX : e.pageX;
+        clearInterval(autoPlayTimer);
+        track.style.transition = 'none';
+    };
+
+    const dragging = (e) => {
+        if (!isDragging) return;
+        const currentX = e.type.includes('touch') ? e.touches[0].pageX : e.pageX;
+        dragMove = currentX - startX;
+        const currentTranslate = -currentIndex * track.offsetWidth;
+        track.style.transform = `translateX(${currentTranslate + dragMove}px)`;
+    };
+
+    const dragEnd = () => {
+        if (!isDragging) return;
+        isDragging = false;
+        if (Math.abs(dragMove) > track.offsetWidth / 5) {
+            if (dragMove > 0) movePrev();
+            else moveNext();
+        } else {
+            updateCarousel();
+        }
+        dragMove = 0;
+        startAutoPlay();
+    };
+
+    track.addEventListener('mousedown', dragStart);
+    window.addEventListener('mousemove', dragging);
+    window.addEventListener('mouseup', dragEnd);
+    
+    track.addEventListener('touchstart', dragStart);
+    track.addEventListener('touchmove', dragging);
+    track.addEventListener('touchend', dragEnd);
+
+    // Initialize
+    updateCarousel(true);
+    startAutoPlay();
+</script>
 <script>
     // Hide/show desktop nav based on screen width
     function hideShowNav() {
@@ -903,6 +1244,4 @@ positionMegaMenu();
     });
 })();
 </script>
-
-</body>
-</html>
+</body></html>
