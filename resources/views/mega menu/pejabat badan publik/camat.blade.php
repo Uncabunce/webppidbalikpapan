@@ -89,7 +89,7 @@
             font-family: "Manrope", sans-serif
         }
         .batik-bg {
-            background-image: linear-gradient(rgba(240, 240, 240, 0.9), rgba(240, 240, 240, 0.9)), url("batik dayak.png");
+            background-image: linear-gradient(rgba(240, 240, 240, 0.9), rgba(240, 240, 240, 0.9)), url("/batik%20dayak.png");
             background-repeat: repeat;
             background-size: 300px
         }
@@ -203,6 +203,23 @@
         .mega-menu.open {
             display: block !important;
         }
+        .ppid-card { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); overflow: hidden; }
+  .ppid-header { background: #003f74; padding: 1.25rem 1.5rem; display: flex; align-items: center; gap: 1rem; border-bottom: 3px solid #fdc003; }
+  .ppid-badge { background: #fdc003; color: #003f74; font-size: 10px; font-weight: 500; letter-spacing: 0.08em; padding: 3px 10px; border-radius: 20px; text-transform: uppercase; display: inline-block; margin-bottom: 4px; }
+  .ppid-name { color: #ffffff; font-size: 18px; font-weight: 500; margin: 0 0 2px; font-family: var(--font-sans); }
+  .ppid-title { color: rgba(255,255,255,0.65); font-size: 13px; margin: 0; }
+  .avatar-ring { width: 80px; height: 80px; border-radius: 50%; border: 3px solid #fdc003; overflow: hidden; flex-shrink: 0; background: #004f8c; display: flex; align-items: center; justify-content: center; }
+  .avatar-initials { color: #fdc003; font-size: 26px; font-weight: 500; letter-spacing: -1px; font-family: var(--font-sans); }
+  .section-label { font-size: 10px; font-weight: 500; color: var(--color-text-secondary); text-transform: uppercase; letter-spacing: 0.1em; padding: 1rem 1.5rem 0.5rem; border-bottom: 0.5px solid var(--color-border-tertiary); margin-bottom: 0; }
+  .edu-table, .job-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .edu-table th, .job-table th { background: var(--color-background-secondary); color: var(--color-text-secondary); font-weight: 500; font-size: 11px; text-align: left; padding: 6px 1.5rem; border-bottom: 0.5px solid var(--color-border-tertiary); }
+  .edu-table td, .job-table td { padding: 8px 1.5rem; color: var(--color-text-primary); border-bottom: 0.5px solid var(--color-border-tertiary); vertical-align: top; line-height: 1.5; }
+  .edu-table tr:last-child td, .job-table tr:last-child td { border-bottom: none; }
+  .edu-table tr:hover, .job-table tr:hover { background: var(--color-background-secondary); }
+  .job-num { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; background: #003f74; color: #fdc003; font-size: 10px; font-weight: 500; flex-shrink: 0; }
+  .job-year { background: #fdc003; color: #003f74; font-size: 11px; font-weight: 500; padding: 2px 8px; border-radius: 20px; white-space: nowrap; display: inline-block; }
+  .degree-pill { background: var(--color-background-secondary); color: var(--color-text-secondary); font-size: 11px; font-weight: 500; padding: 2px 8px; border-radius: 20px; border: 0.5px solid var(--color-border-tertiary); white-space: nowrap; display: inline-block; }
+  .photo-note { font-size: 11px; color: rgba(255,255,255,0.45); margin-top: 4px; font-style: italic; }
     </style>
 </head>
 <body class="bg-surface text-on-surface">
@@ -214,7 +231,7 @@
 <!-- Left: Logo -->
 <div class="flex items-center justify-between w-full md:w-auto">  
     <a href="http://ppidbalikpapan.test/" class="h-8 md:h-10 w-auto object-contain">
-     <img src="{{ asset('logo_ppid bg removed.png') }}" alt="logo" class="h-full w-auto"></a>
+     <img src="/logo_ppid%20bg%20removed.png" alt="logo" class="h-full w-auto"></a>
 <!-- Mobile right side: clock + hamburger -->
 <div class="flex items-center gap-2 md:hidden">
 <!-- Mobile clock -->
@@ -389,15 +406,15 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 <div>
 <h3 class="text-[10px] font-extrabold text-primary uppercase tracking-widest mb-3 pb-1.5 border-b-2 border-secondary-container">Informasi Berkala</h3>
 <ul class="space-y-1">
-<li><a href="/informasi/RKPD" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">RKPD</a></li>
+<li><a href="http://web.balikpapan.go.id/detail/read/5834" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">RKPD</a></li>
 <li><a href="/informasi/LAKIP" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">LAKIP</a></li>
-<li><a href="/informasi/laporan-keuangan" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Laporan Keuangan</a></li>
+<li><a href="http://web.balikpapan.go.id/detail/read/5886" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Laporan Keuangan</a></li>
 <li><a href="/informasi/laporaninfo" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Laporan Akses Informasi Publik</a></li>
-<li><a href="/informasi/produk-hukum" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Produk Hukum</a></li>
-<li><a href="/informasi/ketenagakerjaan" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Ketenagakerjaan</a></li>
+<li><a href="https://jdih.balikpapan.go.id/" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Produk Hukum</a></li>
+<li><a href="https://newnaker.balikpapan.go.id/" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Ketenagakerjaan</a></li>
 <li><a href="/informasi/prosedur-peringatan" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Prosedur Peringatan Dini dan Prosedur Evakuasi Keadaan Darurat di Setiap Kantor Badan Publik</a></li>
-<li><a href="/informasi/realisasi-2022" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Realisasi Kegiatan dan Kinerja Pemkot Balikpapan Tahun 2022</a></li>
 <li><a href="/informasi/realisasi-2023" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Realisasi Kegiatan dan Kinerja Pemkot Balikpapan Tahun 2023</a></li>
+<li><a href="/informasi/realisasi-2024" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Realisasi Kegiatan dan Kinerja Pemkot Balikpapan Tahun 2024</a></li>
 <li><a href="/informasi/program-kegiatan-2023" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Program dan Kegiatan Tahun 2023</a></li>
 <li><a href="/informasi/SK_klasifikasi" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">SK KLASIFIKASI DIKECUALIKAN</a></li>
 <li><a href="/informasi/SK_maklumat" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">SK MAKLUMAT PELAYANAN DISKOMINFO</a></li>
@@ -522,15 +539,15 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 </button>
 <div id="acc-infopub" class="hidden flex-col bg-white/5 rounded-lg mx-2 mb-2 overflow-hidden">
 <p class="px-5 py-2 text-[10px] font-extrabold text-secondary-container uppercase tracking-widest">Informasi Berkala</p>
-<a href="/informasi/RKPD" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">RKPD</a>
+<a href="http://web.balikpapan.go.id/detail/read/5834" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">RKPD</a>
 <a href="/informasi/LAKIP" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">LAKIP</a>
-<a href="/informasi/laporan-keuangan" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Laporan Keuangan</a>
+<a href="http://web.balikpapan.go.id/detail/read/5886" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Laporan Keuangan</a>
 <a href="/informasi/laporaninfo" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Laporan Akses Informasi Publik</a>
-<a href="/informasi/produk-hukum" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Produk Hukum</a>
-<a href="/informasi/ketenagakerjaan" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Ketenagakerjaan</a>
+<a href="https://jdih.balikpapan.go.id/" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Produk Hukum</a>
+<a href="https://newnaker.balikpapan.go.id/" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Ketenagakerjaan</a>
 <a href="/informasi/prosedurperingatandini" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Prosedur Peringatan Dini dan Evakuasi Keadaan Darurat</a>
-<a href="/informasi/realisasi-2022" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Realisasi Kegiatan dan Kinerja Pemkot Balikpapan Tahun 2022</a>
 <a href="/informasi/realisasi-2023" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Realisasi Kegiatan dan Kinerja Pemkot Balikpapan Tahun 2023</a>
+<a href="/informasi/realisasi-2024" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Realisasi Kegiatan dan Kinerja Pemkot Balikpapan Tahun 2024</a>
 <a href="/informasi/program-kegiatan-2023" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Program dan Kegiatan Tahun 2023</a>
 <a href="/informasi/SK_klasifikasi" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">SK Klasifikasi Dikecualikan</a>
 <a href="/informasi/SK_maklumat" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">SK Maklumat Pelayanan Diskominfo</a>
@@ -606,11 +623,525 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 </div>
 </header>
 <main class="bg-surface min-h-screen">
+    <section class="relative py-20 overflow-hidden border-b border-outline-variant/10">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-br from-primary via-primary-container to-primary opacity-95"></div>
+            <div class="absolute inset-0" style="background-image:url('/batik%20dayak.png');background-repeat:repeat;background-size:300px;opacity:0.05;"></div>
+        </div>
+        <div class="max-w-4xl mx-auto px-6 relative z-10 text-center">
+            <nav class="flex justify-center mb-4 text-xs font-medium text-white/60 uppercase tracking-widest gap-2">
+                <a href="/" class="hover:text-white transition-colors">Beranda</a>
+                <span>/</span>
+                <span>Pejabat Badan Publik</span>
+                <span>/</span>
+                <span class="text-white">Camat</span>
+            </nav>
+            <h1 class="text-4xl md:text-5xl font-headline font-extrabold text-white leading-tight mb-4">
+                Camat
+            </h1>
+            <p class="text-white/70 text-lg max-w-2xl mx-auto">
+                Pemerintah Daerah
+            </p>
+        </div>
+    </section>
     <!-- ================================ -->
     <!-- KONTEN HALAMAN DI SINI          -->
     <!-- ================================ -->
     <div class="max-w-7xl mx-auto px-4 md:px-6 py-10">
-        <p class="text-on-surface-variant text-center text-sm">Konten halaman</p>
+        <h2 class="sr-only">Profil pejabat RUDDY ISKANDAR, S.Sos — Plt. Camat — riwayat pendidikan dan jabatan</h2>
+
+<div class="ppid-card">
+
+  <div class="ppid-header">
+    <div class="avatar-ring">
+      <span class="avatar-initials">RI</span>
+    </div>
+    <div style="flex:1;">
+      <div class="ppid-badge">Pejabat Badan Publik</div>
+      <p class="ppid-name">RUDDY ISKANDAR, S.Sos</p>
+      <p class="ppid-title">Plt. Camat &mdash; Kecamatan Balikpapan Timur</p>
+      <p class="photo-note">* Foto belum tersedia — unggah foto untuk menampilkannya</p>
+    </div>
+  </div>
+
+  <p class="section-label">Riwayat Pendidikan</p>
+  <table class="edu-table">
+    <thead>
+      <tr>
+        <th style="width:80px;">Jenjang</th>
+        <th>Nama Sekolah / Universitas</th>
+        <th style="width:200px;">Jurusan</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="degree-pill">S1</span></td>
+        <td>Universitas Mulawarman</td>
+        <td style="color:var(--color-text-secondary);">Ilmu Pemerintahan</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p class="section-label" style="margin-top:0;">Riwayat Jabatan</p>
+  <table class="job-table">
+    <thead>
+      <tr>
+        <th style="width:36px;">#</th>
+        <th>Jabatan &amp; Instansi</th>
+        <th style="width:70px;text-align:right;padding-right:1.5rem;">Tahun</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="job-num">1</span></td>
+        <td>Plt. Camat<br><span style="font-size:12px;color:var(--color-text-secondary);">Kecamatan Balikpapan Timur</span></td>
+        <td style="text-align:right;padding-right:1.5rem;"><span class="job-year">2022</span></td>
+      </tr>
+      <tr>
+        <td><span class="job-num">2</span></td>
+        <td>Sekretaris Camat<br><span style="font-size:12px;color:var(--color-text-secondary);">Kecamatan Balikpapan Timur</span></td>
+        <td style="text-align:right;padding-right:1.5rem;"><span class="job-year">2022</span></td>
+      </tr>
+      <tr>
+        <td><span class="job-num">3</span></td>
+        <td>Lurah Teritip<br><span style="font-size:12px;color:var(--color-text-secondary);">Kelurahan Teritip</span></td>
+        <td style="text-align:right;padding-right:1.5rem;"><span class="job-year">2019</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+    </div>
+    <div class="max-w-7xl mx-auto px-4 md:px-6 py-10">
+        <h2 class="sr-only">Profil pejabat DRS. MUHAMMAD ARIF FADHILAH, M.Si — Camat — riwayat pendidikan dan jabatan</h2>
+
+<div class="ppid-card">
+
+  <div class="ppid-header">
+    <div class="avatar-ring">
+      <span class="avatar-initials">MA</span>
+    </div>
+    <div style="flex:1;">
+      <div class="ppid-badge">Pejabat Badan Publik</div>
+      <p class="ppid-name">DRS. MUHAMMAD ARIF FADHILAH, M.Si</p>
+      <p class="ppid-title">Camat &mdash; Kecamatan Balikpapan Barat</p>
+      <p class="photo-note">* Foto belum tersedia — unggah foto untuk menampilkannya</p>
+    </div>
+  </div>
+
+  <p class="section-label">Riwayat Pendidikan</p>
+  <table class="edu-table">
+    <thead>
+      <tr>
+        <th style="width:80px;">Jenjang</th>
+        <th>Nama Sekolah / Universitas</th>
+        <th style="width:200px;">Jurusan</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="degree-pill">S2</span></td>
+        <td>Institut Pemerintahan Dalam Negeri</td>
+        <td style="color:var(--color-text-secondary);">Administrasi Pemerintahan Daerah</td>
+      </tr>
+      <tr>
+        <td><span class="degree-pill">S1</span></td>
+        <td>Institut Pemerintahan Dalam Negeri</td>
+        <td style="color:var(--color-text-secondary);">Manajemen Pemerintahan</td>
+      </tr>
+      <tr>
+        <td><span class="degree-pill">D4</span></td>
+        <td>STPDN</td>
+        <td style="color:var(--color-text-secondary);">—</td>
+      </tr>
+      <tr>
+        <td><span class="degree-pill">SLTA</span></td>
+        <td>SMA Negeri</td>
+        <td style="color:var(--color-text-secondary);">IPA / A1</td>
+      </tr>
+      <tr>
+        <td><span class="degree-pill">SLTP</span></td>
+        <td>SMP Negeri 2</td>
+        <td style="color:var(--color-text-secondary);">—</td>
+      </tr>
+      <tr>
+        <td><span class="degree-pill">SD</span></td>
+        <td>SD Negeri</td>
+        <td style="color:var(--color-text-secondary);">—</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p class="section-label" style="margin-top:0;">Riwayat Jabatan</p>
+  <table class="job-table">
+    <thead>
+      <tr>
+        <th style="width:36px;">#</th>
+        <th>Jabatan &amp; Instansi</th>
+        <th style="width:70px;text-align:right;padding-right:1.5rem;">Tahun</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="job-num">1</span></td>
+        <td>Camat<br><span style="font-size:12px;color:var(--color-text-secondary);">Kecamatan Balikpapan Barat</span></td>
+        <td style="text-align:right;padding-right:1.5rem;"><span class="job-year">2018</span></td>
+      </tr>
+      <tr>
+        <td><span class="job-num">2</span></td>
+        <td>Kepala Bidang Perizinan Usaha<br><span style="font-size:12px;color:var(--color-text-secondary);">Dinas Penanaman Modal Dan Perizinan Terpadu</span></td>
+        <td style="text-align:right;padding-right:1.5rem;"><span class="job-year">2016</span></td>
+      </tr>
+      <tr>
+        <td><span class="job-num">3</span></td>
+        <td>Kepala Bidang Perizinan<br><span style="font-size:12px;color:var(--color-text-secondary);">Dinas Penanaman Modal Dan Pelayanan Perizinan Terpadu</span></td>
+        <td style="text-align:right;padding-right:1.5rem;"><span class="job-year">2014</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+    </div>
+    <div class="max-w-7xl mx-auto px-4 md:px-6 py-10">
+        <h2 class="sr-only">Profil pejabat EDY GUNAWAN, S.H., M.H — Camat — riwayat pendidikan dan jabatan</h2>
+
+<div class="ppid-card">
+
+  <div class="ppid-header">
+    <div class="avatar-ring">
+      <span class="avatar-initials">EG</span>
+    </div>
+    <div style="flex:1;">
+      <div class="ppid-badge">Pejabat Badan Publik</div>
+      <p class="ppid-name">EDY GUNAWAN, S.H., M.H</p>
+      <p class="ppid-title">Camat &mdash; Kecamatan Balikpapan Tengah</p>
+      <p class="photo-note">* Foto belum tersedia — unggah foto untuk menampilkannya</p>
+    </div>
+  </div>
+
+  <p class="section-label">Riwayat Pendidikan</p>
+  <table class="edu-table">
+    <thead>
+      <tr>
+        <th style="width:80px;">Jenjang</th>
+        <th>Nama Sekolah / Universitas</th>
+        <th style="width:200px;">Jurusan</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="degree-pill">S2</span></td>
+        <td>UNIBA</td>
+        <td style="color:var(--color-text-secondary);">Ilmu Hukum</td>
+      </tr>
+      <tr>
+        <td><span class="degree-pill">S1</span></td>
+        <td>Universitas Merdeka</td>
+        <td style="color:var(--color-text-secondary);">Hukum</td>
+      </tr>
+      <tr>
+        <td><span class="degree-pill">SLTA</span></td>
+        <td>SMAN I</td>
+        <td style="color:var(--color-text-secondary);">IPS / A3</td>
+      </tr>
+      <tr>
+        <td><span class="degree-pill">SLTP</span></td>
+        <td>SMPN II</td>
+        <td style="color:var(--color-text-secondary);">—</td>
+      </tr>
+      <tr>
+        <td><span class="degree-pill">SD</span></td>
+        <td>SDN 34</td>
+        <td style="color:var(--color-text-secondary);">—</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p class="section-label" style="margin-top:0;">Riwayat Jabatan</p>
+  <table class="job-table">
+    <thead>
+      <tr>
+        <th style="width:36px;">#</th>
+        <th>Jabatan &amp; Instansi</th>
+        <th style="width:70px;text-align:right;padding-right:1.5rem;">Tahun</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="job-num">1</span></td>
+        <td>Camat<br><span style="font-size:12px;color:var(--color-text-secondary);">Kecamatan Balikpapan Tengah</span></td>
+        <td style="text-align:right;padding-right:1.5rem;"><span class="job-year">2019</span></td>
+      </tr>
+      <tr>
+        <td><span class="job-num">2</span></td>
+        <td>Kepala Bidang Keolahragaan<br><span style="font-size:12px;color:var(--color-text-secondary);">Dinas Pemuda, Olahraga Dan Pariwisata</span></td>
+        <td style="text-align:right;padding-right:1.5rem;"><span class="job-year">2018</span></td>
+      </tr>
+      <tr>
+        <td><span class="job-num">3</span></td>
+        <td>Sekretaris Camat<br><span style="font-size:12px;color:var(--color-text-secondary);">Kecamatan Balikpapan Barat</span></td>
+        <td style="text-align:right;padding-right:1.5rem;"><span class="job-year">2016</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+    </div>
+    <div class="max-w-7xl mx-auto px-4 md:px-6 py-10">
+        <h2 class="sr-only">Profil pejabat DRS. MUHAMMAD IDRIS, M.Si — Camat — riwayat pendidikan dan jabatan</h2>
+
+<div class="ppid-card">
+
+  <div class="ppid-header">
+    <div class="avatar-ring">
+      <span class="avatar-initials">MI</span>
+    </div>
+    <div style="flex:1;">
+      <div class="ppid-badge">Pejabat Badan Publik</div>
+      <p class="ppid-name">DRS. MUHAMMAD IDRIS, M.Si</p>
+      <p class="ppid-title">Camat &mdash; Kecamatan Balikpapan Utara</p>
+      <p class="photo-note">* Foto belum tersedia — unggah foto untuk menampilkannya</p>
+    </div>
+  </div>
+
+  <p class="section-label">Riwayat Pendidikan</p>
+  <table class="edu-table">
+    <thead>
+      <tr>
+        <th style="width:80px;">Jenjang</th>
+        <th>Nama Sekolah / Universitas</th>
+        <th style="width:200px;">Jurusan</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="degree-pill">S2</span></td>
+        <td>Universitas Mulawarman</td>
+        <td style="color:var(--color-text-secondary);">Ilmu Administrasi Negara</td>
+      </tr>
+      <tr>
+        <td><span class="degree-pill">S1</span></td>
+        <td>IKIP Ujung Pandang</td>
+        <td style="color:var(--color-text-secondary);">—</td>
+      </tr>
+      <tr>
+        <td><span class="degree-pill">SLTA</span></td>
+        <td>SMAN Sinjai</td>
+        <td style="color:var(--color-text-secondary);">—</td>
+      </tr>
+      <tr>
+        <td><span class="degree-pill">SLTP</span></td>
+        <td>SMPN Sinjai</td>
+        <td style="color:var(--color-text-secondary);">—</td>
+      </tr>
+      <tr>
+        <td><span class="degree-pill">SD</span></td>
+        <td>SDN No. 2 Balangnipa</td>
+        <td style="color:var(--color-text-secondary);">—</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p class="section-label" style="margin-top:0;">Riwayat Jabatan</p>
+  <table class="job-table">
+    <thead>
+      <tr>
+        <th style="width:36px;">#</th>
+        <th>Jabatan &amp; Instansi</th>
+        <th style="width:70px;text-align:right;padding-right:1.5rem;">Tahun</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="job-num">1</span></td>
+        <td>Camat<br><span style="font-size:12px;color:var(--color-text-secondary);">Kecamatan Balikpapan Utara</span></td>
+        <td style="text-align:right;padding-right:1.5rem;"><span class="job-year">2022</span></td>
+      </tr>
+      <tr>
+        <td><span class="job-num">2</span></td>
+        <td>Inspektur Pembantu I<br><span style="font-size:12px;color:var(--color-text-secondary);">Inspektorat</span></td>
+        <td style="text-align:right;padding-right:1.5rem;"><span class="job-year">2016</span></td>
+      </tr>
+      <tr>
+        <td><span class="job-num">3</span></td>
+        <td>Camat<br><span style="font-size:12px;color:var(--color-text-secondary);">Kecamatan Balikpapan Selatan</span></td>
+        <td style="text-align:right;padding-right:1.5rem;"><span class="job-year">2019</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+    </div>
+    <div class="max-w-7xl mx-auto px-4 md:px-6 py-10">
+        <h2 class="sr-only">Profil pejabat ROSIN SUPARLAN, SSTP — Camat — riwayat pendidikan dan jabatan</h2>
+
+<div class="ppid-card">
+
+  <div class="ppid-header">
+    <div class="avatar-ring">
+      <span class="avatar-initials">RS</span>
+    </div>
+    <div style="flex:1;">
+      <div class="ppid-badge">Pejabat Badan Publik</div>
+      <p class="ppid-name">ROSIN SUPARLAN, SSTP</p>
+      <p class="ppid-title">Camat &mdash; Kecamatan Balikpapan Kota</p>
+      <p class="photo-note">* Foto belum tersedia — unggah foto untuk menampilkannya</p>
+    </div>
+  </div>
+
+  <p class="section-label">Riwayat Pendidikan</p>
+  <table class="edu-table">
+    <thead>
+      <tr>
+        <th style="width:80px;">Jenjang</th>
+        <th>Nama Sekolah / Universitas</th>
+        <th style="width:200px;">Jurusan</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="degree-pill">D4</span></td>
+        <td>STPDN</td>
+        <td style="color:var(--color-text-secondary);">Ilmu Pemerintahan</td>
+      </tr>
+      <tr>
+        <td><span class="degree-pill">SLTA</span></td>
+        <td>SMUN 1</td>
+        <td style="color:var(--color-text-secondary);">IPS / A3</td>
+      </tr>
+      <tr>
+        <td><span class="degree-pill">SLTP</span></td>
+        <td>SMPN 2</td>
+        <td style="color:var(--color-text-secondary);">—</td>
+      </tr>
+      <tr>
+        <td><span class="degree-pill">SD</span></td>
+        <td>SDN 005</td>
+        <td style="color:var(--color-text-secondary);">—</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p class="section-label" style="margin-top:0;">Riwayat Jabatan</p>
+  <table class="job-table">
+    <thead>
+      <tr>
+        <th style="width:36px;">#</th>
+        <th>Jabatan &amp; Instansi</th>
+        <th style="width:70px;text-align:right;padding-right:1.5rem;">Tahun</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="job-num">1</span></td>
+        <td>Camat<br><span style="font-size:12px;color:var(--color-text-secondary);">Kecamatan Balikpapan Kota</span></td>
+        <td style="text-align:right;padding-right:1.5rem;"><span class="job-year">2022</span></td>
+      </tr>
+      <tr>
+        <td><span class="job-num">2</span></td>
+        <td>Kepala Bidang Pertanahan<br><span style="font-size:12px;color:var(--color-text-secondary);">Dinas Pertanahan Dan Penataan Ruang</span></td>
+        <td style="text-align:right;padding-right:1.5rem;"><span class="job-year">2016</span></td>
+      </tr>
+      <tr>
+        <td><span class="job-num">3</span></td>
+        <td>Kepala Sub Bagian Pertanahan<br><span style="font-size:12px;color:var(--color-text-secondary);">Bagian Kerjasama Daerah, Administrasi Wilayah Dan Pertanahan</span></td>
+        <td style="text-align:right;padding-right:1.5rem;"><span class="job-year">2012</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+    </div>
+    <div class="max-w-7xl mx-auto px-4 md:px-6 py-10">
+        <h2 class="sr-only">Profil pejabat HERURESSANDY SETIA KUSUMA, SSTP — Camat — riwayat pendidikan dan jabatan</h2>
+
+<div class="ppid-card">
+
+  <div class="ppid-header">
+    <div class="avatar-ring">
+      <span class="avatar-initials">HS</span>
+    </div>
+    <div style="flex:1;">
+      <div class="ppid-badge">Pejabat Badan Publik</div>
+      <p class="ppid-name">HERURESSANDY SETIA KUSUMA, SSTP</p>
+      <p class="ppid-title">Camat &mdash; Kecamatan Balikpapan Selatan</p>
+      <p class="photo-note">* Foto belum tersedia — unggah foto untuk menampilkannya</p>
+    </div>
+  </div>
+
+  <p class="section-label">Riwayat Pendidikan</p>
+  <table class="edu-table">
+    <thead>
+      <tr>
+        <th style="width:80px;">Jenjang</th>
+        <th>Nama Sekolah / Universitas</th>
+        <th style="width:200px;">Jurusan</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="degree-pill">S2</span></td>
+        <td>Universitas Balikpapan</td>
+        <td style="color:var(--color-text-secondary);">Magister Ilmu Hukum</td>
+      </tr>
+      <tr>
+        <td><span class="degree-pill">D4</span></td>
+        <td>STPDN</td>
+        <td style="color:var(--color-text-secondary);">—</td>
+      </tr>
+      <tr>
+        <td><span class="degree-pill">SLTA</span></td>
+        <td>SMUN 1</td>
+        <td style="color:var(--color-text-secondary);">—</td>
+      </tr>
+      <tr>
+        <td><span class="degree-pill">SLTP</span></td>
+        <td>SMPN 1</td>
+        <td style="color:var(--color-text-secondary);">—</td>
+      </tr>
+      <tr>
+        <td><span class="degree-pill">SD</span></td>
+        <td>SDN No. 001</td>
+        <td style="color:var(--color-text-secondary);">—</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p class="section-label" style="margin-top:0;">Riwayat Jabatan</p>
+  <table class="job-table">
+    <thead>
+      <tr>
+        <th style="width:36px;">#</th>
+        <th>Jabatan &amp; Instansi</th>
+        <th style="width:70px;text-align:right;padding-right:1.5rem;">Tahun</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="job-num">1</span></td>
+        <td>Camat<br><span style="font-size:12px;color:var(--color-text-secondary);">Kecamatan Balikpapan Selatan</span></td>
+        <td style="text-align:right;padding-right:1.5rem;"><span class="job-year">2021</span></td>
+      </tr>
+      <tr>
+        <td><span class="job-num">2</span></td>
+        <td>Camat<br><span style="font-size:12px;color:var(--color-text-secondary);">Kecamatan Balikpapan Kota</span></td>
+        <td style="text-align:right;padding-right:1.5rem;"><span class="job-year">2020</span></td>
+      </tr>
+      <tr>
+        <td><span class="job-num">3</span></td>
+        <td>Sekretaris Camat<br><span style="font-size:12px;color:var(--color-text-secondary);">Kecamatan Balikpapan Tengah</span></td>
+        <td style="text-align:right;padding-right:1.5rem;"><span class="job-year">2018</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
     </div>
 </main>
 <footer id="kontak" class="bg-slate-800 dark:bg-slate-600 w-full pt-16 md:pt-20 pb-8 border-t border-slate-600 dark:border-slate-800">

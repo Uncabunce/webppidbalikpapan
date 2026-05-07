@@ -65,23 +65,23 @@ Route::get('/video/halamanV', function () {
 Route::get('/informasi/laporaninfo', function () {
     return view('mega menu.Informasi Berkala.laporaninfo');
 });
-Route::get('/informasi/laporan-keuangan', function () {
+Route::get('http://web.balikpapan.go.id/detail/read/5886', function () {
     return view('mega menu.Informasi Berkala.laporankeuangan');
 });
-Route::get('/informasi/produk-hukum', function () {
+Route::get('https://jdih.balikpapan.go.id/', function () {
     return view('mega menu.Informasi Berkala.produkhukum');
 });
-Route::get('/informasi/ketenagakerjaan', function () {
+Route::get('https://newnaker.balikpapan.go.id/', function () {
     return view('mega menu.Informasi Berkala.ketenagakerjaan');
 });
 Route::get('/informasi/prosedur-peringatan', function () {
     return view('mega menu.Informasi Berkala.prosedurperingatandini');
 });
-Route::get('/informasi/realisasi-2022', function () {
-    return view('mega menu.Informasi Berkala.realisasi2022');
-});
 Route::get('/informasi/realisasi-2023', function () {
     return view('mega menu.Informasi Berkala.realisasi2023');
+});
+Route::get('/informasi/realisasi-2024', function () {
+    return view('mega menu.Informasi Berkala.realisasi2024');
 });
 Route::get('/informasi/program-kegiatan-2023', function () {
     return view('mega menu.Informasi Berkala.programkegiatan2023');
@@ -89,7 +89,7 @@ Route::get('/informasi/program-kegiatan-2023', function () {
 Route::get('/informasi/lakip', function () {
     return view('mega menu.Informasi Berkala.lakip'); 
 });
-Route::get('/informasi/RKPD', function () {
+Route::get('http://web.balikpapan.go.id/detail/read/5834', function () {
     return view('mega menu.Informasi Berkala.RKPD'); 
 });
 Route::get('/informasi/skinformasipublik', function () {

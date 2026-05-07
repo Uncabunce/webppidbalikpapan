@@ -89,7 +89,7 @@
             font-family: "Manrope", sans-serif
         }
         .batik-bg {
-            background-image: linear-gradient(rgba(240, 240, 240, 0.9), rgba(240, 240, 240, 0.9)), url("batik dayak.png");
+            background-image: linear-gradient(rgba(240, 240, 240, 0.9), rgba(240, 240, 240, 0.9)), url("/batik%20dayak.png");
             background-repeat: repeat;
             background-size: 300px
         }
@@ -203,6 +203,23 @@
         .mega-menu.open {
             display: block !important;
         }
+        .ppid-card { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); overflow: hidden; }
+  .ppid-header { background: #003f74; padding: 1.25rem 1.5rem; display: flex; align-items: center; gap: 1rem; border-bottom: 3px solid #fdc003; }
+  .ppid-badge { background: #fdc003; color: #003f74; font-size: 10px; font-weight: 500; letter-spacing: 0.08em; padding: 3px 10px; border-radius: 20px; text-transform: uppercase; display: inline-block; margin-bottom: 4px; }
+  .ppid-name { color: #ffffff; font-size: 18px; font-weight: 500; margin: 0 0 2px; font-family: var(--font-sans); }
+  .ppid-title { color: rgba(255,255,255,0.65); font-size: 13px; margin: 0; }
+  .avatar-ring { width: 80px; height: 80px; border-radius: 50%; border: 3px solid #fdc003; overflow: hidden; flex-shrink: 0; background: #004f8c; display: flex; align-items: center; justify-content: center; }
+  .avatar-initials { color: #fdc003; font-size: 26px; font-weight: 500; letter-spacing: -1px; font-family: var(--font-sans); }
+  .section-label { font-size: 10px; font-weight: 500; color: var(--color-text-secondary); text-transform: uppercase; letter-spacing: 0.1em; padding: 1rem 1.5rem 0.5rem; border-bottom: 0.5px solid var(--color-border-tertiary); margin-bottom: 0; }
+  .edu-table, .job-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .edu-table th, .job-table th { background: var(--color-background-secondary); color: var(--color-text-secondary); font-weight: 500; font-size: 11px; text-align: left; padding: 6px 1.5rem; border-bottom: 0.5px solid var(--color-border-tertiary); }
+  .edu-table td, .job-table td { padding: 8px 1.5rem; color: var(--color-text-primary); border-bottom: 0.5px solid var(--color-border-tertiary); vertical-align: top; line-height: 1.5; }
+  .edu-table tr:last-child td, .job-table tr:last-child td { border-bottom: none; }
+  .edu-table tr:hover, .job-table tr:hover { background: var(--color-background-secondary); }
+  .job-num { display: inline-flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; background: #003f74; color: #fdc003; font-size: 10px; font-weight: 500; flex-shrink: 0; }
+  .job-year { background: #fdc003; color: #003f74; font-size: 11px; font-weight: 500; padding: 2px 8px; border-radius: 20px; white-space: nowrap; display: inline-block; }
+  .degree-pill { background: var(--color-background-secondary); color: var(--color-text-secondary); font-size: 11px; font-weight: 500; padding: 2px 8px; border-radius: 20px; border: 0.5px solid var(--color-border-tertiary); white-space: nowrap; display: inline-block; }
+  .photo-note { font-size: 11px; color: rgba(255,255,255,0.45); margin-top: 4px; font-style: italic; }
     </style>
 </head>
 <body class="bg-surface text-on-surface">
@@ -214,7 +231,7 @@
 <!-- Left: Logo -->
 <div class="flex items-center justify-between w-full md:w-auto">  
     <a href="http://ppidbalikpapan.test/" class="h-8 md:h-10 w-auto object-contain">
-     <img src="{{ asset('logo_ppid bg removed.png') }}" alt="logo" class="h-full w-auto"></a>
+     <img src="/logo_ppid%20bg%20removed.png" alt="logo" class="h-full w-auto"></a>
 <!-- Mobile right side: clock + hamburger -->
 <div class="flex items-center gap-2 md:hidden">
 <!-- Mobile clock -->
@@ -389,15 +406,15 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 <div>
 <h3 class="text-[10px] font-extrabold text-primary uppercase tracking-widest mb-3 pb-1.5 border-b-2 border-secondary-container">Informasi Berkala</h3>
 <ul class="space-y-1">
-<li><a href="/informasi/RKPD" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">RKPD</a></li>
+<li><a href="http://web.balikpapan.go.id/detail/read/5834" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">RKPD</a></li>
 <li><a href="/informasi/LAKIP" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">LAKIP</a></li>
-<li><a href="/informasi/laporan-keuangan" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Laporan Keuangan</a></li>
+<li><a href="http://web.balikpapan.go.id/detail/read/5886" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Laporan Keuangan</a></li>
 <li><a href="/informasi/laporaninfo" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Laporan Akses Informasi Publik</a></li>
-<li><a href="/informasi/produk-hukum" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Produk Hukum</a></li>
-<li><a href="/informasi/ketenagakerjaan" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Ketenagakerjaan</a></li>
+<li><a href="https://jdih.balikpapan.go.id/" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Produk Hukum</a></li>
+<li><a href="https://newnaker.balikpapan.go.id/" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Ketenagakerjaan</a></li>
 <li><a href="/informasi/prosedur-peringatan" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Prosedur Peringatan Dini dan Prosedur Evakuasi Keadaan Darurat di Setiap Kantor Badan Publik</a></li>
-<li><a href="/informasi/realisasi-2022" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Realisasi Kegiatan dan Kinerja Pemkot Balikpapan Tahun 2022</a></li>
 <li><a href="/informasi/realisasi-2023" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Realisasi Kegiatan dan Kinerja Pemkot Balikpapan Tahun 2023</a></li>
+<li><a href="/informasi/realisasi-2024" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Realisasi Kegiatan dan Kinerja Pemkot Balikpapan Tahun 2024</a></li>
 <li><a href="/informasi/program-kegiatan-2023" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Program dan Kegiatan Tahun 2023</a></li>
 <li><a href="/informasi/SK_klasifikasi" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">SK KLASIFIKASI DIKECUALIKAN</a></li>
 <li><a href="/informasi/SK_maklumat" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">SK MAKLUMAT PELAYANAN DISKOMINFO</a></li>
@@ -522,15 +539,15 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 </button>
 <div id="acc-infopub" class="hidden flex-col bg-white/5 rounded-lg mx-2 mb-2 overflow-hidden">
 <p class="px-5 py-2 text-[10px] font-extrabold text-secondary-container uppercase tracking-widest">Informasi Berkala</p>
-<a href="/informasi/RKPD" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">RKPD</a>
+<a href="http://web.balikpapan.go.id/detail/read/5834" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">RKPD</a>
 <a href="/informasi/LAKIP" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">LAKIP</a>
-<a href="/informasi/laporan-keuangan" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Laporan Keuangan</a>
+<a href="http://web.balikpapan.go.id/detail/read/5886" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Laporan Keuangan</a>
 <a href="/informasi/laporaninfo" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Laporan Akses Informasi Publik</a>
-<a href="/informasi/produk-hukum" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Produk Hukum</a>
-<a href="/informasi/ketenagakerjaan" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Ketenagakerjaan</a>
+<a href="https://jdih.balikpapan.go.id/" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Produk Hukum</a>
+<a href="https://newnaker.balikpapan.go.id/" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Ketenagakerjaan</a>
 <a href="/informasi/prosedurperingatandini" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Prosedur Peringatan Dini dan Evakuasi Keadaan Darurat</a>
-<a href="/informasi/realisasi-2022" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Realisasi Kegiatan dan Kinerja Pemkot Balikpapan Tahun 2022</a>
 <a href="/informasi/realisasi-2023" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Realisasi Kegiatan dan Kinerja Pemkot Balikpapan Tahun 2023</a>
+<a href="/informasi/realisasi-2024" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Realisasi Kegiatan dan Kinerja Pemkot Balikpapan Tahun 2024</a>
 <a href="/informasi/program-kegiatan-2023" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Program dan Kegiatan Tahun 2023</a>
 <a href="/informasi/SK_klasifikasi" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">SK Klasifikasi Dikecualikan</a>
 <a href="/informasi/SK_maklumat" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">SK Maklumat Pelayanan Diskominfo</a>
@@ -606,11 +623,1198 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 </div>
 </header>
 <main class="bg-surface min-h-screen">
+    <section class="relative py-20 overflow-hidden border-b border-outline-variant/10">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-br from-primary via-primary-container to-primary opacity-95"></div>
+            <div class="absolute inset-0" style="background-image:url('/batik%20dayak.png');background-repeat:repeat;background-size:300px;opacity:0.05;"></div>
+        </div>
+        <div class="max-w-4xl mx-auto px-6 relative z-10 text-center">
+            <nav class="flex justify-center mb-4 text-xs font-medium text-white/60 uppercase tracking-widest gap-2">
+                <a href="/" class="hover:text-white transition-colors">Beranda</a>
+                <span>/</span>
+                <span>Pejabat Badan Publik</span>
+                <span>/</span>
+                <span class="text-white">Kepala-Dinas</span>
+            </nav>
+            <h1 class="text-4xl md:text-5xl font-headline font-extrabold text-white leading-tight mb-4">
+                Kepala Dinas
+            </h1>
+            <p class="text-white/70 text-lg max-w-2xl mx-auto">
+                Pemerintah Daerah
+            </p>
+        </div>
+    </section>
     <!-- ================================ -->
     <!-- KONTEN HALAMAN DI SINI          -->
     <!-- ================================ -->
     <div class="max-w-7xl mx-auto px-4 md:px-6 py-10">
-        <p class="text-on-surface-variant text-center text-sm">Konten halaman</p>
+        <h2 class="sr-only">Profil pejabat PURNOMO M, S.Sos, MM — Kepala Dinas Pendidikan Dan Kebudayaan — riwayat pendidikan dan jabatan</h2>
+
+<div class="ppid-card">
+
+  <div class="ppid-header">
+    <div class="avatar-ring">
+      <span class="avatar-initials">PM</span>
+    </div>
+    <div style="flex:1;">
+      <div class="ppid-badge">Pejabat Badan Publik</div>
+      <p class="ppid-name">PURNOMO M, S.Sos, MM</p>
+      <p class="ppid-title">Kepala Dinas Pendidikan Dan Kebudayaan &mdash; Dinas Pendidikan Dan Kebudayaan</p>
+      <p class="photo-note">* Foto belum tersedia — unggah foto untuk menampilkannya</p>
+    </div>
+  </div>
+
+  <p class="section-label">Riwayat Pendidikan</p>
+  <table class="edu-table">
+    <thead>
+      <tr>
+        <th style="width:80px;">Jenjang</th>
+        <th>Nama Sekolah / Universitas</th>
+        <th style="width:200px;">Jurusan</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="degree-pill">S2</span></td>
+        <td>Univ. Jend. Soedirman</td>
+        <td style="color:var(--color-text-secondary);">Manajemen SDM</td>
+      </tr>
+      <tr>
+        <td><span class="degree-pill">S1</span></td>
+        <td>Universitas Tridharma (UNTRI)</td>
+        <td style="color:var(--color-text-secondary);">Ilmu Administrasi</td>
+      </tr>
+      <tr>
+        <td><span class="degree-pill">D3</span></td>
+        <td>APDN Samarinda</td>
+        <td style="color:var(--color-text-secondary);">Ilmu Pemerintahan</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p class="section-label" style="margin-top:0;">Riwayat Jabatan</p>
+  <table class="job-table">
+    <thead>
+      <tr>
+        <th style="width:36px;">#</th>
+        <th>Jabatan &amp; Instansi</th>
+        <th style="width:70px;text-align:right;padding-right:1.5rem;">Tahun</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="job-num">1</span></td>
+        <td>Kepala Dinas Pendidikan Dan Kebudayaan<br><span style="font-size:12px;color:var(--color-text-secondary);">Dinas Pendidikan Dan Kebudayaan</span></td>
+        <td style="text-align:right;padding-right:1.5rem;"><span class="job-year">2022</span></td>
+      </tr>
+      <tr>
+        <td><span class="job-num">2</span></td>
+        <td>Kepala Dinas Sosial<br><span style="font-size:12px;color:var(--color-text-secondary);">Dinas Sosial</span></td>
+        <td style="text-align:right;padding-right:1.5rem;"><span class="job-year">2018</span></td>
+      </tr>
+      <tr>
+        <td><span class="job-num">3</span></td>
+        <td>Sekretaris Dewan Perwakilan Rakyat Daerah<br><span style="font-size:12px;color:var(--color-text-secondary);">Sekretariat DPRD</span></td>
+        <td style="text-align:right;padding-right:1.5rem;"><span class="job-year">2017</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 md:px-6 py-10">
+    <h2 class="sr-only">Profil pejabat DR. ANDI SRI JULIARTY R, M.Kes — Kepala Dinas Kesehatan — riwayat pendidikan dan jabatan</h2>
+
+<div class="ppid-card">
+
+  <div class="ppid-header">
+    <div class="avatar-ring">
+      <span class="avatar-initials">AS</span>
+    </div>
+    <div style="flex:1;">
+      <div class="ppid-badge">Pejabat Badan Publik</div>
+      <p class="ppid-name">DR. ANDI SRI JULIARTY R, M.Kes</p>
+      <p class="ppid-title">Kepala Dinas Kesehatan &mdash; Dinas Kesehatan</p>
+      <p class="photo-note">* Foto belum tersedia — unggah foto untuk menampilkannya</p>
+    </div>
+  </div>
+
+  <p class="section-label">Riwayat Pendidikan</p>
+  <table class="edu-table">
+    <thead>
+      <tr>
+        <th style="width:80px;">Jenjang</th>
+        <th>Nama Sekolah / Universitas</th>
+        <th style="width:200px;">Jurusan</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="degree-pill">S2</span></td>
+        <td>Universitas</td>
+        <td style="color:var(--color-text-secondary);">Manajemen Rumah Sakit</td>
+      </tr>
+      <tr>
+        <td><span class="degree-pill">S1</span></td>
+        <td>Universitas Hasanuddin</td>
+        <td style="color:var(--color-text-secondary);">—</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p class="section-label" style="margin-top:0;">Riwayat Jabatan</p>
+  <table class="job-table">
+    <thead>
+      <tr>
+        <th style="width:36px;">#</th>
+        <th>Jabatan &amp; Instansi</th>
+        <th style="width:70px;text-align:right;padding-right:1.5rem;">Tahun</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="job-num">1</span></td>
+        <td>Kepala Dinas Kesehatan<br><span style="font-size:12px;color:var(--color-text-secondary);">Dinas Kesehatan</span></td>
+        <td style="text-align:right;padding-right:1.5rem;"><span class="job-year">2019</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+    </div>
+    <div class="max-w-7xl mx-auto px-4 md:px-6 py-10">
+    <h2 class="sr-only">Profil pejabat ANDI MUHAMMAD YUSRI RAMLI, ST, MT — Kepala Dinas Pekerjaan Umum — riwayat pendidikan dan jabatan</h2>
+
+<div class="ppid-card">
+
+  <div class="ppid-header">
+    <div class="avatar-ring">
+      <span class="avatar-initials">AM</span>
+    </div>
+    <div style="flex:1;">
+      <div class="ppid-badge">Pejabat Badan Publik</div>
+      <p class="ppid-name">ANDI MUHAMMAD YUSRI RAMLI, ST, MT</p>
+      <p class="ppid-title">Kepala Dinas Pekerjaan Umum &mdash; Dinas Pekerjaan Umum</p>
+      <p class="photo-note">* Foto belum tersedia — unggah foto untuk menampilkannya</p>
+    </div>
+  </div>
+
+  <p class="section-label">Riwayat Pendidikan</p>
+  <table class="edu-table">
+    <thead>
+      <tr>
+        <th style="width:80px;">Jenjang</th>
+        <th>Nama Sekolah / Universitas</th>
+        <th style="width:200px;">Jurusan</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="degree-pill">S2</span></td>
+        <td>Universitas 17 Agustus 1945</td>
+        <td style="color:var(--color-text-secondary);">Teknik Sipil</td>
+      </tr>
+      <tr>
+        <td><span class="degree-pill">S1</span></td>
+        <td>UMI</td>
+        <td style="color:var(--color-text-secondary);">Teknik Sipil</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p class="section-label" style="margin-top:0;">Riwayat Jabatan</p>
+  <table class="job-table">
+    <thead>
+      <tr>
+        <th style="width:36px;">#</th>
+        <th>Jabatan &amp; Instansi</th>
+        <th style="width:70px;text-align:right;padding-right:1.5rem;">Tahun</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="job-num">1</span></td>
+        <td>Kepala Dinas Pekerjaan Umum<br><span style="font-size:12px;color:var(--color-text-secondary);">Dinas Pekerjaan Umum</span></td>
+        <td style="text-align:right;padding-right:1.5rem;"><span class="job-year">2019</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+    </div>
+    <div class="max-w-7xl mx-auto px-4 md:px-6 py-10">
+    <h2 class="sr-only">Profil pejabat ARFIANSYAH, ST — Kepala Dinas Perumahan Dan Permukiman — riwayat pendidikan dan jabatan</h2>
+
+<div class="ppid-card">
+
+  <div class="ppid-header">
+    <div class="avatar-ring">
+      <span class="avatar-initials">A</span>
+    </div>
+    <div style="flex:1;">
+      <div class="ppid-badge">Pejabat Badan Publik</div>
+      <p class="ppid-name">ARFIANSYAH, ST</p>
+      <p class="ppid-title">Kepala Dinas Perumahan Dan Permukiman &mdash; Dinas Perumahan Dan Permukiman</p>
+      <p class="photo-note">* Foto belum tersedia — unggah foto untuk menampilkannya</p>
+    </div>
+  </div>
+
+  <p class="section-label">Riwayat Pendidikan</p>
+  <table class="edu-table">
+    <thead>
+      <tr>
+        <th style="width:80px;">Jenjang</th>
+        <th>Nama Sekolah / Universitas</th>
+        <th style="width:200px;">Jurusan</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="degree-pill">S1</span></td>
+        <td>Institut & Teknologi AKPRIND</td>
+        <td style="color:var(--color-text-secondary);">Teknik Industri</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p class="section-label" style="margin-top:0;">Riwayat Jabatan</p>
+  <table class="job-table">
+    <thead>
+      <tr>
+        <th style="width:36px;">#</th>
+        <th>Jabatan &amp; Instansi</th>
+        <th style="width:70px;text-align:right;padding-right:1.5rem;">Tahun</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="job-num">1</span></td>
+        <td>Kepala Dinas Perumahan Dan Permukiman<br><span style="font-size:12px;color:var(--color-text-secondary);">Dinas Perumahan Dan Permukiman</span></td>
+        <td style="text-align:right;padding-right:1.5rem;"><span class="job-year">2022</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+    </div>
+    <div class="max-w-7xl mx-auto px-4 md:px-6 py-10">
+    <h2 class="sr-only">Profil pejabat DRS. ELVIN JUANIDI, M.Si — Kepala Dinas Perhubungan — riwayat pendidikan dan jabatan</h2>
+
+<div class="ppid-card">
+
+  <div class="ppid-header">
+    <div class="avatar-ring">
+      <span class="avatar-initials">EJ</span>
+    </div>
+    <div style="flex:1;">
+      <div class="ppid-badge">Pejabat Badan Publik</div>
+      <p class="ppid-name">DRS. ELVIN JUANIDI, M.Si</p>
+      <p class="ppid-title">Kepala Dinas Perhubungan &mdash; Dinas Perhubungan</p>
+      <p class="photo-note">* Foto belum tersedia — unggah foto untuk menampilkannya</p>
+    </div>
+  </div>
+
+  <p class="section-label">Riwayat Pendidikan</p>
+  <table class="edu-table">
+    <thead>
+      <tr>
+        <th style="width:80px;">Jenjang</th>
+        <th>Nama Sekolah / Universitas</th>
+        <th style="width:200px;">Jurusan</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="degree-pill">S2</span></td>
+        <td>Universitas Brawijaya (UNIBRAW)</td>
+        <td style="color:var(--color-text-secondary);">Ilmu Administrasi Negara</td>
+      </tr>
+      <tr>
+        <td><span class="degree-pill">S1</span></td>
+        <td>IIP</td>
+        <td style="color:var(--color-text-secondary);">—</td>
+      </tr>
+      <tr>
+        <td><span class="degree-pill">D3</span></td>
+        <td>STPDN</td>
+        <td style="color:var(--color-text-secondary);">—</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p class="section-label" style="margin-top:0;">Riwayat Jabatan</p>
+  <table class="job-table">
+    <thead>
+      <tr>
+        <th style="width:36px;">#</th>
+        <th>Jabatan &amp; Instansi</th>
+        <th style="width:70px;text-align:right;padding-right:1.5rem;">Tahun</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="job-num">1</span></td>
+        <td>Kepala Dinas Perhubungan<br><span style="font-size:12px;color:var(--color-text-secondary);">Dinas Perhubungan</span></td>
+        <td style="text-align:right;padding-right:1.5rem;"><span class="job-year">2022</span></td>
+      </tr>
+      <tr>
+        <td><span class="job-num">2</span></td>
+        <td>Kepala Dinas Penanaman Modal Dan Perizinan Terpadu<br><span style="font-size:12px;color:var(--color-text-secondary);">Badan Penanaman Modal Dan Perizinan Terpadu</span></td>
+        <td style="text-align:right;padding-right:1.5rem;"><span class="job-year">2016</span></td>
+      </tr>
+      <tr>
+        <td><span class="job-num">3</span></td>
+        <td>Kepala Badan Penanaman Modal Dan Pelayanan Perizinan Terpadu<br><span style="font-size:12px;color:var(--color-text-secondary);">Badan Penanaman Modal Dan Pelayanan Perizinan Terpadu</span></td>
+        <td style="text-align:right;padding-right:1.5rem;"><span class="job-year">2015</span></td>
+      </tr>
+      <tr>
+        <td><span class="job-num">4</span></td>
+        <td>Kepala Dinas Kebersihan, Pertamanan Dan Pemakaman<br><span style="font-size:12px;color:var(--color-text-secondary);">Badan Penanaman Modal Dan Pelayanan Perizinan Terpadu</span></td>
+        <td style="text-align:right;padding-right:1.5rem;"><span class="job-year">2014</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+    </div>
+    <div class="max-w-7xl mx-auto px-4 md:px-6 py-10">
+    <h2 class="sr-only">Profil pejabat HASBULLAH HELMI, A.P., M.Si — Kepala Dinas Kependudukan Dan Pencatatan Sipil Kota Balikpapan — riwayat pendidikan dan jabatan</h2>
+
+<div class="ppid-card">
+
+  <div class="ppid-header">
+    <div class="avatar-ring">
+      <span class="avatar-initials">HH</span>
+    </div>
+    <div style="flex:1;">
+      <div class="ppid-badge">Pejabat Badan Publik</div>
+      <p class="ppid-name">HASBULLAH HELMI, A.P., M.Si</p>
+      <p class="ppid-title">Kepala Dinas Kependudukan Dan Pencatatan Sipil Kota Balikpapan &mdash; Dinas Kependudukan Dan Pencatatan Sipil</p>
+      <p class="photo-note">* Foto belum tersedia — unggah foto untuk menampilkannya</p>
+    </div>
+  </div>
+
+  <p class="section-label">Riwayat Pendidikan</p>
+  <table class="edu-table">
+    <thead>
+      <tr>
+        <th style="width:80px;">Jenjang</th>
+        <th>Nama Sekolah / Universitas</th>
+        <th style="width:200px;">Jurusan</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="degree-pill">S2</span></td>
+        <td>Universitas Mulawarman</td>
+        <td style="color:var(--color-text-secondary);">Magister Administrasi Negara</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p class="section-label" style="margin-top:0;">Riwayat Jabatan</p>
+  <table class="job-table">
+    <thead>
+      <tr>
+        <th style="width:36px;">#</th>
+        <th>Jabatan &amp; Instansi</th>
+        <th style="width:70px;text-align:right;padding-right:1.5rem;">Tahun</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="job-num">1</span></td>
+        <td>Kepala Dinas Kependudukan Dan Pencatatan Sipil Kota Balikpapan<br><span style="font-size:12px;color:var(--color-text-secondary);">Dinas Kependudukan Dan Pencatatan Sipil Kota Balikpapan</span></td>
+        <td style="text-align:right;padding-right:1.5rem;"><span class="job-year">—</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+    </div>
+    <div class="max-w-7xl mx-auto px-4 md:px-6 py-10">
+    <h2 class="sr-only">Profil pejabat ANI MUFAIDAH, S.IP, M.Si — Kepala Dinas Ketenagakerjaan — riwayat pendidikan dan jabatan</h2>
+
+<div class="ppid-card">
+
+  <div class="ppid-header">
+    <div class="avatar-ring">
+      <span class="avatar-initials">AM</span>
+    </div>
+    <div style="flex:1;">
+      <div class="ppid-badge">Pejabat Badan Publik</div>
+      <p class="ppid-name">ANI MUFAIDAH, S.IP, M.Si</p>
+      <p class="ppid-title">Kepala Dinas Ketenagakerjaan &mdash; Dinas Ketenagakerjaan</p>
+      <p class="photo-note">* Foto belum tersedia — unggah foto untuk menampilkannya</p>
+    </div>
+  </div>
+
+  <p class="section-label">Riwayat Pendidikan</p>
+  <table class="edu-table">
+    <thead>
+      <tr>
+        <th style="width:80px;">Jenjang</th>
+        <th>Nama Sekolah / Universitas</th>
+        <th style="width:200px;">Jurusan</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="degree-pill">S2</span></td>
+        <td>Universitas Gadjah Mada (UGM)</td>
+        <td style="color:var(--color-text-secondary);">Magister Administrasi Publik</td>
+      </tr>
+      <tr>
+        <td><span class="degree-pill">S1</span></td>
+        <td>Universitas Gadjah Mada (UGM)</td>
+        <td style="color:var(--color-text-secondary);">Ilmu Pemerintahan</td>
+      </tr>
+      <tr>
+        <td><span class="degree-pill">D3</span></td>
+        <td>APDN</td>
+        <td style="color:var(--color-text-secondary);">Ilmu Pemerintahan</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p class="section-label" style="margin-top:0;">Riwayat Jabatan</p>
+  <table class="job-table">
+    <thead>
+      <tr>
+        <th style="width:36px;">#</th>
+        <th>Jabatan &amp; Instansi</th>
+        <th style="width:70px;text-align:right;padding-right:1.5rem;">Tahun</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="job-num">1</span></td>
+        <td>Kepala Dinas Ketenagakerjaan<br><span style="font-size:12px;color:var(--color-text-secondary);">Dinas Ketenagakerjaan</span></td>
+        <td style="text-align:right;padding-right:1.5rem;"><span class="job-year">2021</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+    </div>
+    <div class="max-w-7xl mx-auto px-4 md:px-6 py-10">
+    <h2 class="sr-only">Profil pejabat ROSDIANA S, S.Sos — Sekretaris — riwayat pendidikan dan jabatan</h2>
+
+<div class="ppid-card">
+
+  <div class="ppid-header">
+    <div class="avatar-ring">
+      <span class="avatar-initials">RS</span>
+    </div>
+    <div style="flex:1;">
+      <div class="ppid-badge">Pejabat Badan Publik</div>
+      <p class="ppid-name">ROSDIANA S, S.Sos</p>
+      <p class="ppid-title">Sekretaris &mdash; Dinas Koperasi, Usaha Mikro, Kecil, Menengah Dan Perindustrian</p>
+      <p class="photo-note">* Foto belum tersedia — unggah foto untuk menampilkannya</p>
+    </div>
+  </div>
+
+  <p class="section-label">Riwayat Pendidikan</p>
+  <table class="edu-table">
+    <thead>
+      <tr>
+        <th style="width:80px;">Jenjang</th>
+        <th>Nama Sekolah / Universitas</th>
+        <th style="width:200px;">Jurusan</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="degree-pill">S1</span></td>
+        <td>Universitas Hasanuddin</td>
+        <td style="color:var(--color-text-secondary);">Ilmu Komunikasi</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p class="section-label" style="margin-top:0;">Riwayat Jabatan</p>
+  <table class="job-table">
+    <thead>
+      <tr>
+        <th style="width:36px;">#</th>
+        <th>Jabatan &amp; Instansi</th>
+        <th style="width:70px;text-align:right;padding-right:1.5rem;">Tahun</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="job-num">1</span></td>
+        <td>Sekretaris<br><span style="font-size:12px;color:var(--color-text-secondary);">Dinas Koperasi, Usaha Mikro, Kecil, Menengah Dan Perindustrian</span></td>
+        <td style="text-align:right;padding-right:1.5rem;"><span class="job-year">2022</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+    <div class="max-w-7xl mx-auto px-4 md:px-6 py-10">
+    <h2 class="sr-only">Profil pejabat DRA. MUFIDAH HAYATI — Sekretaris — riwayat pendidikan dan jabatan</h2>
+
+<div class="ppid-card">
+
+  <div class="ppid-header">
+    <div class="avatar-ring">
+      <span class="avatar-initials">MH</span>
+    </div>
+    <div style="flex:1;">
+      <div class="ppid-badge">Pejabat Badan Publik</div>
+      <p class="ppid-name">DRA. MUFIDAH HAYATI</p>
+      <p class="ppid-title">Sekretaris &mdash; Dinas Sosial</p>
+      <p class="photo-note">* Foto belum tersedia — unggah foto untuk menampilkannya</p>
+    </div>
+  </div>
+
+  <p class="section-label">Riwayat Pendidikan</p>
+  <table class="edu-table">
+    <thead>
+      <tr>
+        <th style="width:80px;">Jenjang</th>
+        <th>Nama Sekolah / Universitas</th>
+        <th style="width:200px;">Jurusan</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="degree-pill">S1</span></td>
+        <td>IIP</td>
+        <td style="color:var(--color-text-secondary);">Manajemen</td>
+      </tr>
+      <tr>
+        <td><span class="degree-pill">D3</span></td>
+        <td>APDN</td>
+        <td style="color:var(--color-text-secondary);">Ilmu Pemerintahan</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p class="section-label" style="margin-top:0;">Riwayat Jabatan</p>
+  <table class="job-table">
+    <thead>
+      <tr>
+        <th style="width:36px;">#</th>
+        <th>Jabatan &amp; Instansi</th>
+        <th style="width:70px;text-align:right;padding-right:1.5rem;">Tahun</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="job-num">1</span></td>
+        <td>Sekretaris<br><span style="font-size:12px;color:var(--color-text-secondary);">Dinas Sosial</span></td>
+        <td style="text-align:right;padding-right:1.5rem;"><span class="job-year">2021</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+    </div>
+    <div class="max-w-7xl mx-auto px-4 md:px-6 py-10">
+    <h2 class="sr-only">Profil pejabat NENY DWI WINAHYU, S.STP, M.Si — Kepala Dinas Pertanahan Dan Penataan Ruang — riwayat pendidikan dan jabatan</h2>
+
+<div class="ppid-card">
+
+  <div class="ppid-header">
+    <div class="avatar-ring">
+      <span class="avatar-initials">ND</span>
+    </div>
+    <div style="flex:1;">
+      <div class="ppid-badge">Pejabat Badan Publik</div>
+      <p class="ppid-name">NENY DWI WINAHYU, S.STP, M.Si</p>
+      <p class="ppid-title">Kepala Dinas Pertanahan Dan Penataan Ruang &mdash; Dinas Pertanahan Dan Penataan Ruang</p>
+      <p class="photo-note">* Foto belum tersedia — unggah foto untuk menampilkannya</p>
+    </div>
+  </div>
+
+  <p class="section-label">Riwayat Pendidikan</p>
+  <table class="edu-table">
+    <thead>
+      <tr>
+        <th style="width:80px;">Jenjang</th>
+        <th>Nama Sekolah / Universitas</th>
+        <th style="width:200px;">Jurusan</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="degree-pill">S2</span></td>
+        <td>IPDN</td>
+        <td style="color:var(--color-text-secondary);">Magister Administrasi Pemerintahan Daerah</td>
+      </tr>
+      <tr>
+        <td><span class="degree-pill">D4</span></td>
+        <td>STPDN</td>
+        <td style="color:var(--color-text-secondary);">Ilmu Pemerintahan</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p class="section-label" style="margin-top:0;">Riwayat Jabatan</p>
+  <table class="job-table">
+    <thead>
+      <tr>
+        <th style="width:36px;">#</th>
+        <th>Jabatan &amp; Instansi</th>
+        <th style="width:70px;text-align:right;padding-right:1.5rem;">Tahun</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="job-num">1</span></td>
+        <td>Kepala Dinas Pertanahan Dan Penataan Ruang<br><span style="font-size:12px;color:var(--color-text-secondary);">Dinas Pertanahan Dan Penataan Ruang</span></td>
+        <td style="text-align:right;padding-right:1.5rem;"><span class="job-year">2022</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+    </div>
+    <div class="max-w-7xl mx-auto px-4 md:px-6 py-10">
+    <h2 class="sr-only">Profil pejabat DR. COKORDA ISTRI RATIH KUSUMA W. — Kepala Dinas Pemuda, Olahraga Dan Pariwisata — riwayat pendidikan dan jabatan</h2>
+
+<div class="ppid-card">
+
+  <div class="ppid-header">
+    <div class="avatar-ring">
+      <span class="avatar-initials">CI</span>
+    </div>
+    <div style="flex:1;">
+      <div class="ppid-badge">Pejabat Badan Publik</div>
+      <p class="ppid-name">DR. COKORDA ISTRI RATIH KUSUMA W.</p>
+      <p class="ppid-title">Kepala Dinas Pemuda, Olahraga Dan Pariwisata &mdash; Dinas Pemuda, Olahraga Dan Pariwisata</p>
+      <p class="photo-note">* Foto belum tersedia — unggah foto untuk menampilkannya</p>
+    </div>
+  </div>
+
+  <p class="section-label">Riwayat Pendidikan</p>
+  <table class="edu-table">
+    <thead>
+      <tr>
+        <th style="width:80px;">Jenjang</th>
+        <th>Nama Sekolah / Universitas</th>
+        <th style="width:200px;">Jurusan</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="degree-pill">S1</span></td>
+        <td>Universitas Udayana</td>
+        <td style="color:var(--color-text-secondary);">Kedokteran</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p class="section-label" style="margin-top:0;">Riwayat Jabatan</p>
+  <table class="job-table">
+    <thead>
+      <tr>
+        <th style="width:36px;">#</th>
+        <th>Jabatan &amp; Instansi</th>
+        <th style="width:70px;text-align:right;padding-right:1.5rem;">Tahun</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="job-num">1</span></td>
+        <td>Kepala Dinas Pemuda, Olahraga Dan Pariwisata<br><span style="font-size:12px;color:var(--color-text-secondary);">Dinas Pemuda, Olahraga Dan Pariwisata</span></td>
+        <td style="text-align:right;padding-right:1.5rem;"><span class="job-year">2022</span></td>
+      </tr>
+      <tr>
+        <td><span class="job-num">2</span></td>
+        <td>Direktur Rumah Sakit Umum Daerah<br><span style="font-size:12px;color:var(--color-text-secondary);">RSUD Balikpapan</span></td>
+        <td style="text-align:right;padding-right:1.5rem;"><span class="job-year">2016</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+    </div>
+    <div class="max-w-7xl mx-auto px-4 md:px-6 py-10">
+    <h2 class="sr-only">Profil pejabat ADAMIN, S.Kom, M.Eng — Kepala Dinas Komunikasi Dan Informatika — riwayat pendidikan dan jabatan</h2>
+
+<div class="ppid-card">
+
+  <div class="ppid-header">
+    <div class="avatar-ring">
+      <span class="avatar-initials">AS</span>
+    </div>
+    <div style="flex:1;">
+      <div class="ppid-badge">Pejabat Badan Publik</div>
+      <p class="ppid-name">ADAMIN, S.Kom, M.Eng</p>
+      <p class="ppid-title">Kepala Dinas Komunikasi Dan Informatika &mdash; Dinas Komunikasi Dan Informatika</p>
+      <p class="photo-note">* Foto belum tersedia — unggah foto untuk menampilkannya</p>
+    </div>
+  </div>
+
+  <p class="section-label">Riwayat Pendidikan</p>
+  <table class="edu-table">
+    <thead>
+      <tr>
+        <th style="width:80px;">Jenjang</th>
+        <th>Nama Sekolah / Universitas</th>
+        <th style="width:200px;">Jurusan</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="degree-pill">S2</span></td>
+        <td>Universitas Gadjah Mada</td>
+        <td style="color:var(--color-text-secondary);">Teknik Elektro</td>
+      </tr>
+      <tr>
+        <td><span class="degree-pill">S1</span></td>
+        <td>STIKOM</td>
+        <td style="color:var(--color-text-secondary);">Teknik Informatika Komputer</td>
+      </tr>
+      <tr>
+        <td><span class="degree-pill">D3</span></td>
+        <td>AMIK</td>
+        <td style="color:var(--color-text-secondary);">Manajemen Informatika</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p class="section-label" style="margin-top:0;">Riwayat Jabatan</p>
+  <table class="job-table">
+    <thead>
+      <tr>
+        <th style="width:36px;">#</th>
+        <th>Jabatan &amp; Instansi</th>
+        <th style="width:70px;text-align:right;padding-right:1.5rem;">Tahun</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="job-num">1</span></td>
+        <td>Kepala Dinas Komunikasi Dan Informatika<br><span style="font-size:12px;color:var(--color-text-secondary);">Dinas Komunikasi Dan Informatika</span></td>
+        <td style="text-align:right;padding-right:1.5rem;"><span class="job-year">2022</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+    </div>
+    <div class="max-w-7xl mx-auto px-4 md:px-6 py-10">
+    <h2 class="sr-only">Profil pejabat DRS. SUDIRMAN DJAYALEKSANA, MM — Kepala Dinas Lingkungan Hidup — riwayat pendidikan dan jabatan</h2>
+
+<div class="ppid-card">
+
+  <div class="ppid-header">
+    <div class="avatar-ring">
+      <span class="avatar-initials">SD</span>
+    </div>
+    <div style="flex:1;">
+      <div class="ppid-badge">Pejabat Badan Publik</div>
+      <p class="ppid-name">DRS. SUDIRMAN DJAYALEKSANA, MM</p>
+      <p class="ppid-title">Kepala Dinas Lingkungan Hidup &mdash; Dinas Lingkungan Hidup</p>
+      <p class="photo-note">* Foto belum tersedia — unggah foto untuk menampilkannya</p>
+    </div>
+  </div>
+
+  <p class="section-label">Riwayat Pendidikan</p>
+  <table class="edu-table">
+    <thead>
+      <tr>
+        <th style="width:80px;">Jenjang</th>
+        <th>Nama Sekolah / Universitas</th>
+        <th style="width:200px;">Jurusan</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="degree-pill">S2</span></td>
+        <td>Univ. Jend. Soedirman</td>
+        <td style="color:var(--color-text-secondary);">Manajemen SDM</td>
+      </tr>
+      <tr>
+        <td><span class="degree-pill">S1</span></td>
+        <td>IIP</td>
+        <td style="color:var(--color-text-secondary);">Perencanaan Pembangunan</td>
+      </tr>
+      <tr>
+        <td><span class="degree-pill">D3</span></td>
+        <td>APDN</td>
+        <td style="color:var(--color-text-secondary);">—</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p class="section-label" style="margin-top:0;">Riwayat Jabatan</p>
+  <table class="job-table">
+    <thead>
+      <tr>
+        <th style="width:36px;">#</th>
+        <th>Jabatan &amp; Instansi</th>
+        <th style="width:70px;text-align:right;padding-right:1.5rem;">Tahun</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="job-num">1</span></td>
+        <td>Kepala Dinas Lingkungan Hidup<br><span style="font-size:12px;color:var(--color-text-secondary);">Dinas Lingkungan Hidup</span></td>
+        <td style="text-align:right;padding-right:1.5rem;"><span class="job-year">2022</span></td>
+      </tr>
+      <tr>
+        <td><span class="job-num">2</span></td>
+        <td>Kepala Dinas Perhubungan<br><span style="font-size:12px;color:var(--color-text-secondary);">Dinas Perhubungan</span></td>
+        <td style="text-align:right;padding-right:1.5rem;"><span class="job-year">2016</span></td>
+      </tr>
+      <tr>
+        <td><span class="job-num">3</span></td>
+        <td>Kepala Dinas Perhubungan<br><span style="font-size:12px;color:var(--color-text-secondary);">Dinas Perhubungan</span></td>
+        <td style="text-align:right;padding-right:1.5rem;"><span class="job-year">2014</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+    </div>
+    <div class="max-w-7xl mx-auto px-4 md:px-6 py-10">
+    <h2 class="sr-only">Profil pejabat DRA. ALWIATI A, Apt — Kepala Dinas Pemberdayaan Perempuan, Perlindungan Anak Dan Keluarga Berencana — riwayat pendidikan dan jabatan</h2>
+
+<div class="ppid-card">
+
+  <div class="ppid-header">
+    <div class="avatar-ring">
+      <span class="avatar-initials">AA</span>
+    </div>
+    <div style="flex:1;">
+      <div class="ppid-badge">Pejabat Badan Publik</div>
+      <p class="ppid-name">DRA. ALWIATI A, Apt</p>
+      <p class="ppid-title">Kepala Dinas Pemberdayaan Perempuan, Perlindungan Anak Dan Keluarga Berencana &mdash; Dinas Pemberdayaan Perempuan, Perlindungan Anak Dan Keluarga Berencana</p>
+      <p class="photo-note">* Foto belum tersedia — unggah foto untuk menampilkannya</p>
+    </div>
+  </div>
+
+  <p class="section-label">Riwayat Pendidikan</p>
+  <table class="edu-table">
+    <thead>
+      <tr>
+        <th style="width:80px;">Jenjang</th>
+        <th>Nama Sekolah / Universitas</th>
+        <th style="width:200px;">Jurusan</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="degree-pill">S1</span></td>
+        <td>Universitas Hasanuddin</td>
+        <td style="color:var(--color-text-secondary);">Farmasi</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p class="section-label" style="margin-top:0;">Riwayat Jabatan</p>
+  <table class="job-table">
+    <thead>
+      <tr>
+        <th style="width:36px;">#</th>
+        <th>Jabatan &amp; Instansi</th>
+        <th style="width:70px;text-align:right;padding-right:1.5rem;">Tahun</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="job-num">1</span></td>
+        <td>Kepala Dinas Pemberdayaan Perempuan, Perlindungan Anak Dan Keluarga Berencana<br><span style="font-size:12px;color:var(--color-text-secondary);">Dinas Pemberdayaan Perempuan, Perlindungan Anak Dan Keluarga Berencana</span></td>
+        <td style="text-align:right;padding-right:1.5rem;"><span class="job-year">2022</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+    </div>
+    <div class="max-w-7xl mx-auto px-4 md:px-6 py-10">
+    <h2 class="sr-only">Profil pejabat DRS. BOEDI LILIONO, MM — Kepala Dinas Penanaman Modal Dan Perizinan Terpadu — riwayat pendidikan dan jabatan</h2>
+
+<div class="ppid-card">
+
+  <div class="ppid-header">
+    <div class="avatar-ring">
+      <span class="avatar-initials">BL</span>
+    </div>
+    <div style="flex:1;">
+      <div class="ppid-badge">Pejabat Badan Publik</div>
+      <p class="ppid-name">DRS. BOEDI LILIONO, MM</p>
+      <p class="ppid-title">Kepala Dinas Penanaman Modal Dan Perizinan Terpadu &mdash; Dinas Penanaman Modal Dan Perizinan Terpadu</p>
+      <p class="photo-note">* Foto belum tersedia — unggah foto untuk menampilkannya</p>
+    </div>
+  </div>
+
+  <p class="section-label">Riwayat Pendidikan</p>
+  <table class="edu-table">
+    <thead>
+      <tr>
+        <th style="width:80px;">Jenjang</th>
+        <th>Nama Sekolah / Universitas</th>
+        <th style="width:200px;">Jurusan</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="degree-pill">S2</span></td>
+        <td>Universitas Mulawarman</td>
+        <td style="color:var(--color-text-secondary);">Magister Manajemen</td>
+      </tr>
+      <tr>
+        <td><span class="degree-pill">S1</span></td>
+        <td>IIP</td>
+        <td style="color:var(--color-text-secondary);">Kebijakan Pemerintahan</td>
+      </tr>
+      <tr>
+        <td><span class="degree-pill">D3</span></td>
+        <td>STPDN</td>
+        <td style="color:var(--color-text-secondary);">Ilmu Pemerintahan</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p class="section-label" style="margin-top:0;">Riwayat Jabatan</p>
+  <table class="job-table">
+    <thead>
+      <tr>
+        <th style="width:36px;">#</th>
+        <th>Jabatan &amp; Instansi</th>
+        <th style="width:70px;text-align:right;padding-right:1.5rem;">Tahun</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="job-num">1</span></td>
+        <td>Kepala Dinas Penanaman Modal Dan Perizinan Terpadu<br><span style="font-size:12px;color:var(--color-text-secondary);">Dinas Penanaman Modal Dan Perizinan Terpadu</span></td>
+        <td style="text-align:right;padding-right:1.5rem;"><span class="job-year">2022</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+    </div>
+    <div class="max-w-7xl mx-auto px-4 md:px-6 py-10">
+    <h2 class="sr-only">Profil pejabat SUTADI, S.Sos, MM — Kepala Dinas Perpustakaan Dan Arsip — riwayat pendidikan dan jabatan</h2>
+
+<div class="ppid-card">
+
+  <div class="ppid-header">
+    <div class="avatar-ring">
+      <span class="avatar-initials">SS</span>
+    </div>
+    <div style="flex:1;">
+      <div class="ppid-badge">Pejabat Badan Publik</div>
+      <p class="ppid-name">SUTADI, S.Sos, MM</p>
+      <p class="ppid-title">Kepala Dinas Perpustakaan Dan Arsip &mdash; Dinas Perpustakaan Dan Arsip</p>
+      <p class="photo-note">* Foto belum tersedia — unggah foto untuk menampilkannya</p>
+    </div>
+  </div>
+
+  <p class="section-label">Riwayat Pendidikan</p>
+  <table class="edu-table">
+    <thead>
+      <tr>
+        <th style="width:80px;">Jenjang</th>
+        <th>Nama Sekolah / Universitas</th>
+        <th style="width:200px;">Jurusan</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="degree-pill">S2</span></td>
+        <td>Univ. Jend. Soedirman</td>
+        <td style="color:var(--color-text-secondary);">Manajemen SDM</td>
+      </tr>
+      <tr>
+        <td><span class="degree-pill">S1</span></td>
+        <td>Universitas Brawijaya</td>
+        <td style="color:var(--color-text-secondary);">Administrasi Negara</td>
+      </tr>
+      <tr>
+        <td><span class="degree-pill">D3</span></td>
+        <td>APDN</td>
+        <td style="color:var(--color-text-secondary);">Ilmu Pemerintahan</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p class="section-label" style="margin-top:0;">Riwayat Jabatan</p>
+  <table class="job-table">
+    <thead>
+      <tr>
+        <th style="width:36px;">#</th>
+        <th>Jabatan &amp; Instansi</th>
+        <th style="width:70px;text-align:right;padding-right:1.5rem;">Tahun</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="job-num">1</span></td>
+        <td>Kepala Dinas Perpustakaan Dan Arsip<br><span style="font-size:12px;color:var(--color-text-secondary);">Dinas Perpustakaan Dan Arsip</span></td>
+        <td style="text-align:right;padding-right:1.5rem;"><span class="job-year">2022</span></td>
+      </tr>
+      <tr>
+        <td><span class="job-num">2</span></td>
+        <td>Kepala Dinas Komunikasi Dan Informatika<br><span style="font-size:12px;color:var(--color-text-secondary);">Dinas Komunikasi Dan Informatika</span></td>
+        <td style="text-align:right;padding-right:1.5rem;"><span class="job-year">2019</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+    </div>
+    <div class="max-w-7xl mx-auto px-4 md:px-6 py-10">
+    <h2 class="sr-only">Profil pejabat Ir. Heria Prisni — Staf Ahli Bidang Sosial Kesejahteraan Dan Pengembangan Sumber Daya Manusia — riwayat pendidikan dan jabatan</h2>
+
+<div class="ppid-card">
+
+  <div class="ppid-header">
+    <div class="avatar-ring">
+      <img src="/STAF_AHLI_Sosial.png" alt="Foto Ir. HERIA PRISNI" class="avatar-image">    </div>
+    <div style="flex:1;">
+      <div class="ppid-badge">Pejabat Badan Publik</div>
+      <p class="ppid-name">Ir. HERIA PRISNI</p>
+      <p class="ppid-title">Staf Ahli Bidang Sosial Kesejahteraan Dan Pengembangan Sumber Daya Manusia &mdash; Sekretariat Daerah</p>
+    </div>
+  </div>
+
+  <p class="section-label">Riwayat Pendidikan</p>
+  <table class="edu-table">
+    <thead>
+      <tr>
+        <th style="width:80px;">Jenjang</th>
+        <th>Nama Sekolah / Universitas</th>
+        <th style="width:200px;">Jurusan</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="degree-pill">S2</span></td>
+        <td>Universitas Lambung Mangkurat</td>
+        <td style="color:var(--color-text-secondary);">—</td>
+      </tr>
+      <tr>
+        <td><span class="degree-pill">S1</span></td>
+        <td>Universitas Lambung Mangkurat</td>
+        <td style="color:var(--color-text-secondary);">Agronomi Pertanian</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p class="section-label" style="margin-top:0;">Riwayat Jabatan</p>
+  <table class="job-table">
+    <thead>
+      <tr>
+        <th style="width:36px;">#</th>
+        <th>Jabatan &amp; Instansi</th>
+        <th style="width:70px;text-align:right;padding-right:1.5rem;">Tahun</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="job-num">1</span></td>
+        <td>Staf Ahli Bidang Sosial Kesejahteraan Dan Pengembangan Sumber Daya Manusia<br><span style="font-size:12px;color:var(--color-text-secondary);">Sekretariat Daerah</span></td>
+        <td style="text-align:right;padding-right:1.5rem;"><span class="job-year">2022</span></td>
+      </tr>
+      <tr>
+        <td><span class="job-num">2</span></td>
+        <td>Kepala Dinas Pangan Pertanian dan Perikanan<br><span style="font-size:12px;color:var(--color-text-secondary);">Dinas Pangan Pertanian dan Perikanan</span></td>
+        <td style="text-align:right;padding-right:1.5rem;"><span class="job-year">2019</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 md:px-6 py-10">
+    <h2 class="sr-only">Profil pejabat Arzaedi Rachman, S.Sos, MM — Staf Ahli Bidang Perekonomian Dan Pembangunan — riwayat pendidikan dan jabatan</h2>
+        <div class="ppid-card">
+
+  <div class="ppid-header">
+    <div class="avatar-ring">
+      <img src="/staf_ahli.png" alt="Foto ARZAEDI RACHMAN" class="avatar-image">    </div>
+    <div style="flex:1;">
+      <div class="ppid-badge">Pejabat Badan Publik</div>
+      <p class="ppid-name">ARZAEDI RACHMAN, S.Sos, MM.</p>
+      <p class="ppid-title">Staf Ahli Bidang Perekonomian Dan Pembangunan &mdash; Sekretariat Daerah</p>
+      <p class="photo-note">* Foto belum tersedia — unggah foto untuk menampilkannya</p>
+    </div>
+  </div>
+
+  <p class="section-label">Riwayat Pendidikan</p>
+  <table class="edu-table">
+    <thead>
+      <tr>
+        <th style="width:80px;">Jenjang</th>
+        <th>Nama Sekolah / Universitas</th>
+        <th style="width:200px;">Jurusan</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="degree-pill">S2</span></td>
+        <td>Universitas Jenderal Sudirman</td>
+        <td style="color:var(--color-text-secondary);">Manajemen SDM</td>
+      </tr>
+      <tr>
+        <td><span class="degree-pill">S1</span></td>
+        <td>Universitas Tridharma</td>
+        <td style="color:var(--color-text-secondary);">Ilmu Administrasi Negara</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p class="section-label" style="margin-top:0;">Riwayat Jabatan</p>
+  <table class="job-table">
+    <thead> 
+      <tr>
+        <th style="width:36px;">#</th>
+        <th>Jabatan &amp; Instansi</th>
+        <th style="width:70px;text-align:right;padding-right:1.5rem;">Tahun</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="job-num">1</span></td>
+        <td>Staf Ahli Bidang Perekonomian Dan Pembangunan<br><span style="font-size:12px;color:var(--color-text-secondary);">Sekretariat Daerah</span></td>
+        <td style="text-align:right;padding-right:1.5rem;"><span class="job-year">2020</span></td>
+      </tr>
+      <tr>
+        <td><span class="job-num">2</span></td>
+        <td>Kepala Dinas Pemuda, Olahraga Dan Pariwisata<br><span style="font-size:12px;color:var(--color-text-secondary);">Dinas Pemuda, Olahraga Dan Pariwisata</span></td>
+        <td style="text-align:right;padding-right:1.5rem;"><span class="job-year">2020</span></td>
+      </tr>
+      <tr>
+        <td><span class="job-num">3</span></td>
+        <td>Kepala Dinas Koperasi, Usaha Mikro, Kecil, Menengah Dan Perindustrian<br><span style="font-size:12px;color:var(--color-text-secondary);">Dinas Koperasi, Usaha Mikro, Kecil, Menengah Dan Perindustrian</span></td>
+        <td style="text-align:right;padding-right:1.5rem;"><span class="job-year">2016</span></td>
+      </tr>
+      <tr>
+        <td><span class="job-num">4</span></td>
+        <td>Kepala Dinas Perindustrian Perdagangan Dan Koperasi<br><span style="font-size:12px;color:var(--color-text-secondary);">Dinas Perindustrian Perdagangan Dan Koperasi</span></td>
+        <td style="text-align:right;padding-right:1.5rem;"><span class="job-year">2012</span></td>
+      </tr>
+      <tr>
+        <td><span class="job-num">5</span></td>
+        <td>Kepala Dinas Pemuda, Olahraga, Kebudayaan Dan Pariwisata<br><span style="font-size:12px;color:var(--color-text-secondary);">Dinas Pemuda, Olahraga, Kebudayaan Dan Pariwisata</span></td>
+        <td style="text-align:right;padding-right:1.5rem;"><span class="job-year">2009</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
     </div>
 </main>
 <footer id="kontak" class="bg-slate-800 dark:bg-slate-600 w-full pt-16 md:pt-20 pb-8 border-t border-slate-600 dark:border-slate-800">
