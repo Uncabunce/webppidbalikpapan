@@ -644,9 +644,6 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
             </p>
         </div>
     </section>
-    <!-- ================================ -->
-    <!-- KONTEN HALAMAN DI SINI          -->
-    <!-- ================================ -->
     <div class="max-w-7xl mx-auto px-4 md:px-6 py-10">
         <h2 class="sr-only">Profil pejabat RUDDY ISKANDAR, S.Sos — Plt. Camat — riwayat pendidikan dan jabatan</h2>
 
@@ -660,7 +657,7 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
       <div class="ppid-badge">Pejabat Badan Publik</div>
       <p class="ppid-name">RUDDY ISKANDAR, S.Sos</p>
       <p class="ppid-title">Plt. Camat &mdash; Kecamatan Balikpapan Timur</p>
-      <p class="photo-note">* Foto belum tersedia — unggah foto untuk menampilkannya</p>
+      <p class="photo-note">* Foto belum tersedia</p>
     </div>
   </div>
 
@@ -720,13 +717,12 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 
   <div class="ppid-header">
     <div class="avatar-ring">
-      <span class="avatar-initials">MA</span>
+        <img src="/Drs.MUHAMMAD_ARIF_FADHILAH_2.png" alt="Foto DRS. MUHAMMAD ARIF FADHILAH, M.Si" class="ppid-photo">
     </div>
     <div style="flex:1;">
       <div class="ppid-badge">Pejabat Badan Publik</div>
       <p class="ppid-name">DRS. MUHAMMAD ARIF FADHILAH, M.Si</p>
       <p class="ppid-title">Camat &mdash; Kecamatan Balikpapan Barat</p>
-      <p class="photo-note">* Foto belum tersedia — unggah foto untuk menampilkannya</p>
     </div>
   </div>
 
@@ -804,15 +800,14 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 </div>
 
     </div>
-    <div class="max-w-7xl mx-auto px-4 md:px-6 py-10">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 py-10>
         <h2 class="sr-only">Profil pejabat EDY GUNAWAN, S.H., M.H — Camat — riwayat pendidikan dan jabatan</h2>
 
 <div class="ppid-card">
 
   <div class="ppid-header">
     <div class="avatar-ring">
-      <span class="avatar-initials">EG</span>
-    </div>
+        <img src="/EDY_GUNAWAN_4.png" alt="Foto EDY GUNAWAN, S.H., M.H" class="ppid-photo">    </div>
     <div style="flex:1;">
       <div class="ppid-badge">Pejabat Badan Publik</div>
       <p class="ppid-name">EDY GUNAWAN, S.H., M.H</p>
@@ -903,7 +898,7 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
       <div class="ppid-badge">Pejabat Badan Publik</div>
       <p class="ppid-name">DRS. MUHAMMAD IDRIS, M.Si</p>
       <p class="ppid-title">Camat &mdash; Kecamatan Balikpapan Utara</p>
-      <p class="photo-note">* Foto belum tersedia — unggah foto untuk menampilkannya</p>
+      <p class="photo-note">* Foto belum tersedia</p>
     </div>
   </div>
 
@@ -985,11 +980,12 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
     <div class="avatar-ring">
       <span class="avatar-initials">RS</span>
     </div>
+
     <div style="flex:1;">
       <div class="ppid-badge">Pejabat Badan Publik</div>
       <p class="ppid-name">ROSIN SUPARLAN, SSTP</p>
       <p class="ppid-title">Camat &mdash; Kecamatan Balikpapan Kota</p>
-      <p class="photo-note">* Foto belum tersedia — unggah foto untuk menampilkannya</p>
+      <p class="photo-note">* Foto belum tersedia</p>
     </div>
   </div>
 
@@ -1064,13 +1060,12 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 
   <div class="ppid-header">
     <div class="avatar-ring">
-      <span class="avatar-initials">HS</span>
-    </div>
+        <img src="/HERURESSANDY_SETIA_KESUMA_3.png" alt="Foto HERURESSANDY SETIA KUSUMA, SSTP" class="ppid-photo"> 
+         </div>    
     <div style="flex:1;">
       <div class="ppid-badge">Pejabat Badan Publik</div>
       <p class="ppid-name">HERURESSANDY SETIA KUSUMA, SSTP</p>
       <p class="ppid-title">Camat &mdash; Kecamatan Balikpapan Selatan</p>
-      <p class="photo-note">* Foto belum tersedia — unggah foto untuk menampilkannya</p>
     </div>
   </div>
 

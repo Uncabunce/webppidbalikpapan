@@ -654,13 +654,11 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 
   <div class="ppid-header">
     <div class="avatar-ring">
-      <span class="avatar-initials">PM</span>
-    </div>
+        <img src="/kepala_dinas.png" alt="PURNOMO M, S.Sos, MM" class="ppid-photo">    </div>
     <div style="flex:1;">
       <div class="ppid-badge">Pejabat Badan Publik</div>
       <p class="ppid-name">PURNOMO M, S.Sos, MM</p>
       <p class="ppid-title">Kepala Dinas Pendidikan Dan Kebudayaan &mdash; Dinas Pendidikan Dan Kebudayaan</p>
-      <p class="photo-note">* Foto belum tersedia — unggah foto untuk menampilkannya</p>
     </div>
   </div>
 
@@ -729,13 +727,11 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 
   <div class="ppid-header">
     <div class="avatar-ring">
-      <span class="avatar-initials">AS</span>
-    </div>
+        <img src="/Dr._Andi_Sri_Juliarty_2.png" alt="Dr." class="ppid-photo">    </div>
     <div style="flex:1;">
       <div class="ppid-badge">Pejabat Badan Publik</div>
       <p class="ppid-name">DR. ANDI SRI JULIARTY R, M.Kes</p>
       <p class="ppid-title">Kepala Dinas Kesehatan &mdash; Dinas Kesehatan</p>
-      <p class="photo-note">* Foto belum tersedia — unggah foto untuk menampilkannya</p>
     </div>
   </div>
 
@@ -790,13 +786,11 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 
   <div class="ppid-header">
     <div class="avatar-ring">
-      <span class="avatar-initials">AM</span>
-    </div>
+        <img src="/M-YUSRI_DPU.png" alt="M YUSRI" class="ppid-photo">    </div>
     <div style="flex:1;">
       <div class="ppid-badge">Pejabat Badan Publik</div>
       <p class="ppid-name">ANDI MUHAMMAD YUSRI RAMLI, ST, MT</p>
       <p class="ppid-title">Kepala Dinas Pekerjaan Umum &mdash; Dinas Pekerjaan Umum</p>
-      <p class="photo-note">* Foto belum tersedia — unggah foto untuk menampilkannya</p>
     </div>
   </div>
 
@@ -851,13 +845,11 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 
   <div class="ppid-header">
     <div class="avatar-ring">
-      <span class="avatar-initials">A</span>
-    </div>
+        <img src="/ARFIANSYAH_DISPERKIM.png" alt="arfiansyah" class="ppid-photo">    </div>
     <div style="flex:1;">
       <div class="ppid-badge">Pejabat Badan Publik</div>
       <p class="ppid-name">ARFIANSYAH, ST</p>
       <p class="ppid-title">Kepala Dinas Perumahan Dan Permukiman &mdash; Dinas Perumahan Dan Permukiman</p>
-      <p class="photo-note">* Foto belum tersedia — unggah foto untuk menampilkannya</p>
     </div>
   </div>
 
@@ -907,13 +899,11 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 
   <div class="ppid-header">
     <div class="avatar-ring">
-      <span class="avatar-initials">EJ</span>
-    </div>
+        <img src="/ELVIN_JUNAI_DISHUB.png" alt="elvin" class="ppid-photo">    </div>
     <div style="flex:1;">
       <div class="ppid-badge">Pejabat Badan Publik</div>
       <p class="ppid-name">DRS. ELVIN JUANIDI, M.Si</p>
       <p class="ppid-title">Kepala Dinas Perhubungan &mdash; Dinas Perhubungan</p>
-      <p class="photo-note">* Foto belum tersedia — unggah foto untuk menampilkannya</p>
     </div>
   </div>
 
@@ -988,13 +978,11 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 
   <div class="ppid-header">
     <div class="avatar-ring">
-      <span class="avatar-initials">HH</span>
-    </div>
+        <img src="/HASBULLAH_HELMI_2.png" alt="hasbullah" class="ppid-photo">    </div>
     <div style="flex:1;">
       <div class="ppid-badge">Pejabat Badan Publik</div>
       <p class="ppid-name">HASBULLAH HELMI, A.P., M.Si</p>
       <p class="ppid-title">Kepala Dinas Kependudukan Dan Pencatatan Sipil Kota Balikpapan &mdash; Dinas Kependudukan Dan Pencatatan Sipil</p>
-      <p class="photo-note">* Foto belum tersedia — unggah foto untuk menampilkannya</p>
     </div>
   </div>
 
@@ -1044,13 +1032,11 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 
   <div class="ppid-header">
     <div class="avatar-ring">
-      <span class="avatar-initials">AM</span>
-    </div>
+        <img src="/ANI_MUFAIDAH_2.png" alt="ANI MUFAIDAH, S.IP, M.Si" class="ppid-photo">    </div>
     <div style="flex:1;">
       <div class="ppid-badge">Pejabat Badan Publik</div>
       <p class="ppid-name">ANI MUFAIDAH, S.IP, M.Si</p>
       <p class="ppid-title">Kepala Dinas Ketenagakerjaan &mdash; Dinas Ketenagakerjaan</p>
-      <p class="photo-note">* Foto belum tersedia — unggah foto untuk menampilkannya</p>
     </div>
   </div>
 
@@ -1110,13 +1096,11 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 
   <div class="ppid-header">
     <div class="avatar-ring">
-      <span class="avatar-initials">RS</span>
-    </div>
+        <img src="/ROSDIANA_2.png" alt="Foto ROSDIANA S, S.Sos" class="ppid-photo">    </div>
     <div style="flex:1;">
       <div class="ppid-badge">Pejabat Badan Publik</div>
       <p class="ppid-name">ROSDIANA S, S.Sos</p>
       <p class="ppid-title">Sekretaris &mdash; Dinas Koperasi, Usaha Mikro, Kecil, Menengah Dan Perindustrian</p>
-      <p class="photo-note">* Foto belum tersedia — unggah foto untuk menampilkannya</p>
     </div>
   </div>
 
@@ -1164,13 +1148,11 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 
   <div class="ppid-header">
     <div class="avatar-ring">
-      <span class="avatar-initials">MH</span>
-    </div>
+        <img src="/MUFIDA_DINSOS.png" alt="Foto Mufidah Hayati" class="ppid-photo">    </div>
     <div style="flex:1;">
       <div class="ppid-badge">Pejabat Badan Publik</div>
       <p class="ppid-name">DRA. MUFIDAH HAYATI</p>
       <p class="ppid-title">Sekretaris &mdash; Dinas Sosial</p>
-      <p class="photo-note">* Foto belum tersedia — unggah foto untuk menampilkannya</p>
     </div>
   </div>
 
@@ -1225,13 +1207,11 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 
   <div class="ppid-header">
     <div class="avatar-ring">
-      <span class="avatar-initials">ND</span>
-    </div>
+        <img src="/NENY_DPPR.png" alt="Foto Neny Dwi Winahyu, S.STP, M.Si" class="ppid-photo">    </div>
     <div style="flex:1;">
       <div class="ppid-badge">Pejabat Badan Publik</div>
       <p class="ppid-name">NENY DWI WINAHYU, S.STP, M.Si</p>
       <p class="ppid-title">Kepala Dinas Pertanahan Dan Penataan Ruang &mdash; Dinas Pertanahan Dan Penataan Ruang</p>
-      <p class="photo-note">* Foto belum tersedia — unggah foto untuk menampilkannya</p>
     </div>
   </div>
 
@@ -1286,13 +1266,11 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 
   <div class="ppid-header">
     <div class="avatar-ring">
-      <span class="avatar-initials">CI</span>
-    </div>
+        <img src="/dr._COKORDA_ISTRI_RATIH_KUSUMA_W_2.png" alt="Foto DR. COKORDA ISTRI RATIH KUSUMA W., M.T." class="ppid-photo">    </div>
     <div style="flex:1;">
       <div class="ppid-badge">Pejabat Badan Publik</div>
       <p class="ppid-name">DR. COKORDA ISTRI RATIH KUSUMA W.</p>
       <p class="ppid-title">Kepala Dinas Pemuda, Olahraga Dan Pariwisata &mdash; Dinas Pemuda, Olahraga Dan Pariwisata</p>
-      <p class="photo-note">* Foto belum tersedia — unggah foto untuk menampilkannya</p>
     </div>
   </div>
 
@@ -1347,13 +1325,11 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 
   <div class="ppid-header">
     <div class="avatar-ring">
-      <span class="avatar-initials">AS</span>
-    </div>
+        <img src="/ADAMIN_DISKOMINFO.png" alt="Foto adamin" class="ppid-photo">    </div>
     <div style="flex:1;">
       <div class="ppid-badge">Pejabat Badan Publik</div>
       <p class="ppid-name">ADAMIN, S.Kom, M.Eng</p>
       <p class="ppid-title">Kepala Dinas Komunikasi Dan Informatika &mdash; Dinas Komunikasi Dan Informatika</p>
-      <p class="photo-note">* Foto belum tersedia — unggah foto untuk menampilkannya</p>
     </div>
   </div>
 
@@ -1413,13 +1389,11 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 
   <div class="ppid-header">
     <div class="avatar-ring">
-      <span class="avatar-initials">SD</span>
-    </div>
+        <img src="/SUDIRMAN_DLH.png" alt="Foto Sudirman" class="ppid-photo">    </div>
     <div style="flex:1;">
       <div class="ppid-badge">Pejabat Badan Publik</div>
       <p class="ppid-name">DRS. SUDIRMAN DJAYALEKSANA, MM</p>
       <p class="ppid-title">Kepala Dinas Lingkungan Hidup &mdash; Dinas Lingkungan Hidup</p>
-      <p class="photo-note">* Foto belum tersedia — unggah foto untuk menampilkannya</p>
     </div>
   </div>
 
@@ -1489,13 +1463,11 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 
   <div class="ppid-header">
     <div class="avatar-ring">
-      <span class="avatar-initials">AA</span>
-    </div>
+        <img src="/ALWI_DP3AKB.png" alt="FotoAlwiati" class="ppid-photo">    </div>
     <div style="flex:1;">
       <div class="ppid-badge">Pejabat Badan Publik</div>
       <p class="ppid-name">DRA. ALWIATI A, Apt</p>
       <p class="ppid-title">Kepala Dinas Pemberdayaan Perempuan, Perlindungan Anak Dan Keluarga Berencana &mdash; Dinas Pemberdayaan Perempuan, Perlindungan Anak Dan Keluarga Berencana</p>
-      <p class="photo-note">* Foto belum tersedia — unggah foto untuk menampilkannya</p>
     </div>
   </div>
 
@@ -1545,13 +1517,12 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 
   <div class="ppid-header">
     <div class="avatar-ring">
-      <span class="avatar-initials">BL</span>
+        <img src="/BOEDI_LILIONO_DPMPT.png" alt="Foto budi" class="ppid-photo">
     </div>
     <div style="flex:1;">
       <div class="ppid-badge">Pejabat Badan Publik</div>
       <p class="ppid-name">DRS. BOEDI LILIONO, MM</p>
       <p class="ppid-title">Kepala Dinas Penanaman Modal Dan Perizinan Terpadu &mdash; Dinas Penanaman Modal Dan Perizinan Terpadu</p>
-      <p class="photo-note">* Foto belum tersedia — unggah foto untuk menampilkannya</p>
     </div>
   </div>
 
@@ -1611,13 +1582,11 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 
   <div class="ppid-header">
     <div class="avatar-ring">
-      <span class="avatar-initials">SS</span>
-    </div>
+        <img src="/SUTADI_DISPUSTAKAR.png" alt="Foto sutadi" class="ppid-photo">    </div>
     <div style="flex:1;">
       <div class="ppid-badge">Pejabat Badan Publik</div>
       <p class="ppid-name">SUTADI, S.Sos, MM</p>
       <p class="ppid-title">Kepala Dinas Perpustakaan Dan Arsip &mdash; Dinas Perpustakaan Dan Arsip</p>
-      <p class="photo-note">* Foto belum tersedia — unggah foto untuk menampilkannya</p>
     </div>
   </div>
 
@@ -1749,7 +1718,6 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
       <div class="ppid-badge">Pejabat Badan Publik</div>
       <p class="ppid-name">ARZAEDI RACHMAN, S.Sos, MM.</p>
       <p class="ppid-title">Staf Ahli Bidang Perekonomian Dan Pembangunan &mdash; Sekretariat Daerah</p>
-      <p class="photo-note">* Foto belum tersedia — unggah foto untuk menampilkannya</p>
     </div>
   </div>
 

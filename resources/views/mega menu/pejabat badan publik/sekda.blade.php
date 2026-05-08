@@ -651,7 +651,7 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 
   <div class="ppid-header">
     <div class="photo-ring">
-        <img src="/MUHAIMIN.jpg" alt="Foto Muhaimin, S.T., M.T." class="ppid-photo">
+        <img src="{{ asset('/foto pejabat/MUHAIMIN.jpg') }}" alt="Foto Muhaimin, S.T., M.T." class="ppid-photo">
     </div>
     <div style="flex:1;">
       <div class="ppid-badge">Pejabat Badan Publik</div>

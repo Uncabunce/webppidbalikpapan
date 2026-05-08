@@ -663,7 +663,6 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
       <div class="ppid-badge">Pejabat Badan Publik</div>
       <p class="ppid-name">ARZAEDI RACHMAN, S.Sos, MM.</p>
       <p class="ppid-title">Staf Ahli Bidang Perekonomian Dan Pembangunan &mdash; Sekretariat Daerah</p>
-      <p class="photo-note">* Foto belum tersedia — unggah foto untuk menampilkannya</p>
     </div>
   </div>
 
@@ -744,7 +743,8 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
     <div style="flex:1;">
       <div class="ppid-badge">Pejabat Badan Publik</div>
       <p class="ppid-name">Hj. DAHNIAR, SE, M.A.P</p>
-      <p class="ppid-title">Staf Ahli Bidang Pemerintahan &mdash; Sekretariat Daerah</p>    </div>
+      <p class="ppid-title">Staf Ahli Bidang Pemerintahan &mdash; Sekretariat Daerah</p> 
+    </div>
   </div>
 
   <p class="section-label">Riwayat Pendidikan</p>
