@@ -606,9 +606,6 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 </div>
 </header>
 <main class="bg-surface min-h-screen">
-    <!-- ================================ -->
-    <!-- KONTEN HALAMAN DI SINI          -->
-    <!-- ================================ -->
     <div class="max-w-7xl mx-auto px-4 md:px-6 py-10">
         <p class="text-on-surface-variant text-center text-sm">Konten halaman</p>
     </div>

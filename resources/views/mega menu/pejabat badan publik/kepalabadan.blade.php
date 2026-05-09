@@ -645,9 +645,6 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
             </p>
         </div>
     </section>
-    <!-- ================================ -->
-    <!-- KONTEN HALAMAN DI SINI          -->
-    <!-- ================================ -->
     <div class="max-w-7xl mx-auto px-4 md:px-6 py-10">
         <h2 class="sr-only">Profil pejabat PURNOMO M, S.Sos, MM — Kepala Dinas Pendidikan Dan Kebudayaan — riwayat pendidikan dan jabatan</h2>
 

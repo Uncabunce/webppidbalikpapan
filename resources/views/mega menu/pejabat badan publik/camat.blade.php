@@ -210,6 +210,7 @@
   .ppid-title { color: rgba(255,255,255,0.65); font-size: 13px; margin: 0; }
   .avatar-ring { width: 80px; height: 80px; border-radius: 50%; border: 3px solid #fdc003; overflow: hidden; flex-shrink: 0; background: #004f8c; display: flex; align-items: center; justify-content: center; }
   .avatar-initials { color: #fdc003; font-size: 26px; font-weight: 500; letter-spacing: -1px; font-family: var(--font-sans); }
+  .ppid-photo { width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; }
   .section-label { font-size: 10px; font-weight: 500; color: var(--color-text-secondary); text-transform: uppercase; letter-spacing: 0.1em; padding: 1rem 1.5rem 0.5rem; border-bottom: 0.5px solid var(--color-border-tertiary); margin-bottom: 0; }
   .edu-table, .job-table { width: 100%; border-collapse: collapse; font-size: 13px; }
   .edu-table th, .job-table th { background: var(--color-background-secondary); color: var(--color-text-secondary); font-weight: 500; font-size: 11px; text-align: left; padding: 6px 1.5rem; border-bottom: 0.5px solid var(--color-border-tertiary); }
@@ -717,7 +718,7 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 
   <div class="ppid-header">
     <div class="avatar-ring">
-        <img src="/Drs.MUHAMMAD_ARIF_FADHILAH_2.png" alt="Foto DRS. MUHAMMAD ARIF FADHILAH, M.Si" class="ppid-photo">
+        <img src="/images/foto%20pejabat/Drs.MUHAMMAD_ARIF_FADHILAH_2.png" alt="Foto DRS. MUHAMMAD ARIF FADHILAH, M.Si" class="ppid-photo">
     </div>
     <div style="flex:1;">
       <div class="ppid-badge">Pejabat Badan Publik</div>
@@ -807,13 +808,12 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 
   <div class="ppid-header">
     <div class="avatar-ring">
-        <img src="/EDY_GUNAWAN_4.png" alt="Foto EDY GUNAWAN, S.H., M.H" class="ppid-photo">    </div>
+        <img src="/images/foto%20pejabat/EDY_GUNAWAN_4.png" alt="Foto EDY GUNAWAN, S.H., M.H" class="ppid-photo">    </div>
     <div style="flex:1;">
       <div class="ppid-badge">Pejabat Badan Publik</div>
       <p class="ppid-name">EDY GUNAWAN, S.H., M.H</p>
       <p class="ppid-title">Camat &mdash; Kecamatan Balikpapan Tengah</p>
-      <p class="photo-note">* Foto belum tersedia — unggah foto untuk menampilkannya</p>
-    </div>
+55    </div>
   </div>
 
   <p class="section-label">Riwayat Pendidikan</p>
@@ -1060,7 +1060,7 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 
   <div class="ppid-header">
     <div class="avatar-ring">
-        <img src="/HERURESSANDY_SETIA_KESUMA_3.png" alt="Foto HERURESSANDY SETIA KUSUMA, SSTP" class="ppid-photo"> 
+        <img src="/images/foto%20pejabat/HERURESSANDY_SETIA_KESUMA_3.png" alt="Foto HERURESSANDY SETIA KUSUMA, SSTP" class="ppid-photo"> 
          </div>    
     <div style="flex:1;">
       <div class="ppid-badge">Pejabat Badan Publik</div>

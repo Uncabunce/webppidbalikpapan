@@ -658,7 +658,8 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 
   <div class="ppid-header">
     <div class="avatar-ring">
-      <img src="/staf_ahli.png" alt="Foto ARZAEDI RACHMAN" class="avatar-image">    </div>
+        <img src="{{ asset('images/foto pejabat/staf_ahli.png') }}" alt="Foto ARZAEDI RACHMAN" class="avatar-image">   
+     </div>
     <div style="flex:1;">
       <div class="ppid-badge">Pejabat Badan Publik</div>
       <p class="ppid-name">ARZAEDI RACHMAN, S.Sos, MM.</p>
@@ -738,7 +739,7 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 
   <div class="ppid-header">
     <div class="avatar-ring">
-      <img src="/Hj_DAHNIA_2.png" alt="hj. dahnia" class="avatar-image">
+        <img src="{{ asset('images/foto pejabat/Hj_DAHNIA_2.png') }}" alt="hj. dahnia" class="avatar-image">
         </div>
     <div style="flex:1;">
       <div class="ppid-badge">Pejabat Badan Publik</div>
@@ -814,7 +815,7 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 
   <div class="ppid-header">
     <div class="avatar-ring">
-      <img src="/STAF_AHLI_Sosial.png" alt="Foto Ir. HERIA PRISNI" class="avatar-image">    </div>
+        <img src="{{ asset('images/foto pejabat/STAF_AHLI_Sosial.png') }}" alt="Foto Ir. HERIA PRISNI" class="avatar-image">    </div>
     <div style="flex:1;">
       <div class="ppid-badge">Pejabat Badan Publik</div>
       <p class="ppid-name">Ir. HERIA PRISNI</p>

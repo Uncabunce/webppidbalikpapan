@@ -210,6 +210,7 @@
   .ppid-title { color: rgba(255,255,255,0.65); font-size: 13px; margin: 0; }
   .avatar-ring { width: 80px; height: 80px; border-radius: 50%; border: 3px solid #fdc003; overflow: hidden; flex-shrink: 0; background: #004f8c; display: flex; align-items: center; justify-content: center; }
   .avatar-initials { color: #fdc003; font-size: 26px; font-weight: 500; letter-spacing: -1px; font-family: var(--font-sans); }
+  .ppid-photo { width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; }
   .section-label { font-size: 10px; font-weight: 500; color: var(--color-text-secondary); text-transform: uppercase; letter-spacing: 0.1em; padding: 1rem 1.5rem 0.5rem; border-bottom: 0.5px solid var(--color-border-tertiary); margin-bottom: 0; }
   .edu-table, .job-table { width: 100%; border-collapse: collapse; font-size: 13px; }
   .edu-table th, .job-table th { background: var(--color-background-secondary); color: var(--color-text-secondary); font-weight: 500; font-size: 11px; text-align: left; padding: 6px 1.5rem; border-bottom: 0.5px solid var(--color-border-tertiary); }
@@ -654,7 +655,7 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 
   <div class="ppid-header">
     <div class="avatar-ring">
-        <img src="/kepala_dinas.png" alt="PURNOMO M, S.Sos, MM" class="ppid-photo">    </div>
+        <img src="/images/foto%20pejabat/kepala_dinas.png" alt="PURNOMO M, S.Sos, MM" class="ppid-photo">    </div>
     <div style="flex:1;">
       <div class="ppid-badge">Pejabat Badan Publik</div>
       <p class="ppid-name">PURNOMO M, S.Sos, MM</p>
@@ -727,7 +728,7 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 
   <div class="ppid-header">
     <div class="avatar-ring">
-        <img src="/Dr._Andi_Sri_Juliarty_2.png" alt="Dr." class="ppid-photo">    </div>
+        <img src="/images/foto%20pejabat/Dr._Andi_Sri_Juliarty_2.png" alt="Dr." class="ppid-photo">    </div>
     <div style="flex:1;">
       <div class="ppid-badge">Pejabat Badan Publik</div>
       <p class="ppid-name">DR. ANDI SRI JULIARTY R, M.Kes</p>
@@ -786,7 +787,7 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 
   <div class="ppid-header">
     <div class="avatar-ring">
-        <img src="/M-YUSRI_DPU.png" alt="M YUSRI" class="ppid-photo">    </div>
+        <img src="/images/foto%20pejabat/M-YUSRI_DPU.png" alt="M YUSRI" class="ppid-photo">    </div>
     <div style="flex:1;">
       <div class="ppid-badge">Pejabat Badan Publik</div>
       <p class="ppid-name">ANDI MUHAMMAD YUSRI RAMLI, ST, MT</p>
@@ -845,7 +846,7 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 
   <div class="ppid-header">
     <div class="avatar-ring">
-        <img src="/ARFIANSYAH_DISPERKIM.png" alt="arfiansyah" class="ppid-photo">    </div>
+        <img src="/images/foto%20pejabat/ARFIANSYAH_DISPERKIM.png" alt="arfiansyah" class="ppid-photo">    </div>
     <div style="flex:1;">
       <div class="ppid-badge">Pejabat Badan Publik</div>
       <p class="ppid-name">ARFIANSYAH, ST</p>
@@ -899,7 +900,7 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 
   <div class="ppid-header">
     <div class="avatar-ring">
-        <img src="/ELVIN_JUNAI_DISHUB.png" alt="elvin" class="ppid-photo">    </div>
+        <img src="/images/foto%20pejabat/ELVIN_JUNAI_DISHUB.png" alt="elvin" class="ppid-photo">    </div>
     <div style="flex:1;">
       <div class="ppid-badge">Pejabat Badan Publik</div>
       <p class="ppid-name">DRS. ELVIN JUANIDI, M.Si</p>
@@ -978,7 +979,7 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 
   <div class="ppid-header">
     <div class="avatar-ring">
-        <img src="/HASBULLAH_HELMI_2.png" alt="hasbullah" class="ppid-photo">    </div>
+        <img src="/images/foto%20pejabat/HASBULLAH_HELMI_2.png" alt="hasbullah" class="ppid-photo">    </div>
     <div style="flex:1;">
       <div class="ppid-badge">Pejabat Badan Publik</div>
       <p class="ppid-name">HASBULLAH HELMI, A.P., M.Si</p>
@@ -1032,7 +1033,7 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 
   <div class="ppid-header">
     <div class="avatar-ring">
-        <img src="/ANI_MUFAIDAH_2.png" alt="ANI MUFAIDAH, S.IP, M.Si" class="ppid-photo">    </div>
+        <img src="/images/foto%20pejabat/ANI_MUFAIDAH_2.png" alt="ANI MUFAIDAH, S.IP, M.Si" class="ppid-photo">    </div>
     <div style="flex:1;">
       <div class="ppid-badge">Pejabat Badan Publik</div>
       <p class="ppid-name">ANI MUFAIDAH, S.IP, M.Si</p>
@@ -1096,7 +1097,7 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 
   <div class="ppid-header">
     <div class="avatar-ring">
-        <img src="/ROSDIANA_2.png" alt="Foto ROSDIANA S, S.Sos" class="ppid-photo">    </div>
+        <img src="/images/foto%20pejabat/ROSDIANA_2.png" alt="Foto ROSDIANA S, S.Sos" class="ppid-photo">    </div>
     <div style="flex:1;">
       <div class="ppid-badge">Pejabat Badan Publik</div>
       <p class="ppid-name">ROSDIANA S, S.Sos</p>
@@ -1148,7 +1149,7 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 
   <div class="ppid-header">
     <div class="avatar-ring">
-        <img src="/MUFIDA_DINSOS.png" alt="Foto Mufidah Hayati" class="ppid-photo">    </div>
+        <img src="/images/foto%20pejabat/MUFIDA_DINSOS.png" alt="Foto Mufidah Hayati" class="ppid-photo">    </div>
     <div style="flex:1;">
       <div class="ppid-badge">Pejabat Badan Publik</div>
       <p class="ppid-name">DRA. MUFIDAH HAYATI</p>
@@ -1207,7 +1208,7 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 
   <div class="ppid-header">
     <div class="avatar-ring">
-        <img src="/NENY_DPPR.png" alt="Foto Neny Dwi Winahyu, S.STP, M.Si" class="ppid-photo">    </div>
+        <img src="/images/foto%20pejabat/NENY_DPPR.png" alt="Foto Neny Dwi Winahyu, S.STP, M.Si" class="ppid-photo">    </div>
     <div style="flex:1;">
       <div class="ppid-badge">Pejabat Badan Publik</div>
       <p class="ppid-name">NENY DWI WINAHYU, S.STP, M.Si</p>
@@ -1266,7 +1267,7 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 
   <div class="ppid-header">
     <div class="avatar-ring">
-        <img src="/dr._COKORDA_ISTRI_RATIH_KUSUMA_W_2.png" alt="Foto DR. COKORDA ISTRI RATIH KUSUMA W., M.T." class="ppid-photo">    </div>
+        <img src="/images/foto%20pejabat/dr._COKORDA_ISTRI_RATIH_KUSUMA_W_2.png" alt="Foto DR. COKORDA ISTRI RATIH KUSUMA W., M.T." class="ppid-photo">    </div>
     <div style="flex:1;">
       <div class="ppid-badge">Pejabat Badan Publik</div>
       <p class="ppid-name">DR. COKORDA ISTRI RATIH KUSUMA W.</p>
@@ -1325,7 +1326,7 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 
   <div class="ppid-header">
     <div class="avatar-ring">
-        <img src="/ADAMIN_DISKOMINFO.png" alt="Foto adamin" class="ppid-photo">    </div>
+        <img src="/images/foto%20pejabat/ADAMIN_DISKOMINFO.png" alt="Foto adamin" class="ppid-photo">    </div>
     <div style="flex:1;">
       <div class="ppid-badge">Pejabat Badan Publik</div>
       <p class="ppid-name">ADAMIN, S.Kom, M.Eng</p>
@@ -1389,7 +1390,7 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 
   <div class="ppid-header">
     <div class="avatar-ring">
-        <img src="/SUDIRMAN_DLH.png" alt="Foto Sudirman" class="ppid-photo">    </div>
+        <img src="/images/foto%20pejabat/SUDIRMAN_DLH.png" alt="Foto Sudirman" class="ppid-photo">    </div>
     <div style="flex:1;">
       <div class="ppid-badge">Pejabat Badan Publik</div>
       <p class="ppid-name">DRS. SUDIRMAN DJAYALEKSANA, MM</p>
@@ -1463,7 +1464,7 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 
   <div class="ppid-header">
     <div class="avatar-ring">
-        <img src="/ALWI_DP3AKB.png" alt="FotoAlwiati" class="ppid-photo">    </div>
+        <img src="/images/foto%20pejabat/ALWI_DP3AKB.png" alt="FotoAlwiati" class="ppid-photo">    </div>
     <div style="flex:1;">
       <div class="ppid-badge">Pejabat Badan Publik</div>
       <p class="ppid-name">DRA. ALWIATI A, Apt</p>
@@ -1517,7 +1518,7 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 
   <div class="ppid-header">
     <div class="avatar-ring">
-        <img src="/BOEDI_LILIONO_DPMPT.png" alt="Foto budi" class="ppid-photo">
+        <img src="/images/foto%20pejabat/BOEDI_LILIONO_DPMPT.png" alt="Foto budi" class="ppid-photo">
     </div>
     <div style="flex:1;">
       <div class="ppid-badge">Pejabat Badan Publik</div>
@@ -1582,7 +1583,7 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 
   <div class="ppid-header">
     <div class="avatar-ring">
-        <img src="/SUTADI_DISPUSTAKAR.png" alt="Foto sutadi" class="ppid-photo">    </div>
+        <img src="/images/foto%20pejabat/SUTADI_DISPUSTAKAR.png" alt="Foto sutadi" class="ppid-photo">    </div>
     <div style="flex:1;">
       <div class="ppid-badge">Pejabat Badan Publik</div>
       <p class="ppid-name">SUTADI, S.Sos, MM</p>
@@ -1649,9 +1650,9 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 
 <div class="ppid-card">
 
-  <div class="ppid-header">
+<div class="ppid-header">
     <div class="avatar-ring">
-      <img src="/STAF_AHLI_Sosial.png" alt="Foto Ir. HERIA PRISNI" class="avatar-image">    </div>
+        <img src="{{ asset('images/foto pejabat/STAF_AHLI_Sosial.png') }}" alt="Foto Ir. HERIA PRISNI" class="avatar-image">    </div>
     <div style="flex:1;">
       <div class="ppid-badge">Pejabat Badan Publik</div>
       <p class="ppid-name">Ir. HERIA PRISNI</p>
@@ -1711,9 +1712,9 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
     <h2 class="sr-only">Profil pejabat Arzaedi Rachman, S.Sos, MM — Staf Ahli Bidang Perekonomian Dan Pembangunan — riwayat pendidikan dan jabatan</h2>
         <div class="ppid-card">
 
-  <div class="ppid-header">
+<div class="ppid-header">
     <div class="avatar-ring">
-      <img src="/staf_ahli.png" alt="Foto ARZAEDI RACHMAN" class="avatar-image">    </div>
+        <img src="{{ asset('images/foto pejabat/staf_ahli.png') }}" alt="Foto ARZAEDI RACHMAN" class="avatar-image">    </div>
     <div style="flex:1;">
       <div class="ppid-badge">Pejabat Badan Publik</div>
       <p class="ppid-name">ARZAEDI RACHMAN, S.Sos, MM.</p>

@@ -657,9 +657,9 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 
 <div class="ppid-card">
 
-  <div class="ppid-header">
+<div class="ppid-header">
     <div class="avatar-ring">
-      <img src="/asisten_TU.jpg" alt="Foto Drs. ZULKIPLI, M.Si" class="avatar-image">
+        <img src="{{ asset('images/foto pejabat/asisten_TU.jpg') }}" alt="Foto Drs. ZULKIPLI, M.Si" class="avatar-image">
     </div>
     <div style="flex:1;">
       <div class="ppid-badge">Pejabat Badan Publik</div>

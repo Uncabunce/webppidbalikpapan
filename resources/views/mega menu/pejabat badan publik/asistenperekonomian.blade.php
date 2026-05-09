@@ -651,9 +651,9 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
  
 <div class="ppid-card">
  
-  <div class="ppid-header">
+<div class="ppid-header">
     <div class="avatar-ring">
-      <img src="/asisten_Kesra.png" alt="Foto ANDI MUHAMMAD YUSRI RAMLI, ST, MT" class="avatar-image">
+        <img src="{{ asset('images/foto pejabat/asisten_Kesra.png') }}" alt="Foto ANDI MUHAMMAD YUSRI RAMLI, ST, MT" class="avatar-image">
     </div>
     <div style="flex:1;">
       <div class="ppid-badge">Pejabat Badan Publik</div>
