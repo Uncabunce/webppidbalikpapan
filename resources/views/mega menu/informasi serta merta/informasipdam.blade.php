@@ -408,7 +408,7 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 <div>
 <h3 class="text-[10px] font-extrabold text-primary uppercase tracking-widest mb-3 pb-1.5 border-b-2 border-secondary-container">Informasi Setiap Saat</h3>
 <ul class="space-y-1">
-<li><a href="/informasi/statistikdaerah" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Statistik Daerah</a></li>
+<li><a href="https://data.balikpapan.go.id/" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Statistik Daerah</a></li>
 <li><a href="/informasi/daftarinformasi" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Daftar Informasi Publik</a></li>
 <li><a href="/informasi/informasiorganisasi" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Informasi Tentang Organisasi, Administrasi Kepegawaian dan Keuangan</a></li>
 <li><a href="/informasi/infopublik" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Informasi Publik</a></li>
@@ -535,7 +535,7 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 <a href="/informasi/SK_klasifikasi" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">SK Klasifikasi Dikecualikan</a>
 <a href="/informasi/SK_maklumat" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">SK Maklumat Pelayanan Diskominfo</a>
 <p class="px-5 py-2 text-[10px] font-extrabold text-secondary-container uppercase tracking-widest border-t border-white/10">Informasi Setiap Saat</p>
-<a href="/informasi/statistikdaerah" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Statistik Daerah</a>
+<a href="https://data.balikpapan.go.id/" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Statistik Daerah</a>
 <a href="/informasi/daftarinformasi" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Daftar Informasi Publik</a>
 <a href="/informasi/informasiorganisasi" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Informasi Tentang Organisasi, Administrasi Kepegawaian dan Keuangan</a>
 <a href="/informasi/perjanjiankerjasama" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Perjanjian Kerja Sama</a>
@@ -606,12 +606,36 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 </div>
 </header>
 <main class="bg-surface min-h-screen">
-    <!-- ================================ -->
-    <!-- KONTEN HALAMAN DI SINI          -->
-    <!-- ================================ -->
-    <div class="max-w-7xl mx-auto px-4 md:px-6 py-10">
-        <p class="text-on-surface-variant text-center text-sm">Konten halaman</p>
-    </div>
+    <section class="relative py-20 overflow-hidden border-b border-outline-variant/10">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-br from-primary via-primary-container to-primary opacity-95"></div>
+            <div class="absolute inset-0" style="background-image:url('/batik%20dayak.png');background-repeat:repeat;background-size:300px;opacity:0.05;"></div>
+        </div>
+        <div class="max-w-4xl mx-auto px-6 relative z-10 text-center">
+            <nav class="flex justify-center mb-4 text-xs font-medium text-white/60 uppercase tracking-widest gap-2">
+                <a href="/" class="hover:text-white transition-colors">Beranda</a>
+                <span>/</span>
+                <span>Informasi Serta Merta</span>
+                <span>/</span>
+                <span class="text-white">Informasi Terkini Tentang PDAM</span>
+            </nav>
+            <h1 class="text-4xl md:text-5xl font-headline font-extrabold text-white leading-tight mb-4">
+                Informasi Terkini Tentang PDAM
+            </h1>
+            <p class="text-white/70 text-lg max-w-2xl mx-auto">
+                Informasi Serta Merta tentang PDAM Kota Balikpapan
+            </p>
+        </div>
+    </section>
+
+<div class="max-w-5xl mx-auto px-4 md:px-6 py-10 flex justify-center">
+    <img 
+        src="{{ asset('infosertamerta/pdam.jpeg') }}" 
+        alt="Informasi Terkini Tentang PDAM Kota Balikpapan" 
+        class="w-auto max-w-full h-auto object-contain rounded-xl shadow-md"
+        style="max-height: 80vh;"
+    >
+</div>
 </main>
 <footer id="kontak" class="bg-slate-800 dark:bg-slate-600 w-full pt-16 md:pt-20 pb-8 border-t border-slate-600 dark:border-slate-800">
 <div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto px-4 md:px-6 font-['Inter'] text-sm leading-relaxed">

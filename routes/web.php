@@ -84,7 +84,7 @@ Route::get('/informasi/realisasi-2024', function () {
     return view('mega menu.Informasi Berkala.realisasi2024');
 });
 Route::get('/informasi/program-kegiatan-2023', function () {
-    return view('mega menu.Informasi Berkala.programkegiatan2023');
+    return view('mega menu.Informasi Berkala.program2023');
 });
 Route::get('/informasi/lakip', function () {
     return view('mega menu.Informasi Berkala.lakip'); 
@@ -166,7 +166,7 @@ Route::get('/informasi/rencanakerja', function () {
 Route::get('/informasi/rencanastrategis', function () {
     return view('mega menu.Informasi Setiap Saat.rencanastrategis');
 });
-Route::get('/informasi/statistikdaerah', function () {
+Route::get('https://data.balikpapan.go.id/', function () {
     return view('mega menu.Informasi Setiap Saat.statistikdaerah');
 });
 //profil pemkot

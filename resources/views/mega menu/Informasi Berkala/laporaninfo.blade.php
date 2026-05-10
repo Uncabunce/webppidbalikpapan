@@ -408,7 +408,7 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 <div>
 <h3 class="text-[10px] font-extrabold text-primary uppercase tracking-widest mb-3 pb-1.5 border-b-2 border-secondary-container">Informasi Setiap Saat</h3>
 <ul class="space-y-1">
-<li><a href="/informasi/statistikdaerah" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Statistik Daerah</a></li>
+<li><a href="https://data.balikpapan.go.id/" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Statistik Daerah</a></li>
 <li><a href="/informasi/daftarinformasi" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Daftar Informasi Publik</a></li>
 <li><a href="/informasi/informasiorganisasi" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Informasi Tentang Organisasi, Administrasi Kepegawaian dan Keuangan</a></li>
 <li><a href="/informasi/infopublik" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Informasi Publik</a></li>
@@ -535,7 +535,7 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 <a href="/informasi/SK_klasifikasi" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">SK Klasifikasi Dikecualikan</a>
 <a href="/informasi/SK_maklumat" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">SK Maklumat Pelayanan Diskominfo</a>
 <p class="px-5 py-2 text-[10px] font-extrabold text-secondary-container uppercase tracking-widest border-t border-white/10">Informasi Setiap Saat</p>
-<a href="/informasi/statistikdaerah" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Statistik Daerah</a>
+<a href="https://data.balikpapan.go.id/" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Statistik Daerah</a>
 <a href="/informasi/daftarinformasi" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Daftar Informasi Publik</a>
 <a href="/informasi/informasiorganisasi" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Informasi Tentang Organisasi, Administrasi Kepegawaian dan Keuangan</a>
 <a href="/informasi/perjanjiankerjasama" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Perjanjian Kerja Sama</a>
@@ -606,11 +606,199 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 </div>
 </header>
 <main class="bg-surface min-h-screen">
-    <!-- ================================ -->
-    <!-- KONTEN HALAMAN DI SINI          -->
-    <!-- ================================ -->
-    <div class="max-w-7xl mx-auto px-4 md:px-6 py-10">
-        <p class="text-on-surface-variant text-center text-sm">Konten halaman</p>
+
+    <!-- Hero Section -->
+    <section class="relative py-20 overflow-hidden border-b border-outline-variant/10">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-br from-primary via-primary-container to-primary opacity-95"></div>
+            <div class="absolute inset-0" style="background-image:url('/batik%20dayak.png');background-repeat:repeat;background-size:300px;opacity:0.05;"></div>
+        </div>
+        <div class="max-w-4xl mx-auto px-6 relative z-10 text-center">
+            <nav class="flex justify-center mb-4 text-xs font-medium text-white/60 uppercase tracking-widest gap-2">
+                <a href="/" class="hover:text-white transition-colors">Beranda</a>
+                <span>/</span>
+                <span>Informasi Publik</span>
+                <span>/</span>
+                <span class="text-white">Laporan Akses Informasi Publik</span>
+            </nav>
+            <h1 class="text-4xl md:text-5xl font-headline font-extrabold text-white leading-tight mb-4">
+                Laporan Akses Informasi Publik
+            </h1>
+            <p class="text-white/70 text-lg max-w-2xl mx-auto">
+                Pemerintah Kota Balikpapan
+            </p>
+        </div>
+    </section>
+
+    <div class="max-w-5xl mx-auto px-4 md:px-6 py-12 space-y-10">
+
+        <!-- Info Banner -->
+        <div class="bg-white rounded-2xl border border-outline-variant/30 shadow-sm overflow-hidden">
+            <div class="bg-primary px-6 py-4 flex items-center gap-3">
+                <span class="material-symbols-outlined text-secondary-container">bar_chart</span>
+                <div>
+                    <p class="text-white font-headline font-extrabold text-sm leading-tight">Laporan Akses Informasi Publik &mdash; PPID Kota Balikpapan</p>
+                    <p class="text-white/60 text-xs mt-0.5">Informasi Berkala &nbsp;&middot;&nbsp; Diskominfo Kota Balikpapan</p>
+                </div>
+            </div>
+            <div class="px-6 py-4 flex flex-wrap gap-6 text-sm text-on-surface">
+                <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-base text-outline">apartment</span>
+                    <span>Dinas Komunikasi dan Informatika Kota Balikpapan</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-base text-outline">update</span>
+                    <span>Diperbarui setiap tahun</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-base text-outline">lock_open</span>
+                    <span>Informasi Terbuka untuk Publik</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stat Cards -->
+        <div>
+            <h2 class="text-lg font-headline font-extrabold text-primary mb-5">Ringkasan Laporan</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+
+                <div class="bg-white rounded-2xl border border-outline-variant/30 shadow-sm p-6">
+                    <div class="flex items-start justify-between mb-3">
+                        <span class="material-symbols-outlined text-2xl text-primary">folder_open</span>
+                        <span class="text-[10px] font-extrabold uppercase tracking-widest text-outline bg-surface-container px-2 py-1 rounded-full">Total</span>
+                    </div>
+                    <p class="text-3xl font-headline font-extrabold text-primary">2</p>
+                    <p class="text-xs text-outline mt-1 leading-snug">Laporan tersedia (Tahun 2024&ndash;2025)</p>
+                    <div class="mt-4 pt-4 border-t border-outline-variant/30 flex gap-4 text-xs text-on-surface">
+                        <div><span class="font-bold text-primary">2024</span><span class="text-outline ml-1">&amp; 2025</span></div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl border border-outline-variant/30 shadow-sm p-6">
+                    <div class="flex items-start justify-between mb-3">
+                        <span class="material-symbols-outlined text-2xl text-green-600">task_alt</span>
+                        <span class="text-[10px] font-extrabold uppercase tracking-widest text-green-700 bg-green-50 px-2 py-1 rounded-full">Terpenuhi</span>
+                    </div>
+                    <p class="text-3xl font-headline font-extrabold text-green-700">100%</p>
+                    <p class="text-xs text-outline mt-1 leading-snug">Kewajiban pelaporan tahunan <strong>telah</strong> dipenuhi</p>
+                    <div class="mt-4 pt-4 border-t border-outline-variant/30">
+                        <div class="w-full bg-green-100 rounded-full h-1.5">
+                            <div class="bg-green-500 h-1.5 rounded-full" style="width:100%"></div>
+                        </div>
+                        <p class="text-[10px] text-green-700 mt-1 font-semibold">Semua tahun terlaporkan</p>
+                    </div>
+                </div>
+
+                <div class="bg-primary rounded-2xl shadow-sm p-6">
+                    <div class="flex items-start justify-between mb-3">
+                        <span class="material-symbols-outlined text-2xl text-secondary-container">event_available</span>
+                        <span class="text-[10px] font-extrabold uppercase tracking-widest text-white/70 bg-white/10 px-2 py-1 rounded-full">Terbaru</span>
+                    </div>
+                    <p class="text-3xl font-headline font-extrabold text-white">2025</p>
+                    <p class="text-xs text-white/70 mt-1 leading-snug">Laporan akses informasi publik tahun berjalan</p>
+                    <div class="mt-4 pt-4 border-t border-white/20">
+                        <p class="text-[10px] text-secondary-container font-bold">&#10003; Dokumen tersedia untuk diunduh</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Daftar Laporan -->
+        <div>
+            <h2 class="text-lg font-headline font-extrabold text-primary mb-5">Daftar Dokumen Laporan</h2>
+            <div class="space-y-4">
+
+                <!-- 2025 -->
+                <div class="bg-white rounded-2xl border border-outline-variant/30 shadow-sm overflow-hidden">
+                    <div class="flex items-center justify-between px-6 py-4 border-b border-outline-variant/20">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-primary text-xl">description</span>
+                            </div>
+                            <div>
+                                <p class="font-headline font-extrabold text-on-surface text-sm">Laporan Akses Informasi Publik Tahun 2025</p>
+                                <p class="text-xs text-outline mt-0.5">Format: PDF &nbsp;&middot;&nbsp; PPID Kota Balikpapan</p>
+                            </div>
+                        </div>
+                        <span class="text-[10px] font-extrabold uppercase tracking-widest text-green-700 bg-green-50 px-3 py-1 rounded-full hidden sm:inline-block">Terbaru</span>
+                    </div>
+                    <div class="px-6 py-4 flex flex-wrap gap-3">
+                        <a href="{{ asset('AKSES_IP_2025.pdf') }}" target="_blank"
+                           class="flex items-center gap-1.5 text-xs font-bold text-primary border border-primary rounded-full px-4 py-1.5 hover:bg-primary hover:text-white transition-colors">
+                            <span class="material-symbols-outlined text-sm">open_in_new</span>
+                            Buka di Tab Baru
+                        </a>
+                        <a href="{{ asset('AKSES_IP_2025.pdf') }}" download
+                           class="flex items-center gap-1.5 text-xs font-bold text-white bg-primary rounded-full px-4 py-1.5 hover:bg-primary-container transition-colors">
+                            <span class="material-symbols-outlined text-sm">download</span>
+                            Unduh PDF
+                        </a>
+                    </div>
+                    <div class="px-6 pb-6">
+                        <div class="bg-surface-container rounded-xl overflow-hidden border border-outline-variant/20">
+                            <object data="{{ asset('AKSES_IP_2025.pdf') }}" type="application/pdf" class="w-full" style="height:600px;">
+                                <div class="flex flex-col items-center justify-center py-12 px-6 text-center">
+                                    <span class="material-symbols-outlined text-5xl text-outline mb-4">picture_as_pdf</span>
+                                    <p class="font-headline font-bold text-on-surface mb-2">PDF tidak dapat ditampilkan</p>
+                                    <p class="text-sm text-outline mb-6">Silakan gunakan tombol unduh di atas.</p>
+                                </div>
+                            </object>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2024 -->
+                <div class="bg-white rounded-2xl border border-outline-variant/30 shadow-sm overflow-hidden">
+                    <div class="flex items-center justify-between px-6 py-4 border-b border-outline-variant/20">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-outline/10 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-outline text-xl">description</span>
+                            </div>
+                            <div>
+                                <p class="font-headline font-extrabold text-on-surface text-sm">Laporan Akses Informasi Publik Tahun 2024</p>
+                                <p class="text-xs text-outline mt-0.5">Format: PDF &nbsp;&middot;&nbsp; PPID Kota Balikpapan</p>
+                            </div>
+                        </div>
+                        <span class="text-[10px] font-extrabold uppercase tracking-widest text-outline bg-surface-container px-3 py-1 rounded-full hidden sm:inline-block">2024</span>
+                    </div>
+                    <div class="px-6 py-4 flex flex-wrap gap-3">
+                        <a href="{{ asset('AKSES_IP_2024.pdf') }}" target="_blank"
+                           class="flex items-center gap-1.5 text-xs font-bold text-primary border border-primary rounded-full px-4 py-1.5 hover:bg-primary hover:text-white transition-colors">
+                            <span class="material-symbols-outlined text-sm">open_in_new</span>
+                            Buka di Tab Baru
+                        </a>
+                        <a href="{{ asset('AKSES_IP_2024.pdf') }}" download
+                           class="flex items-center gap-1.5 text-xs font-bold text-white bg-primary rounded-full px-4 py-1.5 hover:bg-primary-container transition-colors">
+                            <span class="material-symbols-outlined text-sm">download</span>
+                            Unduh PDF
+                        </a>
+                    </div>
+                    <div class="px-6 pb-6">
+                        <div class="bg-surface-container rounded-xl overflow-hidden border border-outline-variant/20">
+                            <object data="{{ asset('AKSES_IP_2024.pdf') }}" type="application/pdf" class="w-full" style="height:600px;">
+                                <div class="flex flex-col items-center justify-center py-12 px-6 text-center">
+                                    <span class="material-symbols-outlined text-5xl text-outline mb-4">picture_as_pdf</span>
+                                    <p class="font-headline font-bold text-on-surface mb-2">PDF tidak dapat ditampilkan</p>
+                                    <p class="text-sm text-outline mb-6">Silakan gunakan tombol unduh di atas.</p>
+                                </div>
+                            </object>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Catatan -->
+        <div class="bg-surface-container-low rounded-2xl border border-outline-variant/20 px-6 py-5 flex gap-4 items-start">
+            <span class="material-symbols-outlined text-outline mt-0.5">info</span>
+            <div>
+                <p class="text-sm font-semibold text-on-surface mb-1">Tentang Laporan Ini</p>
+                <p class="text-xs text-outline leading-relaxed">Laporan Akses Informasi Publik merupakan kewajiban tahunan Badan Publik berdasarkan Undang-Undang Nomor 14 Tahun 2008 tentang Keterbukaan Informasi Publik. Laporan ini memuat data permohonan informasi, penyelesaian keberatan, dan kinerja layanan PPID Kota Balikpapan.</p>
+            </div>
+        </div>
+
     </div>
 </main>
 <footer id="kontak" class="bg-slate-800 dark:bg-slate-600 w-full pt-16 md:pt-20 pb-8 border-t border-slate-600 dark:border-slate-800">

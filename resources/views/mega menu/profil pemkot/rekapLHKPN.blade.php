@@ -408,7 +408,7 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 <div>
 <h3 class="text-[10px] font-extrabold text-primary uppercase tracking-widest mb-3 pb-1.5 border-b-2 border-secondary-container">Informasi Setiap Saat</h3>
 <ul class="space-y-1">
-<li><a href="/informasi/statistikdaerah" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Statistik Daerah</a></li>
+<li><a href="https://data.balikpapan.go.id/" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Statistik Daerah</a></li>
 <li><a href="/informasi/daftarinformasi" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Daftar Informasi Publik</a></li>
 <li><a href="/informasi/informasiorganisasi" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Informasi Tentang Organisasi, Administrasi Kepegawaian dan Keuangan</a></li>
 <li><a href="/informasi/infopublik" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Informasi Publik</a></li>
@@ -535,7 +535,7 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 <a href="/informasi/SK_klasifikasi" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">SK Klasifikasi Dikecualikan</a>
 <a href="/informasi/SK_maklumat" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">SK Maklumat Pelayanan Diskominfo</a>
 <p class="px-5 py-2 text-[10px] font-extrabold text-secondary-container uppercase tracking-widest border-t border-white/10">Informasi Setiap Saat</p>
-<a href="/informasi/statistikdaerah" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Statistik Daerah</a>
+<a href="https://data.balikpapan.go.id/" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Statistik Daerah</a>
 <a href="/informasi/daftarinformasi" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Daftar Informasi Publik</a>
 <a href="/informasi/informasiorganisasi" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Informasi Tentang Organisasi, Administrasi Kepegawaian dan Keuangan</a>
 <a href="/informasi/perjanjiankerjasama" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Perjanjian Kerja Sama</a>
@@ -759,31 +759,42 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 
         <!-- Embedded PDF Viewer -->
         <div>
-            <div class="flex items-center justify-between mb-4">
-                <h2 class="text-lg font-headline font-extrabold text-primary">Dokumen Resmi</h2>
-                <a href="{{ asset('rekapspektorat.pdf') }}" target="_blank"
-                   class="flex items-center gap-1.5 text-xs font-bold text-primary border border-primary rounded-full px-4 py-1.5 hover:bg-primary hover:text-white transition-colors">
-                    <span class="material-symbols-outlined text-sm">open_in_new</span>
-                    Buka di Tab Baru
-                </a>
-            </div>
-            <div class="bg-white rounded-2xl border border-outline-variant/30 shadow-sm overflow-hidden">
-                <object
-                    data="{{ asset('rekapspektorat.pdf') }}"
-                    type="application/pdf"
-                    class="w-full"
-                    style="height: 800px;">
-                    <div class="flex flex-col items-center justify-center py-16 px-6 text-center">
-                        <span class="material-symbols-outlined text-5xl text-outline mb-4">picture_as_pdf</span>
-                        <p class="font-headline font-bold text-on-surface mb-2">PDF tidak dapat ditampilkan di browser ini</p>
-                        <p class="text-sm text-outline mb-6">Silakan unduh dokumen untuk melihatnya.</p>
+                 <div class="bg-white rounded-2xl border border-outline-variant/30 shadow-sm overflow-hidden">
+                    <div class="flex items-center justify-between px-6 py-4 border-b border-outline-variant/20">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-outline/10 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-outline text-xl">description</span>
+                            </div>
+                            <div>
+                                <p class="font-headline font-extrabold text-on-surface text-sm">Dokumen Resmi</p>
+                                <p class="text-xs text-outline mt-0.5">Format: PDF &nbsp;&middot;&nbsp; PPID Kota Balikpapan</p>
+                            </div>
+                        </div>
+                        <span class="text-[10px] font-extrabold uppercase tracking-widest text-outline bg-surface-container px-3 py-1 rounded-full hidden sm:inline-block">2024</span>
+                    </div>
+                    <div class="px-6 py-4 flex flex-wrap gap-3">
+                        <a href="{{ asset('rekapspektorat.pdf') }}" target="_blank"
+                           class="flex items-center gap-1.5 text-xs font-bold text-primary border border-primary rounded-full px-4 py-1.5 hover:bg-primary hover:text-white transition-colors">
+                            <span class="material-symbols-outlined text-sm">open_in_new</span>
+                            Buka di Tab Baru
+                        </a>
                         <a href="{{ asset('rekapspektorat.pdf') }}" download
-                           class="flex items-center gap-2 bg-primary text-white font-bold text-sm px-6 py-2.5 rounded-full hover:bg-primary-container transition-colors">
-                            <span class="material-symbols-outlined text-base">download</span>
-                            Unduh Dokumen
+                           class="flex items-center gap-1.5 text-xs font-bold text-white bg-primary rounded-full px-4 py-1.5 hover:bg-primary-container transition-colors">
+                            <span class="material-symbols-outlined text-sm">download</span>
+                            Unduh PDF
                         </a>
                     </div>
-                </object>
+                    <div class="px-6 pb-6">
+                        <div class="bg-surface-container rounded-xl overflow-hidden border border-outline-variant/20">
+                            <object data="{{ asset('rekapspektorat.pdf') }}" type="application/pdf" class="w-full" style="height:600px;">
+                                <div class="flex flex-col items-center justify-center py-12 px-6 text-center">
+                                    <span class="material-symbols-outlined text-5xl text-outline mb-4">picture_as_pdf</span>
+                                </div>
+                            </object>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
 

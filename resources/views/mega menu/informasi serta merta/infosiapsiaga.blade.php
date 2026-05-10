@@ -408,7 +408,7 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 <div>
 <h3 class="text-[10px] font-extrabold text-primary uppercase tracking-widest mb-3 pb-1.5 border-b-2 border-secondary-container">Informasi Setiap Saat</h3>
 <ul class="space-y-1">
-<li><a href="/informasi/statistikdaerah" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Statistik Daerah</a></li>
+<li><a href="https://data.balikpapan.go.id/" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Statistik Daerah</a></li>
 <li><a href="/informasi/daftarinformasi" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Daftar Informasi Publik</a></li>
 <li><a href="/informasi/informasiorganisasi" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Informasi Tentang Organisasi, Administrasi Kepegawaian dan Keuangan</a></li>
 <li><a href="/informasi/infopublik" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Informasi Publik</a></li>
@@ -535,7 +535,7 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 <a href="/informasi/SK_klasifikasi" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">SK Klasifikasi Dikecualikan</a>
 <a href="/informasi/SK_maklumat" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">SK Maklumat Pelayanan Diskominfo</a>
 <p class="px-5 py-2 text-[10px] font-extrabold text-secondary-container uppercase tracking-widest border-t border-white/10">Informasi Setiap Saat</p>
-<a href="/informasi/statistikdaerah" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Statistik Daerah</a>
+<a href="https://data.balikpapan.go.id/" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Statistik Daerah</a>
 <a href="/informasi/daftarinformasi" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Daftar Informasi Publik</a>
 <a href="/informasi/informasiorganisasi" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Informasi Tentang Organisasi, Administrasi Kepegawaian dan Keuangan</a>
 <a href="/informasi/perjanjiankerjasama" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Perjanjian Kerja Sama</a>
@@ -606,11 +606,206 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 </div>
 </header>
 <main class="bg-surface min-h-screen">
-    <!-- ================================ -->
-    <!-- KONTEN HALAMAN DI SINI          -->
-    <!-- ================================ -->
-    <div class="max-w-7xl mx-auto px-4 md:px-6 py-10">
-        <p class="text-on-surface-variant text-center text-sm">Konten halaman</p>
+
+    <!-- Hero Section -->
+    <section class="relative py-20 overflow-hidden border-b border-outline-variant/10">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-br from-primary via-primary-container to-primary opacity-95"></div>
+            <div class="absolute inset-0" style="background-image:url('/batik%20dayak.png');background-repeat:repeat;background-size:300px;opacity:0.05;"></div>
+        </div>
+        <div class="max-w-4xl mx-auto px-6 relative z-10 text-center">
+            <nav class="flex justify-center mb-4 text-xs font-medium text-white/60 uppercase tracking-widest gap-2">
+                <a href="/" class="hover:text-white transition-colors">Beranda</a>
+                <span>/</span>
+                <span>Informasi Serta Merta</span>
+                <span>/</span>
+                <span class="text-white">Informasi Tentang Siap Siaga Bencana</span>
+            </nav>
+            <h1 class="text-4xl md:text-5xl font-headline font-extrabold text-white leading-tight mb-4">
+                Informasi Tentang<br>Siap Siaga Bencana
+            </h1>
+            <p class="text-white/70 text-lg max-w-2xl mx-auto">
+                Informasi Serta Merta Kesiapsiagaan Menghadapi Bencana
+            </p>
+        </div>
+    </section>
+
+    <div class="max-w-5xl mx-auto px-4 md:px-6 py-12 space-y-10">
+
+        <!-- Info Banner -->
+        <div class="bg-white rounded-2xl border border-outline-variant/30 shadow-sm overflow-hidden">
+            <div class="bg-primary px-6 py-4 flex items-center gap-3">
+                <span class="material-symbols-outlined text-secondary-container">emergency</span>
+                <div>
+                    <p class="text-white font-headline font-extrabold text-sm leading-tight">Informasi Siap Siaga Bencana &mdash; Pemerintah Kota Balikpapan</p>
+                    <p class="text-white/60 text-xs mt-0.5">Informasi Serta Merta &nbsp;&middot;&nbsp; Pemerintah Kota Balikpapan</p>
+                </div>
+            </div>
+            <div class="px-6 py-4 flex flex-wrap gap-6 text-sm text-on-surface">
+                <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-base text-outline">apartment</span>
+                    <span>Pemerintah Kota Balikpapan</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-base text-outline">crisis_alert</span>
+                    <span>Kategori: Informasi Serta Merta</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-base text-outline">lock_open</span>
+                    <span>Informasi Terbuka untuk Publik</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stat Cards -->
+        <div>
+            <h2 class="text-lg font-headline font-extrabold text-primary mb-5">Ringkasan Dokumen</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+
+                <div class="bg-white rounded-2xl border border-outline-variant/30 shadow-sm p-6">
+                    <div class="flex items-start justify-between mb-3">
+                        <span class="material-symbols-outlined text-2xl text-primary">folder_open</span>
+                        <span class="text-[10px] font-extrabold uppercase tracking-widest text-outline bg-surface-container px-2 py-1 rounded-full">Dokumen</span>
+                    </div>
+                    <p class="text-3xl font-headline font-extrabold text-primary">1</p>
+                    <p class="text-xs text-outline mt-1 leading-snug">Dokumen tersedia</p>
+                    <div class="mt-4 pt-4 border-t border-outline-variant/30 text-xs text-on-surface">
+                        <span class="font-bold text-primary">Informasi Resmi</span>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl border border-outline-variant/30 shadow-sm p-6">
+                    <div class="flex items-start justify-between mb-3">
+                        <span class="material-symbols-outlined text-2xl text-green-600">task_alt</span>
+                        <span class="text-[10px] font-extrabold uppercase tracking-widest text-green-700 bg-green-50 px-2 py-1 rounded-full">Tersedia</span>
+                    </div>
+                    <p class="text-3xl font-headline font-extrabold text-green-700">PDF</p>
+                    <p class="text-xs text-outline mt-1 leading-snug">Format dokumen yang tersedia</p>
+                    <div class="mt-4 pt-4 border-t border-outline-variant/30">
+                        <div class="w-full bg-green-100 rounded-full h-1.5">
+                            <div class="bg-green-500 h-1.5 rounded-full" style="width:100%"></div>
+                        </div>
+                        <p class="text-[10px] text-green-700 mt-1 font-semibold">Dapat diakses &amp; diunduh</p>
+                    </div>
+                </div>
+
+                <div class="bg-primary rounded-2xl shadow-sm p-6">
+                    <div class="flex items-start justify-between mb-3">
+                        <span class="material-symbols-outlined text-2xl text-secondary-container">emergency</span>
+                        <span class="text-[10px] font-extrabold uppercase tracking-widest text-white/70 bg-white/10 px-2 py-1 rounded-full">Kategori</span>
+                    </div>
+                    <p class="text-2xl font-headline font-extrabold text-white leading-tight">Serta Merta</p>
+                    <p class="text-xs text-white/70 mt-1 leading-snug">Informasi yang wajib diumumkan segera karena berkaitan dengan keselamatan publik</p>
+                    <div class="mt-4 pt-4 border-t border-white/20">
+                        <p class="text-[10px] text-secondary-container font-bold">&#10003; Dokumen tersedia untuk diunduh</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Dokumen Card -->
+        <div>
+            <h2 class="text-lg font-headline font-extrabold text-primary mb-5">Dokumen Siap Siaga Bencana</h2>
+            <div class="bg-white rounded-2xl border border-outline-variant/30 shadow-sm overflow-hidden">
+                <div class="flex items-center justify-between px-6 py-4 border-b border-outline-variant/20">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
+                            <span class="material-symbols-outlined text-primary text-xl">description</span>
+                        </div>
+                        <div>
+                            <p class="font-headline font-extrabold text-on-surface text-sm">Informasi Tentang Siap Siaga Bencana &mdash; Pemerintah Kota Balikpapan</p>
+                            <p class="text-xs text-outline mt-0.5">Format: PDF &nbsp;&middot;&nbsp; Pemerintah Kota Balikpapan</p>
+                        </div>
+                    </div>
+                    <span class="text-[10px] font-extrabold uppercase tracking-widest text-primary bg-primary/10 px-3 py-1 rounded-full hidden sm:inline-block">Resmi</span>
+                </div>
+                <div class="px-6 py-4 flex flex-wrap gap-3">
+                    <a href="{{ asset('infosertamerta/bencana.pdf') }}" target="_blank"
+                       class="flex items-center gap-1.5 text-xs font-bold text-primary border border-primary rounded-full px-4 py-1.5 hover:bg-primary hover:text-white transition-colors">
+                        <span class="material-symbols-outlined text-sm">open_in_new</span>
+                        Buka di Tab Baru
+                    </a>
+                    <a href="{{ asset('infosertamerta/bencana.pdf') }}" download
+                       class="flex items-center gap-1.5 text-xs font-bold text-white bg-primary rounded-full px-4 py-1.5 hover:bg-primary-container transition-colors">
+                        <span class="material-symbols-outlined text-sm">download</span>
+                        Unduh PDF
+                    </a>
+                </div>
+                <!-- Embedded PDF -->
+                <div class="px-6 pb-6">
+                    <div class="bg-surface-container rounded-xl overflow-hidden border border-outline-variant/20">
+                        <object
+                            data="{{ asset('infosertamerta/bencana.pdf') }}"
+                            type="application/pdf"
+                            class="w-full"
+                            style="height: 700px;">
+                            <div class="flex flex-col items-center justify-center py-12 px-6 text-center">
+                                <span class="material-symbols-outlined text-5xl text-outline mb-4">picture_as_pdf</span>
+                                <a href="{{ asset('infosertamerta/bencana.pdf') }}" download
+                                   class="flex items-center gap-2 bg-primary text-white font-bold text-sm px-6 py-2.5 rounded-full hover:bg-primary-container transition-colors">
+                                    <span class="material-symbols-outlined text-base">download</span>
+                                    Unduh Dokumen
+                                </a>
+                            </div>
+                        </object>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dokumen Terkait -->
+        <div>
+            <h2 class="text-lg font-headline font-extrabold text-primary mb-4">Dokumen Terkait</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <a href="/informasi/4upayamitigasi"
+                   class="flex items-center gap-3 bg-white border border-outline-variant/30 rounded-xl px-5 py-4 hover:border-primary hover:shadow-sm transition-all group">
+                    <span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">health_and_safety</span>
+                    <div>
+                        <p class="text-sm font-semibold text-on-surface group-hover:text-primary transition-colors">4 Upaya Mitigasi</p>
+                        <p class="text-xs text-outline">Langkah mitigasi risiko bencana</p>
+                    </div>
+                    <span class="material-symbols-outlined text-outline ml-auto text-sm">chevron_right</span>
+                </a>
+                <a href="/informasi/prosedurevakuasi"
+                   class="flex items-center gap-3 bg-white border border-outline-variant/30 rounded-xl px-5 py-4 hover:border-primary hover:shadow-sm transition-all group">
+                    <span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">directions_run</span>
+                    <div>
+                        <p class="text-sm font-semibold text-on-surface group-hover:text-primary transition-colors">Prosedur Evakuasi Darurat Bencana</p>
+                        <p class="text-xs text-outline">Tata cara evakuasi keadaan darurat</p>
+                    </div>
+                    <span class="material-symbols-outlined text-outline ml-auto text-sm">chevron_right</span>
+                </a>
+                <a href="/informasi/prosedur-peringatan"
+                   class="flex items-center gap-3 bg-white border border-outline-variant/30 rounded-xl px-5 py-4 hover:border-primary hover:shadow-sm transition-all group">
+                    <span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">warning</span>
+                    <div>
+                        <p class="text-sm font-semibold text-on-surface group-hover:text-primary transition-colors">Prosedur Peringatan Dini</p>
+                        <p class="text-xs text-outline">Prosedur evakuasi keadaan darurat di kantor badan publik</p>
+                    </div>
+                    <span class="material-symbols-outlined text-outline ml-auto text-sm">chevron_right</span>
+                </a>
+                <a href="/informasi/infopenutupanjalan"
+                   class="flex items-center gap-3 bg-white border border-outline-variant/30 rounded-xl px-5 py-4 hover:border-primary hover:shadow-sm transition-all group">
+                    <span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">do_not_enter</span>
+                    <div>
+                        <p class="text-sm font-semibold text-on-surface group-hover:text-primary transition-colors">Informasi Penutupan Jalan</p>
+                        <p class="text-xs text-outline">Informasi serta merta penutupan jalan</p>
+                    </div>
+                    <span class="material-symbols-outlined text-outline ml-auto text-sm">chevron_right</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Catatan -->
+        <div class="bg-surface-container-low rounded-2xl border border-outline-variant/20 px-6 py-5 flex gap-4 items-start">
+            <span class="material-symbols-outlined text-outline mt-0.5">info</span>
+            <div>
+                <p class="text-sm font-semibold text-on-surface mb-1">Tentang Dokumen Ini</p>
+                <p class="text-xs text-outline leading-relaxed">Informasi Tentang Siap Siaga Bencana merupakan informasi serta merta yang wajib diumumkan segera oleh Pemerintah Kota Balikpapan karena berkaitan langsung dengan keselamatan dan ketertiban umum masyarakat. Dokumen ini berisi panduan dan informasi kesiapsiagaan menghadapi bencana di Kota Balikpapan sesuai dengan ketentuan Undang-Undang No. 14 Tahun 2008 tentang Keterbukaan Informasi Publik.</p>
+            </div>
+        </div>
+
     </div>
 </main>
 <footer id="kontak" class="bg-slate-800 dark:bg-slate-600 w-full pt-16 md:pt-20 pb-8 border-t border-slate-600 dark:border-slate-800">
