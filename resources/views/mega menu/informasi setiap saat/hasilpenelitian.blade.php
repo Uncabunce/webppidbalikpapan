@@ -412,10 +412,10 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 <li><a href="/informasi/daftarinformasi" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Daftar Informasi Publik</a></li>
 <li><a href="/informasi/informasiorganisasi" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Informasi Tentang Organisasi, Administrasi Kepegawaian dan Keuangan</a></li>
 <li><a href="/informasi/infopublik" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Informasi Publik</a></li>
-<li><a href="/informasi/perjanjiankerjasama" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Perjanjian Kerja Sama</a></li>
-<li><a href="/informasi/perizinan" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Perizinan</a></li>
-<li><a href="/informasi/asetdaerah" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Aset Daerah</a></li>
-<li><a href="/informasi/rencanastrategis" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Rencana Strategis</a></li>
+<li><a href="https://jdih.balikpapan.go.id/peraturan/mou" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Perjanjian Kerja Sama</a></li>
+<li><a href="https://oss.go.id/id" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Perizinan</a></li>
+<li><a href="https://web.balikpapan.go.id/detail/read/58907" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Aset Daerah</a></li>
+<li><a href="https://web.balikpapan.go.id/detail/read/5834" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Rencana Strategis</a></li>
 <li><a href="/informasi/rencanakerja" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Rencana Kerja Badan Publik</a></li>
 <li><a href="/informasi/jumlahdilaporkan" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Jumlah, Jenis dan Gambaran Pelanggaran yang Dilaporkan Oleh Masyarakat Serta Laporan Penindakannya</a></li>
 <li><a href="/informasi/jumlahditemukan" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Jumlah, Jenis dan Gambaran Umum Pelanggaran yang Ditemukan Dalam Pengawasan Internal Serta Laporan P</a></li>
@@ -538,10 +538,10 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 <a href="https://data.balikpapan.go.id/" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Statistik Daerah</a>
 <a href="/informasi/daftarinformasi" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Daftar Informasi Publik</a>
 <a href="/informasi/informasiorganisasi" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Informasi Tentang Organisasi, Administrasi Kepegawaian dan Keuangan</a>
-<a href="/informasi/perjanjiankerjasama" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Perjanjian Kerja Sama</a>
-<a href="/informasi/perizinan" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Perizinan</a>
-<a href="/informasi/asetdaerah" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Aset Daerah</a>
-<a href="/informasi/rencanastrategis" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Rencana Strategis</a>
+<a href="https://jdih.balikpapan.go.id/peraturan/mou" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Perjanjian Kerja Sama</a>
+<a href="https://oss.go.id/id" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Perizinan</a>
+<a href="https://web.balikpapan.go.id/detail/read/58907" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Aset Daerah</a>
+<a href="https://web.balikpapan.go.id/detail/read/5834" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Rencana Strategis</a>
 <a href="/informasi/rencanakerja" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Rencana Kerja Badan Publik</a>
 <a href="/informasi/jumlahdilaporkan" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Jumlah, Jenis dan Gambaran Pelanggaran yang Dilaporkan Oleh Masyarakat Serta Laporan Penindakannyak</a>
 <a href="/informasi/jumlahditemukan" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Jumlah, Jenis dan Gambaran Umum Pelanggaran yang Ditemukan Dalam Pengawasan Internal Serta Laporan P</a>
@@ -595,8 +595,8 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 <span class="material-symbols-outlined text-base transition-transform duration-300" id="icon-acc-ppid">expand_more</span>
 </button>
 <div id="acc-ppid" class="hidden flex-col bg-white/5 rounded-lg mx-2 mb-2 overflow-hidden">
-<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Badan</a>
-<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container">Dinas</a>
+<a href="https://data.balikpapan.go.id/organization" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Badan</a>
+<a href="https://data.balikpapan.go.id/organization" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container">Dinas</a>
 </div>
 </div>
 <a href="http://ppidbalikpapan.test/kontak" class="flex items-center gap-3 px-3 py-3.5 text-sm font-bold">
@@ -606,12 +606,251 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 </div>
 </header>
 <main class="bg-surface min-h-screen">
-    <!-- ================================ -->
-    <!-- KONTEN HALAMAN DI SINI          -->
-    <!-- ================================ -->
-    <div class="max-w-7xl mx-auto px-4 md:px-6 py-10">
-        <p class="text-on-surface-variant text-center text-sm">Konten halaman</p>
-    </div>
+
+    <!-- Hero Section -->
+    <section class="relative py-20 overflow-hidden border-b border-outline-variant/10">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-br from-primary via-primary-container to-primary opacity-95"></div>
+            <div class="absolute inset-0" style="background-image:url('/batik%20dayak.png');background-repeat:repeat;background-size:300px;opacity:0.05;"></div>
+        </div>
+        <div class="max-w-4xl mx-auto px-6 relative z-10 text-center">
+            <nav class="flex justify-center mb-4 text-xs font-medium text-white/60 uppercase tracking-widest gap-2">
+                <a href="/" class="hover:text-white transition-colors">Beranda</a>
+                <span>/</span>
+                <span>Informasi Publik</span>
+                <span>/</span>
+                <span class="text-white">Hasil Penelitian BAPPEDA</span>
+            </nav>
+            <h1 class="text-4xl md:text-5xl font-headline font-extrabold text-white leading-tight mb-4">
+                Hasil Penelitian BAPPEDA
+            </h1>
+            <p class="text-white/70 text-lg max-w-2xl mx-auto">
+                Badan Perencanaan Pembangunan Daerah &mdash; Kota Balikpapan
+            </p>
+        </div>
+    </section>
+
+    <div class="max-w-5xl mx-auto px-4 md:px-6 py-12 space-y-10">
+
+        <!-- Info Banner -->
+        <div class="bg-white rounded-2xl border border-outline-variant/30 shadow-sm overflow-hidden">
+            <div class="bg-primary px-6 py-4 flex items-center gap-3">
+                <span class="material-symbols-outlined text-secondary-container">science</span>
+                <div>
+                    <p class="text-white font-headline font-extrabold text-sm leading-tight">Hasil Penelitian Akhir KSIIDLKH &amp; Survei Persepsi Korupsi &mdash; Kota Balikpapan</p>
+                    <p class="text-white/60 text-xs mt-0.5">Informasi Setiap Saat &nbsp;&middot;&nbsp; BAPPEDA Kota Balikpapan</p>
+                </div>
+            </div>
+            <div class="px-6 py-4 flex flex-wrap gap-6 text-sm text-on-surface">
+                <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-base text-outline">apartment</span>
+                    <span>BAPPEDA Kota Balikpapan</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-base text-outline">calendar_month</span>
+                    <span>Tahun Penelitian: 2021</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-base text-outline">lock_open</span>
+                    <span>Informasi Terbuka untuk Publik</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stat Cards -->
+        <div>
+            <h2 class="text-lg font-headline font-extrabold text-primary mb-5">Ringkasan Dokumen</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+
+                <div class="bg-white rounded-2xl border border-outline-variant/30 shadow-sm p-6">
+                    <div class="flex items-start justify-between mb-3">
+                        <span class="material-symbols-outlined text-2xl text-primary">folder_open</span>
+                        <span class="text-[10px] font-extrabold uppercase tracking-widest text-outline bg-surface-container px-2 py-1 rounded-full">Total</span>
+                    </div>
+                    <p class="text-3xl font-headline font-extrabold text-primary">2</p>
+                    <p class="text-xs text-outline mt-1 leading-snug">Laporan penelitian tersedia</p>
+                    <div class="mt-4 pt-4 border-t border-outline-variant/30 text-xs text-on-surface">
+                        <span class="font-bold text-primary">KSIIDLKH &amp; Persepsi Korupsi</span>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl border border-outline-variant/30 shadow-sm p-6">
+                    <div class="flex items-start justify-between mb-3">
+                        <span class="material-symbols-outlined text-2xl text-green-600">task_alt</span>
+                        <span class="text-[10px] font-extrabold uppercase tracking-widest text-green-700 bg-green-50 px-2 py-1 rounded-full">Tersedia</span>
+                    </div>
+                    <p class="text-3xl font-headline font-extrabold text-green-700">PDF</p>
+                    <p class="text-xs text-outline mt-1 leading-snug">Format dokumen yang tersedia</p>
+                    <div class="mt-4 pt-4 border-t border-outline-variant/30">
+                        <div class="w-full bg-green-100 rounded-full h-1.5">
+                            <div class="bg-green-500 h-1.5 rounded-full" style="width:100%"></div>
+                        </div>
+                        <p class="text-[10px] text-green-700 mt-1 font-semibold">Dapat diakses &amp; diunduh</p>
+                    </div>
+                </div>
+
+                <div class="bg-primary rounded-2xl shadow-sm p-6">
+                    <div class="flex items-start justify-between mb-3">
+                        <span class="material-symbols-outlined text-2xl text-secondary-container">event_available</span>
+                        <span class="text-[10px] font-extrabold uppercase tracking-widest text-white/70 bg-white/10 px-2 py-1 rounded-full">Tahun</span>
+                    </div>
+                    <p class="text-3xl font-headline font-extrabold text-white">2021</p>
+                    <p class="text-xs text-white/70 mt-1 leading-snug">Tahun pelaksanaan penelitian</p>
+                    <div class="mt-4 pt-4 border-t border-white/20">
+                        <p class="text-[10px] text-secondary-container font-bold">&#10003; Laporan lengkap tersedia</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Daftar Dokumen -->
+        <div>
+            <h2 class="text-lg font-headline font-extrabold text-primary mb-5">Daftar Laporan Penelitian</h2>
+            <div class="bg-white rounded-2xl border border-outline-variant/30 shadow-sm overflow-hidden">
+
+                <!-- Header -->
+                <div class="bg-primary/5 border-b border-outline-variant/20 px-6 py-3 grid grid-cols-12 gap-4 text-[10px] font-extrabold uppercase tracking-widest text-outline">
+                    <div class="col-span-1 text-center">No</div>
+                    <div class="col-span-8">Judul Laporan</div>
+                    <div class="col-span-3 text-center">Aksi</div>
+                </div>
+
+                <!-- Row 1 -->
+                <div class="px-6 py-4 grid grid-cols-12 gap-4 items-center border-b border-outline-variant/10 hover:bg-surface-container/50 transition-colors bg-primary/5">
+                    <div class="col-span-1 text-center text-sm font-bold text-outline">1</div>
+                    <div class="col-span-8">
+                        <div class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-lg text-primary">picture_as_pdf</span>
+                            <div>
+                                <p class="text-sm font-semibold text-on-surface leading-snug">Laporan Akhir Survei KSIIDLKH Kota Balikpapan Tahun 2021</p>
+                                <span class="text-[10px] font-extrabold text-primary bg-primary/10 px-2 py-0.5 rounded-full">E-Book PDF</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-3 flex justify-center gap-2">
+                        <a href="{{ asset('/images/infosetiapsaat/E BOOK - LAPORAN AKHIR KSIIDKLH BPP 2021.pdf') }}" target="_blank"
+                           title="Buka dokumen"
+                           class="w-8 h-8 flex items-center justify-center rounded-full border border-primary text-primary hover:bg-primary hover:text-white transition-colors">
+                            <span class="material-symbols-outlined text-sm">open_in_new</span>
+                        </a>
+                        <a href="{{ asset('/images/infosetiapsaat/E BOOK - LAPORAN AKHIR KSIIDKLH BPP 2021.pdf') }}" download
+                           title="Unduh PDF"
+                           class="w-8 h-8 flex items-center justify-center rounded-full bg-primary text-white hover:bg-primary-container transition-colors">
+                            <span class="material-symbols-outlined text-sm">download</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Row 2 -->
+                <div class="px-6 py-4 grid grid-cols-12 gap-4 items-center hover:bg-surface-container/50 transition-colors">
+                    <div class="col-span-1 text-center text-sm font-bold text-outline">2</div>
+                    <div class="col-span-8">
+                        <div class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-lg text-primary">picture_as_pdf</span>
+                            <div>
+                                <p class="text-sm font-semibold text-on-surface leading-snug">Laporan Akhir Survei Indeks Persepsi Korupsi Kota Balikpapan Tahun 2021</p>
+                                <span class="text-[10px] font-extrabold text-primary bg-primary/10 px-2 py-0.5 rounded-full">PDF</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-3 flex justify-center gap-2">
+                        <a href="{{ asset('/images/infosetiapsaat/Laporan Akhir Survei Indeks Persepsi Korupsi Kota Balikpapan Tahun 2021.pdf') }}" target="_blank"
+                           title="Buka dokumen"
+                           class="w-8 h-8 flex items-center justify-center rounded-full border border-primary text-primary hover:bg-primary hover:text-white transition-colors">
+                            <span class="material-symbols-outlined text-sm">open_in_new</span>
+                        </a>
+                        <a href="{{ asset('/images/infosetiapsaat/Laporan Akhir Survei Indeks Persepsi Korupsi Kota Balikpapan Tahun 2021.pdf') }}" download
+                           title="Unduh PDF"
+                           class="w-8 h-8 flex items-center justify-center rounded-full bg-primary text-white hover:bg-primary-container transition-colors">
+                            <span class="material-symbols-outlined text-sm">download</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Embedded PDF Viewer dengan Toggle -->
+        <div>
+            <div class="flex items-center justify-between mb-4">
+                <h2 class="text-lg font-headline font-extrabold text-primary">Pratinjau Dokumen</h2>
+                <a id="btn-open-tab" href="{{ asset('/images/infosetiapsaat/E BOOK - LAPORAN AKHIR KSIIDKLH BPP 2021.pdf') }}" target="_blank"
+                   class="flex items-center gap-1.5 text-xs font-bold text-primary border border-primary rounded-full px-4 py-1.5 hover:bg-primary hover:text-white transition-colors">
+                    <span class="material-symbols-outlined text-sm">open_in_new</span>
+                    Buka di Tab Baru
+                </a>
+            </div>
+
+            <!-- Tab Selector -->
+            <div class="flex gap-2 mb-4 flex-wrap">
+                <button onclick="switchDoc(0)" id="tab-0"
+                    class="flex items-center gap-2 text-xs font-bold px-4 py-2 rounded-full border border-primary bg-primary text-white transition-colors">
+                    <span class="material-symbols-outlined text-sm">picture_as_pdf</span>
+                    Survei KSIIDLKH 2021
+                </button>
+                <button onclick="switchDoc(1)" id="tab-1"
+                    class="flex items-center gap-2 text-xs font-bold px-4 py-2 rounded-full border border-primary text-primary bg-white hover:bg-primary hover:text-white transition-colors">
+                    <span class="material-symbols-outlined text-sm">picture_as_pdf</span>
+                    Survei Persepsi Korupsi 2021
+                </button>
+            </div>
+
+            <!-- PDF Viewer -->
+            <div class="bg-white rounded-2xl border border-outline-variant/30 shadow-sm overflow-hidden">
+                <object id="pdf-viewer"
+                    data="{{ asset('/images/infosetiapsaat/E BOOK - LAPORAN AKHIR KSIIDKLH BPP 2021.pdf') }}"
+                    type="application/pdf"
+                    class="w-full"
+                    style="height: 700px;">
+                    <div class="flex flex-col items-center justify-center py-16 px-6 text-center">
+                        <span class="material-symbols-outlined text-5xl text-outline mb-4">picture_as_pdf</span>
+
+                        <a id="btn-fallback-dl" href="{{ asset('/images/infosetiapsaat/E BOOK - LAPORAN AKHIR KSIIDKLH BPP 2021.pdf') }}" download
+                           class="flex items-center gap-2 bg-primary text-white font-bold text-sm px-6 py-2.5 rounded-full hover:bg-primary-container transition-colors">
+                            <span class="material-symbols-outlined text-base">download</span>
+                            Unduh Dokumen
+                        </a>
+                    </div>
+                </object>
+            </div>
+        </div>
+
+        <script>
+        const docs = [
+            { url: "{{ asset('/images/infosetiapsaat/E BOOK - LAPORAN AKHIR KSIIDKLH BPP 2021.pdf') }}" },
+            { url: "{{ asset('/images/infosetiapsaat/Laporan Akhir Survei Indeks Persepsi Korupsi Kota Balikpapan Tahun 2021.pdf') }}" }
+        ];
+
+        function switchDoc(idx) {
+            const viewer = document.getElementById('pdf-viewer');
+            const btnTab = document.getElementById('btn-open-tab');
+            const btnDl = document.getElementById('btn-fallback-dl');
+
+            // Replace object element to force browser reload PDF
+            const parent = viewer.parentNode;
+            const newObj = viewer.cloneNode(false);
+            newObj.setAttribute('data', docs[idx].url);
+            newObj.id = 'pdf-viewer';
+            parent.replaceChild(newObj, viewer);
+
+            btnTab.href = docs[idx].url;
+            if (btnDl) btnDl.href = docs[idx].url;
+
+            // Update tab active styles
+            docs.forEach((_, i) => {
+                const tab = document.getElementById('tab-' + i);
+                if (i === idx) {
+                    tab.classList.add('bg-primary', 'text-white');
+                    tab.classList.remove('text-primary', 'bg-white');
+                } else {
+                    tab.classList.remove('bg-primary', 'text-white');
+                    tab.classList.add('text-primary', 'bg-white');
+                }
+            });
+        }
+        </script>
+
 </main>
 <footer id="kontak" class="bg-slate-800 dark:bg-slate-600 w-full pt-16 md:pt-20 pb-8 border-t border-slate-600 dark:border-slate-800">
 <div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto px-4 md:px-6 font-['Inter'] text-sm leading-relaxed">
@@ -789,6 +1028,45 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
             if (icon) icon.style.transform = 'rotate(180deg)';
         }
     }
+
+    // Active highlight mobile menu — berlaku di semua page
+    (function() {
+        var full = window.location.pathname.replace(/\/$/, '');
+
+        // Highlight Beranda hanya kalau di root
+        var berandaLink = document.querySelector('#mobile-menu nav > a[href]');
+        if (berandaLink) {
+            var berandaPath = berandaLink.getAttribute('href').replace(/^https?:\/\/[^\/]+/, '').replace(/\/$/, '');
+            if (full === berandaPath || full === '') {
+                berandaLink.classList.add('text-secondary-container');
+            } else {
+                berandaLink.classList.remove('text-secondary-container');
+            }
+        }
+
+        // Highlight link aktif di dalam accordion
+        var activeAccordion = null;
+        document.querySelectorAll('#mobile-menu a[href]').forEach(function(link) {
+            var href = link.getAttribute('href').replace(/\/$/, '');
+            var linkPath = href.replace(/^https?:\/\/[^\/]+/, '');
+            if (linkPath === full && linkPath !== '' && linkPath !== '/') {
+                link.classList.add('text-secondary-container', 'font-bold', 'bg-white/10', 'rounded');
+                link.classList.remove('text-slate-300');
+                var parent = link.closest('[id^="acc-"]');
+                if (parent) activeAccordion = parent.id;
+            }
+        });
+
+        // Auto-buka accordion yang berisi link aktif
+        if (activeAccordion) {
+            var accEl = document.getElementById(activeAccordion);
+            var accIcon = document.getElementById('icon-' + activeAccordion);
+            if (accEl) { accEl.classList.remove('hidden'); accEl.classList.add('flex'); }
+            if (accIcon) accIcon.style.transform = 'rotate(180deg)';
+            var btn = document.querySelector('[onclick="toggleMobileAccordion(\'' + activeAccordion + '\')"]');
+            if (btn) btn.style.color = '#fdc003';
+        }
+    })();
 </script>
 
 <script>

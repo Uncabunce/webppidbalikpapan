@@ -412,10 +412,10 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 <li><a href="/informasi/daftarinformasi" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Daftar Informasi Publik</a></li>
 <li><a href="/informasi/informasiorganisasi" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Informasi Tentang Organisasi, Administrasi Kepegawaian dan Keuangan</a></li>
 <li><a href="/informasi/infopublik" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Informasi Publik</a></li>
-<li><a href="/informasi/perjanjiankerjasama" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Perjanjian Kerja Sama</a></li>
-<li><a href="/informasi/perizinan" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Perizinan</a></li>
-<li><a href="/informasi/asetdaerah" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Aset Daerah</a></li>
-<li><a href="/informasi/rencanastrategis" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Rencana Strategis</a></li>
+<li><a href="https://jdih.balikpapan.go.id/peraturan/mou" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Perjanjian Kerja Sama</a></li>
+<li><a href="https://oss.go.id/id" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Perizinan</a></li>
+<li><a href="https://web.balikpapan.go.id/detail/read/58907" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Aset Daerah</a></li>
+<li><a href="https://web.balikpapan.go.id/detail/read/5834" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Rencana Strategis</a></li>
 <li><a href="/informasi/rencanakerja" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Rencana Kerja Badan Publik</a></li>
 <li><a href="/informasi/jumlahdilaporkan" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Jumlah, Jenis dan Gambaran Pelanggaran yang Dilaporkan Oleh Masyarakat Serta Laporan Penindakannya</a></li>
 <li><a href="/informasi/jumlahditemukan" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Jumlah, Jenis dan Gambaran Umum Pelanggaran yang Ditemukan Dalam Pengawasan Internal Serta Laporan P</a></li>
@@ -476,7 +476,7 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 </button>
 </div>
 <nav class="flex flex-col px-4 py-4 font-headline text-white">
-<a href="http://ppidbalikpapan.test" class="flex items-center gap-3 px-3 py-3.5 border-b border-white/10 text-secondary-container font-bold text-sm">
+<a href="http://ppidbalikpapan.test" class="flex items-center gap-3 px-3 py-3.5 border-b border-white/10 text-white font-bold text-sm" id="mobile-beranda">
 <span class="material-symbols-outlined text-base">home</span> Beranda
 </a>
 <div class="border-b border-white/10">
@@ -538,10 +538,10 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 <a href="https://data.balikpapan.go.id/" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Statistik Daerah</a>
 <a href="/informasi/daftarinformasi" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Daftar Informasi Publik</a>
 <a href="/informasi/informasiorganisasi" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Informasi Tentang Organisasi, Administrasi Kepegawaian dan Keuangan</a>
-<a href="/informasi/perjanjiankerjasama" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Perjanjian Kerja Sama</a>
-<a href="/informasi/perizinan" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Perizinan</a>
-<a href="/informasi/asetdaerah" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Aset Daerah</a>
-<a href="/informasi/rencanastrategis" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Rencana Strategis</a>
+<a href="https://jdih.balikpapan.go.id/peraturan/mou" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Perjanjian Kerja Sama</a>
+<a href="https://oss.go.id/id" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Perizinan</a>
+<a href="https://web.balikpapan.go.id/detail/read/58907" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Aset Daerah</a>
+<a href="https://web.balikpapan.go.id/detail/read/5834" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Rencana Strategis</a>
 <a href="/informasi/rencanakerja" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Rencana Kerja Badan Publik</a>
 <a href="/informasi/jumlahdilaporkan" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Jumlah, Jenis dan Gambaran Pelanggaran yang Dilaporkan Oleh Masyarakat Serta Laporan Penindakannyak</a>
 <a href="/informasi/jumlahditemukan" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Jumlah, Jenis dan Gambaran Umum Pelanggaran yang Ditemukan Dalam Pengawasan Internal Serta Laporan P</a>
@@ -595,8 +595,8 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 <span class="material-symbols-outlined text-base transition-transform duration-300" id="icon-acc-ppid">expand_more</span>
 </button>
 <div id="acc-ppid" class="hidden flex-col bg-white/5 rounded-lg mx-2 mb-2 overflow-hidden">
-<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Badan</a>
-<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container">Dinas</a>
+<a href="https://data.balikpapan.go.id/organization" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Badan</a>
+<a href="https://data.balikpapan.go.id/organization" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container">Dinas</a>
 </div>
 </div>
 <a href="http://ppidbalikpapan.test/kontak" class="flex items-center gap-3 px-3 py-3.5 text-sm font-bold">
@@ -611,55 +611,156 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
     <!-- ================================ -->
     <div class="max-w-7xl mx-auto px-4 md:px-6 py-10">
         <!-- Section: Lokasi Balai Kota -->
-<div class="max-w-7xl mx-auto px-4 md:px-6 py-12">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
-        
-        <!-- Left Side: Address Description -->
-        <div class="space-y-4">
-            <h2 class="text-2xl font-black text-primary uppercase tracking-tight">Kantor Wali Kota Balikpapan</h2>
-            <div class="w-20 h-1.5 bg-[#fdc003] rounded-full"></div>
-            
-            <div class="space-y-4 mt-6">
-                <div class="flex items-start space-x-3">
-                    <svg class="w-6 h-6 text-primary mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-                    <p class="text-slate-600 leading-relaxed">
-                        <span class="font-bold block text-slate-800">Alamat:</span>
-                        Jl. Jenderal Sudirman No.1, Klandasan Ulu, Kec. Balikpapan Kota, Kota Balikpapan, Kalimantan Timur 76112
-                    </p>
+        <div class="max-w-7xl mx-auto px-4 md:px-6 py-12">
+
+            <!-- Header -->
+            <div class="mb-8">
+                <h2 class="text-2xl md:text-3xl font-black text-primary uppercase tracking-tight">Kantor Wali Kota Balikpapan</h2>
+                <div class="w-20 h-1.5 bg-[#fdc003] rounded-full mt-2 mb-4"></div>
+                <p class="text-slate-500 text-sm">Informasi kedudukan dan domisili Pemerintah Kota Balikpapan</p>
+            </div>
+
+            <!-- Info Card + Maps Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+                <!-- Maps: tampil pertama di mobile, urutan kedua di desktop -->
+                <!-- Left: Info Card (order-2 di mobile, order-1 di desktop) -->
+                <div class="lg:col-span-1 bg-white rounded-2xl shadow-sm border border-slate-100 p-6 flex flex-col justify-between order-2 lg:order-1">
+                    <div class="space-y-5">
+                        <!-- Alamat -->
+                        <div class="flex items-start gap-3">
+                            <div class="shrink-0 w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center mt-0.5">
+                                <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="font-bold text-slate-800 text-sm mb-1">Alamat</p>
+                                <p class="text-slate-600 text-sm leading-relaxed">Jl. Jenderal Sudirman No.1, Klandasan Ulu, Kec. Balikpapan Kota, Kota Balikpapan, Kalimantan Timur 76112</p>
+                            </div>
+                        </div>
+                        <!-- Jam Operasional -->
+                        <div class="flex items-start gap-3">
+                            <div class="shrink-0 w-10 h-10 bg-[#fdc003]/20 rounded-xl flex items-center justify-center mt-0.5">
+                                <svg class="w-5 h-5 text-[#785900]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="font-bold text-slate-800 text-sm mb-1">Jam Operasional</p>
+                                <p class="text-slate-600 text-sm">Senin – Kamis: <span class="font-semibold text-slate-700">08.00 – 16.00 WITA</span></p>
+                                <p class="text-slate-600 text-sm">Jumat: <span class="font-semibold text-slate-700">08.00 – 11.30 WITA</span></p>
+                            </div>
+                        </div>
+                        <!-- Telepon -->
+                        <div class="flex items-start gap-3">
+                            <div class="shrink-0 w-10 h-10 bg-green-50 rounded-xl flex items-center justify-center mt-0.5">
+                                <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="font-bold text-slate-800 text-sm mb-1">Telepon</p>
+                                <p class="text-slate-600 text-sm">(0542) 421420</p>
+                            </div>
+                        </div>
+                        <!-- Email -->
+                        <div class="flex items-start gap-3">
+                            <div class="shrink-0 w-10 h-10 bg-blue-50 rounded-xl flex items-center justify-center mt-0.5">
+                                <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="font-bold text-slate-800 text-sm mb-1">Email</p>
+                                <p class="text-slate-600 text-sm break-all">ppid@balikpapan.go.id</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CTA Button -->
+                    <div class="mt-6 pt-5 border-t border-slate-100">
+                        <a href="https://maps.app.goo.gl/f3Wnts4GzBkovxJT8" target="_blank"
+                           class="flex items-center justify-center gap-2 w-full px-5 py-3 bg-primary text-white font-bold text-sm rounded-xl hover:bg-[#003060] transition-all shadow-sm">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/>
+                            </svg>
+                            Buka di Google Maps
+                        </a>
+                    </div>
                 </div>
 
-                <div class="flex items-start space-x-3">
-                    <svg class="w-6 h-6 text-primary mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                    <p class="text-slate-600 leading-relaxed">
-                        <span class="font-bold block text-slate-800">Jam Operasional:</span>
-                        Senin - Kamis: 08.00 - 16.00 WITA<br>
-                        Jumat: 08.00 - 11.30 WITA
+                <!-- Right: Maps with Tab Switcher (order-1 di mobile, order-2 di desktop) -->
+                <div class="lg:col-span-2 flex flex-col gap-4 order-1 lg:order-2">
+                    <!-- Tab buttons -->
+                    <div class="flex gap-2">
+                        <button onclick="showMap('peta')" id="tab-peta"
+                            class="flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-bold bg-primary text-white shadow-sm transition-all">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/>
+                            </svg>
+                            Peta Lokasi
+                        </button>
+                        <button onclick="showMap('streetview')" id="tab-streetview"
+                            class="flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-bold bg-white text-slate-600 border border-slate-200 hover:bg-slate-50 transition-all">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M3 8.618a1 1 0 01.553-.894L9 5m0 9v-4m0 4l6-3m-6 3V9m0 0l6-3"/>
+                            </svg>
+                            Street View
+                        </button>
+                    </div>
+
+                    <!-- Peta Lokasi -->
+                    <div id="map-peta" class="w-full h-[420px] rounded-2xl overflow-hidden shadow-sm border border-slate-200">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63821.253001534766!2d116.75573272167965!3d-1.2764074999999773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df1473bb9404897%3A0x94d96108f98b652c!2sBalikpapan%20Mayor&#39;s%20Office!5e0!3m2!1sen!2sid!4v1776063788871!5m2!1sen!2sid"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+
+                    <!-- Street View -->
+                    <div id="map-streetview" class="w-full h-[420px] rounded-2xl overflow-hidden shadow-sm border border-slate-200 hidden">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!4v1715000000000!6m8!1m7!1s0tgaofqejtNCwOV74qcLFw!2m2!1d-1.2764075!2d116.8278305!3f345.89!4f-6.5!5f0.7820865974627469"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+
+                    <!-- Label bawah -->
+                    <p class="text-xs text-slate-400 text-right" id="label-map">
+                        📍 Kantor Wali Kota Balikpapan — Jl. Jenderal Sudirman No.1
                     </p>
                 </div>
             </div>
-
-            <div class="pt-4">
-                <a href="https://maps.app.goo.gl/f3Wnts4GzBkovxJT8" target="_blank" class="inline-flex items-center px-5 py-2.5 bg-primary text-white font-bold text-sm rounded-lg hover:bg-opacity-90 transition-all">
-                    Buka di Google Maps
-                </a>
-            </div>
-        </div>
-
-        <!-- Right Side: Google Maps Embed -->
-        <div class="w-full h-[350px] rounded-xl overflow-hidden shadow-inner border border-slate-200">
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63821.253001534766!2d116.75573272167965!3d-1.2764074999999773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df1473bb9404897%3A0x94d96108f98b652c!2sBalikpapan%20Mayor&#39;s%20Office!5e0!3m2!1sen!2ssg!4v1776063788871!5m2!1sen!2ssg" 
-                width="100%" 
-                height="100%" 
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
         </div>
     </div>
-</div>
-    </div>
+
+    <script>
+        function showMap(type) {
+            var peta = document.getElementById('map-peta');
+            var sv = document.getElementById('map-streetview');
+            var tabPeta = document.getElementById('tab-peta');
+            var tabSV = document.getElementById('tab-streetview');
+            var label = document.getElementById('label-map');
+            var activeClass = 'flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-bold bg-primary text-white shadow-sm transition-all';
+            var inactiveClass = 'flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-bold bg-white text-slate-600 border border-slate-200 hover:bg-slate-50 transition-all';
+            if (type === 'peta') {
+                peta.classList.remove('hidden');
+                sv.classList.add('hidden');
+                tabPeta.className = activeClass;
+                tabSV.className = inactiveClass;
+                label.textContent = '📍 Kantor Wali Kota Balikpapan — Jl. Jenderal Sudirman No.1';
+            } else {
+                peta.classList.add('hidden');
+                sv.classList.remove('hidden');
+                tabPeta.className = inactiveClass;
+                tabSV.className = activeClass;
+                label.textContent = '🏛️ Street View — Tampilan langsung dari depan kantor';
+            }
+        }
+    </script>
 </main>
 <footer id="kontak" class="bg-slate-800 dark:bg-slate-600 w-full pt-16 md:pt-20 pb-8 border-t border-slate-600 dark:border-slate-800">
 <div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto px-4 md:px-6 font-['Inter'] text-sm leading-relaxed">
@@ -837,6 +938,60 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
             if (icon) icon.style.transform = 'rotate(180deg)';
         }
     }
+
+    // Mobile active link highlight
+    (function() {
+        var full = window.location.pathname.replace(/\/$/, '');
+        var activeLink = null;
+        var activeAccordion = null;
+
+        document.querySelectorAll('#mobile-menu a[href]').forEach(function(link) {
+            var href = link.getAttribute('href').replace(/\/$/, '');
+            // Match path only (ignore domain)
+            var linkPath = href.replace(/^https?:\/\/[^\/]+/, '');
+            if (linkPath === full && linkPath !== '') {
+                // Highlight the active link
+                link.classList.remove('text-slate-300');
+                link.classList.add('text-secondary-container', 'font-bold', 'bg-white/10', 'rounded');
+                activeLink = link;
+
+                // Find parent accordion
+                var parent = link.closest('[id^="acc-"]');
+                if (parent) activeAccordion = parent.id;
+            }
+        });
+
+        // Highlight Beranda hanya kalau di root path
+        var beranda = document.getElementById('mobile-beranda');
+        if (beranda && (full === '' || full === window.location.origin)) {
+            beranda.classList.remove('text-white');
+            beranda.classList.add('text-secondary-container');
+        }
+
+        // Also highlight top-level nav items (Berita, Data Statistik, Kontak) — skip Beranda (root path)
+        document.querySelectorAll('#mobile-menu nav > a[href]').forEach(function(link) {
+            var href = link.getAttribute('href').replace(/\/$/, '');
+            var linkPath = href.replace(/^https?:\/\/[^\/]+/, '');
+            if (linkPath === full && linkPath !== '' && linkPath !== '/') {
+                link.classList.add('text-secondary-container');
+            }
+        });
+
+        // Auto-open accordion if active link found inside it
+        if (activeAccordion) {
+            var accEl = document.getElementById(activeAccordion);
+            var accIcon = document.getElementById('icon-' + activeAccordion);
+            if (accEl) {
+                accEl.classList.remove('hidden');
+                accEl.classList.add('flex');
+            }
+            if (accIcon) accIcon.style.transform = 'rotate(180deg)';
+
+            // Also highlight the accordion button label
+            var btn = document.querySelector('[onclick="toggleMobileAccordion(\'' + activeAccordion + '\')"]');
+            if (btn) btn.style.color = '#fdc003';
+        }
+    })();
 </script>
 
 <script>

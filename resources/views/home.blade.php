@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="id"><head>
+<html lang="id" style="overflow-x:hidden;"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>PPID Kota Balikpapan</title>
@@ -82,8 +82,25 @@
         html, body {
             height: auto;
             font-family: "Inter", sans-serif;
-            overflow-x: clip;
+            overflow-x: hidden !important;
             max-width: 100%;
+        }
+        main, section, footer {
+            overflow-x: hidden;
+            max-width: 100%;
+        }
+        /* Prevent mega menus from causing horizontal scroll on mobile */
+        #mega-profil, #mega-infopub, #mega-layanan {
+            max-width: min(95vw, 860px) !important;
+        }
+        @media (max-width: 767px) {
+            #mega-profil, #mega-infopub, #mega-layanan {
+                display: none !important;
+            }
+            #desktop-nav {
+                overflow: hidden !important;
+                max-width: 100vw !important;
+            }
         }
         h1, h2, h3, .font-headline {
             font-family: "Manrope", sans-serif
@@ -103,8 +120,9 @@
         /* Carousel Styles */
 #carousel-container {
     position: relative;
-    overflow: hidden;
+    overflow: hidden !important;
     width: 100%;
+    max-width: 100vw;
 }
 /* ... */
 .carousel-slide {
@@ -119,6 +137,7 @@
             cursor: grab;
             user-select: none;
             width: 100%;
+            will-change: transform;
         }
         #carousel-track:active {
             cursor: grabbing;
@@ -205,7 +224,7 @@
         }
     </style>
 </head>
-<body class="bg-surface text-on-surface">
+<body class="bg-surface text-on-surface" style="overflow-x:hidden;">
 
 <header class="w-full shadow-md bg-white sticky top-0 z-50" style="overflow:visible;">
 <!-- Top Navbar (Batik Motif) -->
@@ -412,10 +431,10 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 <li><a href="/informasi/daftarinformasi" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Daftar Informasi Publik</a></li>
 <li><a href="/informasi/informasiorganisasi" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Informasi Tentang Organisasi, Administrasi Kepegawaian dan Keuangan</a></li>
 <li><a href="/informasi/infopublik" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Informasi Publik</a></li>
-<li><a href="/informasi/perjanjiankerjasama" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Perjanjian Kerja Sama</a></li>
-<li><a href="/informasi/perizinan" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Perizinan</a></li>
-<li><a href="/informasi/asetdaerah" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Aset Daerah</a></li>
-<li><a href="/informasi/rencanastrategis" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Rencana Strategis</a></li>
+<li><a href="https://jdih.balikpapan.go.id/peraturan/mou" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Perjanjian Kerja Sama</a></li>
+<li><a href="https://oss.go.id/id" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Perizinan</a></li>
+<li><a href="https://web.balikpapan.go.id/detail/read/58907" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Aset Daerah</a></li>
+<li><a href="https://web.balikpapan.go.id/detail/read/5834" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Rencana Strategis</a></li>
 <li><a href="/informasi/rencanakerja" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Rencana Kerja Badan Publik</a></li>
 <li><a href="/informasi/jumlahdilaporkan" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Jumlah, Jenis dan Gambaran Pelanggaran yang Dilaporkan Oleh Masyarakat Serta Laporan Penindakannya</a></li>
 <li><a href="/informasi/jumlahditemukan" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Jumlah, Jenis dan Gambaran Umum Pelanggaran yang Ditemukan Dalam Pengawasan Internal Serta Laporan P</a></li>
@@ -538,10 +557,10 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 <a href="https://data.balikpapan.go.id/" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Statistik Daerah</a>
 <a href="/informasi/daftarinformasi" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Daftar Informasi Publik</a>
 <a href="/informasi/informasiorganisasi" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Informasi Tentang Organisasi, Administrasi Kepegawaian dan Keuangan</a>
-<a href="/informasi/perjanjiankerjasama" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Perjanjian Kerja Sama</a>
-<a href="/informasi/perizinan" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Perizinan</a>
-<a href="/informasi/asetdaerah" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Aset Daerah</a>
-<a href="/informasi/rencanastrategis" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Rencana Strategis</a>
+<a href="https://jdih.balikpapan.go.id/peraturan/mou" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Perjanjian Kerja Sama</a>
+<a href="https://oss.go.id/id" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Perizinan</a>
+<a href="https://web.balikpapan.go.id/detail/read/58907" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Aset Daerah</a>
+<a href="https://web.balikpapan.go.id/detail/read/5834" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Rencana Strategis</a>
 <a href="/informasi/rencanakerja" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Rencana Kerja Badan Publik</a>
 <a href="/informasi/jumlahdilaporkan" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Jumlah, Jenis dan Gambaran Pelanggaran yang Dilaporkan Oleh Masyarakat Serta Laporan Penindakannyak</a>
 <a href="/informasi/jumlahditemukan" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Jumlah, Jenis dan Gambaran Umum Pelanggaran yang Ditemukan Dalam Pengawasan Internal Serta Laporan P</a>
@@ -595,8 +614,8 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 <span class="material-symbols-outlined text-base transition-transform duration-300" id="icon-acc-ppid">expand_more</span>
 </button>
 <div id="acc-ppid" class="hidden flex-col bg-white/5 rounded-lg mx-2 mb-2 overflow-hidden">
-<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Badan</a>
-<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container">Dinas</a>
+<a href="https://data.balikpapan.go.id/organization" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Badan</a>
+<a href="https://data.balikpapan.go.id/organization" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container">Dinas</a>
 </div>
 </div>
 <a href="http://ppidbalikpapan.test/kontak" class="flex items-center gap-3 px-3 py-3.5 text-sm font-bold">
@@ -607,7 +626,8 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 </header>
 <main>
 <!-- Hero Section: Interactive Carousel -->
-<section class="relative group" id="carousel-container" style="width:100%; overflow:hidden;">
+<div style="overflow:hidden;width:100%;max-width:100vw;position:relative;">
+<section class="relative group" id="carousel-container" style="width:100%; overflow:hidden; max-width:100vw;">
 <div class="h-[300px] md:h-[450px] lg:h-[550px]" id="carousel-track">
 <!-- Slide 1: Primary HD Image (Original Slide 0) -->
 <div class="carousel-slide relative h-full">
@@ -616,15 +636,15 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 
 <div class="carousel-slide relative h-full">
 <img alt="" class="w-full h-full object-cover pointer-events-none" src="images/1.jpg"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent flex items-end justify-center pb-12">
-<h2 class="text-white font-headline font-extrabold text-xl md:text-3xl tracking-tight opacity-90">Wakil Wali Kota Paparkan LKPj 2025, Dorong Percepatan Program dan Minimalkan SILPA</h2>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent flex items-end justify-center pb-12 overflow-hidden px-4">
+<h2 class="text-white font-headline font-extrabold text-xl md:text-3xl tracking-tight opacity-90 w-full max-w-full break-words">Wakil Wali Kota Paparkan LKPj 2025, Dorong Percepatan Program dan Minimalkan SILPA</h2>
 </div>
 </div>
 
 <div class="carousel-slide relative h-full">
 <img alt="" class="w-full h-full object-cover pointer-events-none" src="images/4.jpg"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent flex items-end justify-center pb-12">
-<h2 class="text-white font-headline font-extrabold text-xl md:text-3xl tracking-tight opacity-90">Wali Kota Balikpapan Hadiri Rakortas Percepatan Proyek PSEL Nasional sebagai Solusi Penanganan Sampah</h2>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent flex items-end justify-center pb-12 overflow-hidden px-4">
+<h2 class="text-white font-headline font-extrabold text-xl md:text-3xl tracking-tight opacity-90 w-full max-w-full break-words">Wali Kota Balikpapan Hadiri Rakortas Percepatan Proyek PSEL Nasional sebagai Solusi Penanganan Sampah</h2>
 </div>
 </div>
 </div>
@@ -636,6 +656,7 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 <button class="carousel-dot w-2.5 h-2.5 rounded-full bg-white/40 transition-all hover:bg-white/70" data-index="2"></button>
 </div>
 </section>
+</div>
 <!-- Centered Section Title with Dividers -->
 <div class="w-full border-t border-slate-200">
 <div class="max-w-7xl mx-auto px-4 md:px-6 flex flex-col items-center pt-4 pb-3"><span class="material-symbols-outlined text-amber-400 text-4xl opacity-80 mb-2" data-icon="hub">hub</span>
@@ -1245,13 +1266,16 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
     let slideWidth = 0;
 
     function setSlideWidths() {
-        slideWidth = container.getBoundingClientRect().width;
+        slideWidth = container.getBoundingClientRect().width || window.innerWidth;
         slides.forEach(function(s) {
             s.style.width = slideWidth + 'px';
             s.style.minWidth = slideWidth + 'px';
             s.style.flex = '0 0 ' + slideWidth + 'px';
+            s.style.maxWidth = slideWidth + 'px';
         });
         track.style.width = (slideWidth * slides.length) + 'px';
+        track.style.maxWidth = 'none';
+        container.style.overflow = 'hidden';
         updateCarousel(true);
     }
 
@@ -1412,6 +1436,45 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
             if (icon) icon.style.transform = 'rotate(180deg)';
         }
     }
+
+    // Active highlight mobile menu — berlaku di semua page
+    (function() {
+        var full = window.location.pathname.replace(/\/$/, '');
+
+        // Highlight Beranda hanya kalau di root
+        var berandaLink = document.querySelector('#mobile-menu nav > a[href]');
+        if (berandaLink) {
+            var berandaPath = berandaLink.getAttribute('href').replace(/^https?:\/\/[^\/]+/, '').replace(/\/$/, '');
+            if (full === berandaPath || full === '') {
+                berandaLink.classList.add('text-secondary-container');
+            } else {
+                berandaLink.classList.remove('text-secondary-container');
+            }
+        }
+
+        // Highlight link aktif di dalam accordion
+        var activeAccordion = null;
+        document.querySelectorAll('#mobile-menu a[href]').forEach(function(link) {
+            var href = link.getAttribute('href').replace(/\/$/, '');
+            var linkPath = href.replace(/^https?:\/\/[^\/]+/, '');
+            if (linkPath === full && linkPath !== '' && linkPath !== '/') {
+                link.classList.add('text-secondary-container', 'font-bold', 'bg-white/10', 'rounded');
+                link.classList.remove('text-slate-300');
+                var parent = link.closest('[id^="acc-"]');
+                if (parent) activeAccordion = parent.id;
+            }
+        });
+
+        // Auto-buka accordion yang berisi link aktif
+        if (activeAccordion) {
+            var accEl = document.getElementById(activeAccordion);
+            var accIcon = document.getElementById('icon-' + activeAccordion);
+            if (accEl) { accEl.classList.remove('hidden'); accEl.classList.add('flex'); }
+            if (accIcon) accIcon.style.transform = 'rotate(180deg)';
+            var btn = document.querySelector('[onclick="toggleMobileAccordion(\'' + activeAccordion + '\')"]');
+            if (btn) btn.style.color = '#fdc003';
+        }
+    })();
 </script>
 <script>
 // Position mega menu right below nav bar

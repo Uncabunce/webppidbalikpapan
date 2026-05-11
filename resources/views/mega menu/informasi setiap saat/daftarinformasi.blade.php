@@ -412,10 +412,10 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 <li><a href="/informasi/daftarinformasi" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Daftar Informasi Publik</a></li>
 <li><a href="/informasi/informasiorganisasi" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Informasi Tentang Organisasi, Administrasi Kepegawaian dan Keuangan</a></li>
 <li><a href="/informasi/infopublik" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Informasi Publik</a></li>
-<li><a href="/informasi/perjanjiankerjasama" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Perjanjian Kerja Sama</a></li>
-<li><a href="/informasi/perizinan" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Perizinan</a></li>
-<li><a href="/informasi/asetdaerah" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Aset Daerah</a></li>
-<li><a href="/informasi/rencanastrategis" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Rencana Strategis</a></li>
+<li><a href="https://jdih.balikpapan.go.id/peraturan/mou" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Perjanjian Kerja Sama</a></li>
+<li><a href="https://oss.go.id/id" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Perizinan</a></li>
+<li><a href="https://web.balikpapan.go.id/detail/read/58907" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Aset Daerah</a></li>
+<li><a href="https://web.balikpapan.go.id/detail/read/5834" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Rencana Strategis</a></li>
 <li><a href="/informasi/rencanakerja" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Rencana Kerja Badan Publik</a></li>
 <li><a href="/informasi/jumlahdilaporkan" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Jumlah, Jenis dan Gambaran Pelanggaran yang Dilaporkan Oleh Masyarakat Serta Laporan Penindakannya</a></li>
 <li><a href="/informasi/jumlahditemukan" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Jumlah, Jenis dan Gambaran Umum Pelanggaran yang Ditemukan Dalam Pengawasan Internal Serta Laporan P</a></li>
@@ -538,10 +538,10 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 <a href="https://data.balikpapan.go.id/" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Statistik Daerah</a>
 <a href="/informasi/daftarinformasi" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Daftar Informasi Publik</a>
 <a href="/informasi/informasiorganisasi" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Informasi Tentang Organisasi, Administrasi Kepegawaian dan Keuangan</a>
-<a href="/informasi/perjanjiankerjasama" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Perjanjian Kerja Sama</a>
-<a href="/informasi/perizinan" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Perizinan</a>
-<a href="/informasi/asetdaerah" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Aset Daerah</a>
-<a href="/informasi/rencanastrategis" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Rencana Strategis</a>
+<a href="https://jdih.balikpapan.go.id/peraturan/mou" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Perjanjian Kerja Sama</a>
+<a href="https://oss.go.id/id" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Perizinan</a>
+<a href="https://web.balikpapan.go.id/detail/read/58907" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Aset Daerah</a>
+<a href="https://web.balikpapan.go.id/detail/read/5834" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Rencana Strategis</a>
 <a href="/informasi/rencanakerja" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Rencana Kerja Badan Publik</a>
 <a href="/informasi/jumlahdilaporkan" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Jumlah, Jenis dan Gambaran Pelanggaran yang Dilaporkan Oleh Masyarakat Serta Laporan Penindakannyak</a>
 <a href="/informasi/jumlahditemukan" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Jumlah, Jenis dan Gambaran Umum Pelanggaran yang Ditemukan Dalam Pengawasan Internal Serta Laporan P</a>
@@ -595,8 +595,8 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 <span class="material-symbols-outlined text-base transition-transform duration-300" id="icon-acc-ppid">expand_more</span>
 </button>
 <div id="acc-ppid" class="hidden flex-col bg-white/5 rounded-lg mx-2 mb-2 overflow-hidden">
-<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Badan</a>
-<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container">Dinas</a>
+<a href="https://data.balikpapan.go.id/organization" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Badan</a>
+<a href="https://data.balikpapan.go.id/organization" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container">Dinas</a>
 </div>
 </div>
 <a href="http://ppidbalikpapan.test/kontak" class="flex items-center gap-3 px-3 py-3.5 text-sm font-bold">
@@ -606,11 +606,186 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 </div>
 </header>
 <main class="bg-surface min-h-screen">
-    <!-- ================================ -->
-    <!-- KONTEN HALAMAN DI SINI          -->
-    <!-- ================================ -->
-    <div class="max-w-7xl mx-auto px-4 md:px-6 py-10">
-        <p class="text-on-surface-variant text-center text-sm">Konten halaman</p>
+
+    <!-- Hero Section -->
+    <section class="relative py-20 overflow-hidden border-b border-outline-variant/10">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-br from-primary via-primary-container to-primary opacity-95"></div>
+            <div class="absolute inset-0" style="background-image:url('/batik%20dayak.png');background-repeat:repeat;background-size:300px;opacity:0.05;"></div>
+        </div>
+        <div class="max-w-4xl mx-auto px-6 relative z-10 text-center">
+            <nav class="flex justify-center mb-4 text-xs font-medium text-white/60 uppercase tracking-widest gap-2">
+                <a href="/" class="hover:text-white transition-colors">Beranda</a>
+                <span>/</span>
+                <span>Informasi Publik</span>
+                <span>/</span>
+                <span class="text-white">Daftar Informasi Publik</span>
+            </nav>
+            <h1 class="text-4xl md:text-5xl font-headline font-extrabold text-white leading-tight mb-4">
+                Daftar Informasi Publik
+            </h1>
+            <p class="text-white/70 text-lg max-w-2xl mx-auto">
+                Pemerintah Kota Balikpapan
+            </p>
+        </div>
+    </section>
+
+    <div class="max-w-5xl mx-auto px-4 md:px-6 py-12 space-y-10">
+
+        <!-- Info Banner -->
+        <div class="bg-white rounded-2xl border border-outline-variant/30 shadow-sm overflow-hidden">
+            <div class="bg-primary px-6 py-4 flex items-center gap-3">
+                <span class="material-symbols-outlined text-secondary-container">list_alt</span>
+                <div>
+                    <p class="text-white font-headline font-extrabold text-sm leading-tight">Daftar Informasi Publik per OPD &mdash; Pemkot Balikpapan</p>
+                    <p class="text-white/60 text-xs mt-0.5">Informasi Setiap Saat &nbsp;&middot;&nbsp; Pemerintah Kota Balikpapan</p>
+                </div>
+            </div>
+            <div class="px-6 py-4 flex flex-wrap gap-6 text-sm text-on-surface">
+                <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-base text-outline">apartment</span>
+                    <span>23 OPD Kota Balikpapan</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-base text-outline">policy</span>
+                    <span>Dasar: UU No. 14 Tahun 2008</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-base text-outline">lock_open</span>
+                    <span>Informasi Terbuka untuk Publik</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stat Cards -->
+        <div>
+            <h2 class="text-lg font-headline font-extrabold text-primary mb-5">Ringkasan</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+
+                <div class="bg-white rounded-2xl border border-outline-variant/30 shadow-sm p-6">
+                    <div class="flex items-start justify-between mb-3">
+                        <span class="material-symbols-outlined text-2xl text-primary">corporate_fare</span>
+                        <span class="text-[10px] font-extrabold uppercase tracking-widest text-outline bg-surface-container px-2 py-1 rounded-full">Total OPD</span>
+                    </div>
+                    <p class="text-3xl font-headline font-extrabold text-primary">23</p>
+                    <p class="text-xs text-outline mt-1 leading-snug">Perangkat Daerah terdaftar</p>
+                    <div class="mt-4 pt-4 border-t border-outline-variant/30 text-xs text-on-surface">
+                        <span class="font-bold text-primary">Dinas, Badan &amp; Kecamatan</span>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl border border-outline-variant/30 shadow-sm p-6">
+                    <div class="flex items-start justify-between mb-3">
+                        <span class="material-symbols-outlined text-2xl text-green-600">task_alt</span>
+                        <span class="text-[10px] font-extrabold uppercase tracking-widest text-green-700 bg-green-50 px-2 py-1 rounded-full">Tersedia</span>
+                    </div>
+                    <p class="text-3xl font-headline font-extrabold text-green-700">21</p>
+                    <p class="text-xs text-outline mt-1 leading-snug">OPD dengan dokumen DIP tersedia</p>
+                    <div class="mt-4 pt-4 border-t border-outline-variant/30">
+                        <div class="w-full bg-green-100 rounded-full h-1.5">
+                            <div class="bg-green-500 h-1.5 rounded-full" style="width:91%"></div>
+                        </div>
+                        <p class="text-[10px] text-green-700 mt-1 font-semibold">91% dokumen tersedia</p>
+                    </div>
+                </div>
+
+                <div class="bg-primary rounded-2xl shadow-sm p-6">
+                    <div class="flex items-start justify-between mb-3">
+                        <span class="material-symbols-outlined text-2xl text-secondary-container">picture_as_pdf</span>
+                        <span class="text-[10px] font-extrabold uppercase tracking-widest text-white/70 bg-white/10 px-2 py-1 rounded-full">Format</span>
+                    </div>
+                    <p class="text-3xl font-headline font-extrabold text-white">PDF</p>
+                    <p class="text-xs text-white/70 mt-1 leading-snug">Format dokumen DIP tiap OPD</p>
+                    <div class="mt-4 pt-4 border-t border-white/20">
+                        <p class="text-[10px] text-secondary-container font-bold">&#10003; Dapat diakses &amp; diunduh</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Tabel Daftar OPD -->
+        <div>
+            <h2 class="text-lg font-headline font-extrabold text-primary mb-5">Daftar Informasi Publik per OPD</h2>
+            <div class="bg-white rounded-2xl border border-outline-variant/30 shadow-sm overflow-hidden">
+
+                <!-- Header -->
+                <div class="bg-primary/5 border-b border-outline-variant/20 px-6 py-3 grid grid-cols-12 gap-4 text-[10px] font-extrabold uppercase tracking-widest text-outline">
+                    <div class="col-span-1 text-center">No</div>
+                    <div class="col-span-8">Nama OPD</div>
+                    <div class="col-span-3 text-center">Dokumen DIP</div>
+                </div>
+
+                <?php
+                $opd = [
+                    ["Dinas Komunikasi dan Informatika", "/images/infosetiapsaat/DIP_DISKOMINFO.pdf"],
+                    ["Dinas Pertanahan dan Penataan Ruang", null],
+                    ["Dinas Perhubungan", "/images/infosetiapsaat/DIP_DISHUB.pdf"],
+                    ["Dinas Perpustakaan dan Arsip", "/images/infosetiapsaat/DIP_DISPUSTAKAR.pdf"],
+                    ["Dinas Sosial", "/images/infosetiapsaat/DIP_DINSOS.pdf"],
+                    ["Dinas Pemuda Olahraga dan Pariwisata", "/images/infosetiapsaat/DIP_DPOP.pdf"],
+                    ["Dinas Kesehatan", "/images/infosetiapsaat/DIP_DINKES.pdf"],
+                    ["Dinas Ketenagakerjaan", "/images/infosetiapsaat/DIP_DISNAKER.pdf"],
+                    ["Dinas Pemberdayaan Perempuan, Perlindungan Anak dan Keluarga Berencana", "/images/infosetiapsaat/DIP_DP3AK.pdf"],
+                    ["Dinas Perdagangan", "/images/infosetiapsaat/DIP_DISDAG.pdf"],
+                    ["Dinas Penanaman Modal dan Pelayanan Terpadu Satu Pintu", "/images/infosetiapsaat/DIP_DPMPT.pdf"],
+                    ["Badan Perencanaan Pembangunan Daerah Penelitian dan Pengembangan", "/images/infosetiapsaat/DIP_BAPPEDA_LITBANG.pdf"],
+                    ["Badan Kepegawaian dan Pengembangan Sumber Daya Manusia", "/images/infosetiapsaat/DIP_BKPSDM.pdf"],
+                    ["Rumah Sakit Umum Daerah Kota Balikpapan", "/images/infosetiapsaat/DIP_RSUD.pdf"],
+                    ["Satuan Polisi Pamong Praja", "/images/infosetiapsaat/DIP_SATPOL_PP.pdf"],
+                    ["Inspektorat", "/images/infosetiapsaat/DIP_INSPEKTORAT.pdf"],
+                    ["Sekretariat Daerah", "/images/infosetiapsaat/DIP_SETDAKOT.pdf"],
+                    ["Kecamatan Balikpapan Kota", "/images/infosetiapsaat/DIP_KEC_BALKOT.pdf"],
+                    ["Kecamatan Balikpapan Selatan", "/images/infosetiapsaat/DIP_KEC_BALSEL.pdf"],
+                    ["Kecamatan Balikpapan Timur", "/images/infosetiapsaat/DIP_KEC_BALTIM.pdf"],
+                    ["Kecamatan Balikpapan Utara", "/images/infosetiapsaat/DIP_KEC_BALTRA.pdf"],
+                    ["Kecamatan Balikpapan Barat", "/images/infosetiapsaat/DIP_KEC_BALBAR.pdf"],
+                    ["Kecamatan Balikpapan Tengah", null],
+                ];
+                foreach ($opd as $i => $item):
+                    $hasDoc = $item[1] !== null;
+                ?>
+                <div class="px-6 py-4 grid grid-cols-12 gap-4 items-center border-b border-outline-variant/10 hover:bg-surface-container/50 transition-colors">
+                    <div class="col-span-1 text-center text-sm font-bold text-outline"><?= $i + 1 ?></div>
+                    <div class="col-span-8">
+                        <div class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-lg <?= $hasDoc ? 'text-primary' : 'text-outline/40' ?>">
+                                <?= $hasDoc ? 'apartment' : 'apartment' ?>
+                            </span>
+                            <p class="text-sm font-medium text-on-surface leading-snug"><?= $item[0] ?></p>
+                        </div>
+                    </div>
+                    <div class="col-span-3 flex justify-center gap-2">
+                        <?php if ($hasDoc): ?>
+                        <a href="<?= $item[1] ?>" target="_blank"
+                           title="Buka DIP"
+                           class="w-8 h-8 flex items-center justify-center rounded-full border border-primary text-primary hover:bg-primary hover:text-white transition-colors">
+                            <span class="material-symbols-outlined text-sm">open_in_new</span>
+                        </a>
+                        <a href="<?= $item[1] ?>" download
+                           title="Unduh DIP"
+                           class="w-8 h-8 flex items-center justify-center rounded-full bg-primary text-white hover:bg-primary-container transition-colors">
+                            <span class="material-symbols-outlined text-sm">download</span>
+                        </a>
+                        <?php else: ?>
+                        <span class="text-[10px] text-outline bg-surface-container px-3 py-1 rounded-full font-semibold">Belum tersedia</span>
+                        <?php endif; ?>
+                    </div>
+                </div>
+                <?php endforeach; ?>
+
+            </div>
+        </div>
+
+        <!-- Catatan -->
+        <div class="bg-surface-container-low rounded-2xl border border-outline-variant/20 px-6 py-5 flex gap-4 items-start">
+            <span class="material-symbols-outlined text-outline mt-0.5">info</span>
+            <div>
+                <p class="text-sm font-semibold text-on-surface mb-1">Tentang Daftar Informasi Publik</p>
+                <p class="text-xs text-outline leading-relaxed">Daftar Informasi Publik (DIP) adalah dokumen yang memuat keterangan tentang setiap informasi publik yang berada di bawah penguasaan masing-masing OPD. Penyusunan DIP merupakan kewajiban tiap Badan Publik berdasarkan Undang-Undang Nomor 14 Tahun 2008 dan Peraturan Komisi Informasi Nomor 1 Tahun 2010.</p>
+            </div>
+        </div>
+
     </div>
 </main>
 <footer id="kontak" class="bg-slate-800 dark:bg-slate-600 w-full pt-16 md:pt-20 pb-8 border-t border-slate-600 dark:border-slate-800">
@@ -789,6 +964,45 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
             if (icon) icon.style.transform = 'rotate(180deg)';
         }
     }
+
+    // Active highlight mobile menu — berlaku di semua page
+    (function() {
+        var full = window.location.pathname.replace(/\/$/, '');
+
+        // Highlight Beranda hanya kalau di root
+        var berandaLink = document.querySelector('#mobile-menu nav > a[href]');
+        if (berandaLink) {
+            var berandaPath = berandaLink.getAttribute('href').replace(/^https?:\/\/[^\/]+/, '').replace(/\/$/, '');
+            if (full === berandaPath || full === '') {
+                berandaLink.classList.add('text-secondary-container');
+            } else {
+                berandaLink.classList.remove('text-secondary-container');
+            }
+        }
+
+        // Highlight link aktif di dalam accordion
+        var activeAccordion = null;
+        document.querySelectorAll('#mobile-menu a[href]').forEach(function(link) {
+            var href = link.getAttribute('href').replace(/\/$/, '');
+            var linkPath = href.replace(/^https?:\/\/[^\/]+/, '');
+            if (linkPath === full && linkPath !== '' && linkPath !== '/') {
+                link.classList.add('text-secondary-container', 'font-bold', 'bg-white/10', 'rounded');
+                link.classList.remove('text-slate-300');
+                var parent = link.closest('[id^="acc-"]');
+                if (parent) activeAccordion = parent.id;
+            }
+        });
+
+        // Auto-buka accordion yang berisi link aktif
+        if (activeAccordion) {
+            var accEl = document.getElementById(activeAccordion);
+            var accIcon = document.getElementById('icon-' + activeAccordion);
+            if (accEl) { accEl.classList.remove('hidden'); accEl.classList.add('flex'); }
+            if (accIcon) accIcon.style.transform = 'rotate(180deg)';
+            var btn = document.querySelector('[onclick="toggleMobileAccordion(\'' + activeAccordion + '\')"]');
+            if (btn) btn.style.color = '#fdc003';
+        }
+    })();
 </script>
 
 <script>

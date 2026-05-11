@@ -130,7 +130,7 @@ Route::get('/informasi/prosedurevakuasi', function () {
 });
 
 //informasi setiap saat
-Route::get('/informasi/asetdaerah', function () {
+Route::get('https://web.balikpapan.go.id/detail/read/58907', function () {
     return view('mega menu.Informasi Setiap Saat.asetdaerah');
 });
 Route::get('/informasi/daftarinformasi', function () {
@@ -154,16 +154,16 @@ Route::get('/informasi/jumlahdilaporkan', function () {
 Route::get('/informasi/jumlahditemukan', function () {
     return view('mega menu.Informasi Setiap Saat.jumlahditemukan');
 });
-Route::get('/informasi/perizinan', function () {
+Route::get('https://oss.go.id/id', function () {
     return view('mega menu.Informasi Setiap Saat.perizinan');
 });
-Route::get('/informasi/perjanjiankerjasama', function () {
+Route::get('https://jdih.balikpapan.go.id/peraturan/mou', function () {
     return view('mega menu.Informasi Setiap Saat.perjanjiankerjasama');
 });
 Route::get('/informasi/rencanakerja', function () {
     return view('mega menu.Informasi Setiap Saat.rencanakerja');
 });
-Route::get('/informasi/rencanastrategis', function () {
+Route::get('https://web.balikpapan.go.id/detail/read/5834', function () {
     return view('mega menu.Informasi Setiap Saat.rencanastrategis');
 });
 Route::get('https://data.balikpapan.go.id/', function () {

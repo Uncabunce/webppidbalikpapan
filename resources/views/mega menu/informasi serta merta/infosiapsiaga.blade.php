@@ -412,10 +412,10 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 <li><a href="/informasi/daftarinformasi" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Daftar Informasi Publik</a></li>
 <li><a href="/informasi/informasiorganisasi" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Informasi Tentang Organisasi, Administrasi Kepegawaian dan Keuangan</a></li>
 <li><a href="/informasi/infopublik" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Informasi Publik</a></li>
-<li><a href="/informasi/perjanjiankerjasama" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Perjanjian Kerja Sama</a></li>
-<li><a href="/informasi/perizinan" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Perizinan</a></li>
-<li><a href="/informasi/asetdaerah" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Aset Daerah</a></li>
-<li><a href="/informasi/rencanastrategis" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Rencana Strategis</a></li>
+<li><a href="https://jdih.balikpapan.go.id/peraturan/mou" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Perjanjian Kerja Sama</a></li>
+<li><a href="https://oss.go.id/id" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Perizinan</a></li>
+<li><a href="https://web.balikpapan.go.id/detail/read/58907" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Aset Daerah</a></li>
+<li><a href="https://web.balikpapan.go.id/detail/read/5834" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Rencana Strategis</a></li>
 <li><a href="/informasi/rencanakerja" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Rencana Kerja Badan Publik</a></li>
 <li><a href="/informasi/jumlahdilaporkan" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Jumlah, Jenis dan Gambaran Pelanggaran yang Dilaporkan Oleh Masyarakat Serta Laporan Penindakannya</a></li>
 <li><a href="/informasi/jumlahditemukan" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Jumlah, Jenis dan Gambaran Umum Pelanggaran yang Ditemukan Dalam Pengawasan Internal Serta Laporan P</a></li>
@@ -538,10 +538,10 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 <a href="https://data.balikpapan.go.id/" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Statistik Daerah</a>
 <a href="/informasi/daftarinformasi" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Daftar Informasi Publik</a>
 <a href="/informasi/informasiorganisasi" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Informasi Tentang Organisasi, Administrasi Kepegawaian dan Keuangan</a>
-<a href="/informasi/perjanjiankerjasama" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Perjanjian Kerja Sama</a>
-<a href="/informasi/perizinan" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Perizinan</a>
-<a href="/informasi/asetdaerah" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Aset Daerah</a>
-<a href="/informasi/rencanastrategis" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Rencana Strategis</a>
+<a href="https://jdih.balikpapan.go.id/peraturan/mou" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Perjanjian Kerja Sama</a>
+<a href="https://oss.go.id/id" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Perizinan</a>
+<a href="https://web.balikpapan.go.id/detail/read/58907" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Aset Daerah</a>
+<a href="https://web.balikpapan.go.id/detail/read/5834" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Rencana Strategis</a>
 <a href="/informasi/rencanakerja" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Rencana Kerja Badan Publik</a>
 <a href="/informasi/jumlahdilaporkan" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Jumlah, Jenis dan Gambaran Pelanggaran yang Dilaporkan Oleh Masyarakat Serta Laporan Penindakannyak</a>
 <a href="/informasi/jumlahditemukan" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Jumlah, Jenis dan Gambaran Umum Pelanggaran yang Ditemukan Dalam Pengawasan Internal Serta Laporan P</a>
@@ -595,8 +595,8 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 <span class="material-symbols-outlined text-base transition-transform duration-300" id="icon-acc-ppid">expand_more</span>
 </button>
 <div id="acc-ppid" class="hidden flex-col bg-white/5 rounded-lg mx-2 mb-2 overflow-hidden">
-<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Badan</a>
-<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container">Dinas</a>
+<a href="https://data.balikpapan.go.id/organization" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Badan</a>
+<a href="https://data.balikpapan.go.id/organization" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container">Dinas</a>
 </div>
 </div>
 <a href="http://ppidbalikpapan.test/kontak" class="flex items-center gap-3 px-3 py-3.5 text-sm font-bold">
@@ -751,58 +751,6 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
                         </object>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <!-- Dokumen Terkait -->
-        <div>
-            <h2 class="text-lg font-headline font-extrabold text-primary mb-4">Dokumen Terkait</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                <a href="/informasi/4upayamitigasi"
-                   class="flex items-center gap-3 bg-white border border-outline-variant/30 rounded-xl px-5 py-4 hover:border-primary hover:shadow-sm transition-all group">
-                    <span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">health_and_safety</span>
-                    <div>
-                        <p class="text-sm font-semibold text-on-surface group-hover:text-primary transition-colors">4 Upaya Mitigasi</p>
-                        <p class="text-xs text-outline">Langkah mitigasi risiko bencana</p>
-                    </div>
-                    <span class="material-symbols-outlined text-outline ml-auto text-sm">chevron_right</span>
-                </a>
-                <a href="/informasi/prosedurevakuasi"
-                   class="flex items-center gap-3 bg-white border border-outline-variant/30 rounded-xl px-5 py-4 hover:border-primary hover:shadow-sm transition-all group">
-                    <span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">directions_run</span>
-                    <div>
-                        <p class="text-sm font-semibold text-on-surface group-hover:text-primary transition-colors">Prosedur Evakuasi Darurat Bencana</p>
-                        <p class="text-xs text-outline">Tata cara evakuasi keadaan darurat</p>
-                    </div>
-                    <span class="material-symbols-outlined text-outline ml-auto text-sm">chevron_right</span>
-                </a>
-                <a href="/informasi/prosedur-peringatan"
-                   class="flex items-center gap-3 bg-white border border-outline-variant/30 rounded-xl px-5 py-4 hover:border-primary hover:shadow-sm transition-all group">
-                    <span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">warning</span>
-                    <div>
-                        <p class="text-sm font-semibold text-on-surface group-hover:text-primary transition-colors">Prosedur Peringatan Dini</p>
-                        <p class="text-xs text-outline">Prosedur evakuasi keadaan darurat di kantor badan publik</p>
-                    </div>
-                    <span class="material-symbols-outlined text-outline ml-auto text-sm">chevron_right</span>
-                </a>
-                <a href="/informasi/infopenutupanjalan"
-                   class="flex items-center gap-3 bg-white border border-outline-variant/30 rounded-xl px-5 py-4 hover:border-primary hover:shadow-sm transition-all group">
-                    <span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">do_not_enter</span>
-                    <div>
-                        <p class="text-sm font-semibold text-on-surface group-hover:text-primary transition-colors">Informasi Penutupan Jalan</p>
-                        <p class="text-xs text-outline">Informasi serta merta penutupan jalan</p>
-                    </div>
-                    <span class="material-symbols-outlined text-outline ml-auto text-sm">chevron_right</span>
-                </a>
-            </div>
-        </div>
-
-        <!-- Catatan -->
-        <div class="bg-surface-container-low rounded-2xl border border-outline-variant/20 px-6 py-5 flex gap-4 items-start">
-            <span class="material-symbols-outlined text-outline mt-0.5">info</span>
-            <div>
-                <p class="text-sm font-semibold text-on-surface mb-1">Tentang Dokumen Ini</p>
-                <p class="text-xs text-outline leading-relaxed">Informasi Tentang Siap Siaga Bencana merupakan informasi serta merta yang wajib diumumkan segera oleh Pemerintah Kota Balikpapan karena berkaitan langsung dengan keselamatan dan ketertiban umum masyarakat. Dokumen ini berisi panduan dan informasi kesiapsiagaan menghadapi bencana di Kota Balikpapan sesuai dengan ketentuan Undang-Undang No. 14 Tahun 2008 tentang Keterbukaan Informasi Publik.</p>
             </div>
         </div>
 
@@ -984,6 +932,45 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
             if (icon) icon.style.transform = 'rotate(180deg)';
         }
     }
+
+    // Active highlight mobile menu — berlaku di semua page
+    (function() {
+        var full = window.location.pathname.replace(/\/$/, '');
+
+        // Highlight Beranda hanya kalau di root
+        var berandaLink = document.querySelector('#mobile-menu nav > a[href]');
+        if (berandaLink) {
+            var berandaPath = berandaLink.getAttribute('href').replace(/^https?:\/\/[^\/]+/, '').replace(/\/$/, '');
+            if (full === berandaPath || full === '') {
+                berandaLink.classList.add('text-secondary-container');
+            } else {
+                berandaLink.classList.remove('text-secondary-container');
+            }
+        }
+
+        // Highlight link aktif di dalam accordion
+        var activeAccordion = null;
+        document.querySelectorAll('#mobile-menu a[href]').forEach(function(link) {
+            var href = link.getAttribute('href').replace(/\/$/, '');
+            var linkPath = href.replace(/^https?:\/\/[^\/]+/, '');
+            if (linkPath === full && linkPath !== '' && linkPath !== '/') {
+                link.classList.add('text-secondary-container', 'font-bold', 'bg-white/10', 'rounded');
+                link.classList.remove('text-slate-300');
+                var parent = link.closest('[id^="acc-"]');
+                if (parent) activeAccordion = parent.id;
+            }
+        });
+
+        // Auto-buka accordion yang berisi link aktif
+        if (activeAccordion) {
+            var accEl = document.getElementById(activeAccordion);
+            var accIcon = document.getElementById('icon-' + activeAccordion);
+            if (accEl) { accEl.classList.remove('hidden'); accEl.classList.add('flex'); }
+            if (accIcon) accIcon.style.transform = 'rotate(180deg)';
+            var btn = document.querySelector('[onclick="toggleMobileAccordion(\'' + activeAccordion + '\')"]');
+            if (btn) btn.style.color = '#fdc003';
+        }
+    })();
 </script>
 
 <script>

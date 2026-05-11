@@ -412,10 +412,10 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 <li><a href="/informasi/daftarinformasi" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Daftar Informasi Publik</a></li>
 <li><a href="/informasi/informasiorganisasi" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Informasi Tentang Organisasi, Administrasi Kepegawaian dan Keuangan</a></li>
 <li><a href="/informasi/infopublik" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Informasi Publik</a></li>
-<li><a href="/informasi/perjanjiankerjasama" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Perjanjian Kerja Sama</a></li>
-<li><a href="/informasi/perizinan" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Perizinan</a></li>
-<li><a href="/informasi/asetdaerah" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Aset Daerah</a></li>
-<li><a href="/informasi/rencanastrategis" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Rencana Strategis</a></li>
+<li><a href="https://jdih.balikpapan.go.id/peraturan/mou" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Perjanjian Kerja Sama</a></li>
+<li><a href="https://oss.go.id/id" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Perizinan</a></li>
+<li><a href="https://web.balikpapan.go.id/detail/read/58907" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Aset Daerah</a></li>
+<li><a href="https://web.balikpapan.go.id/detail/read/5834" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Rencana Strategis</a></li>
 <li><a href="/informasi/rencanakerja" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Rencana Kerja Badan Publik</a></li>
 <li><a href="/informasi/jumlahdilaporkan" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Jumlah, Jenis dan Gambaran Pelanggaran yang Dilaporkan Oleh Masyarakat Serta Laporan Penindakannya</a></li>
 <li><a href="/informasi/jumlahditemukan" class="text-[11px] text-slate-600 hover:text-primary block py-0.5 leading-snug">Jumlah, Jenis dan Gambaran Umum Pelanggaran yang Ditemukan Dalam Pengawasan Internal Serta Laporan P</a></li>
@@ -538,10 +538,10 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 <a href="https://data.balikpapan.go.id/" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Statistik Daerah</a>
 <a href="/informasi/daftarinformasi" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Daftar Informasi Publik</a>
 <a href="/informasi/informasiorganisasi" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Informasi Tentang Organisasi, Administrasi Kepegawaian dan Keuangan</a>
-<a href="/informasi/perjanjiankerjasama" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Perjanjian Kerja Sama</a>
-<a href="/informasi/perizinan" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Perizinan</a>
-<a href="/informasi/asetdaerah" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Aset Daerah</a>
-<a href="/informasi/rencanastrategis" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Rencana Strategis</a>
+<a href="https://jdih.balikpapan.go.id/peraturan/mou" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Perjanjian Kerja Sama</a>
+<a href="https://oss.go.id/id" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Perizinan</a>
+<a href="https://web.balikpapan.go.id/detail/read/58907" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Aset Daerah</a>
+<a href="https://web.balikpapan.go.id/detail/read/5834" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Rencana Strategis</a>
 <a href="/informasi/rencanakerja" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Rencana Kerja Badan Publik</a>
 <a href="/informasi/jumlahdilaporkan" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Jumlah, Jenis dan Gambaran Pelanggaran yang Dilaporkan Oleh Masyarakat Serta Laporan Penindakannyak</a>
 <a href="/informasi/jumlahditemukan" class="block px-5 py-2 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Jumlah, Jenis dan Gambaran Umum Pelanggaran yang Ditemukan Dalam Pengawasan Internal Serta Laporan P</a>
@@ -595,8 +595,8 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 <span class="material-symbols-outlined text-base transition-transform duration-300" id="icon-acc-ppid">expand_more</span>
 </button>
 <div id="acc-ppid" class="hidden flex-col bg-white/5 rounded-lg mx-2 mb-2 overflow-hidden">
-<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Badan</a>
-<a href="#" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container">Dinas</a>
+<a href="https://data.balikpapan.go.id/organization" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container border-b border-white/5">Badan</a>
+<a href="https://data.balikpapan.go.id/organization" class="block px-5 py-2.5 text-xs text-slate-300 hover:text-secondary-container">Dinas</a>
 </div>
 </div>
 <a href="http://ppidbalikpapan.test/kontak" class="flex items-center gap-3 px-3 py-3.5 text-sm font-bold">
@@ -606,12 +606,244 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 </div>
 </header>
 <main class="bg-surface min-h-screen">
-    <!-- ================================ -->
-    <!-- KONTEN HALAMAN DI SINI          -->
-    <!-- ================================ -->
-    <div class="max-w-7xl mx-auto px-4 md:px-6 py-10">
-        <p class="text-on-surface-variant text-center text-sm">Konten halaman</p>
+    <!-- 1. Dasar Hukum -->
+  <div class="mb-12">
+    <div class="section-tag">01</div>
+    <h2 class="font-headline font-extrabold text-primary text-xl md:text-2xl mb-6">Dasar Hukum</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+ 
+      <div class="info-card flex flex-col gap-3">
+        <div class="info-icon">
+          <span class="material-symbols-outlined text-primary text-2xl">gavel</span>
+        </div>
+        <div>
+          <p class="font-headline font-bold text-primary text-xs mb-1">UU No. 14 Tahun 2008</p>
+          <p class="text-slate-600 text-xs leading-relaxed">Keterbukaan Informasi Publik</p>
+        </div>
+      </div>
+ 
+      <div class="info-card flex flex-col gap-3">
+        <div class="info-icon">
+          <span class="material-symbols-outlined text-primary text-2xl">description</span>
+        </div>
+        <div>
+          <p class="font-headline font-bold text-primary text-xs mb-1">PP No. 61 Tahun 2010</p>
+          <p class="text-slate-600 text-xs leading-relaxed">Pelaksanaan UU No. 14/2008 Tentang KIP</p>
+        </div>
+      </div>
+ 
+      <div class="info-card flex flex-col gap-3">
+        <div class="info-icon">
+          <span class="material-symbols-outlined text-primary text-2xl">policy</span>
+        </div>
+        <div>
+          <p class="font-headline font-bold text-primary text-xs mb-1">Peraturan KI No. 1 Tahun 2010</p>
+          <p class="text-slate-600 text-xs leading-relaxed">Standar Layanan Informasi Publik</p>
+        </div>
+      </div>
+ 
+      <div class="info-card flex flex-col gap-3">
+        <div class="info-icon">
+          <span class="material-symbols-outlined text-primary text-2xl">account_balance</span>
+        </div>
+        <div>
+          <p class="font-headline font-bold text-primary text-xs mb-1">Permendagri No. 3 Tahun 2017</p>
+          <p class="text-slate-600 text-xs leading-relaxed">Pedoman Pengelolaan Pelayanan Informasi dan Dokumentasi</p>
+        </div>
+      </div>
+ 
     </div>
+  </div>
+ 
+  <!-- 2. Persyaratan -->
+  <div class="mb-12">
+    <div class="section-tag">02</div>
+    <h2 class="font-headline font-extrabold text-primary text-xl md:text-2xl mb-6">Persyaratan Pelayanan</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+ 
+      <div class="info-card">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="info-icon" style="margin-bottom:0;">
+            <span class="material-symbols-outlined text-primary text-2xl">assignment</span>
+          </div>
+          <div>
+            <p class="font-headline font-bold text-primary text-sm">Persyaratan Teknis</p>
+            <p class="text-slate-500 text-xs">Wajib dipenuhi sebelum pengajuan</p>
+          </div>
+        </div>
+        <div class="req-block">
+          <ul>
+            <li>Pemohon wajib mengisi formulir permohonan informasi yang tersedia di meja pelayanan atau melalui situs web <strong>ppid.balikpapan.go.id</strong></li>
+          </ul>
+        </div>
+      </div>
+ 
+      <div class="info-card">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="info-icon" style="margin-bottom:0;">
+            <span class="material-symbols-outlined text-primary text-2xl">badge</span>
+          </div>
+          <div>
+            <p class="font-headline font-bold text-primary text-sm">Persyaratan Administrasi</p>
+            <p class="text-slate-500 text-xs">Dokumen identitas yang diperlukan</p>
+          </div>
+        </div>
+        <div class="req-block">
+          <ul>
+            <li>Kartu Tanda Penduduk (KTP) — untuk pemohon perorangan</li>
+            <li>Akte pengesahan badan hukum organisasi/lembaga — untuk pemohon atas nama organisasi/lembaga</li>
+          </ul>
+        </div>
+      </div>
+ 
+    </div>
+  </div>
+ 
+  <!-- 3. Prosedur -->
+  <div class="mb-12">
+    <div class="section-tag">03</div>
+    <h2 class="font-headline font-extrabold text-primary text-xl md:text-2xl mb-6">Prosedur</h2>
+    <div class="flex flex-col max-w-2xl">
+ 
+      <!-- Step 1 -->
+      <div class="flex items-start gap-4">
+        <div class="flex flex-col items-center">
+          <div class="step-num">1</div>
+          <div class="step-line mt-1"></div>
+        </div>
+        <div class="step-card flex-1 mb-0" style="margin-bottom:0;">
+          <p class="font-headline font-bold text-primary text-sm mb-1">Isi Formulir Permohonan</p>
+          <p class="text-slate-600 text-xs leading-relaxed">Pemohon mengisi formulir permohonan informasi di meja pelayanan atau melalui situs web <span class="text-primary font-semibold">ppid.balikpapan.go.id</span></p>
+        </div>
+      </div>
+ 
+      <div style="height:8px;"></div>
+ 
+      <!-- Step 2 -->
+      <div class="flex items-start gap-4">
+        <div class="flex flex-col items-center">
+          <div class="step-num">2</div>
+          <div class="step-line mt-1"></div>
+        </div>
+        <div class="step-card flex-1">
+          <p class="font-headline font-bold text-primary text-sm mb-1">Registrasi & Verifikasi</p>
+          <p class="text-slate-600 text-xs leading-relaxed">Petugas pelayanan meregister permohonan yang sudah memenuhi syarat, kemudian diserahkan ke Ketua PPID.</p>
+        </div>
+      </div>
+ 
+      <div style="height:8px;"></div>
+ 
+      <!-- Step 3 -->
+      <div class="flex items-start gap-4">
+        <div class="flex flex-col items-center">
+          <div class="step-num">3</div>
+        </div>
+        <div class="step-card flex-1">
+          <p class="font-headline font-bold text-primary text-sm mb-1">Jawaban atas Permohonan</p>
+          <p class="text-slate-600 text-xs leading-relaxed mb-3">
+            Dalam waktu <strong>10 hari kerja</strong> sejak permohonan diterima dan memenuhi syarat, Ketua PPID memberikan jawaban. Jika proses masih membutuhkan tambahan waktu, akan diterbitkan surat pemberitahuan penambahan waktu selama <strong>7 hari kerja</strong>.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="inline-flex items-center gap-1.5 bg-primary/10 text-primary rounded-full px-3 py-1 text-xs font-bold font-headline">
+              <span class="material-symbols-outlined text-sm">schedule</span> 10 Hari Kerja
+            </span>
+            <span class="inline-flex items-center gap-1.5 bg-secondary-container/30 text-secondary rounded-full px-3 py-1 text-xs font-bold font-headline">
+              <span class="material-symbols-outlined text-sm">add_circle</span> + 7 Hari Kerja (jika perlu)
+            </span>
+          </div>
+        </div>
+      </div>
+ 
+    </div>
+  </div>
+ 
+  <!-- Info Grid: Waktu, Biaya, Produk, Jaminan -->
+  <div class="mb-12">
+    <div class="section-tag">04 – 07</div>
+    <h2 class="font-headline font-extrabold text-primary text-xl md:text-2xl mb-6">Ketentuan Pelayanan</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+ 
+      <div class="info-card text-center flex flex-col items-center gap-3">
+        <div class="info-icon mx-auto">
+          <span class="material-symbols-outlined text-primary text-2xl">timer</span>
+        </div>
+        <p class="font-headline font-bold text-slate-500 text-[10px] uppercase tracking-widest">Waktu Penyelesaian</p>
+        <p class="font-headline font-extrabold text-primary text-lg leading-tight">10 + 7<br><span class="text-sm font-bold text-slate-400">Hari Kerja</span></p>
+      </div>
+ 
+      <div class="info-card text-center flex flex-col items-center gap-3" style="border-color:#fdc00340; background: linear-gradient(135deg,#fffef0,#fff8d6);">
+        <div style="background:#fdc00330;" class="info-icon mx-auto">
+          <span class="material-symbols-outlined text-secondary text-2xl">payments</span>
+        </div>
+        <p class="font-headline font-bold text-slate-500 text-[10px] uppercase tracking-widest">Biaya</p>
+        <p class="font-headline font-extrabold text-secondary text-2xl">GRATIS</p>
+        <p class="text-slate-500 text-xs">Tanpa biaya apapun</p>
+      </div>
+ 
+      <div class="info-card flex flex-col gap-3">
+        <div class="info-icon">
+          <span class="material-symbols-outlined text-primary text-2xl">folder_special</span>
+        </div>
+        <p class="font-headline font-bold text-slate-500 text-[10px] uppercase tracking-widest">Produk Pelayanan</p>
+        <p class="text-slate-700 text-sm font-semibold leading-snug">Permohonan Informasi dan Dokumentasi Publik</p>
+      </div>
+ 
+      <div class="info-card flex flex-col gap-3">
+        <div class="info-icon">
+          <span class="material-symbols-outlined text-primary text-2xl">verified_user</span>
+        </div>
+        <p class="font-headline font-bold text-slate-500 text-[10px] uppercase tracking-widest">Jaminan Pelayanan</p>
+        <p class="text-slate-700 text-xs leading-relaxed">Terlayaninya permohonan informasi publik sesuai UU No. 14 Tahun 2008 tentang Keterbukaan Informasi Publik.</p>
+      </div>
+ 
+    </div>
+  </div>
+ 
+  <!-- 8. Pengaduan -->
+  <div class="mb-4">
+    <div class="section-tag">08</div>
+    <h2 class="font-headline font-extrabold text-primary text-xl md:text-2xl mb-6">Penanganan Pengaduan, Saran &amp; Masukan</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+ 
+      <div class="info-card">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="info-icon" style="margin-bottom:0; background:#e8f0fd;">
+            <span class="material-symbols-outlined text-primary text-2xl">mail</span>
+          </div>
+          <div>
+            <p class="font-headline font-bold text-primary text-sm">Pos Elektronik</p>
+            <p class="text-slate-500 text-xs">Kirimkan pertanyaan atau aduan Anda</p>
+          </div>
+        </div>
+        <a href="mailto:ppid@balikpapan.go.id" class="contact-badge" style="background:#f0f4fb;border-color:#c5d7f0;text-decoration:none;">
+          <span class="material-symbols-outlined text-primary text-xl">email</span>
+          <span class="text-primary font-semibold text-sm break-all">ppid@balikpapan.go.id</span>
+        </a>
+      </div>
+ 
+      <div class="info-card">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="info-icon" style="margin-bottom:0; background:#f0fdf4;">
+            <span class="material-symbols-outlined text-green-700 text-2xl">chat</span>
+          </div>
+          <div>
+            <p class="font-headline font-bold text-primary text-sm">WhatsApp / Pesan Singkat</p>
+            <p class="text-slate-500 text-xs">Layanan aduan SITANGGAP</p>
+          </div>
+        </div>
+        <a href="https://wa.me/628115440542" target="_blank" class="contact-badge" style="background:#f0fdf4;border-color:#bbf7d0;text-decoration:none;">
+          <span class="material-symbols-outlined text-green-700 text-xl">phone_iphone</span>
+          <div>
+            <p class="text-green-800 font-bold text-sm">0811-544-0542</p>
+            <p class="text-green-600 text-xs">SITANGGAP — Layanan Aduan</p>
+          </div>
+        </a>
+      </div>
+ 
+    </div>
+  </div>
+</div><!-- end main content -->
+
 </main>
 <footer id="kontak" class="bg-slate-800 dark:bg-slate-600 w-full pt-16 md:pt-20 pb-8 border-t border-slate-600 dark:border-slate-800">
 <div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto px-4 md:px-6 font-['Inter'] text-sm leading-relaxed">
@@ -789,6 +1021,45 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
             if (icon) icon.style.transform = 'rotate(180deg)';
         }
     }
+
+    // Active highlight mobile menu — berlaku di semua page
+    (function() {
+        var full = window.location.pathname.replace(/\/$/, '');
+
+        // Highlight Beranda hanya kalau di root
+        var berandaLink = document.querySelector('#mobile-menu nav > a[href]');
+        if (berandaLink) {
+            var berandaPath = berandaLink.getAttribute('href').replace(/^https?:\/\/[^\/]+/, '').replace(/\/$/, '');
+            if (full === berandaPath || full === '') {
+                berandaLink.classList.add('text-secondary-container');
+            } else {
+                berandaLink.classList.remove('text-secondary-container');
+            }
+        }
+
+        // Highlight link aktif di dalam accordion
+        var activeAccordion = null;
+        document.querySelectorAll('#mobile-menu a[href]').forEach(function(link) {
+            var href = link.getAttribute('href').replace(/\/$/, '');
+            var linkPath = href.replace(/^https?:\/\/[^\/]+/, '');
+            if (linkPath === full && linkPath !== '' && linkPath !== '/') {
+                link.classList.add('text-secondary-container', 'font-bold', 'bg-white/10', 'rounded');
+                link.classList.remove('text-slate-300');
+                var parent = link.closest('[id^="acc-"]');
+                if (parent) activeAccordion = parent.id;
+            }
+        });
+
+        // Auto-buka accordion yang berisi link aktif
+        if (activeAccordion) {
+            var accEl = document.getElementById(activeAccordion);
+            var accIcon = document.getElementById('icon-' + activeAccordion);
+            if (accEl) { accEl.classList.remove('hidden'); accEl.classList.add('flex'); }
+            if (accIcon) accIcon.style.transform = 'rotate(180deg)';
+            var btn = document.querySelector('[onclick="toggleMobileAccordion(\'' + activeAccordion + '\')"]');
+            if (btn) btn.style.color = '#fdc003';
+        }
+    })();
 </script>
 
 <script>
