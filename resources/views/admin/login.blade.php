@@ -4,6 +4,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>PPID Balikpapan Admin Login</title>
+<link rel="icon" type="png" href="{{ asset('images/kota balikpapan.png') }}">
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
@@ -99,9 +100,13 @@
 </head>
 <body class="bg-surface font-body text-on-surface min-h-screen flex items-center justify-center p-6 relative overflow-hidden">
 <!-- Background Layer: Subtle blurred city background -->
-<div class="absolute inset-0 z-0 bg-gradient-to-br from-primary via-primary to-primary-container">
+<div class="absolute inset-0 z-0">
+<!-- Foto kota Balikpapan sebagai background -->
+<img src="/bppbrmn.png" alt="" class="w-full h-full object-cover"/>
+<!-- Dark overlay supaya form tetap terbaca -->
+<div class="absolute inset-0 bg-primary/70 backdrop-blur-sm"></div>
 <!-- Batik pattern texture overlay -->
-<div class="absolute inset-0 batik-overlay z-20" style="opacity: 0.08;"></div>
+<div class="absolute inset-0 z-20" style="opacity: 0.06; background-image: url('/batik dayak.png'); background-repeat: repeat; background-size: 300px;"></div>
 </div>
 <!-- Login Card Container -->
 <main class="relative z-30 w-full max-w-[480px]">
@@ -128,10 +133,10 @@
           </label>
 <div class="relative group">
 <div class="absolute left-4 top-1/2 -translate-y-1/2 text-outline group-focus-within:text-primary transition-colors">
-<span class="material-symbols-outlined" data-icon="mail"></span>
+<span class="material-symbols-outlined">person</span>
 </div>
-<input class="w-full pl-12 pr-4 py-4 bg-surface-container-high border-none rounded-xl text-on-surface placeholder:text-outline/50 focus:ring-0 focus:bg-surface-container-highest transition-all duration-300" id="username" name="username" type="username" />
-<div class="absolute bottom-0 left-0 h-0.5 bg-primary w-0 group-focus-within:w-full transition-all duration-500"></div>
+<input class="w-full pl-12 pr-4 py-4 bg-surface-container-high border-none rounded-xl text-on-surface placeholder:text-outline/50 focus:ring-0 focus:bg-surface-container-highest transition-all duration-300" id="username" name="username" type="text" placeholder="Masukkan username" />
+<div class="absolute bottom-0 left-0 h-0.5 bg-primary w-0 group-focus-within:w-full transition-all duration-500 rounded-full"></div>
 </div>
 </div>
 <!-- Password Field -->
@@ -140,31 +145,60 @@
 <label class="font-label text-xs font-semibold uppercase tracking-wider text-on-surface-variant" for="password">
               Password
             </label>
-<a class="text-xs font-bold text-primary hover:text-primary-container transition-colors" href="#">
-              Forgot Password?
-            </a>
 </div>
-@if($errors->any())
-    <div style="background: red; color: white; padding: 10px;">
-        {{ $errors->first() }}
+@if($errors->any() || session('error'))
+    <div class="bg-error/10 border border-error/30 text-error text-sm rounded-xl px-4 py-3 flex items-center gap-2">
+        <span class="material-symbols-outlined text-base" style="font-variation-settings:'FILL' 1">error</span>
+        <span>{{ session('error') ?? $errors->first() }}</span>
     </div>
 @endif
+
+<script>
+document.querySelector('form').addEventListener('submit', function(e) {
+    var username = document.getElementById('username').value.trim();
+    var password = document.getElementById('password').value.trim();
+    var errorBox = document.getElementById('login-error');
+    var errorMsg = document.getElementById('login-error-msg');
+
+    if (!username || !password) {
+        e.preventDefault();
+        errorMsg.textContent = 'Username dan password tidak boleh kosong.';
+        errorBox.classList.remove('hidden');
+        errorBox.classList.add('flex');
+        return;
+    }
+
+    // Sembunyikan error kalau sudah diisi
+    errorBox.classList.add('hidden');
+    errorBox.classList.remove('flex');
+});
+
+// Kalau dari server ada error (session/withErrors), langsung tampil
+@if($errors->any() || session('error'))
+    document.getElementById('login-error').classList.remove('hidden');
+    document.getElementById('login-error').classList.add('flex');
+    document.getElementById('login-error-msg').textContent = "{{ session('error') ?? $errors->first() }}";
+@endif
+</script>
 <div class="relative group">
 <div class="absolute left-4 top-1/2 -translate-y-1/2 text-outline group-focus-within:text-primary transition-colors">
-<span class="material-symbols-outlined" data-icon="lock">lock</span>
+<span class="material-symbols-outlined">lock</span>
 </div>
-<input class="w-full pl-12 pr-12 py-4 bg-surface-container-high border-none rounded-xl text-on-surface placeholder:text-outline/50 focus:ring-0 focus:bg-surface-container-highest transition-all duration-300" name="password" id="password" placeholder="••••••••" required="" type="password"/>
-<button class="absolute right-4 top-1/2 -translate-y-1/2 text-outline hover:text-on-surface transition-colors" type="button">
-<span class="material-symbols-outlined" data-icon="visibility">visibility</span>
-</button>
-<div class="absolute bottom-0 left-0 h-0.5 bg-primary w-0 group-focus-within:w-full transition-all duration-500"></div>
+<input class="w-full pl-12 pr-4 py-4 bg-surface-container-high border-none rounded-xl text-on-surface placeholder:text-outline/50 focus:ring-0 focus:bg-surface-container-highest transition-all duration-300" name="password" id="password" placeholder="Masukkan password" required="" type="password"/>
+<div class="absolute bottom-0 left-0 h-0.5 bg-primary w-0 group-focus-within:w-full transition-all duration-500 rounded-full"></div>
 </div>
 </div>
 <!-- Submit Button -->
-<button class="w-full py-4 bg-primary text-on-primary rounded-xl font-display font-bold text-base shadow-lg shadow-primary/20 hover:bg-primary-container hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 flex items-center justify-center gap-2 mt-8" type="submit">
+<button class="w-full py-4 bg-primary text-on-primary rounded-xl font-display font-bold text-base shadow-lg shadow-primary/20 hover:bg-primary-container hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 flex items-center justify-center gap-2 mt-8" type="submit" id="login-btn">
           Sign In to Dashboard
           <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
 </button>
+
+<!-- Error message box (hidden by default) -->
+<div id="login-error" class="hidden w-full bg-error/10 border border-error/30 text-error text-sm rounded-xl px-4 py-3 flex items-center gap-2 mt-4">
+    <span class="material-symbols-outlined text-base" style="font-variation-settings:'FILL' 1">error</span>
+    <span id="login-error-msg">Username atau password salah. Silakan coba lagi.</span>
+</div>
 </form>
 <!-- Footer Help -->
 <div class="mt-10 pt-8 border-t border-outline-variant/30 w-full text-center">

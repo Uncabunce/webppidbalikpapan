@@ -606,12 +606,9 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 </div>
 </header>
 <main class="bg-surface min-h-screen">
-    <!-- ================================ -->
-    <!-- KONTEN HALAMAN DI SINI          -->
-    <!-- ================================ -->
     <div class="max-w-7xl mx-auto px-4 md:px-6 py-10">
         <!-- Section: Lokasi Balai Kota -->
-        <div class="max-w-7xl mx-auto px-4 md:px-6 py-12">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 py-4">
 
             <!-- Header -->
             <div class="mb-8">
@@ -757,7 +754,7 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
                 sv.classList.remove('hidden');
                 tabPeta.className = inactiveClass;
                 tabSV.className = activeClass;
-                label.textContent = '🏛️ Street View — Tampilan langsung dari depan kantor';
+                label.textContent = 'Tampilan langsung dari depan kantor';
             }
         }
     </script>
