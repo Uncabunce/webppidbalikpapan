@@ -3,7 +3,7 @@
 <html lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>PPID Balikpapan Admin Login</title>
+<title>Login Admin</title>
 <link rel="icon" type="png" href="{{ asset('images/kota balikpapan.png') }}">
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
@@ -109,22 +109,22 @@
 <div class="absolute inset-0 z-20" style="opacity: 0.06; background-image: url('/batik dayak.png'); background-repeat: repeat; background-size: 300px;"></div>
 </div>
 <!-- Login Card Container -->
-<main class="relative z-30 w-full max-w-[480px]">
-<div class="glass-effect p-8 md:p-12 rounded-full ambient-shadow border border-white/20 flex flex-col items-center">
+<main class="relative z-30 w-full max-w-[400px]">
+<div class="glass-effect p-6 md:p-8 rounded-full ambient-shadow border border-white/20 flex flex-col items-center">
 <!-- Logo Section -->
-<div class="mb-10 flex flex-col items-center text-center">
-<div class="w-24 h-24 mb-6 relative">
-<img  src="/images/Kota Balikpapan.png" alt="Balikpapan City Crest" class="w-full h-full object-contain"/>
+<div class="mb-6 flex flex-col items-center text-center">
+<div class="w-16 h-16 mb-4 relative">
+<img src="/images/Kota Balikpapan.png" alt="Balikpapan City Crest" class="w-full h-full object-contain"/>
 </div>
-<h1 class="font-display font-extrabold text-2xl md:text-3xl tracking-tight text-primary">
+<h1 class="font-display font-extrabold text-xl md:text-2xl tracking-tight text-primary">
           Login Admin
         </h1>
-<p class="font-label text-sm text-outline mt-1 font-medium">
+<p class="font-label text-xs text-outline mt-1 font-medium">
           PPID Balikpapan Admin Console
         </p>
 </div>
 <!-- Form Section -->
-<form class="w-full space-y-6 action="#" method="POST">
+<form class="w-full space-y-4 action="#" method="POST">
     @csrf
 <!-- Username Field -->
 <div class="space-y-2">
@@ -189,8 +189,8 @@ document.querySelector('form').addEventListener('submit', function(e) {
 </div>
 </div>
 <!-- Submit Button -->
-<button class="w-full py-4 bg-primary text-on-primary rounded-xl font-display font-bold text-base shadow-lg shadow-primary/20 hover:bg-primary-container hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 flex items-center justify-center gap-2 mt-8" type="submit" id="login-btn">
-          Sign In to Dashboard
+<button class="w-full py-3 bg-primary text-on-primary rounded-xl font-display font-bold text-sm shadow-lg shadow-primary/20 hover:bg-primary-container hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 flex items-center justify-center gap-2 mt-4" type="submit" id="login-btn">
+          Log In
           <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
 </button>
 
@@ -200,26 +200,10 @@ document.querySelector('form').addEventListener('submit', function(e) {
     <span id="login-error-msg">Username atau password salah. Silakan coba lagi.</span>
 </div>
 </form>
-<!-- Footer Help -->
-<div class="mt-10 pt-8 border-t border-outline-variant/30 w-full text-center">
-<p class="font-label text-sm text-on-surface-variant">
-          Authorized personnel only. For access requests, please contact the 
-          <a class="text-primary font-semibold underline decoration-primary/30 underline-offset-4 hover:decoration-primary transition-all" href="#">
-            System Administrator
-          </a>.
-        </p>
-</div>
-</div>
-<!-- Decoration Element: Asymmetric image overlap -->
-<div class="hidden lg:block absolute -right-24 -bottom-16 w-48 h-48 rounded-full overflow-hidden ambient-shadow border-4 border-white z-40 transform rotate-12">
-<img alt="" class="w-full h-full object-cover" data-alt="A close-up, high-quality portrait of a friendly and professional civic administrator in Balikpapan, smiling warmly while working in a bright, modern office environment. The lighting is soft and natural, pouring in from a nearby window, creating a human-centric and approachable mood. The color palette is composed of clean whites, soft greys, and deep blue accents." src="https://lh3.googleusercontent.com/aida/ADBb0uhsjyjs4XSrzoaMfxVFqFqUJnytMs9UXAP5iCVtzpG1-sra_YHtr-XI6JoPAWaGGxfPC-eV6y9iL0nrI4M1GZIYMzfOvgM8ly3MGMIdkUDKaLU3J-9uDU7XJTe5eGCgbPwiYkJAUg3hsB4UulqbH_YCBrjLqSkWbwQqpMmOy3EkelFqklTFK3mId1Vnoj7dqNkaM7_GXpzbMLMWwXztmgHkiIGDDBqB0WDpCooj7JMF-z9Cfr-LhCSULxa3tMNF3PKvssrP5lhB3Uk"/>
-</div>
 </main>
 <!-- Global Footer Branding -->
 <footer class="absolute bottom-8 left-0 right-0 text-center z-30">
 <div class="flex items-center justify-center gap-3 text-white/60">
-<span class="material-symbols-outlined text-sm" data-icon="verified_user" style="font-variation-settings: 'FILL' 1;">verified_user</span>
-<span class="text-xs font-label font-medium tracking-widest uppercase">Secured Government Portal © 2024 Balikpapan City</span>
 </div>
 </footer>
 </body></html>

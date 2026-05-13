@@ -41,7 +41,9 @@ class News extends Model
 
         while (
             static::where('slug', $slug)
-                ->when($ignoreId, fn($q) => $q->where('id', '!=', $ignoreId))
+                ->when($ignoreId, function ($q, $ignoreId) {
+                    return $q->where('id', '!=', $ignoreId);
+                })
                 ->exists()
         ) {
             $slug = $original . '-' . $count++;
