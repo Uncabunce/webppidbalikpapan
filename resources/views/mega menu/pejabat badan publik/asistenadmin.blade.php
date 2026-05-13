@@ -665,7 +665,6 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
       <div class="ppid-badge">Pejabat Badan Publik</div>
       <p class="ppid-name">Drs. ZULKIPLI, M.Si</p>
       <p class="ppid-title">Asisten Administrasi Daerah &mdash; Pemerintah Kota Balikpapan</p>
-      <p class="photo-note">* Foto belum tersedia — unggah foto untuk menampilkannya</p>
     </div>
   </div>
 

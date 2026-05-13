@@ -607,7 +607,7 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 </header>
 <main class="bg-surface min-h-screen">
     <div class="max-w-7xl mx-auto px-4 md:px-6 py-10">
-        <p class="text-on-surface-variant text-center text-sm">Konten halaman</p>
+        <p class="text-on-surface-variant text-center text-sm">*Profil belum tersedia</p>
     </div>
 </main>
 <footer id="kontak" class="bg-slate-800 dark:bg-slate-600 w-full pt-16 md:pt-20 pb-8 border-t border-slate-600 dark:border-slate-800">
