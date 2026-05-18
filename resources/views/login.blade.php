@@ -84,7 +84,8 @@ tailwind.config = {
 
     {{-- Form --}}
     <div class="w-full space-y-4">
-        <form wire:submit="authenticate" class="w-full space-y-4">
+    <form action="/sawit/login" method="POST" class="w-full space-y-4">
+        @csrf
 
             {{-- Username --}}
             <div class="space-y-2">
@@ -96,7 +97,7 @@ tailwind.config = {
                         <span class="material-symbols-outlined">person</span>
                     </div>
                     <input
-                        wire:model="data.email"
+                        name="username"
                         type="text"
                         placeholder="Masukkan username"
                         class="w-full pl-12 pr-4 py-4 bg-surface-container-high border-none rounded-xl text-on-surface placeholder:text-outline/50 focus:ring-0 focus:bg-surface-container-highest transition-all duration-300"
@@ -115,7 +116,7 @@ tailwind.config = {
                         <span class="material-symbols-outlined">lock</span>
                     </div>
                     <input
-                        wire:model="data.password"
+                        name="password"
                         type="password"
                         placeholder="Masukkan password"
                         required

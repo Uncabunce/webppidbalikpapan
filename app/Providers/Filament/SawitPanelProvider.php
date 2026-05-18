@@ -27,8 +27,13 @@ class SawitPanelProvider extends PanelProvider
         return $panel
             ->default()
             ->id('sawit')
-            ->path('sawit')
-            ->login(Login::class)
+            ->path('sawit') 
+            ->login(false)
+            ->authGuard('web')
+            ->brandName('Login Admin')
+            ->brandLogo(asset('images/Kota Balikpapan.png'))
+            ->brandLogoHeight('4rem')
+            ->topNavigation(false)
             ->colors([
                 'primary' => Color::Amber,
             ])

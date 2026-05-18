@@ -2,30 +2,28 @@
 
 namespace App\Filament\Sawit\Pages\Auth;
 
-use Filament\Auth\Pages\Login as BaseLogin;
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Schema;
+use Filament\Auth\Pages\Login as BaseLogin;
 
 class Login extends BaseLogin
 {
-    protected string $view = 'filament.sawit.pages.auth.login';
-
-    public function form(Schema $schema): Schema
+    public function form(Schema $form): Schema
     {
-        return $schema
-            ->components([
-                TextInput::make('email')
-                    ->label('Username')
-                    ->required()
-                    ->autocomplete()
-                    ->autofocus()
-                    ->extraInputAttributes(['tabindex' => 1]),
-                TextInput::make('password')
-                    ->label('Password')
-                    ->password()
-                    ->revealable()
-                    ->required()
-                    ->extraInputAttributes(['tabindex' => 2]),
-            ]);
+        return $form->schema([
+            TextInput::make('name')
+                ->label('Username')
+                ->required(),
+            $this->getPasswordFormComponent(),
+            $this->getRememberFormComponent(),
+        ]);
+    }
+
+    protected function getCredentialsFromFormData(array $data): array
+    {
+        return [
+            'name'     => $data['name'],
+            'password' => $data['password'],
+        ];
     }
 }

@@ -294,4 +294,25 @@ Route::get('/sop/tatacarapengaduan', function () {
     return view('mega menu.sop ppid.tatacarapengaduan');
 });
 
+Route::get('/sawit/login', function() {
+    if (auth()->check()) return redirect('/sawit');
+    return view('login');
+})->name('login');
+
+Route::post('/sawit/login', function(\Illuminate\Http\Request $request) {
+    $credentials = $request->validate([
+        'username' => 'required',
+        'password' => 'required',
+    ]);
+
+    if (auth()->attempt([
+        'name' => $credentials['username'], 
+        'password' => $credentials['password']
+    ])) {
+        $request->session()->regenerate();
+        return redirect('/sawit');
+    }
+
+    return back()->with('error', 'Username atau password salah.');
+});
 Route::get('/berita/{slug}', [App\Http\Controllers\NewsPublicController::class, 'show'])->name('news.show');
