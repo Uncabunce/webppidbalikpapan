@@ -294,21 +294,4 @@ Route::get('/sop/tatacarapengaduan', function () {
     return view('mega menu.sop ppid.tatacarapengaduan');
 });
 
-Route::prefix('admin')->name('admin.')->group(function () {
-
-    // Login
-    Route::middleware('admin.guest')->group(function () {
-        Route::get('/login', [AdminAuthController::class, 'showLogin'])->name('login');
-        Route::post('/login', [AdminAuthController::class, 'login'])->name('login.post');
-    });
-
-    // Protected
-    Route::middleware('admin.auth')->group(function () {
-        Route::post('/logout', [AdminAuthController::class, 'logout'])->name('logout');
-        Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
-        Route::resource('news', NewsController::class);
-    });
-
-});
-
 Route::get('/berita/{slug}', [App\Http\Controllers\NewsPublicController::class, 'show'])->name('news.show');

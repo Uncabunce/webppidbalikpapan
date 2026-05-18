@@ -18,25 +18,25 @@ use Illuminate\Foundation\Http\Middleware\PreventRequestForgery;
 use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
+use App\Filament\Sawit\Pages\Auth\Login;
 
 class SawitPanelProvider extends PanelProvider
 {
     public function panel(Panel $panel): Panel
     {
         return $panel
-            ->default()
             ->id('sawit')
             ->path('sawit')
-            ->login()
+            ->login(Login::class)
             ->colors([
                 'primary' => Color::Amber,
             ])
-            ->discoverResources(in: app_path('Filament/Resources'), for: 'App\Filament\Resources')
-            ->discoverPages(in: app_path('Filament/Pages'), for: 'App\Filament\Pages')
+            ->discoverResources(in: app_path('Filament/Sawit/Resources'), for: 'App\Filament\Sawit\Resources')
+            ->discoverPages(in: app_path('Filament/Sawit/Pages'), for: 'App\Filament\Sawit\Pages')
             ->pages([
                 Dashboard::class,
             ])
-            ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'App\Filament\Widgets')
+            ->discoverWidgets(in: app_path('Filament/Sawit/Widgets'), for: 'App\Filament\Sawit\Widgets')
             ->widgets([
                 AccountWidget::class,
                 FilamentInfoWidget::class,
