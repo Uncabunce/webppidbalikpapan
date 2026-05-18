@@ -819,7 +819,7 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 <p class="text-slate-500 text-sm md:text-base line-clamp-2 md:line-clamp-3 mb-4">
                                     Pemerintah Kota Balikpapan terus mendorong setiap Organisasi Perangkat Daerah untuk meningkatkan standar pelayanan informasi publik demi kepuasan masyarakat melalui transparansi digital.
                                 </p>
-<a class="text-primary font-bold text-sm flex items-center gap-2 group-hover:gap-3 transition-all" href="http://ppidbalikpapan.test/insidenews">
+<a class="text-primary font-bold text-sm flex items-center gap-2 group-hover:gap-3 transition-all" href="http://ppidbalikpapan.test/newnews">
                                     Baca Selengkapnya <span class="material-symbols-outlined text-sm" data-icon="east">east</span>
 </a>
 </div>
