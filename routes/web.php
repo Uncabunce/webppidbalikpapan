@@ -311,7 +311,6 @@ Route::post('/admin/login', function(\Illuminate\Http\Request $request) {
     ])) {
         $request->session()->regenerate();
         return redirect('/admin');
-        return redirect('/admin/login');
     }
 
     return back()->with('error', 'Username atau password salah.');

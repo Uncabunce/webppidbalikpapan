@@ -83,7 +83,7 @@ tailwind.config = {
 
     {{-- Form --}}
     <div class="w-full space-y-4">
-    <form action="/Admin/login" method="POST" class="w-full space-y-4">
+    <form action="/admin/login" method="POST" class="w-full space-y-4">
         @csrf
 
             {{-- Username --}}
