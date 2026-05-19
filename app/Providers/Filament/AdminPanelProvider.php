@@ -18,17 +18,19 @@ use Illuminate\Foundation\Http\Middleware\PreventRequestForgery;
 use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
-use App\Filament\Sawit\Pages\Auth\Login;
+use App\Filament\Admin\Pages\Auth\Login;
 
-class SawitPanelProvider extends PanelProvider
+class AdminPanelProvider extends PanelProvider
 {
     public function panel(Panel $panel): Panel
     {
         return $panel
             ->default()
-            ->id('sawit')
-            ->path('sawit') 
+            ->id('admin')
+            ->path('admin') 
             ->login(false)
+            ->loginRouteSlug('login')
+            ->homeUrl('/admin')
             ->authGuard('web')
             ->brandName('Login Admin')
             ->brandLogo(asset('images/Kota Balikpapan.png'))
@@ -37,12 +39,12 @@ class SawitPanelProvider extends PanelProvider
             ->colors([
                 'primary' => Color::Amber,
             ])
-            ->discoverResources(in: app_path('Filament/Sawit/Resources'), for: 'App\Filament\Sawit\Resources')
-            ->discoverPages(in: app_path('Filament/Sawit/Pages'), for: 'App\Filament\Sawit\Pages')
+            ->discoverResources(in: app_path('Filament/Admin/Resources'), for: 'App\Filament\Admin\Resources')
+            ->discoverPages(in: app_path('Filament/Admin/Pages'), for: 'App\Filament\Admin\Pages')
             ->pages([
                 Dashboard::class,
             ])
-            ->discoverWidgets(in: app_path('Filament/Sawit/Widgets'), for: 'App\Filament\Sawit\Widgets')
+            ->discoverWidgets(in: app_path('Filament/Admin/Widgets'), for: 'App\Filament\Admin\Widgets')
             ->widgets([
                 AccountWidget::class,
                 FilamentInfoWidget::class,

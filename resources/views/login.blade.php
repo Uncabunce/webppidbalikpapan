@@ -1,4 +1,3 @@
-<div>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -84,7 +83,7 @@ tailwind.config = {
 
     {{-- Form --}}
     <div class="w-full space-y-4">
-    <form action="/sawit/login" method="POST" class="w-full space-y-4">
+    <form action="/Admin/login" method="POST" class="w-full space-y-4">
         @csrf
 
             {{-- Username --}}
@@ -153,4 +152,3 @@ tailwind.config = {
 @filamentScripts
 </body>
 </html>
-</div>

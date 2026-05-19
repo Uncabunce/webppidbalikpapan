@@ -294,12 +294,12 @@ Route::get('/sop/tatacarapengaduan', function () {
     return view('mega menu.sop ppid.tatacarapengaduan');
 });
 
-Route::get('/sawit/login', function() {
-    if (auth()->check()) return redirect('/sawit');
+Route::get('/admin/login', function() {
+    if (auth()->check()) return redirect('/admin');
     return view('login');
 })->name('login');
 
-Route::post('/sawit/login', function(\Illuminate\Http\Request $request) {
+Route::post('/admin/login', function(\Illuminate\Http\Request $request) {
     $credentials = $request->validate([
         'username' => 'required',
         'password' => 'required',
@@ -310,7 +310,8 @@ Route::post('/sawit/login', function(\Illuminate\Http\Request $request) {
         'password' => $credentials['password']
     ])) {
         $request->session()->regenerate();
-        return redirect('/sawit');
+        return redirect('/admin');
+        return redirect('/admin/login');
     }
 
     return back()->with('error', 'Username atau password salah.');
