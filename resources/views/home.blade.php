@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="id" style="overflow-x:hidden;"><head>
+<html lang="id" style="overflow-x:hidden;width:100%;max-width:100vw;"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>PPID Kota Balikpapan</title>
@@ -79,15 +79,21 @@
         .material-symbols-outlined {
             font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24
         }
-        html, body {
-            height: auto;
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+        html {
+            overflow-x: hidden !important;
+            width: 100% !important;
+        }
+        body {
             font-family: "Inter", sans-serif;
             overflow-x: hidden !important;
-            max-width: 100%;
+            width: 100% !important;
+            position: relative !important;
         }
-        main, section, footer {
-            overflow-x: hidden;
-            max-width: 100%;
+        main, section, footer, header, div, nav {
+            max-width: 100% !important;
         }
         /* Prevent mega menus from causing horizontal scroll on mobile */
         #mega-profil, #mega-infopub, #mega-layanan {
@@ -119,41 +125,32 @@
         }
         /* Carousel Styles */
 #carousel-container {
-    position: relative;
+    width: 100% !important;
     overflow: hidden !important;
-    width: 100%;
-    max-width: 100vw;
+    position: relative !important;
 }
-/* ... */
+
+#carousel-track {
+    display: flex !important;
+    overflow: visible !important;
+    will-change: transform;
+    max-width: none !important;
+}
+
 .carousel-slide {
-    flex: 0 0 100%;
-    min-width: 100%;
-    width: 100%;
-    overflow: hidden;
+    flex: 0 0 100vw !important;
+    min-width: 100vw !important;
+    max-width: 100vw !important;
+    overflow: hidden !important;
 }
-        #carousel-track {
-            display: flex;
-            transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-            cursor: grab;
-            user-select: none;
-            width: 100%;
-            will-change: transform;
-        }
+
+.carousel-slide * {
+    max-width: 100% !important;
+}
         #carousel-track:active {
             cursor: grabbing;
         }
-        #carousel-container {
-            position: relative;
-            overflow: hidden;
-            width: 100%;
-        }
-/* ... */
-        .carousel-slide {
-            flex: 0 0 100%;
-            min-width: 100%;
-            width: 100%;
-            overflow: hidden;
-        }
+
         /* Dropdown Styles */
         .nav-hover-line::after {
             content: "";
@@ -180,6 +177,19 @@
             box-shadow: 0 10px 20px rgba(0,0,0,0.5);
             border-radius: 0 0 8px 8px;
         }
+        desktop-nav {
+            overflow: hidden !important;
+        }
+
+        desktop-nav > div {
+            overflow-x: auto;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        desktop-nav > div::-webkit-scrollbar {
+            display: none;
+        }
         .group:hover > .dropdown-menu,
         .dropdown-menu.open {
             display: block !important;
@@ -201,6 +211,23 @@
         }
         /* Prevent overflow without breaking sticky */
         img, video, iframe {
+            max-width: 100%;
+        }
+        /* Fix horizontal scroll mobile */
+        * {
+            box-sizing: border-box;
+        }
+
+        header, header * {
+            max-width: 100vw;
+        }
+
+        header > div:first-child {
+            overflow: hidden;
+        }
+
+        header > div:first-child > div {
+            overflow: hidden;
             max-width: 100%;
         }
         /* Mega Menu */
@@ -228,9 +255,9 @@
 
 <header class="w-full shadow-md bg-white sticky top-0 z-50" style="overflow:visible;">
 <!-- Top Navbar (Batik Motif) -->
-<div class="batik-bg border-b border-slate-500">
-<div class="max-w-7xl mx-auto px-4 md:px-6 py-3 flex flex-col md:flex-row items-center justify-between gap-4 md:gap-0">
-<!-- Left: Logo -->
+<div class="batik-bg border-b border-slate-500 overflow-hidden w-full">
+<div class="max-w-7xl mx-auto px-4 md:px-6 py-3 flex flex-col md:flex-row items-center justify-between gap-4 md:gap-0 overflow-hidden w-full">
+    <!-- Left: Logo -->
 <div class="flex items-center justify-between w-full md:w-auto">  
     <a href="http://ppidbalikpapan.test/" class="h-8 md:h-10 w-auto object-contain">
      <img src="{{ asset('logo_ppid bg removed.png') }}" alt="logo" class="h-full w-auto"></a>
@@ -626,9 +653,9 @@ PPID Pelaksana <span class="material-symbols-outlined text-[10px] group-hover:ro
 </header>
 <main>
 <!-- Hero Section: Interactive Carousel -->
-<div style="overflow:hidden;width:100%;max-width:100vw;position:relative;">
-<section class="relative group" id="carousel-container" style="width:100%; overflow:hidden; max-width:100vw;">
-<div class="h-[300px] md:h-[450px] lg:h-[550px]" id="carousel-track">
+<div style="overflow:hidden;width:100%;position:relative;">
+<section class="relative group" id="carousel-container" style="width:100%;overflow:hidden;position:relative;">
+<div class="h-[300px] md:h-[450px] lg:h-[550px]" id="carousel-track" style="display:flex;overflow:visible;">
 <!-- Slide 1: Primary HD Image (Original Slide 0) -->
 <div class="carousel-slide relative h-full">
 <img alt="PPID Balikpapan Welcome Banner" class="w-full h-full object-cover pointer-events-none" src="images/bg_ppidbpp.jpg"/>
@@ -1557,6 +1584,37 @@ positionMegaMenu();
         });
         if (!inside) hideAll();
     });
+})();
+</script>
+<script>
+(function() {
+    // Reset horizontal scroll setiap kali terjadi
+    var ticking = false;
+    function resetScroll() {
+        if (window.pageXOffset !== 0) {
+            window.scrollTo(0, window.pageYOffset);
+        }
+        ticking = false;
+    }
+    window.addEventListener('scroll', function() {
+        if (!ticking) {
+            requestAnimationFrame(resetScroll);
+            ticking = true;
+        }
+    }, { passive: true });
+
+    // Paksa overflow hidden setelah load
+    function forceNoHScroll() {
+        var s = document.documentElement.style;
+        s.overflowX = 'hidden';
+        s.maxWidth = '100vw';
+        document.body.style.overflowX = 'hidden';
+        document.body.style.maxWidth = '100vw';
+        document.body.style.position = 'relative';
+    }
+    forceNoHScroll();
+    window.addEventListener('resize', forceNoHScroll);
+    window.addEventListener('load', forceNoHScroll);
 })();
 </script>
 </body>
